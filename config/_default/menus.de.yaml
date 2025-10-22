@@ -1,17 +1,17 @@
 ﻿main:
   - name: "Rettungs-AGB"
-    url: "/de/verkaufsbedingungen/"
+    url: "/bike-rescue/rescue-sale-terms/"
     weight: 10
 legal:
   - name: "Rechtlicher Hinweis"
-    url: "/de/rechtlicher-hinweis/"
+    url: "/about/rechtlicher-hinweis/"
     weight: 10
   - name: "Cookie-Richtlinie"
-    url: "/de/cookie-richtlinie/"
+    url: "/about/cookie-richtlinie/"
     weight: 20
   - name: "Datenschutzerklärung"
-    url: "/de/datenschutzerklarung/"
+    url: "/about/datenschutzerklarung/"
     weight: 30
   - name: "Allg. Verkaufsbedingungen"
-    url: "/de/verkaufsbedingungen/"
+    url: "/bike-rescue/rescue-sale-terms/"
     weight: 40
