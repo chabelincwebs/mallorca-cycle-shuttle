@@ -33,20 +33,20 @@ languages:
     menus:
       main:
         - name: "Rettungs-AGB"
-          url: "/verkaufsbedingungen/"
+          url: "/bike-rescue/rescue-sale-terms/"
           weight: 1
       legal:
         - name: "Impressum"
-          url: "/rechtlicher-hinweis/"
+          url: "/about/rechtlicher-hinweis/"
           weight: 1
         - name: "Cookie-Richtlinie"
-          url: "/cookie-richtlinie/"
+          url: "/about/cookie-richtlinie/"
           weight: 2
         - name: "Datenschutzerklärung"
-          url: "/datenschutzerklarung/"
+          url: "/about/datenschutzerklarung/"
           weight: 3
         - name: "Allg. Verkaufsbedingungen"
-          url: "/verkaufsbedingungen/"
+          url: "/bike-rescue/rescue-sale-terms/"
           weight: 4
   es:
     languageName: "Español"
@@ -55,20 +55,20 @@ languages:
     menus:
       main:
         - name: "Condiciones del rescate"
-          url: "/condiciones-de-venta/"
+          url: "/bike-rescue/rescue-sale-terms/"
           weight: 1
       legal:
         - name: "Aviso legal"
-          url: "/aviso-legal/"
+          url: "/about/aviso-legal/"
           weight: 1
         - name: "Política de cookies"
-          url: "/politica-de-cookies/"
+          url: "/about/politica-de-cookies/"
           weight: 2
         - name: "Política de privacidad"
-          url: "/politica-de-privacidad/"
+          url: "/about/politica-de-privacidad/"
           weight: 3
         - name: "Condiciones de venta"
-          url: "/condiciones-de-venta/"
+          url: "/bike-rescue/rescue-sale-terms/"
           weight: 4
   it:
     languageName: "Italiano"
@@ -77,20 +77,20 @@ languages:
     menus:
       main:
         - name: "Termini e Condizioni di Soccorso"
-          url: "/termini-di-vendita/"
+          url: "/bike-rescue/rescue-sale-terms/"
           weight: 1
       legal:
         - name: "Avviso Legale"
-          url: "/avviso-legale/"
+          url: "/about/avviso-legale/"
           weight: 1
         - name: "Politica sui Cookie"
-          url: "/politica-sui-cookie/"
+          url: "/about/politica-sui-cookie/"
           weight: 2
         - name: "Informativa sulla Privacy"
-          url: "/informativa-sulla-privacy/"
+          url: "/about/informativa-sulla-privacy/"
           weight: 3
         - name: "Termini e Condizioni di Vendita"
-          url: "/termini-di-vendita/"
+          url: "/bike-rescue/rescue-sale-terms/"
           weight: 4
   fr:
     languageName: "Français"
@@ -99,20 +99,20 @@ languages:
     menus:
       main:
         - name: "Conditions générales du service de secours"
-          url: "/conditions-de-vente/"
+          url: "/bike-rescue/rescue-sale-terms/"
           weight: 1
       legal:
         - name: "Mentions Légales"
-          url: "/mentions-legales/"
+          url: "/about/mentions-legales/"
           weight: 1
         - name: "Politique de Cookies"
-          url: "/politique-de-cookies/"
+          url: "/about/politique-de-cookies/"
           weight: 2
         - name: "Politique de Confidentialité"
-          url: "/politique-de-confidentialite/"
+          url: "/about/politique-de-confidentialite/"
           weight: 3
         - name: "Conditions Générales de Vente"
-          url: "/conditions-de-vente/"
+          url: "/bike-rescue/rescue-sale-terms/"
           weight: 4
   ca:
     languageName: "Català"
@@ -121,18 +121,18 @@ languages:
     menus:
       main:
         - name: "Termes i Condicions del Servei de Rescat"
-          url: "/condicions-de-venda/"
+          url: "/bike-rescue/rescue-sale-terms/"
           weight: 1
       legal:
         - name: "Avís Legal"
-          url: "/avis-legal/"
+          url: "/about/avis-legal/"
           weight: 1
         - name: "Política de Cookies"
-          url: "/politica-de-cookies/"
+          url: "/about/politica-de-cookies/"
           weight: 2
         - name: "Política de Privadesa"
-          url: "/politica-de-privadesa/"
+          url: "/about/politica-de-privadesa/"
           weight: 3
         - name: "Condicions de Venda"
-          url: "/condicions-de-venda/"
+          url: "/bike-rescue/rescue-sale-terms/"
           weight: 4
