@@ -62,8 +62,6 @@
           <a href="/en/home">Home</a>
           <a href="/en/bike-rescue/rescue-home/">Bike Rescue</a>
           <a href="/en/mallorca-airport-transfers/">Airport Transfers</a>
-
-          <!-- Guides with submenu -->
           <div class="menu-item-with-submenu">
             <span class="menu-parent">Guides</span>
             <div class="submenu">
@@ -72,10 +70,84 @@
               <a href="/en/bike-shuttle/sa-calobra-guide/">Sa Calobra Guide</a>
             </div>
           </div>
-
           <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank" rel="noopener noreferrer">Shuttle Schedule</a>
           <a href="/en/about/about-us">About Us</a>
           <a href="/en/about/blog/">Blog</a>
+          {{ else if eq .Site.Language.Lang "de" }}
+          <a href="/de/startseite">Startseite</a>
+          <a href="/de/bike-rescue/rescue-home/">Fahrrad-Rettung</a>
+          <a href="/de/mallorca-flughafentransfers/">Flughafentransfers</a>
+          <div class="menu-item-with-submenu">
+            <span class="menu-parent">Leitfäden</span>
+            <div class="submenu">
+              <a href="/de/bike-shuttle/andratx-pollenca-leitfaden/">Andratx-Pollença Leitfaden</a>
+              <a href="/de/bike-shuttle/big-daddy-challenge/">Big Daddy Challenge</a>
+              <a href="/de/bike-shuttle/sa-calobra-leitfaden/">Sa Calobra Leitfaden</a>
+            </div>
+          </div>
+          <a href="https://mallorcacycleshuttle.company.site/de/products/Scheduled-Bike-Buses-c15728235" target="_blank" rel="noopener noreferrer">Shuttle-Fahrplan</a>
+          <a href="/de/about/ueber-uns">Über uns</a>
+          <a href="/de/about/blog/">Blog</a>
+          {{ else if eq .Site.Language.Lang "es" }}
+          <a href="/es/inicio">Inicio</a>
+          <a href="/es/bike-rescue/rescue-home/">Rescate de Bicicletas</a>
+          <a href="/es/traslados-aeropuerto-mallorca/">Traslados al Aeropuerto</a>
+          <div class="menu-item-with-submenu">
+            <span class="menu-parent">Guías</span>
+            <div class="submenu">
+              <a href="/es/bike-shuttle/guia-andratx-pollenca/">Guía Andratx-Pollença</a>
+              <a href="/es/bike-shuttle/big-daddy-challenge/">Big Daddy Challenge</a>
+              <a href="/es/bike-shuttle/guia-sa-calobra/">Guía Sa Calobra</a>
+            </div>
+          </div>
+          <a href="https://mallorcacycleshuttle.company.site/es/products/Scheduled-Bike-Buses-c15728235" target="_blank" rel="noopener noreferrer">Horarios Shuttle</a>
+          <a href="/es/about/sobre-nosotros">Sobre Nosotros</a>
+          <a href="/es/about/blog/">Blog</a>
+          {{ else if eq .Site.Language.Lang "it" }}
+          <a href="/it/home">Home</a>
+          <a href="/it/soccorso-ciclisti/home-soccorso/">Soccorso Ciclisti</a>
+          <a href="/it/transfer-aeroporto-mallorca/">Transfer Aeroporto</a>
+          <div class="menu-item-with-submenu">
+            <span class="menu-parent">Guide</span>
+            <div class="submenu">
+              <a href="/it/shuttle-bici/guida-andratx-pollenca/">Guida Andratx-Pollença</a>
+              <a href="/it/shuttle-bici/big-daddy-challenge/">Big Daddy Challenge</a>
+              <a href="/it/shuttle-bici/guida-sa-calobra/">Guida Sa Calobra</a>
+            </div>
+          </div>
+          <a href="https://mallorcacycleshuttle.company.site/it/products/Scheduled-Bike-Buses-c15728235" target="_blank" rel="noopener noreferrer">Orari Shuttle</a>
+          <a href="/it/chi-siamo/chi-siamo">Chi Siamo</a>
+          <a href="/it/chi-siamo/blog/">Blog</a>
+          {{ else if eq .Site.Language.Lang "fr" }}
+          <a href="/fr/accueil">Accueil</a>
+          <a href="/fr/bike-rescue/rescue-home/">Secours Vélo</a>
+          <a href="/fr/transferts-aeroport-mallorca/">Transferts Aéroport</a>
+          <div class="menu-item-with-submenu">
+            <span class="menu-parent">Guides</span>
+            <div class="submenu">
+              <a href="/fr/bike-shuttle/guide-andratx-pollenca/">Guide Andratx-Pollença</a>
+              <a href="/fr/bike-shuttle/defi-big-daddy/">Défi Big Daddy</a>
+              <a href="/fr/bike-shuttle/guide-sa-calobra/">Guide Sa Calobra</a>
+            </div>
+          </div>
+          <a href="https://mallorcacycleshuttle.company.site/fr/products/Scheduled-Bike-Buses-c15728235" target="_blank" rel="noopener noreferrer">Horaires Navette</a>
+          <a href="/fr/about/a-propos-de-nous">À Propos</a>
+          <a href="/fr/about/blog/">Blog</a>
+          {{ else if eq .Site.Language.Lang "ca" }}
+          <a href="/ca/inici">Inici</a>
+          <a href="/ca/rescat-ciclistes/inici-rescat/">Rescat Ciclistes</a>
+          <a href="/ca/trasllats-aeroport-mallorca/">Trasllats Aeroport</a>
+          <div class="menu-item-with-submenu">
+            <span class="menu-parent">Guies</span>
+            <div class="submenu">
+              <a href="/ca/shuttle-bici/guia-andratx-pollenca/">Guia Andratx-Pollença</a>
+              <a href="/ca/shuttle-bici/big-daddy-challenge/">Big Daddy Challenge</a>
+              <a href="/ca/shuttle-bici/guia-sa-calobra/">Guia Sa Calobra</a>
+            </div>
+          </div>
+          <a href="https://mallorcacycleshuttle.company.site/ca/products/Scheduled-Bike-Buses-c15728235" target="_blank" rel="noopener noreferrer">Horaris Shuttle</a>
+          <a href="/ca/sobre/sobre-nosaltres">Sobre Nosaltres</a>
+          <a href="/ca/sobre/blog/">Blog</a>
           {{ end }}
         </div>
       </nav>
