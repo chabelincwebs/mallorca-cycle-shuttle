@@ -11,20 +11,20 @@ languages:
     menus:
       main:
         - name: "Rescue T&C's"
-          url: "/sale-terms/"
+          url: "/bike-rescue/rescue-sale-terms/"
           weight: 1
       legal:
         - name: "Legal Notice"
-          url: "/legal-notice/"
+          url: "/about/legal-notice/"
           weight: 1
         - name: "Cookie Policy"
-          url: "/cookie-policy/"
+          url: "/about/cookie-policy/"
           weight: 2
         - name: "Privacy Policy"
-          url: "/privacy-policy/"
+          url: "/about/privacy-policy/"
           weight: 3
         - name: "Terms & Conditions of Sale"
-          url: "/sale-terms/"
+          url: "/bike-rescue/rescue-sale-terms/"
           weight: 4
   de:
     languageName: "Deutsch"
