@@ -154,7 +154,7 @@ main { overflow-x: hidden; }
 
 /* Hamburger Menu Styles */
 .hamburger {
-  display: none;
+  display: flex;
   flex-direction: column;
   gap: 4px;
   width: 30px;
@@ -185,7 +185,7 @@ main { overflow-x: hidden; }
 
 /* Mobile Navigation */
 .mobile-nav {
-  display: none;
+  display: block;
   position: fixed;
   top: 0;
   left: -100%;
@@ -241,11 +241,3 @@ main { overflow-x: hidden; }
   opacity: 1;
 }
 
-/* Show hamburger on all screens */
-.hamburger {
-  display: flex !important;
-}
-
-.mobile-nav {
-  display: block;
-}
