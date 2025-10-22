@@ -241,12 +241,11 @@ main { overflow-x: hidden; }
   opacity: 1;
 }
 
-/* Show hamburger on mobile */
-@media (max-width: 768px) {
-  .hamburger {
-    display: flex !important;
-  }
-  .mobile-nav {
-    display: block;
-  }
+/* Show hamburger on all screens */
+.hamburger {
+  display: flex !important;
+}
+
+.mobile-nav {
+  display: block;
 }
