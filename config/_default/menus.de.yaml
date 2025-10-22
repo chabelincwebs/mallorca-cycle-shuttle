@@ -1,0 +1,17 @@
+﻿main:
+  - name: "Rettungs-AGB"
+    url: "/de/verkaufsbedingungen/"
+    weight: 10
+legal:
+  - name: "Rechtlicher Hinweis"
+    url: "/de/rechtlicher-hinweis/"
+    weight: 10
+  - name: "Cookie-Richtlinie"
+    url: "/de/cookie-richtlinie/"
+    weight: 20
+  - name: "Datenschutzerklärung"
+    url: "/de/datenschutzerklarung/"
+    weight: 30
+  - name: "Allg. Verkaufsbedingungen"
+    url: "/de/verkaufsbedingungen/"
+    weight: 40

@@ -1,0 +1,55 @@
+baseURL: "https://mallorcabicyclerescue.com/"
+title: "Mallorca Bicycle Rescue"
+languageCode: "en"
+defaultContentLanguage: "en"
+defaultContentLanguageInSubdir: false
+enableRobotsTXT: true
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    contentDir: "content/en"
+    menus:
+      main:
+        - identifier: rescue-terms
+          name: "Rescue T&C’s"
+          url: "/sale-terms/"
+          weight: 20
+      legal:
+        - identifier: sale-terms
+          name: "Terms & Conditions of Sale"
+          url: "/sale-terms/"
+          weight: 20
+
+  de:
+    languageName: "Deutsch"
+    weight: 2
+    contentDir: "content/de"
+    menus:
+      main:
+        - identifier: rescue-terms
+          name: "Rettungs-AGB"
+          url: "/de/verkaufsbedingungen/"
+          weight: 20
+      legal:
+        - identifier: sale-terms
+          name: "Allgemeine Verkaufsbedingungen"
+          url: "/de/verkaufsbedingungen/"
+          weight: 20
+
+  es:
+    languageName: "Español"
+    weight: 3
+    contentDir: "content/es"
+    menus:
+      main:
+        - identifier: rescue-terms
+          name: "Condiciones del rescate"
+          url: "/es/condiciones-de-venta/"
+          weight: 20
+      legal:
+        - identifier: sale-terms
+          name: "Condiciones de venta"
+          url: "/es/condiciones-de-venta/"
+          weight: 20

@@ -1,0 +1,77 @@
+{{/* Cookie Consent Banner */}}
+<div id="cookie-consent-banner" style="display:none; position:fixed; bottom:0; left:0; right:0; background:#2c3e50; color:white; padding:1.5rem; box-shadow:0 -2px 10px rgba(0,0,0,0.2); z-index:9999;">
+  <div class="container" style="max-width:1200px; margin:0 auto;">
+    <div style="display:flex; gap:2rem; align-items:center; flex-wrap:wrap;">
+      <div style="flex:1; min-width:300px;">
+        <h3 style="margin:0 0 0.5rem 0; font-size:1.2rem;">{{ i18n "cookie_consent_title" | default "Cookie Settings" }}</h3>
+        <p style="margin:0; font-size:0.9rem; line-height:1.5;">
+          {{ i18n "cookie_consent_message" | default "We use cookies to enhance your browsing experience and analyze our traffic. Please choose which cookies you accept." }}
+          <a href="{{ "cookie-policy" | relLangURL }}" style="color:#3498db; text-decoration:underline;">{{ i18n "cookie_policy_link" | default "Learn more" }}</a>
+        </p>
+      </div>
+
+      <div style="display:flex; gap:0.75rem; flex-wrap:wrap; align-items:center;">
+        <button id="cookie-consent-customize" style="background:transparent; border:2px solid white; color:white; padding:0.6rem 1.2rem; border-radius:5px; cursor:pointer; font-size:0.9rem; white-space:nowrap;">
+          {{ i18n "cookie_customize" | default "Customize" }}
+        </button>
+        <button id="cookie-consent-accept-all" style="background:#27ae60; border:none; color:white; padding:0.6rem 1.2rem; border-radius:5px; cursor:pointer; font-size:0.9rem; font-weight:600; white-space:nowrap;">
+          {{ i18n "cookie_accept_all" | default "Accept All" }}
+        </button>
+        <button id="cookie-consent-reject-all" style="background:#c0392b; border:none; color:white; padding:0.6rem 1.2rem; border-radius:5px; cursor:pointer; font-size:0.9rem; white-space:nowrap;">
+          {{ i18n "cookie_reject_all" | default "Reject All" }}
+        </button>
+      </div>
+    </div>
+
+    {{/* Customization Panel */}}
+    <div id="cookie-consent-options" style="display:none; margin-top:1.5rem; padding-top:1.5rem; border-top:1px solid rgba(255,255,255,0.2);">
+      <h4 style="margin:0 0 1rem 0; font-size:1rem;">{{ i18n "cookie_categories" | default "Cookie Categories" }}</h4>
+
+      {{ range $key, $category := .Site.Data.consent.categories }}
+      <div style="margin-bottom:1rem; padding:1rem; background:rgba(255,255,255,0.1); border-radius:5px;">
+        <label style="display:flex; align-items:center; gap:1rem; cursor:{{ if $category.required }}not-allowed{{ else }}pointer{{ end }};">
+          <input
+            type="checkbox"
+            name="cookie-category"
+            value="{{ $key }}"
+            {{ if $category.required }}checked disabled{{ end }}
+            style="width:20px; height:20px; cursor:{{ if $category.required }}not-allowed{{ else }}pointer{{ end }};">
+          <div style="flex:1;">
+            <strong style="display:block; margin-bottom:0.25rem;">
+              {{ if reflect.IsMap $category.name }}
+                {{ index $category.name $.Site.Language.Lang }}
+              {{ else }}
+                {{ $category.name }}
+              {{ end }}
+              {{ if $category.required }}
+                <span style="font-size:0.75rem; background:#e74c3c; padding:0.2rem 0.5rem; border-radius:3px; margin-left:0.5rem;">{{ i18n "cookie_required" | default "Required" }}</span>
+              {{ end }}
+            </strong>
+            <span style="font-size:0.85rem; color:rgba(255,255,255,0.8);">
+              {{ if reflect.IsMap $category.description }}
+                {{ index $category.description $.Site.Language.Lang }}
+              {{ else }}
+                {{ $category.description }}
+              {{ end }}
+            </span>
+          </div>
+        </label>
+      </div>
+      {{ end }}
+
+      <div style="display:flex; gap:0.75rem; margin-top:1.5rem;">
+        <button id="cookie-consent-save" style="background:#27ae60; border:none; color:white; padding:0.6rem 1.5rem; border-radius:5px; cursor:pointer; font-size:0.9rem; font-weight:600;">
+          {{ i18n "cookie_save_preferences" | default "Save Preferences" }}
+        </button>
+        <button id="cookie-consent-cancel" style="background:transparent; border:2px solid white; color:white; padding:0.6rem 1.5rem; border-radius:5px; cursor:pointer; font-size:0.9rem;">
+          {{ i18n "cookie_cancel" | default "Cancel" }}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{/* Settings Button - Always visible */}}
+<button id="cookie-consent-settings-btn" style="display:none; position:fixed; bottom:20px; left:20px; background:#2c3e50; color:white; border:none; padding:0.8rem 1rem; border-radius:50px; cursor:pointer; box-shadow:0 2px 10px rgba(0,0,0,0.2); z-index:9998; font-size:0.85rem;">
+  🍪 {{ i18n "cookie_settings" | default "Cookie Settings" }}
+</button>

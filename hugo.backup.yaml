@@ -1,0 +1,104 @@
+﻿baseURL: "https://mallorcabicyclerescue.com/"
+title: "Mallorca Bicycle Rescue"
+languageCode: "en"
+defaultContentLanguage: "en"
+defaultContentLanguageInSubdir: false
+enableRobotsTXT: true
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    contentDir: "content/en"
+    menus:
+      main_disabled:
+        - name: "Home"
+          url: "/"
+          weight: 1
+        - name: "Rescue T&C’s"
+          url: "/sale-terms/"
+          weight: 2
+      cta:
+        - name: "Buy cover"
+          url: "https://mallorcacycleshuttle.company.site/products/"   # TODO: replace with your Ecwid link
+          weight: 1
+      legal:
+        - name: "Legal Notice"
+          url: "/legal-notice/"
+          weight: 1
+        - name: "Cookie Policy"
+          url: "/cookie-policy/"
+          weight: 2
+        - name: "Privacy Policy"
+          url: "/privacy-policy/"
+          weight: 3
+        - name: "Terms & Conditions of Sale"
+          url: "/sale-terms/"
+          weight: 4
+
+  de:
+    languageName: "Deutsch"
+    weight: 2
+    contentDir: "content/de"
+    menus:
+      main_disabled:
+        - name: "Start"
+          url: "/de/"
+          weight: 1
+        - name: "Rettungs-AGB"
+          url: "/de/terms/"
+          weight: 2
+      cta:
+        - name: "Schutz kaufen"
+          url: "https://mallorcacycleshuttle.company.site/de/products/"   # TODO: Ecwid DE link
+          weight: 1
+      legal:
+        - name: "Impressum"
+          url: "/de/legal-notice/"
+          weight: 1
+        - name: "Cookie-Richtlinie"
+          url: "/de/cookie-policy/"
+          weight: 2
+        - name: "Datenschutzerklärung"
+          url: "/de/privacy-policy/"
+          weight: 3
+        - name: "Allg. Verkaufsbedingungen"
+          url: "/de/sale-terms/"
+          weight: 4
+
+  es:
+    languageName: "Español"
+    weight: 3
+    contentDir: "content/es"
+    menus:
+      main_disabled:
+        - name: "Inicio"
+          url: "/es/"
+          weight: 1
+        - name: "Condiciones del rescate"
+          url: "/es/terms/"
+          weight: 2
+      cta:
+        - name: "Comprar cobertura"
+          url: "https://mallorcacycleshuttle.company.site/es/products/"   # TODO: Ecwid ES link
+          weight: 1
+      legal:
+        - name: "Aviso legal"
+          url: "/es/legal-notice/"
+          weight: 1
+        - name: "Política de cookies"
+          url: "/es/cookie-policy/"
+          weight: 2
+        - name: "Política de privacidad"
+          url: "/es/privacy-policy/"
+          weight: 3
+        - name: "Condiciones de venta"
+          url: "/es/sale-terms/"
+          weight: 4
+
+
+
+
+
+
+

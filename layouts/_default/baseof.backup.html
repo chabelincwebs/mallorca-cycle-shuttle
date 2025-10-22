@@ -1,0 +1,51 @@
+﻿<!doctype html>
+<html lang="{{ .Site.Language.Lang }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{{ block "title" . }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container" style="display:flex; align-items:center; gap:1rem; justify-content:space-between;">
+        <a href="{{ "/" | relLangURL }}" aria-label="{{ .Site.Title }}" style="display:flex; align-items:center; gap:.75rem;">
+          <img src="/img/logo.svg" alt="{{ .Site.Title }}" style="height:32px; width:auto;">
+        </a>
+
+        <nav class="lang" style="margin-left:auto; margin-right:1rem;">
+          <a href="{{ "/"    | relLangURL }}">EN</a>
+          <a href="{{ "/de/" | relLangURL }}">DE</a>
+          <a href="{{ "/es/" | relLangURL }}">ES</a>
+        </nav>
+
+        <nav class="main" style="display:flex; gap:1rem; align-items:center;">
+          {{ $s := newScratch }}
+          {{ range .Site.Menus.main }}
+            {{ $url := (cond .Page (.Page.RelPermalink) (.URL | relLangURL)) }}
+            {{ if not ($s.Get $url) }}
+              <a href="{{ $url }}">{{ .Name }}</a>
+              {{ $s.Set $url true }}
+            {{ end }}
+          {{ end }}
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      {{ block "main" . }}{{ .Content }}{{ end }}
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="small">
+          <strong>Contact</strong><br>
+          Mallorca Bicycle Rescue · <a href="mailto:admin@mallorcacycleshuttle.com">admin@mallorcacycleshuttle.com</a><br/>
+          Autocares Devesa SL CIF B08359606<br/>
+          Calle Fuster 36 a, 07460 Pollença<br/>
+          © {{ now.Year }} Mallorca Bicycle Rescue
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+﻿main:
+  - name: "Condiciones del rescate"
+    url: "/es/condiciones-de-venta/"
+    weight: 10
+legal:
+  - name: "Aviso legal"
+    url: "/es/aviso-legal/"
+    weight: 10
+  - name: "Política de cookies"
+    url: "/es/politica-de-cookies/"
+    weight: 20
+  - name: "Política de privacidad"
+    url: "/es/politica-de-privacidad/"
+    weight: 30
+  - name: "Condiciones de venta"
+    url: "/es/condiciones-de-venta/"
+    weight: 40

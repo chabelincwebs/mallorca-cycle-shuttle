@@ -1,0 +1,12 @@
+{{ define "title" }}{{ .Title }}{{ end }}
+
+{{ define "main" }}
+<section>
+  <div class="container content-wrap">
+    <article class="prose content-prose">
+      <h1>{{ .Title }}</h1>
+      {{ .Content }}
+    </article>
+  </div>
+</section>
+{{ end }}

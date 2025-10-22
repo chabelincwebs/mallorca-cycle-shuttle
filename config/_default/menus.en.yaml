@@ -1,0 +1,17 @@
+﻿main:
+  - name: "Rescue T&C's"
+    url: "/sale-terms/"
+    weight: 10
+legal:
+  - name: "Legal Notice"
+    url: "/legal-notice/"
+    weight: 10
+  - name: "Cookie Policy"
+    url: "/cookie-policy/"
+    weight: 20
+  - name: "Privacy Policy"
+    url: "/privacy-policy/"
+    weight: 30
+  - name: "Terms & Conditions of Sale"
+    url: "/sale-terms/"
+    weight: 40

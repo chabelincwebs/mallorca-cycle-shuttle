@@ -1,0 +1,116 @@
+{{ define "main" }}
+  {{/* Hero Section */}}
+  <section class="hero" style="position:relative; padding:3rem 0; background:#f8f9fa; overflow:hidden;">
+    {{/* Background Image */}}
+    <div style="position:absolute; top:0; left:0; width:100%; height:100%; z-index:0;">
+      <img src="/img/hero-image.webp" alt="Mallorca Bicycle Rescue" style="width:100%; height:100%; object-fit:cover; opacity:0.3;">
+    </div>
+
+    {{/* Content */}}
+    <div class="container" style="position:relative; z-index:1; text-align:center;">
+      {{/* Title Button */}}
+      {{ if .Params.cta }}
+        <a href="{{ .Params.cta.url }}" style="display:inline-block; background:#f00000; color:white; padding:1rem 2rem; text-decoration:none; border-radius:5px; font-size:2rem; font-weight:bold; margin-bottom:2rem;">
+          {{ if .Params.hero_title }}{{ .Params.hero_title }}{{ else }}{{ .Title }}{{ end }}
+        </a>
+      {{ end }}
+
+      {{/* Centered Subtitle */}}
+      {{ if .Params.hero_subtitle }}
+        <p style="font-size:1.25rem; margin-bottom:1rem; color:#333;">{{ .Params.hero_subtitle }}</p>
+      {{ end }}
+
+      {{/* Centered Note */}}
+      {{ if .Params.note }}
+        <p style="font-size:1.25rem; font-style:italic; color:#555;">{{ .Params.note }}</p>
+      {{ end }}
+    </div>
+  </section>
+
+  {{/* Features Section */}}
+  {{ with .Params.features }}
+  <section style="padding:0.75rem 0;">
+    <div class="container">
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:2rem;">
+        {{ range . }}
+        <div style="border:1px solid #dee2e6; padding:1.5rem; border-radius:5px; background:white; position:relative; overflow:hidden;">
+          {{ if .image }}
+          <div style="position:absolute; top:0; left:0; width:100%; height:100%; opacity:0.15; z-index:0;">
+            <img src="{{ .image }}" alt="{{ .title }}" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          {{ end }}
+          <div style="position:relative; z-index:1;">
+            <h3>{{ .title }}</h3>
+            <p>{{ .text }}</p>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* Pricing Section */}}
+  {{ with .Params.pricing }}
+  <section style="background:#f8f9fa; padding:0.25rem 0;">
+    <div class="container">
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:2rem;">
+        {{ range . }}
+        <div style="border:1px solid #dee2e6; padding:1.5rem; border-radius:5px; background:white; position:relative; overflow:hidden;">
+          {{ if .image }}
+          <div style="position:absolute; top:0; left:0; width:100%; height:100%; opacity:0.15; z-index:0;">
+            <img src="{{ .image }}" alt="{{ .label }}" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          {{ end }}
+          <div style="position:relative; z-index:1;">
+            <h3>{{ .label }}</h3>
+            <p style="font-size:1.5rem; font-weight:bold; color:#f00000;">{{ .price }}</p>
+            <p>{{ .desc | markdownify }}</p>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* Good to Know Section */}}
+  {{ with .Params.good_to_know }}
+  <section style="padding:0.75rem 0;">
+    <div class="container">
+      <h2 style="margin-bottom:1.5rem;">{{ $.Params.good_to_know_title }}</h2>
+      <ul>
+        {{ range . }}
+        <li style="margin-bottom:0.75rem;">{{ . }}</li>
+        {{ end }}
+      </ul>
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* FAQ Section */}}
+  {{ with .Params.faq }}
+  <section style="background:#f8f9fa; padding:0.75rem 0;">
+    <div class="container">
+      <h2 style="margin-bottom:1rem;">{{ $.Params.faq_title }}</h2>
+      <div class="faq-grid" style="display:grid; grid-template-columns:repeat(2, 1fr); gap:0.5rem;">
+        {{ range . }}
+        <details style="margin-bottom:0.5rem; border:1px solid #dee2e6; border-radius:5px; padding:0.75rem; background:white;">
+          <summary style="font-size:1.1rem; font-weight:600; cursor:pointer; user-select:none;">{{ .q }}</summary>
+          <p style="margin-top:0.5rem; padding-left:1rem; color:#666;">{{ .a }}</p>
+        </details>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* Render any markdown content if present */}}
+  {{ with .Content }}
+  <section style="padding:3rem 0;">
+    <div class="container">
+      {{ . }}
+    </div>
+  </section>
+  {{ end }}
+{{ end }}

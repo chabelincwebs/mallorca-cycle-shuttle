@@ -1,0 +1,84 @@
+﻿<!doctype html>
+<html lang="{{ .Site.Language.Lang }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>
+      {{- $t := .Title -}}
+      {{- if $t | default "" -}}
+        {{ $t }} | {{ .Site.Title }}
+      {{- else -}}
+        {{ .Site.Title }}
+      {{- end -}}
+    </title>
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container" style="display:flex; align-items:center; gap:1rem; justify-content:space-between;">
+        <a href="{{ "/" | relLangURL }}" aria-label="{{ .Site.Title }}" style="display:flex; align-items:center; gap:.75rem;">
+          <img src="/img/logo.svg" alt="{{ .Site.Title }}" style="height:32px; width:auto;">
+        </a>
+
+        <!-- Language switcher - links on desktop, dropdown on mobile -->
+        <nav class="lang-desktop" style="margin-left:auto; margin-right:1rem; display:flex; gap:.75rem;">
+          <a href="/en/" {{ if eq .Site.Language.Lang "en" }}class="active"{{ end }}>EN</a>
+          <a href="/de/" {{ if eq .Site.Language.Lang "de" }}class="active"{{ end }}>DE</a>
+          <a href="/es/" {{ if eq .Site.Language.Lang "es" }}class="active"{{ end }}>ES</a>
+          <a href="/it/" {{ if eq .Site.Language.Lang "it" }}class="active"{{ end }}>IT</a>
+          <a href="/fr/" {{ if eq .Site.Language.Lang "fr" }}class="active"{{ end }}>FR</a>
+          <a href="/ca/" {{ if eq .Site.Language.Lang "ca" }}class="active"{{ end }}>CA</a>
+        </nav>
+        <select class="lang-mobile" onchange="if(this.value) window.location.href=this.value" style="margin-left:auto; margin-right:1rem; padding:0.5rem; border-radius:5px; border:1px solid #dee2e6; background:white; cursor:pointer; display:none;">
+          <option value="/en/" {{ if eq .Site.Language.Lang "en" }}selected{{ end }}>EN</option>
+          <option value="/de/" {{ if eq .Site.Language.Lang "de" }}selected{{ end }}>DE</option>
+          <option value="/es/" {{ if eq .Site.Language.Lang "es" }}selected{{ end }}>ES</option>
+          <option value="/it/" {{ if eq .Site.Language.Lang "it" }}selected{{ end }}>IT</option>
+          <option value="/fr/" {{ if eq .Site.Language.Lang "fr" }}selected{{ end }}>FR</option>
+          <option value="/ca/" {{ if eq .Site.Language.Lang "ca" }}selected{{ end }}>CA</option>
+        </select>
+
+        <!-- Buy Rescue Button -->
+        <a href="{{ if eq .Site.Language.Lang "en" }}https://mallorcacycleshuttle.company.site/products/{{ else if eq .Site.Language.Lang "de" }}https://mallorcacycleshuttle.company.site/de/products/{{ else if eq .Site.Language.Lang "es" }}https://mallorcacycleshuttle.company.site/es/products/{{ else if eq .Site.Language.Lang "it" }}https://mallorcacycleshuttle.company.site/it/products/{{ else if eq .Site.Language.Lang "fr" }}https://mallorcacycleshuttle.company.site/fr/products/{{ else if eq .Site.Language.Lang "ca" }}https://mallorcacycleshuttle.company.site/ca/products/{{ end }}"
+           style="background:#f00000; color:white; padding:0.5rem 1rem; border-radius:5px; text-decoration:none; font-weight:600; white-space:nowrap;">
+          {{ i18n "buy_rescue" }}
+        </a>
+      </div>
+    </header>
+
+    <main>
+      {{ block "main" . }}{{ .Content }}{{ end }}
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid" style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:3rem;">
+        <div class="small footer-contact">
+          <strong>{{ i18n "contact" }}</strong><br>
+          Mallorca Bicycle Rescue · <a href="mailto:admin@mallorcacycleshuttle.com">admin@mallorcacycleshuttle.com</a><br/>
+          Autocares Devesa SL CIF B08359606<br/>
+          Calle Fuster 36 a, 07460 Pollença<br/>
+          © {{ now.Year }} Mallorca Bicycle Rescue
+        </div>
+
+        <div class="footer-logo" style="display:flex; align-items:center; justify-content:center;">
+          <a href="https://mallorcacycleshuttle.com" target="_blank" rel="noopener noreferrer">
+            <img src="/img/MCScategoryslanted.png" alt="Mallorca Cycle Shuttle" style="max-width:200px; height:auto;">
+          </a>
+        </div>
+
+        <div class="small footer-legal">
+          <strong>{{ i18n "legal" }}</strong><br>
+          {{ with .Site.Menus.legal }}
+            {{ range . }}
+              <a href="{{ .URL | relLangURL }}">{{ .Name }}</a><br/>
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </footer>
+
+    {{/* Cookie Consent Banner */}}
+    {{ partial "cookie-consent.html" . }}
+    {{ partial "cookie-consent-script.html" . }}
+  </body>
+</html>

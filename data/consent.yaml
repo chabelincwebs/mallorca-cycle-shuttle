@@ -1,0 +1,59 @@
+categories:
+  functional:
+    name:
+      en: "Functional"
+      de: "Funktional"
+      es: "Funcionales"
+    description:
+      en: "Essential cookies for basic website functionality"
+      de: "Notwendige Cookies für grundlegende Website-Funktionen"
+      es: "Cookies esenciales para la funcionalidad básica del sitio web"
+    required: true
+    scripts:
+      # Example: Add your functional scripts here
+      # - src: "/js/essential.js"
+      #   async: true
+
+  analytics:
+    name:
+      en: "Analytics"
+      de: "Analytik"
+      es: "Analíticas"
+    description:
+      en: "Cookies that help us understand how visitors use our website"
+      de: "Cookies, die uns helfen zu verstehen, wie Besucher unsere Website nutzen"
+      es: "Cookies que nos ayudan a comprender cómo los visitantes usan nuestro sitio web"
+    required: false
+    scripts:
+      # Example: Google Analytics
+      # - src: "https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
+      #   async: true
+      # - inline: |
+      #     window.dataLayer = window.dataLayer || [];
+      #     function gtag(){dataLayer.push(arguments);}
+      #     gtag('js', new Date());
+      #     gtag('config', 'GA_MEASUREMENT_ID');
+
+  marketing:
+    name:
+      en: "Marketing"
+      de: "Marketing"
+      es: "Marketing"
+    description:
+      en: "Cookies used to deliver personalized advertisements"
+      de: "Cookies zur Bereitstellung personalisierter Werbung"
+      es: "Cookies utilizadas para ofrecer anuncios personalizados"
+    required: false
+    scripts:
+      # Example: Facebook Pixel
+      # - inline: |
+      #     !function(f,b,e,v,n,t,s)
+      #     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      #     n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      #     if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      #     n.queue=[];t=b.createElement(e);t.async=!0;
+      #     t.src=v;s=b.getElementsByTagName(e)[0];
+      #     s.parentNode.insertBefore(t,s)}(window, document,'script',
+      #     'https://connect.facebook.net/en_US/fbevents.js');
+      #     fbq('init', 'YOUR_PIXEL_ID');
+      #     fbq('track', 'PageView');

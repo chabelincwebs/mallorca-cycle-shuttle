@@ -1,0 +1,20 @@
+﻿<!doctype html>
+<html lang="{{ .Site.Language.Lang }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}</title>
+    {{ with .Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!-- Plain static CSS to avoid CDN/pipeline issues -->
+    <link rel="stylesheet" href="/css/main.css" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{ .Title }}" />
+    {{ with .Params.description }}<meta property="og:description" content="{{ . }}" />{{ end }}
+    <meta property="og:url" content="{{ .Permalink }}" />
+    <link rel="canonical" href="{{ .Permalink }}" />
+  </head>

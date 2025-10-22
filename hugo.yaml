@@ -1,0 +1,138 @@
+﻿baseURL: "https://tramuntanacycling.com"
+title: "Mallorca Cycle Shuttle"
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: true
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    contentDir: content/en
+    menus:
+      main:
+        - name: "Rescue T&C's"
+          url: "/sale-terms/"
+          weight: 1
+      legal:
+        - name: "Legal Notice"
+          url: "/legal-notice/"
+          weight: 1
+        - name: "Cookie Policy"
+          url: "/cookie-policy/"
+          weight: 2
+        - name: "Privacy Policy"
+          url: "/privacy-policy/"
+          weight: 3
+        - name: "Terms & Conditions of Sale"
+          url: "/sale-terms/"
+          weight: 4
+  de:
+    languageName: "Deutsch"
+    weight: 2
+    contentDir: content/de
+    menus:
+      main:
+        - name: "Rettungs-AGB"
+          url: "/verkaufsbedingungen/"
+          weight: 1
+      legal:
+        - name: "Impressum"
+          url: "/rechtlicher-hinweis/"
+          weight: 1
+        - name: "Cookie-Richtlinie"
+          url: "/cookie-richtlinie/"
+          weight: 2
+        - name: "Datenschutzerklärung"
+          url: "/datenschutzerklarung/"
+          weight: 3
+        - name: "Allg. Verkaufsbedingungen"
+          url: "/verkaufsbedingungen/"
+          weight: 4
+  es:
+    languageName: "Español"
+    weight: 3
+    contentDir: content/es
+    menus:
+      main:
+        - name: "Condiciones del rescate"
+          url: "/condiciones-de-venta/"
+          weight: 1
+      legal:
+        - name: "Aviso legal"
+          url: "/aviso-legal/"
+          weight: 1
+        - name: "Política de cookies"
+          url: "/politica-de-cookies/"
+          weight: 2
+        - name: "Política de privacidad"
+          url: "/politica-de-privacidad/"
+          weight: 3
+        - name: "Condiciones de venta"
+          url: "/condiciones-de-venta/"
+          weight: 4
+  it:
+    languageName: "Italiano"
+    weight: 4
+    contentDir: content/it
+    menus:
+      main:
+        - name: "Termini e Condizioni di Soccorso"
+          url: "/termini-di-vendita/"
+          weight: 1
+      legal:
+        - name: "Avviso Legale"
+          url: "/avviso-legale/"
+          weight: 1
+        - name: "Politica sui Cookie"
+          url: "/politica-sui-cookie/"
+          weight: 2
+        - name: "Informativa sulla Privacy"
+          url: "/informativa-sulla-privacy/"
+          weight: 3
+        - name: "Termini e Condizioni di Vendita"
+          url: "/termini-di-vendita/"
+          weight: 4
+  fr:
+    languageName: "Français"
+    weight: 5
+    contentDir: content/fr
+    menus:
+      main:
+        - name: "Conditions générales du service de secours"
+          url: "/conditions-de-vente/"
+          weight: 1
+      legal:
+        - name: "Mentions Légales"
+          url: "/mentions-legales/"
+          weight: 1
+        - name: "Politique de Cookies"
+          url: "/politique-de-cookies/"
+          weight: 2
+        - name: "Politique de Confidentialité"
+          url: "/politique-de-confidentialite/"
+          weight: 3
+        - name: "Conditions Générales de Vente"
+          url: "/conditions-de-vente/"
+          weight: 4
+  ca:
+    languageName: "Català"
+    weight: 6
+    contentDir: content/ca
+    menus:
+      main:
+        - name: "Termes i Condicions del Servei de Rescat"
+          url: "/condicions-de-venda/"
+          weight: 1
+      legal:
+        - name: "Avís Legal"
+          url: "/avis-legal/"
+          weight: 1
+        - name: "Política de Cookies"
+          url: "/politica-de-cookies/"
+          weight: 2
+        - name: "Política de Privadesa"
+          url: "/politica-de-privadesa/"
+          weight: 3
+        - name: "Condicions de Venda"
+          url: "/condicions-de-venda/"
+          weight: 4
