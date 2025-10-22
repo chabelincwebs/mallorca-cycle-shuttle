@@ -222,6 +222,52 @@ main { overflow-x: hidden; }
   color: var(--brand);
 }
 
+/* Submenu Styles */
+.menu-item-with-submenu {
+  position: relative;
+  border-bottom: 1px solid #eee;
+}
+
+.menu-parent {
+  display: block;
+  padding: 15px 20px;
+  color: var(--text);
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.menu-item-with-submenu:hover .menu-parent {
+  background: #f5f5f5;
+  color: var(--brand);
+}
+
+.submenu {
+  display: none;
+  background: #fafafa;
+  padding-left: 20px;
+}
+
+.menu-item-with-submenu:hover .submenu {
+  display: block;
+}
+
+.submenu a {
+  padding: 12px 20px;
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 1rem;
+  display: block;
+  transition: background 0.2s ease;
+}
+
+.submenu a:hover {
+  background: #f0f0f0;
+  color: var(--brand);
+  padding-left: 25px;
+}
+
 /* Overlay when menu is open */
 .menu-overlay {
   display: none;
