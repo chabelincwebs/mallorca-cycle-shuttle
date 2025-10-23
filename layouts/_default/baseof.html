@@ -26,41 +26,48 @@
     <div class="menu-overlay" id="menu-overlay"></div>
 
     <header class="header">
-      <div class="container" style="display:flex; align-items:center; gap:1rem; justify-content:space-between;">
-        <!-- Hamburger Menu Button -->
-        <button class="hamburger" id="hamburger-btn" aria-label="Toggle menu" style="border:none; cursor:pointer;">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+      <div class="header-container">
+        <div class="header-left">
+          <!-- Hamburger Menu Button -->
+          <button class="hamburger" id="hamburger-btn" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
 
-        <a href="{{ "/" | relLangURL }}" aria-label="{{ .Site.Title }}" style="display:flex; align-items:center; gap:.75rem;">
-          <img src="/img/logo.svg" alt="{{ .Site.Title }}" style="height:32px; width:auto;">
-        </a>
+          <!-- Logo -->
+          <a href="{{ "/" | relLangURL }}" class="header-logo" aria-label="{{ .Site.Title }}">
+            <img src="/img/logo.svg" alt="{{ .Site.Title }}">
+          </a>
+        </div>
 
-        <!-- Language switcher - links on desktop, dropdown on mobile -->
-        <nav class="lang-desktop" style="margin-left:auto; margin-right:1rem; display:flex; gap:.75rem;">
-          <a href="/en/" {{ if eq .Site.Language.Lang "en" }}class="active"{{ end }}>EN</a>
-          <a href="/de/" {{ if eq .Site.Language.Lang "de" }}class="active"{{ end }}>DE</a>
-          <a href="/es/" {{ if eq .Site.Language.Lang "es" }}class="active"{{ end }}>ES</a>
-          <a href="/it/" {{ if eq .Site.Language.Lang "it" }}class="active"{{ end }}>IT</a>
-          <a href="/fr/" {{ if eq .Site.Language.Lang "fr" }}class="active"{{ end }}>FR</a>
-          <a href="/ca/" {{ if eq .Site.Language.Lang "ca" }}class="active"{{ end }}>CA</a>
-        </nav>
-        <select class="lang-mobile" onchange="if(this.value) window.location.href=this.value" style="margin-left:auto; margin-right:1rem; padding:0.5rem; border-radius:5px; border:1px solid #dee2e6; background:white; cursor:pointer; display:none;">
-          <option value="/en/" {{ if eq .Site.Language.Lang "en" }}selected{{ end }}>EN</option>
-          <option value="/de/" {{ if eq .Site.Language.Lang "de" }}selected{{ end }}>DE</option>
-          <option value="/es/" {{ if eq .Site.Language.Lang "es" }}selected{{ end }}>ES</option>
-          <option value="/it/" {{ if eq .Site.Language.Lang "it" }}selected{{ end }}>IT</option>
-          <option value="/fr/" {{ if eq .Site.Language.Lang "fr" }}selected{{ end }}>FR</option>
-          <option value="/ca/" {{ if eq .Site.Language.Lang "ca" }}selected{{ end }}>CA</option>
-        </select>
+        <div class="header-right">
+          <!-- Language Switcher - Desktop -->
+          <nav class="lang-desktop">
+            <a href="/en/" {{ if eq .Site.Language.Lang "en" }}class="lang-link active"{{ else }}class="lang-link"{{ end }}>EN</a>
+            <a href="/de/" {{ if eq .Site.Language.Lang "de" }}class="lang-link active"{{ else }}class="lang-link"{{ end }}>DE</a>
+            <a href="/es/" {{ if eq .Site.Language.Lang "es" }}class="lang-link active"{{ else }}class="lang-link"{{ end }}>ES</a>
+            <a href="/it/" {{ if eq .Site.Language.Lang "it" }}class="lang-link active"{{ else }}class="lang-link"{{ end }}>IT</a>
+            <a href="/fr/" {{ if eq .Site.Language.Lang "fr" }}class="lang-link active"{{ else }}class="lang-link"{{ end }}>FR</a>
+            <a href="/ca/" {{ if eq .Site.Language.Lang "ca" }}class="lang-link active"{{ else }}class="lang-link"{{ end }}>CA</a>
+          </nav>
 
-        <!-- Buy Rescue Button -->
-        <a href="{{ if eq .Site.Language.Lang "en" }}https://mallorcacycleshuttle.company.site/products/{{ else if eq .Site.Language.Lang "de" }}https://mallorcacycleshuttle.company.site/de/products/{{ else if eq .Site.Language.Lang "es" }}https://mallorcacycleshuttle.company.site/es/products/{{ else if eq .Site.Language.Lang "it" }}https://mallorcacycleshuttle.company.site/it/products/{{ else if eq .Site.Language.Lang "fr" }}https://mallorcacycleshuttle.company.site/fr/products/{{ else if eq .Site.Language.Lang "ca" }}https://mallorcacycleshuttle.company.site/ca/products/{{ end }}"
-           style="background:#f00000; color:white; padding:0.5rem 1rem; border-radius:5px; text-decoration:none; font-weight:600; white-space:nowrap;">
-          {{ i18n "buy_rescue" }}
-        </a>
+          <!-- Language Switcher - Mobile -->
+          <select class="lang-mobile" onchange="if(this.value) window.location.href=this.value">
+            <option value="/en/" {{ if eq .Site.Language.Lang "en" }}selected{{ end }}>EN</option>
+            <option value="/de/" {{ if eq .Site.Language.Lang "de" }}selected{{ end }}>DE</option>
+            <option value="/es/" {{ if eq .Site.Language.Lang "es" }}selected{{ end }}>ES</option>
+            <option value="/it/" {{ if eq .Site.Language.Lang "it" }}selected{{ end }}>IT</option>
+            <option value="/fr/" {{ if eq .Site.Language.Lang "fr" }}selected{{ end }}>FR</option>
+            <option value="/ca/" {{ if eq .Site.Language.Lang "ca" }}selected{{ end }}>CA</option>
+          </select>
+
+          <!-- Buy Rescue Button -->
+          <a href="{{ if eq .Site.Language.Lang "en" }}https://mallorcacycleshuttle.company.site/products/{{ else if eq .Site.Language.Lang "de" }}https://mallorcacycleshuttle.company.site/de/products/{{ else if eq .Site.Language.Lang "es" }}https://mallorcacycleshuttle.company.site/es/products/{{ else if eq .Site.Language.Lang "it" }}https://mallorcacycleshuttle.company.site/it/products/{{ else if eq .Site.Language.Lang "fr" }}https://mallorcacycleshuttle.company.site/fr/products/{{ else if eq .Site.Language.Lang "ca" }}https://mallorcacycleshuttle.company.site/ca/products/{{ end }}"
+             class="header-cta-btn">
+            {{ i18n "buy_rescue" }}
+          </a>
+        </div>
       </div>
 
       <!-- Mobile Navigation Menu -->
@@ -166,28 +173,133 @@
     </main>
 
     <footer class="footer">
-      <div class="container footer-grid" style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:3rem;">
-        <div class="small footer-contact">
-          <strong>{{ i18n "contact" }}</strong><br>
-          Mallorca Bicycle Rescue · <a href="mailto:admin@mallorcacycleshuttle.com">admin@mallorcacycleshuttle.com</a><br/>
-          Autocares Devesa SL CIF B08359606<br/>
-          Calle Fuster 36 a, 07460 Pollença<br/>
-          © {{ now.Year }} Mallorca Bicycle Rescue
+      <div class="footer-accent"></div>
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Column 1: About -->
+          <div class="footer-column">
+            <h4 class="footer-heading">{{ if eq .Site.Language.Lang "en" }}About Us{{ else if eq .Site.Language.Lang "de" }}Über uns{{ else if eq .Site.Language.Lang "es" }}Sobre Nosotros{{ else if eq .Site.Language.Lang "it" }}Chi Siamo{{ else if eq .Site.Language.Lang "fr" }}À Propos{{ else if eq .Site.Language.Lang "ca" }}Sobre Nosaltres{{ end }}</h4>
+            <p class="footer-text">{{ if eq .Site.Language.Lang "en" }}Your trusted partner for cycling adventures in Mallorca's stunning Tramuntana mountains.{{ else if eq .Site.Language.Lang "de" }}Ihr zuverlässiger Partner für Radabenteuer in Mallorcas atemberaubender Tramuntana.{{ else if eq .Site.Language.Lang "es" }}Tu socio de confianza para aventuras ciclistas en la impresionante Tramuntana de Mallorca.{{ else if eq .Site.Language.Lang "it" }}Il tuo partner di fiducia per avventure ciclistiche nella splendida Tramuntana di Maiorca.{{ else if eq .Site.Language.Lang "fr" }}Votre partenaire de confiance pour les aventures cyclistes dans la magnifique Tramuntana de Majorque.{{ else if eq .Site.Language.Lang "ca" }}El teu soci de confiança per a aventures ciclistes a la impressionant Tramuntana de Mallorca.{{ end }}</p>
+            <p class="footer-text"><strong>Autocares Devesa SL</strong><br>CIF B08359606</p>
+          </div>
+
+          <!-- Column 2: Services -->
+          <div class="footer-column">
+            <h4 class="footer-heading">{{ if eq .Site.Language.Lang "en" }}Services{{ else if eq .Site.Language.Lang "de" }}Dienstleistungen{{ else if eq .Site.Language.Lang "es" }}Servicios{{ else if eq .Site.Language.Lang "it" }}Servizi{{ else if eq .Site.Language.Lang "fr" }}Services{{ else if eq .Site.Language.Lang "ca" }}Serveis{{ end }}</h4>
+            <ul class="footer-links">
+              {{ if eq .Site.Language.Lang "en" }}
+              <li><a href="/en/bike-rescue/rescue-home/">Bike Rescue Service</a></li>
+              <li><a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Scheduled Shuttles</a></li>
+              <li><a href="/en/mallorca-airport-transfers/">Airport Transfers</a></li>
+              {{ else if eq .Site.Language.Lang "de" }}
+              <li><a href="/de/bike-rescue/rescue-home/">Fahrrad-Rettungsdienst</a></li>
+              <li><a href="https://mallorcacycleshuttle.company.site/de/products/Scheduled-Bike-Buses-c15728235" target="_blank">Geplante Shuttles</a></li>
+              <li><a href="/de/mallorca-flughafentransfers/">Flughafentransfers</a></li>
+              {{ else if eq .Site.Language.Lang "es" }}
+              <li><a href="/es/bike-rescue/rescue-home/">Servicio de Rescate</a></li>
+              <li><a href="https://mallorcacycleshuttle.company.site/es/products/Scheduled-Bike-Buses-c15728235" target="_blank">Shuttles Programados</a></li>
+              <li><a href="/es/traslados-aeropuerto-mallorca/">Traslados Aeropuerto</a></li>
+              {{ else if eq .Site.Language.Lang "it" }}
+              <li><a href="/it/soccorso-ciclisti/home-soccorso/">Servizio di Soccorso</a></li>
+              <li><a href="https://mallorcacycleshuttle.company.site/it/products/Scheduled-Bike-Buses-c15728235" target="_blank">Shuttle Programmati</a></li>
+              <li><a href="/it/transfer-aeroporto-mallorca/">Transfer Aeroporto</a></li>
+              {{ else if eq .Site.Language.Lang "fr" }}
+              <li><a href="/fr/bike-rescue/rescue-home/">Service de Secours</a></li>
+              <li><a href="https://mallorcacycleshuttle.company.site/fr/products/Scheduled-Bike-Buses-c15728235" target="_blank">Navettes Programmées</a></li>
+              <li><a href="/fr/transferts-aeroport-mallorca/">Transferts Aéroport</a></li>
+              {{ else if eq .Site.Language.Lang "ca" }}
+              <li><a href="/ca/rescat-ciclistes/inici-rescat/">Servei de Rescat</a></li>
+              <li><a href="https://mallorcacycleshuttle.company.site/ca/products/Scheduled-Bike-Buses-c15728235" target="_blank">Shuttles Programats</a></li>
+              <li><a href="/ca/trasllats-aeroport-mallorca/">Trasllats Aeroport</a></li>
+              {{ end }}
+            </ul>
+          </div>
+
+          <!-- Column 3: Resources -->
+          <div class="footer-column">
+            <h4 class="footer-heading">{{ if eq .Site.Language.Lang "en" }}Cycling Guides{{ else if eq .Site.Language.Lang "de" }}Radführer{{ else if eq .Site.Language.Lang "es" }}Guías Ciclistas{{ else if eq .Site.Language.Lang "it" }}Guide Ciclistiche{{ else if eq .Site.Language.Lang "fr" }}Guides Cyclistes{{ else if eq .Site.Language.Lang "ca" }}Guies Ciclistes{{ end }}</h4>
+            <ul class="footer-links">
+              {{ if eq .Site.Language.Lang "en" }}
+              <li><a href="/en/bike-shuttle/andratx-pollenca-guide/">Andratx-Pollença Guide</a></li>
+              <li><a href="/en/bike-shuttle/big-daddy-challenge/">Big Daddy Challenge</a></li>
+              <li><a href="/en/bike-shuttle/sa-calobra-guide/">Sa Calobra Guide</a></li>
+              <li><a href="/en/about/blog/">Blog</a></li>
+              {{ else if eq .Site.Language.Lang "de" }}
+              <li><a href="/de/bike-shuttle/andratx-pollenca-leitfaden/">Andratx-Pollença Leitfaden</a></li>
+              <li><a href="/de/bike-shuttle/big-daddy-challenge/">Big Daddy Challenge</a></li>
+              <li><a href="/de/bike-shuttle/sa-calobra-leitfaden/">Sa Calobra Leitfaden</a></li>
+              <li><a href="/de/about/blog/">Blog</a></li>
+              {{ else if eq .Site.Language.Lang "es" }}
+              <li><a href="/es/bike-shuttle/guia-andratx-pollenca/">Guía Andratx-Pollença</a></li>
+              <li><a href="/es/bike-shuttle/big-daddy-challenge/">Big Daddy Challenge</a></li>
+              <li><a href="/es/bike-shuttle/guia-sa-calobra/">Guía Sa Calobra</a></li>
+              <li><a href="/es/about/blog/">Blog</a></li>
+              {{ else if eq .Site.Language.Lang "it" }}
+              <li><a href="/it/shuttle-bici/guida-andratx-pollenca/">Guida Andratx-Pollença</a></li>
+              <li><a href="/it/shuttle-bici/big-daddy-challenge/">Big Daddy Challenge</a></li>
+              <li><a href="/it/shuttle-bici/guida-sa-calobra/">Guida Sa Calobra</a></li>
+              <li><a href="/it/chi-siamo/blog/">Blog</a></li>
+              {{ else if eq .Site.Language.Lang "fr" }}
+              <li><a href="/fr/bike-shuttle/guide-andratx-pollenca/">Guide Andratx-Pollença</a></li>
+              <li><a href="/fr/bike-shuttle/defi-big-daddy/">Défi Big Daddy</a></li>
+              <li><a href="/fr/bike-shuttle/guide-sa-calobra/">Guide Sa Calobra</a></li>
+              <li><a href="/fr/about/blog/">Blog</a></li>
+              {{ else if eq .Site.Language.Lang "ca" }}
+              <li><a href="/ca/shuttle-bici/guia-andratx-pollenca/">Guia Andratx-Pollença</a></li>
+              <li><a href="/ca/shuttle-bici/big-daddy-challenge/">Big Daddy Challenge</a></li>
+              <li><a href="/ca/shuttle-bici/guia-sa-calobra/">Guia Sa Calobra</a></li>
+              <li><a href="/ca/sobre/blog/">Blog</a></li>
+              {{ end }}
+            </ul>
+          </div>
+
+          <!-- Column 4: Contact & Social -->
+          <div class="footer-column">
+            <h4 class="footer-heading">{{ i18n "contact" }}</h4>
+            <ul class="footer-links footer-contact-list">
+              <li>
+                <svg class="footer-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+                </svg>
+                <a href="mailto:admin@mallorcacycleshuttle.com">admin@mallorcacycleshuttle.com</a>
+              </li>
+              <li>
+                <svg class="footer-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                </svg>
+                <span>Calle Fuster 36 a<br>07460 Pollença, Mallorca</span>
+              </li>
+            </ul>
+            <div class="footer-social">
+              <h5 class="footer-social-heading">{{ if eq .Site.Language.Lang "en" }}Follow Us{{ else if eq .Site.Language.Lang "de" }}Folgen Sie uns{{ else if eq .Site.Language.Lang "es" }}Síguenos{{ else if eq .Site.Language.Lang "it" }}Seguici{{ else if eq .Site.Language.Lang "fr" }}Suivez-nous{{ else if eq .Site.Language.Lang "ca" }}Segueix-nos{{ end }}</h5>
+              <div class="footer-social-links">
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                  </svg>
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="footer-logo" style="display:flex; align-items:center; justify-content:center;">
-          <a href="https://mallorcacycleshuttle.com" target="_blank" rel="noopener noreferrer">
-            <img src="/img/MCScategoryslanted.png" alt="Mallorca Cycle Shuttle" style="max-width:200px; height:auto;">
-          </a>
-        </div>
-
-        <div class="small footer-legal">
-          <strong>{{ i18n "legal" }}</strong><br>
-          {{ with .Site.Menus.legal }}
-            {{ range . }}
-              <a href="{{ .URL | relLangURL }}">{{ .Name }}</a><br/>
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <div class="footer-bottom-left">
+            <p>© {{ now.Year }} Mallorca Bicycle Rescue. {{ if eq .Site.Language.Lang "en" }}All rights reserved.{{ else if eq .Site.Language.Lang "de" }}Alle Rechte vorbehalten.{{ else if eq .Site.Language.Lang "es" }}Todos los derechos reservados.{{ else if eq .Site.Language.Lang "it" }}Tutti i diritti riservati.{{ else if eq .Site.Language.Lang "fr" }}Tous droits réservés.{{ else if eq .Site.Language.Lang "ca" }}Tots els drets reservats.{{ end }}</p>
+          </div>
+          <div class="footer-bottom-right">
+            {{ with .Site.Menus.legal }}
+              {{ range $index, $element := . }}
+                {{ if $index }} · {{ end }}<a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+              {{ end }}
             {{ end }}
-          {{ end }}
+          </div>
         </div>
       </div>
     </footer>
