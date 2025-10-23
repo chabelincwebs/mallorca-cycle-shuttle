@@ -136,3 +136,8 @@ languages:
         - name: "Condicions de Venda"
           url: "/bike-rescue/rescue-sale-terms/"
           weight: 4
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
