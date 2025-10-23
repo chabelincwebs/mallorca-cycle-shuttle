@@ -6,11 +6,15 @@ description: "Complete guide for cycling from Andratx to Pollença through the T
 Choose from our carefully curated routes connecting Port d'Andratx and Port de Pollença through Mallorca's stunning Tramuntana mountains.
 
 <!-- INFO CARDS GRID -->
+<div class="info-cards-wrapper">
 <div class="info-cards-grid">
   <div class="info-card" onclick="toggleCard(this)">
     <div class="info-card-header">
-      <h3>📸 Snapshot</h3>
-      <span class="card-toggle">+</span>
+      <div class="info-card-header-top">
+        <span style="font-size: 1.5rem;">📸</span>
+        <span class="card-toggle">+</span>
+      </div>
+      <h3>Snapshot</h3>
     </div>
     <div class="info-card-content">
       <p><strong>Why this route:</strong> Coast-to-coast through the Tramuntana on the MA-10 – Mallorca's best day on a bike. Probably your best day on a bike. Ever.</p>
@@ -22,8 +26,11 @@ Choose from our carefully curated routes connecting Port d'Andratx and Port de P
 
   <div class="info-card" onclick="toggleCard(this)">
     <div class="info-card-header">
-      <h3>⛰️ Key Climbs & Sections</h3>
-      <span class="card-toggle">+</span>
+      <div class="info-card-header-top">
+        <span style="font-size: 1.5rem;">🔑</span>
+        <span class="card-toggle">+</span>
+      </div>
+      <h3>Key Sections</h3>
     </div>
     <div class="info-card-content">
       <p><strong>Puig Major (from Sóller):</strong> 14 km @ 6.2%, ~828 m. Long, steady; tunnel(s) then aqueduct.</p>
@@ -37,8 +44,11 @@ Choose from our carefully curated routes connecting Port d'Andratx and Port de P
 
   <div class="info-card" onclick="toggleCard(this)">
     <div class="info-card-header">
-      <h3>☕ Café/Refuel Stops</h3>
-      <span class="card-toggle">+</span>
+      <div class="info-card-header-top">
+        <span style="font-size: 1.5rem;">☕</span>
+        <span class="card-toggle">+</span>
+      </div>
+      <h3>Café/Refuel Stops</h3>
     </div>
     <div class="info-card-content">
       <p><strong>Es Grau (≈13 km):</strong> Balcony views over the cliffs; quick coffee.</p>
@@ -55,8 +65,11 @@ Choose from our carefully curated routes connecting Port d'Andratx and Port de P
 
   <div class="info-card" onclick="toggleCard(this)">
     <div class="info-card-header">
-      <h3>💡 Good to Know</h3>
-      <span class="card-toggle">+</span>
+      <div class="info-card-header-top">
+        <span style="font-size: 1.5rem;">💡</span>
+        <span class="card-toggle">+</span>
+      </div>
+      <h3>Good to Know</h3>
     </div>
     <div class="info-card-content">
       <ul>
@@ -77,8 +90,11 @@ Choose from our carefully curated routes connecting Port d'Andratx and Port de P
 
   <div class="info-card" onclick="toggleCard(this)">
     <div class="info-card-header">
-      <h3>📅 Booking & Schedule</h3>
-      <span class="card-toggle">+</span>
+      <div class="info-card-header-top">
+        <span style="font-size: 1.5rem;">📅</span>
+        <span class="card-toggle">+</span>
+      </div>
+      <h3>Schedule</h3>
     </div>
     <div class="info-card-content">
       <p>Use the bike bus to Port d'Andratx from Port de Pollença/Alcúdia (and vice-versa the other way).</p>
@@ -88,8 +104,11 @@ Choose from our carefully curated routes connecting Port d'Andratx and Port de P
 
   <div class="info-card" onclick="toggleCard(this)">
     <div class="info-card-header">
-      <h3>⭐ Social Proof</h3>
-      <span class="card-toggle">+</span>
+      <div class="info-card-header-top">
+        <span style="font-size: 1.5rem;">⭐</span>
+        <span class="card-toggle">+</span>
+      </div>
+      <h3>Social Proof</h3>
     </div>
     <div class="info-card-content">
       <p><strong>"18 Swedish ladies" testimonial (2016):</strong> 162 km Big Daddy day called "best ever day on a bike" – loved Canonge, Valldemossa, Sa Calobra; tunnels lit; fast finish to Pollença. Returning the next season.</p>
@@ -99,8 +118,11 @@ Choose from our carefully curated routes connecting Port d'Andratx and Port de P
 
   <div class="info-card" onclick="toggleCard(this)">
     <div class="info-card-header">
-      <h3>📊 Key Stats</h3>
-      <span class="card-toggle">+</span>
+      <div class="info-card-header-top">
+        <span style="font-size: 1.5rem;">📊</span>
+        <span class="card-toggle">+</span>
+      </div>
+      <h3>Key Stats</h3>
     </div>
     <div class="info-card-content">
       <p><strong>Signature climb:</strong> Puig Major from Sóller (southbound) – 14 km @ 6.2% (≈828 m).</p>
@@ -110,8 +132,11 @@ Choose from our carefully curated routes connecting Port d'Andratx and Port de P
 
   <div class="info-card" onclick="toggleCard(this)">
     <div class="info-card-header">
-      <h3>📷 Optional Memory Maker</h3>
-      <span class="card-toggle">+</span>
+      <div class="info-card-header-top">
+        <span style="font-size: 1.5rem;">📷</span>
+        <span class="card-toggle">+</span>
+      </div>
+      <h3>Memory Maker!</h3>
     </div>
     <div class="info-card-content">
       <p><strong>Port de Valldemossa:</strong> Mini & maybe better? version of Sa Calobra (down & back).</p>
@@ -120,8 +145,11 @@ Choose from our carefully curated routes connecting Port d'Andratx and Port de P
 
   <div class="info-card" onclick="toggleCard(this)">
     <div class="info-card-header">
-      <h3>🍊 Quick Fuel Tips</h3>
-      <span class="card-toggle">+</span>
+      <div class="info-card-header-top">
+        <span style="font-size: 1.5rem;">🍰</span>
+        <span class="card-toggle">+</span>
+      </div>
+      <h3>Quick Fuel Tips</h3>
     </div>
     <div class="info-card-content">
       <p><strong>Quick fuel to get you home:</strong> OJ shack at the aqueduct or Sa Bataia café/garage (going North), Estellencs (going South).</p>
@@ -129,19 +157,23 @@ Choose from our carefully curated routes connecting Port d'Andratx and Port de P
     </div>
   </div>
 </div>
+</div>
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 
 <style>
+/* Info Cards Wrapper */
+.info-cards-wrapper {
+  margin: 2rem 0 3rem 0;
+}
+
 /* Info Cards Grid */
 .info-cards-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
-  margin: 2rem 0 3rem 0;
-  position: relative;
 }
 
 @media (min-width: 768px) {
@@ -156,15 +188,24 @@ Choose from our carefully curated routes connecting Port d'Andratx and Port de P
   }
 }
 
+/* Hide all cards when one is expanded */
+.info-cards-grid.has-expanded .info-card {
+  display: none;
+}
+
+/* Show only the expanded card */
+.info-cards-grid.has-expanded .info-card.expanded {
+  display: block;
+}
+
 .info-card {
   background: white;
-  border: 1px solid #eee;
+  border: 2px solid #ddd;
   border-radius: 12px;
   overflow: hidden;
   transition: all 0.3s ease;
   cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-  position: relative;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .info-card:hover {
@@ -173,35 +214,15 @@ Choose from our carefully curated routes connecting Port d'Andratx and Port de P
 }
 
 .info-card.expanded {
-  position: relative;
-  z-index: 100;
   box-shadow: 0 8px 30px rgba(241,0,0,0.2);
   border-color: var(--brand);
-  grid-column: span 1;
-}
-
-@media (min-width: 768px) {
-  .info-card.expanded {
-    grid-column: span 2;
-  }
-}
-
-@media (min-width: 1024px) {
-  .info-card.expanded {
-    grid-column: 1 / -1; /* Span from first to last column */
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  .info-card.expanded {
-    grid-column: 1 / -1; /* Span from first to last column */
-  }
+  grid-column: 1 / -1;
 }
 
 .info-card-header {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 0.5rem;
   padding: 1.25rem;
   background: linear-gradient(135deg, #fafafa 0%, #fff 100%);
   user-select: none;
@@ -209,6 +230,12 @@ Choose from our carefully curated routes connecting Port d'Andratx and Port de P
 
 .info-card.expanded .info-card-header {
   background: linear-gradient(135deg, #fff5f5 0%, #fff 100%);
+}
+
+.info-card-header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .info-card-header h3 {
@@ -224,7 +251,6 @@ Choose from our carefully curated routes connecting Port d'Andratx and Port de P
   color: var(--brand);
   transition: transform 0.3s ease;
   flex-shrink: 0;
-  margin-left: 0.5rem;
 }
 
 .info-card.expanded .card-toggle {
@@ -928,6 +954,7 @@ path.route-polyline {
 // Toggle info card expansion
 function toggleCard(card) {
   const wasExpanded = card.classList.contains('expanded');
+  const grid = card.closest('.info-cards-grid');
 
   // Close all other cards
   document.querySelectorAll('.info-card.expanded').forEach(c => {
@@ -937,6 +964,9 @@ function toggleCard(card) {
   // Toggle this card
   if (!wasExpanded) {
     card.classList.add('expanded');
+    grid.classList.add('has-expanded');
+  } else {
+    grid.classList.remove('has-expanded');
   }
 }
 
