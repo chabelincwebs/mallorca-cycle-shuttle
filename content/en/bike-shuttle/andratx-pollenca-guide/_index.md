@@ -3,7 +3,11 @@ title: "Andratx to Pollença Master Cycling Guide"
 description: "Complete guide for cycling from Andratx to Pollença through the Tramuntana mountains"
 ---
 
-Choose from our carefully curated routes connecting Port d'Andratx and Port de Pollença through Mallorca's stunning Tramuntana mountains.
+Choose from our carefully curated routes connecting Port d'Andratx and Port de Pollença through Mallorca's stunning Unesco World Heritage Serra de Tramuntana mountains.
+
+We are not saying it is easy. We are not saying it is for everyone. We are saying that it is brilliant.
+
+Scenic with challenging climbs and sweeping descents, all on butter smooth tarmac. Regular café stops in stone villages. Cycling paradise.
 
 <!-- INFO CARDS GRID -->
 <div class="info-cards-wrapper">
@@ -17,10 +21,9 @@ Choose from our carefully curated routes connecting Port d'Andratx and Port de P
       <h3>Snapshot</h3>
     </div>
     <div class="info-card-content">
-      <p><strong>Why this route:</strong> Coast-to-coast through the Tramuntana on the MA-10 – Mallorca's best day on a bike. Probably your best day on a bike. Ever.</p>
-      <p><strong>How it works:</strong> Bus out, bike back. Take the bike bus to Andratx (or the reverse to Port de Pollença), ride one of the set routes back.</p>
-      <p><strong>Scheduled services:</strong> We take care of the logistics, you take care of relaxing into the best Mallorca has to offer. Book the <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank" rel="noopener noreferrer">scheduled bike bus to Port d'Andratx</a> (or the reverse to Port de Pollença) from any of the departure locations visible on the booking platform.</p>
-      <p><em>We are not saying it is easy. We are not saying it is for everyone. We are saying that it is brilliant.</em></p>
+      <p><strong>Why this route:</strong> Coast-to-coast through the Tramuntana mountain range along the coast on smooth tarmac – Mallorca's best day on a bike. Probably your best day on a bike. Ever.</p>
+      <p><strong>How it works:</strong> Bus out, bike back. Take the scheduled bike bus to Port d'Andratx (or the reverse to Port de Pollença), ride one of the suggested or your own custom route back.</p>
+      <p><strong>Scheduled services:</strong> We take care of the logistics, you take care of relaxing into the best Mallorca has to offer. Book the <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank" rel="noopener noreferrer">scheduled bike bus</a> from any of the departure locations on the booking platform.</p>
     </div>
   </div>
 
@@ -33,12 +36,15 @@ Choose from our carefully curated routes connecting Port d'Andratx and Port de P
       <h3>Key Sections</h3>
     </div>
     <div class="info-card-content">
-      <p><strong>Puig Major (from Sóller):</strong> 14 km @ 6.2%, ~828 m. Long, steady; tunnel(s) then aqueduct.</p>
+      <p><strong>Estellencs to Deià:</strong> Coastal beauty.</p>
+      <p><strong>Banyalbufar:</strong> Enough said.</p>
+      <p><strong>Puig Major (from Sóller):</strong> 14 km @ 6.2%, ~828 m. Long, steady; lit tunnel(s) then aqueduct.</p>
       <p><strong>Coll dels Reis / Sa Calobra:</strong> Optional add-on – descend to port, climb back; bucket-list hairpins.</p>
-      <p><strong>Port Valldemossa & Port des Canonge:</strong> Short, steep, scenic dead-end descents and returns; "mini Sa Calobra" feel.</p>
-      <p><strong>Coll de sa Bataia (from Lluc side):</strong> Leads to Caimari descent and lanes to the bay road.</p>
+      <p><strong>Port Valldemossa & Port des Canonge:</strong> Short, steep, scenic dead-end descents and returns; "mini Sa Calobra" feel without the traffic.</p>
+      <p><strong>Coll de Sa Bataia (from Lluc side):</strong> Leads to Caimari descent and lanes to the bay road.</p>
       <p><strong>Coll de Sóller (alt. line):</strong> Winding classic if avoiding the MA-10 high route.</p>
       <p><strong>Coll de Femenia (north side):</strong> Gateway climb leaving Pollença toward Lluc.</p>
+      <p><strong>Coll de Femenia (north side):</strong> Gateway F1 style descent from Lluc to Pollença.</p>
     </div>
   </div>
 
@@ -51,6 +57,7 @@ Choose from our carefully curated routes connecting Port d'Andratx and Port de P
       <h3>Café/Refuel Stops</h3>
     </div>
     <div class="info-card-content">
+      <p><em>km estimates from Andratx</em></p>
       <p><strong>Es Grau (≈13 km):</strong> Balcony views over the cliffs; quick coffee.</p>
       <p><strong>Estellencs (≈17 km):</strong> "Cafetería Estellencs" – Simple, handy, right on MA-10.</p>
       <p><strong>Banyalbufar (≈24 km):</strong> Son Tomás (range + views) or Bellavista (great views; watch the bikes).</p>
@@ -73,15 +80,14 @@ Choose from our carefully curated routes connecting Port d'Andratx and Port de P
     </div>
     <div class="info-card-content">
       <ul>
-        <li>Book for early in your trip as 1. your legs are still fresh & 2. Even with 308 days of sun each year, if weather causes a cancellation, you still have an alternate day.</li>
-        <li>Book in advance. Popular days sell out.</li>
-        <li>Arrive 10 minutes early for bike packing on the day.</li>
-        <li>It's an early start, plenty of places for breakfast, toilet on arrival.</li>
-        <li><strong>Rescue cover:</strong> <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank" rel="noopener noreferrer">Peace of mind</a>. Strongly advised. Bikes and bodies do sometimes break down.</li>
-        <li>This will be without a doubt your best day in Mallorca. Book it for early in your trip whilst your legs are freshest.</li>
+        <li>Book for early in your trip whilst legs are still fresh & even with 308 days of sun each year, if weather causes a cancellation, you still have an alternate day.</li>
         <li>Seats are limited. Book early.</li>
+        <li>This will be without a doubt your best day in Mallorca.</li>
+        <li>Arrive 10 minutes early for bike packing on the day.</li>
+        <li>It's an early start, plenty of places for breakfast, coffee, toilet on arrival.</li>
+        <li><strong>Rescue cover:</strong> <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank" rel="noopener noreferrer">Peace of mind</a>. Strongly advised. Bikes and bodies do sometimes break down.</li>
         <li>Safe loading of bikes in the trailers: Packed between mattresses – secure and safe.</li>
-        <li>Average return time is just over 6 hours plus stops.</li>
+        <li>Average return time is just over 6 hours plus stops on the vanilla (shortest) route.</li>
         <li>Cafe stops appear regularly, choices are never more than an hour apart.</li>
         <li>Regular fuelling is essential.</li>
       </ul>
@@ -97,7 +103,7 @@ Choose from our carefully curated routes connecting Port d'Andratx and Port de P
       <h3>Schedule</h3>
     </div>
     <div class="info-card-content">
-      <p>Use the bike bus to Port d'Andratx from Port de Pollença/Alcúdia (and vice-versa the other way).</p>
+      <p>Use the bike bus to Port d'Andratx from Port de Pollença/Alcúdia/Playa de Muro and from Peguera, Playa de Palma & Santa Ponsa to Port de Pollença.</p>
       <p><a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank" rel="noopener noreferrer" class="cta">View Schedule & Book →</a></p>
     </div>
   </div>
@@ -154,6 +160,8 @@ Choose from our carefully curated routes connecting Port d'Andratx and Port de P
     <div class="info-card-content">
       <p><strong>Quick fuel to get you home:</strong> OJ shack at the aqueduct or Sa Bataia café/garage (going North), Estellencs (going South).</p>
       <p><strong>Scenic fuel:</strong> Banyalbufar & Deià.</p>
+      <p><strong>Soller is approximately halfway.</strong></p>
+      <p><strong>Cafes are never more than an hour apart.</strong></p>
     </div>
   </div>
 </div>
