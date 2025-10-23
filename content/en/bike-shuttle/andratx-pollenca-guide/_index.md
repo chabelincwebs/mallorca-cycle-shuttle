@@ -301,43 +301,50 @@ Choose from our carefully curated routes connecting Port d'Andratx and Port de P
 /* Accordion Section Headers */
 .route-section {
   margin: 3rem 0 1.5rem 0;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #f8f8f8 0%, #fff 100%);
+  border-left: 4px solid var(--brand);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 .route-section h2 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
   color: var(--text);
-  position: sticky;
-  top: 70px;
-  background: var(--bg);
-  padding: 1rem 0;
-  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 
 /* Accordion Container */
 .route-accordion {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
-  margin: 1rem 0;
+  gap: 1rem;
+  margin: 1.5rem 0 3rem 0;
 }
 
 /* Accordion Item */
 .route-item {
-  border: 1px solid #eee;
-  border-radius: 8px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
   background: white;
   overflow: hidden;
-  transition: box-shadow 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .route-item:hover {
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  border-color: var(--brand);
+  transform: translateY(-2px);
 }
 
 .route-item.active {
   border-color: var(--brand);
-  box-shadow: 0 4px 12px rgba(241,0,0,0.1);
+  box-shadow: 0 8px 24px rgba(241,0,0,0.2);
 }
 
 /* Accordion Header */
@@ -345,15 +352,21 @@ Choose from our carefully curated routes connecting Port d'Andratx and Port de P
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 1.25rem;
+  padding: 1.25rem 1.5rem;
   cursor: pointer;
   user-select: none;
   gap: 1rem;
   flex-wrap: wrap;
+  background: linear-gradient(135deg, #fafafa 0%, #fff 100%);
+  transition: all 0.3s ease;
 }
 
 .route-header:hover {
-  background: #fafafa;
+  background: linear-gradient(135deg, #fff5f5 0%, #fff 100%);
+}
+
+.route-item.active .route-header {
+  background: linear-gradient(135deg, #fff0f0 0%, #fff 100%);
 }
 
 .route-title-section {
@@ -367,6 +380,7 @@ Choose from our carefully curated routes connecting Port d'Andratx and Port de P
 .route-icon {
   font-size: 1.5rem;
   transition: transform 0.3s ease;
+  color: var(--brand);
 }
 
 .route-item.active .route-icon {
@@ -374,9 +388,10 @@ Choose from our carefully curated routes connecting Port d'Andratx and Port de P
 }
 
 .route-title {
-  font-weight: 600;
-  font-size: 1.1rem;
+  font-weight: 700;
+  font-size: 1.15rem;
   color: var(--text);
+  line-height: 1.3;
 }
 
 .route-stats-inline {
@@ -384,36 +399,46 @@ Choose from our carefully curated routes connecting Port d'Andratx and Port de P
   gap: 1rem;
   color: var(--muted);
   font-size: 0.95rem;
+  font-weight: 500;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .route-stats-inline span {
   white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
 }
 
 .difficulty-badge {
   display: inline-block;
-  padding: 0.25rem 0.6rem;
-  border-radius: 12px;
+  padding: 0.35rem 0.8rem;
+  border-radius: 16px;
   font-size: 0.8rem;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: all 0.2s ease;
 }
 
 .difficulty-moderate {
-  background: #FFA726;
+  background: linear-gradient(135deg, #FFA726 0%, #FF9800 100%);
   color: white;
+  border: 2px solid #FF9800;
 }
 
 .difficulty-hard {
-  background: #EF5350;
+  background: linear-gradient(135deg, #EF5350 0%, #E53935 100%);
   color: white;
+  border: 2px solid #E53935;
 }
 
 .difficulty-very-hard {
-  background: #C62828;
+  background: linear-gradient(135deg, #C62828 0%, #B71C1C 100%);
   color: white;
+  border: 2px solid #B71C1C;
 }
 
 .route-actions {
@@ -422,15 +447,17 @@ Choose from our carefully curated routes connecting Port d'Andratx and Port de P
 }
 
 .gpx-download {
-  padding: 0.4rem 0.8rem;
-  background: #f5f5f5;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 0.85rem;
+  padding: 0.6rem 1rem;
+  background: linear-gradient(135deg, #f5f5f5 0%, #fff 100%);
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
   color: var(--text);
   text-decoration: none;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
   white-space: nowrap;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 .gpx-download:hover {
@@ -438,6 +465,8 @@ Choose from our carefully curated routes connecting Port d'Andratx and Port de P
   color: white;
   border-color: var(--brand);
   text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(241,0,0,0.3);
 }
 
 /* Accordion Content */
@@ -632,7 +661,7 @@ path.route-polyline {
 
 <!-- NORTH ROUTES -->
 <div class="route-section">
-  <h2>🚴 Route Options – Andratx back to the North</h2>
+  <h2>🏔️ North Routes – Andratx → Pollença</h2>
 </div>
 
 <div class="route-accordion">
@@ -799,7 +828,7 @@ path.route-polyline {
 
 <!-- SOUTH ROUTES -->
 <div class="route-section">
-  <h2>🚴 Route Options – Port de Pollença back to Andratx</h2>
+  <h2>🌊 South Routes – Pollença → Andratx</h2>
 </div>
 
 <div class="route-accordion">
@@ -971,16 +1000,17 @@ function toggleCard(card) {
 }
 
 // Route configuration
+// Using -web.gpx files for display (75% smaller), original files for downloads
 const routes = {
-  'north-1': { gpx: 'portandratx-pollenca-vanilla.gpx', startName: 'Port d\'Andratx', endName: 'Port de Pollença' },
-  'north-2': { gpx: 'portandratx-pollenca-via-caimari.gpx', startName: 'Port d\'Andratx', endName: 'Port de Pollença' },
-  'north-3': { gpx: 'portandratx-pollenca-portvalldemossa.gpx', startName: 'Port d\'Andratx', endName: 'Port de Pollença' },
-  'north-4': { gpx: 'portandratx-pollenca-valldemossa-sacalobra.gpx', startName: 'Port d\'Andratx', endName: 'Port de Pollença' },
-  'north-5': { gpx: 'portandratx-pollenca-big-daddy.gpx', startName: 'Port d\'Andratx', endName: 'Port de Pollença' },
-  'south-1': { gpx: 'portpollenca-portandratx-vanilla.gpx', startName: 'Port de Pollença', endName: 'Port d\'Andratx' },
-  'south-2': { gpx: 'portpollenca-portandratx-canonge-valldemossa.gpx', startName: 'Port de Pollença', endName: 'Port d\'Andratx' },
-  'south-3': { gpx: 'portpollenca-portandratx-puigpunyent.gpx', startName: 'Port de Pollença', endName: 'Port d\'Andratx' },
-  'south-4': { gpx: 'portpollenca-portandratx-big-daddy.gpx', startName: 'Port de Pollença', endName: 'Port d\'Andratx' }
+  'north-1': { gpx: 'portandratx-pollenca-vanilla-web.gpx', startName: 'Port d\'Andratx', endName: 'Port de Pollença' },
+  'north-2': { gpx: 'portandratx-pollenca-via-caimari-web.gpx', startName: 'Port d\'Andratx', endName: 'Port de Pollença' },
+  'north-3': { gpx: 'portandratx-pollenca-portvalldemossa-web.gpx', startName: 'Port d\'Andratx', endName: 'Port de Pollença' },
+  'north-4': { gpx: 'portandratx-pollenca-valldemossa-sacalobra-web.gpx', startName: 'Port d\'Andratx', endName: 'Port de Pollença' },
+  'north-5': { gpx: 'portandratx-pollenca-big-daddy-web.gpx', startName: 'Port d\'Andratx', endName: 'Port de Pollença' },
+  'south-1': { gpx: 'portpollenca-portandratx-vanilla-web.gpx', startName: 'Port de Pollença', endName: 'Port d\'Andratx' },
+  'south-2': { gpx: 'portpollenca-portandratx-canonge-valldemossa-web.gpx', startName: 'Port de Pollença', endName: 'Port d\'Andratx' },
+  'south-3': { gpx: 'portpollenca-portandratx-puigpunyent-web.gpx', startName: 'Port de Pollença', endName: 'Port d\'Andratx' },
+  'south-4': { gpx: 'portpollenca-portandratx-big-daddy-web.gpx', startName: 'Port de Pollença', endName: 'Port d\'Andratx' }
 };
 
 const loadedRoutes = {};
