@@ -4,46 +4,42 @@
 {{/* Check if this is a language home page (e.g., /de/, /es/) */}}
 {{ $isLangHome := false }}
 {{ if .File }}
-  {{ if and (eq .Kind "section") (or (eq .File.Dir "de/") (eq .File.Dir "es/")) }}
+  {{ if and (eq .Kind "section") (or (eq .File.Dir "en/") (eq .File.Dir "de/") (eq .File.Dir "es/") (eq .File.Dir "it/") (eq .File.Dir "fr/") (eq .File.Dir "ca/")) }}
     {{ $isLangHome = true }}
   {{ end }}
 {{ end }}
 {{ if $isLangHome }}
-  {{/* This is a language home page - use the homepage template */}}
-  {{/* Hero Section */}}
-  <section class="hero" style="background:#f8f9fa; padding:2rem 0;">
-    <div class="container">
-      {{ if .Params.hero_title }}<h1 style="text-align:center; margin-bottom:2rem;">{{ .Params.hero_title }}</h1>{{ else }}<h1 style="text-align:center; margin-bottom:2rem;">{{ .Title }}</h1>{{ end }}
-      <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:2rem; align-items:center;">
-        {{/* Column 1: Subtitle */}}
-        <div style="text-align:center;">
-          {{ if .Params.hero_subtitle }}<p style="font-size:1.25rem;">{{ .Params.hero_subtitle }}</p>{{ end }}
-        </div>
-        {{/* Column 2: Note */}}
-        <div style="text-align:center;">
-          {{ if .Params.note }}<p style="font-size:1.25rem; font-style:italic;">{{ .Params.note }}</p>{{ end }}
-        </div>
-        {{/* Column 3: CTA Button */}}
-        <div style="text-align:center;">
-          {{ if .Params.cta }}
-            <a href="{{ .Params.cta.url }}" class="cta-button" style="display:inline-block; background:#f00000; color:white; padding:1rem 2rem; text-decoration:none; border-radius:5px;">
-              {{ .Params.cta.label }}
-            </a>
-          {{ end }}
-        </div>
+  {{/* This is a language home page - use the NEW homepage template */}}
+
+  {{/* ======================================== HERO SECTION */}}
+  <section class="homepage-hero">
+    <div class="homepage-hero-overlay"></div>
+    <div class="homepage-hero-image">
+      <img src="/img/hero-main.webp" alt="Cycling in Mallorca Tramuntana Mountains">
+    </div>
+    <div class="homepage-hero-content">
+      <h1 class="homepage-hero-title">{{ .Params.hero_title }}</h1>
+      <p class="homepage-hero-subtitle">{{ .Params.hero_subtitle }}</p>
+      <div class="homepage-hero-ctas">
+        {{ range .Params.hero_ctas }}
+          <a href="{{ .url }}" class="homepage-cta-btn {{ .style }}">{{ .text }}</a>
+        {{ end }}
       </div>
     </div>
   </section>
 
-  {{/* Features Section */}}
-  {{ with .Params.features }}
-  <section style="padding:1.5rem 0;">
+  {{/* ======================================== SERVICE CARDS */}}
+  {{ with .Params.services }}
+  <section class="homepage-services">
     <div class="container">
-      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:2rem;">
+      <h2 class="homepage-section-title">{{ $.Params.services_title }}</h2>
+      <div class="homepage-services-grid">
         {{ range . }}
-        <div>
+        <div class="homepage-service-card fade-in-on-scroll">
+          <div class="homepage-service-icon"><img src="{{ .icon }}" alt="{{ .title }}"></div>
           <h3>{{ .title }}</h3>
-          <p>{{ .text }}</p>
+          <p>{{ .description }}</p>
+          <a href="{{ .link }}" class="homepage-service-link">Learn More →</a>
         </div>
         {{ end }}
       </div>
@@ -51,16 +47,33 @@
   </section>
   {{ end }}
 
-  {{/* Pricing Section */}}
-  {{ with .Params.pricing }}
-  <section style="background:#f8f9fa; padding:0.5rem 0;">
+  {{/* ======================================== CONTENT BLOCKS */}}
+  {{ with .Params.content_blocks }}
+  <section class="homepage-content-blocks">
     <div class="container">
-      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:2rem;">
+      {{ range $index, $block := . }}
+        <div class="homepage-content-block {{ if eq (mod $index 2) 0 }}image-right{{ else }}image-left{{ end }} fade-in-on-scroll">
+          <div class="homepage-content-block-text">
+            <h2>{{ $block.title }}</h2>
+            <p>{{ $block.text }}</p>
+            {{ if $block.cta }}<a href="{{ $block.cta.url }}" class="homepage-text-cta">{{ $block.cta.text }} →</a>{{ end }}
+          </div>
+          <div class="homepage-content-block-image"><img src="{{ $block.image }}" alt="{{ $block.title }}"></div>
+        </div>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* ======================================== STATS SECTION */}}
+  {{ with .Params.stats }}
+  <section class="homepage-stats">
+    <div class="container">
+      <div class="homepage-stats-grid">
         {{ range . }}
-        <div style="border:1px solid #dee2e6; padding:1.5rem; border-radius:5px; background:white;">
-          <h3>{{ .label }}</h3>
-          <p style="font-size:1.5rem; font-weight:bold; color:#f00000;">{{ .price }}</p>
-          <p>{{ .desc }}</p>
+        <div class="homepage-stat-item fade-in-on-scroll">
+          <div class="homepage-stat-number" data-target="{{ .number }}">0</div>
+          <div class="homepage-stat-label">{{ .label }}</div>
         </div>
         {{ end }}
       </div>
@@ -68,30 +81,60 @@
   </section>
   {{ end }}
 
-  {{/* Good to Know Section */}}
-  {{ with .Params.good_to_know }}
-  <section style="padding:1.5rem 0;">
+  {{/* ======================================== FEATURED ROUTES */}}
+  {{ with .Params.featured_routes }}
+  <section class="homepage-routes">
     <div class="container">
-      <h2 style="margin-bottom:1.5rem;">{{ $.Params.good_to_know_title }}</h2>
-      <ul>
+      <h2 class="homepage-section-title">{{ $.Params.routes_title }}</h2>
+      <div class="homepage-routes-grid">
         {{ range . }}
-        <li style="margin-bottom:0.75rem;">{{ . }}</li>
+        <a href="{{ .link }}" class="homepage-route-card fade-in-on-scroll">
+          <div class="homepage-route-image">
+            <img src="{{ .image }}" alt="{{ .title }}">
+            {{ if .badge }}<span class="homepage-route-badge">{{ .badge }}</span>{{ end }}
+          </div>
+          <div class="homepage-route-content">
+            <h3>{{ .title }}</h3>
+            <p class="homepage-route-meta">{{ .distance }} • {{ .elevation }}</p>
+          </div>
+        </a>
         {{ end }}
-      </ul>
+      </div>
     </div>
   </section>
   {{ end }}
 
-  {{/* FAQ Section */}}
+  {{/* ======================================== TESTIMONIALS */}}
+  {{ with .Params.testimonials }}
+  <section class="homepage-testimonials">
+    <div class="container">
+      <h2 class="homepage-section-title">{{ $.Params.testimonials_title }}</h2>
+      <div class="homepage-testimonials-grid">
+        {{ range . }}
+        <div class="homepage-testimonial-card fade-in-on-scroll">
+          <div class="homepage-testimonial-stars">★★★★★</div>
+          <p class="homepage-testimonial-text">"{{ .quote }}"</p>
+          <div class="homepage-testimonial-author">
+            <strong>{{ .name }}</strong>
+            {{ if .location }}<span> • {{ .location }}</span>{{ end }}
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* ======================================== FAQ ACCORDION */}}
   {{ with .Params.faq }}
-  <section style="background:#f8f9fa; padding:1.5rem 0;">
+  <section class="homepage-faq">
     <div class="container">
-      <h2 style="margin-bottom:2rem;">{{ $.Params.faq_title }}</h2>
-      <div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:1rem;">
+      <h2 class="homepage-section-title">{{ $.Params.faq_title }}</h2>
+      <div class="homepage-faq-grid">
         {{ range . }}
-        <details style="margin-bottom:1rem; border:1px solid #dee2e6; border-radius:5px; padding:1rem; background:white;">
-          <summary style="font-size:1.1rem; font-weight:600; cursor:pointer; user-select:none;">{{ .q }}</summary>
-          <p style="margin-top:1rem; padding-left:1rem; color:#666;">{{ .a }}</p>
+        <details class="faq-item">
+          <summary>{{ .question }}</summary>
+          <div class="answer">{{ .answer | markdownify }}</div>
         </details>
         {{ end }}
       </div>
@@ -99,14 +142,51 @@
   </section>
   {{ end }}
 
-  {{/* Render any markdown content if present */}}
-  {{ with .Content }}
-  <section style="padding:3rem 0;">
+  {{/* ======================================== FINAL CTA BANNER */}}
+  {{ with .Params.final_cta }}
+  <section class="homepage-final-cta">
     <div class="container">
-      {{ . }}
+      <div class="homepage-final-cta-content">
+        <h2>{{ .title }}</h2>
+        <p>{{ .subtitle }}</p>
+        <a href="{{ .button_url }}" class="homepage-cta-btn primary">{{ .button_text }}</a>
+      </div>
     </div>
   </section>
   {{ end }}
+
+  {{/* Scroll animation script */}}
+  <script>
+    const observerOptions = {threshold: 0.1, rootMargin: '0px 0px -50px 0px'};
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {if (entry.isIntersecting) entry.target.classList.add('visible');});
+    }, observerOptions);
+    document.querySelectorAll('.fade-in-on-scroll').forEach(el => observer.observe(el));
+
+    const counters = document.querySelectorAll('.homepage-stat-number');
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !entry.target.classList.contains('counted')) {
+          const target = parseFloat(entry.target.dataset.target);
+          const hasDecimal = entry.target.dataset.target.includes('.');
+          const duration = 2000;
+          const step = target / (duration / 16);
+          let current = 0;
+          const timer = setInterval(() => {
+            current += step;
+            if (current >= target) {
+              entry.target.textContent = hasDecimal ? target.toFixed(1) : target.toLocaleString();
+              clearInterval(timer);
+              entry.target.classList.add('counted');
+            } else {
+              entry.target.textContent = hasDecimal ? current.toFixed(1) : Math.floor(current).toLocaleString();
+            }
+          }, 16);
+        }
+      });
+    }, { threshold: 0.5 });
+    counters.forEach(counter => counterObserver.observe(counter));
+  </script>
 
 {{ else }}
   {{/* Regular list page */}}

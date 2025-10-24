@@ -5,19 +5,19 @@ description: "Your trusted cycling companion in Mallorca's Tramuntana mountains.
 # ============================================
 # HERO SECTION
 # ============================================
-hero_title: "Your Safety Net in Mallorca's Mountains"
-hero_subtitle: "Professional bike rescue, shuttles, and support for cyclists exploring the stunning Tramuntana"
+hero_title: "Make the most of Mallorca"
+hero_subtitle: "Scheduled bike shuttles, bike rescue and airport transfers by cyclists for cyclists"
 
 hero_ctas:
-  - text: "Get Bike Rescue"
-    url: "https://mallorcacycleshuttle.company.site/products/"
-    style: "primary"
   - text: "Book a Shuttle"
     url: "https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235"
     style: "secondary"
+  - text: "Get Bike Rescue"
+    url: "https://mallorcacycleshuttle.company.site/products/"
+    style: "primary"
   - text: "Airport Transfer"
     url: "/en/mallorca-airport-transfers/"
-    style: "tertiary"
+    style: "secondary"
 
 # ============================================
 # SERVICES SECTION
@@ -62,17 +62,17 @@ content_blocks:
 # STATS SECTION
 # ============================================
 stats:
-  - number: "15000"
+  - number: "350000"
     label: "Cyclists Helped"
 
-  - number: "11"
+  - number: "12"
     label: "Years of Service"
 
   - number: "5000"
     label: "Rescues Completed"
 
-  - number: "98"
-    label: "Satisfaction Rate"
+  - number: "99"
+    label: "% Satisfaction Rate"
 
 # ============================================
 # FEATURED ROUTES
