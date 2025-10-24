@@ -31,7 +31,7 @@ services:
     link: "/en/bike-rescue/rescue-home/"
 
   - title: "Scheduled Shuttles"
-    description: "Start your epic rides from the best locations. We shuttle you and your bike to the start of the iconic routes."
+    description: "We take you and your bike to the start of the iconic routes."
     icon: "/img/icon-shuttle.svg"
     link: "https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235"
 
