@@ -26,7 +26,7 @@ services_title: "Our Services"
 
 services:
   - title: "Bike Rescue Service"
-    description: "Peace of mind on every ride. Policyholders get rescued Mallorca-wide if bike or body break down."
+    description: "Peace of mind on every ride. Policyholders are rescued Mallorca-wide if bike or body break down."
     icon: "/img/icon-rescue.svg"
     link: "/en/bike-rescue/rescue-home/"
 
