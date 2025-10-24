@@ -856,7 +856,7 @@ main { overflow-x: hidden; }
 
 /* Content Blocks - Alternating */
 .homepage-content-blocks {
-  padding: 5rem 0;
+  padding: 2.5rem 0;
   background: white;
 }
 
@@ -965,7 +965,7 @@ main { overflow-x: hidden; }
 
 /* Routes Section */
 .homepage-routes {
-  padding: 5rem 0;
+  padding: 5rem 0 2rem 0;
   background: #f8f9fa;
 }
 
@@ -1044,7 +1044,7 @@ main { overflow-x: hidden; }
 
 /* Testimonials Section */
 .homepage-testimonials {
-  padding: 5rem 0;
+  padding: 1.75rem 0 5rem 0;
   background: white;
 }
 
@@ -1174,7 +1174,7 @@ main { overflow-x: hidden; }
   }
 
   .homepage-content-blocks {
-    padding: 3rem 0;
+    padding: 1.5rem 0;
   }
 
   .homepage-stats {
@@ -1182,11 +1182,11 @@ main { overflow-x: hidden; }
   }
 
   .homepage-routes {
-    padding: 3rem 0;
+    padding: 3rem 0 1.2rem 0;
   }
 
   .homepage-testimonials {
-    padding: 3rem 0;
+    padding: 1.05rem 0 3rem 0;
   }
 
   .homepage-faq {

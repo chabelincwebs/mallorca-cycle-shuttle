@@ -31,12 +31,12 @@ services:
     link: "/en/bike-rescue/rescue-home/"
 
   - title: "Scheduled Shuttles"
-    description: "We take you and your bike to the start of the iconic routes."
+    description: "We take you and your bike in comfort to the start of the iconic one way routes."
     icon: "/img/icon-shuttle.svg"
     link: "https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235"
 
   - title: "Airport Transfers"
-    description: "Seamless airport pickup and drop-off with secure bike transport. Start your cycling holiday stress-free from the moment you land."
+    description: "Seamless airport transfers. Start your cycling holiday stress-free from the moment you land."
     icon: "/img/icon-transfer.svg"
     link: "/en/mallorca-airport-transfers/"
 
