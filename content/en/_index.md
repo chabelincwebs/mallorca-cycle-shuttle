@@ -15,7 +15,7 @@ hero_ctas:
   - text: "Get Bike Rescue"
     url: "https://mallorcacycleshuttle.company.site/products/"
     style: "primary"
-  - text: "Book Airport Transfer"
+  - text: "Book Airport Transfers"
     url: "/en/mallorca-airport-transfers/"
     style: "secondary"
 

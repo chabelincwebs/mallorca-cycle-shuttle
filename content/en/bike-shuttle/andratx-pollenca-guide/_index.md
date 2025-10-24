@@ -3,7 +3,7 @@ title: "Andratx to Pollença Master Cycling Guide"
 description: "Complete guide for cycling from Andratx to Pollença through the Tramuntana mountains"
 ---
 
-Choose from our carefully curated routes connecting Port d'Andratx and Port de Pollença through Mallorca's stunning Unesco World Heritage Serra de Tramuntana mountains.
+Choose from our carefully curated routes connecting Port d'Andratx and Port de Pollença through Mallorca's stunning UNESCO World Heritage Serra de Tramuntana mountains.
 
 We are not saying it is easy. We are not saying it is for everyone. We are saying that it is brilliant.
 
@@ -12,174 +12,204 @@ Scenic with challenging climbs and sweeping descents, all on butter smooth tarma
 <!-- INFO CARDS GRID -->
 <div class="info-cards-wrapper">
 <div class="info-cards-grid">
-  <div class="info-card" onclick="toggleCard(this)">
-    <div class="info-card-header">
-      <div class="info-card-header-top">
-        <span style="font-size: 1.5rem;">📸</span>
-        <span class="card-toggle">+</span>
-      </div>
-      <h3>Snapshot</h3>
-    </div>
-    <div class="info-card-content">
-      <p><strong>Why this route:</strong> Coast-to-coast through the Tramuntana mountain range along the coast on smooth tarmac – Mallorca's best day on a bike. Probably your best day on a bike. Ever.</p>
-      <p><strong>How it works:</strong> Bus out, bike back. Take the scheduled bike bus to Port d'Andratx (or the reverse to Port de Pollença), ride one of the suggested or your own custom route back.</p>
-      <p><strong>Scheduled services:</strong> We take care of the logistics, you take care of relaxing into the best Mallorca has to offer. Book the <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank" rel="noopener noreferrer">scheduled bike bus</a> from any of the departure locations on the booking platform.</p>
-    </div>
-  </div>
 
-  <div class="info-card" onclick="toggleCard(this)">
-    <div class="info-card-header">
-      <div class="info-card-header-top">
-        <span style="font-size: 1.5rem;">🔑</span>
-        <span class="card-toggle">+</span>
-      </div>
-      <h3>Key Sections</h3>
-    </div>
-    <div class="info-card-content">
-      <p><strong>Estellencs to Deià:</strong> Coastal beauty.</p>
-      <p><strong>Banyalbufar:</strong> Enough said.</p>
-      <p><strong>Puig Major (from Sóller):</strong> 14 km @ 6.2%, ~828 m. Long, steady; lit tunnel(s) then aqueduct.</p>
-      <p><strong>Coll dels Reis / Sa Calobra:</strong> Optional add-on – descend to port, climb back; bucket-list hairpins.</p>
-      <p><strong>Port Valldemossa & Port des Canonge:</strong> Short, steep, scenic dead-end descents and returns; "mini Sa Calobra" feel without the traffic.</p>
-      <p><strong>Coll de Sa Bataia (from Lluc side):</strong> Leads to Caimari descent and lanes to the bay road.</p>
-      <p><strong>Coll de Sóller (alt. line):</strong> Winding classic if avoiding the MA-10 high route.</p>
-      <p><strong>Coll de Femenia (north side):</strong> Gateway climb leaving Pollença toward Lluc.</p>
-      <p><strong>Coll de Femenia (north side):</strong> Gateway F1 style descent from Lluc to Pollença.</p>
-    </div>
-  </div>
+<div class="info-card" onclick="toggleCard(this)">
+<div class="info-card-header">
+<div class="info-card-header-top">
+<span style="font-size: 1.5rem;">📸</span>
+<span class="card-toggle">+</span>
+</div>
+<h3>Snapshot</h3>
+</div>
+<div class="info-card-content">
+<p><strong>Why this route:</strong> Coast-to-coast through the Tramuntana mountain range along the coast on smooth tarmac – Mallorca's best day on a bike. Probably your best day on a bike. Ever.</p>
+<p><strong>How it works:</strong> Bus out, bike back. Take the scheduled bike bus to Port d'Andratx (or the reverse to Port de Pollença), ride one of the suggested or your own custom route back.</p>
+<p><strong>Scheduled services:</strong> We take care of the logistics, you take care of relaxing into the best Mallorca has to offer. Book the <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank" rel="noopener noreferrer">scheduled bike bus</a> from any of the departure locations on the booking platform.</p>
+</div>
+</div>
 
-  <div class="info-card" onclick="toggleCard(this)">
-    <div class="info-card-header">
-      <div class="info-card-header-top">
-        <span style="font-size: 1.5rem;">☕</span>
-        <span class="card-toggle">+</span>
-      </div>
-      <h3>Café/Refuel Stops</h3>
-    </div>
-    <div class="info-card-content">
-      <p><em>km estimates from Andratx</em></p>
-      <p><strong>Es Grau (≈13 km):</strong> Balcony views over the cliffs; quick coffee.</p>
-      <p><strong>Estellencs (≈17 km):</strong> "Cafetería Estellencs" – Simple, handy, right on MA-10.</p>
-      <p><strong>Banyalbufar (≈24 km):</strong> Son Tomás (range + views) or Bellavista (great views; watch the bikes).</p>
-      <p><strong>Valldemossa (≈39 km):</strong> Multiple options; Ca'n Molinas for Cocas de Patata with hot chocolate.</p>
-      <p><strong>Deià (≈48 km):</strong> Bakery in the supermarket run by Marc & Vincent Reynés; their café in Port de Sóller too.</p>
-      <p><strong>Sóller (≈58 km) – Sa Frontera:</strong> Solid menu before Puig Major.</p>
-      <p><strong>Port de Sóller (detour):</strong> Waterfront options; Reynés Cycling Café for cake/coffee.</p>
-      <p><strong>Aqueduct / Sa Calobra turn (≈80 km):</strong> OJ Shack – fresh orange juice + on-bike snacks.</p>
-      <p><strong>Lluc / Coll de sa Bataia top (≈89 km):</strong> Repsol + café or Lluc Monastery – quick or sit-down.</p>
-    </div>
-  </div>
+<div class="info-card" onclick="toggleCard(this)">
+<div class="info-card-header">
+<div class="info-card-header-top">
+<span style="font-size: 1.5rem;">🔑</span>
+<span class="card-toggle">+</span>
+</div>
+<h3>Key Sections</h3>
+</div>
+<div class="info-card-content">
+<p><strong>Estellencs to Deià:</strong> Coastal beauty.</p>
+<p><strong>Banyalbufar:</strong> Enough said.</p>
+<p><strong>Puig Major (from Sóller):</strong> 14 km @ 6.2%, ~828 m. Long, steady; lit tunnel(s) then aqueduct.</p>
+<p><strong>Coll dels Reis / Sa Calobra:</strong> Optional add-on – descend to port, climb back; bucket-list hairpins.</p>
+<p><strong>Port Valldemossa & Port des Canonge:</strong> Short, steep, scenic dead-end descents and returns; "mini Sa Calobra" feel without the traffic.</p>
+<p><strong>Coll de Sa Bataia (from Lluc side):</strong> Leads to Caimari descent and lanes to the bay road.</p>
+<p><strong>Coll de Sóller (alt. line):</strong> Winding classic if avoiding the MA-10 high route.</p>
+<p><strong>Coll de Femenia (north side):</strong> Gateway climb leaving Pollença toward Lluc.</p>
+<p><strong>Coll de Femenia (north side):</strong> Gateway F1 style descent from Lluc to Pollença.</p>
+</div>
+</div>
 
-  <div class="info-card" onclick="toggleCard(this)">
-    <div class="info-card-header">
-      <div class="info-card-header-top">
-        <span style="font-size: 1.5rem;">💡</span>
-        <span class="card-toggle">+</span>
-      </div>
-      <h3>Good to Know</h3>
-    </div>
-    <div class="info-card-content">
-      <ul>
-        <li>Book for early in your trip whilst legs are still fresh & even with 308 days of sun each year, if weather causes a cancellation, you still have an alternate day.</li>
-        <li>Seats are limited. Book early.</li>
-        <li>This will be without a doubt your best day in Mallorca.</li>
-        <li>Arrive 10 minutes early for bike packing on the day.</li>
-        <li>It's an early start, plenty of places for breakfast, coffee, toilet on arrival.</li>
-        <li><strong>Rescue cover:</strong> <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank" rel="noopener noreferrer">Peace of mind</a>. Strongly advised. Bikes and bodies do sometimes break down.</li>
-        <li>Safe loading of bikes in the trailers: Packed between mattresses – secure and safe.</li>
-        <li>Average return time is just over 6 hours plus stops on the vanilla (shortest) route.</li>
-        <li>Cafe stops appear regularly, choices are never more than an hour apart.</li>
-        <li>Regular fuelling is essential.</li>
-      </ul>
-    </div>
-  </div>
+<div class="info-card" onclick="toggleCard(this)">
+<div class="info-card-header">
+<div class="info-card-header-top">
+<span style="font-size: 1.5rem;">☕</span>
+<span class="card-toggle">+</span>
+</div>
+<h3>Café/Refuel Stops</h3>
+</div>
+<div class="info-card-content">
+<p><em>km estimates from Andratx</em></p>
+<p><strong>Es Grau (≈13 km):</strong> Balcony views over the cliffs; quick coffee.</p>
+<p><strong>Estellencs (≈17 km):</strong> "Cafetería Estellencs" – Simple, handy, right on MA-10.</p>
+<p><strong>Banyalbufar (≈24 km):</strong> Son Tomás (range + views) or Bellavista (great views; watch the bikes).</p>
+<p><strong>Valldemossa (≈39 km):</strong> Multiple options; Ca'n Molinas for Cocas de Patata with hot chocolate.</p>
+<p><strong>Deià (≈48 km):</strong> Bakery in the supermarket run by Marc & Vincent Reynés; their café in Port de Sóller too.</p>
+<p><strong>Sóller (≈58 km) – Sa Frontera:</strong> Solid menu before Puig Major.</p>
+<p><strong>Port de Sóller (detour):</strong> Waterfront options; Reynés Cycling Café for cake/coffee.</p>
+<p><strong>Aqueduct / Sa Calobra turn (≈80 km):</strong> OJ Shack – fresh orange juice + on-bike snacks.</p>
+<p><strong>Lluc / Coll de sa Bataia top (≈89 km):</strong> Repsol + café or Lluc Monastery – quick or sit-down.</p>
+</div>
+</div>
 
-  <div class="info-card" onclick="toggleCard(this)">
-    <div class="info-card-header">
-      <div class="info-card-header-top">
-        <span style="font-size: 1.5rem;">📅</span>
-        <span class="card-toggle">+</span>
-      </div>
-      <h3>Schedule</h3>
-    </div>
-    <div class="info-card-content">
-      <p>Use the bike bus to Port d'Andratx from Port de Pollença/Alcúdia/Playa de Muro and from Peguera, Playa de Palma & Santa Ponsa to Port de Pollença.</p>
-      <p><a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank" rel="noopener noreferrer" class="cta">View Schedule & Book →</a></p>
-    </div>
-  </div>
+<div class="info-card" onclick="toggleCard(this)">
+<div class="info-card-header">
+<div class="info-card-header-top">
+<span style="font-size: 1.5rem;">💡</span>
+<span class="card-toggle">+</span>
+</div>
+<h3>Good to Know</h3>
+</div>
+<div class="info-card-content">
+<ul>
+<li>Book for early in your trip whilst legs are still fresh & even with 308 days of sun each year, if weather causes a cancellation, you still have an alternate day.</li>
+<li>Seats are limited. Book early.</li>
+<li>This will be without a doubt your best day in Mallorca.</li>
+<li>Arrive 10 minutes early for bike packing on the day.</li>
+<li>It's an early start, plenty of places for breakfast, coffee, toilet on arrival.</li>
+<li><strong>Rescue cover:</strong> <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank" rel="noopener noreferrer">Peace of mind</a>. Strongly advised. Bikes and bodies do sometimes break down.</li>
+<li>Safe loading of bikes in the trailers: Packed between mattresses – secure and safe.</li>
+<li>Average return time is just over 6 hours plus stops on the vanilla (shortest) route.</li>
+<li>Cafe stops appear regularly, choices are never more than an hour apart.</li>
+<li>Regular fuelling is essential.</li>
+</ul>
+</div>
+</div>
 
-  <div class="info-card" onclick="toggleCard(this)">
-    <div class="info-card-header">
-      <div class="info-card-header-top">
-        <span style="font-size: 1.5rem;">⭐</span>
-        <span class="card-toggle">+</span>
-      </div>
-      <h3>Social Proof</h3>
-    </div>
-    <div class="info-card-content">
-      <p><strong>"18 Swedish ladies" testimonial (2016):</strong> 162 km Big Daddy day called "best ever day on a bike" – loved Canonge, Valldemossa, Sa Calobra; tunnels lit; fast finish to Pollença. Returning the next season.</p>
-      <p><strong>John McCracken (spring 2025):</strong> One-way format lets you enjoy the scenery without turning it into an ultra-distance day; highlights: Gramola start, MA-10 cliff sections, Monnàber tunnel approach to Puig Major, Femenia descent "let go."</p>
-    </div>
-  </div>
+<div class="info-card" onclick="toggleCard(this)">
+<div class="info-card-header">
+<div class="info-card-header-top">
+<span style="font-size: 1.5rem;">📅</span>
+<span class="card-toggle">+</span>
+</div>
+<h3>Schedule</h3>
+</div>
+<div class="info-card-content">
+<p>Use the bike bus to Port d'Andratx from Port de Pollença/Alcúdia/Playa de Muro and from Peguera, Playa de Palma & Santa Ponsa to Port de Pollença.</p>
+<p><a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank" rel="noopener noreferrer" class="cta">View Schedule & Book →</a></p>
+</div>
+</div>
 
-  <div class="info-card" onclick="toggleCard(this)">
-    <div class="info-card-header">
-      <div class="info-card-header-top">
-        <span style="font-size: 1.5rem;">📊</span>
-        <span class="card-toggle">+</span>
-      </div>
-      <h3>Key Stats</h3>
-    </div>
-    <div class="info-card-content">
-      <p><strong>Signature climb:</strong> Puig Major from Sóller (southbound) – 14 km @ 6.2% (≈828 m).</p>
-      <p><strong>Signature descent:</strong> Puig Major to Sóller (northbound) – 14 km @ 6.2% (≈828 m).</p>
-    </div>
-  </div>
+<div class="info-card" onclick="toggleCard(this)">
+<div class="info-card-header">
+<div class="info-card-header-top">
+<span style="font-size: 1.5rem;">⭐</span>
+<span class="card-toggle">+</span>
+</div>
+<h3>Social Proof</h3>
+</div>
+<div class="info-card-content">
+<p><strong>"18 Swedish ladies" testimonial (2016):</strong> 162 km Big Daddy day called "best ever day on a bike" – loved Canonge, Valldemossa, Sa Calobra; tunnels lit; fast finish to Pollença. Returning the next season.</p>
+<p><strong>John McCracken (spring 2025):</strong> One-way format lets you enjoy the scenery without turning it into an ultra-distance day; highlights: Gramola start, MA-10 cliff sections, Monnàber tunnel approach to Puig Major, Femenia descent "let go."</p>
+</div>
+</div>
 
-  <div class="info-card" onclick="toggleCard(this)">
-    <div class="info-card-header">
-      <div class="info-card-header-top">
-        <span style="font-size: 1.5rem;">📷</span>
-        <span class="card-toggle">+</span>
-      </div>
-      <h3>Memory Maker!</h3>
-    </div>
-    <div class="info-card-content">
-      <p><strong>Port de Valldemossa:</strong> Mini & maybe better? version of Sa Calobra (down & back).</p>
-    </div>
-  </div>
+<div class="info-card" onclick="toggleCard(this)">
+<div class="info-card-header">
+<div class="info-card-header-top">
+<span style="font-size: 1.5rem;">📊</span>
+<span class="card-toggle">+</span>
+</div>
+<h3>Key Stats</h3>
+</div>
+<div class="info-card-content">
+<p><strong>Signature climb:</strong> Puig Major from Sóller (southbound) – 14 km @ 6.2% (≈828 m).</p>
+<p><strong>Signature descent:</strong> Puig Major to Sóller (northbound) – 14 km @ 6.2% (≈828 m).</p>
+</div>
+</div>
 
-  <div class="info-card" onclick="toggleCard(this)">
-    <div class="info-card-header">
-      <div class="info-card-header-top">
-        <span style="font-size: 1.5rem;">🍰</span>
-        <span class="card-toggle">+</span>
-      </div>
-      <h3>Quick Fuel Tips</h3>
-    </div>
-    <div class="info-card-content">
-      <p><strong>Quick fuel to get you home:</strong> OJ shack at the aqueduct or Sa Bataia café/garage (going North), Estellencs (going South).</p>
-      <p><strong>Scenic fuel:</strong> Banyalbufar & Deià.</p>
-      <p><strong>Soller is approximately halfway.</strong></p>
-      <p><strong>Cafes are never more than an hour apart.</strong></p>
-    </div>
-  </div>
+<div class="info-card" onclick="toggleCard(this)">
+<div class="info-card-header">
+<div class="info-card-header-top">
+<span style="font-size: 1.5rem;">📷</span>
+<span class="card-toggle">+</span>
+</div>
+<h3>Memory Maker!</h3>
+</div>
+<div class="info-card-content">
+<p><strong>Port de Valldemossa:</strong> Mini & maybe better? version of Sa Calobra (down & back).</p>
+</div>
+</div>
 
-  <!-- Finisher's Gear CTA Panel -->
-  <div class="info-card-cta" onclick="smoothScrollToProduct(event)">
-    <div class="info-card-header">
-      <div class="info-card-header-top">
-        <span style="font-size: 1.5rem;">👕</span>
-        <span class="card-toggle">+</span>
-      </div>
-      <h3>Commemorate Your Ride</h3>
-    </div>
-    <div class="info-card-content-cta">
-      <p><strong>Celebrate your achievement!</strong></p>
-      <p>Get your exclusive Andratx-Pollença finisher's t-shirt and show the world you conquered this epic route.</p>
-      <p style="color: var(--brand, #f10000); font-weight: 700; margin-top: 1rem;">Shop Now →</p>
-    </div>
-  </div>
+<div class="info-card" onclick="toggleCard(this)">
+<div class="info-card-header">
+<div class="info-card-header-top">
+<span style="font-size: 1.5rem;">🍰</span>
+<span class="card-toggle">+</span>
+</div>
+<h3>Quick Fuel Tips</h3>
+</div>
+<div class="info-card-content">
+<p><strong>Quick fuel to get you home:</strong> OJ shack at the aqueduct or Sa Bataia café/garage (going North), Estellencs (going South).</p>
+<p><strong>Scenic fuel:</strong> Banyalbufar & Deià.</p>
+<p><strong>Soller is approximately halfway.</strong></p>
+<p><strong>Cafes are never more than an hour apart.</strong></p>
+</div>
+</div>
+
+<div class="info-card" onclick="smoothScrollToProduct(event)" style="cursor: pointer;">
+<div class="info-card-header">
+<div class="info-card-header-top">
+<span style="font-size: 1.5rem;">👕</span>
+<span class="card-toggle">+</span>
+</div>
+<h3>Finisher's Gear</h3>
+</div>
+<div class="info-card-content">
+<p><strong>Celebrate your achievement!</strong></p>
+<p>Get your exclusive Port d'Andratx-Port de Pollença finisher's t-shirt and show the world you conquered this epic route.</p>
+<p style="color: var(--brand, #f10000); font-weight: 700; margin-top: 1rem;">Shop Now →</p>
+</div>
+</div>
+
+<div class="info-card" onclick="window.open('https://mallorcacycleshuttle.company.site/products/Departure-towns-c28971057', '_blank')" style="cursor: pointer;">
+<div class="info-card-header">
+<div class="info-card-header-top">
+<span style="font-size: 1.5rem;">🚌</span>
+<span class="card-toggle">+</span>
+</div>
+<h3>Book Your Shuttle</h3>
+</div>
+<div class="info-card-content">
+<p><strong>Need a ride to start your adventure?</strong></p>
+<p>Browse all departure towns and book your shuttle to Port d'Andratx or Port de Pollença. We've got you covered!</p>
+<p style="color: var(--brand, #f10000); font-weight: 700; margin-top: 1rem;">View Shuttles →</p>
+</div>
+</div>
+
+<div class="info-card" onclick="toggleCard(this)">
+<div class="info-card-header">
+<div class="info-card-header-top">
+<span style="font-size: 1.5rem;">📋</span>
+<span class="card-toggle">+</span>
+</div>
+<h3>Coming Soon</h3>
+</div>
+<div class="info-card-content">
+<p><strong>More information coming soon...</strong></p>
+<p>Check back later for additional resources and tips for your Port d'Andratx-Port de Pollença adventure.</p>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -220,6 +250,46 @@ Scenic with challenging climbs and sweeping descents, all on butter smooth tarma
 /* Show only the expanded card */
 .info-cards-grid.has-expanded .info-card.expanded {
   display: block;
+}
+
+/* Routes 2-Column Layout */
+.routes-2col-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin: 2rem 0 1rem 0;
+}
+
+@media (min-width: 768px) {
+  .routes-2col-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.routes-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* Hide all routes when one is expanded */
+.routes-2col-wrapper.has-expanded .route-item {
+  display: none;
+}
+
+/* Show only the expanded route */
+.routes-2col-wrapper.has-expanded .route-item.active {
+  display: block;
+}
+
+/* Make the column containing the active route span full width */
+.routes-2col-wrapper.has-expanded .routes-column:has(.route-item.active) {
+  grid-column: 1 / -1;
+}
+
+/* Hide empty columns when a route is expanded */
+.routes-2col-wrapper.has-expanded .routes-column:not(:has(.route-item.active)) {
+  display: none;
 }
 
 .info-card {
@@ -382,7 +452,6 @@ Scenic with challenging climbs and sweeping descents, all on butter smooth tarma
   margin: 3rem 0 1.5rem 0;
   padding: 1.5rem;
   background: linear-gradient(135deg, #f8f8f8 0%, #fff 100%);
-  border-left: 4px solid var(--brand);
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
@@ -438,6 +507,7 @@ Scenic with challenging climbs and sweeping descents, all on butter smooth tarma
   flex-wrap: wrap;
   background: linear-gradient(135deg, #fafafa 0%, #fff 100%);
   transition: all 0.3s ease;
+  position: relative;
 }
 
 .route-header:hover {
@@ -446,6 +516,24 @@ Scenic with challenging climbs and sweeping descents, all on butter smooth tarma
 
 .route-item.active .route-header {
   background: linear-gradient(135deg, #fff0f0 0%, #fff 100%);
+}
+
+/* Close X button - only show when route is active */
+.route-item.active .route-header::after {
+  content: '✕';
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: var(--brand, #f10000);
+  font-weight: 700;
+  line-height: 1;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.route-item.active .route-header:hover::after {
+  opacity: 1;
 }
 
 .route-title-section {
@@ -738,9 +826,14 @@ path.route-polyline {
 }
 </style>
 
-<!-- NORTH ROUTES -->
+<!-- ROUTES 2-COLUMN LAYOUT -->
+<div class="routes-2col-wrapper">
+
+<!-- LEFT COLUMN: NORTH ROUTES -->
+<div class="routes-column">
+
 <div class="route-section">
-  <h2 class="route-direction-header">🏔️ North Routes – Andratx → Pollença</h2>
+<h2 class="route-direction-header">North Routes – Andratx → Pollença</h2>
 </div>
 
 <div class="route-accordion">
@@ -750,7 +843,7 @@ path.route-polyline {
       <div class="route-title-section">
         <span class="route-icon">▶</span>
         <div>
-          <div class="route-title">Vanilla – Andratx → Pollença</div>
+          <div class="route-title">Vanilla – Port d'Andratx → Port de Pollença</div>
           <div class="route-stats-inline">
             <span>📏 115 km</span>
             <span>⛰️ 2,425 m</span>
@@ -905,9 +998,13 @@ path.route-polyline {
   </div>
 </div>
 
-<!-- SOUTH ROUTES -->
+</div>
+
+<!-- RIGHT COLUMN: SOUTH ROUTES -->
+<div class="routes-column">
+
 <div class="route-section">
-  <h2 class="route-direction-header">🌊 South Routes – Pollença → Andratx</h2>
+<h2 class="route-direction-header">South Routes – Pollença → Andratx</h2>
 </div>
 
 <div class="route-accordion">
@@ -1058,6 +1155,10 @@ path.route-polyline {
   </div>
 </div>
 
+</div>
+
+</div>
+
 <script>
 // Toggle info card expansion
 function toggleCard(card) {
@@ -1114,6 +1215,7 @@ const loadedRoutes = {};
 function toggleRoute(routeId) {
   const item = document.getElementById('route-' + routeId);
   const wasActive = item.classList.contains('active');
+  const wrapper = document.querySelector('.routes-2col-wrapper');
 
   // Close all other items
   document.querySelectorAll('.route-item').forEach(el => {
@@ -1123,12 +1225,15 @@ function toggleRoute(routeId) {
   // Open this item if it wasn't active
   if (!wasActive) {
     item.classList.add('active');
+    wrapper.classList.add('has-expanded');
 
     // Load route if not already loaded
     if (!loadedRoutes[routeId]) {
       loadRoute(routeId);
       loadedRoutes[routeId] = true;
     }
+  } else {
+    wrapper.classList.remove('has-expanded');
   }
 }
 
@@ -1396,7 +1501,7 @@ function renderElevationChart(routeId, coordinates) {
 </script>
 
 <!-- Custom Product Panel -->
-<div id="finishers-gear" class="custom-product-panel" style="margin: 4rem auto 2rem; padding: 3rem 2rem; max-width: 800px; border-radius: 1rem; background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); scroll-margin-top: 2rem;">
+<div id="finishers-gear" class="custom-product-panel" style="margin: 4rem auto 2rem; padding: 0.9rem 2rem 1.5rem 2rem; max-width: 800px; border-radius: 1rem; background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); scroll-margin-top: 2rem;">
 
   <div style="text-align: center; margin-bottom: 3rem;">
     <h2 style="color: var(--brand, #f10000); margin-bottom: 0.5rem; font-size: 2rem; font-weight: 700;">Commemorate Your Ride</h2>
@@ -1493,8 +1598,41 @@ function renderElevationChart(routeId, coordinates) {
 .custom-product-description {
   color: #666;
   line-height: 1.6;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-size: 1rem;
+  max-height: 150px;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  position: relative;
+}
+
+.custom-product-description.expanded {
+  max-height: none;
+}
+
+.custom-product-description:not(.expanded)::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background: linear-gradient(to bottom, transparent, white);
+}
+
+.description-toggle {
+  color: var(--brand, #f10000);
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  transition: opacity 0.3s ease;
+}
+
+.description-toggle:hover {
+  opacity: 0.8;
+  text-decoration: underline;
 }
 
 .custom-product-options {
@@ -1599,7 +1737,169 @@ function renderElevationChart(routeId, coordinates) {
   border-right-width: 8px;
   transition: all 0.3s ease;
 }
+
+/* Shuttle Navigation Sidebar Styles */
+.shuttle-nav-mobile {
+  display: none; /* Hidden on desktop */
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.shuttle-nav-mobile-header {
+  padding: 1.5rem;
+  background: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+.shuttle-nav-mobile-header:hover {
+  background: #f8f9fa;
+}
+
+.shuttle-nav-mobile-header h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.shuttle-nav-toggle {
+  font-size: 2rem;
+  color: var(--brand, #f10000);
+  font-weight: 300;
+  transition: transform 0.3s ease;
+}
+
+.shuttle-nav-mobile-header.active .shuttle-nav-toggle {
+  transform: rotate(45deg);
+}
+
+.shuttle-nav-mobile-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.shuttle-nav-mobile-content.active {
+  max-height: 2000px;
+  padding: 1.5rem;
+}
+
+.content-with-sidebar {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.main-content {
+  flex: 1;
+  min-width: 0; /* Prevents flex overflow */
+}
+
+.shuttle-nav-sidebar {
+  width: 350px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 100px; /* Accounts for sticky header */
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+}
+
+.shuttle-nav-sidebar h3 {
+  margin: 0 0 1.5rem 0;
+  font-size: 1.4rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.shuttle-nav-category {
+  margin-bottom: 1.5rem;
+}
+
+.shuttle-nav-category-title {
+  font-weight: 700;
+  color: var(--brand, #f10000);
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: background 0.3s ease;
+}
+
+.shuttle-nav-category-title:hover {
+  background: #f8f9fa;
+}
+
+.shuttle-nav-subcategory {
+  margin-left: 1rem;
+  border-left: 2px solid #e0e0e0;
+  padding-left: 1rem;
+}
+
+.shuttle-nav-link {
+  display: block;
+  padding: 0.6rem 0.8rem;
+  color: #666;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.shuttle-nav-link:hover {
+  background: #f8f9fa;
+  color: var(--brand, #f10000);
+  transform: translateX(4px);
+}
+
+.shuttle-nav-loading {
+  text-align: center;
+  padding: 2rem;
+  color: #999;
+}
+
+@media (max-width: 1024px) {
+  .shuttle-nav-mobile {
+    display: block;
+  }
+
+  .shuttle-nav-sidebar {
+    display: none;
+  }
+
+  .content-with-sidebar {
+    display: block;
+  }
+}
 </style>
+
+  </div> <!-- Close main-content -->
+
+  <!-- SHUTTLE NAVIGATION SIDEBAR (Desktop only) -->
+  <aside class="shuttle-nav-sidebar">
+    <h3>🚌 Book Your Shuttle</h3>
+    <div id="shuttle-nav-sidebar-content">
+      <div class="shuttle-nav-loading">Loading shuttle schedules...</div>
+    </div>
+  </aside>
+
+</div> <!-- Close content-with-sidebar -->
 
 <script>
 // Load Ecwid cart script first
@@ -1684,7 +1984,10 @@ async function loadCustomProduct() {
       <div class="custom-product-details">
         <h3 class="custom-product-name">${product.name}</h3>
         <div class="custom-product-price" id="product-price">€${product.defaultDisplayedPrice.toFixed(2)}</div>
-        ${product.description ? `<div class="custom-product-description">${product.description}</div>` : ''}
+        ${product.description ? `
+          <div class="custom-product-description" id="product-description">${product.description}</div>
+          <div class="description-toggle" id="description-toggle" onclick="toggleDescription()">Read More ↓</div>
+        ` : ''}
         ${optionsHTML}
         <button class="custom-add-to-cart" onclick="addToEcwidCart()">
           Add to Cart →
@@ -1804,10 +2107,73 @@ function addToEcwidCart() {
   });
 }
 
+// Toggle product description expand/collapse
+function toggleDescription() {
+  const description = document.getElementById('product-description');
+  const toggle = document.getElementById('description-toggle');
+
+  if (description.classList.contains('expanded')) {
+    description.classList.remove('expanded');
+    toggle.textContent = 'Read More ↓';
+  } else {
+    description.classList.add('expanded');
+    toggle.textContent = 'Show Less ↑';
+  }
+}
+
 // Load product when page is ready
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', loadCustomProduct);
 } else {
   loadCustomProduct();
+}
+
+// Toggle mobile shuttle navigation
+function toggleShuttleNav() {
+  const header = document.querySelector('.shuttle-nav-mobile-header');
+  const content = document.getElementById('shuttle-nav-mobile-content');
+  header.classList.toggle('active');
+  content.classList.toggle('active');
+}
+
+// Load shuttle navigation from Ecwid
+async function loadShuttleNavigation() {
+  try {
+    // For now, use a static navigation structure
+    // This can be updated when we have a server-side endpoint
+    const navHTML = `
+      <div class="shuttle-nav-category">
+        <div class="shuttle-nav-category-title">
+          📍 View All Departure Towns
+          <span>›</span>
+        </div>
+        <div class="shuttle-nav-subcategory">
+          <a href="https://mallorcacycleshuttle.company.site/Departure-towns-c28971057" class="shuttle-nav-link" target="_blank">Browse All Shuttles</a>
+          <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" class="shuttle-nav-link" target="_blank">View Schedule</a>
+        </div>
+      </div>
+      <div style="margin-top: 2rem; padding: 1rem; background: #f8f9fa; border-radius: 0.5rem; font-size: 0.9rem; color: #666;">
+        <p style="margin: 0;"><strong>💡 How it works:</strong></p>
+        <p style="margin: 0.5rem 0 0 0;">Select your departure town, choose your route and date, then book your shuttle ticket.</p>
+      </div>
+    `;
+
+    // Update both sidebar and mobile content
+    document.getElementById('shuttle-nav-sidebar-content').innerHTML = navHTML;
+    document.getElementById('shuttle-nav-loading-mobile').innerHTML = navHTML;
+
+  } catch (error) {
+    console.error('Error loading shuttle navigation:', error);
+    const errorHTML = '<p style="color: #999;">Unable to load shuttle schedules. Please visit our <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">booking platform</a>.</p>';
+    document.getElementById('shuttle-nav-sidebar-content').innerHTML = errorHTML;
+    document.getElementById('shuttle-nav-loading-mobile').innerHTML = errorHTML;
+  }
+}
+
+// Load shuttle navigation when page is ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', loadShuttleNavigation);
+} else {
+  loadShuttleNavigation();
 }
 </script>

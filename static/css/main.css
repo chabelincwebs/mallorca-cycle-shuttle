@@ -3,7 +3,7 @@
   --text: #111;
   --muted: #666;
   --bg: #fff;
-  --maxw: 1080px;
+  --maxw: 1200px;
 }
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
@@ -189,19 +189,19 @@ a:hover { text-decoration: underline; }
   padding:15px !important;        /* <= exactly 15px all around */
   line-height:1.1 !important;     /* keeps text compact */
 }
-.prose { max-width: 70ch; }
+.prose { max-width: none; }
 .prose h1, .prose h2, .prose h3 { max-width: none; }
 /* --- width/overflow fix (force) ----------------------------------------- */
 .container {
-  max-width: 1100px !important;
-  padding-left: 16px !important;
-  padding-right: 16px !important;
+  max-width: 1200px !important;
+  padding-left: 32px !important;
+  padding-right: 32px !important;
   margin-left: auto !important;
   margin-right: auto !important;
 }
 
 main .container .prose {
-  max-width: 72ch !important;
+  max-width: none !important;
   margin-left: auto !important;
   margin-right: auto !important;
 }
@@ -779,7 +779,7 @@ main { overflow-x: hidden; }
 
 /* Services Section */
 .homepage-services {
-  padding: 5rem 0;
+  padding: 2.5rem 0;
   background: white;
 }
 
@@ -795,7 +795,7 @@ main { overflow-x: hidden; }
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2.5rem;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -866,7 +866,7 @@ main { overflow-x: hidden; }
   gap: 4rem;
   align-items: center;
   margin-bottom: 6rem;
-  max-width: 1100px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -940,7 +940,7 @@ main { overflow-x: hidden; }
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 3rem;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -973,7 +973,7 @@ main { overflow-x: hidden; }
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -1052,7 +1052,7 @@ main { overflow-x: hidden; }
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -1097,7 +1097,7 @@ main { overflow-x: hidden; }
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -1170,7 +1170,7 @@ main { overflow-x: hidden; }
   }
 
   .homepage-services {
-    padding: 3rem 0;
+    padding: 1.5rem 0;
   }
 
   .homepage-content-blocks {
