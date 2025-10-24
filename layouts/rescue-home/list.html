@@ -1,0 +1,568 @@
+{{ define "title" }}{{ .Title }}{{ end }}
+
+{{ define "main" }}
+
+{{/* ========================================
+     HERO SECTION - Full-width with gradient overlay
+     ======================================== */}}
+<section class="rescue-hero">
+  <div class="rescue-hero-overlay"></div>
+  <div class="rescue-hero-image">
+    <img src="/img/hero-main.webp" alt="Mallorca Bicycle Rescue Service">
+  </div>
+
+  <div class="rescue-hero-content">
+    <h1 class="rescue-hero-title">{{ .Params.hero_title }}</h1>
+    <p class="rescue-hero-subtitle">{{ .Params.hero_subtitle }}</p>
+    {{ if .Params.note }}
+      <p class="rescue-hero-note">{{ .Params.note }}</p>
+    {{ end }}
+
+    {{ with .Params.cta }}
+      <div class="rescue-hero-cta">
+        <a href="{{ .url }}" class="rescue-cta-btn primary">
+          {{ .label }}
+        </a>
+      </div>
+    {{ end }}
+  </div>
+</section>
+
+{{/* ========================================
+     FEATURES SECTION - 3 columns
+     ======================================== */}}
+{{ with .Params.features }}
+<section class="rescue-features">
+  <div class="container">
+    <div class="rescue-features-grid">
+      {{ range . }}
+      <div class="rescue-feature-card fade-in-on-scroll">
+        <div class="rescue-feature-image">
+          <img src="{{ .image }}" alt="{{ .title }}">
+        </div>
+        <h3>{{ .title }}</h3>
+        <p>{{ .text }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{/* ========================================
+     PRICING SECTION
+     ======================================== */}}
+{{ with .Params.pricing }}
+<section class="rescue-pricing">
+  <div class="container">
+    <h2 class="rescue-section-title">Pricing</h2>
+    <div class="rescue-pricing-grid">
+      {{ range . }}
+      <div class="rescue-pricing-card fade-in-on-scroll">
+        <div class="rescue-pricing-image">
+          <img src="{{ .image }}" alt="{{ .label }}">
+        </div>
+        <div class="rescue-pricing-content">
+          <h3>{{ .label }}</h3>
+          <div class="rescue-pricing-price">{{ .price }}</div>
+          <p>{{ .desc | markdownify }}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{/* ========================================
+     GOOD TO KNOW SECTION
+     ======================================== */}}
+{{ with .Params.good_to_know }}
+<section class="rescue-good-to-know">
+  <div class="container">
+    <h2 class="rescue-section-title">{{ $.Params.good_to_know_title }}</h2>
+    <div class="rescue-info-box">
+      <ul>
+        {{ range . }}
+          <li>{{ . }}</li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{/* ========================================
+     FAQ ACCORDION
+     ======================================== */}}
+{{ with .Params.faq }}
+<section class="rescue-faq">
+  <div class="container">
+    <h2 class="rescue-section-title">{{ $.Params.faq_title }}</h2>
+    <div class="rescue-faq-grid">
+      {{ range . }}
+      <details class="rescue-faq-item">
+        <summary>{{ .q }}</summary>
+        <div class="rescue-faq-answer">{{ .a | markdownify }}</div>
+      </details>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{/* ========================================
+     FINAL CTA BANNER
+     ======================================== */}}
+{{ with .Params.cta }}
+<section class="rescue-final-cta">
+  <div class="container">
+    <div class="rescue-final-cta-content">
+      <h2>Ready for Peace of Mind?</h2>
+      <p>Get your rescue cover today and ride worry-free across Mallorca</p>
+      <a href="{{ .url }}" class="rescue-cta-btn primary">{{ .label }}</a>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{/* ========================================
+     STYLES
+     ======================================== */}}
+<style>
+/* Hero Section */
+.rescue-hero {
+  position: relative;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 4rem;
+}
+
+.rescue-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(241, 0, 0, 0.4) 100%);
+  z-index: 1;
+}
+
+.rescue-hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.rescue-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rescue-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  max-width: 900px;
+  padding: 2rem;
+}
+
+.rescue-hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.rescue-hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.rescue-hero-note {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.rescue-hero-cta {
+  margin-top: 2rem;
+}
+
+/* CTA Buttons */
+.rescue-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2.5rem;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.rescue-cta-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.6s ease;
+}
+
+.rescue-cta-btn:hover::before {
+  left: 100%;
+}
+
+.rescue-cta-btn.primary {
+  background: linear-gradient(135deg, var(--brand, #f10000) 0%, #ff3333 100%);
+  color: white;
+  box-shadow: 0 6px 20px rgba(241, 0, 0, 0.4);
+}
+
+.rescue-cta-btn.primary:hover {
+  transform: scale(1.05) translateY(-2px);
+  box-shadow: 0 10px 30px rgba(241, 0, 0, 0.6);
+}
+
+/* Features Section */
+.rescue-features {
+  padding: 4rem 0;
+  background: white;
+}
+
+.rescue-features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.rescue-feature-card {
+  background: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rescue-feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.rescue-feature-image {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.rescue-feature-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.rescue-feature-card:hover .rescue-feature-image img {
+  transform: scale(1.05);
+}
+
+.rescue-feature-card h3 {
+  font-size: 1.5rem;
+  margin: 1.5rem 1.5rem 1rem;
+  color: #333;
+}
+
+.rescue-feature-card p {
+  margin: 0 1.5rem 1.5rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Pricing Section */
+.rescue-pricing {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.rescue-section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 3rem;
+}
+
+.rescue-pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.rescue-pricing-card {
+  background: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rescue-pricing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(241, 0, 0, 0.2);
+}
+
+.rescue-pricing-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.rescue-pricing-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rescue-pricing-content {
+  padding: 1.5rem;
+}
+
+.rescue-pricing-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.rescue-pricing-price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--brand, #f10000);
+  margin-bottom: 1rem;
+}
+
+.rescue-pricing-content p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Good to Know Section */
+.rescue-good-to-know {
+  padding: 4rem 0;
+  background: white;
+}
+
+.rescue-info-box {
+  background: linear-gradient(135deg, #fff5f5 0%, #ffffff 100%);
+  border-left: 5px solid var(--brand, #f10000);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.rescue-info-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.rescue-info-box li {
+  padding: 1rem 0;
+  border-bottom: 1px solid #f0f0f0;
+  color: #333;
+  line-height: 1.6;
+}
+
+.rescue-info-box li:last-child {
+  border-bottom: none;
+}
+
+.rescue-info-box li::before {
+  content: '✓';
+  color: var(--brand, #f10000);
+  font-weight: 700;
+  margin-right: 1rem;
+}
+
+/* FAQ Section */
+.rescue-faq {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.rescue-faq-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 769px) {
+  .rescue-faq-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.rescue-faq-item {
+  background: white;
+  border: 2px solid #f0f0f0;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.rescue-faq-item[open] {
+  border-color: var(--brand, #f10000);
+  box-shadow: 0 4px 15px rgba(241, 0, 0, 0.1);
+}
+
+.rescue-faq-item summary {
+  padding: 1.25rem 1.5rem;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.3s ease;
+  list-style: none;
+}
+
+.rescue-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.rescue-faq-item summary::after {
+  content: '+';
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--brand, #f10000);
+  transition: transform 0.3s ease;
+}
+
+.rescue-faq-item[open] summary::after {
+  transform: rotate(45deg);
+}
+
+.rescue-faq-item summary:hover {
+  background: #f8f9fa;
+}
+
+.rescue-faq-answer {
+  padding: 0 1.5rem 1.25rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Final CTA Section */
+.rescue-final-cta {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, var(--brand, #f10000) 0%, #ff3333 100%);
+  color: white;
+  text-align: center;
+}
+
+.rescue-final-cta-content h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.rescue-final-cta-content p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+}
+
+.rescue-final-cta .rescue-cta-btn.primary {
+  background: white;
+  color: var(--brand, #f10000);
+}
+
+.rescue-final-cta .rescue-cta-btn.primary:hover {
+  background: #f8f9fa;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Fade-in animation */
+.fade-in-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .rescue-hero-title {
+    font-size: 2rem;
+  }
+
+  .rescue-hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .rescue-section-title {
+    font-size: 2rem;
+  }
+
+  .rescue-features-grid,
+  .rescue-pricing-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+{{/* ========================================
+     SCROLL ANIMATION SCRIPT
+     ======================================== */}}
+<script>
+// Fade-in on scroll animation
+const observerOptions = {
+  threshold: 0.1,
+  rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, observerOptions);
+
+document.querySelectorAll('.fade-in-on-scroll').forEach(el => {
+  observer.observe(el);
+});
+</script>
+
+{{ end }}

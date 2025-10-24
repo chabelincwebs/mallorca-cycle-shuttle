@@ -166,19 +166,20 @@ Scenic with challenging climbs and sweeping descents, all on butter smooth tarma
   </div>
 
   <!-- Finisher's Gear CTA Panel -->
-  <a href="#finishers-gear" class="info-card-cta" onclick="smoothScrollToProduct(event)">
+  <div class="info-card-cta" onclick="smoothScrollToProduct(event)">
     <div class="info-card-header">
       <div class="info-card-header-top">
         <span style="font-size: 1.5rem;">👕</span>
+        <span class="card-toggle">+</span>
       </div>
       <h3>Commemorate Your Ride</h3>
     </div>
-    <div class="info-card-content">
+    <div class="info-card-content-cta">
       <p><strong>Celebrate your achievement!</strong></p>
       <p>Get your exclusive Andratx-Pollença finisher's t-shirt and show the world you conquered this epic route.</p>
       <p style="color: var(--brand, #f10000); font-weight: 700; margin-top: 1rem;">Shop Now →</p>
     </div>
-  </a>
+  </div>
 </div>
 </div>
 
@@ -305,7 +306,7 @@ Scenic with challenging climbs and sweeping descents, all on butter smooth tarma
 /* Finisher's Gear CTA Card - Special Styling */
 .info-card-cta {
   background: white;
-  border: 3px solid var(--brand, #f10000);
+  border: 2px solid var(--brand, #f10000);
   border-radius: 12px;
   overflow: hidden;
   transition: all 0.3s ease;
@@ -331,19 +332,30 @@ Scenic with challenging climbs and sweeping descents, all on butter smooth tarma
 .info-card-cta:hover {
   transform: translateY(-4px);
   box-shadow: 0 10px 30px rgba(241, 0, 0, 0.25);
-  border-width: 4px;
+  border-width: 3px;
 }
 
 .info-card-cta .info-card-header {
   background: linear-gradient(135deg, #fff5f5 0%, #fff 100%);
   padding: 1.25rem;
+  user-select: none;
 }
 
-.info-card-cta .info-card-content {
-  max-height: none;
-  overflow: visible;
-  padding: 1.25rem;
-  display: block;
+.info-card-content-cta {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  padding: 0 1.25rem;
+}
+
+.info-card-content-cta p {
+  margin: 0 0 0.75rem 0;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.info-card-content-cta p:last-child {
+  margin-bottom: 0;
 }
 
 .info-card-content ul {
@@ -1066,9 +1078,13 @@ function toggleCard(card) {
   }
 }
 
-// Smooth scroll to product panel
+// Smooth scroll to product panel (CTA card click)
 function smoothScrollToProduct(event) {
-  event.preventDefault();
+  // Prevent any default behavior
+  if (event) {
+    event.stopPropagation();
+  }
+
   const target = document.getElementById('finishers-gear');
   if (target) {
     target.scrollIntoView({
