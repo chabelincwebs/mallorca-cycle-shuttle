@@ -164,6 +164,21 @@ Scenic with challenging climbs and sweeping descents, all on butter smooth tarma
       <p><strong>Cafes are never more than an hour apart.</strong></p>
     </div>
   </div>
+
+  <!-- Finisher's Gear CTA Panel -->
+  <a href="#finishers-gear" class="info-card-cta" onclick="smoothScrollToProduct(event)">
+    <div class="info-card-header">
+      <div class="info-card-header-top">
+        <span style="font-size: 1.5rem;">👕</span>
+      </div>
+      <h3>Commemorate Your Ride</h3>
+    </div>
+    <div class="info-card-content">
+      <p><strong>Celebrate your achievement!</strong></p>
+      <p>Get your exclusive Andratx-Pollença finisher's t-shirt and show the world you conquered this epic route.</p>
+      <p style="color: var(--brand, #f10000); font-weight: 700; margin-top: 1rem;">Shop Now →</p>
+    </div>
+  </a>
 </div>
 </div>
 
@@ -285,6 +300,50 @@ Scenic with challenging climbs and sweeping descents, all on butter smooth tarma
 
 .info-card-content p:last-child {
   margin-bottom: 0;
+}
+
+/* Finisher's Gear CTA Card - Special Styling */
+.info-card-cta {
+  background: white;
+  border: 3px solid var(--brand, #f10000);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(241, 0, 0, 0.15);
+  text-decoration: none;
+  display: block;
+  position: relative;
+  grid-column: 1 / -1;
+}
+
+.info-card-cta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(241, 0, 0, 0.03) 0%, transparent 100%);
+  pointer-events: none;
+}
+
+.info-card-cta:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(241, 0, 0, 0.25);
+  border-width: 4px;
+}
+
+.info-card-cta .info-card-header {
+  background: linear-gradient(135deg, #fff5f5 0%, #fff 100%);
+  padding: 1.25rem;
+}
+
+.info-card-cta .info-card-content {
+  max-height: none;
+  overflow: visible;
+  padding: 1.25rem;
+  display: block;
 }
 
 .info-card-content ul {
@@ -669,7 +728,7 @@ path.route-polyline {
 
 <!-- NORTH ROUTES -->
 <div class="route-section">
-  <h2>🏔️ North Routes – Andratx → Pollença</h2>
+  <h2 class="route-direction-header">🏔️ North Routes – Andratx → Pollença</h2>
 </div>
 
 <div class="route-accordion">
@@ -836,7 +895,7 @@ path.route-polyline {
 
 <!-- SOUTH ROUTES -->
 <div class="route-section">
-  <h2>🌊 South Routes – Pollença → Andratx</h2>
+  <h2 class="route-direction-header">🌊 South Routes – Pollença → Andratx</h2>
 </div>
 
 <div class="route-accordion">
@@ -1004,6 +1063,18 @@ function toggleCard(card) {
     grid.classList.add('has-expanded');
   } else {
     grid.classList.remove('has-expanded');
+  }
+}
+
+// Smooth scroll to product panel
+function smoothScrollToProduct(event) {
+  event.preventDefault();
+  const target = document.getElementById('finishers-gear');
+  if (target) {
+    target.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
   }
 }
 
@@ -1306,4 +1377,421 @@ function renderElevationChart(routeId, coordinates) {
   });
 }
 
+</script>
+
+<!-- Custom Product Panel -->
+<div id="finishers-gear" class="custom-product-panel" style="margin: 4rem auto 2rem; padding: 3rem 2rem; max-width: 800px; border-radius: 1rem; background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); scroll-margin-top: 2rem;">
+
+  <div style="text-align: center; margin-bottom: 3rem;">
+    <h2 style="color: var(--brand, #f10000); margin-bottom: 0.5rem; font-size: 2rem; font-weight: 700;">Commemorate Your Ride</h2>
+    <p style="color: #666; font-size: 1.1rem;">Celebrate completing the epic Andratx to Pollença route with our exclusive finisher's t-shirt!</p>
+  </div>
+
+  <div id="custom-product-card" style="display: flex; gap: 2rem; align-items: flex-start; flex-wrap: wrap; justify-content: center;">
+    <!-- Product will be loaded here by JavaScript -->
+    <div style="text-align: center; width: 100%; padding: 2rem; color: #999;">
+      <div style="font-size: 2rem; margin-bottom: 1rem;">⏳</div>
+      Loading product...
+    </div>
+  </div>
+
+</div>
+
+<style>
+.custom-product-image {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.custom-product-image #product-main-image {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease, opacity 0.15s ease;
+  object-fit: contain;
+}
+
+.custom-product-image #product-main-image:hover {
+  transform: scale(1.02);
+}
+
+.custom-product-thumbnails {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.custom-thumbnail {
+  width: 60px;
+  height: 60px;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  border: 2px solid #e0e0e0;
+  transition: all 0.3s ease;
+  object-fit: cover;
+}
+
+.custom-thumbnail:hover {
+  border-color: var(--brand, #f10000);
+  transform: scale(1.05);
+}
+
+.custom-thumbnail.active {
+  border-color: var(--brand, #f10000);
+  border-width: 3px;
+  box-shadow: 0 0 0 2px rgba(241, 0, 0, 0.2);
+}
+
+.custom-product-details {
+  flex: 1;
+  min-width: 300px;
+}
+
+.custom-product-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.custom-product-price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--brand, #f10000);
+  margin-bottom: 1rem;
+}
+
+.custom-product-description {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.custom-product-options {
+  margin-bottom: 1.5rem;
+}
+
+.custom-product-options label {
+  display: block;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.custom-product-options select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.custom-product-options select:hover {
+  border-color: var(--brand, #f10000);
+}
+
+.custom-product-options select:focus {
+  outline: none;
+  border-color: var(--brand, #f10000);
+  box-shadow: 0 0 0 3px rgba(241, 0, 0, 0.1);
+}
+
+.custom-add-to-cart {
+  width: 100%;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, var(--brand, #f10000) 0%, #ff3333 100%);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 6px 20px rgba(241, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.custom-add-to-cart::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.6s ease;
+}
+
+.custom-add-to-cart:hover::before {
+  left: 100%;
+}
+
+.custom-add-to-cart:hover {
+  transform: scale(1.05) translateY(-2px);
+  box-shadow: 0 10px 30px rgba(241, 0, 0, 0.6);
+}
+
+.custom-add-to-cart:active {
+  transform: scale(0.98) translateY(0);
+}
+
+@media (max-width: 768px) {
+  .custom-product-image {
+    max-width: 100%;
+  }
+
+  #custom-product-card {
+    gap: 1.5rem;
+  }
+}
+
+/* Route Direction Headers - Left & Right Border Accent */
+.route-direction-header {
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 1.25rem 1.5rem;
+  margin: 3rem 0 2rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  border-left: 5px solid var(--brand, #f10000);
+  border-right: 5px solid var(--brand, #f10000);
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  color: #333;
+}
+
+.route-direction-header:hover {
+  border-left-width: 8px;
+  border-right-width: 8px;
+  transition: all 0.3s ease;
+}
+</style>
+
+<script>
+// Load Ecwid cart script first
+if (!window.Ecwid) {
+  const ecwidScript = document.createElement('script');
+  ecwidScript.src = 'https://app.ecwid.com/script.js?5889081';
+  ecwidScript.charset = 'utf-8';
+  ecwidScript.async = true;
+  document.head.appendChild(ecwidScript);
+}
+
+// Fetch and display custom product
+async function loadCustomProduct() {
+  const storeId = '5889081';
+  const productId = '788401800';
+  const token = 'public_eWe1rYbgpSHJ5tFvV5BhkWEWkLmciF2i';
+
+  try {
+    const response = await fetch(`https://app.ecwid.com/api/v3/${storeId}/products/${productId}`, {
+      headers: {
+        'Authorization': `Bearer ${token}`
+      }
+    });
+    const product = await response.json();
+
+    // Build product HTML
+    let optionsHTML = '';
+    if (product.options && product.options.length > 0) {
+      product.options.forEach(option => {
+        optionsHTML += `
+          <div class="custom-product-options">
+            <label for="option-${option.name}">${option.name}:</label>
+            <select id="option-${option.name}" data-option-name="${option.name}">
+              ${option.choices.map(choice =>
+                `<option value="${choice.text}" ${choice.priceModifier ? `data-price="${choice.priceModifier}"` : ''}>${choice.text}${choice.priceModifier ? ` (+€${choice.priceModifier.toFixed(2)})` : ''}</option>`
+              ).join('')}
+            </select>
+          </div>
+        `;
+      });
+    }
+
+    // Build thumbnail gallery for color variations
+    let thumbnailsHTML = '';
+    const colorImages = new Map();
+    if (product.combinations) {
+      // Get unique color images
+      product.combinations.forEach(combo => {
+        const colorOption = combo.options.find(opt => opt.name === 'Color');
+        if (colorOption && combo.thumbnailUrl && !colorImages.has(colorOption.value)) {
+          colorImages.set(colorOption.value, {
+            url: combo.originalImageUrl || combo.imageUrl,
+            thumbnail: combo.thumbnailUrl,
+            color: colorOption.value
+          });
+        }
+      });
+
+      if (colorImages.size > 0) {
+        thumbnailsHTML = '<div class="custom-product-thumbnails">';
+        let isFirst = true;
+        colorImages.forEach((img, color) => {
+          thumbnailsHTML += `<img
+            src="${img.thumbnail}"
+            class="custom-thumbnail ${isFirst ? 'active' : ''}"
+            data-full-image="${img.url}"
+            data-color="${color}"
+            alt="${color}"
+            onclick="changeProductImage('${img.url}', '${color}', this)"
+          >`;
+          isFirst = false;
+        });
+        thumbnailsHTML += '</div>';
+      }
+    }
+
+    const productHTML = `
+      <div class="custom-product-image">
+        <img id="product-main-image" src="${product.imageUrl || product.thumbnailUrl}" alt="${product.name}">
+        ${thumbnailsHTML}
+      </div>
+      <div class="custom-product-details">
+        <h3 class="custom-product-name">${product.name}</h3>
+        <div class="custom-product-price" id="product-price">€${product.defaultDisplayedPrice.toFixed(2)}</div>
+        ${product.description ? `<div class="custom-product-description">${product.description}</div>` : ''}
+        ${optionsHTML}
+        <button class="custom-add-to-cart" onclick="addToEcwidCart()">
+          Add to Cart →
+        </button>
+      </div>
+    `;
+
+    document.getElementById('custom-product-card').innerHTML = productHTML;
+
+    // Store product data for cart function
+    window.customProductData = {
+      id: product.id,
+      price: product.price,
+      options: product.options || [],
+      combinations: product.combinations || []
+    };
+
+    // Add event listener to color selector to change image and thumbnail state
+    const colorSelect = document.getElementById('option-Color');
+    if (colorSelect && product.combinations) {
+      colorSelect.addEventListener('change', function() {
+        const selectedColor = this.value;
+        // Find a combination with this color
+        const matchingCombination = product.combinations.find(combo =>
+          combo.options.some(opt => opt.name === 'Color' && opt.value === selectedColor)
+        );
+
+        if (matchingCombination && matchingCombination.originalImageUrl) {
+          const productImage = document.getElementById('product-main-image');
+          productImage.style.opacity = '0.5';
+          setTimeout(() => {
+            productImage.src = matchingCombination.originalImageUrl;
+            productImage.style.opacity = '1';
+          }, 150);
+
+          // Update active thumbnail
+          updateActiveThumbnail(selectedColor);
+        }
+      });
+    }
+
+  } catch (error) {
+    console.error('Error loading product:', error);
+    document.getElementById('custom-product-card').innerHTML = `
+      <div style="text-align: center; width: 100%; padding: 2rem; color: #999;">
+        <p>Unable to load product. Please try again later.</p>
+      </div>
+    `;
+  }
+}
+
+// Change main image when thumbnail is clicked
+function changeProductImage(imageUrl, color, thumbnailElement) {
+  const productImage = document.getElementById('product-main-image');
+
+  // Fade transition
+  productImage.style.opacity = '0.5';
+  setTimeout(() => {
+    productImage.src = imageUrl;
+    productImage.style.opacity = '1';
+  }, 150);
+
+  // Update color dropdown
+  const colorSelect = document.getElementById('option-Color');
+  if (colorSelect) {
+    colorSelect.value = color;
+  }
+
+  // Update active thumbnail
+  updateActiveThumbnail(color);
+}
+
+// Update which thumbnail is marked as active
+function updateActiveThumbnail(selectedColor) {
+  const thumbnails = document.querySelectorAll('.custom-thumbnail');
+  thumbnails.forEach(thumb => {
+    if (thumb.dataset.color === selectedColor) {
+      thumb.classList.add('active');
+    } else {
+      thumb.classList.remove('active');
+    }
+  });
+}
+
+// Add product to Ecwid cart
+function addToEcwidCart() {
+  if (!window.Ecwid || !window.customProductData) {
+    alert('Loading cart system, please try again in a moment.');
+    return;
+  }
+
+  // Gather selected options
+  const selectedOptions = {};
+  const optionSelects = document.querySelectorAll('[data-option-name]');
+  optionSelects.forEach(select => {
+    selectedOptions[select.dataset.optionName] = select.value;
+  });
+
+  // Add to cart via Ecwid
+  Ecwid.Cart.addProduct({
+    id: window.customProductData.id,
+    quantity: 1,
+    options: selectedOptions,
+    callback: function(success) {
+      if (success) {
+        // Optional: Show success message
+        const btn = document.querySelector('.custom-add-to-cart');
+        const originalText = btn.innerHTML;
+        btn.innerHTML = '✓ Added to Cart!';
+        btn.style.background = '#28a745';
+        setTimeout(() => {
+          btn.innerHTML = originalText;
+          btn.style.background = '';
+        }, 2000);
+      }
+    }
+  });
+}
+
+// Load product when page is ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', loadCustomProduct);
+} else {
+  loadCustomProduct();
+}
 </script>

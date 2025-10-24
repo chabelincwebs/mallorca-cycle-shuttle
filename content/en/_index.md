@@ -9,13 +9,13 @@ hero_title: "Make the most of Mallorca"
 hero_subtitle: "Scheduled bike shuttles, bike rescue and airport transfers by cyclists for cyclists"
 
 hero_ctas:
-  - text: "Book a Shuttle"
+  - text: "Book Your Shuttle"
     url: "https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235"
     style: "secondary"
   - text: "Get Bike Rescue"
     url: "https://mallorcacycleshuttle.company.site/products/"
     style: "primary"
-  - text: "Airport Transfer"
+  - text: "Book Airport Transfer"
     url: "/en/mallorca-airport-transfers/"
     style: "secondary"
 
@@ -26,12 +26,12 @@ services_title: "Our Services"
 
 services:
   - title: "Bike Rescue Service"
-    description: "Peace of mind on every ride. Our 24/7 rescue service picks you up anywhere in Mallorca if you have a mechanical issue, injury, or just need a lift back."
+    description: "Peace of mind on every ride. Policyholders get rescued Mallorca-wide if bike or body break down."
     icon: "/img/icon-rescue.svg"
     link: "/en/bike-rescue/rescue-home/"
 
   - title: "Scheduled Shuttles"
-    description: "Start your epic rides from the best locations. We shuttle you and your bike to iconic routes like Sa Calobra, Formentor, and the Big Daddy Challenge."
+    description: "Start your epic rides from the best locations. We shuttle you and your bike to the start of the iconic routes."
     icon: "/img/icon-shuttle.svg"
     link: "https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235"
 
