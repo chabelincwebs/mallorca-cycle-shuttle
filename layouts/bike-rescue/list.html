@@ -27,42 +27,33 @@
 </section>
 
 {{/* ========================================
-     FEATURES SECTION - 3 columns
+     COMBINED FEATURES + PRICING SECTION - 3x2 Grid
      ======================================== */}}
-{{ with .Params.features }}
-<section class="rescue-features">
+<section class="rescue-combined-grid">
   <div class="container">
-    <div class="rescue-features-grid">
-      {{ range . }}
-      <div class="rescue-feature-card fade-in-on-scroll">
-        <div class="rescue-feature-image">
+    <div class="rescue-grid-3x2">
+      {{/* Features cards */}}
+      {{ range .Params.features }}
+      <div class="rescue-card fade-in-on-scroll">
+        <div class="rescue-card-image">
           <img src="{{ .image }}" alt="{{ .title }}">
         </div>
-        <h3>{{ .title }}</h3>
-        <p>{{ .text }}</p>
+        <div class="rescue-card-content">
+          <h3>{{ .title }}</h3>
+          <p>{{ .text }}</p>
+        </div>
       </div>
       {{ end }}
-    </div>
-  </div>
-</section>
-{{ end }}
 
-{{/* ========================================
-     PRICING SECTION
-     ======================================== */}}
-{{ with .Params.pricing }}
-<section class="rescue-pricing">
-  <div class="container">
-    <h2 class="rescue-section-title">Pricing</h2>
-    <div class="rescue-pricing-grid">
-      {{ range . }}
-      <div class="rescue-pricing-card fade-in-on-scroll">
-        <div class="rescue-pricing-image">
+      {{/* Pricing cards */}}
+      {{ range .Params.pricing }}
+      <div class="rescue-card fade-in-on-scroll">
+        <div class="rescue-card-image">
           <img src="{{ .image }}" alt="{{ .label }}">
         </div>
-        <div class="rescue-pricing-content">
+        <div class="rescue-card-content">
           <h3>{{ .label }}</h3>
-          <div class="rescue-pricing-price">{{ .price }}</div>
+          <div class="rescue-card-price">{{ .price }}</div>
           <p>{{ .desc | markdownify }}</p>
         </div>
       </div>
@@ -70,7 +61,6 @@
     </div>
   </div>
 </section>
-{{ end }}
 
 {{/* ========================================
      GOOD TO KNOW SECTION
@@ -238,20 +228,19 @@
   box-shadow: 0 10px 30px rgba(241, 0, 0, 0.6);
 }
 
-/* Features Section */
-.rescue-features {
-  padding: 4rem 0;
-  background: white;
+/* Combined Features + Pricing Section - 3x2 Grid */
+.rescue-combined-grid {
+  padding: 2rem 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
 }
 
-.rescue-features-grid {
+.rescue-grid-3x2 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  margin-top: 2rem;
 }
 
-.rescue-feature-card {
+.rescue-card {
   background: white;
   border-radius: 1rem;
   overflow: hidden;
@@ -259,44 +248,49 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.rescue-feature-card:hover {
+.rescue-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 25px rgba(241, 0, 0, 0.2);
 }
 
-.rescue-feature-image {
+.rescue-card-image {
   width: 100%;
-  height: 250px;
+  height: 220px;
   overflow: hidden;
 }
 
-.rescue-feature-image img {
+.rescue-card-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
 
-.rescue-feature-card:hover .rescue-feature-image img {
+.rescue-card:hover .rescue-card-image img {
   transform: scale(1.05);
 }
 
-.rescue-feature-card h3 {
+.rescue-card-content {
+  padding: 1.5rem;
+}
+
+.rescue-card-content h3 {
   font-size: 1.5rem;
-  margin: 1.5rem 1.5rem 1rem;
+  margin-bottom: 0.5rem;
   color: #333;
 }
 
-.rescue-feature-card p {
-  margin: 0 1.5rem 1.5rem;
-  color: #666;
-  line-height: 1.6;
+.rescue-card-price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--brand, #f10000);
+  margin-bottom: 1rem;
 }
 
-/* Pricing Section */
-.rescue-pricing {
-  padding: 4rem 0;
-  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+.rescue-card-content p {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
 }
 
 .rescue-section-title {
@@ -305,60 +299,6 @@
   font-weight: 700;
   color: #333;
   margin-bottom: 3rem;
-}
-
-.rescue-pricing-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.rescue-pricing-card {
-  background: white;
-  border-radius: 1rem;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.rescue-pricing-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(241, 0, 0, 0.2);
-}
-
-.rescue-pricing-image {
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-}
-
-.rescue-pricing-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.rescue-pricing-content {
-  padding: 1.5rem;
-}
-
-.rescue-pricing-content h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  color: #333;
-}
-
-.rescue-pricing-price {
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--brand, #f10000);
-  margin-bottom: 1rem;
-}
-
-.rescue-pricing-content p {
-  color: #666;
-  line-height: 1.6;
 }
 
 /* Good to Know Section */
@@ -533,8 +473,7 @@
     font-size: 2rem;
   }
 
-  .rescue-features-grid,
-  .rescue-pricing-grid {
+  .rescue-grid-3x2 {
     grid-template-columns: 1fr;
   }
 }
