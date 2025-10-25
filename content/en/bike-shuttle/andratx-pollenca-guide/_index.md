@@ -1,20 +1,21 @@
 ---
-title: "Andratx to Pollença Master Cycling Guide"
+title: "Master Cycling Guide: Andratx to Pollença"
 description: "Complete guide for cycling from Andratx to Pollença through the Tramuntana mountains"
 ---
 
-<div class="hero-intro-banner">
-<div class="hero-intro-content">
-<p class="hero-intro-italic fade-in-up">
+<p class="header-subtitle">
 We are not saying it's easy. We are not saying it's for everyone.
 </p>
-<p class="hero-intro-centered fade-in-up delay-1">
+
+<div class="hero-intro-banner">
+<div class="hero-intro-content">
+<p class="hero-intro-centered fade-in-up">
 We are saying that it's <strong>brilliant</strong>.
 </p>
-<p class="hero-intro-main fade-in-up delay-2">
+<p class="hero-intro-main fade-in-up delay-1">
 For your <a href="#north-routes" class="highlight-red hero-link">"Best Ever Day On A Bike"</a> ride <strong>Port d'Andratx</strong> to <strong>Port de Pollença</strong> through Mallorca's stunning <span class="highlight">UNESCO World Heritage Serra de Tramuntana</span> mountains for the ultimate <a href="#south-routes" class="highlight-red hero-link">Coast-to-Coast</a>
 </p>
-<p class="hero-intro-features fade-in-up delay-3">
+<p class="hero-intro-features fade-in-up delay-2">
 Scenic challenging climbs • Sweeping descents • Butter smooth tarmac • Regular café stops • Cycling paradise
 </p>
 </div>
@@ -24,7 +25,20 @@ Scenic challenging climbs • Sweeping descents • Butter smooth tarmac • Reg
 /* Center Page Title */
 h1 {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Header Subtitle - Below Title */
+.header-subtitle {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #555;
+  font-weight: 500;
+  font-style: italic;
+  text-align: center;
+  margin: 0 auto 2.5rem auto;
+  max-width: 800px;
+  letter-spacing: -0.01em;
 }
 
 /* Hero Intro Banner - Premium Glassmorphism */
@@ -200,13 +214,15 @@ html {
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
+  .header-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+  }
+
   .hero-intro-banner {
     padding: 1.2rem 1.5rem 2rem 1.5rem;
     margin: 0 0 3rem 0;
-  }
-
-  .hero-intro-italic {
-    font-size: 1.1rem;
   }
 
   .hero-intro-centered {
