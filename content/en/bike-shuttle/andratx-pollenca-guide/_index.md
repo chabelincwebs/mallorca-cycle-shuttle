@@ -43,7 +43,7 @@ h1 {
 
 /* Hero Intro Banner - Premium Glassmorphism */
 .hero-intro-banner {
-  margin: 0 0 4rem 0;
+  margin: 0 0 2rem 0;
   padding: 1.8rem 2.5rem 3rem 2.5rem;
   background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(12px);
