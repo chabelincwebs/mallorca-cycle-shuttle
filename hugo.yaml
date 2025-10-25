@@ -136,6 +136,28 @@ languages:
         - name: "Condicions de Venda"
           url: "/bike-rescue/rescue-sale-terms/"
           weight: 4
+  nl:
+    languageName: "Nederlands"
+    weight: 7
+    contentDir: content/nl
+    menus:
+      main:
+        - name: "Reddingsvoorwaarden"
+          url: "/bike-rescue/rescue-sale-terms/"
+          weight: 1
+      legal:
+        - name: "Juridische Kennisgeving"
+          url: "/about/juridische-kennisgeving/"
+          weight: 1
+        - name: "Cookiebeleid"
+          url: "/about/cookiebeleid/"
+          weight: 2
+        - name: "Privacybeleid"
+          url: "/about/privacybeleid/"
+          weight: 3
+        - name: "Algemene Verkoopvoorwaarden"
+          url: "/bike-rescue/rescue-sale-terms/"
+          weight: 4
 
 markup:
   goldmark:

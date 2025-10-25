@@ -122,18 +122,25 @@
   <section class="homepage-testimonials">
     <div class="container">
       <h2 class="homepage-section-title">{{ $.Params.testimonials_title }}</h2>
-      <div class="homepage-testimonials-grid">
-        {{ range . }}
-        <div class="homepage-testimonial-card fade-in-on-scroll">
-          <div class="homepage-testimonial-stars">★★★★★</div>
-          <p class="homepage-testimonial-text">"{{ .quote }}"</p>
-          <div class="homepage-testimonial-author">
-            <strong>{{ .name }}</strong>
-            {{ if .location }}<span> • {{ .location }}</span>{{ end }}
+      <div class="testimonials-carousel-wrapper">
+        <button class="carousel-btn carousel-btn-prev" aria-label="Previous testimonials">‹</button>
+        <div class="homepage-testimonials-carousel">
+          <div class="testimonials-track">
+            {{ range . }}
+            <div class="homepage-testimonial-card">
+              <div class="homepage-testimonial-stars">★★★★★</div>
+              <p class="homepage-testimonial-text">"{{ .quote }}"</p>
+              <div class="homepage-testimonial-author">
+                <strong>{{ .name }}</strong>
+                {{ if .location }}<span> • {{ .location }}</span>{{ end }}
+              </div>
+            </div>
+            {{ end }}
           </div>
         </div>
-        {{ end }}
+        <button class="carousel-btn carousel-btn-next" aria-label="Next testimonials">›</button>
       </div>
+      <div class="carousel-dots"></div>
     </div>
   </section>
   {{ end }}
@@ -218,6 +225,88 @@
     }, { threshold: 0.5 });
 
     counters.forEach(counter => counterObserver.observe(counter));
+  </script>
+
+  <script>
+    // Testimonials Carousel
+    document.addEventListener('DOMContentLoaded', function() {
+      const track = document.querySelector('.testimonials-track');
+      const prevBtn = document.querySelector('.carousel-btn-prev');
+      const nextBtn = document.querySelector('.carousel-btn-next');
+      const dotsContainer = document.querySelector('.carousel-dots');
+
+      if (!track || !prevBtn || !nextBtn || !dotsContainer) return;
+
+      const cards = Array.from(track.children);
+      const totalCards = cards.length;
+      const cardsPerView = 3;
+      const totalPages = Math.ceil(totalCards / cardsPerView);
+      let currentPage = 0;
+
+      // Create dots
+      for (let i = 0; i < totalPages; i++) {
+        const dot = document.createElement('button');
+        dot.classList.add('carousel-dot');
+        dot.setAttribute('aria-label', `Go to testimonials page ${i + 1}`);
+        if (i === 0) dot.classList.add('active');
+        dot.addEventListener('click', () => goToPage(i));
+        dotsContainer.appendChild(dot);
+      }
+
+      const dots = Array.from(dotsContainer.children);
+
+      function updateCarousel() {
+        const cardWidth = cards[0].offsetWidth;
+        const gap = 32; // 2rem in pixels
+        const offset = currentPage * (cardsPerView * (cardWidth + gap));
+        track.style.transform = `translateX(-${offset}px)`;
+
+        // Update dots
+        dots.forEach((dot, index) => {
+          dot.classList.toggle('active', index === currentPage);
+        });
+
+        // Update button states
+        prevBtn.disabled = currentPage === 0;
+        nextBtn.disabled = currentPage === totalPages - 1;
+        prevBtn.style.opacity = currentPage === 0 ? '0.5' : '1';
+        nextBtn.style.opacity = currentPage === totalPages - 1 ? '0.5' : '1';
+      }
+
+      function goToPage(page) {
+        currentPage = page;
+        updateCarousel();
+      }
+
+      function nextPage() {
+        if (currentPage < totalPages - 1) {
+          currentPage++;
+          updateCarousel();
+        }
+      }
+
+      function prevPage() {
+        if (currentPage > 0) {
+          currentPage--;
+          updateCarousel();
+        }
+      }
+
+      prevBtn.addEventListener('click', prevPage);
+      nextBtn.addEventListener('click', nextPage);
+
+      // Handle window resize
+      let resizeTimer;
+      window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+          updateCarousel();
+        }, 250);
+      });
+
+      // Initial update
+      updateCarousel();
+    });
   </script>
 
 {{ end }}
