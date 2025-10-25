@@ -13,7 +13,7 @@
 
   <div class="transfers-hero-content">
     <h1 class="transfers-hero-title">{{ .Title }}</h1>
-    <p class="transfers-hero-subtitle">Designed by cyclists for cyclists</p>
+    <p class="transfers-hero-subtitle">{{ .Params.hero_subtitle }}</p>
   </div>
 </section>
 
@@ -23,36 +23,18 @@
 <section class="transfers-content">
   <div class="container">
     <div class="transfers-intro">
-      <p>Our Mallorca airport transfers are designed by cyclists for cyclists, catering to groups of all sizes. We offer reliable, efficient, and stress-free door-to-door private airport transfers from Palma de Mallorca Airport to all areas of Mallorca, available 24 hours a day, 7 days a week, 365 days a year through our bus company, MALLORCA HOLIDAY TRANSFERS.</p>
+      <p>{{ .Params.intro_text }}</p>
     </div>
 
-    <h2 class="transfers-section-title">Why Choose Our Mallorca Airport Transfers?</h2>
+    <h2 class="transfers-section-title">{{ .Params.section_title }}</h2>
 
     <div class="transfers-features">
+      {{ range .Params.features }}
       <div class="transfers-feature">
-        <h3>By Cyclists, for Cyclists</h3>
-        <p>Join over 30,000 happy customers each year who trust us for their Mallorca transfers.</p>
+        <h3>{{ .title }}</h3>
+        <p>{{ .text }}</p>
       </div>
-      <div class="transfers-feature">
-        <h3>Private Transfers</h3>
-        <p>All our transfers are private for you and your group, ensuring comfort and convenience.</p>
-      </div>
-      <div class="transfers-feature">
-        <h3>Flight Monitoring</h3>
-        <p>We monitor all flight times for delays, so we're always there when you arrive.</p>
-      </div>
-      <div class="transfers-feature">
-        <h3>Instant Booking</h3>
-        <p>Use the form below for an instant quote and to book your transfer.</p>
-      </div>
-      <div class="transfers-feature">
-        <h3>Immediate Confirmation</h3>
-        <p>Your booking confirmation is sent instantly to your email (check your spam folder just in case!).</p>
-      </div>
-      <div class="transfers-feature">
-        <h3>Office at the Airport</h3>
-        <p>Any issues, we are there to help. Service comes first.</p>
-      </div>
+      {{ end }}
     </div>
   </div>
 </section>
