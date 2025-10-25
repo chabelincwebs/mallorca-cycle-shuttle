@@ -1630,21 +1630,6 @@ path.route-polyline {
       </div>
     </div>
   </div>
-
-  <!-- Placeholder: South Route 6 - Coming Soon -->
-  <div class="route-item" id="route-south-6">
-    <div class="route-header">
-      <div class="route-title-section">
-        <span style="font-size: 1.5rem;">🔄</span>
-        <div>
-          <div class="route-title">Additional Route Coming Soon</div>
-          <div class="route-stats-inline">
-            <span style="color: var(--muted);">Details to be announced</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
 
 </div>
