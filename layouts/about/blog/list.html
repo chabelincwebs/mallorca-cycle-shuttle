@@ -1,0 +1,384 @@
+{{ define "title" }}{{ .Title }}{{ end }}
+
+{{ define "main" }}
+
+{{/* ========================================
+     HERO SECTION - Glassmorphism Banner
+     ======================================== */}}
+<section class="blog-hero">
+  <div class="blog-hero-content">
+    <h1 class="blog-hero-title">{{ .Title }}</h1>
+    <p class="blog-hero-subtitle">{{ .Description | default "Latest news, guides, and cycling tips for Mallorca" }}</p>
+  </div>
+</section>
+
+{{/* ========================================
+     BLOG POSTS GRID - 3 Column Cards
+     ======================================== */}}
+<section class="blog-posts-section">
+  <div class="container">
+    <div class="blog-grid">
+      {{ range .Pages }}
+      <article class="blog-card fade-in-on-scroll">
+        <a href="{{ .RelPermalink }}" class="blog-card-link">
+          {{/* Featured Image */}}
+          <div class="blog-card-image">
+            {{ if .Params.featured_image }}
+              <img src="{{ .Params.featured_image }}" alt="{{ .Title }}">
+            {{ else }}
+              <img src="{{ .Params.hero_image | default "/img/hero-main.webp" }}" alt="{{ .Title }}">
+            {{ end }}
+          </div>
+
+          {{/* Card Content */}}
+          <div class="blog-card-content">
+            {{/* Category Badge */}}
+            {{ with .Params.category }}
+              <span class="blog-category-badge">{{ . }}</span>
+            {{ end }}
+
+            {{/* Title */}}
+            <h2 class="blog-card-title">{{ .Title }}</h2>
+
+            {{/* Excerpt */}}
+            <p class="blog-card-excerpt">
+              {{ if .Params.excerpt }}
+                {{ .Params.excerpt }}
+              {{ else if .Description }}
+                {{ .Description }}
+              {{ else }}
+                {{ .Summary | truncate 150 }}
+              {{ end }}
+            </p>
+
+            {{/* Read More Button */}}
+            <span class="blog-read-more">Read More →</span>
+          </div>
+        </a>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{/* ========================================
+     STYLES
+     ======================================== */}}
+<style>
+/* Hero Section - Glassmorphism Banner */
+.blog-hero {
+  margin: 0 0 4rem 0;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 50%, #f1f3f5 100%);
+  border-radius: 28px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+}
+
+.blog-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(241, 0, 0, 0.04) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(255, 51, 51, 0.03) 0%, transparent 50%);
+  border-radius: 28px;
+  pointer-events: none;
+}
+
+.blog-hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    rgba(241, 0, 0, 0.6) 20%,
+    rgba(241, 0, 0, 1) 50%,
+    rgba(241, 0, 0, 0.6) 80%,
+    transparent 100%
+  );
+}
+
+.blog-hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.blog-hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #111;
+  letter-spacing: -0.02em;
+}
+
+.blog-hero-subtitle {
+  font-size: 1.35rem;
+  line-height: 1.7;
+  color: #555;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Blog Posts Section */
+.blog-posts-section {
+  padding: 2rem 0 4rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+/* Blog Grid - 3 Columns */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Blog Card */
+.blog-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.blog-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(241, 0, 0, 0.05) 0%, rgba(255, 51, 51, 0.02) 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 0;
+  border-radius: 20px;
+}
+
+.blog-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 48px rgba(241, 0, 0, 0.15);
+  border-color: rgba(241, 0, 0, 0.2);
+}
+
+.blog-card:hover::before {
+  opacity: 1;
+}
+
+.blog-card-link {
+  text-decoration: none !important;
+  color: inherit;
+  display: block;
+}
+
+.blog-card-link:hover {
+  text-decoration: none !important;
+}
+
+.blog-card-link:hover * {
+  text-decoration: none !important;
+}
+
+/* Card Image */
+.blog-card-image {
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.blog-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.blog-card:hover .blog-card-image img {
+  transform: scale(1.08);
+}
+
+/* Card Content */
+.blog-card-content {
+  padding: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* Category Badge */
+.blog-category-badge {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  background: linear-gradient(135deg, rgba(241, 0, 0, 0.1) 0%, rgba(255, 51, 51, 0.08) 100%);
+  color: var(--brand, #f10000);
+  margin-bottom: 1rem;
+  border: 1px solid rgba(241, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.blog-card:hover .blog-category-badge {
+  background: linear-gradient(135deg, var(--brand, #f10000) 0%, #ff3333 100%);
+  color: white;
+  border-color: transparent;
+}
+
+/* Card Title */
+.blog-card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #222;
+  margin: 0 0 1rem 0;
+  line-height: 1.3;
+  transition: color 0.3s ease;
+}
+
+.blog-card:hover .blog-card-title {
+  color: var(--brand, #f10000);
+}
+
+/* Card Excerpt */
+.blog-card-excerpt {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #666;
+  margin: 0 0 1.5rem 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Read More Button */
+.blog-read-more {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1.75rem;
+  background: linear-gradient(135deg, var(--brand, #f10000) 0%, #ff3333 100%);
+  color: white;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 16px rgba(241, 0, 0, 0.25);
+}
+
+.blog-card:hover .blog-read-more {
+  background: linear-gradient(135deg, rgba(209, 0, 0, 1) 0%, rgba(241, 0, 0, 1) 100%);
+  transform: translateX(4px);
+  box-shadow: 0 6px 24px rgba(241, 0, 0, 0.4);
+}
+
+/* Container */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Fade-in animation */
+.fade-in-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+
+/* Tablets: 2 columns (between 769px and 1024px) */
+@media (max-width: 1024px) {
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+/* Mobile: 1 column (below 768px) */
+@media (max-width: 768px) {
+  .blog-hero {
+    padding: 2rem 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .blog-hero-title {
+    font-size: 2rem;
+  }
+
+  .blog-hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .blog-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .blog-card-image {
+    height: 200px;
+  }
+
+  .blog-card-content {
+    padding: 1.5rem;
+  }
+
+  .blog-card-title {
+    font-size: 1.3rem;
+  }
+
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+</style>
+
+{{/* ========================================
+     SCROLL ANIMATION SCRIPT
+     ======================================== */}}
+<script>
+// Fade-in on scroll animation
+const observerOptions = {
+  threshold: 0.1,
+  rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, observerOptions);
+
+document.querySelectorAll('.fade-in-on-scroll').forEach(el => {
+  observer.observe(el);
+});
+</script>
+
+{{ end }}
