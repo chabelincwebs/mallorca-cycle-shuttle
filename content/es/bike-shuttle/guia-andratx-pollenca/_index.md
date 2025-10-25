@@ -3,167 +3,444 @@ title: "Andratx a Pollença – Guía definitiva de ciclismo"
 description: "Guía completa para pedalear de Andratx a Pollença por la Serra de Tramuntana"
 ---
 
-Elige entre nuestras rutas cuidadosamente seleccionadas que conectan Port d'Andratx y Port de Pollença a través de la impresionante Serra de Tramuntana, Patrimonio Mundial de la Unesco.
+<p class="header-subtitle">
+We are not saying it's easy. We are not saying it's for everyone.
+</p>
 
-No decimos que sea fácil. No decimos que sea para todo el mundo. Decimos que es brillante.
+<div class="hero-intro-banner">
+<div class="hero-intro-content">
+<p class="hero-intro-centered fade-in-up">
+We are saying that it's <strong>brilliant</strong>.
+</p>
+<p class="hero-intro-main fade-in-up delay-1">
+For your <a href="#north-routes" class="highlight-red hero-link">"Best Ever Day On A Bike"</a> ride <strong>Port d'Andratx</strong> to <strong>Port de Pollença</strong> through Mallorca's stunning <span class="highlight">Serra de Tramuntana</span> mountains for the ultimate <a href="#south-routes" class="highlight-red hero-link">Coast-to-Coast</a>
+</p>
+<p class="hero-intro-features fade-in-up delay-2">
+Scenic challenging climbs • Sweeping descents • Butter smooth tarmac • Regular café stops • Cycling paradise
+</p>
+</div>
+</div>
 
-Escénica, con subidas exigentes y descensos fluidos, todo sobre asfalto perfectamente liso. Paradas regulares en cafés de pueblos de piedra. Paraíso ciclista.
+<style>
+/* Center Page Title */
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Header Subtitle - Below Title */
+.header-subtitle {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #555;
+  font-weight: 500;
+  font-style: italic;
+  text-align: center;
+  margin: 0 auto 2.5rem auto;
+  max-width: 800px;
+  letter-spacing: -0.01em;
+}
+
+/* Hero Intro Banner - Premium Glassmorphism */
+.hero-intro-banner {
+  margin: 0 0 2rem 0;
+  padding: 1.8rem 2.5rem 3rem 2.5rem;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 28px;
+  box-shadow: 0 16px 64px rgba(0, 0, 0, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-intro-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(241, 0, 0, 0.06) 0%, rgba(255, 51, 51, 0.02) 100%);
+  z-index: 0;
+  border-radius: 28px;
+}
+
+.hero-intro-banner::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    rgba(241, 0, 0, 0.6) 20%,
+    rgba(241, 0, 0, 1) 50%,
+    rgba(241, 0, 0, 0.6) 80%,
+    transparent 100%
+  );
+}
+
+.hero-intro-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Italic First Line */
+.hero-intro-italic {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #555;
+  font-weight: 500;
+  font-style: italic;
+  text-align: center;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+/* Centered "brilliant" Line */
+.hero-intro-centered {
+  font-size: 2rem;
+  line-height: 1.4;
+  font-weight: 800;
+  text-align: center;
+  margin: 0;
+  color: #111;
+}
+
+.hero-intro-centered strong {
+  background: linear-gradient(135deg, rgba(241, 0, 0, 1) 0%, rgba(255, 51, 51, 0.9) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Main Intro Paragraph */
+.hero-intro-main {
+  font-size: 1.35rem;
+  line-height: 1.7;
+  color: #222;
+  font-weight: 500;
+  text-align: center;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.hero-intro-main strong {
+  font-weight: 700;
+  color: #111;
+}
+
+.hero-intro-main .highlight {
+  background: linear-gradient(135deg, rgba(241, 0, 0, 0.12) 0%, rgba(255, 51, 51, 0.08) 100%);
+  padding: 0.15rem 0.5rem;
+  border-radius: 6px;
+  font-weight: 700;
+  color: #111;
+}
+
+.hero-intro-main .highlight-red {
+  background: linear-gradient(135deg, rgba(241, 0, 0, 1) 0%, rgba(255, 51, 51, 0.95) 100%);
+  color: white;
+  padding: 0.2rem 0.75rem;
+  border-radius: 8px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 16px rgba(241, 0, 0, 0.3);
+}
+
+/* Hero Links - Clickable Highlights */
+.hero-link {
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.hero-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(241, 0, 0, 0.4);
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Features Line */
+.hero-intro-features {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  text-align: center;
+  margin: 0;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+/* Fade-in animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  opacity: 0;
+}
+
+.fade-in-up.delay-1 {
+  animation-delay: 0.2s;
+}
+
+.fade-in-up.delay-2 {
+  animation-delay: 0.4s;
+}
+
+.fade-in-up.delay-3 {
+  animation-delay: 0.6s;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .header-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+  }
+
+  .hero-intro-banner {
+    padding: 1.2rem 1.5rem 2rem 1.5rem;
+    margin: 0 0 3rem 0;
+  }
+
+  .hero-intro-centered {
+    font-size: 1.6rem;
+  }
+
+  .hero-intro-main {
+    font-size: 1.15rem;
+  }
+
+  .hero-intro-main .highlight-red {
+    font-size: 1rem;
+    padding: 0.15rem 0.5rem;
+  }
+}
+</style>
 
 <!-- INFO CARDS GRID -->
 <div class="info-cards-wrapper">
 <div class="info-cards-grid">
-  <div class="info-card" onclick="toggleCard(this)">
-    <div class="info-card-header">
-      <div class="info-card-header-top">
-        <span style="font-size: 1.5rem;">📸</span>
-        <span class="card-toggle">+</span>
-      </div>
-      <h3>Snapshot</h3>
-    </div>
-    <div class="info-card-content">
-      <p><strong>Por qué esta ruta:</strong> De costa a costa por la Tramuntana junto al mar sobre asfalto liso – el mejor día en bici de Mallorca. Probablemente tu mejor día en bici. Ever.</p>
-      <p><strong>Cómo funciona:</strong> Bus out, bike back. Toma el bus programado para bicicletas a Port d'Andratx (o el inverso a Port de Pollença), pedalea una de las rutas sugeridas o la tuya de vuelta.</p>
-      <p><strong>Servicios programados:</strong> Nosotros nos ocupamos de la logística, tú de disfrutar lo mejor de Mallorca. Reserva el <a href="https://mallorcacycleshuttle.company.site/es/products/Scheduled-Bike-Buses-c15728235" target="_blank" rel="noopener noreferrer">bus programado</a> desde cualquiera de los puntos de salida en la plataforma de reservas.</p>
-    </div>
-  </div>
 
-  <div class="info-card" onclick="toggleCard(this)">
-    <div class="info-card-header">
-      <div class="info-card-header-top">
-        <span style="font-size: 1.5rem;">🔑</span>
-        <span class="card-toggle">+</span>
-      </div>
-      <h3>Secciones clave</h3>
-    </div>
-    <div class="info-card-content">
-      <p><strong>Estellencs a Deià:</strong> belleza costera.</p>
-      <p><strong>Banyalbufar:</strong> poco más que añadir.</p>
-      <p><strong>Puig Major (desde Sóller):</strong> 14 km @ 6,2%, ~828 m. Largo y constante; túnel(es) iluminado(s) y luego acueducto.</p>
-      <p><strong>Coll dels Reis / Sa Calobra:</strong> extra opcional – baja al puerto y vuelve a subir; curvas de herradura de lista de deseos.</p>
-      <p><strong>Port Valldemossa y Port des Canonge:</strong> bajadas cortas, duras y escénicas de ida y vuelta; "mini Sa Calobra" sin tráfico.</p>
-      <p><strong>Coll de sa Batalla (por el lado de Lluc):</strong> conduce al descenso a Caimari y a las carreteras secundarias hacia la carretera de la bahía.</p>
-      <p><strong>Coll de Sóller (alternativa):</strong> el clásico serpenteante si evitas la MA-10 alta.</p>
-      <p><strong>Coll de Femenia (cara norte):</strong> puerto de salida dejando Pollença hacia Lluc.</p>
-      <p><strong>Coll de Femenia (cara norte):</strong> descenso estilo F1 desde Lluc a Pollença.</p>
-    </div>
-  </div>
+<div class="info-card" onclick="toggleCard(this)">
+<div class="info-card-header">
+<div class="info-card-header-top">
+<span style="font-size: 1.5rem;">📸</span>
+<span class="card-toggle">+</span>
+</div>
+<h3>Snapshot</h3>
+</div>
+<div class="info-card-content">
+<p><strong>Why this route:</strong> Coast-to-coast through the Tramuntana mountain range along the coast on smooth tarmac – Mallorca's best day on a bike. Probably your best day on a bike. Ever.</p>
+<p><strong>How it works:</strong> Bus out, bike back. Take the scheduled bike bus to Port d'Andratx (or the reverse to Port de Pollença), ride one of the suggested or your own custom route back.</p>
+<p><strong>Scheduled services:</strong> We take care of the logistics, you take care of relaxing into the best Mallorca has to offer. Book the <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank" rel="noopener noreferrer">scheduled bike bus</a> from any of the departure locations on the booking platform.</p>
+</div>
+</div>
 
-  <div class="info-card" onclick="toggleCard(this)">
-    <div class="info-card-header">
-      <div class="info-card-header-top">
-        <span style="font-size: 1.5rem;">☕</span>
-        <span class="card-toggle">+</span>
-      </div>
-      <h3>Cafés/Avituallamiento</h3>
-    </div>
-    <div class="info-card-content">
-      <p><em>km aproximados desde Andratx</em></p>
-      <p><strong>Es Grau (≈13 km):</strong> vistas de balcón sobre los acantilados; café rápido.</p>
-      <p><strong>Estellencs (≈17 km):</strong> "Cafetería Estellencs" – sencillo, práctico, justo en la MA-10.</p>
-      <p><strong>Banyalbufar (≈24 km):</strong> Son Tomàs (variedad + vistas) o Bellavista (vistas top; ojo con las bicis).</p>
-      <p><strong>Valldemossa (≈39 km):</strong> múltiples opciones; Ca'n Molinas para Cocas de Patata con chocolate caliente.</p>
-      <p><strong>Deià (≈48 km):</strong> panadería en el súper de Marc & Vincent Reynés; su café en Port de Sóller también.</p>
-      <p><strong>Sóller (≈58 km) – Sa Frontera:</strong> menú sólido antes de Puig Major.</p>
-      <p><strong>Port de Sóller (desvío):</strong> opciones a pie de mar; Reynés Cycling Café para tarta/café.</p>
-      <p><strong>Acueducto / desvío Sa Calobra (≈80 km):</strong> OJ Shack – zumo de naranja natural + snacks para la bici.</p>
-      <p><strong>Lluc / cima Coll de sa Batalla (≈89 km):</strong> Repsol + café o Monasterio de Lluc – rápido o sentado.</p>
-    </div>
-  </div>
+<div class="info-card" onclick="toggleCard(this)">
+<div class="info-card-header">
+<div class="info-card-header-top">
+<span style="font-size: 1.5rem;">🔑</span>
+<span class="card-toggle">+</span>
+</div>
+<h3>Key Sections</h3>
+</div>
+<div class="info-card-content">
+<p><strong>Estellencs to Deià:</strong> Coastal beauty.</p>
+<p><strong>Banyalbufar:</strong> Enough said.</p>
+<p><strong>Puig Major (from Sóller):</strong> 14 km @ 6.2%, ~828 m. Long, steady; lit tunnel(s) then aqueduct.</p>
+<p><strong>Coll dels Reis / Sa Calobra:</strong> Optional add-on – descend to port, climb back; bucket-list hairpins.</p>
+<p><strong>Port Valldemossa & Port des Canonge:</strong> Short, steep, scenic dead-end descents and returns; "mini Sa Calobra" feel without the traffic.</p>
+<p><strong>Coll de Sa Bataia (from Lluc side):</strong> Leads to Caimari descent and lanes to the bay road.</p>
+<p><strong>Coll de Sóller (alt. line):</strong> Winding classic if avoiding the MA-10 high route.</p>
+<p><strong>Coll de Femenia (north side):</strong> Gateway climb leaving Pollença toward Lluc.</p>
+<p><strong>Coll de Femenia (north side):</strong> Gateway F1 style descent from Lluc to Pollença.</p>
+</div>
+</div>
 
-  <div class="info-card" onclick="toggleCard(this)">
-    <div class="info-card-header">
-      <div class="info-card-header-top">
-        <span style="font-size: 1.5rem;">💡</span>
-        <span class="card-toggle">+</span>
-      </div>
-      <h3>Para saber</h3>
-    </div>
-    <div class="info-card-content">
-      <ul>
-        <li>Reserva al inicio del viaje mientras las piernas están frescas y, con 308 días de sol al año, si el tiempo obliga a cancelar, aún tendrás un día alternativo.</li>
-        <li>Plazas limitadas. Reserva con antelación.</li>
-        <li>Sin duda será tu mejor día en Mallorca.</li>
-        <li>Llega 10 minutos antes para el embalaje de la bici el día de la salida.</li>
-        <li>Es una salida temprana: hay muchos lugares para desayunar, tomar café y WC a la llegada.</li>
-        <li><strong>Cobertura de rescate:</strong> <a href="https://mallorcacycleshuttle.company.site/es/products/Rescue-&-Recovery-c15728236" target="_blank" rel="noopener noreferrer">tranquilidad</a>. Muy recomendable. A veces fallan bicis y cuerpos.</li>
-        <li>Carga segura de bicis en remolques: entre colchones – estable y segura.</li>
-        <li>El tiempo medio de regreso es algo más de 6 horas más paradas en la ruta vanilla (la más corta).</li>
-        <li>Los cafés aparecen con regularidad, nunca hay más de una hora entre opciones.</li>
-        <li>El avituallamiento regular es esencial.</li>
-      </ul>
-    </div>
-  </div>
+<div class="info-card" onclick="toggleCard(this)">
+<div class="info-card-header">
+<div class="info-card-header-top">
+<span style="font-size: 1.5rem;">☕</span>
+<span class="card-toggle">+</span>
+</div>
+<h3>Café/Refuel Stops</h3>
+</div>
+<div class="info-card-content">
+<p><em>km estimates from Andratx</em></p>
+<p><strong>Es Grau (≈13 km):</strong> Balcony views over the cliffs; quick coffee.</p>
+<p><strong>Estellencs (≈17 km):</strong> "Cafetería Estellencs" – Simple, handy, right on MA-10.</p>
+<p><strong>Banyalbufar (≈24 km):</strong> Son Tomás (range + views) or Bellavista (great views; watch the bikes).</p>
+<p><strong>Valldemossa (≈39 km):</strong> Multiple options; Ca'n Molinas for Cocas de Patata with hot chocolate.</p>
+<p><strong>Deià (≈48 km):</strong> Bakery in the supermarket run by Marc & Vincent Reynés; their café in Port de Sóller too.</p>
+<p><strong>Sóller (≈58 km) – Sa Frontera:</strong> Solid menu before Puig Major.</p>
+<p><strong>Port de Sóller (detour):</strong> Waterfront options; Reynés Cycling Café for cake/coffee.</p>
+<p><strong>Aqueduct / Sa Calobra turn (≈80 km):</strong> OJ Shack – fresh orange juice + on-bike snacks.</p>
+<p><strong>Lluc / Coll de sa Bataia top (≈89 km):</strong> Repsol + café or Lluc Monastery – quick or sit-down.</p>
+</div>
+</div>
 
-  <div class="info-card" onclick="toggleCard(this)">
-    <div class="info-card-header">
-      <div class="info-card-header-top">
-        <span style="font-size: 1.5rem;">📅</span>
-        <span class="card-toggle">+</span>
-      </div>
-      <h3>Horarios</h3>
-    </div>
-    <div class="info-card-content">
-      <p>Usa el bike bus a Port d'Andratx desde Port de Pollença/Alcúdia/Playa de Muro y desde Peguera, Playa de Palma y Santa Ponsa hacia Port de Pollença.</p>
-      <p><a href="https://mallorcacycleshuttle.company.site/es/products/Scheduled-Bike-Buses-c15728235" target="_blank" rel="noopener noreferrer" class="cta">Ver horarios y reservar →</a></p>
-    </div>
-  </div>
+<div class="info-card" onclick="toggleCard(this)">
+<div class="info-card-header">
+<div class="info-card-header-top">
+<span style="font-size: 1.5rem;">💡</span>
+<span class="card-toggle">+</span>
+</div>
+<h3>Good to Know</h3>
+</div>
+<div class="info-card-content">
+<ul>
+<li>Book for early in your trip whilst legs are still fresh & even with 308 days of sun each year, if weather causes a cancellation, you still have an alternate day.</li>
+<li>Seats are limited. Book early.</li>
+<li>This will be without a doubt your best day in Mallorca.</li>
+<li>Arrive 10 minutes early for bike packing on the day.</li>
+<li>It's an early start, plenty of places for breakfast, coffee, toilet on arrival.</li>
+<li><strong>Rescue cover:</strong> <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank" rel="noopener noreferrer">Peace of mind</a>. Strongly advised. Bikes and bodies do sometimes break down.</li>
+<li>Safe loading of bikes in the trailers: Packed between mattresses – secure and safe.</li>
+<li>Average return time is just over 6 hours plus stops on the vanilla (shortest) route.</li>
+<li>Cafe stops appear regularly, choices are never more than an hour apart.</li>
+<li>Regular fuelling is essential.</li>
+</ul>
+</div>
+</div>
 
-  <div class="info-card" onclick="toggleCard(this)">
-    <div class="info-card-header">
-      <div class="info-card-header-top">
-        <span style="font-size: 1.5rem;">⭐</span>
-        <span class="card-toggle">+</span>
-      </div>
-      <h3>Prueba social</h3>
-    </div>
-    <div class="info-card-content">
-      <p><strong>Testimonio "18 suecas" (2016):</strong> día Big Daddy de 162 km llamado "el mejor día en una bici" – les encantaron Canonge, Valldemossa, Sa Calobra; túneles iluminados; final rápido hacia Pollença. Vuelven la temporada siguiente.</p>
-      <p><strong>John McCracken (primavera 2025):</strong> el formato de ida permite disfrutar del paisaje sin convertirlo en un ultra; destacados: salida por Gramola, tramos de acantilado de la MA-10, aproximación por el túnel de Monnàber a Puig Major, descenso de Femenia "a soltar".</p>
-    </div>
-  </div>
+<div class="info-card" onclick="toggleCard(this)">
+<div class="info-card-header">
+<div class="info-card-header-top">
+<span style="font-size: 1.5rem;">📅</span>
+<span class="card-toggle">+</span>
+</div>
+<h3>Schedule</h3>
+</div>
+<div class="info-card-content">
+<p>Use the bike bus to Port d'Andratx from Port de Pollença/Alcúdia/Playa de Muro and from Peguera, Playa de Palma & Santa Ponsa to Port de Pollença.</p>
+<p><a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank" rel="noopener noreferrer" class="cta">View Schedule & Book →</a></p>
+</div>
+</div>
 
-  <div class="info-card" onclick="toggleCard(this)">
-    <div class="info-card-header">
-      <div class="info-card-header-top">
-        <span style="font-size: 1.5rem;">📊</span>
-        <span class="card-toggle">+</span>
-      </div>
-      <h3>Datos clave</h3>
-    </div>
-    <div class="info-card-content">
-      <p><strong>Ascenso emblemático:</strong> Puig Major desde Sóller (sentido sur) – 14 km @ 6,2% (≈828 m).</p>
-      <p><strong>Descenso emblemático:</strong> Puig Major hacia Sóller (sentido norte) – 14 km @ 6,2% (≈828 m).</p>
-    </div>
-  </div>
+<div class="info-card" onclick="toggleCard(this)">
+<div class="info-card-header">
+<div class="info-card-header-top">
+<span style="font-size: 1.5rem;">⭐</span>
+<span class="card-toggle">+</span>
+</div>
+<h3>Social Proof</h3>
+</div>
+<div class="info-card-content">
+<p><strong>"18 Swedish ladies" testimonial (2016):</strong> 162 km Big Daddy day called "best ever day on a bike" – loved Canonge, Valldemossa, Sa Calobra; tunnels lit; fast finish to Pollença. Returning the next season.</p>
+<p><strong>John McCracken (spring 2025):</strong> One-way format lets you enjoy the scenery without turning it into an ultra-distance day; highlights: Gramola start, MA-10 cliff sections, Monnàber tunnel approach to Puig Major, Femenia descent "let go."</p>
+</div>
+</div>
 
-  <div class="info-card" onclick="toggleCard(this)">
-    <div class="info-card-header">
-      <div class="info-card-header-top">
-        <span style="font-size: 1.5rem;">📷</span>
-        <span class="card-toggle">+</span>
-      </div>
-      <h3>¡Memory Maker!</h3>
-    </div>
-    <div class="info-card-content">
-      <p><strong>Port de Valldemossa:</strong> ¿mini y quizá mejor? versión de Sa Calobra (bajar y subir).</p>
-    </div>
-  </div>
+<div class="info-card" onclick="toggleCard(this)">
+<div class="info-card-header">
+<div class="info-card-header-top">
+<span style="font-size: 1.5rem;">📊</span>
+<span class="card-toggle">+</span>
+</div>
+<h3>Key Stats</h3>
+</div>
+<div class="info-card-content">
+<p><strong>Signature climb:</strong> Puig Major from Sóller (southbound) – 14 km @ 6.2% (≈828 m).</p>
+<p><strong>Signature descent:</strong> Puig Major to Sóller (northbound) – 14 km @ 6.2% (≈828 m).</p>
+</div>
+</div>
 
-  <div class="info-card" onclick="toggleCard(this)">
-    <div class="info-card-header">
-      <div class="info-card-header-top">
-        <span style="font-size: 1.5rem;">🍰</span>
-        <span class="card-toggle">+</span>
-      </div>
-      <h3>Consejos rápidos de fuel</h3>
-    </div>
-    <div class="info-card-content">
-      <p><strong>Fuel rápido para llegar a casa:</strong> OJ Shack en el acueducto o café/gasolinera Sa Batalla (yendo al Norte), Estellencs (yendo al Sur).</p>
-      <p><strong>Fuel escénico:</strong> Banyalbufar y Deià.</p>
-      <p><strong>Sóller está aproximadamente a mitad de camino.</strong></p>
-      <p><strong>Los cafés nunca están a más de una hora.</strong></p>
-    </div>
-  </div>
+<div class="info-card" onclick="toggleCard(this)">
+<div class="info-card-header">
+<div class="info-card-header-top">
+<span style="font-size: 1.5rem;">📷</span>
+<span class="card-toggle">+</span>
+</div>
+<h3>Memory Maker!</h3>
+</div>
+<div class="info-card-content">
+<p><strong>Port de Valldemossa:</strong> Mini & maybe better? version of Sa Calobra (down & back).</p>
+</div>
+</div>
+
+<div class="info-card" onclick="toggleCard(this)">
+<div class="info-card-header">
+<div class="info-card-header-top">
+<span style="font-size: 1.5rem;">🍰</span>
+<span class="card-toggle">+</span>
+</div>
+<h3>Quick Fuel Tips</h3>
+</div>
+<div class="info-card-content">
+<p><strong>Quick fuel to get you home:</strong> OJ shack at the aqueduct or Sa Bataia café/garage (going North), Estellencs (going South).</p>
+<p><strong>Scenic fuel:</strong> Banyalbufar & Deià.</p>
+<p><strong>Soller is approximately halfway.</strong></p>
+<p><strong>Cafes are never more than an hour apart.</strong></p>
+</div>
+</div>
+
+<div class="info-card" onclick="window.open('https://mallorcacycleshuttle.company.site/products/Andratx-Pollenca-Finishers-Unisex-Classic-T-p788401800', '_blank')" style="cursor: pointer;">
+<div class="info-card-header">
+<div class="info-card-header-top">
+<span style="font-size: 1.5rem;">👕</span>
+<span class="card-toggle">+</span>
+</div>
+<h3>Finisher's Gear</h3>
+</div>
+<div class="info-card-content">
+<p><strong>Celebrate your achievement!</strong></p>
+<p>Get your exclusive Port d'Andratx-Port de Pollença finisher's t-shirt and show the world you conquered this epic route.</p>
+<p style="color: var(--brand, #f10000); font-weight: 700; margin-top: 1rem;">Shop Now →</p>
+</div>
+</div>
+
+<div class="info-card" onclick="window.open('https://mallorcacycleshuttle.company.site/products/Departure-towns-c28971057', '_blank')" style="cursor: pointer;">
+<div class="info-card-header">
+<div class="info-card-header-top">
+<span style="font-size: 1.5rem;">🚌</span>
+<span class="card-toggle">+</span>
+</div>
+<h3>Book Your Shuttle</h3>
+</div>
+<div class="info-card-content">
+<p><strong>Need a ride to start your adventure?</strong></p>
+<p>Browse all departure towns and book your shuttle to Port d'Andratx or Port de Pollença. We've got you covered!</p>
+<p style="color: var(--brand, #f10000); font-weight: 700; margin-top: 1rem;">View Shuttles →</p>
+</div>
+</div>
+
+<div class="info-card" onclick="toggleCard(this)">
+<div class="info-card-header">
+<div class="info-card-header-top">
+<span style="font-size: 1.5rem;">📋</span>
+<span class="card-toggle">+</span>
+</div>
+<h3>Coming Soon</h3>
+</div>
+<div class="info-card-content">
+<p><strong>More information coming soon...</strong></p>
+<p>Check back later for additional resources and tips for your Port d'Andratx-Port de Pollença adventure.</p>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -175,24 +452,46 @@ Escénica, con subidas exigentes y descensos fluidos, todo sobre asfalto perfect
 /* Info Cards Wrapper */
 .info-cards-wrapper {
   margin: 2rem 0 3rem 0;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 50%, #f1f3f5 100%);
+  border-radius: 24px;
+  position: relative;
+}
+
+.info-cards-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(241, 0, 0, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(255, 51, 51, 0.02) 0%, transparent 50%);
+  border-radius: 24px;
+  pointer-events: none;
 }
 
 /* Info Cards Grid */
 .info-cards-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
+  gap: 1.5rem;
+  position: relative;
+  z-index: 1;
 }
 
 @media (min-width: 768px) {
   .info-cards-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.75rem;
   }
 }
 
 @media (min-width: 1024px) {
   .info-cards-grid {
     grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
   }
 }
 
@@ -206,84 +505,329 @@ Escénica, con subidas exigentes y descensos fluidos, todo sobre asfalto perfect
   display: block;
 }
 
+/* Routes 2-Column Layout - Premium Wrapper */
+.routes-2col-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin: 3rem 0 2rem 0;
+  padding: 2.5rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 50%, #f1f3f5 100%);
+  border-radius: 28px;
+  position: relative;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.04);
+}
+
+.routes-2col-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image:
+    radial-gradient(circle at 30% 40%, rgba(241, 0, 0, 0.04) 0%, transparent 50%),
+    radial-gradient(circle at 70% 70%, rgba(255, 51, 51, 0.03) 0%, transparent 50%);
+  border-radius: 28px;
+  pointer-events: none;
+}
+
+@media (min-width: 768px) {
+  .routes-2col-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+}
+
+.routes-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+  z-index: 1;
+}
+
+/* Hide all routes when one is expanded */
+.routes-2col-wrapper.has-expanded .route-item {
+  display: none;
+}
+
+/* Show only the expanded route */
+.routes-2col-wrapper.has-expanded .route-item.active {
+  display: block;
+}
+
+/* Make the column containing the active route span full width */
+.routes-2col-wrapper.has-expanded .routes-column:has(.route-item.active) {
+  grid-column: 1 / -1;
+}
+
+/* Hide empty columns when a route is expanded */
+.routes-2col-wrapper.has-expanded .routes-column:not(:has(.route-item.active)) {
+  display: none;
+}
+
 .info-card {
-  background: white;
-  border: 2px solid #ddd;
-  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
   overflow: hidden;
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.info-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(241, 0, 0, 0.05) 0%, rgba(255, 51, 51, 0.02) 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 0;
+  border-radius: 20px;
 }
 
 .info-card:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  border-color: var(--brand);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 48px rgba(241, 0, 0, 0.15);
+  border-color: rgba(241, 0, 0, 0.2);
+}
+
+.info-card:hover::before {
+  opacity: 1;
 }
 
 .info-card.expanded {
-  box-shadow: 0 8px 30px rgba(241,0,0,0.2);
-  border-color: var(--brand);
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 16px 64px rgba(241, 0, 0, 0.2);
+  border-color: rgba(241, 0, 0, 0.3);
   grid-column: 1 / -1;
+  transform: scale(1.02);
+}
+
+.info-card.expanded::before {
+  opacity: 1;
 }
 
 .info-card-header {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  padding: 1.25rem;
-  background: linear-gradient(135deg, #fafafa 0%, #fff 100%);
+  padding: 1.5rem 1.5rem 1.25rem 1.5rem;
   user-select: none;
-}
-
-.info-card.expanded .info-card-header {
-  background: linear-gradient(135deg, #fff5f5 0%, #fff 100%);
+  position: relative;
+  z-index: 1;
 }
 
 .info-card-header-top {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
+  position: relative;
+}
+
+/* Floating Icon Badge - Top Right */
+.info-card-header-top > span:first-child {
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, rgba(241, 0, 0, 0.9) 0%, rgba(255, 51, 51, 0.85) 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  box-shadow: 0 4px 16px rgba(241, 0, 0, 0.3);
+  border: 3px solid rgba(255, 255, 255, 0.9);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 2;
+}
+
+.info-card:hover .info-card-header-top > span:first-child {
+  transform: rotate(12deg) scale(1.1);
+  box-shadow: 0 6px 24px rgba(241, 0, 0, 0.4);
+}
+
+.info-card.expanded .info-card-header-top > span:first-child {
+  transform: scale(1.15);
+  background: linear-gradient(135deg, rgba(241, 0, 0, 1) 0%, rgba(255, 51, 51, 0.95) 100%);
 }
 
 .info-card-header h3 {
   margin: 0;
-  font-size: 1.1rem;
-  color: var(--text);
-  font-weight: 600;
+  font-size: 1.2rem;
+  color: #222;
+  font-weight: 700;
+  padding-right: 3rem;
+  line-height: 1.3;
 }
 
 .card-toggle {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 300;
-  color: var(--brand);
-  transition: transform 0.3s ease;
+  color: rgba(241, 0, 0, 0.8);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(241, 0, 0, 0.08);
+  border-radius: 50%;
+  margin-top: -0.25rem;
+}
+
+.info-card:hover .card-toggle {
+  background: rgba(241, 0, 0, 0.12);
+  transform: scale(1.1);
 }
 
 .info-card.expanded .card-toggle {
-  transform: rotate(45deg);
+  transform: rotate(45deg) scale(1.15);
+  background: rgba(241, 0, 0, 0.15);
+  color: rgba(241, 0, 0, 1);
 }
 
 .info-card-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), padding 0.5s ease;
+  padding: 0 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.info-card.expanded .info-card-content {
+  max-height: 2000px;
+  padding: 0 1.5rem 1.75rem 1.5rem;
+}
+
+.info-card-content p {
+  margin: 0 0 0.85rem 0;
+  line-height: 1.7;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.info-card-content p:last-child {
+  margin-bottom: 0;
+}
+
+.info-card-content strong {
+  color: #111;
+  font-weight: 700;
+}
+
+.info-card-content a {
+  color: rgba(241, 0, 0, 0.9);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid rgba(241, 0, 0, 0.3);
+}
+
+.info-card-content a:hover {
+  color: rgba(241, 0, 0, 1);
+  border-bottom-color: rgba(241, 0, 0, 0.6);
+}
+
+.info-card-content .cta {
+  display: inline-block;
+  background: linear-gradient(135deg, rgba(241, 0, 0, 1) 0%, rgba(255, 51, 51, 0.95) 100%);
+  color: white;
+  padding: 0.85rem 1.75rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 1rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 16px rgba(241, 0, 0, 0.25);
+  border: none;
+  border-bottom: none;
+}
+
+.info-card-content .cta:hover {
+  background: linear-gradient(135deg, rgba(209, 0, 0, 1) 0%, rgba(241, 0, 0, 1) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(241, 0, 0, 0.4);
+}
+
+.info-card-content ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.info-card-content li {
+  margin-bottom: 0.65rem;
+  line-height: 1.7;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+/* Finisher's Gear CTA Card - Special Styling */
+.info-card-cta {
+  background: white;
+  border: 2px solid var(--brand, #f10000);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(241, 0, 0, 0.15);
+  text-decoration: none;
+  display: block;
+  position: relative;
+  grid-column: 1 / -1;
+}
+
+.info-card-cta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(241, 0, 0, 0.03) 0%, transparent 100%);
+  pointer-events: none;
+}
+
+.info-card-cta:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(241, 0, 0, 0.25);
+  border-width: 3px;
+}
+
+.info-card-cta .info-card-header {
+  background: linear-gradient(135deg, #fff5f5 0%, #fff 100%);
+  padding: 1.25rem;
+  user-select: none;
+}
+
+.info-card-content-cta {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease, padding 0.4s ease;
   padding: 0 1.25rem;
 }
 
-.info-card.expanded .info-card-content {
-  max-height: 2000px;
-  padding: 0 1.25rem 1.25rem 1.25rem;
-}
-
-.info-card-content p {
+.info-card-content-cta p {
   margin: 0 0 0.75rem 0;
   line-height: 1.6;
   color: var(--text);
 }
 
-.info-card-content p:last-child {
+.info-card-content-cta p:last-child {
   margin-bottom: 0;
 }
 
@@ -311,7 +855,6 @@ Escénica, con subidas exigentes y descensos fluidos, todo sobre asfalto perfect
   margin: 2rem 0 1.5rem 0;
   padding: 1.5rem;
   background: linear-gradient(135deg, #f8f8f8 0%, #fff 100%);
-  border-left: 4px solid var(--brand);
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
@@ -330,51 +873,101 @@ Escénica, con subidas exigentes y descensos fluidos, todo sobre asfalto perfect
 .route-accordion {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
   margin: 1.5rem 0 3rem 0;
 }
 
-/* Accordion Item */
+/* Accordion Item - Glassmorphism */
 .route-item {
-  border: 2px solid #ddd;
-  border-radius: 12px;
-  background: white;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   overflow: hidden;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.route-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(241, 0, 0, 0.04) 0%, rgba(255, 51, 51, 0.01) 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 0;
+  border-radius: 20px;
 }
 
 .route-item:hover {
-  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
-  border-color: var(--brand);
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 48px rgba(241, 0, 0, 0.12);
+  border-color: rgba(241, 0, 0, 0.2);
+}
+
+.route-item:hover::before {
+  opacity: 1;
 }
 
 .route-item.active {
-  border-color: var(--brand);
-  box-shadow: 0 8px 24px rgba(241,0,0,0.2);
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-color: rgba(241, 0, 0, 0.3);
+  box-shadow: 0 16px 64px rgba(241, 0, 0, 0.18);
+  transform: scale(1.01);
 }
 
-/* Accordion Header */
+.route-item.active::before {
+  opacity: 1;
+}
+
+/* Accordion Header - Premium Glass Effect */
 .route-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.25rem 1.5rem;
+  padding: 1.5rem 1.75rem;
   cursor: pointer;
   user-select: none;
-  gap: 1rem;
+  gap: 1.25rem;
   flex-wrap: wrap;
-  background: linear-gradient(135deg, #fafafa 0%, #fff 100%);
-  transition: all 0.3s ease;
+  background: transparent;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  z-index: 1;
 }
 
 .route-header:hover {
-  background: linear-gradient(135deg, #fff5f5 0%, #fff 100%);
+  background: rgba(255, 245, 245, 0.3);
 }
 
 .route-item.active .route-header {
-  background: linear-gradient(135deg, #fff0f0 0%, #fff 100%);
+  background: rgba(255, 240, 240, 0.4);
+  padding-bottom: 1.75rem;
+}
+
+/* Close X button - only show when route is active */
+.route-item.active .route-header::after {
+  content: '✕';
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: var(--brand, #f10000);
+  font-weight: 700;
+  line-height: 1;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.route-item.active .route-header:hover::after {
+  opacity: 1;
 }
 
 .route-title-section {
@@ -404,10 +997,10 @@ Escénica, con subidas exigentes y descensos fluidos, todo sobre asfalto perfect
 
 .route-stats-inline {
   display: flex;
-  gap: 1rem;
-  color: var(--muted);
-  font-size: 0.95rem;
-  font-weight: 500;
+  gap: 0.75rem;
+  color: #555;
+  font-size: 0.9rem;
+  font-weight: 600;
   flex-wrap: wrap;
   align-items: center;
 }
@@ -416,19 +1009,41 @@ Escénica, con subidas exigentes y descensos fluidos, todo sobre asfalto perfect
   white-space: nowrap;
   display: flex;
   align-items: center;
-  gap: 0.25rem;
+  gap: 0.35rem;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.route-stats-inline span:hover {
+  background: rgba(255, 255, 255, 0.8);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 }
 
 .difficulty-badge {
   display: inline-block;
-  padding: 0.35rem 0.8rem;
-  border-radius: 16px;
-  font-size: 0.8rem;
-  font-weight: 700;
+  padding: 0.5rem 1.1rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-  transition: all 0.2s ease;
+  letter-spacing: 0.8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.difficulty-badge:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.16);
 }
 
 .difficulty-moderate {
@@ -675,9 +1290,14 @@ path.route-polyline {
 }
 </style>
 
-<!-- NORTH ROUTES -->
+<!-- ROUTES 2-COLUMN LAYOUT -->
+<div class="routes-2col-wrapper">
+
+<!-- LEFT COLUMN: NORTH ROUTES -->
+<div class="routes-column">
+
 <div class="route-section">
-  <h2>🏔️ Rutas Norte – Andratx → Pollença</h2>
+<h2 id="north-routes" class="route-direction-header">North Routes – Andratx → Pollença</h2>
 </div>
 
 <div class="route-accordion">
@@ -687,11 +1307,11 @@ path.route-polyline {
       <div class="route-title-section">
         <span class="route-icon">▶</span>
         <div>
-          <div class="route-title">Vanilla – Andratx → Pollença</div>
+          <div class="route-title">Vanilla – Port d'Andratx → Port de Pollença</div>
           <div class="route-stats-inline">
             <span>📏 115 km</span>
-            <span>⛰️ 2.425 m</span>
-            <span class="difficulty-badge difficulty-moderate">Moderada</span>
+            <span>⛰️ 2,425 m</span>
+            <span class="difficulty-badge difficulty-moderate">Moderate</span>
           </div>
         </div>
       </div>
@@ -701,7 +1321,7 @@ path.route-polyline {
     </div>
     <div class="route-content">
       <div class="route-content-inner">
-        <p class="route-description">Clásica directa: tramo costero SW → Sóller → Puig Major → acueducto → Lluc → descenso rápido a Pollença. La ruta de vuelta más directa.</p>
+        <p class="route-description">Direct classic: SW coastal section → Sóller → Puig Major → aqueduct → Lluc → fast descent into Pollença. Most direct return route.</p>
         <div id="map-north-1" class="route-map"></div>
         <div class="elevation-profile">
           <canvas id="chart-north-1"></canvas>
@@ -716,11 +1336,11 @@ path.route-polyline {
       <div class="route-title-section">
         <span class="route-icon">▶</span>
         <div>
-          <div class="route-title">Vía Caimari (Vanilla+)</div>
+          <div class="route-title">Via Caimari (Vanilla+)</div>
           <div class="route-stats-inline">
             <span>📏 137 km</span>
-            <span>⛰️ 2.700 m</span>
-            <span class="difficulty-badge difficulty-moderate">Moderada</span>
+            <span>⛰️ 2,700 m</span>
+            <span class="difficulty-badge difficulty-moderate">Moderate</span>
           </div>
         </div>
       </div>
@@ -730,7 +1350,7 @@ path.route-polyline {
     </div>
     <div class="route-content">
       <div class="route-content-inner">
-        <p class="route-description">Como la anterior, pero sigue más allá de la Repsol en Lluc, baja Coll de sa Batalla → secundarias por Binibona/Campanet → carretera de la bahía de Alcúdia → Port de Pollença. Segunda ruta más directa. Más secundarias antes del final.</p>
+        <p class="route-description">As above, but continue past the Repsol at Lluc, descend Coll de sa Bataia → lanes via Binibona/Campanet → Alcúdia bay road → Port de Pollença. Second most direct return route. Additional lanes before the finish.</p>
         <div id="map-north-2" class="route-map"></div>
         <div class="elevation-profile">
           <canvas id="chart-north-2"></canvas>
@@ -748,8 +1368,8 @@ path.route-polyline {
           <div class="route-title">Incl. Port Valldemossa</div>
           <div class="route-stats-inline">
             <span>📏 132 km</span>
-            <span>⛰️ 3.000 m</span>
-            <span class="difficulty-badge difficulty-hard">Dura</span>
+            <span>⛰️ 3,000 m</span>
+            <span class="difficulty-badge difficulty-hard">Hard</span>
           </div>
         </div>
       </div>
@@ -759,7 +1379,7 @@ path.route-polyline {
     </div>
     <div class="route-content">
       <div class="route-content-inner">
-        <p class="route-description">Sección costera + bajada/subida a Port Valldemossa → Sóller → Puig Major → Lluc → descenso a Pollença. Gran añadido a la vanilla.</p>
+        <p class="route-description">Coastal section + drop/return Port Valldemossa → Sóller → Puig Major → Lluc → descend to Pollença. Great addition to the vanilla route.</p>
         <div id="map-north-3" class="route-map"></div>
         <div class="elevation-profile">
           <canvas id="chart-north-3"></canvas>
@@ -774,11 +1394,11 @@ path.route-polyline {
       <div class="route-title-section">
         <span class="route-icon">▶</span>
         <div>
-          <div class="route-title">Incl. Port Valldemossa y Sa Calobra</div>
+          <div class="route-title">Incl. Port Valldemossa & Sa Calobra</div>
           <div class="route-stats-inline">
             <span>📏 158 km</span>
-            <span>⛰️ 3.949 m</span>
-            <span class="difficulty-badge difficulty-hard">Dura</span>
+            <span>⛰️ 3,949 m</span>
+            <span class="difficulty-badge difficulty-hard">Hard</span>
           </div>
         </div>
       </div>
@@ -788,7 +1408,7 @@ path.route-polyline {
     </div>
     <div class="route-content">
       <div class="route-content-inner">
-        <p class="route-description">Costa + Port Valldemossa, luego Puig Major → izquierda en el acueducto → Coll dels Reis → baja Sa Calobra, sube de vuelta → Lluc → descenso a Pollença. Dura.</p>
+        <p class="route-description">Coastal section + Port Valldemossa, then Puig Major → left at aqueduct → Coll dels Reis → down Sa Calobra, climb back → Lluc → descend to Pollença. Hard.</p>
         <div id="map-north-4" class="route-map"></div>
         <div class="elevation-profile">
           <canvas id="chart-north-4"></canvas>
@@ -803,11 +1423,11 @@ path.route-polyline {
       <div class="route-title-section">
         <span class="route-icon">▶</span>
         <div>
-          <div class="route-title">Big Daddy Challenge (8 puertos clasificados)</div>
+          <div class="route-title">Big Daddy Challenge (8 classified cols)</div>
           <div class="route-stats-inline">
             <span>📏 162 km</span>
-            <span>⛰️ 4.267 m</span>
-            <span class="difficulty-badge difficulty-very-hard">Muy Dura</span>
+            <span>⛰️ 4,267 m</span>
+            <span class="difficulty-badge difficulty-very-hard">Very Hard</span>
           </div>
         </div>
       </div>
@@ -817,7 +1437,7 @@ path.route-polyline {
     </div>
     <div class="route-content">
       <div class="route-content-inner">
-        <p class="route-description">Costa + Port des Canonge + Port Valldemossa → lado largo de Puig Major → acueducto → Coll dels Reis → Sa Calobra (bajar y subir) → Lluc → Pollença/Port. Muy dura.</p>
+        <p class="route-description">Coastal section + Port des Canonge + Port Valldemossa → long side Puig Major → aqueduct → Coll dels Reis → Sa Calobra (down & up) → Lluc → Pollença/Port. Very hard.</p>
         <div id="map-north-5" class="route-map"></div>
         <div class="elevation-profile">
           <canvas id="chart-north-5"></canvas>
@@ -826,25 +1446,43 @@ path.route-polyline {
     </div>
   </div>
 
-  <!-- Placeholder: North Route 6 - Coming Soon -->
+  <!-- Route 6: Coll de Sóller & Orient Valley -->
   <div class="route-item" id="route-north-6">
-    <div class="route-header">
+    <div class="route-header" onclick="toggleRoute('north-6')">
       <div class="route-title-section">
-        <span style="font-size: 1.5rem;">🔄</span>
+        <span class="route-icon">▶</span>
         <div>
-          <div class="route-title">Ruta adicional próximamente</div>
+          <div class="route-title">Return via the Coll de Sóller and the Orient Valley</div>
           <div class="route-stats-inline">
-            <span style="color: var(--muted);">Detalles por anunciar</span>
+            <span>📏 137 km</span>
+            <span>⛰️ 2,360 m</span>
+            <span class="difficulty-badge difficulty-hard">Hard</span>
           </div>
+        </div>
+      </div>
+      <div class="route-actions">
+        <a href="/routes/portandratx-pollenca-colldesoller-orient.gpx" download class="gpx-download" onclick="event.stopPropagation()">⬇ GPX</a>
+      </div>
+    </div>
+    <div class="route-content">
+      <div class="route-content-inner">
+        <p class="route-description">Complete the classic coastal section then take on the 51 switchbacks by going up and over the Coll de Sóller before cruising through the tranquil Orient Valley. One more for the climbers amongst us. Great day out. The recovery drinks will be well earned that evening!</p>
+        <div id="map-north-6" class="route-map"></div>
+        <div class="elevation-profile">
+          <canvas id="chart-north-6"></canvas>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- SOUTH ROUTES -->
+</div>
+
+<!-- RIGHT COLUMN: SOUTH ROUTES -->
+<div class="routes-column">
+
 <div class="route-section">
-  <h2>🌊 Rutas Sur – Pollença → Andratx</h2>
+<h2 id="south-routes" class="route-direction-header">South Routes – Pollença → Andratx</h2>
 </div>
 
 <div class="route-accordion">
@@ -857,8 +1495,8 @@ path.route-polyline {
           <div class="route-title">Vanilla – Port de Pollença → Port d'Andratx</div>
           <div class="route-stats-inline">
             <span>📏 121 km</span>
-            <span>⛰️ 2.700 m</span>
-            <span class="difficulty-badge difficulty-moderate">Moderada</span>
+            <span>⛰️ 2,700 m</span>
+            <span class="difficulty-badge difficulty-moderate">Moderate</span>
           </div>
         </div>
       </div>
@@ -868,7 +1506,7 @@ path.route-polyline {
     </div>
     <div class="route-content">
       <div class="route-content-inner">
-        <p class="route-description">Coll de Femenia → pasa Lluc/desvío Sa Calobra → lado fácil de Puig Major → 14 km de bajada a Sóller → costa por Deià, Valldemossa, Banyalbufar, Estellencs → Port d'Andratx. La ruta de vuelta más directa. ¡Brillante!</p>
+        <p class="route-description">Coll de Femenia → past Lluc/Sa Calobra turn → easy side Puig Major → 14 km descent to Sóller → coast via Deià, Valldemossa, Banyalbufar, Estellencs → Port d'Andratx. Most direct return route. Brilliant!</p>
         <div id="map-south-1" class="route-map"></div>
         <div class="elevation-profile">
           <canvas id="chart-south-1"></canvas>
@@ -883,11 +1521,11 @@ path.route-polyline {
       <div class="route-title-section">
         <span class="route-icon">▶</span>
         <div>
-          <div class="route-title">Incl. Port des Canonge y Port Valldemossa</div>
+          <div class="route-title">Incl. Port des Canonge & Port Valldemossa</div>
           <div class="route-stats-inline">
             <span>📏 145 km</span>
-            <span>⛰️ 3.390 m</span>
-            <span class="difficulty-badge difficulty-hard">Dura</span>
+            <span>⛰️ 3,390 m</span>
+            <span class="difficulty-badge difficulty-hard">Hard</span>
           </div>
         </div>
       </div>
@@ -897,7 +1535,7 @@ path.route-polyline {
     </div>
     <div class="route-content">
       <div class="route-content-inner">
-        <p class="route-description">Femenia → Lluc → Puig Major → Sóller → costa + extras: bajada/subida a Port des Canonge y Port Valldemossa → final costero suroeste a Andratx.</p>
+        <p class="route-description">Femenia → Lluc → Puig Major → Sóller → coast + add-ons: drop/return Port des Canonge and Port Valldemossa → SW coastal finish to Andratx.</p>
         <div id="map-south-2" class="route-map"></div>
         <div class="elevation-profile">
           <canvas id="chart-south-2"></canvas>
@@ -912,11 +1550,11 @@ path.route-polyline {
       <div class="route-title-section">
         <span class="route-icon">▶</span>
         <div>
-          <div class="route-title">Vía Puigpunyent</div>
+          <div class="route-title">Via Puigpunyent</div>
           <div class="route-stats-inline">
             <span>📏 125 km</span>
-            <span>⛰️ 2.650 m</span>
-            <span class="difficulty-badge difficulty-moderate">Moderada</span>
+            <span>⛰️ 2,650 m</span>
+            <span class="difficulty-badge difficulty-moderate">Moderate</span>
           </div>
         </div>
       </div>
@@ -926,7 +1564,7 @@ path.route-polyline {
     </div>
     <div class="route-content">
       <div class="route-content-inner">
-        <p class="route-description">Femenia → Lluc → Puig Major → Sóller → Deià → Valldemossa → Esporles → Puigpunyent → Galilea → Es Capdellà → Port d'Andratx. Pasa un tramo lejos de la costa y fuera del ruido.</p>
+        <p class="route-description">Femenia → Lluc → Puig Major → Sóller → Deià → Valldemossa → Esporles → Puigpunyent → Galilea → Es Capdellà → Port d'Andratx. Spend a little time away from the coast and off the grid!</p>
         <div id="map-south-3" class="route-map"></div>
         <div class="elevation-profile">
           <canvas id="chart-south-3"></canvas>
@@ -941,11 +1579,11 @@ path.route-polyline {
       <div class="route-title-section">
         <span class="route-icon">▶</span>
         <div>
-          <div class="route-title">Big Daddy Challenge (inversa)</div>
+          <div class="route-title">Big Daddy Challenge (reverse)</div>
           <div class="route-stats-inline">
             <span>📏 167 km</span>
-            <span>⛰️ 4.121 m</span>
-            <span class="difficulty-badge difficulty-very-hard">Muy Dura</span>
+            <span>⛰️ 4,121 m</span>
+            <span class="difficulty-badge difficulty-very-hard">Very Hard</span>
           </div>
         </div>
       </div>
@@ -955,7 +1593,7 @@ path.route-polyline {
     </div>
     <div class="route-content">
       <div class="route-content-inner">
-        <p class="route-description">Concepto similar al anterior, incluyendo los tres "ports" (Canonge, Valldemossa, Sa Calobra). Solo para escaladores fuertes.</p>
+        <p class="route-description">As above conceptually, including the three "ports" (Canonge, Valldemossa, Sa Calobra). For strong climbers only.</p>
         <div id="map-south-4" class="route-map"></div>
         <div class="elevation-profile">
           <canvas id="chart-south-4"></canvas>
@@ -964,35 +1602,38 @@ path.route-polyline {
     </div>
   </div>
 
-  <!-- Placeholder: South Route 5 - Coming Soon -->
+  <!-- Route 10: Cap de Formentor -->
   <div class="route-item" id="route-south-5">
-    <div class="route-header">
+    <div class="route-header" onclick="toggleRoute('south-5')">
       <div class="route-title-section">
-        <span style="font-size: 1.5rem;">🔄</span>
+        <span class="route-icon">▶</span>
         <div>
-          <div class="route-title">Ruta adicional próximamente</div>
+          <div class="route-title">Return via Cap de Formentor</div>
           <div class="route-stats-inline">
-            <span style="color: var(--muted);">Detalles por anunciar</span>
+            <span>📏 162 km</span>
+            <span>⛰️ 3,500 m</span>
+            <span class="difficulty-badge difficulty-epic">Epic</span>
           </div>
+        </div>
+      </div>
+      <div class="route-actions">
+        <a href="/routes/portpollenca-portandratx-formentor.gpx" download class="gpx-download" onclick="event.stopPropagation()">⬇ GPX</a>
+      </div>
+    </div>
+    <div class="route-content">
+      <div class="route-content-inner">
+        <p class="route-description">Complete the classic coast to coast but include what is regarded by some as the best 20km of road for cyclists in Europe - the out and back to the lighthouse of Cap de Formentor. Epic day out!</p>
+        <div id="map-south-5" class="route-map"></div>
+        <div class="elevation-profile">
+          <canvas id="chart-south-5"></canvas>
         </div>
       </div>
     </div>
   </div>
+</div>
 
-  <!-- Placeholder: South Route 6 - Coming Soon -->
-  <div class="route-item" id="route-south-6">
-    <div class="route-header">
-      <div class="route-title-section">
-        <span style="font-size: 1.5rem;">🔄</span>
-        <div>
-          <div class="route-title">Ruta adicional próximamente</div>
-          <div class="route-stats-inline">
-            <span style="color: var(--muted);">Detalles por anunciar</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+</div>
+
 </div>
 
 <script>
@@ -1015,6 +1656,22 @@ function toggleCard(card) {
   }
 }
 
+// Smooth scroll to product panel (CTA card click)
+function smoothScrollToProduct(event) {
+  // Prevent any default behavior
+  if (event) {
+    event.stopPropagation();
+  }
+
+  const target = document.getElementById('finishers-gear');
+  if (target) {
+    target.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  }
+}
+
 // Route configuration
 // Using -web.gpx files for display (75% smaller), original files for downloads
 const routes = {
@@ -1023,10 +1680,12 @@ const routes = {
   'north-3': { gpx: 'portandratx-pollenca-portvalldemossa-web.gpx', startName: 'Port d\'Andratx', endName: 'Port de Pollença' },
   'north-4': { gpx: 'portandratx-pollenca-valldemossa-sacalobra-web.gpx', startName: 'Port d\'Andratx', endName: 'Port de Pollença' },
   'north-5': { gpx: 'portandratx-pollenca-big-daddy-web.gpx', startName: 'Port d\'Andratx', endName: 'Port de Pollença' },
+  'north-6': { gpx: 'portandratx-pollenca-colldesoller-orient-web.gpx', startName: 'Port d\'Andratx', endName: 'Port de Pollença' },
   'south-1': { gpx: 'portpollenca-portandratx-vanilla-web.gpx', startName: 'Port de Pollença', endName: 'Port d\'Andratx' },
   'south-2': { gpx: 'portpollenca-portandratx-canonge-valldemossa-web.gpx', startName: 'Port de Pollença', endName: 'Port d\'Andratx' },
   'south-3': { gpx: 'portpollenca-portandratx-puigpunyent-web.gpx', startName: 'Port de Pollença', endName: 'Port d\'Andratx' },
-  'south-4': { gpx: 'portpollenca-portandratx-big-daddy-web.gpx', startName: 'Port de Pollença', endName: 'Port d\'Andratx' }
+  'south-4': { gpx: 'portpollenca-portandratx-big-daddy-web.gpx', startName: 'Port de Pollença', endName: 'Port d\'Andratx' },
+  'south-5': { gpx: 'portpollenca-portandratx-formentor-web.gpx', startName: 'Port de Pollença', endName: 'Port d\'Andratx' }
 };
 
 const loadedRoutes = {};
@@ -1035,6 +1694,7 @@ const loadedRoutes = {};
 function toggleRoute(routeId) {
   const item = document.getElementById('route-' + routeId);
   const wasActive = item.classList.contains('active');
+  const wrapper = document.querySelector('.routes-2col-wrapper');
 
   // Close all other items
   document.querySelectorAll('.route-item').forEach(el => {
@@ -1044,12 +1704,15 @@ function toggleRoute(routeId) {
   // Open this item if it wasn't active
   if (!wasActive) {
     item.classList.add('active');
+    wrapper.classList.add('has-expanded');
 
     // Load route if not already loaded
     if (!loadedRoutes[routeId]) {
       loadRoute(routeId);
       loadedRoutes[routeId] = true;
     }
+  } else {
+    wrapper.classList.remove('has-expanded');
   }
 }
 
@@ -1166,13 +1829,13 @@ function renderMap(routeId, coordinates, config) {
   // Add markers with custom icons
   L.marker([coordinates[0].lat, coordinates[0].lon], { icon: startIcon })
     .addTo(map)
-    .bindPopup('<strong>Inicio:</strong> ' + config.startName);
+    .bindPopup('<strong>Start:</strong> ' + config.startName);
   console.log('Start marker added');
 
   const lastIdx = coordinates.length - 1;
   L.marker([coordinates[lastIdx].lat, coordinates[lastIdx].lon], { icon: endIcon })
     .addTo(map)
-    .bindPopup('<strong>Final:</strong> ' + config.endName);
+    .bindPopup('<strong>End:</strong> ' + config.endName);
   console.log('End marker added');
 
   // Fit bounds
@@ -1275,7 +1938,7 @@ function renderElevationChart(routeId, coordinates) {
     data: {
       labels: sampledDistances.map(d => d.toFixed(1)),
       datasets: [{
-        label: 'Altitud (m)',
+        label: 'Elevation (m)',
         data: sampledElevations,
         borderColor: '#f10000',
         backgroundColor: 'rgba(241, 0, 0, 0.1)',
@@ -1292,18 +1955,18 @@ function renderElevationChart(routeId, coordinates) {
         legend: { display: false },
         tooltip: {
           callbacks: {
-            title: (context) => 'Distancia: ' + context[0].label + ' km',
-            label: (context) => 'Altitud: ' + context.parsed.y.toFixed(0) + ' m'
+            title: (context) => 'Distance: ' + context[0].label + ' km',
+            label: (context) => 'Elevation: ' + context.parsed.y.toFixed(0) + ' m'
           }
         }
       },
       scales: {
         x: {
-          title: { display: true, text: 'Distancia (km)' },
+          title: { display: true, text: 'Distance (km)' },
           ticks: { maxTicksLimit: 15 }
         },
         y: {
-          title: { display: true, text: 'Altitud (m)' }
+          title: { display: true, text: 'Elevation (m)' }
         }
       },
       interaction: {
@@ -1324,11 +1987,11 @@ function renderElevationChart(routeId, coordinates) {
 <img src="/img/finishers-tshirt-andratx-pollenca.webp" alt="Andratx-Pollença Finisher's T-Shirt" style="width: 100%; height: 100%; object-fit: cover; display: block;">
 </div>
 <div style="flex: 1 1 400px; padding: 2.5rem;">
-<h2 style="color: var(--brand, #f10000); margin-bottom: 0.75rem; font-size: 1.75rem; font-weight: 700;">Conmemora tu ruta</h2>
-<h3 style="color: #333; font-size: 1.2rem; font-weight: 600; margin-bottom: 0.75rem;">Camiseta Finisher Andratx-Pollença</h3>
-<p style="color: #666; font-size: 1rem; margin-bottom: 1.5rem; line-height: 1.6;">Celebra haber completado esta ruta épica con nuestra exclusiva camiseta de finisher. Disponible en múltiples colores y tallas.</p>
+<h2 style="color: var(--brand, #f10000); margin-bottom: 0.75rem; font-size: 1.75rem; font-weight: 700;">Commemorate Your Ride</h2>
+<h3 style="color: #333; font-size: 1.2rem; font-weight: 600; margin-bottom: 0.75rem;">Andratx-Pollença Finisher's T-Shirt</h3>
+<p style="color: #666; font-size: 1rem; margin-bottom: 1.5rem; line-height: 1.6;">Celebrate completing this epic route with our exclusive finisher's t-shirt. Available in multiple colors and sizes.</p>
 <div style="display: inline-block; padding: 0.9rem 2rem; background: linear-gradient(135deg, var(--brand, #f10000) 0%, #ff3333 100%); color: white; border-radius: 0.5rem; font-size: 1rem; font-weight: 700; box-shadow: 0 4px 15px rgba(241, 0, 0, 0.3);">
-Comprar ahora →
+Shop Now →
 </div>
 </div>
 </div>
@@ -1353,3 +2016,74 @@ max-height: 350px;
 }
 }
 </style>
+
+<style>
+/* Route Direction Headers - Premium Glassmorphism */
+.route-direction-header {
+  font-size: 2rem;
+  font-weight: 800;
+  padding: 2rem 2.5rem;
+  margin: 4rem 0 2.5rem;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 24px;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.08);
+  color: #111;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: center;
+  letter-spacing: -0.02em;
+  scroll-margin-top: 2rem;
+}
+
+.route-direction-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(241, 0, 0, 0.08) 0%, rgba(255, 51, 51, 0.03) 100%);
+  z-index: 0;
+  border-radius: 24px;
+}
+
+.route-direction-header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    rgba(241, 0, 0, 0.6) 20%,
+    rgba(241, 0, 0, 1) 50%,
+    rgba(241, 0, 0, 0.6) 80%,
+    transparent 100%
+  );
+  border-radius: 0 0 24px 24px;
+  transition: height 0.4s ease;
+}
+
+.route-direction-header:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 64px rgba(241, 0, 0, 0.12);
+  border-color: rgba(241, 0, 0, 0.2);
+}
+
+.route-direction-header:hover::after {
+  height: 6px;
+}
+
+/* Add directional arrows via text content */
+.route-direction-header {
+  position: relative;
+  z-index: 1;
+}
+
+</style>
+
