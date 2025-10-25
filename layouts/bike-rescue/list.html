@@ -18,7 +18,7 @@
 
     {{ with .Params.cta }}
       <div class="rescue-hero-cta">
-        <a href="{{ .url }}" class="rescue-cta-btn primary">
+        <a href="{{ .url }}" class="rescue-cta-btn primary" target="_blank" rel="noopener noreferrer">
           {{ .label }}
         </a>
       </div>
@@ -107,7 +107,7 @@
     <div class="rescue-final-cta-content">
       <h2>Ready for Peace of Mind?</h2>
       <p>Get your rescue cover today and ride worry-free across Mallorca</p>
-      <a href="{{ .url }}" class="rescue-cta-btn primary">{{ .label }}</a>
+      <a href="{{ .url }}" class="rescue-cta-btn primary" target="_blank" rel="noopener noreferrer">{{ .label }}</a>
     </div>
   </div>
 </section>
