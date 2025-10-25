@@ -8,7 +8,7 @@
 <section class="transfers-hero">
   <div class="transfers-hero-overlay"></div>
   <div class="transfers-hero-image">
-    <img src="/img/hero-main.webp" alt="Mallorca Airport Transfers">
+    <img src="{{ .Params.hero_image | default "/img/hero-main.webp" }}" alt="{{ .Title }}">
   </div>
 
   <div class="transfers-hero-content">

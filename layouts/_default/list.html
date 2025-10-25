@@ -15,7 +15,7 @@
   <section class="homepage-hero">
     <div class="homepage-hero-overlay"></div>
     <div class="homepage-hero-image">
-      <img src="/img/hero-main.webp" alt="Cycling in Mallorca Tramuntana Mountains">
+      <img src="{{ .Params.hero_image | default "/img/hero-main.webp" }}" alt="{{ .Params.hero_title }}">
     </div>
     <div class="homepage-hero-content">
       <h1 class="homepage-hero-title">{{ .Params.hero_title }}</h1>

@@ -6,7 +6,7 @@
 <section class="rescue-hero">
   <div class="rescue-hero-overlay"></div>
   <div class="rescue-hero-image">
-    <img src="/img/hero-main.webp" alt="Mallorca Bicycle Rescue Service">
+    <img src="{{ .Params.hero_image | default "/img/hero-main.webp" }}" alt="{{ .Params.hero_title }}">
   </div>
 
   <div class="rescue-hero-content">
