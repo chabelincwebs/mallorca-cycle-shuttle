@@ -1440,15 +1440,15 @@ path.route-polyline {
 
   <!-- Route 6: Coll de Sóller & Orient Valley -->
   <div class="route-item" id="route-north-6">
-    <div class="route-header">
-      <div class="route-header-left">
-        <button class="route-close" aria-label="Close">✕</button>
-        <h3>Return via the Coll de Sóller and the Orient Valley</h3>
-        <div class="route-stats-inline">
-          <div class="route-stats-group">
+    <div class="route-header" onclick="toggleRoute('north-6')">
+      <div class="route-title-section">
+        <span class="route-icon">▶</span>
+        <div>
+          <div class="route-title">Return via the Coll de Sóller and the Orient Valley</div>
+          <div class="route-stats-inline">
             <span>📏 137 km</span>
             <span>⛰️ 2,360 m</span>
-            <span class="difficulty-badge difficulty-hard">Challenging</span>
+            <span class="difficulty-badge difficulty-hard">Hard</span>
           </div>
         </div>
       </div>
