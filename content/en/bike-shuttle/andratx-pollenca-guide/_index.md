@@ -1981,82 +1981,72 @@ function renderElevationChart(routeId, coordinates) {
 
 <!-- OPTION 1: Horizontal Layout -->
 <div id="finishers-gear" class="finishers-tshirt-horizontal" style="margin: 4rem auto 2rem; max-width: 1000px; scroll-margin-top: 2rem;">
-  <a href="https://mallorcacycleshuttle.company.site/products/Andratx-Pollenca-Finishers-Unisex-Classic-T-p788401800" target="_blank" rel="noopener noreferrer" style="text-decoration: none; display: block;">
-    <div style="background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%); border-radius: 1rem; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; display: flex; flex-wrap: wrap; align-items: center;">
-
-      <!-- Image Column -->
-      <div style="flex: 1 1 350px; min-width: 300px;">
-        <img src="/img/finishers-tshirt-andratx-pollenca.webp" alt="Andratx-Pollença Finisher's T-Shirt" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-      </div>
-
-      <!-- Content Column -->
-      <div style="flex: 1 1 400px; padding: 2.5rem;">
-        <h2 style="color: var(--brand, #f10000); margin-bottom: 0.75rem; font-size: 1.75rem; font-weight: 700;">Commemorate Your Ride</h2>
-        <h3 style="color: #333; font-size: 1.2rem; font-weight: 600; margin-bottom: 0.75rem;">Andratx-Pollença Finisher's T-Shirt</h3>
-        <p style="color: #666; font-size: 1rem; margin-bottom: 1.5rem; line-height: 1.6;">Celebrate completing this epic route with our exclusive finisher's t-shirt. Available in multiple colors and sizes.</p>
-        <div style="display: inline-block; padding: 0.9rem 2rem; background: linear-gradient(135deg, var(--brand, #f10000) 0%, #ff3333 100%); color: white; border-radius: 0.5rem; font-size: 1rem; font-weight: 700; box-shadow: 0 4px 15px rgba(241, 0, 0, 0.3);">
-          Shop Now →
-        </div>
-      </div>
-
-    </div>
-  </a>
+<a href="https://mallorcacycleshuttle.company.site/products/Andratx-Pollenca-Finishers-Unisex-Classic-T-p788401800" target="_blank" rel="noopener noreferrer" style="text-decoration: none; display: block;">
+<div style="background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%); border-radius: 1rem; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; display: flex; flex-wrap: wrap; align-items: center;">
+<div style="flex: 1 1 350px; min-width: 300px;">
+<img src="/img/finishers-tshirt-andratx-pollenca.webp" alt="Andratx-Pollença Finisher's T-Shirt" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+</div>
+<div style="flex: 1 1 400px; padding: 2.5rem;">
+<h2 style="color: var(--brand, #f10000); margin-bottom: 0.75rem; font-size: 1.75rem; font-weight: 700;">Commemorate Your Ride</h2>
+<h3 style="color: #333; font-size: 1.2rem; font-weight: 600; margin-bottom: 0.75rem;">Andratx-Pollença Finisher's T-Shirt</h3>
+<p style="color: #666; font-size: 1rem; margin-bottom: 1.5rem; line-height: 1.6;">Celebrate completing this epic route with our exclusive finisher's t-shirt. Available in multiple colors and sizes.</p>
+<div style="display: inline-block; padding: 0.9rem 2rem; background: linear-gradient(135deg, var(--brand, #f10000) 0%, #ff3333 100%); color: white; border-radius: 0.5rem; font-size: 1rem; font-weight: 700; box-shadow: 0 4px 15px rgba(241, 0, 0, 0.3);">
+Shop Now →
+</div>
+</div>
+</div>
+</a>
 </div>
 
 <!-- OPTION 4: Glassmorphism Style (matching route cards) -->
 <div class="finishers-tshirt-glassmorphism" style="margin: 4rem auto 2rem; max-width: 1000px; scroll-margin-top: 2rem; display: none;">
-  <a href="https://mallorcacycleshuttle.company.site/products/Andratx-Pollenca-Finishers-Unisex-Classic-T-p788401800" target="_blank" rel="noopener noreferrer" style="text-decoration: none; display: block;">
-    <div style="background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.9); border-radius: 1.5rem; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); padding: 2rem; transition: all 0.3s ease; display: flex; flex-wrap: wrap; align-items: center; gap: 2rem;">
-
-      <!-- Image Column -->
-      <div style="flex: 1 1 320px; min-width: 280px;">
-        <div style="border-radius: 1rem; overflow: hidden; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);">
-          <img src="/img/finishers-tshirt-andratx-pollenca.webp" alt="Andratx-Pollença Finisher's T-Shirt" style="width: 100%; height: auto; display: block;">
-        </div>
-      </div>
-
-      <!-- Content Column -->
-      <div style="flex: 1 1 400px;">
-        <div style="display: inline-block; padding: 0.4rem 1rem; background: rgba(241, 0, 0, 0.1); border: 1px solid rgba(241, 0, 0, 0.3); border-radius: 2rem; font-size: 0.75rem; font-weight: 700; color: var(--brand, #f10000); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 1rem;">
-          Exclusive Merch
-        </div>
-        <h2 style="color: #1a1a1a; margin-bottom: 0.5rem; font-size: 1.75rem; font-weight: 800;">Commemorate Your Ride</h2>
-        <h3 style="color: #333; font-size: 1.1rem; font-weight: 600; margin-bottom: 1rem;">Andratx-Pollença Finisher's T-Shirt</h3>
-        <p style="color: #555; font-size: 0.95rem; margin-bottom: 1.75rem; line-height: 1.7;">Celebrate completing this legendary coast-to-coast route with our premium finisher's tee. Available in multiple colors and sizes to suit every rider.</p>
-        <div style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.9rem 2rem; background: linear-gradient(135deg, var(--brand, #f10000) 0%, #ff3333 100%); color: white; border-radius: 0.75rem; font-size: 1rem; font-weight: 700; box-shadow: 0 6px 24px rgba(241, 0, 0, 0.35);">
-          <span>Shop Now</span>
-          <span style="font-size: 1.2rem;">→</span>
-        </div>
-      </div>
-
-    </div>
-  </a>
+<a href="https://mallorcacycleshuttle.company.site/products/Andratx-Pollenca-Finishers-Unisex-Classic-T-p788401800" target="_blank" rel="noopener noreferrer" style="text-decoration: none; display: block;">
+<div style="background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.9); border-radius: 1.5rem; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); padding: 2rem; transition: all 0.3s ease; display: flex; flex-wrap: wrap; align-items: center; gap: 2rem;">
+<div style="flex: 1 1 320px; min-width: 280px;">
+<div style="border-radius: 1rem; overflow: hidden; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);">
+<img src="/img/finishers-tshirt-andratx-pollenca.webp" alt="Andratx-Pollença Finisher's T-Shirt" style="width: 100%; height: auto; display: block;">
+</div>
+</div>
+<div style="flex: 1 1 400px;">
+<div style="display: inline-block; padding: 0.4rem 1rem; background: rgba(241, 0, 0, 0.1); border: 1px solid rgba(241, 0, 0, 0.3); border-radius: 2rem; font-size: 0.75rem; font-weight: 700; color: var(--brand, #f10000); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 1rem;">
+Exclusive Merch
+</div>
+<h2 style="color: #1a1a1a; margin-bottom: 0.5rem; font-size: 1.75rem; font-weight: 800;">Commemorate Your Ride</h2>
+<h3 style="color: #333; font-size: 1.1rem; font-weight: 600; margin-bottom: 1rem;">Andratx-Pollença Finisher's T-Shirt</h3>
+<p style="color: #555; font-size: 0.95rem; margin-bottom: 1.75rem; line-height: 1.7;">Celebrate completing this legendary coast-to-coast route with our premium finisher's tee. Available in multiple colors and sizes to suit every rider.</p>
+<div style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.9rem 2rem; background: linear-gradient(135deg, var(--brand, #f10000) 0%, #ff3333 100%); color: white; border-radius: 0.75rem; font-size: 1rem; font-weight: 700; box-shadow: 0 6px 24px rgba(241, 0, 0, 0.35);">
+<span>Shop Now</span>
+<span style="font-size: 1.2rem;">→</span>
+</div>
+</div>
+</div>
+</a>
 </div>
 
 <style>
 /* Hover effects for Option 1 */
 .finishers-tshirt-horizontal a > div:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+transform: translateY(-4px);
+box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
 }
 
 /* Hover effects for Option 4 */
 .finishers-tshirt-glassmorphism a > div:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
-  background: rgba(255, 255, 255, 0.85);
+transform: translateY(-4px);
+box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+background: rgba(255, 255, 255, 0.85);
 }
 
 /* Mobile responsive */
 @media (max-width: 768px) {
-  .finishers-tshirt-horizontal > a > div,
-  .finishers-tshirt-glassmorphism > a > div {
-    flex-direction: column;
-  }
+.finishers-tshirt-horizontal > a > div,
+.finishers-tshirt-glassmorphism > a > div {
+flex-direction: column;
+}
 
-  .finishers-tshirt-horizontal > a > div > div:first-child {
-    max-height: 350px;
-  }
+.finishers-tshirt-horizontal > a > div > div:first-child {
+max-height: 350px;
+}
 }
 </style>
 
