@@ -12,27 +12,27 @@ note: "Fast, simple, island-wide."
 
 features:
   - title: "Why riders buy"
-    text: "Peace of mind – explore the island without worrying about getting stranded."
+    text: "Peace of mind – explore the island without worry. Your whole day isn't ruined—nor your group's."
     image: "/img/es-colomer.webp"
   - title: "Save time & stress"
-    text: "Avoid taxi zoning headaches, language complications and long roadside waits. Your whole day isn't ruined—nor your group's."
+    text: "Avoid taxi zoning headaches, language complications and long roadside waits. "
     image: "/img/peace-sign-mbr.webp"
   - title: "Ready when needed"
-    text: "One call, WhatsApp us your location, we confirm and send an ETA."
+    text: "One call, WhatsApp us your location, we confirm and send a vehicle ETA."
     image: "/img/couple-lighthouse.webp"
 
 pricing:
-  - label: "4 days"
+  - label: " Cover your stay"
     price: "From €16"
-    desc: "One rider + one specified bike"
+    desc: "One rider + one specified bike. Get a policy for yourself and your riding partners."
     image: "/img/cdf.webp"
-  - label: "5 / 7 / 10 days"
+  - label: "Maximise your time"
     price: "Great-value bundles"
-    desc: "Cover yourself and your riding partners"
+    desc: "You’re here for a limited time, so waiting on the roadside is probably not the best way to spend your day!"
     image: "/img/down-cdf.webp"
-  - label: "14 days"
+  - label: "Bike or Body"
     price: "Best for longer stays"
-    desc: "[Buy now](https://mallorcacycleshuttle.company.site/products/)"
+    desc: "Fast, simple island-wide. [Buy now](https://mallorcacycleshuttle.company.site/products/)"
     image: "/img/climbing-sc.webp"
 
 good_to_know_title: "Good to know"
@@ -43,6 +43,10 @@ good_to_know:
   - "Medical emergencies: call an ambulance first; we'll secure/transport your bike (bikes don't fit in ambulances)."
 
 faq_title: "Frequently Asked Questions"
+
+final_cta_title: "Ready for Peace of Mind?"
+final_cta_text: "Get your rescue cover today and ride worry-free across Mallorca"
+
 faq:
   - q: "Is it one policy per rider?"
     a: "Yes. One policy = one person + one specified bike. ID may be requested to prevent a group trying to cover everyone with one policy."

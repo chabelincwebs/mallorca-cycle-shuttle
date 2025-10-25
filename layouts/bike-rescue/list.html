@@ -105,8 +105,8 @@
 <section class="rescue-final-cta">
   <div class="container">
     <div class="rescue-final-cta-content">
-      <h2>Ready for Peace of Mind?</h2>
-      <p>Get your rescue cover today and ride worry-free across Mallorca</p>
+      <h2>{{ $.Params.final_cta_title | default "Ready for Peace of Mind?" }}</h2>
+      <p>{{ $.Params.final_cta_text | default "Get your rescue cover today and ride worry-free across Mallorca" }}</p>
       <a href="{{ .url }}" class="rescue-cta-btn primary" target="_blank" rel="noopener noreferrer">{{ .label }}</a>
     </div>
   </div>
