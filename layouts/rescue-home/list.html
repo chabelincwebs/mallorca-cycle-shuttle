@@ -55,7 +55,6 @@
 {{ with .Params.pricing }}
 <section class="rescue-pricing">
   <div class="container">
-    <h2 class="rescue-section-title">Pricing</h2>
     <div class="rescue-pricing-grid">
       {{ range . }}
       <div class="rescue-pricing-card fade-in-on-scroll">
@@ -311,7 +310,7 @@
 
 .rescue-pricing-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin-top: 2rem;
 }
