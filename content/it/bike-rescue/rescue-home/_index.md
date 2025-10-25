@@ -1,0 +1,83 @@
+---
+title: "Soccorso Bici Mallorca"
+description: "Ritiro ciclisti in tutta l'isola se la tua bici o il tuo corpo si guasta. Semplice. Veloce. Affidabile."
+hero_title: "Soccorso Bici Mallorca"
+hero_subtitle: "Se la tua bici o il tuo corpo si guasta, ti portiamo dove devi essere."
+
+cta:
+  label: "Acquista copertura di soccorso"
+  url: "https://mallorcacycleshuttle.company.site/products/"
+
+note: "Veloce, semplice, in tutta l'isola."
+
+features:
+  - title: "Perché i ciclisti comprano"
+    text: "Tranquillità – esplora l'isola senza preoccupazioni. La tua intera giornata non è rovinata—né quella del tuo gruppo."
+    image: "/img/es-colomer.webp"
+  - title: "Risparmia tempo e stress"
+    text: "Evita mal di testa con zone taxi, complicazioni linguistiche e lunghe attese sulla strada."
+    image: "/img/peace-sign-mbr.webp"
+  - title: "Pronto quando serve"
+    text: "Una chiamata, inviaci la tua posizione su WhatsApp, confermiamo e inviamo un tempo stimato di arrivo."
+    image: "/img/couple-lighthouse.webp"
+
+pricing:
+  - label: " Copri il tuo soggiorno"
+    price: "Da 16 €"
+    desc: "Un ciclista + una bici specificata. Ottieni una polizza per te e i tuoi compagni di viaggio."
+    image: "/img/cdf.webp"
+  - label: "Massimizza il tuo tempo"
+    price: "Pacchetti ottimi"
+    desc: "Sei qui per un tempo limitato, quindi aspettare sulla strada probabilmente non è il modo migliore per passare la tua giornata!"
+    image: "/img/down-cdf.webp"
+  - label: "Bici o Corpo"
+    price: "Ideale per soggiorni lunghi"
+    desc: "Veloce, semplice, in tutta l'isola. [Acquista ora](https://mallorcacycleshuttle.company.site/products/)"
+    image: "/img/climbing-sc.webp"
+
+good_to_know_title: "Buono a sapersi"
+good_to_know:
+  - "Tempo di risposta tipico: ~30–40 minuti; può essere più lungo in luoghi molto remoti come Port de Sa Calobra durante le ore di punta primaverili."
+  - "Orario operativo: da un'ora dopo l'alba al tramonto."
+  - "Solo strade: recuperiamo ciclisti da strade accessibili a un veicolo standard (non 4×4)."
+  - "Emergenze mediche: chiama prima un'ambulanza; noi assicureremo/trasporteremo la tua bici (le bici non entrano nelle ambulanze)."
+
+faq_title: "Domande Frequenti"
+
+final_cta_title: "Pronto per la Tranquillità?"
+final_cta_text: "Ottieni la tua copertura di soccorso oggi e pedala senza preoccupazioni a Mallorca"
+
+faq:
+  - q: "È una polizza per ciclista?"
+    a: "Sì. Una polizza = una persona + una bici specificata. Può essere richiesto un documento d'identità per evitare che un gruppo cerchi di coprire tutti con una sola polizza."
+  - q: "Le bici a noleggio o in prestito sono coperte?"
+    a: "Sì—purché sia la bici specificata all'acquisto (previene abusi di gruppo)."
+  - q: "Dove mi porterete?"
+    a: "A tua scelta: negozio di bici aperto più vicino, il tuo alloggio o il tuo punto di noleggio."
+  - q: "Quanto tempo aspetterò?"
+    a: "Obiettivo 30–40 minuti; può essere più lungo in aree remote (es. Port de Sa Calobra nei giorni molto affollati). Abbiamo veicoli in tutta l'isola e possiamo portare supporto aggiuntivo."
+  - q: "Quante richieste posso fare?"
+    a: "Una volta per polizza per settimana per problema (es. copertura 14 giorni include due richieste per lo stesso problema). Problemi diversi non sono limitati, ma l'abuso può risultare in cancellazione e rimborso della porzione non utilizzata."
+  - q: "Distanza minima da negozio/hotel?"
+    a: "Almeno 1 km dal tuo alloggio o da un negozio di bici aperto."
+  - q: "Quando posso acquistare?"
+    a: "Almeno 12 ore prima di averne bisogno. Siamo soccorso e recupero, non un taxi."
+  - q: "Operate di notte?"
+    a: "No. Da un'ora dopo l'alba fino al tramonto."
+  - q: "Problemi medici?"
+    a: "Chiama un'ambulanza. Ritireremo e ci prenderemo cura della tua bici, ma non siamo medici."
+  - q: "Ritiro fuoristrada?"
+    a: "No. Devi essere su una strada accessibile a un veicolo standard (non 4×4)."
+  - q: "Tandem, handbike, bici reclinate?"
+    a: "Attualmente non coperte—non entrano in tutti i veicoli."
+  - q: "E-bike?"
+    a: "Coperte per problemi meccanici. Una batteria scarica non è un motivo di soccorso; gestisci la ricarica per favore—consideralo un'esperienza di apprendimento."
+  - q: "Gare/granfondo?"
+    a: "Non coperte. Non possiamo operare nemmeno durante la Mallorca 312 dove ci sono chiusure strade."
+  - q: "Posso cancellare?"
+    a: "Sì—rimborso completo purché la copertura non sia iniziata."
+  - q: "Quali informazioni servono per acquistare?"
+    a: "Nome, dettagli di contatto, indirizzo dell'alloggio, data di inizio e i dettagli della bici."
+  - q: "Posso cambiare la mia bici durante il soggiorno?"
+    a: "Sì—inviaci un'email almeno 12 ore prima e aggiorneremo la polizza."
+---

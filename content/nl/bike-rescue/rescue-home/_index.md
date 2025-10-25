@@ -1,0 +1,83 @@
+---
+title: "Mallorca Fiets Reddingsdienst"
+description: "Eilandwijde ophaal van wielrenners als je fiets of lichaam het begeeft. Simpel. Snel. Betrouwbaar."
+hero_title: "Mallorca Fiets Reddingsdienst"
+hero_subtitle: "Als je fiets of je lichaam het begeeft, brengen we je waar je moet zijn."
+
+cta:
+  label: "Koop reddingsdekking"
+  url: "https://mallorcacycleshuttle.company.site/products/"
+
+note: "Snel, simpel, eilandwijd."
+
+features:
+  - title: "Waarom renners kopen"
+    text: "Gemoedsrust – verken het eiland zonder zorgen. Je hele dag is niet verpest—ook die van je groep niet."
+    image: "/img/es-colomer.webp"
+  - title: "Bespaar tijd & stress"
+    text: "Vermijd taxizone gedoe, taalcomplicaties en lange wachttijden langs de weg."
+    image: "/img/peace-sign-mbr.webp"
+  - title: "Klaar wanneer nodig"
+    text: "Één telefoontje, WhatsApp ons je locatie, we bevestigen en sturen een voertuig-ETA."
+    image: "/img/couple-lighthouse.webp"
+
+pricing:
+  - label: " Dek je verblijf"
+    price: "Vanaf €16"
+    desc: "Eén renner + één gespecificeerde fiets. Neem een polis voor jezelf en je rij-partners."
+    image: "/img/cdf.webp"
+  - label: "Maximaliseer je tijd"
+    price: "Topwaarde bundels"
+    desc: "Je bent er maar tijdelijk, dus wachten langs de weg is waarschijnlijk niet de beste manier om je dag door te brengen!"
+    image: "/img/down-cdf.webp"
+  - label: "Fiets of Lichaam"
+    price: "Beste voor langere verblijven"
+    desc: "Snel, simpel, eilandwijd. [Nu kopen](https://mallorcacycleshuttle.company.site/products/)"
+    image: "/img/climbing-sc.webp"
+
+good_to_know_title: "Goed om te weten"
+good_to_know:
+  - "Typische reactie: ~30–40 minuten; kan langer zijn in zeer afgelegen plekken zoals Port de Sa Calobra tijdens het lente-spitsuur."
+  - "Bedrijfstijden: vanaf één uur na zonsopgang tot zonsondergang."
+  - "Alleen wegen: we halen wielrenners op van wegen die een standaard (geen 4×4) voertuig kan bereiken."
+  - "Medische noodgevallen: bel eerst een ambulance; wij beveiligen/vervoeren je fiets (fietsen passen niet in ambulances)."
+
+faq_title: "Veelgestelde Vragen"
+
+final_cta_title: "Klaar voor Gemoedsrust?"
+final_cta_text: "Haal vandaag je reddingsdekking en fiets zorgeloos door Mallorca"
+
+faq:
+  - q: "Is het één polis per renner?"
+    a: "Ja. Eén polis = één persoon + één gespecificeerde fiets. ID kan worden gevraagd om te voorkomen dat een groep iedereen probeert te dekken met één polis."
+  - q: "Zijn huur- of geleende fietsen gedekt?"
+    a: "Ja—zolang het de fiets is die is gespecificeerd bij aankoop (voorkomt groepsmisbruik)."
+  - q: "Waar brengen jullie me heen?"
+    a: "Jouw keuze: dichtstbijzijnde open fietsenwinkel, je accommodatie, of je verhuurbedrijf."
+  - q: "Hoe lang moet ik wachten?"
+    a: "Doel is 30–40 minuten; kan langer zijn in afgelegen gebieden (bijv. Port de Sa Calobra op zeer drukke dagen). We hebben voertuigen over het hele eiland en kunnen extra ondersteuning inroepen."
+  - q: "Hoeveel claims kan ik indienen?"
+    a: "Eén keer per polis per week per probleem (bijv. 14-daagse dekking omvat twee claims voor hetzelfde probleem). Verschillende problemen zijn niet gelimiteerd, maar misbruik kan resulteren in annulering en terugbetaling van het ongebruikte deel."
+  - q: "Minimale afstand van winkel/hotel?"
+    a: "Minstens 1 km van je accommodatie of een open fietsenwinkel."
+  - q: "Wanneer kan ik kopen?"
+    a: "Minstens 12 uur voordat je het nodig hebt. We zijn redding & berging, geen taxi."
+  - q: "Opereren jullie 's nachts?"
+    a: "Nee. Vanaf één uur na zonsopgang tot zonsondergang."
+  - q: "Medische problemen?"
+    a: "Bel een ambulance. We halen je fiets op en zorgen ervoor, maar we zijn geen medici."
+  - q: "Off-road ophaal?"
+    a: "Nee. Je moet op een weg zijn waar een standaard (geen 4×4) voertuig kan rijden."
+  - q: "Tandems, handbikes, ligfietsen?"
+    a: "Momenteel niet gedekt—ze passen niet in alle voertuigen."
+  - q: "E-bikes?"
+    a: "Gedekt voor mechanische problemen. Een lege accu is geen reddingsreden; beheer het opladen alsjeblieft—beschouw het als een leerervaring."
+  - q: "Wedstrijden/sportives?"
+    a: "Niet gedekt. We kunnen ook niet opereren tijdens de Mallorca 312 waar er wegafsluitingen zijn."
+  - q: "Kan ik annuleren?"
+    a: "Ja—volledige terugbetaling zolang de dekking niet is begonnen."
+  - q: "Welke info heb ik nodig om te kopen?"
+    a: "Naam, contactgegevens, accommodatieadres, startdatum, en de fietsdetails."
+  - q: "Kan ik mijn fiets veranderen tijdens mijn verblijf?"
+    a: "Ja—email ons minstens 12 uur van tevoren en we updaten de polis."
+---

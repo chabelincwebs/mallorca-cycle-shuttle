@@ -1,0 +1,83 @@
+---
+title: "Rescat Ciclista Mallorca"
+description: "Recollida de ciclistes a tota l'illa si la teva bici o el teu cos falla. Simple. Ràpid. Fiable."
+hero_title: "Rescat Ciclista Mallorca"
+hero_subtitle: "Si la teva bici o el teu cos s'espatlla, et portem on necessites estar."
+
+cta:
+  label: "Comprar cobertura de rescat"
+  url: "https://mallorcacycleshuttle.company.site/products/"
+
+note: "Ràpid, simple, a tota l'illa."
+
+features:
+  - title: "Per què compren els ciclistes"
+    text: "Tranquil·litat – explora l'illa sense preocupacions. El teu dia sencer no es malmet—ni el del teu grup."
+    image: "/img/es-colomer.webp"
+  - title: "Estalvia temps i estrès"
+    text: "Evita embolics amb zones de taxi, complicacions d'idioma i llargues esperes a la carretera."
+    image: "/img/peace-sign-mbr.webp"
+  - title: "Llest quan ho necessites"
+    text: "Una trucada, envia'ns la teva ubicació per WhatsApp, confirmem i enviem un temps estimat d'arribada."
+    image: "/img/couple-lighthouse.webp"
+
+pricing:
+  - label: " Cobreix la teva estada"
+    price: "Des de 16 €"
+    desc: "Un ciclista + una bici especificada. Aconsegueix una pòlissa per a tu i els teus companys de ruta."
+    image: "/img/cdf.webp"
+  - label: "Maximitza el teu temps"
+    price: "Paquets de gran valor"
+    desc: "Ets aquí per temps limitat, així que esperar a la carretera probablement no és la millor manera de passar el teu dia!"
+    image: "/img/down-cdf.webp"
+  - label: "Bici o Cos"
+    price: "Ideal per estades llargues"
+    desc: "Ràpid, simple, a tota l'illa. [Comprar ara](https://mallorcacycleshuttle.company.site/products/)"
+    image: "/img/climbing-sc.webp"
+
+good_to_know_title: "Bo de saber"
+good_to_know:
+  - "Temps de resposta típic: ~30–40 minuts; pot ser més llarg en llocs molt remots com Port de Sa Calobra durant l'hora punta de primavera."
+  - "Horari d'operació: des d'una hora després de l'alba fins al capvespre."
+  - "Només carreteres: recollim ciclistes des de carreteres a les quals pot accedir un vehicle estàndard (no 4×4)."
+  - "Emergències mèdiques: truca primer a una ambulància; nosaltres assegurarem/transportarem la teva bici (les bicis no hi caben a les ambulàncies)."
+
+faq_title: "Preguntes Freqüents"
+
+final_cta_title: "Llest per la Tranquil·litat?"
+final_cta_text: "Aconsegueix la teva cobertura de rescat avui i pedala sense preocupacions per Mallorca"
+
+faq:
+  - q: "És una pòlissa per ciclista?"
+    a: "Sí. Una pòlissa = una persona + una bici especificada. Es pot sol·licitar identificació per evitar que un grup intenti cobrir tothom amb una sola pòlissa."
+  - q: "Estan cobertes les bicis de lloguer o prestades?"
+    a: "Sí—sempre que sigui la bici especificada en comprar (evita l'ús indegut del grup)."
+  - q: "On em portareu?"
+    a: "Tu tries: botiga de bicis oberta més propera, el teu allotjament o el teu punt de lloguer."
+  - q: "Quant temps esperaré?"
+    a: "L'objectiu són 30–40 minuts; pot ser més llarg en àrees remotes (ex. Port de Sa Calobra en dies molt concorreguts). Tenim vehicles per tota l'illa i podem portar suport addicional."
+  - q: "Quantes reclamacions puc fer?"
+    a: "Una vegada per pòlissa per setmana per problema (ex. cobertura de 14 dies inclou dues reclamacions pel mateix problema). Els problemes diferents no estan limitats, però l'abús pot resultar en cancel·lació i reemborsament de la porció no utilitzada."
+  - q: "Distància mínima des de botiga/hotel?"
+    a: "Almenys 1 km del teu allotjament o una botiga de bicis oberta."
+  - q: "Quan puc comprar?"
+    a: "Almenys 12 hores abans que ho necessitis. Som rescat i recuperació, no un taxi."
+  - q: "Opereu de nit?"
+    a: "No. Des d'una hora després de l'alba fins al capvespre."
+  - q: "Problemes mèdics?"
+    a: "Truca a una ambulància. Recollim i cuidem la teva bici, però no som metges."
+  - q: "Recollida fora de carretera?"
+    a: "No. Has d'estar en una carretera per la qual pugui circular un vehicle estàndard (no 4×4)."
+  - q: "Tàndems, handbikes, reclinades?"
+    a: "No estan cobertes actualment—no hi caben a tots els vehicles."
+  - q: "Bicicletes elèctriques?"
+    a: "Cobertes per problemes mecànics. Una bateria descarregada no és una raó de rescat; si us plau gestiona la càrrega—considera-ho una experiència d'aprenentatge."
+  - q: "Curses/marxes esportives?"
+    a: "No cobertes. Tampoc podem operar durant la Mallorca 312 on hi ha talls de carreteres."
+  - q: "Puc cancel·lar?"
+    a: "Sí—reemborsament complet sempre que la cobertura no hagi començat."
+  - q: "Quina informació necessito per comprar?"
+    a: "Nom, dades de contacte, adreça de l'allotjament, data d'inici i els detalls de la bici."
+  - q: "Puc canviar la meva bici durant la meva estada?"
+    a: "Sí—envia'ns un correu almenys 12 hores abans i actualitzarem la pòlissa."
+---
