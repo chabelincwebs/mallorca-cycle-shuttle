@@ -3,11 +3,226 @@ title: "Andratx to Pollença Master Cycling Guide"
 description: "Complete guide for cycling from Andratx to Pollença through the Tramuntana mountains"
 ---
 
-Choose from our carefully curated routes connecting Port d'Andratx and Port de Pollença through Mallorca's stunning UNESCO World Heritage Serra de Tramuntana mountains.
+<div class="hero-intro-banner">
+<div class="hero-intro-content">
+<p class="hero-intro-italic fade-in-up">
+We are not saying it's easy. We are not saying it's for everyone.
+</p>
+<p class="hero-intro-centered fade-in-up delay-1">
+We are saying that it's <strong>brilliant</strong>.
+</p>
+<p class="hero-intro-main fade-in-up delay-2">
+For your <a href="#north-routes" class="highlight-red hero-link">"Best Ever Day On A Bike"</a> ride <strong>Port d'Andratx</strong> to <strong>Port de Pollença</strong> through Mallorca's stunning <span class="highlight">UNESCO World Heritage Serra de Tramuntana</span> mountains for the ultimate <a href="#south-routes" class="highlight-red hero-link">Coast-to-Coast</a>
+</p>
+<p class="hero-intro-features fade-in-up delay-3">
+Scenic challenging climbs • Sweeping descents • Butter smooth tarmac • Regular café stops • Cycling paradise
+</p>
+</div>
+</div>
 
-We are not saying it is easy. We are not saying it is for everyone. We are saying that it is brilliant.
+<style>
+/* Center Page Title */
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
 
-Scenic with challenging climbs and sweeping descents, all on butter smooth tarmac. Regular café stops in stone villages. Cycling paradise.
+/* Hero Intro Banner - Premium Glassmorphism */
+.hero-intro-banner {
+  margin: 0 0 4rem 0;
+  padding: 1.8rem 2.5rem 3rem 2.5rem;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 28px;
+  box-shadow: 0 16px 64px rgba(0, 0, 0, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-intro-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(241, 0, 0, 0.06) 0%, rgba(255, 51, 51, 0.02) 100%);
+  z-index: 0;
+  border-radius: 28px;
+}
+
+.hero-intro-banner::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    rgba(241, 0, 0, 0.6) 20%,
+    rgba(241, 0, 0, 1) 50%,
+    rgba(241, 0, 0, 0.6) 80%,
+    transparent 100%
+  );
+}
+
+.hero-intro-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Italic First Line */
+.hero-intro-italic {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #555;
+  font-weight: 500;
+  font-style: italic;
+  text-align: center;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+/* Centered "brilliant" Line */
+.hero-intro-centered {
+  font-size: 2rem;
+  line-height: 1.4;
+  font-weight: 800;
+  text-align: center;
+  margin: 0;
+  color: #111;
+}
+
+.hero-intro-centered strong {
+  background: linear-gradient(135deg, rgba(241, 0, 0, 1) 0%, rgba(255, 51, 51, 0.9) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Main Intro Paragraph */
+.hero-intro-main {
+  font-size: 1.35rem;
+  line-height: 1.7;
+  color: #222;
+  font-weight: 500;
+  text-align: center;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.hero-intro-main strong {
+  font-weight: 700;
+  color: #111;
+}
+
+.hero-intro-main .highlight {
+  background: linear-gradient(135deg, rgba(241, 0, 0, 0.12) 0%, rgba(255, 51, 51, 0.08) 100%);
+  padding: 0.15rem 0.5rem;
+  border-radius: 6px;
+  font-weight: 700;
+  color: #111;
+}
+
+.hero-intro-main .highlight-red {
+  background: linear-gradient(135deg, rgba(241, 0, 0, 1) 0%, rgba(255, 51, 51, 0.95) 100%);
+  color: white;
+  padding: 0.2rem 0.75rem;
+  border-radius: 8px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 16px rgba(241, 0, 0, 0.3);
+}
+
+/* Hero Links - Clickable Highlights */
+.hero-link {
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.hero-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(241, 0, 0, 0.4);
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Features Line */
+.hero-intro-features {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  text-align: center;
+  margin: 0;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+/* Fade-in animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  opacity: 0;
+}
+
+.fade-in-up.delay-1 {
+  animation-delay: 0.2s;
+}
+
+.fade-in-up.delay-2 {
+  animation-delay: 0.4s;
+}
+
+.fade-in-up.delay-3 {
+  animation-delay: 0.6s;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .hero-intro-banner {
+    padding: 1.2rem 1.5rem 2rem 1.5rem;
+    margin: 0 0 3rem 0;
+  }
+
+  .hero-intro-italic {
+    font-size: 1.1rem;
+  }
+
+  .hero-intro-centered {
+    font-size: 1.6rem;
+  }
+
+  .hero-intro-main {
+    font-size: 1.15rem;
+  }
+
+  .hero-intro-main .highlight-red {
+    font-size: 1rem;
+    padding: 0.15rem 0.5rem;
+  }
+}
+</style>
 
 <!-- INFO CARDS GRID -->
 <div class="info-cards-wrapper">
@@ -221,24 +436,46 @@ Scenic with challenging climbs and sweeping descents, all on butter smooth tarma
 /* Info Cards Wrapper */
 .info-cards-wrapper {
   margin: 2rem 0 3rem 0;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 50%, #f1f3f5 100%);
+  border-radius: 24px;
+  position: relative;
+}
+
+.info-cards-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(241, 0, 0, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(255, 51, 51, 0.02) 0%, transparent 50%);
+  border-radius: 24px;
+  pointer-events: none;
 }
 
 /* Info Cards Grid */
 .info-cards-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
+  gap: 1.5rem;
+  position: relative;
+  z-index: 1;
 }
 
 @media (min-width: 768px) {
   .info-cards-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.75rem;
   }
 }
 
 @media (min-width: 1024px) {
   .info-cards-grid {
     grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
   }
 }
 
@@ -252,17 +489,37 @@ Scenic with challenging climbs and sweeping descents, all on butter smooth tarma
   display: block;
 }
 
-/* Routes 2-Column Layout */
+/* Routes 2-Column Layout - Premium Wrapper */
 .routes-2col-wrapper {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
-  margin: 2rem 0 1rem 0;
+  gap: 3rem;
+  margin: 3rem 0 2rem 0;
+  padding: 2.5rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 50%, #f1f3f5 100%);
+  border-radius: 28px;
+  position: relative;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.04);
+}
+
+.routes-2col-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image:
+    radial-gradient(circle at 30% 40%, rgba(241, 0, 0, 0.04) 0%, transparent 50%),
+    radial-gradient(circle at 70% 70%, rgba(255, 51, 51, 0.03) 0%, transparent 50%);
+  border-radius: 28px;
+  pointer-events: none;
 }
 
 @media (min-width: 768px) {
   .routes-2col-wrapper {
     grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
   }
 }
 
@@ -270,6 +527,8 @@ Scenic with challenging climbs and sweeping descents, all on butter smooth tarma
   display: flex;
   flex-direction: column;
   gap: 0;
+  position: relative;
+  z-index: 1;
 }
 
 /* Hide all routes when one is expanded */
@@ -293,84 +552,212 @@ Scenic with challenging climbs and sweeping descents, all on butter smooth tarma
 }
 
 .info-card {
-  background: white;
-  border: 2px solid #ddd;
-  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
   overflow: hidden;
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.info-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(241, 0, 0, 0.05) 0%, rgba(255, 51, 51, 0.02) 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 0;
+  border-radius: 20px;
 }
 
 .info-card:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  border-color: var(--brand);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 48px rgba(241, 0, 0, 0.15);
+  border-color: rgba(241, 0, 0, 0.2);
+}
+
+.info-card:hover::before {
+  opacity: 1;
 }
 
 .info-card.expanded {
-  box-shadow: 0 8px 30px rgba(241,0,0,0.2);
-  border-color: var(--brand);
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 16px 64px rgba(241, 0, 0, 0.2);
+  border-color: rgba(241, 0, 0, 0.3);
   grid-column: 1 / -1;
+  transform: scale(1.02);
+}
+
+.info-card.expanded::before {
+  opacity: 1;
 }
 
 .info-card-header {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  padding: 1.25rem;
-  background: linear-gradient(135deg, #fafafa 0%, #fff 100%);
+  padding: 1.5rem 1.5rem 1.25rem 1.5rem;
   user-select: none;
-}
-
-.info-card.expanded .info-card-header {
-  background: linear-gradient(135deg, #fff5f5 0%, #fff 100%);
+  position: relative;
+  z-index: 1;
 }
 
 .info-card-header-top {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
+  position: relative;
+}
+
+/* Floating Icon Badge - Top Right */
+.info-card-header-top > span:first-child {
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, rgba(241, 0, 0, 0.9) 0%, rgba(255, 51, 51, 0.85) 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  box-shadow: 0 4px 16px rgba(241, 0, 0, 0.3);
+  border: 3px solid rgba(255, 255, 255, 0.9);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 2;
+}
+
+.info-card:hover .info-card-header-top > span:first-child {
+  transform: rotate(12deg) scale(1.1);
+  box-shadow: 0 6px 24px rgba(241, 0, 0, 0.4);
+}
+
+.info-card.expanded .info-card-header-top > span:first-child {
+  transform: scale(1.15);
+  background: linear-gradient(135deg, rgba(241, 0, 0, 1) 0%, rgba(255, 51, 51, 0.95) 100%);
 }
 
 .info-card-header h3 {
   margin: 0;
-  font-size: 1.1rem;
-  color: var(--text);
-  font-weight: 600;
+  font-size: 1.2rem;
+  color: #222;
+  font-weight: 700;
+  padding-right: 3rem;
+  line-height: 1.3;
 }
 
 .card-toggle {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 300;
-  color: var(--brand);
-  transition: transform 0.3s ease;
+  color: rgba(241, 0, 0, 0.8);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(241, 0, 0, 0.08);
+  border-radius: 50%;
+  margin-top: -0.25rem;
+}
+
+.info-card:hover .card-toggle {
+  background: rgba(241, 0, 0, 0.12);
+  transform: scale(1.1);
 }
 
 .info-card.expanded .card-toggle {
-  transform: rotate(45deg);
+  transform: rotate(45deg) scale(1.15);
+  background: rgba(241, 0, 0, 0.15);
+  color: rgba(241, 0, 0, 1);
 }
 
 .info-card-content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease, padding 0.4s ease;
-  padding: 0 1.25rem;
+  transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), padding 0.5s ease;
+  padding: 0 1.5rem;
+  position: relative;
+  z-index: 1;
 }
 
 .info-card.expanded .info-card-content {
   max-height: 2000px;
-  padding: 0 1.25rem 1.25rem 1.25rem;
+  padding: 0 1.5rem 1.75rem 1.5rem;
 }
 
 .info-card-content p {
-  margin: 0 0 0.75rem 0;
-  line-height: 1.6;
-  color: var(--text);
+  margin: 0 0 0.85rem 0;
+  line-height: 1.7;
+  color: #333;
+  font-size: 0.95rem;
 }
 
 .info-card-content p:last-child {
   margin-bottom: 0;
+}
+
+.info-card-content strong {
+  color: #111;
+  font-weight: 700;
+}
+
+.info-card-content a {
+  color: rgba(241, 0, 0, 0.9);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid rgba(241, 0, 0, 0.3);
+}
+
+.info-card-content a:hover {
+  color: rgba(241, 0, 0, 1);
+  border-bottom-color: rgba(241, 0, 0, 0.6);
+}
+
+.info-card-content .cta {
+  display: inline-block;
+  background: linear-gradient(135deg, rgba(241, 0, 0, 1) 0%, rgba(255, 51, 51, 0.95) 100%);
+  color: white;
+  padding: 0.85rem 1.75rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 1rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 16px rgba(241, 0, 0, 0.25);
+  border: none;
+  border-bottom: none;
+}
+
+.info-card-content .cta:hover {
+  background: linear-gradient(135deg, rgba(209, 0, 0, 1) 0%, rgba(241, 0, 0, 1) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(241, 0, 0, 0.4);
+}
+
+.info-card-content ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.info-card-content li {
+  margin-bottom: 0.65rem;
+  line-height: 1.7;
+  color: #333;
+  font-size: 0.95rem;
 }
 
 /* Finisher's Gear CTA Card - Special Styling */
@@ -470,52 +857,83 @@ Scenic with challenging climbs and sweeping descents, all on butter smooth tarma
 .route-accordion {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
   margin: 1.5rem 0 3rem 0;
 }
 
-/* Accordion Item */
+/* Accordion Item - Glassmorphism */
 .route-item {
-  border: 2px solid #ddd;
-  border-radius: 12px;
-  background: white;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   overflow: hidden;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.route-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(241, 0, 0, 0.04) 0%, rgba(255, 51, 51, 0.01) 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 0;
+  border-radius: 20px;
 }
 
 .route-item:hover {
-  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
-  border-color: var(--brand);
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 48px rgba(241, 0, 0, 0.12);
+  border-color: rgba(241, 0, 0, 0.2);
+}
+
+.route-item:hover::before {
+  opacity: 1;
 }
 
 .route-item.active {
-  border-color: var(--brand);
-  box-shadow: 0 8px 24px rgba(241,0,0,0.2);
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-color: rgba(241, 0, 0, 0.3);
+  box-shadow: 0 16px 64px rgba(241, 0, 0, 0.18);
+  transform: scale(1.01);
 }
 
-/* Accordion Header */
+.route-item.active::before {
+  opacity: 1;
+}
+
+/* Accordion Header - Premium Glass Effect */
 .route-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.25rem 1.5rem;
+  padding: 1.5rem 1.75rem;
   cursor: pointer;
   user-select: none;
-  gap: 1rem;
+  gap: 1.25rem;
   flex-wrap: wrap;
-  background: linear-gradient(135deg, #fafafa 0%, #fff 100%);
-  transition: all 0.3s ease;
+  background: transparent;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
+  z-index: 1;
 }
 
 .route-header:hover {
-  background: linear-gradient(135deg, #fff5f5 0%, #fff 100%);
+  background: rgba(255, 245, 245, 0.3);
 }
 
 .route-item.active .route-header {
-  background: linear-gradient(135deg, #fff0f0 0%, #fff 100%);
+  background: rgba(255, 240, 240, 0.4);
+  padding-bottom: 1.75rem;
 }
 
 /* Close X button - only show when route is active */
@@ -563,10 +981,10 @@ Scenic with challenging climbs and sweeping descents, all on butter smooth tarma
 
 .route-stats-inline {
   display: flex;
-  gap: 1rem;
-  color: var(--muted);
-  font-size: 0.95rem;
-  font-weight: 500;
+  gap: 0.75rem;
+  color: #555;
+  font-size: 0.9rem;
+  font-weight: 600;
   flex-wrap: wrap;
   align-items: center;
 }
@@ -575,19 +993,41 @@ Scenic with challenging climbs and sweeping descents, all on butter smooth tarma
   white-space: nowrap;
   display: flex;
   align-items: center;
-  gap: 0.25rem;
+  gap: 0.35rem;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.route-stats-inline span:hover {
+  background: rgba(255, 255, 255, 0.8);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 }
 
 .difficulty-badge {
   display: inline-block;
-  padding: 0.35rem 0.8rem;
-  border-radius: 16px;
-  font-size: 0.8rem;
-  font-weight: 700;
+  padding: 0.5rem 1.1rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-  transition: all 0.2s ease;
+  letter-spacing: 0.8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.difficulty-badge:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.16);
 }
 
 .difficulty-moderate {
@@ -833,7 +1273,7 @@ path.route-polyline {
 <div class="routes-column">
 
 <div class="route-section">
-<h2 class="route-direction-header">North Routes – Andratx → Pollença</h2>
+<h2 id="north-routes" class="route-direction-header">North Routes – Andratx → Pollença</h2>
 </div>
 
 <div class="route-accordion">
@@ -1004,7 +1444,7 @@ path.route-polyline {
 <div class="routes-column">
 
 <div class="route-section">
-<h2 class="route-direction-header">South Routes – Pollença → Andratx</h2>
+<h2 id="south-routes" class="route-direction-header">South Routes – Pollença → Andratx</h2>
 </div>
 
 <div class="route-accordion">
@@ -1524,24 +1964,71 @@ function renderElevationChart(routeId, coordinates) {
 </div>
 
 <style>
-/* Route Direction Headers - Left & Right Border Accent */
+/* Route Direction Headers - Premium Glassmorphism */
 .route-direction-header {
-  font-size: 1.8rem;
-  font-weight: 700;
-  padding: 1.25rem 1.5rem;
-  margin: 3rem 0 2rem;
-  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
-  border-left: 5px solid var(--brand, #f10000);
-  border-right: 5px solid var(--brand, #f10000);
-  border-radius: 0.5rem;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-  color: #333;
+  font-size: 2rem;
+  font-weight: 800;
+  padding: 2rem 2.5rem;
+  margin: 4rem 0 2.5rem;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 24px;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.08);
+  color: #111;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: center;
+  letter-spacing: -0.02em;
+  scroll-margin-top: 2rem;
+}
+
+.route-direction-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(241, 0, 0, 0.08) 0%, rgba(255, 51, 51, 0.03) 100%);
+  z-index: 0;
+  border-radius: 24px;
+}
+
+.route-direction-header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    rgba(241, 0, 0, 0.6) 20%,
+    rgba(241, 0, 0, 1) 50%,
+    rgba(241, 0, 0, 0.6) 80%,
+    transparent 100%
+  );
+  border-radius: 0 0 24px 24px;
+  transition: height 0.4s ease;
 }
 
 .route-direction-header:hover {
-  border-left-width: 8px;
-  border-right-width: 8px;
-  transition: all 0.3s ease;
+  transform: translateY(-2px);
+  box-shadow: 0 16px 64px rgba(241, 0, 0, 0.12);
+  border-color: rgba(241, 0, 0, 0.2);
+}
+
+.route-direction-header:hover::after {
+  height: 6px;
+}
+
+/* Add directional arrows via text content */
+.route-direction-header {
+  position: relative;
+  z-index: 1;
 }
 
 </style>
