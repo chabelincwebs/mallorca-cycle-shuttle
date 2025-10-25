@@ -359,6 +359,14 @@ Scénique avec des montées exigeantes et de longues descentes fluides, le tout 
   color: white;
 }
 
+.difficulty-epic {
+  background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+  color: #000;
+  border: 2px solid #FFA500;
+  font-weight: 900;
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+}
+
 .route-toggle {
   font-size: 1.5rem;
   font-weight: bold;
@@ -803,3 +811,41 @@ async function loadRoute(routeId) {
   }
 }
 </script>
+
+<!-- Finisher's T-Shirt Product -->
+<div id="finishers-gear" class="finishers-tshirt-horizontal" style="margin: 4rem auto 2rem; max-width: 1000px; scroll-margin-top: 2rem;">
+<a href="https://mallorcacycleshuttle.company.site/products/Andratx-Pollenca-Finishers-Unisex-Classic-T-p788401800" target="_blank" rel="noopener noreferrer" style="text-decoration: none; display: block;">
+<div style="background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%); border-radius: 1rem; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; display: flex; flex-wrap: wrap; align-items: center;">
+<div style="flex: 1 1 350px; min-width: 300px;">
+<img src="/img/finishers-tshirt-andratx-pollenca.webp" alt="Andratx-Pollença Finisher's T-Shirt" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+</div>
+<div style="flex: 1 1 400px; padding: 2.5rem;">
+<h2 style="color: var(--brand, #f10000); margin-bottom: 0.75rem; font-size: 1.75rem; font-weight: 700;">Célébrez votre parcours</h2>
+<h3 style="color: #333; font-size: 1.2rem; font-weight: 600; margin-bottom: 0.75rem;">T-shirt Finisher Andratx-Pollença</h3>
+<p style="color: #666; font-size: 1rem; margin-bottom: 1.5rem; line-height: 1.6;">Célébrez la réalisation de cet itinéraire épique avec notre t-shirt finisher exclusif. Disponible en plusieurs couleurs et tailles.</p>
+<div style="display: inline-block; padding: 0.9rem 2rem; background: linear-gradient(135deg, var(--brand, #f10000) 0%, #ff3333 100%); color: white; border-radius: 0.5rem; font-size: 1rem; font-weight: 700; box-shadow: 0 4px 15px rgba(241, 0, 0, 0.3);">
+Acheter maintenant →
+</div>
+</div>
+</div>
+</a>
+</div>
+
+<style>
+/* Hover effects for finisher's t-shirt */
+.finishers-tshirt-horizontal a > div:hover {
+transform: translateY(-4px);
+box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+.finishers-tshirt-horizontal > a > div {
+flex-direction: column;
+}
+
+.finishers-tshirt-horizontal > a > div > div:first-child {
+max-height: 350px;
+}
+}
+</style>
