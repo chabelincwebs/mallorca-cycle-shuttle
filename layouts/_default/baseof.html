@@ -44,24 +44,42 @@
         <div class="header-right">
           <!-- Language Switcher - Desktop -->
           <nav class="lang-desktop">
-            <a href="/en/" {{ if eq .Site.Language.Lang "en" }}class="lang-link active"{{ else }}class="lang-link"{{ end }}>EN</a>
-            <a href="/de/" {{ if eq .Site.Language.Lang "de" }}class="lang-link active"{{ else }}class="lang-link"{{ end }}>DE</a>
-            <a href="/es/" {{ if eq .Site.Language.Lang "es" }}class="lang-link active"{{ else }}class="lang-link"{{ end }}>ES</a>
-            <a href="/it/" {{ if eq .Site.Language.Lang "it" }}class="lang-link active"{{ else }}class="lang-link"{{ end }}>IT</a>
-            <a href="/fr/" {{ if eq .Site.Language.Lang "fr" }}class="lang-link active"{{ else }}class="lang-link"{{ end }}>FR</a>
-            <a href="/ca/" {{ if eq .Site.Language.Lang "ca" }}class="lang-link active"{{ else }}class="lang-link"{{ end }}>CA</a>
-            <a href="/nl/" {{ if eq .Site.Language.Lang "nl" }}class="lang-link active"{{ else }}class="lang-link"{{ end }}>NL</a>
+            {{- range .Site.Home.AllTranslations -}}
+              {{- $translation := . -}}
+              {{- $linkURL := .RelPermalink -}}
+              {{- $isActive := false -}}
+              {{- if eq .Language.Lang $.Language.Lang -}}
+                {{- $linkURL = $.RelPermalink -}}
+                {{- $isActive = true -}}
+              {{- else if $.IsTranslated -}}
+                {{- range $.Translations -}}
+                  {{- if eq .Language.Lang $translation.Language.Lang -}}
+                    {{- $linkURL = .RelPermalink -}}
+                  {{- end -}}
+                {{- end -}}
+              {{- end -}}
+              <a href="{{ $linkURL }}" {{ if $isActive }}class="lang-link active"{{ else }}class="lang-link"{{ end }}>{{ upper .Language.Lang }}</a>
+            {{- end -}}
           </nav>
 
           <!-- Language Switcher - Mobile -->
           <select class="lang-mobile" onchange="if(this.value) window.location.href=this.value">
-            <option value="/en/" {{ if eq .Site.Language.Lang "en" }}selected{{ end }}>EN</option>
-            <option value="/de/" {{ if eq .Site.Language.Lang "de" }}selected{{ end }}>DE</option>
-            <option value="/es/" {{ if eq .Site.Language.Lang "es" }}selected{{ end }}>ES</option>
-            <option value="/it/" {{ if eq .Site.Language.Lang "it" }}selected{{ end }}>IT</option>
-            <option value="/fr/" {{ if eq .Site.Language.Lang "fr" }}selected{{ end }}>FR</option>
-            <option value="/ca/" {{ if eq .Site.Language.Lang "ca" }}selected{{ end }}>CA</option>
-            <option value="/nl/" {{ if eq .Site.Language.Lang "nl" }}selected{{ end }}>NL</option>
+            {{- range .Site.Home.AllTranslations -}}
+              {{- $translation := . -}}
+              {{- $linkURL := .RelPermalink -}}
+              {{- $isActive := false -}}
+              {{- if eq .Language.Lang $.Language.Lang -}}
+                {{- $linkURL = $.RelPermalink -}}
+                {{- $isActive = true -}}
+              {{- else if $.IsTranslated -}}
+                {{- range $.Translations -}}
+                  {{- if eq .Language.Lang $translation.Language.Lang -}}
+                    {{- $linkURL = .RelPermalink -}}
+                  {{- end -}}
+                {{- end -}}
+              {{- end -}}
+              <option value="{{ $linkURL }}" {{ if $isActive }}selected{{ end }}>{{ upper .Language.Lang }}</option>
+            {{- end -}}
           </select>
 
           <!-- Buy Rescue Button -->
