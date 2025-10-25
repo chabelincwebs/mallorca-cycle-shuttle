@@ -1237,6 +1237,17 @@ main { overflow-x: hidden; }
     direction: ltr;
   }
 
+  .homepage-routes-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .homepage-route-card {
+    width: 100%;
+  }
+
   .homepage-faq-grid {
     grid-template-columns: 1fr;
   }
