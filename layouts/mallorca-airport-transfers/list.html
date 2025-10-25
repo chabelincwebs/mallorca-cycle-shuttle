@@ -1,0 +1,231 @@
+{{ define "title" }}{{ .Title }}{{ end }}
+
+{{ define "main" }}
+
+{{/* ========================================
+     HERO SECTION - Full-width with gradient overlay
+     ======================================== */}}
+<section class="transfers-hero">
+  <div class="transfers-hero-overlay"></div>
+  <div class="transfers-hero-image">
+    <img src="/img/hero-main.webp" alt="Mallorca Airport Transfers">
+  </div>
+
+  <div class="transfers-hero-content">
+    <h1 class="transfers-hero-title">{{ .Title }}</h1>
+    <p class="transfers-hero-subtitle">Designed by cyclists for cyclists</p>
+  </div>
+</section>
+
+{{/* ========================================
+     CONTENT SECTION
+     ======================================== */}}
+<section class="transfers-content">
+  <div class="container">
+    <div class="transfers-intro">
+      <p>Our Mallorca airport transfers are designed by cyclists for cyclists, catering to groups of all sizes. We offer reliable, efficient, and stress-free door-to-door private airport transfers from Palma de Mallorca Airport to all areas of Mallorca, available 24 hours a day, 7 days a week, 365 days a year through our bus company, MALLORCA HOLIDAY TRANSFERS.</p>
+    </div>
+
+    <h2 class="transfers-section-title">Why Choose Our Mallorca Airport Transfers?</h2>
+
+    <div class="transfers-features">
+      <div class="transfers-feature">
+        <h3>By Cyclists, for Cyclists</h3>
+        <p>Join over 30,000 happy customers each year who trust us for their Mallorca transfers.</p>
+      </div>
+      <div class="transfers-feature">
+        <h3>Private Transfers</h3>
+        <p>All our transfers are private for you and your group, ensuring comfort and convenience.</p>
+      </div>
+      <div class="transfers-feature">
+        <h3>Flight Monitoring</h3>
+        <p>We monitor all flight times for delays, so we're always there when you arrive.</p>
+      </div>
+      <div class="transfers-feature">
+        <h3>Instant Booking</h3>
+        <p>Use the form below for an instant quote and to book your transfer.</p>
+      </div>
+      <div class="transfers-feature">
+        <h3>Immediate Confirmation</h3>
+        <p>Your booking confirmation is sent instantly to your email (check your spam folder just in case!).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* ========================================
+     BOOKING FORM SECTION
+     ======================================== */}}
+<section class="transfers-booking">
+  <div class="container">
+    <div class="transfers-iframe-container">
+      <iframe src="https://www.mallorcaholidaytransfers.com/remote-booking/" width="100%" height="800" frameborder="0"></iframe>
+    </div>
+  </div>
+</section>
+
+{{/* ========================================
+     STYLES
+     ======================================== */}}
+<style>
+/* Hero Section */
+.transfers-hero {
+  position: relative;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+
+.transfers-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(241, 0, 0, 0.4) 100%);
+  z-index: 1;
+}
+
+.transfers-hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.transfers-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.transfers-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  max-width: 900px;
+  padding: 2rem;
+}
+
+.transfers-hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.transfers-hero-subtitle {
+  font-size: 1.5rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Content Section */
+.transfers-content {
+  padding: 2rem 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.transfers-intro {
+  max-width: 900px;
+  margin: 0 auto 3rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  text-align: center;
+}
+
+.transfers-section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.transfers-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.transfers-feature {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.transfers-feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(241, 0, 0, 0.2);
+}
+
+.transfers-feature h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--brand, #f10000);
+  margin-bottom: 1rem;
+}
+
+.transfers-feature p {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Booking Section */
+.transfers-booking {
+  padding: 3rem 0;
+  background: white;
+}
+
+.transfers-iframe-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.transfers-iframe-container iframe {
+  display: block;
+  border: none;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .transfers-hero-title {
+    font-size: 2rem;
+  }
+
+  .transfers-hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .transfers-section-title {
+    font-size: 2rem;
+  }
+
+  .transfers-features {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+{{ end }}
