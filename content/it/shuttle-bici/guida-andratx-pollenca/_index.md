@@ -308,7 +308,7 @@ Scenografica, con salite impegnative e lunghe discese scorrevoli, su asfalto lis
 
 /* Accordion Section Headers */
 .route-section {
-  margin: 3rem 0 1.5rem 0;
+  margin: 2rem 0 1.5rem 0;
   padding: 1.5rem;
   background: linear-gradient(135deg, #f8f8f8 0%, #fff 100%);
   border-left: 4px solid var(--brand);
