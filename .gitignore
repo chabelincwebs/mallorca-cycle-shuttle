@@ -35,3 +35,23 @@ node_modules/
 *.swp
 *.swo
 *~
+
+# Environment and sensitive files
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.cert
+
+# Log files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Build info and lock files (if not needed)
+package-lock.json.backup
+yarn.lock.backup
