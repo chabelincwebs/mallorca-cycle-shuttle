@@ -1,22 +1,22 @@
 ---
-title: "Andratx a Pollença – Guía definitiva de ciclismo"
-description: "Guía completa para pedalear de Andratx a Pollença por la Serra de Tramuntana"
+title: "Guía maestra de ciclismo: Andratx a Pollença"
+description: "Guía completa para pedalear de Andratx a Pollença por la sierra de Tramuntana"
 ---
 
 <p class="header-subtitle">
-We are not saying it's easy. We are not saying it's for everyone.
+No decimos que sea fácil. No decimos que sea para todo el mundo.
 </p>
 
 <div class="hero-intro-banner">
 <div class="hero-intro-content">
 <p class="hero-intro-centered fade-in-up">
-We are saying that it's <strong>brilliant</strong>.
+Decimos que es <strong>espectacular</strong>.
 </p>
 <p class="hero-intro-main fade-in-up delay-1">
-For your <a href="#north-routes" class="highlight-red hero-link">"Best Ever Day On A Bike"</a> ride <strong>Port d'Andratx</strong> to <strong>Port de Pollença</strong> through Mallorca's stunning <span class="highlight">Serra de Tramuntana</span> mountains for the ultimate <a href="#south-routes" class="highlight-red hero-link">Coast-to-Coast</a>
+Para tu <a href="#north-routes" class="highlight-red hero-link">"Best Ever Day On A Bike"</a> – de <strong>Port d'Andratx</strong> a <strong>Port de Pollença</strong> por la impresionante <span class="highlight">Serra de Tramuntana</span> de Mallorca, el <a href="#south-routes" class="highlight-red hero-link">Coast-to-Coast</a> definitivo.
 </p>
 <p class="hero-intro-features fade-in-up delay-2">
-Scenic challenging climbs • Sweeping descents • Butter smooth tarmac • Regular café stops • Cycling paradise
+Subidas escénicas y exigentes • Descensos amplios y fluidos • Asfalto suave como mantequilla • Paradas regulares en cafés • Paraíso ciclista
 </p>
 </div>
 </div>
@@ -247,36 +247,65 @@ html {
 <div class="info-card" onclick="toggleCard(this)">
 <div class="info-card-header">
 <div class="info-card-header-top">
-<span style="font-size: 1.5rem;">📸</span>
+<span style="font-size: 1.5rem;">🚴</span>
 <span class="card-toggle">+</span>
 </div>
-<h3>Snapshot</h3>
+<h3>Elige tu aventura</h3>
 </div>
 <div class="info-card-content">
-<p><strong>Why this route:</strong> Coast-to-coast through the Tramuntana mountain range along the coast on smooth tarmac – Mallorca's best day on a bike. Probably your best day on a bike. Ever.</p>
-<p><strong>How it works:</strong> Bus out, bike back. Take the scheduled bike bus to Port d'Andratx (or the reverse to Port de Pollença), ride one of the suggested or your own custom route back.</p>
-<p><strong>Scheduled services:</strong> We take care of the logistics, you take care of relaxing into the best Mallorca has to offer. Book the <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank" rel="noopener noreferrer">scheduled bike bus</a> from any of the departure locations on the booking platform.</p>
+<p>11 rutas diferentes con descargas GPX completas y perfiles de elevación</p>
 </div>
 </div>
 
 <div class="info-card" onclick="toggleCard(this)">
 <div class="info-card-header">
 <div class="info-card-header-top">
-<span style="font-size: 1.5rem;">🔑</span>
+<span style="font-size: 1.5rem;">⛰️</span>
 <span class="card-toggle">+</span>
 </div>
-<h3>Key Sections</h3>
+<h3>Majestad de la montaña</h3>
 </div>
 <div class="info-card-content">
-<p><strong>Estellencs to Deià:</strong> Coastal beauty.</p>
-<p><strong>Banyalbufar:</strong> Enough said.</p>
-<p><strong>Puig Major (from Sóller):</strong> 14 km @ 6.2%, ~828 m. Long, steady; lit tunnel(s) then aqueduct.</p>
-<p><strong>Coll dels Reis / Sa Calobra:</strong> Optional add-on – descend to port, climb back; bucket-list hairpins.</p>
-<p><strong>Port Valldemossa & Port des Canonge:</strong> Short, steep, scenic dead-end descents and returns; "mini Sa Calobra" feel without the traffic.</p>
-<p><strong>Coll de Sa Bataia (from Lluc side):</strong> Leads to Caimari descent and lanes to the bay road.</p>
-<p><strong>Coll de Sóller (alt. line):</strong> Winding classic if avoiding the MA-10 high route.</p>
-<p><strong>Coll de Femenia (north side):</strong> Gateway climb leaving Pollença toward Lluc.</p>
-<p><strong>Coll de Femenia (north side):</strong> Gateway F1 style descent from Lluc to Pollença.</p>
+<p>Recorre la Serra de Tramuntana, Patrimonio Mundial de la UNESCO</p>
+</div>
+</div>
+
+<div class="info-card" onclick="toggleCard(this)">
+<div class="info-card-header">
+<div class="info-card-header-top">
+<span style="font-size: 1.5rem;">🏔️</span>
+<span class="card-toggle">+</span>
+</div>
+<h3>Subidas épicas</h3>
+</div>
+<div class="info-card-content">
+<p>Conquista puertos legendarios como Sa Calobra y Puig Major</p>
+</div>
+</div>
+
+<div class="info-card" onclick="toggleCard(this)">
+<div class="info-card-header">
+<div class="info-card-header-top">
+<span style="font-size: 1.5rem;">🌊</span>
+<span class="card-toggle">+</span>
+</div>
+<h3>Belleza costera</h3>
+</div>
+<div class="info-card-content">
+<p>Vistas mediterráneas espectaculares y encantadores pueblos costeros</p>
+</div>
+</div>
+
+<div class="info-card" onclick="toggleCard(this)">
+<div class="info-card-header">
+<div class="info-card-header-top">
+<span style="font-size: 1.5rem;">🛣️</span>
+<span class="card-toggle">+</span>
+</div>
+<h3>Carreteras perfectas</h3>
+</div>
+<div class="info-card-content">
+<p>Asfalto liso, carriles amplios e infraestructura amigable con la bici</p>
 </div>
 </div>
 
@@ -286,129 +315,75 @@ html {
 <span style="font-size: 1.5rem;">☕</span>
 <span class="card-toggle">+</span>
 </div>
-<h3>Café/Refuel Stops</h3>
+<h3>Cultura de café</h3>
 </div>
 <div class="info-card-content">
-<p><em>km estimates from Andratx</em></p>
-<p><strong>Es Grau (≈13 km):</strong> Balcony views over the cliffs; quick coffee.</p>
-<p><strong>Estellencs (≈17 km):</strong> "Cafetería Estellencs" – Simple, handy, right on MA-10.</p>
-<p><strong>Banyalbufar (≈24 km):</strong> Son Tomás (range + views) or Bellavista (great views; watch the bikes).</p>
-<p><strong>Valldemossa (≈39 km):</strong> Multiple options; Ca'n Molinas for Cocas de Patata with hot chocolate.</p>
-<p><strong>Deià (≈48 km):</strong> Bakery in the supermarket run by Marc & Vincent Reynés; their café in Port de Sóller too.</p>
-<p><strong>Sóller (≈58 km) – Sa Frontera:</strong> Solid menu before Puig Major.</p>
-<p><strong>Port de Sóller (detour):</strong> Waterfront options; Reynés Cycling Café for cake/coffee.</p>
-<p><strong>Aqueduct / Sa Calobra turn (≈80 km):</strong> OJ Shack – fresh orange juice + on-bike snacks.</p>
-<p><strong>Lluc / Coll de sa Bataia top (≈89 km):</strong> Repsol + café or Lluc Monastery – quick or sit-down.</p>
+<p>Cafés tradicionales mallorquines, perfectamente espaciados para las paradas</p>
 </div>
 </div>
 
 <div class="info-card" onclick="toggleCard(this)">
 <div class="info-card-header">
 <div class="info-card-header-top">
-<span style="font-size: 1.5rem;">💡</span>
+<span style="font-size: 1.5rem;">☀️</span>
 <span class="card-toggle">+</span>
 </div>
-<h3>Good to Know</h3>
+<h3>Pedaleo todo el año</h3>
 </div>
 <div class="info-card-content">
-<ul>
-<li>Book for early in your trip whilst legs are still fresh & even with 308 days of sun each year, if weather causes a cancellation, you still have an alternate day.</li>
-<li>Seats are limited. Book early.</li>
-<li>This will be without a doubt your best day in Mallorca.</li>
-<li>Arrive 10 minutes early for bike packing on the day.</li>
-<li>It's an early start, plenty of places for breakfast, coffee, toilet on arrival.</li>
-<li><strong>Rescue cover:</strong> <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank" rel="noopener noreferrer">Peace of mind</a>. Strongly advised. Bikes and bodies do sometimes break down.</li>
-<li>Safe loading of bikes in the trailers: Packed between mattresses – secure and safe.</li>
-<li>Average return time is just over 6 hours plus stops on the vanilla (shortest) route.</li>
-<li>Cafe stops appear regularly, choices are never more than an hour apart.</li>
-<li>Regular fuelling is essential.</li>
-</ul>
+<p>Clima mediterráneo suave, ideal para pedalear más de 10 meses al año</p>
 </div>
 </div>
 
 <div class="info-card" onclick="toggleCard(this)">
 <div class="info-card-header">
 <div class="info-card-header-top">
-<span style="font-size: 1.5rem;">📅</span>
+<span style="font-size: 1.5rem;">🛡️</span>
 <span class="card-toggle">+</span>
 </div>
-<h3>Schedule</h3>
+<h3>Primero la seguridad</h3>
 </div>
 <div class="info-card-content">
-<p>Use the bike bus to Port d'Andratx from Port de Pollença/Alcúdia/Playa de Muro and from Peguera, Playa de Palma & Santa Ponsa to Port de Pollença.</p>
-<p><a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank" rel="noopener noreferrer" class="cta">View Schedule & Book →</a></p>
+<p>Carreteras bien mantenidas con carriles bici señalizados en muchas zonas</p>
 </div>
 </div>
 
 <div class="info-card" onclick="toggleCard(this)">
-<div class="info-card-header">
-<div class="info-card-header-top">
-<span style="font-size: 1.5rem;">⭐</span>
-<span class="card-toggle">+</span>
-</div>
-<h3>Social Proof</h3>
-</div>
-<div class="info-card-content">
-<p><strong>"18 Swedish ladies" testimonial (2016):</strong> 162 km Big Daddy day called "best ever day on a bike" – loved Canonge, Valldemossa, Sa Calobra; tunnels lit; fast finish to Pollença. Returning the next season.</p>
-<p><strong>John McCracken (spring 2025):</strong> One-way format lets you enjoy the scenery without turning it into an ultra-distance day; highlights: Gramola start, MA-10 cliff sections, Monnàber tunnel approach to Puig Major, Femenia descent "let go."</p>
-</div>
-</div>
-
-<div class="info-card" onclick="toggleCard(this)">
-<div class="info-card-header">
-<div class="info-card-header-top">
-<span style="font-size: 1.5rem;">📊</span>
-<span class="card-toggle">+</span>
-</div>
-<h3>Key Stats</h3>
-</div>
-<div class="info-card-content">
-<p><strong>Signature climb:</strong> Puig Major from Sóller (southbound) – 14 km @ 6.2% (≈828 m).</p>
-<p><strong>Signature descent:</strong> Puig Major to Sóller (northbound) – 14 km @ 6.2% (≈828 m).</p>
-</div>
-</div>
-
-<div class="info-card" onclick="toggleCard(this)">
-<div class="info-card-header">
-<div class="info-card-header-top">
-<span style="font-size: 1.5rem;">📷</span>
-<span class="card-toggle">+</span>
-</div>
-<h3>Memory Maker!</h3>
-</div>
-<div class="info-card-content">
-<p><strong>Port de Valldemossa:</strong> Mini & maybe better? version of Sa Calobra (down & back).</p>
-</div>
-</div>
-
-<div class="info-card" onclick="toggleCard(this)">
-<div class="info-card-header">
-<div class="info-card-header-top">
-<span style="font-size: 1.5rem;">🍰</span>
-<span class="card-toggle">+</span>
-</div>
-<h3>Quick Fuel Tips</h3>
-</div>
-<div class="info-card-content">
-<p><strong>Quick fuel to get you home:</strong> OJ shack at the aqueduct or Sa Bataia café/garage (going North), Estellencs (going South).</p>
-<p><strong>Scenic fuel:</strong> Banyalbufar & Deià.</p>
-<p><strong>Soller is approximately halfway.</strong></p>
-<p><strong>Cafes are never more than an hour apart.</strong></p>
-</div>
-</div>
-
-<div class="info-card" onclick="window.open('https://mallorcacycleshuttle.company.site/products/Andratx-Pollenca-Finishers-Unisex-Classic-T-p788401800', '_blank')" style="cursor: pointer;">
 <div class="info-card-header">
 <div class="info-card-header-top">
 <span style="font-size: 1.5rem;">👕</span>
 <span class="card-toggle">+</span>
 </div>
-<h3>Finisher's Gear</h3>
+<h3>Equipamiento de finisher</h3>
 </div>
 <div class="info-card-content">
-<p><strong>Celebrate your achievement!</strong></p>
-<p>Get your exclusive Port d'Andratx-Port de Pollença finisher's t-shirt and show the world you conquered this epic route.</p>
-<p style="color: var(--brand, #f10000); font-weight: 700; margin-top: 1rem;">Shop Now →</p>
+<p>Conmemora tu ruta épica con merchandising exclusivo</p>
+</div>
+</div>
+
+<div class="info-card" onclick="toggleCard(this)">
+<div class="info-card-header">
+<div class="info-card-header-top">
+<span style="font-size: 1.5rem;">🗺️</span>
+<span class="card-toggle">+</span>
+</div>
+<h3>Conocimiento local</h3>
+</div>
+<div class="info-card-content">
+<p>Consejos internos sobre mejores horarios, clima y rincones ocultos</p>
+</div>
+</div>
+
+<div class="info-card" onclick="toggleCard(this)">
+<div class="info-card-header">
+<div class="info-card-header-top">
+<span style="font-size: 1.5rem;">🎯</span>
+<span class="card-toggle">+</span>
+</div>
+<h3>Opciones flexibles</h3>
+</div>
+<div class="info-card-content">
+<p>Rutas para todos los niveles - de moderadas a retos muy duros</p>
 </div>
 </div>
 
@@ -418,26 +393,10 @@ html {
 <span style="font-size: 1.5rem;">🚌</span>
 <span class="card-toggle">+</span>
 </div>
-<h3>Book Your Shuttle</h3>
+<h3>Reserva tu shuttle</h3>
 </div>
 <div class="info-card-content">
-<p><strong>Need a ride to start your adventure?</strong></p>
-<p>Browse all departure towns and book your shuttle to Port d'Andratx or Port de Pollença. We've got you covered!</p>
-<p style="color: var(--brand, #f10000); font-weight: 700; margin-top: 1rem;">View Shuttles →</p>
-</div>
-</div>
-
-<div class="info-card" onclick="toggleCard(this)">
-<div class="info-card-header">
-<div class="info-card-header-top">
-<span style="font-size: 1.5rem;">📋</span>
-<span class="card-toggle">+</span>
-</div>
-<h3>Coming Soon</h3>
-</div>
-<div class="info-card-content">
-<p><strong>More information coming soon...</strong></p>
-<p>Check back later for additional resources and tips for your Port d'Andratx-Port de Pollença adventure.</p>
+<p>Reserva tu shuttle de bicicletas para empezar tu aventura</p>
 </div>
 </div>
 
@@ -1297,7 +1256,7 @@ path.route-polyline {
 <div class="routes-column">
 
 <div class="route-section">
-<h2 id="north-routes" class="route-direction-header">North Routes – Andratx → Pollença</h2>
+<h2 id="north-routes" class="route-direction-header">Rutas Norte – Andratx → Pollença</h2>
 </div>
 
 <div class="route-accordion">
@@ -1307,10 +1266,10 @@ path.route-polyline {
       <div class="route-title-section">
         <span class="route-icon">▶</span>
         <div>
-          <div class="route-title">Vanilla – Port d'Andratx → Port de Pollença</div>
+          <div class="route-title">Estándar – Port d'Andratx → Port de Pollença</div>
           <div class="route-stats-inline">
-            <span>📏 115 km</span>
-            <span>⛰️ 2,425 m</span>
+            <span>📏 121 km</span>
+            <span>⛰️ 2,440 m</span>
             <span class="difficulty-badge difficulty-moderate">Moderate</span>
           </div>
         </div>
@@ -1321,7 +1280,7 @@ path.route-polyline {
     </div>
     <div class="route-content">
       <div class="route-content-inner">
-        <p class="route-description">Direct classic: SW coastal section → Sóller → Puig Major → aqueduct → Lluc → fast descent into Pollença. Most direct return route.</p>
+        <p class="route-description">Tramo costero → Puig Major (lado fácil) → 14 km de bajada a Sóller → carretera costera por Deià, Valldemossa, Banyalbufar, Estellencs. La ruta directa. ¡Espectacular!</p>
         <div id="map-north-1" class="route-map"></div>
         <div class="elevation-profile">
           <canvas id="chart-north-1"></canvas>
@@ -1336,10 +1295,10 @@ path.route-polyline {
       <div class="route-title-section">
         <span class="route-icon">▶</span>
         <div>
-          <div class="route-title">Via Caimari (Vanilla+)</div>
+          <div class="route-title">Via Caimari</div>
           <div class="route-stats-inline">
-            <span>📏 137 km</span>
-            <span>⛰️ 2,700 m</span>
+            <span>📏 132 km</span>
+            <span>⛰️ 2,573 m</span>
             <span class="difficulty-badge difficulty-moderate">Moderate</span>
           </div>
         </div>
@@ -1350,7 +1309,7 @@ path.route-polyline {
     </div>
     <div class="route-content">
       <div class="route-content-inner">
-        <p class="route-description">As above, but continue past the Repsol at Lluc, descend Coll de sa Bataia → lanes via Binibona/Campanet → Alcúdia bay road → Port de Pollença. Second most direct return route. Additional lanes before the finish.</p>
+        <p class="route-description">Igual que Estándar pero girando al interior tras Sóller → ascenso a Orient → Alaró → Caimari → Lluc → Pollença. Variante interior escénica.</p>
         <div id="map-north-2" class="route-map"></div>
         <div class="elevation-profile">
           <canvas id="chart-north-2"></canvas>
@@ -1367,8 +1326,8 @@ path.route-polyline {
         <div>
           <div class="route-title">Incl. Port Valldemossa</div>
           <div class="route-stats-inline">
-            <span>📏 132 km</span>
-            <span>⛰️ 3,000 m</span>
+            <span>📏 140 km</span>
+            <span>⛰️ 2,817 m</span>
             <span class="difficulty-badge difficulty-hard">Hard</span>
           </div>
         </div>
@@ -1379,7 +1338,7 @@ path.route-polyline {
     </div>
     <div class="route-content">
       <div class="route-content-inner">
-        <p class="route-description">Coastal section + drop/return Port Valldemossa → Sóller → Puig Major → Lluc → descend to Pollença. Great addition to the vanilla route.</p>
+        <p class="route-description">Tramo costero + bajada a Port Valldemossa y subida de regreso (400 m de desnivel de bajada y subida en cada sentido) → luego final costero estándar. Añadido duro.</p>
         <div id="map-north-3" class="route-map"></div>
         <div class="elevation-profile">
           <canvas id="chart-north-3"></canvas>
@@ -1394,7 +1353,7 @@ path.route-polyline {
       <div class="route-title-section">
         <span class="route-icon">▶</span>
         <div>
-          <div class="route-title">Incl. Port Valldemossa & Sa Calobra</div>
+          <div class="route-title">Incl. Port Valldemossa y Sa Calobra</div>
           <div class="route-stats-inline">
             <span>📏 158 km</span>
             <span>⛰️ 3,949 m</span>
@@ -1408,7 +1367,7 @@ path.route-polyline {
     </div>
     <div class="route-content">
       <div class="route-content-inner">
-        <p class="route-description">Coastal section + Port Valldemossa, then Puig Major → left at aqueduct → Coll dels Reis → down Sa Calobra, climb back → Lluc → descend to Pollença. Hard.</p>
+        <p class="route-description">Tramo costero + Port Valldemossa, luego Puig Major → izquierda en el acueducto → Coll dels Reis → bajar Sa Calobra, subir de vuelta → Lluc → bajar a Pollença. Dura.</p>
         <div id="map-north-4" class="route-map"></div>
         <div class="elevation-profile">
           <canvas id="chart-north-4"></canvas>
@@ -1423,7 +1382,7 @@ path.route-polyline {
       <div class="route-title-section">
         <span class="route-icon">▶</span>
         <div>
-          <div class="route-title">Big Daddy Challenge (8 classified cols)</div>
+          <div class="route-title">Big Daddy Challenge (8 puertos clasificados)</div>
           <div class="route-stats-inline">
             <span>📏 162 km</span>
             <span>⛰️ 4,267 m</span>
@@ -1437,7 +1396,7 @@ path.route-polyline {
     </div>
     <div class="route-content">
       <div class="route-content-inner">
-        <p class="route-description">Coastal section + Port des Canonge + Port Valldemossa → long side Puig Major → aqueduct → Coll dels Reis → Sa Calobra (down & up) → Lluc → Pollença/Port. Very hard.</p>
+        <p class="route-description">Tramo costero + Port des Canonge + Port Valldemossa → lado largo de Puig Major → acueducto → Coll dels Reis → Sa Calobra (bajar y subir) → Lluc → Pollença/Port. Muy dura.</p>
         <div id="map-north-5" class="route-map"></div>
         <div class="elevation-profile">
           <canvas id="chart-north-5"></canvas>
@@ -1452,7 +1411,7 @@ path.route-polyline {
       <div class="route-title-section">
         <span class="route-icon">▶</span>
         <div>
-          <div class="route-title">Return via the Coll de Sóller and the Orient Valley</div>
+          <div class="route-title">Vuelta por el Coll de Sóller y el Valle de Orient</div>
           <div class="route-stats-inline">
             <span>📏 137 km</span>
             <span>⛰️ 2,360 m</span>
@@ -1466,7 +1425,7 @@ path.route-polyline {
     </div>
     <div class="route-content">
       <div class="route-content-inner">
-        <p class="route-description">Complete the classic coastal section then take on the 51 switchbacks by going up and over the Coll de Sóller before cruising through the tranquil Orient Valley. One more for the climbers amongst us. Great day out. The recovery drinks will be well earned that evening!</p>
+        <p class="route-description">Completa el clásico tramo costero y afronta después las 51 curvas del Coll de Sóller antes de rodar por el tranquilo Valle de Orient. Otra más para los escaladores. Gran día. ¡Los recovery de esa noche estarán bien ganados!</p>
         <div id="map-north-6" class="route-map"></div>
         <div class="elevation-profile">
           <canvas id="chart-north-6"></canvas>
@@ -1482,7 +1441,7 @@ path.route-polyline {
 <div class="routes-column">
 
 <div class="route-section">
-<h2 id="south-routes" class="route-direction-header">South Routes – Pollença → Andratx</h2>
+<h2 id="south-routes" class="route-direction-header">Rutas Sur – Pollença → Andratx</h2>
 </div>
 
 <div class="route-accordion">
@@ -1492,7 +1451,7 @@ path.route-polyline {
       <div class="route-title-section">
         <span class="route-icon">▶</span>
         <div>
-          <div class="route-title">Vanilla – Port de Pollença → Port d'Andratx</div>
+          <div class="route-title">Estándar – Port de Pollença → Port d'Andratx</div>
           <div class="route-stats-inline">
             <span>📏 121 km</span>
             <span>⛰️ 2,700 m</span>
@@ -1506,7 +1465,7 @@ path.route-polyline {
     </div>
     <div class="route-content">
       <div class="route-content-inner">
-        <p class="route-description">Coll de Femenia → past Lluc/Sa Calobra turn → easy side Puig Major → 14 km descent to Sóller → coast via Deià, Valldemossa, Banyalbufar, Estellencs → Port d'Andratx. Most direct return route. Brilliant!</p>
+        <p class="route-description">Coll de Femenia → pasar el desvío de Lluc/Sa Calobra → lado fácil de Puig Major → 14 km de bajada a Sóller → costa por Deià, Valldemossa, Banyalbufar, Estellencs → Port d'Andratx. La vuelta más directa. ¡Espectacular!</p>
         <div id="map-south-1" class="route-map"></div>
         <div class="elevation-profile">
           <canvas id="chart-south-1"></canvas>
@@ -1521,7 +1480,7 @@ path.route-polyline {
       <div class="route-title-section">
         <span class="route-icon">▶</span>
         <div>
-          <div class="route-title">Incl. Port des Canonge & Port Valldemossa</div>
+          <div class="route-title">Incl. Port des Canonge y Port Valldemossa</div>
           <div class="route-stats-inline">
             <span>📏 145 km</span>
             <span>⛰️ 3,390 m</span>
@@ -1535,7 +1494,7 @@ path.route-polyline {
     </div>
     <div class="route-content">
       <div class="route-content-inner">
-        <p class="route-description">Femenia → Lluc → Puig Major → Sóller → coast + add-ons: drop/return Port des Canonge and Port Valldemossa → SW coastal finish to Andratx.</p>
+        <p class="route-description">Femenia → Lluc → Puig Major → Sóller → costa + añadidos: bajar y regresar a Port des Canonge y Port Valldemossa → final costero suroeste hasta Andratx.</p>
         <div id="map-south-2" class="route-map"></div>
         <div class="elevation-profile">
           <canvas id="chart-south-2"></canvas>
@@ -1564,7 +1523,7 @@ path.route-polyline {
     </div>
     <div class="route-content">
       <div class="route-content-inner">
-        <p class="route-description">Femenia → Lluc → Puig Major → Sóller → Deià → Valldemossa → Esporles → Puigpunyent → Galilea → Es Capdellà → Port d'Andratx. Spend a little time away from the coast and off the grid!</p>
+        <p class="route-description">Femenia → Lluc → Puig Major → Sóller → Deià → Valldemossa → Esporles → Puigpunyent → Galilea → Es Capdellà → Port d'Andratx. ¡Pasa un rato lejos de la costa y fuera del circuito!</p>
         <div id="map-south-3" class="route-map"></div>
         <div class="elevation-profile">
           <canvas id="chart-south-3"></canvas>
@@ -1593,7 +1552,7 @@ path.route-polyline {
     </div>
     <div class="route-content">
       <div class="route-content-inner">
-        <p class="route-description">As above conceptually, including the three "ports" (Canonge, Valldemossa, Sa Calobra). For strong climbers only.</p>
+        <p class="route-description">Conceptualmente como arriba, incluyendo los tres "ports" (Canonge, Valldemossa, Sa Calobra). Solo para escaladores fuertes.</p>
         <div id="map-south-4" class="route-map"></div>
         <div class="elevation-profile">
           <canvas id="chart-south-4"></canvas>
@@ -1608,7 +1567,7 @@ path.route-polyline {
       <div class="route-title-section">
         <span class="route-icon">▶</span>
         <div>
-          <div class="route-title">Return via Cap de Formentor</div>
+          <div class="route-title">Vuelta por Cap de Formentor</div>
           <div class="route-stats-inline">
             <span>📏 162 km</span>
             <span>⛰️ 3,500 m</span>
@@ -1622,7 +1581,7 @@ path.route-polyline {
     </div>
     <div class="route-content">
       <div class="route-content-inner">
-        <p class="route-description">Complete the classic coast to coast but include what is regarded by some as the best 20km of road for cyclists in Europe - the out and back to the lighthouse of Cap de Formentor. Epic day out!</p>
+        <p class="route-description">Completa el clásico coast-to-coast incluyendo lo que para algunos son los mejores 20 km de carretera para ciclistas en Europa: la ida y vuelta al faro de Cap de Formentor. ¡Día épico!</p>
         <div id="map-south-5" class="route-map"></div>
         <div class="elevation-profile">
           <canvas id="chart-south-5"></canvas>
@@ -1984,14 +1943,14 @@ function renderElevationChart(routeId, coordinates) {
 <a href="https://mallorcacycleshuttle.company.site/products/Andratx-Pollenca-Finishers-Unisex-Classic-T-p788401800" target="_blank" rel="noopener noreferrer" style="text-decoration: none; display: block;">
 <div style="background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%); border-radius: 1rem; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; display: flex; flex-wrap: wrap; align-items: center;">
 <div style="flex: 1 1 350px; min-width: 300px;">
-<img src="/img/finishers-tshirt-andratx-pollenca.webp" alt="Andratx-Pollença Finisher's T-Shirt" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+<img src="/img/finishers-tshirt-andratx-pollenca.webp" alt="Camiseta Finisher Andratx-Pollença" style="width: 100%; height: 100%; object-fit: cover; display: block;">
 </div>
 <div style="flex: 1 1 400px; padding: 2.5rem;">
-<h2 style="color: var(--brand, #f10000); margin-bottom: 0.75rem; font-size: 1.75rem; font-weight: 700;">Commemorate Your Ride</h2>
-<h3 style="color: #333; font-size: 1.2rem; font-weight: 600; margin-bottom: 0.75rem;">Andratx-Pollença Finisher's T-Shirt</h3>
-<p style="color: #666; font-size: 1rem; margin-bottom: 1.5rem; line-height: 1.6;">Celebrate completing this epic route with our exclusive finisher's t-shirt. Available in multiple colors and sizes.</p>
+<h2 style="color: var(--brand, #f10000); margin-bottom: 0.75rem; font-size: 1.75rem; font-weight: 700;">Conmemora tu ruta</h2>
+<h3 style="color: #333; font-size: 1.2rem; font-weight: 600; margin-bottom: 0.75rem;">Camiseta Finisher Andratx-Pollença</h3>
+<p style="color: #666; font-size: 1rem; margin-bottom: 1.5rem; line-height: 1.6;">Celebra haber completado esta ruta épica con nuestra camiseta de finisher exclusiva. Disponible en varios colores y tallas.</p>
 <div style="display: inline-block; padding: 0.9rem 2rem; background: linear-gradient(135deg, var(--brand, #f10000) 0%, #ff3333 100%); color: white; border-radius: 0.5rem; font-size: 1rem; font-weight: 700; box-shadow: 0 4px 15px rgba(241, 0, 0, 0.3);">
-Shop Now →
+Comprar ahora →
 </div>
 </div>
 </div>
