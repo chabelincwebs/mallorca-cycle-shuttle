@@ -13,7 +13,7 @@ We are not saying it's easy. We are not saying it's for everyone.
 We are saying that it's <strong>brilliant</strong>.
 </p>
 <p class="hero-intro-main fade-in-up delay-1">
-For your <a href="#north-routes" class="highlight-red hero-link">"Best Ever Day On A Bike"</a> ride <strong>Port d'Andratx</strong> to <strong>Port de Pollença</strong> through Mallorca's stunning <span class="highlight">UNESCO World Heritage Serra de Tramuntana</span> mountains for the ultimate <a href="#south-routes" class="highlight-red hero-link">Coast-to-Coast</a>
+For your <a href="#north-routes" class="highlight-red hero-link">"Best Ever Day On A Bike"</a> ride <strong>Port d'Andratx</strong> to <strong>Port de Pollença</strong> through Mallorca's stunning <span class="highlight">Serra de Tramuntana</span> mountains for the ultimate <a href="#south-routes" class="highlight-red hero-link">Coast-to-Coast</a>
 </p>
 <p class="hero-intro-features fade-in-up delay-2">
 Scenic challenging climbs • Sweeping descents • Butter smooth tarmac • Regular café stops • Cycling paradise
@@ -1438,16 +1438,30 @@ path.route-polyline {
     </div>
   </div>
 
-  <!-- Placeholder: North Route 6 - Coming Soon -->
+  <!-- Route 6: Coll de Sóller & Orient Valley -->
   <div class="route-item" id="route-north-6">
     <div class="route-header">
-      <div class="route-title-section">
-        <span style="font-size: 1.5rem;">🔄</span>
-        <div>
-          <div class="route-title">Additional Route Coming Soon</div>
-          <div class="route-stats-inline">
-            <span style="color: var(--muted);">Details to be announced</span>
+      <div class="route-header-left">
+        <button class="route-close" aria-label="Close">✕</button>
+        <h3>Return via the Coll de Sóller and the Orient Valley</h3>
+        <div class="route-stats-inline">
+          <div class="route-stats-group">
+            <span>📏 137 km</span>
+            <span>⛰️ 2,360 m</span>
+            <span class="difficulty-badge difficulty-hard">Challenging</span>
           </div>
+        </div>
+      </div>
+      <div class="route-actions">
+        <a href="/routes/portandratx-pollenca-colldesoller-orient.gpx" download class="gpx-download" onclick="event.stopPropagation()">⬇ GPX</a>
+      </div>
+    </div>
+    <div class="route-content">
+      <div class="route-content-inner">
+        <p class="route-description">Complete the classic coastal section then take on the 51 switchbacks by going up and over the Coll de Sóller before cruising through the tranquil Orient Valley. One more for the climbers amongst us. Great day out. The recovery drinks will be well earned that evening!</p>
+        <div id="map-north-6" class="route-map"></div>
+        <div class="elevation-profile">
+          <canvas id="chart-north-6"></canvas>
         </div>
       </div>
     </div>
@@ -1659,6 +1673,7 @@ const routes = {
   'north-3': { gpx: 'portandratx-pollenca-portvalldemossa-web.gpx', startName: 'Port d\'Andratx', endName: 'Port de Pollença' },
   'north-4': { gpx: 'portandratx-pollenca-valldemossa-sacalobra-web.gpx', startName: 'Port d\'Andratx', endName: 'Port de Pollença' },
   'north-5': { gpx: 'portandratx-pollenca-big-daddy-web.gpx', startName: 'Port d\'Andratx', endName: 'Port de Pollença' },
+  'north-6': { gpx: 'portandratx-pollenca-colldesoller-orient-web.gpx', startName: 'Port d\'Andratx', endName: 'Port de Pollença' },
   'south-1': { gpx: 'portpollenca-portandratx-vanilla-web.gpx', startName: 'Port de Pollença', endName: 'Port d\'Andratx' },
   'south-2': { gpx: 'portpollenca-portandratx-canonge-valldemossa-web.gpx', startName: 'Port de Pollença', endName: 'Port d\'Andratx' },
   'south-3': { gpx: 'portpollenca-portandratx-puigpunyent-web.gpx', startName: 'Port de Pollença', endName: 'Port d\'Andratx' },
