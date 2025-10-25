@@ -1594,16 +1594,30 @@ path.route-polyline {
     </div>
   </div>
 
-  <!-- Placeholder: South Route 5 - Coming Soon -->
+  <!-- Route 10: Cap de Formentor -->
   <div class="route-item" id="route-south-5">
-    <div class="route-header">
+    <div class="route-header" onclick="toggleRoute('south-5')">
       <div class="route-title-section">
-        <span style="font-size: 1.5rem;">🔄</span>
+        <span class="route-icon">▶</span>
         <div>
-          <div class="route-title">Additional Route Coming Soon</div>
+          <div class="route-title">Return via Cap de Formentor</div>
           <div class="route-stats-inline">
-            <span style="color: var(--muted);">Details to be announced</span>
+            <span>📏 162 km</span>
+            <span>⛰️ 3,500 m</span>
+            <span class="difficulty-badge difficulty-epic">Epic</span>
           </div>
+        </div>
+      </div>
+      <div class="route-actions">
+        <a href="/routes/portpollenca-portandratx-formentor.gpx" download class="gpx-download" onclick="event.stopPropagation()">⬇ GPX</a>
+      </div>
+    </div>
+    <div class="route-content">
+      <div class="route-content-inner">
+        <p class="route-description">Complete the classic coast to coast but include what is regarded by some as the best 20km of road for cyclists in Europe - the out and back to the lighthouse of Cap de Formentor. Epic day out!</p>
+        <div id="map-south-5" class="route-map"></div>
+        <div class="elevation-profile">
+          <canvas id="chart-south-5"></canvas>
         </div>
       </div>
     </div>
@@ -1677,7 +1691,8 @@ const routes = {
   'south-1': { gpx: 'portpollenca-portandratx-vanilla-web.gpx', startName: 'Port de Pollença', endName: 'Port d\'Andratx' },
   'south-2': { gpx: 'portpollenca-portandratx-canonge-valldemossa-web.gpx', startName: 'Port de Pollença', endName: 'Port d\'Andratx' },
   'south-3': { gpx: 'portpollenca-portandratx-puigpunyent-web.gpx', startName: 'Port de Pollença', endName: 'Port d\'Andratx' },
-  'south-4': { gpx: 'portpollenca-portandratx-big-daddy-web.gpx', startName: 'Port de Pollença', endName: 'Port d\'Andratx' }
+  'south-4': { gpx: 'portpollenca-portandratx-big-daddy-web.gpx', startName: 'Port de Pollença', endName: 'Port d\'Andratx' },
+  'south-5': { gpx: 'portpollenca-portandratx-formentor-web.gpx', startName: 'Port de Pollença', endName: 'Port d\'Andratx' }
 };
 
 const loadedRoutes = {};
