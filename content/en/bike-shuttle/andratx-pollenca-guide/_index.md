@@ -1064,6 +1064,14 @@ html {
   border: 2px solid #B71C1C;
 }
 
+.difficulty-epic {
+  background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+  color: #000;
+  border: 2px solid #FFA500;
+  font-weight: 900;
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+}
+
 .route-actions {
   display: flex;
   gap: 0.5rem;
