@@ -1999,7 +1999,7 @@ Shop Now →
 </div>
 
 <!-- OPTION 4: Glassmorphism Style (matching route cards) -->
-<div class="finishers-tshirt-glassmorphism" style="margin: 4rem auto 2rem; max-width: 1000px; scroll-margin-top: 2rem; display: none;">
+<div class="finishers-tshirt-glassmorphism" style="margin: 4rem auto 2rem; max-width: 1000px; scroll-margin-top: 2rem;">
 <a href="https://mallorcacycleshuttle.company.site/products/Andratx-Pollenca-Finishers-Unisex-Classic-T-p788401800" target="_blank" rel="noopener noreferrer" style="text-decoration: none; display: block;">
 <div style="background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.9); border-radius: 1.5rem; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); padding: 2rem; transition: all 0.3s ease; display: flex; flex-wrap: wrap; align-items: center; gap: 2rem;">
 <div style="flex: 1 1 320px; min-width: 280px;">
