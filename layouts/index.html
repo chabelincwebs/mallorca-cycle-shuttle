@@ -239,47 +239,55 @@
 
       const cards = Array.from(track.children);
       const totalCards = cards.length;
-      const cardsPerView = 3;
-      const totalPages = Math.ceil(totalCards / cardsPerView);
       let currentPage = 0;
+      let cardsPerView = getCardsPerView();
+      let totalPages = Math.ceil(totalCards / cardsPerView);
 
-      // Create dots
-      for (let i = 0; i < totalPages; i++) {
-        const dot = document.createElement('button');
-        dot.classList.add('carousel-dot');
-        dot.setAttribute('aria-label', `Go to testimonials page ${i + 1}`);
-        if (i === 0) dot.classList.add('active');
-        dot.addEventListener('click', () => goToPage(i));
-        dotsContainer.appendChild(dot);
+      // Determine cards per view based on screen size
+      function getCardsPerView() {
+        if (window.innerWidth < 768) return 1;
+        if (window.innerWidth < 1024) return 2;
+        return 3;
       }
 
-      const dots = Array.from(dotsContainer.children);
+      function createDots() {
+        dotsContainer.innerHTML = '';
+        for (let i = 0; i < totalPages; i++) {
+          const dot = document.createElement('button');
+          dot.classList.add('carousel-dot');
+          dot.setAttribute('aria-label', `Go to testimonials page ${i + 1}`);
+          if (i === currentPage) dot.classList.add('active');
+          dot.addEventListener('click', () => goToPage(i));
+          dotsContainer.appendChild(dot);
+        }
+      }
 
       function updateCarousel() {
         const cardWidth = cards[0].offsetWidth;
         const gap = 32; // 2rem in pixels
-        const offset = currentPage * (cardsPerView * (cardWidth + gap));
+        const offset = currentPage * (cardWidth + gap);
         track.style.transform = `translateX(-${offset}px)`;
 
         // Update dots
+        const dots = Array.from(dotsContainer.children);
         dots.forEach((dot, index) => {
           dot.classList.toggle('active', index === currentPage);
         });
 
         // Update button states
         prevBtn.disabled = currentPage === 0;
-        nextBtn.disabled = currentPage === totalPages - 1;
+        nextBtn.disabled = currentPage >= totalCards - cardsPerView;
         prevBtn.style.opacity = currentPage === 0 ? '0.5' : '1';
-        nextBtn.style.opacity = currentPage === totalPages - 1 ? '0.5' : '1';
+        nextBtn.style.opacity = currentPage >= totalCards - cardsPerView ? '0.5' : '1';
       }
 
       function goToPage(page) {
-        currentPage = page;
+        currentPage = Math.min(page, totalCards - cardsPerView);
         updateCarousel();
       }
 
       function nextPage() {
-        if (currentPage < totalPages - 1) {
+        if (currentPage < totalCards - cardsPerView) {
           currentPage++;
           updateCarousel();
         }
@@ -300,11 +308,21 @@
       window.addEventListener('resize', () => {
         clearTimeout(resizeTimer);
         resizeTimer = setTimeout(() => {
+          const oldCardsPerView = cardsPerView;
+          cardsPerView = getCardsPerView();
+
+          if (oldCardsPerView !== cardsPerView) {
+            totalPages = Math.ceil(totalCards / cardsPerView);
+            currentPage = Math.min(currentPage, totalCards - cardsPerView);
+            createDots();
+          }
+
           updateCarousel();
         }, 250);
       });
 
-      // Initial update
+      // Initial setup
+      createDots();
       updateCarousel();
     });
   </script>
