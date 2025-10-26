@@ -1,6 +1,6 @@
 ﻿main:
   - name: "Rettungs-AGB"
-    url: "/bike-rescue/rescue-sale-terms/"
+    url: "/fahrrad-rettung/rettungs-verkaufsbedingungen/"
     weight: 10
 legal:
   - name: "Rechtlicher Hinweis"
@@ -13,5 +13,5 @@ legal:
     url: "/about/datenschutzerklarung/"
     weight: 30
   - name: "Allg. Verkaufsbedingungen"
-    url: "/bike-rescue/rescue-sale-terms/"
+    url: "/fahrrad-rettung/rettungs-verkaufsbedingungen/"
     weight: 40

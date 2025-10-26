@@ -1,11 +1,10 @@
 ---
-title: "Blog"
-description: "Blog di Mallorca Cycle Shuttle - Consigli e guide per ciclisti"
-date: 2024-01-01
+title: "Mallorca Cycle Shuttle Blog"
+description: "Guide esperte, consigli sui percorsi e conoscenze insider per sfruttare al meglio la tua avventura ciclistica a Maiorca"
+translationKey: "blog-index"
+hero_image: "/img/blog-hero.webp"
+hero_title: "Mallorca Cycle Shuttle Blog"
+hero_subtitle: "Guide esperte, consigli sui percorsi e conoscenze insider per sfruttare al meglio la tua avventura ciclistica a Maiorca"
+cascade:
+  type: "about"
 ---
-
-# Blog
-
-Benvenuti al nostro blog dedicato al ciclismo a Mallorca.
-
-Contenuto in arrivo...

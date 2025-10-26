@@ -1,6 +1,7 @@
 ---
 title: "Guia mestra de ciclisme: Andratx a Pollença"
 description: "Guia completa per pedalar d'Andratx a Pollença a través de la serra de Tramuntana"
+translationKey: "guide-andratx-pollenca"
 ---
 
 <p class="header-subtitle">

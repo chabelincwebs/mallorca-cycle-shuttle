@@ -28,7 +28,7 @@ services:
   - title: "Servizio di soccorso bici"
     description: "Tranquillità in ogni uscita. Se si rompe la bici o mancano le forze, i titolari di polizza vengono recuperati in tutta Maiorca."
     icon: "/img/icon-rescue.svg"
-    link: "/it/bike-rescue/rescue-home/"
+    link: "/it/soccorso-bici/home-soccorso/"
 
   - title: "Shuttles programmati"
     description: "Ti portiamo, insieme alla tua bici, comodamente all'inizio delle iconiche route di sola andata."
@@ -56,7 +56,7 @@ content_blocks:
     image: "/img/content-block-2.webp"
     cta:
       text: "Vedi le guide"
-      url: "/it/bike-shuttle/andratx-pollenca-guide/"
+      url: "/it/navetta-bici/andratx-pollenca-guide/"
 
 # ============================================
 # STATS SECTION
@@ -84,21 +84,21 @@ featured_routes:
     distance: "20 km"
     elevation: "682m"
     image: "/img/route-sa-calobra.webp"
-    link: "/it/bike-shuttle/sa-calobra-guide/"
+    link: "/it/navetta-bici/sa-calobra-guide/"
     badge: "La più popolare"
 
   - title: "Port d'Andratx → Port de Pollença"
     distance: "121 km"
     elevation: "2500m"
     image: "/img/route-andratx-pollenca.webp"
-    link: "/it/bike-shuttle/andratx-pollenca-guide/"
+    link: "/it/navetta-bici/andratx-pollenca-guide/"
     badge: "Epica"
 
   - title: "Big Daddy Challenge"
     distance: "167 km"
     elevation: "4,200m"
     image: "/img/route-big-daddy.webp"
-    link: "/it/bike-shuttle/big-daddy-challenge/"
+    link: "/it/navetta-bici/big-daddy-challenge/"
     badge: "Sfida"
 
 # ============================================

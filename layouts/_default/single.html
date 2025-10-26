@@ -1,12 +1,24 @@
-{{ define "title" }}{{ .Title }}{{ end }}
-
 {{ define "main" }}
-<section>
-  <div class="container content-wrap">
-    <article class="prose content-prose">
-      <h1 style="text-align: center;">{{ .Title }}</h1>
-      {{ .Content }}
-    </article>
+<article>
+  <h1>{{ .Title }}</h1>
+  
+  <!-- Debug info -->
+  <div style="background: #f0f0f0; padding: 20px; margin: 20px 0; font-family: monospace; font-size: 12px;">
+    <strong>Translation Debug Info:</strong><br>
+    IsTranslated: {{ .IsTranslated }}<br>
+    Translation Count: {{ len .Translations }}<br>
+    TranslationKey: {{ .Params.translationKey }}<br>
+    <br>
+    {{ if .IsTranslated }}
+    <strong>Translations:</strong><br>
+    {{ range .Translations }}
+      - {{ .Language.Lang }}: {{ .RelPermalink }}<br>
+    {{ end }}
+    {{ else }}
+    No translations found by Hugo<br>
+    {{ end }}
   </div>
-</section>
+  
+  {{ .Content }}
+</article>
 {{ end }}

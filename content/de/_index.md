@@ -28,7 +28,7 @@ services:
   - title: "Pannenhilfe für Fahrräder"
     description: "Sorgenfrei auf jeder Fahrt. Mit einer vorher gekauften Police wirst du überall auf Mallorca abgeholt – wenn Bike oder Körper schlappmachen."
     icon: "/img/icon-rescue.svg"
-    link: "/de/bike-rescue/rescue-home/"
+    link: "/de/fahrrad-rettung/rettungs-startseite/"
 
   - title: "Geplante Shuttles"
     description: "Wir bringen dich und dein Rad bequem zum Start der ikonischen One-Way-Routen."
@@ -56,7 +56,7 @@ content_blocks:
     image: "/img/content-block-2.webp"
     cta:
       text: "Routenguides ansehen"
-      url: "/de/bike-shuttle/andratx-pollenca-leitfaden/"
+      url: "/de/fahrrad-shuttle/andratx-pollenca-leitfaden/"
 
 # ============================================
 # STATS SECTION
@@ -84,21 +84,21 @@ featured_routes:
     distance: "20 km"
     elevation: "682m"
     image: "/img/route-sa-calobra.webp"
-    link: "/de/bike-shuttle/sa-calobra-leitfaden/"
+    link: "/de/fahrrad-shuttle/sa-calobra-leitfaden/"
     badge: "Am beliebtesten"
 
   - title: "Port d'Andratx nach Port de Pollença"
     distance: "121 km"
     elevation: "2500m"
     image: "/img/route-andratx-pollenca.webp"
-    link: "/de/bike-shuttle/andratx-pollenca-leitfaden/"
+    link: "/de/fahrrad-shuttle/andratx-pollenca-leitfaden/"
     badge: "Episch"
 
   - title: "Big Daddy Challenge"
     distance: "167 km"
     elevation: "4,200m"
     image: "/img/route-big-daddy.webp"
-    link: "/de/bike-shuttle/big-daddy-challenge/"
+    link: "/de/fahrrad-shuttle/big-daddy-challenge/"
     badge: "Herausforderung"
 
 # ============================================

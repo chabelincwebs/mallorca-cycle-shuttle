@@ -1,6 +1,7 @@
 ---
 title: "Master Cycling Guide: Andratx to Pollença"
 description: "Complete guide for cycling from Andratx to Pollença through the Tramuntana mountains"
+translationKey: "guide-andratx-pollenca"
 ---
 
 <p class="header-subtitle">

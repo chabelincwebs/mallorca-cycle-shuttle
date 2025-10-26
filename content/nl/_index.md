@@ -28,7 +28,7 @@ services:
   - title: "Fietsreddingsdienst"
     description: "Gemoedsrust bij elke rit. Polishouders worden overal op Mallorca opgepikt als fiets of lijf het begeeft."
     icon: "/img/icon-rescue.svg"
-    link: "/nl/bike-rescue/rescue-home/"
+    link: "/nl/fiets-redding/redding-startpagina/"
 
   - title: "Geplande shuttles"
     description: "We brengen jou en je fiets comfortabel naar de start van de iconische one-way routes."
@@ -56,7 +56,7 @@ content_blocks:
     image: "/img/content-block-2.webp"
     cta:
       text: "Bekijk routegidsen"
-      url: "/nl/bike-shuttle/andratx-pollenca-gids/"
+      url: "/nl/fiets-shuttle/andratx-pollenca-gids/"
 
 # ============================================
 # STATS SECTION
@@ -84,21 +84,21 @@ featured_routes:
     distance: "20 km"
     elevation: "682m"
     image: "/img/route-sa-calobra.webp"
-    link: "/nl/bike-shuttle/sa-calobra-gids/"
+    link: "/nl/fiets-shuttle/sa-calobra-gids/"
     badge: "Meest populair"
 
   - title: "Port d'Andratx naar Port de Pollença"
     distance: "121 km"
     elevation: "2500m"
     image: "/img/route-andratx-pollenca.webp"
-    link: "/nl/bike-shuttle/andratx-pollenca-gids/"
+    link: "/nl/fiets-shuttle/andratx-pollenca-gids/"
     badge: "Episch"
 
   - title: "Big Daddy Challenge"
     distance: "167 km"
     elevation: "4,200m"
     image: "/img/route-big-daddy.webp"
-    link: "/nl/bike-shuttle/big-daddy-challenge/"
+    link: "/nl/fiets-shuttle/big-daddy-challenge/"
     badge: "Uitdaging"
 
 # ============================================

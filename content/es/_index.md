@@ -28,7 +28,7 @@ services:
   - title: "Servicio de rescate de bicicletas"
     description: "Tranquilidad en cada salida. Si se rompe la bici o fallan las fuerzas, los titulares de la póliza son rescatados en toda Mallorca."
     icon: "/img/icon-rescue.svg"
-    link: "/es/bike-rescue/rescue-home/"
+    link: "/es/rescate-bici/inicio-rescate/"
 
   - title: "Shuttles programados"
     description: "Te llevamos a ti y a tu bici con total comodidad al inicio de las icónicas rutas de ida."
@@ -56,7 +56,7 @@ content_blocks:
     image: "/img/content-block-2.webp"
     cta:
       text: "Ver guías de rutas"
-      url: "/es/bike-shuttle/andratx-pollenca-guide/"
+      url: "/es/shuttle-bici/andratx-pollenca-guide/"
 
 # ============================================
 # STATS SECTION
@@ -84,21 +84,21 @@ featured_routes:
     distance: "20 km"
     elevation: "682m"
     image: "/img/route-sa-calobra.webp"
-    link: "/es/bike-shuttle/sa-calobra-guide/"
+    link: "/es/shuttle-bici/sa-calobra-guide/"
     badge: "La más popular"
 
   - title: "Port d'Andratx a Port de Pollença"
     distance: "121 km"
     elevation: "2500m"
     image: "/img/route-andratx-pollenca.webp"
-    link: "/es/bike-shuttle/andratx-pollenca-guide/"
+    link: "/es/shuttle-bici/andratx-pollenca-guide/"
     badge: "Épica"
 
   - title: "Big Daddy Challenge"
     distance: "167 km"
     elevation: "4,200m"
     image: "/img/route-big-daddy.webp"
-    link: "/es/bike-shuttle/big-daddy-challenge/"
+    link: "/es/shuttle-bici/big-daddy-challenge/"
     badge: "Desafío"
 
 # ============================================

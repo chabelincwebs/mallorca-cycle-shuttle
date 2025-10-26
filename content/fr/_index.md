@@ -28,7 +28,7 @@ services:
   - title: "Assistance vélo"
     description: "Sérénité à chaque sortie. Les titulaires d'une police d'assistance sont récupérés partout à Majorque si le vélo casse ou si les jambes ne suivent plus."
     icon: "/img/icon-rescue.svg"
-    link: "/fr/bike-rescue/rescue-home/"
+    link: "/fr/secours-velo/accueil-secours/"
 
   - title: "Navettes programmées"
     description: "On vous emmène, vous et votre vélo, confortablement au départ des itinéraires iconiques en aller simple."
@@ -56,7 +56,7 @@ content_blocks:
     image: "/img/content-block-2.webp"
     cta:
       text: "Voir les guides d'itinéraires"
-      url: "/fr/bike-shuttle/andratx-pollenca-guide/"
+      url: "/fr/navette-velo/andratx-pollenca-guide/"
 
 # ============================================
 # STATS SECTION
@@ -84,21 +84,21 @@ featured_routes:
     distance: "20 km"
     elevation: "682m"
     image: "/img/route-sa-calobra.webp"
-    link: "/fr/bike-shuttle/sa-calobra-guide/"
+    link: "/fr/navette-velo/sa-calobra-guide/"
     badge: "Le plus populaire"
 
   - title: "Port d'Andratx → Port de Pollença"
     distance: "121 km"
     elevation: "2500m"
     image: "/img/route-andratx-pollenca.webp"
-    link: "/fr/bike-shuttle/andratx-pollenca-guide/"
+    link: "/fr/navette-velo/andratx-pollenca-guide/"
     badge: "Épique"
 
   - title: "Big Daddy Challenge"
     distance: "167 km"
     elevation: "4,200m"
     image: "/img/route-big-daddy.webp"
-    link: "/fr/bike-shuttle/big-daddy-challenge/"
+    link: "/fr/navette-velo/big-daddy-challenge/"
     badge: "Défi"
 
 # ============================================

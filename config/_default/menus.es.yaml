@@ -1,6 +1,6 @@
 ﻿main:
   - name: "Condiciones del rescate"
-    url: "/bike-rescue/rescue-sale-terms/"
+    url: "/rescate-bici/terminos-venta-rescate/"
     weight: 10
 legal:
   - name: "Aviso legal"
@@ -13,5 +13,5 @@ legal:
     url: "/about/politica-de-privacidad/"
     weight: 30
   - name: "Condiciones de venta"
-    url: "/bike-rescue/rescue-sale-terms/"
+    url: "/rescate-bici/terminos-venta-rescate/"
     weight: 40

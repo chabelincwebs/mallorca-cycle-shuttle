@@ -45,40 +45,42 @@
           <!-- Language Switcher - Desktop -->
           <nav class="lang-desktop">
             {{- range .Site.Home.AllTranslations -}}
-              {{- $translation := . -}}
+              {{- $langCode := .Language.Lang -}}
               {{- $linkURL := .RelPermalink -}}
-              {{- $isActive := false -}}
-              {{- if eq .Language.Lang $.Language.Lang -}}
+              {{- $isActive := eq $langCode $.Language.Lang -}}
+
+              {{- if $isActive -}}
                 {{- $linkURL = $.RelPermalink -}}
-                {{- $isActive = true -}}
-              {{- else if $.IsTranslated -}}
+              {{- else -}}
                 {{- range $.Translations -}}
-                  {{- if eq .Language.Lang $translation.Language.Lang -}}
+                  {{- if eq .Language.Lang $langCode -}}
                     {{- $linkURL = .RelPermalink -}}
                   {{- end -}}
                 {{- end -}}
               {{- end -}}
-              <a href="{{ $linkURL }}" {{ if $isActive }}class="lang-link active"{{ else }}class="lang-link"{{ end }}>{{ upper .Language.Lang }}</a>
+
+              <a href="{{ $linkURL }}" {{ if $isActive }}class="lang-link active"{{ else }}class="lang-link"{{ end }}>{{ upper $langCode }}</a>
             {{- end -}}
           </nav>
 
           <!-- Language Switcher - Mobile -->
           <select class="lang-mobile" onchange="if(this.value) window.location.href=this.value">
             {{- range .Site.Home.AllTranslations -}}
-              {{- $translation := . -}}
+              {{- $langCode := .Language.Lang -}}
               {{- $linkURL := .RelPermalink -}}
-              {{- $isActive := false -}}
-              {{- if eq .Language.Lang $.Language.Lang -}}
+              {{- $isActive := eq $langCode $.Language.Lang -}}
+
+              {{- if $isActive -}}
                 {{- $linkURL = $.RelPermalink -}}
-                {{- $isActive = true -}}
-              {{- else if $.IsTranslated -}}
+              {{- else -}}
                 {{- range $.Translations -}}
-                  {{- if eq .Language.Lang $translation.Language.Lang -}}
+                  {{- if eq .Language.Lang $langCode -}}
                     {{- $linkURL = .RelPermalink -}}
                   {{- end -}}
                 {{- end -}}
               {{- end -}}
-              <option value="{{ $linkURL }}" {{ if $isActive }}selected{{ end }}>{{ upper .Language.Lang }}</option>
+
+              <option value="{{ $linkURL }}" {{ if $isActive }}selected{{ end }}>{{ upper $langCode }}</option>
             {{- end -}}
           </select>
 
