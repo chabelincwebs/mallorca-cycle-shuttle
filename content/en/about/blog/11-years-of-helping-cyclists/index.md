@@ -1,7 +1,8 @@
 ---
 title: "Helping cyclists since 2015"
 description: "Celebrating a decade of supporting cyclists in Mallorca with shuttle services, bike rescue, and a commitment to safe, sustainable cycling adventures."
-date: 2025-02-01
+date: 2024-12-01
+draft: false
 category: "Cycling News"
 featured_image: "/img/blog/11-years-helping-cyclists.webp"
 excerpt: "2025 marks an exciting milestone as we celebrate helping cyclists since 2015. Discover what's new this year, from improved roads to new shuttle services from the South."
