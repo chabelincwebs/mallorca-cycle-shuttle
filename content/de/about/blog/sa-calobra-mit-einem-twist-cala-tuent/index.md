@@ -5,6 +5,7 @@ date: 2024-01-01
 category: "Radtipps"
 featured_image: "/img/blog/cala-tuent-sa-calobra.webp"
 excerpt: "Mach aus Sa Calobra noch mehr. Füge Cala Tuent hinzu für leere Straßen, türkisfarbene Buchten und eine neue Perspektive auf Mallorcas bekanntesten Anstieg."
+translationKey: "blog-sa-calobra-cala-tuent"
 ---
 
 Du bist Sa Calobra schon gefahren. Du bist die Serpentinen runtergeflogen, hast die Linksabzweigung etwa vier Fünftel des Weges nach unten bemerkt und dich gefragt, wohin sie führt. Kurze Antwort: zu einer ruhigeren, atemberaubenden Hin- und Rückfahrt, die Sa Calobra noch besser macht. So fügst du Cala Tuent in deinen Tag ein, ohne den Flow zu ruinieren.

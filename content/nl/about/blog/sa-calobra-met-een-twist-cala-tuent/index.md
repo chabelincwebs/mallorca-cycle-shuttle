@@ -5,6 +5,7 @@ date: 2024-01-01
 category: "Fietstips"
 featured_image: "/img/blog/cala-tuent-sa-calobra.webp"
 excerpt: "Maak van Sa Calobra iets meer. Voeg Cala Tuent toe voor lege wegen, turquoise baaien en een nieuwe hoek op Mallorca's bekendste klim."
+translationKey: "blog-sa-calobra-cala-tuent"
 ---
 
 Je hebt Sa Calobra al gereden. Je bent die haarspeldbochten afgevlogen, hebt die linksaf ongeveer vier vijfde van de weg naar beneden gezien en je afgevraagd waar die heen gaat. Kort antwoord: naar een rustigere, prachtige heen-en-weer die Sa Calobra nog beter maakt. Zo vouw je Cala Tuent in je dag zonder de flow te verpesten.

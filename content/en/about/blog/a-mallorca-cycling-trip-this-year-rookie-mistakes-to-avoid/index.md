@@ -5,6 +5,7 @@ date: 2024-01-01
 category: "Cycling Tips"
 featured_image: "/img/blog/rookie-mistakes-mallorca.webp"
 excerpt: "You came to ride. Don't waste the trip. Here are the common ways people mess it up – and what to do instead."
+translationKey: "blog-rookie-mistakes"
 ---
 
 Short version: you came to ride. Don't waste the trip. Here are the common ways people mess it up – and what to do instead.

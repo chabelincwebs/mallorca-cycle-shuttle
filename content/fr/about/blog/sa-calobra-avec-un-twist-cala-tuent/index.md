@@ -5,6 +5,7 @@ date: 2024-01-01
 category: "Conseils vélo"
 featured_image: "/img/blog/cala-tuent-sa-calobra.webp"
 excerpt: "Transforme Sa Calobra en quelque chose de plus. Ajoute Cala Tuent pour des routes vides, des baies turquoise et un angle frais sur la montée la plus connue de Majorque."
+translationKey: "blog-sa-calobra-cala-tuent"
 ---
 
 Tu as déjà fait Sa Calobra. Tu as dévalé ces épingles, jeté un œil à ce virage à gauche environ quatre cinquièmes de la descente, et tu t'es demandé où il mène. Réponse courte : vers un aller-retour plus calme et magnifique qui rend Sa Calobra encore meilleure. Voici comment intégrer Cala Tuent dans ta journée sans gâcher le flow.

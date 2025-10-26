@@ -5,6 +5,7 @@ date: 2024-01-01
 category: "Consigli di ciclismo"
 featured_image: "/img/blog/rookie-mistakes-mallorca.webp"
 excerpt: "Sei venuto per pedalare. Non sprecare il viaggio. Ecco gli errori tipici – e cosa fare al loro posto."
+translationKey: "blog-rookie-mistakes"
 ---
 
 Versione breve: sei venuto per pedalare. Non sprecare il viaggio. Ecco gli errori più comuni – e cosa fare al loro posto.

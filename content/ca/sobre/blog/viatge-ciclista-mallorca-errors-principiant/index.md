@@ -5,6 +5,7 @@ date: 2024-01-01
 category: "Consells de ciclisme"
 featured_image: "/img/blog/rookie-mistakes-mallorca.webp"
 excerpt: "Has vingut a pedalar. No malgastis el viatge. Aquests són els errors més habituals – i què fer al seu lloc."
+translationKey: "blog-rookie-mistakes"
 ---
 
 Versió curta: has vingut a pedalar. No malgastis el viatge. Aquests són els errors més habituals – i què fer al seu lloc.

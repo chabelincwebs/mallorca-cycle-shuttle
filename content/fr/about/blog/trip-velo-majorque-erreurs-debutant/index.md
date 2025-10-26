@@ -5,6 +5,7 @@ date: 2024-01-01
 category: "Conseils vélo"
 featured_image: "/img/blog/rookie-mistakes-mallorca.webp"
 excerpt: "Tu es venu pour rouler. Ne gâche pas le voyage. Voici les bourdes courantes – et quoi faire à la place."
+translationKey: "blog-rookie-mistakes"
 ---
 
 Version courte : tu es venu pour rouler. Ne gâche pas le voyage. Voici les bourdes les plus courantes – et quoi faire à la place.

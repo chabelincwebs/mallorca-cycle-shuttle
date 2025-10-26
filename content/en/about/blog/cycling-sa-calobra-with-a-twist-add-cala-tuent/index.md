@@ -5,6 +5,7 @@ date: 2024-01-01
 category: "Cycling Tips"
 featured_image: "/img/blog/cala-tuent-sa-calobra.webp"
 excerpt: "Turn Sa Calobra into something more. Add Cala Tuent for empty roads, turquoise bays, and a fresh angle on Mallorca's best-known climb."
+translationKey: "blog-sa-calobra-cala-tuent"
 ---
 
 You've ridden Sa Calobra before. You've flown down those hairpins, glanced at that left-hand turn about four-fifths of the way down, and wondered where it leads. Short answer: to a quieter, stunning out-and-back that makes Sa Calobra even better. Here's how to fold Cala Tuent into your day without wrecking the flow.

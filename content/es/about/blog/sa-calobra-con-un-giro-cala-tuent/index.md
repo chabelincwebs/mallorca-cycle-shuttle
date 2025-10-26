@@ -5,6 +5,7 @@ date: 2024-01-01
 category: "Consejos de ciclismo"
 featured_image: "/img/blog/cala-tuent-sa-calobra.webp"
 excerpt: "Convierte Sa Calobra en algo más. Añade Cala Tuent para carreteras vacías, bahías turquesas y un ángulo nuevo sobre la subida más conocida de Mallorca."
+translationKey: "blog-sa-calobra-cala-tuent"
 ---
 
 Ya has hecho Sa Calobra antes. Has volado por esas curvas, has echado un vistazo a ese giro a la izquierda a unos cuatro quintos del descenso y te has preguntado adónde lleva. Respuesta corta: a una ida y vuelta más tranquila e impresionante que mejora Sa Calobra. Aquí te explico cómo encajar Cala Tuent en tu día sin arruinar el ritmo.

@@ -5,6 +5,7 @@ date: 2024-01-01
 category: "Fietstips"
 featured_image: "/img/blog/rookie-mistakes-mallorca.webp"
 excerpt: "Je kwam om te fietsen. Verspil de trip niet. Dit zijn de fouten die mensen maken – en wat je beter doet."
+translationKey: "blog-rookie-mistakes"
 ---
 
 Korte versie: je kwam om te fietsen. Verspil de trip niet. Dit zijn de meest voorkomende fouten – en wat je beter doet.

@@ -5,6 +5,7 @@ date: 2024-01-01
 category: "Radtipps"
 featured_image: "/img/blog/rookie-mistakes-mallorca.webp"
 excerpt: "Du bist zum Fahren hier. Verschwende die Reise nicht. Hier sind die häufigsten Patzer – und was du besser machst."
+translationKey: "blog-rookie-mistakes"
 ---
 
 Kurzfassung: Du bist zum Fahren hier. Verschwende die Reise nicht. Hier sind die häufigsten Patzer – und was du stattdessen tun solltest.
