@@ -12,6 +12,9 @@ legal:
   - name: "Datenschutzerklärung"
     url: "/about/datenschutzerklarung/"
     weight: 30
-  - name: "Allg. Verkaufsbedingungen"
+  - name: "Rettungs-Verkaufsbedingungen"
     url: "/fahrrad-rettung/rettungs-verkaufsbedingungen/"
     weight: 40
+  - name: "Shuttle-Verkaufsbedingungen"
+    url: "/fahrrad-shuttle/shuttle-verkaufsbedingungen/"
+    weight: 50

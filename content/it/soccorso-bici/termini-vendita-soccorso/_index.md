@@ -1,41 +1,40 @@
 ---
-title: "Terms & Conditions of Sale"
-description: "Terms for purchasing Mallorca Bicycle Rescue products and services."
+title: "Termini e Condizioni di Vendita del Soccorso"
+description: "Condizioni per l'acquisto di prodotti e servizi di Mallorca Bicycle Rescue."
+translationKey: rescue-sale-terms
 ---
 
-# TERMS (plain-English, binding)
+## 1) Cosa forniamo
+Ti riportiamo, insieme alla bici specificata, a tua scelta: al tuo alloggio oppure a un'officina/meccanico di biciclette (o al punto di noleggio). Copertura in tutta l'isola solo su strade standard.
 
-## 1) What we provide
-We return you and your specified bicycle to your choice of: your accommodation or a bicycle repair facility (or your rental outlet). Island-wide coverage on standard roads only.
+## 2) Idoneità e condizioni
+- La bici deve essere in condizioni di marcia e mantenuta secondo le indicazioni del produttore.
+- Ogni copertura vale per **un solo** ciclista e **una sola** bici indicata; porta un documento di identità valido.
+- Devi trovarti a >1 km dal tuo alloggio **e** a >1 km da un'officina **aperta**.
+- Le chiamate devono avvenire durante l'orario operativo (da un'ora dopo l'alba fino al tramonto).
+- La copertura deve essere acquistata >12 ore prima dell'uso.
 
-## 2) Eligibility & conditions
-- Your bike must be roadworthy and maintained per manufacturer guidance.  
-- Each cover is for one rider and one stated bike; carry valid ID.  
-- You must be >1 km from your accommodation and >1 km from an open repair facility.  
-- Calls must be during operating hours (from one hour after sunrise to sunset).  
-- Cover must be purchased >12 hours before use.
+## 3) Esclusioni
+- Gare, competizioni, "sportive" (inclusa l'impossibilità di operare ovunque il giorno della Mallorca 312).
+- Luoghi fuoristrada (piste accessibili solo 4×4).
+- Bici non standard: tandem, hand bike, recumbent attualmente non coperte.
+- "Sono solo stanco." Riposati, mangia, bevi e riprendi quando opportuno.
+- Le riparazioni di routine devono essere almeno tentate (es. catena uscita). Prova a riposizionarla; se non riesci, chiedi aiuto a un ciclista. Se ancora impossibile, chiamaci.
+- Fuori orario operativo; alcune aree il giorno della 312; **nessun servizio** il **25 dicembre**.
 
-## 3) Exclusions
-- Races, competitions, sportives (including inability to operate everywhere on Mallorca 312 day).  
-- Off-road locations (4×4-only tracks).  
-- Non-standard bikes: tandems, hand bikes, recumbents are currently not covered.  
-- “I’m just tired.” Rest, eat, drink, continue when appropriate.  
-- Routine fixes must be at least attempted (e.g. a slipped chain). Try to refit it yourself; if not, ask a friendly cyclist. If still not possible, call us.  
-- Outside operating hours; some areas on 312 day; **no service** on 25 December.
+## 4) Richieste e uso improprio
+- Una richiesta per polizza per settimana per lo stesso problema.
+- Le coperture di 14 giorni consentono **due** richieste per lo **stesso** problema se nel frattempo è stata effettuata una riparazione.
+- Problemi diversi non sono limitati, ma in caso di abuso sospetto: annullamento e rimborso della parte non utilizzata.
 
-## 4) Claims & misuse
-- One claim per policy per week per issue.  
-- 14-day covers allow **two** claims for the **same** issue if a repair has been made in the intervening period.  
-- Different issues aren’t capped, but suspected abuse may result in cancellation and refund of the unused portion.
+## 5) Emergenze e sicurezza
+Per emergenze mediche, chiama prima un'ambulanza; noi recupereremo e custodiremo la bici.
 
-## 5) Emergencies & safety
-For medical emergencies, call an ambulance first; we will recover and store your bike.
+## 6) Amministrazione
+Possiamo annullare e rimborsare la parte non utilizzata della polizza se necessario.
+Le informazioni fornite devono essere accurate.
+La nostra responsabilità non va oltre quanto espressamente dichiarato qui.
 
-## 6) Administration
-We may cancel and refund the unused portion of a policy if necessary.  
-Information you provide must be accurate.  
-We’re not liable beyond obligations expressly stated here.
-
-## 7) Special dates
-No service on **25 December**.  
-Restricted service on **Mallorca 312** day because of closed roads.
+## 7) Date speciali
+**Nessun servizio** il **25 dicembre**.
+Servizio limitato il giorno della **Mallorca 312** a causa delle chiusure stradali.

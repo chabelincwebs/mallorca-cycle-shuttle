@@ -12,6 +12,9 @@ legal:
   - name: "Privacy Policy"
     url: "/about/privacy-policy/"
     weight: 30
-  - name: "Terms & Conditions of Sale"
+  - name: "Rescue Terms & Conditions of Sale"
     url: "/bike-rescue/rescue-sale-terms/"
     weight: 40
+  - name: "Shuttle Terms & Conditions of Sale"
+    url: "/bike-shuttle/shuttle-sale-terms/"
+    weight: 50

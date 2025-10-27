@@ -1,6 +1,7 @@
 ---
 title: "Mallorca Fahrrad-Rettung"
 description: "Inselweite Radfahrer-Abholung bei Pannen oder körperlichen Problemen. Einfach. Schnell. Zuverlässig."
+translationKey: rescue-home
 hero_title: "Mallorca Fahrrad-Rettung"
 hero_subtitle: "Wenn dein Rad oder dein Körper aufgibt, bringen wir dich dahin, wo du hin musst."
 

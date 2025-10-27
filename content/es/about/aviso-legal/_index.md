@@ -1,5 +1,6 @@
 ﻿---
 title: "Aviso legal"
+translationKey: legal-notice
 ---
 
 ## Condiciones de uso

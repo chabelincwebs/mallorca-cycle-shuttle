@@ -1,5 +1,6 @@
 ﻿---
 title: "Legal Notice"
+translationKey: legal-notice
 ---
 
 **Company Name:** Autocares Devesa SL

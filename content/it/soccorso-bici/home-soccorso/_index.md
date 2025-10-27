@@ -1,6 +1,7 @@
 ---
 title: "Soccorso Bici Mallorca"
 description: "Ritiro ciclisti in tutta l'isola se la tua bici o il tuo corpo si guasta. Semplice. Veloce. Affidabile."
+translationKey: rescue-home
 hero_title: "Soccorso Bici Mallorca"
 hero_subtitle: "Se la tua bici o il tuo corpo si guasta, ti portiamo dove devi essere."
 

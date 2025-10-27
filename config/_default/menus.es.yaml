@@ -12,6 +12,9 @@ legal:
   - name: "Política de privacidad"
     url: "/about/politica-de-privacidad/"
     weight: 30
-  - name: "Condiciones de venta"
+  - name: "Condiciones de venta del rescate"
     url: "/rescate-bici/terminos-venta-rescate/"
     weight: 40
+  - name: "Condiciones de venta del shuttle"
+    url: "/shuttle-bici/terminos-venta-shuttle/"
+    weight: 50

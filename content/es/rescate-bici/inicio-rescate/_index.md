@@ -1,6 +1,7 @@
 ---
 title: "Rescate de Bicicletas en Mallorca"
 description: "Recogida de ciclistas en toda la isla si tu bici o tu cuerpo falla. Simple. Rápido. Fiable."
+translationKey: rescue-home
 hero_title: "Rescate de Bicicletas en Mallorca"
 hero_subtitle: "Si tu bici o tu cuerpo se avería, te llevamos donde necesitas estar."
 

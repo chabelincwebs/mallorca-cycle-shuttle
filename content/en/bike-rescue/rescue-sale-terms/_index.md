@@ -1,9 +1,8 @@
 ---
-title: "Terms & Conditions of Sale"
+title: "Rescue Terms & Conditions of Sale"
 description: "Terms for purchasing Mallorca Bicycle Rescue products and services."
+translationKey: rescue-sale-terms
 ---
-
-# TERMS (plain-English, binding)
 
 ## 1) What we provide
 We return you and your specified bicycle to your choice of: your accommodation or a bicycle repair facility (or your rental outlet). Island-wide coverage on standard roads only.

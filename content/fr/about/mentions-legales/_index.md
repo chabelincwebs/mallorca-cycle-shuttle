@@ -1,5 +1,6 @@
 ---
 title: "Mentions Légales"
+translationKey: legal-notice
 ---
 
 **Raison sociale:** Autocares Devesa SL

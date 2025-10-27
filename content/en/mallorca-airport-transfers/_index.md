@@ -1,6 +1,7 @@
 ---
 title: "Mallorca Airport Transfers"
 description: "Convenient airport transfer services for cyclists in Mallorca"
+translationKey: airport-transfers
 
 hero_subtitle: "Designed by cyclists for cyclists"
 

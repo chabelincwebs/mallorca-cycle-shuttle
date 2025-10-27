@@ -1,8 +1,8 @@
 ---
-title: "Conditions Générales de Vente"
+title: "Conditions Générales de Vente du Service de Secours"
+description: "Conditions pour l'achat de produits et services de Mallorca Bicycle Rescue."
+translationKey: rescue-sale-terms
 ---
-
-## CONDITIONS (claires et contraignantes)
 
 ### 1) Ce que nous fournissons
 

@@ -1,6 +1,7 @@
 ---
 title: "Mallorca-luchthaventransfers"
 description: "Handige luchthaventransfers voor fietsers op Mallorca"
+translationKey: airport-transfers
 
 hero_subtitle: "Ontworpen door fietsers voor fietsers"
 

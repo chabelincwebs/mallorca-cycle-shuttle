@@ -1,8 +1,9 @@
 ﻿---
 title: "Cookie Policy"
+translationKey: cookie-policy
 ---
 
-Autocares Devesa SL and Mallorca BicycleRescue inform you here about the use of cookies on its website: mallorcabicyclerescue.com
+Autocares Devesa SL, Mallorca Cycle Shuttle and Mallorca Bicycle Rescue inform you here about the use of cookies on its website: mallorcacycleshuttle.com
 
 ## What are cookies?
 
@@ -55,13 +56,13 @@ In addition, you can also manage the cookie store in your browser through tools 
 - **Ghostery:** www.ghostery.com/
 - **Your Online Choices:** www.youronlinechoices.com
 
-## Cookies used in mallorcabicyclerescue.com
+## Cookies used in mallorcacycleshuttle.com
 
 Next, the cookies that are being used in this portal are identified, as well as their typology and function:
 
 ## Acceptance of the Cookies Policy
 
-mallorcabicyclerescue.com, assumes that you accept the use of cookies. However, it shows information about your cookies policy at the bottom or top of any page of the portal with each login in order for you to be aware.
+mallorcacycleshuttle.com, assumes that you accept the use of cookies. However, it shows information about your cookies policy at the bottom or top of any page of the portal with each login in order for you to be aware.
 
 Given this information it is possible to carry out the following actions:
 
@@ -69,4 +70,4 @@ Given this information it is possible to carry out the following actions:
 
 **Close:** The notice is hidden on this page.
 
-**Modify your settings:** You can get more information about what cookies are, know the Cookies Policy of: mallorcabicyclerescue.com and modify the configuration of your browser.
+**Modify your settings:** You can get more information about what cookies are, know the Cookies Policy of: mallorcacycleshuttle.com and modify the configuration of your browser.

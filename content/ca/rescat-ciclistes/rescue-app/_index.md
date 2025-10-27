@@ -1,9 +1,7 @@
 ---
-title: "App Rescat Ciclistes"
-description: "Aplicació per al servei de rescat de ciclistes"
-date: 2024-01-01
+title: "Sol·licitud de Rescat d'Emergència"
+layout: "rescue-app"
+type: "rescue-app"
+robots: "noindex, nofollow"
+sitemap_exclude: true
 ---
-
-# App Rescat Ciclistes
-
-Contingut proper...

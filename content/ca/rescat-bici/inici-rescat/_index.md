@@ -1,6 +1,7 @@
 ---
 title: "Rescat Ciclista Mallorca"
 description: "Recollida de ciclistes a tota l'illa si la teva bici o el teu cos falla. Simple. Ràpid. Fiable."
+translationKey: rescue-home
 hero_title: "Rescat Ciclista Mallorca"
 hero_subtitle: "Si la teva bici o el teu cos s'espatlla, et portem on necessites estar."
 

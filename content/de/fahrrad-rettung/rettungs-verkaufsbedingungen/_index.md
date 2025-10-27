@@ -1,9 +1,8 @@
 ---
-title: "Allgemeine Verkaufsbedingungen"
+title: "Rettungs-Verkaufsbedingungen"
 description: "Bedingungen für den Kauf von Produkten und Dienstleistungen von Mallorca Bicycle Rescue."
+translationKey: rescue-sale-terms
 ---
-
-# BEDINGUNGEN (verständlich formuliert, verbindlich)
 
 ## 1) Was wir leisten
 Wir bringen dich und dein angegebenes Fahrrad wahlweise zu deiner Unterkunft, zu einer Fahrradwerkstatt oder zu deinem Verleih. Inselweite Abdeckung **nur auf normalen Straßen**.

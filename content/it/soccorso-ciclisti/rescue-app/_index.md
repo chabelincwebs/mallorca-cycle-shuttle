@@ -1,9 +1,7 @@
 ---
-title: "App Soccorso Ciclisti"
-description: "Applicazione per il servizio di soccorso ciclisti"
-date: 2024-01-01
+title: "Richiesta di Soccorso d'Emergenza"
+layout: "rescue-app"
+type: "rescue-app"
+robots: "noindex, nofollow"
+sitemap_exclude: true
 ---
-
-# App Soccorso Ciclisti
-
-Contenuto in arrivo...

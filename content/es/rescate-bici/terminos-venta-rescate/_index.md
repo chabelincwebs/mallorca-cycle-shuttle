@@ -1,9 +1,8 @@
 ---
-title: "Condiciones Generales de Venta"
+title: "Condiciones de venta del rescate"
 description: "Condiciones para la compra de productos y servicios de Mallorca Bicycle Rescue."
+translationKey: rescue-sale-terms
 ---
-
-# TÉRMINOS (lenguaje sencillo, vinculantes)
 
 ## 1) Qué ofrecemos
 Te llevamos a ti y a la bicicleta especificada a tu elección: tu alojamiento, un taller de bicicletas o tu punto de alquiler. Cobertura en toda la isla **solo en carreteras normales**.
