@@ -14,7 +14,7 @@ On ne dit pas que c'est facile. On ne dit pas que c'est pour tout le monde.
 On dit que c'est <strong>brillant</strong>.
 </p>
 <p class="hero-intro-main fade-in-up delay-1">
-Pour ton <a href="#north-routes" class="highlight-red hero-link">« Best Ever Day On A Bike »</a> – de <strong>Port d'Andratx</strong> à <strong>Port de Pollença</strong> à travers l'impressionnante <span class="highlight">Serra de Tramuntana</span> de Majorque – l'ultime <a href="#south-routes" class="highlight-red hero-link">Coast-to-Coast</a>
+Pour ton <a href="#north-routes" class="highlight-red hero-link">« meilleur jour à vélo de ta vie »</a> – de <strong>Port d'Andratx</strong> à <strong>Port de Pollença</strong> à travers l'impressionnante <span class="highlight">Serra de Tramuntana</span> de Majorque – l'ultime <a href="#south-routes" class="highlight-red hero-link">de côte à côte</a>
 </p>
 <p class="hero-intro-features fade-in-up delay-2">
 Montées scéniques et exigeantes • Longues descentes fluides • Asphalte lisse comme du beurre • Pauses café régulières • Paradis du vélo

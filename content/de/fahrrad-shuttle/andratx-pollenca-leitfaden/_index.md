@@ -14,7 +14,7 @@ Wir sagen nicht, dass es einfach ist. Wir sagen nicht, dass es für alle ist.
 Wir sagen: Es ist <strong>großartig</strong>.
 </p>
 <p class="hero-intro-main fade-in-up delay-1">
-Für deinen <a href="#north-routes" class="highlight-red hero-link">„Best Ever Day On A Bike"</a> – von <strong>Port d'Andratx</strong> nach <strong>Port de Pollença</strong> durch Mallorcas beeindruckende <span class="highlight">Serra de Tramuntana</span> – das ultimative <a href="#south-routes" class="highlight-red hero-link">Coast-to-Coast</a>
+Für deinen <a href="#north-routes" class="highlight-red hero-link">„besten Radtag aller Zeiten"</a> – von <strong>Port d'Andratx</strong> nach <strong>Port de Pollença</strong> durch Mallorcas beeindruckende <span class="highlight">Serra de Tramuntana</span> – das ultimative <a href="#south-routes" class="highlight-red hero-link">Von-Küste-zu-Küste</a>
 </p>
 <p class="hero-intro-features fade-in-up delay-2">
 Malerische, anspruchsvolle Anstiege • Weite Abfahrten • Butterglatter Asphalt • Regelmäßige Café-Stopps • Radsport-Paradies

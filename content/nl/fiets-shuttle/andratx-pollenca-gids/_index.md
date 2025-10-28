@@ -14,7 +14,7 @@ We zeggen niet dat het makkelijk is. We zeggen niet dat het voor iedereen is.
 We zeggen: het is <strong>briljant</strong>.
 </p>
 <p class="hero-intro-main fade-in-up delay-1">
-Voor jouw <a href="#north-routes" class="highlight-red hero-link">"Best Ever Day On A Bike"</a> – van <strong>Port d'Andratx</strong> naar <strong>Port de Pollença</strong> door de indrukwekkende <span class="highlight">Serra de Tramuntana</span> van Mallorca – de ultieme <a href="#south-routes" class="highlight-red hero-link">Coast-to-Coast</a>
+Voor jouw <a href="#north-routes" class="highlight-red hero-link">«beste fietsdag ooit»</a> – van <strong>Port d'Andratx</strong> naar <strong>Port de Pollença</strong> door de indrukwekkende <span class="highlight">Serra de Tramuntana</span> van Mallorca – de ultieme <a href="#south-routes" class="highlight-red hero-link">van kust tot kust</a>
 </p>
 <p class="hero-intro-features fade-in-up delay-2">
 Schitterende, uitdagende beklimmingen • Zwierige afdalingen • Boterzacht asfalt • Regelmatige caféstops • Fietsparadijs

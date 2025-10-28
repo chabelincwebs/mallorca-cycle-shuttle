@@ -14,7 +14,7 @@ No diem que sigui fàcil. No diem que sigui per a tothom.
 Diem que és <strong>brillant</strong>.
 </p>
 <p class="hero-intro-main fade-in-up delay-1">
-Pel teu <a href="#north-routes" class="highlight-red hero-link">"Best Ever Day On A Bike"</a> – de <strong>Port d'Andratx</strong> a <strong>Port de Pollença</strong> travessant l'impressionant <span class="highlight">Serra de Tramuntana</span> de Mallorca – el Coast-to-Coast <a href="#south-routes" class="highlight-red hero-link">definitiu</a>
+Pel teu <a href="#north-routes" class="highlight-red hero-link">«millor dia en bici de la teva vida»</a> – de <strong>Port d'Andratx</strong> a <strong>Port de Pollença</strong> travessant l'impressionant <span class="highlight">Serra de Tramuntana</span> de Mallorca – el <a href="#south-routes" class="highlight-red hero-link">de costa a costa</a> definitiu
 </p>
 <p class="hero-intro-features fade-in-up delay-2">
 Pujades escèniques i exigents • Descensos llargs i fluids • Asfalt suau com la mantega • Parades de cafè regulars • Paradís ciclista
