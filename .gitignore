@@ -25,6 +25,8 @@ favicons-original/
 *.tmp.*
 layouts/**/*.tmp.*
 layouts/_default/*.tmp.*
+i18n/*.tmp.*
+content/**/*.tmp.*
 
 # Node modules (if using npm)
 node_modules/
