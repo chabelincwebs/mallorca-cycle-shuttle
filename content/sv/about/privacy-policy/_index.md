@@ -1,124 +1,124 @@
-﻿---
-title: "Privacy Policy"
+---
+title: "Integritetspolicy"
 translationKey: privacy-policy
 ---
 
-The following privacy policy is effective from 25 May 2018:
+Följande integritetspolicy gäller från 25 maj 2018:
 
-## 1. Introduction
+## 1. Introduktion
 
-This privacy notice explains exactly how we collect and process your personal data from your use of our site mallorcacycleshuttle.com. By providing us with your data, you warrant to us that you are over 13 years of age.
+Denna integritetsnotis förklarar exakt hur vi samlar in och behandlar dina personuppgifter från din användning av vår webbplats mallorcacycleshuttle.com. Genom att tillhandahålla oss dina uppgifter garanterar du oss att du är över 13 år gammal.
 
-**Full contact details:**
-- Full name of legal entities: Autocares Devesa SL, Mallorca Cycle Shuttle and Mallorca Bicycle Rescue
-- Email address: support@mallorcacycleshuttle.com
-- Postal address: Caller Fuster 36 A Polígono, Pollença 07440
+**Fullständiga kontaktuppgifter:**
+- Fullständigt namn på juridiska enheter: Autocares Devesa SL, Mallorca Cycle Shuttle och Mallorca Bicycle Rescue
+- E-postadress: support@mallorcacycleshuttle.com
+- Postadress: Caller Fuster 36 A Polígono, Pollença 07440
 
-It helps us deliver a better service if the information we have about you is correct and up to date. Please let us know if personal information changes at any time by emailing us right away at support@mallorcacycleshuttle.com.
+Det hjälper oss att leverera en bättre service om den information vi har om dig är korrekt och uppdaterad. Vänligen meddela oss om personlig information ändras när som helst genom att e-posta oss omedelbart på support@mallorcacycleshuttle.com.
 
-## 2. What types of data we collect from you, why we do so, and how we process it
+## 2. Vilka typer av data vi samlar in från dig, varför vi gör det och hur vi behandlar dem
 
-Personal data covers information that can be used to identify an individual, not including any anonymised data.
+Personuppgifter täcker information som kan användas för att identifiera en individ, inte inklusive anonymiserade data.
 
-It is possible that we might process the following types of personal data:
+Det är möjligt att vi kan behandla följande typer av personuppgifter:
 
-**Communication Data**
+**Kommunikationsdata**
 
-Including any communication that you send directly to us, either through the contact form on our website, through email, social media messaging, social media posting or any other direct communication. We process this data so we can continue communicating with you, to record and for the establishment, pursuance or defence of legal claims. Our legal reason for this processing is consent and/or our legitimate interests which in this case are to reply to communications sent to us, to keep records and to deal with any legal claims.
+Inklusive all kommunikation som du skickar direkt till oss, antingen genom kontaktformuläret på vår webbplats, via e-post, sociala medier-meddelanden, sociala medier-inlägg eller annan direkt kommunikation. Vi behandlar denna data så att vi kan fortsätta kommunicera med dig, för att registrera och för upprättande, utförande eller försvar av rättsliga anspråk. Vår rättsliga grund för denna behandling är samtycke och/eller våra legitima intressen som i detta fall är att svara på kommunikationer som skickas till oss, att hålla register och att hantera eventuella rättsliga anspråk.
 
-**User Data**
+**Användardata**
 
-Including data about the way in which you use our website and any online services including any data that you post for publication on our website or through other online services. We process this data to operate and develop our website effectively and ensure the most relevant content can always be provided to you, to ensure the security of our website, to maintain back- ups of our website and/or databases and to enable publication and administration of our website, other online services and business. Our legal reason for this type of processing is our legitimate interests which in this case are to enable us to properly administer our website and our business.
+Inklusive data om det sätt på vilket du använder vår webbplats och eventuella onlinetjänster inklusive all data som du publicerar för publicering på vår webbplats eller genom andra onlinetjänster. Vi behandlar denna data för att driva och utveckla vår webbplats effektivt och säkerställa att det mest relevanta innehållet alltid kan tillhandahållas dig, för att säkerställa säkerheten för vår webbplats, för att upprätthålla säkerhetskopior av vår webbplats och/eller databaser och för att möjliggöra publicering och administration av vår webbplats, andra onlinetjänster och verksamhet. Vår rättsliga grund för denna typ av behandling är våra legitima intressen som i detta fall är att möjliggöra korrekt administration av vår webbplats och vår verksamhet.
 
-**Technical Data**
+**Teknisk data**
 
-Including any data about your use of our website and online services such as your IP address, your login data, details about your browser, length of visit to pages on our website, page views and navigation paths, details about the number of times you use our website, time zone settings and other technology on the devices you use to access our website. Our analytics tracking system records this data and we process it purely to analyse your use of our website and other online services, to administer and protect our business and website, to deliver relevant website content and advertisements to you and to understand the effectiveness of our advertising. Our legal reason for this processing is our legitimate interests which in this case are to enable us to properly administer our website and our business and to grow our business and to decide our marketing strategy.
+Inklusive all data om din användning av vår webbplats och onlinetjänster såsom din IP-adress, dina inloggningsdata, detaljer om din webbläsare, längden på besök på sidor på vår webbplats, sidvisningar och navigationssökvägar, detaljer om antalet gånger du använder vår webbplats, tidszonsinställningar och annan teknik på de enheter du använder för att komma åt vår webbplats. Vårt analysspårningssystem registrerar denna data och vi behandlar den enbart för att analysera din användning av vår webbplats och andra onlinetjänster, för att administrera och skydda vår verksamhet och webbplats, för att leverera relevant webbplatsinnehåll och annonser till dig och för att förstå effektiviteten av vår reklam. Vår rättsliga grund för denna behandling är våra legitima intressen som i detta fall är att möjliggöra korrekt administration av vår webbplats och vår verksamhet och att växa vår verksamhet och besluta vår marknadsföringsstrategi.
 
-**Marketing Data**
+**Marknadsföringsdata**
 
-Including data about your preferences in receiving marketing from us and our third parties and your communication preferences. We process this data to enable you to partake in our promotions such as competitions, prize draws and free giveaways, to deliver relevant website content and advertisements to you and measure or understand the effectiveness of this advertising. Our lawful ground for this processing is consent and/or our legitimate interests which in this case are to study how customers use our products/services, to develop them, to grow our business and to decide our marketing strategy.
+Inklusive data om dina preferenser för att ta emot marknadsföring från oss och våra tredje parter och dina kommunikationspreferenser. Vi behandlar denna data för att göra det möjligt för dig att delta i våra kampanjer såsom tävlingar, pristävlingar och gratis giveaways, för att leverera relevant webbplatsinnehåll och annonser till dig och mäta eller förstå effektiviteten av denna reklam. Vår rättsliga grund för denna behandling är samtycke och/eller våra legitima intressen som i detta fall är att studera hur kunder använder våra produkter/tjänster, för att utveckla dem, för att växa vår verksamhet och besluta vår marknadsföringsstrategi.
 
-We may use User Data, Technical Data and Marketing Data to deliver relevant website content and advertisements to you (including Facebook adverts or other display advertisements) and to measure or understand the effectiveness of the advertising we serve you. Our lawful ground for this processing is legitimate interests which is to grow our business. We may also use such data to send other marketing communications to you. Our lawful ground for this processing is either consent or legitimate interests (namely to grow our business).
+Vi kan använda Användardata, Teknisk data och Marknadsföringsdata för att leverera relevant webbplatsinnehåll och annonser till dig (inklusive Facebook-annonser eller andra displayannonser) och för att mäta eller förstå effektiviteten av den reklam vi serverar dig. Vår rättsliga grund för denna behandling är legitima intressen vilket är att växa vår verksamhet. Vi kan också använda sådan data för att skicka andra marknadsföringskommunikationer till dig. Vår rättsliga grund för denna behandling är antingen samtycke eller legitima intressen (nämligen att växa vår verksamhet).
 
-Never do we collect any sensitive data about you. Sensitive data means any data that includes details about your race or ethnicity, religious or philosophical beliefs, sex life, sexual orientation, political opinions, trade union membership, information about your health and genetic and biometric data or criminal convictions and offences.
+Vi samlar aldrig in känsliga uppgifter om dig. Känsliga uppgifter betyder alla uppgifter som inkluderar detaljer om din ras eller etnicitet, religiösa eller filosofiska övertygelser, sexliv, sexuell läggning, politiska åsikter, fackföreningsmedlemskap, information om din hälsa och genetiska och biometriska data eller brottmålsdomar och brott.
 
-By law we are required to collect personal data from you, and under the terms of the contract between us it is stated that if you do not provide us with that data when requested, we may not be able to fulfill our side of the contract (e.g, to provide products or services to you). If this happens you will be notified as soon as possible with the reason.
+Enligt lag är vi skyldiga att samla in personuppgifter från dig, och enligt villkoren i avtalet mellan oss anges det att om du inte tillhandahåller oss dessa uppgifter när det begärs, kanske vi inte kan uppfylla vår del av avtalet (t.ex. att tillhandahålla produkter eller tjänster till dig). Om detta händer kommer du att meddelas så snart som möjligt med anledningen.
 
-We will only use your personal data for a purpose it was collected for or a reasonably compatible purpose if necessary. For more information on this please email us at support@mallorcacycleshuttle.com. In case we need to use your details for an unrelated new purpose we will let you know and explain the legal grounds for processing.
+Vi kommer endast att använda dina personuppgifter för ett ändamål de samlades in för eller ett rimligt kompatibelt ändamål om det är nödvändigt. För mer information om detta, vänligen e-posta oss på support@mallorcacycleshuttle.com. Om vi behöver använda dina uppgifter för ett orelaterat nytt ändamål kommer vi att meddela dig och förklara de rättsliga grunderna för behandlingen.
 
-The only reason that we would ever process your personal data without your consent would be if we are required to by law. We do not carry out automated decision making or any type of automated profiling.
+Den enda anledningen till att vi någonsin skulle behandla dina personuppgifter utan ditt samtycke skulle vara om vi är skyldiga att göra det enligt lag. Vi utför inte automatiserat beslutsfattande eller någon typ av automatiserad profilering.
 
-## 3. How we collect your personal data
+## 3. Hur vi samlar in dina personuppgifter
 
-Some of your personal data is provided to us by you directly, by filling in forms on our site or by sending us emails. We also might automatically collect certain data from you as you use our website by using cookies and similar technologies. (Please see our cookie policy for more details about this)
+En del av dina personuppgifter tillhandahålls direkt till oss av dig, genom att fylla i formulär på vår webbplats eller genom att skicka e-post till oss. Vi kan också automatiskt samla in vissa uppgifter från dig när du använder vår webbplats genom att använda cookies och liknande teknologier. (Vänligen se vår cookiepolicy för mer information om detta)
 
-We may receive data from third parties such as analytics providers such as Google based outside the EU, advertising networks such as Facebook based outside the EU, such as search information providers such as Google based outside the EU, providers of technical, payment and delivery services, such as data brokers or aggregators.
+Vi kan ta emot data från tredje parter såsom analysleverantörer som Google baserade utanför EU, annonsnätverk som Facebook baserade utanför EU, såsom sökinformationsleverantörer som Google baserade utanför EU, leverantörer av tekniska, betalnings- och leveranstjänster, såsom datamäklare eller aggregatorer.
 
-## 4. Marketing communications
+## 4. Marknadsföringskommunikation
 
-Our legal reason for processing your personal data is to send you marketing communications (either due to your consent or our legitimate interests – specifically to grow and improve our business).
+Vår rättsliga grund för att behandla dina personuppgifter är att skicka marknadsföringskommunikation till dig (antingen på grund av ditt samtycke eller våra legitima intressen – specifikt att växa och förbättra vår verksamhet).
 
-According to the Privacy and Electronic Communications Regulations, we may send you marketing communications from us if (i) you made a purchase or asked for information from us about our goods or services or (ii) you agreed to receive marketing communications and in each case you have not opted out of receiving such communications since. Under these regulations, if you are a limited company, we may send you marketing emails without your consent. However you can still opt out of receiving marketing emails from us at any time.
+Enligt integritets- och elektronisk kommunikationsförordningen kan vi skicka marknadsföringskommunikation från oss om (i) du gjorde ett köp eller frågade efter information från oss om våra varor eller tjänster eller (ii) du samtyckte till att ta emot marknadsföringskommunikation och i varje fall har du inte valt bort att ta emot sådan kommunikation sedan dess. Enligt dessa förordningar, om du är ett aktiebolag, kan vi skicka marknadsförings-e-post till dig utan ditt samtycke. Du kan dock fortfarande välja bort att ta emot marknadsförings-e-post från oss när som helst.
 
-We will always get your consent before we share any of your personal data with any third party for their own marketing purpose. You can ask us or third parties to stop sending you marketing messages at any time by following the opt-out links on any marketing message sent to you or by emailing us at support@mallorcacycleshuttle.com at any time.
+Vi kommer alltid att få ditt samtycke innan vi delar något av dina personuppgifter med någon tredje part för deras egna marknadsföringsändamål. Du kan be oss eller tredje parter att sluta skicka marknadsföringsmeddelanden till dig när som helst genom att följa opt-out-länkarna på något marknadsföringsmeddelande som skickas till dig eller genom att e-posta oss på support@mallorcacycleshuttle.com när som helst.
 
-If you decide not to receive any marketing communications this does not mean that we will not receive your personal data provided as a result of other transactions, such as purchases.
+Om du beslutar att inte ta emot marknadsföringskommunikation betyder detta inte att vi inte kommer att ta emot dina personuppgifter som tillhandahålls till följd av andra transaktioner, såsom köp.
 
-## 5. Disclosure of your personal data
+## 5. Utlämnande av dina personuppgifter
 
-We may have to share your personal data with the parties set out below:
+Vi kan behöva dela dina personuppgifter med de parter som anges nedan:
 
-- Service providers who provide IT, marketing and system administration services.
-- Professional advisers including lawyers, bankers, auditors and insurers
-- Government bodies that require us to report processing activities.
-- Third parties to whom we sell, transfer, or merge parts of our business or our assets.
+- Tjänsteleverantörer som tillhandahåller IT-, marknadsförings- och systemadministrationstjänster.
+- Professionella rådgivare inklusive advokater, bankirer, revisorer och försäkringsgivare
+- Statliga organ som kräver att vi rapporterar behandlingsaktiviteter.
+- Tredje parter till vilka vi säljer, överför eller slår samman delar av vår verksamhet eller våra tillgångar.
 
-Strictly, we require all third parties to whom we transfer your data to respect the security of your personal data and to treat it in accordance with the law. We only allow such third parties to process your personal data for specified purposes and in accordance with our strict instructions.
+Strikt kräver vi att alla tredje parter till vilka vi överför dina uppgifter respekterar säkerheten för dina personuppgifter och behandlar dem i enlighet med lagen. Vi tillåter endast sådana tredje parter att behandla dina personuppgifter för specificerade ändamål och i enlighet med våra strikta instruktioner.
 
-## 6. International transfers
+## 6. Internationella överföringar
 
-Any countries that are outside of the European Economic Area (EEA) do not always offer the same levels of protection to your personal data, so European law has prohibited transfers of personal data outside of the EEA unless the transfer meets certain criteria.
+Länder som ligger utanför Europeiska ekonomiska samarbetsområdet (EES) erbjuder inte alltid samma skyddsnivåer för dina personuppgifter, så europeisk lag har förbjudit överföringar av personuppgifter utanför EES om inte överföringen uppfyller vissa kriterier.
 
-Some of our third party service providers are based outside the European Economic Area (EEA) so their processing of your personal data will involve a transfer of data outside the EEA.
+Vissa av våra tredjepartsleverantörer är baserade utanför Europeiska ekonomiska samarbetsområdet (EES) så deras behandling av dina personuppgifter kommer att innebära en överföring av data utanför EES.
 
-Whenever we transfer your personal data out of the EEA, we do our best to ensure a similar degree of security of data by ensuring at least one of the following safeguards is in place:
+När vi överför dina personuppgifter utanför EES gör vi vårt bästa för att säkerställa en liknande grad av säkerhet för data genom att säkerställa att minst en av följande skyddsåtgärder finns på plats:
 
-We will only transfer your personal data to countries that the European Commission have approved as providing an adequate level of protection for personal data by. For countries where we use certain service providers, we may use specific contracts or codes of conduct or certification mechanisms approved by the European Commission which give personal data the same protection it has in Europe. Or, if we use US-based providers that are part of EU-US Privacy Shield, we may transfer data to them, as they have equivalent safeguards in place.
+Vi kommer endast att överföra dina personuppgifter till länder som Europeiska kommissionen har godkänt som tillhandahållande en adekvat skyddsnivå för personuppgifter. För länder där vi använder vissa tjänsteleverantörer kan vi använda specifika kontrakt eller uppförandekoder eller certifieringsmekanismer godkända av Europeiska kommissionen som ger personuppgifter samma skydd som den har i Europa. Eller, om vi använder USA-baserade leverantörer som är en del av EU-US Privacy Shield, kan vi överföra data till dem, eftersom de har likvärdiga skyddsåtgärder på plats.
 
-If none of the above safeguards is available, we may request your explicit consent to the specific transfer. You will have the right to withdraw this consent at any time.
+Om ingen av ovanstående skyddsåtgärder är tillgängliga kan vi begära ditt uttryckliga samtycke till den specifika överföringen. Du kommer att ha rätt att återkalla detta samtycke när som helst.
 
-## 7. Data Retention
+## 7. Datalagring
 
-We will only keep your personal data for as long as necessary in order to fulfil the purposes we collected it for, including for the purposes of satisfying any legal, accounting, or reporting requirements.
+Vi kommer endast att behålla dina personuppgifter så länge som nödvändigt för att uppfylla de ändamål vi samlade in dem för, inklusive för ändamål att tillgodose eventuella juridiska, redovisnings- eller rapporteringskrav.
 
-To decide what the correct time is to store the data for, we always look at its amount, nature and sensitivity, potential risk of harm from unauthorised use or disclosure, the processing purposes, if these can be achieved by other means and legal requirements.
+För att bestämma vad som är den korrekta tiden att lagra uppgifterna för, tittar vi alltid på dess mängd, natur och känslighet, potentiell risk för skada från obehörig användning eller utlämnande, behandlingsändamålen, om dessa kan uppnås på andra sätt och juridiska krav.
 
-We are required by law to keep basic information about our customers for tax purposes (including Contact, Identity, Financial and Transaction Data) for six years after they stop being customers.
+Vi är enligt lag skyldiga att behålla grundläggande information om våra kunder för skattesyfte (inklusive Kontakt-, Identitets-, Finansiell- och Transaktionsdata) i sex år efter att de slutar vara kunder.
 
-In a few circumstances we may anonymise your personal data for research or statistical purposes in which case we may use this information indefinitely without further notice to you.
+I några få fall kan vi anonymisera dina personuppgifter för forsknings- eller statistikändamål i vilket fall vi kan använda denna information på obestämd tid utan ytterligare meddelande till dig.
 
-## 8. Your legal rights
+## 8. Dina lagliga rättigheter
 
-Under the data protection law you have rights over your own personal data, including the right to request access, correction, erasure, restriction, transfer, to object to processing, to portability of data and (where the lawful ground of processing is consent) to withdraw consent.
+Enligt dataskyddslagen har du rättigheter över dina egna personuppgifter, inklusive rätten att begära tillgång, rättelse, radering, begränsning, överföring, att invända mot behandling, till dataportabilitet och (där den rättsliga grunden för behandling är samtycke) att återkalla samtycke.
 
-If you wish to exercise any of the rights set out above, please email us at support@mallorcacycleshuttle.com.
+Om du vill utöva någon av de rättigheter som anges ovan, vänligen e-posta oss på support@mallorcacycleshuttle.com.
 
-You will not have to pay a fee to access your personal data (or to exercise any of the other rights). However, we may charge a reasonable fee if your request is clearly unfounded, repetitive or excessive or refuse to comply with your request in these circumstances.
+Du behöver inte betala en avgift för att få tillgång till dina personuppgifter (eller för att utöva någon av de andra rättigheterna). Vi kan dock ta ut en rimlig avgift om din begäran är uppenbart ogrundad, repetitiv eller överdriven eller vägra att följa din begäran under dessa omständigheter.
 
-We may need to request specific information from you to help us confirm your identity and ensure your right to access your personal data (or to exercise any of your other rights). This is a security measure to ensure that personal data is not disclosed to any person who has no right to receive it. We may also contact you to ask you for further information in relation to your request to speed up our response.
+Vi kan behöva begära specifik information från dig för att hjälpa oss bekräfta din identitet och säkerställa din rätt att få tillgång till dina personuppgifter (eller att utöva någon av dina andra rättigheter). Detta är en säkerhetsåtgärd för att säkerställa att personuppgifter inte lämnas ut till någon person som inte har rätt att ta emot dem. Vi kan också kontakta dig för att be dig om ytterligare information i samband med din begäran för att påskynda vårt svar.
 
-We try to respond to all legitimate requests within one month. Occasionally it may take us longer than a month if your request is particularly complex or you have made a number of requests. In this case, we will notify you.
+Vi försöker svara på alla legitima begäranden inom en månad. Ibland kan det ta oss längre tid än en månad om din begäran är särskilt komplex eller du har gjort ett antal begäranden. I detta fall kommer vi att meddela dig.
 
-If you are unhappy with any aspect of how we collect and use your data, you have the right to lodge a complaint with the Spanish Data Protection Authority – the Agencia Española de Protección de Datos (AEPD) – www.aepd.es We would be grateful if you would contact us first if you do have a complaint so that we can try to resolve it for you.
+Om du är missnöjd med något aspekt av hur vi samlar in och använder dina data har du rätt att lämna in ett klagomål till den spanska dataskyddsmyndigheten – Agencia Española de Protección de Datos (AEPD) – www.aepd.es Vi skulle vara tacksamma om du skulle kontakta oss först om du har ett klagomål så att vi kan försöka lösa det för dig.
 
-## 9. Third-Party Links
+## 9. Tredjepartslänkar
 
-It is possible that our website may include links to third-party websites, plug-ins and applications. Clicking on those links or enabling those connections may allow third parties to collect or share data about you. We do not control these third-party websites and are not responsible for their privacy statements. When you leave our website, we encourage you to read the privacy notice of every website you visit.
+Det är möjligt att vår webbplats kan innehålla länkar till tredjepartswebbplatser, plugins och applikationer. Att klicka på dessa länkar eller möjliggöra dessa anslutningar kan tillåta tredje parter att samla in eller dela data om dig. Vi kontrollerar inte dessa tredjepartswebbplatser och är inte ansvariga för deras integritetsuttalanden. När du lämnar vår webbplats uppmanar vi dig att läsa integritetsnotisen för varje webbplats du besöker.
 
 ## 10. Cookies
 
-If you wish, it is always in your control to set your browser to refuse all or some browser cookies, or to alert you when websites set or access cookies. If you disable or refuse cookies, please note that some parts of this website may become inaccessible or not function properly. For more information about the cookies we use, please see our cookie policy.
+Om du vill är det alltid i din kontroll att ställa in din webbläsare för att vägra alla eller vissa webbläsarcookies, eller för att varna dig när webbplatser ställer in eller får åtkomst till cookies. Om du inaktiverar eller vägrar cookies, observera att vissa delar av denna webbplats kan bli otillgängliga eller inte fungera korrekt. För mer information om de cookies vi använder, vänligen se vår cookiepolicy.
 
-## 11. Changes to our privacy policy
+## 11. Ändringar av vår integritetspolicy
 
-Any changes we may make to our privacy policy in the future will be posted on this page and, where appropriate, notified to you by e-mail or when you next log onto our site. The new terms may be displayed on-screen and you may be required to read and accept them to continue your use of our site.
+Alla ändringar vi kan göra av vår integritetspolicy i framtiden kommer att publiceras på denna sida och, där det är lämpligt, meddelas till dig via e-post eller när du nästa loggar in på vår webbplats. De nya villkoren kan visas på skärmen och du kan behöva läsa och acceptera dem för att fortsätta din användning av vår webbplats.

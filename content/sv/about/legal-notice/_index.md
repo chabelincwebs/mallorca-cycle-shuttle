@@ -1,267 +1,267 @@
-﻿---
-title: "Legal Notice"
+---
+title: "Rättsligt Meddelande"
 translationKey: legal-notice
 ---
 
-**Company Name:** Autocares Devesa SL
-**Tax Identification Number:** CIF B08359606
-**Physical Address:** Calle Fuster 36 a, 07460 Pollença
-**Contact Information:** admin@mallorcacycleshuttle.com
+**Företagsnamn:** Autocares Devesa SL
+**Skatteidentifikationsnummer:** CIF B08359606
+**Fysisk Adress:** Calle Fuster 36 a, 07460 Pollença
+**Kontaktinformation:** admin@mallorcacycleshuttle.com
 
-## General Conditions of Use
+## Allmänna Användningsvillkor
 
-### Details of website and contact
+### Detaljer om webbplatsen och kontakt
 
-mallorcacycleshuttle.co.uk, mallorcacycleshuttle.com, bikeitback.com and mallorcabicyclerescue.com are websites operated by Autocares Devesa SL ("we" or "us"). To contact us, please email admin@mallorcacycleshuttle.com.
+mallorcacycleshuttle.co.uk, mallorcacycleshuttle.com, bikeitback.com och mallorcabicyclerescue.com är webbplatser som drivs av Autocares Devesa SL ("vi" eller "oss"). För att kontakta oss, vänligen e-posta admin@mallorcacycleshuttle.com.
 
-### Terms and conditions of using our site
+### Villkor för användning av vår webbplats
 
-By using our site, you accept and confirm that that:
+Genom att använda vår webbplats accepterar och bekräftar du att:
 
-You have read and agree to these Terms of Website Use (including without limitation the Release); and you agree to comply with them. If you do not agree to these terms, you must not use our site. It is recommended that you print a copy of these terms for your own future reference.
+Du har läst och godkänner dessa Villkor för Webbplatsanvändning (inklusive utan begränsning Ansvarsfrihet); och du samtycker till att följa dem. Om du inte godkänner dessa villkor får du inte använda vår webbplats. Det rekommenderas att du skriver ut en kopia av dessa villkor för din egen framtida referens.
 
-### Other terms that may apply to you
+### Andra villkor som kan gälla dig
 
-These Terms of Website Use refer to the following additional terms, which also apply to your use of our site:
+Dessa Villkor för Webbplatsanvändning hänvisar till följande ytterligare villkor, som också gäller för din användning av vår webbplats:
 
-Our Privacy Policy, which sets out the terms on which we process any personal data we collect from you, or that you provide to us. By using our site, you consent to such processing and you warrant that all data provided by you is accurate.
+Vår Integritetspolicy, som anger villkoren för hur vi behandlar personuppgifter som vi samlar in från dig, eller som du tillhandahåller oss. Genom att använda vår webbplats samtycker du till sådan behandling och du garanterar att alla uppgifter som du tillhandahåller är korrekta.
 
-Our Cookie Policy, which sets out information about the cookies on our site.
+Vår Cookiepolicy, som anger information om cookies på vår webbplats.
 
-### These terms are subject to change
+### Dessa villkor kan ändras
 
-Our terms are amended every so often. Each time you use our site, please check these terms beforehand to ensure you understand the terms that apply at that time, as they are legally binding on you. Some of the provisions contained in these Terms of Website Use may also be superseded by provisions or notices published elsewhere on our site.
+Våra villkor ändras då och då. Varje gång du använder vår webbplats, vänligen kontrollera dessa villkor i förväg för att säkerställa att du förstår de villkor som gäller vid den tidpunkten, eftersom de är juridiskt bindande för dig. Några av bestämmelserna i dessa Villkor för Webbplatsanvändning kan också ersättas av bestämmelser eller meddelanden som publicerats någon annanstans på vår webbplats.
 
-### Our site is subject to change
+### Vår webbplats kan ändras
 
-We may update and change our site from time to time to reflect changes to our products and services, our users' needs and our business priorities. Where possible, we will try to give you reasonable notice of any major changes (for the avoidance of doubt and without limitation, this does not include updates to content).
+Vi kan uppdatera och ändra vår webbplats från tid till annan för att återspegla ändringar av våra produkter och tjänster, våra användares behov och våra affärsprioriteringar. Där det är möjligt kommer vi att försöka ge dig rimligt meddelande om eventuella större ändringar (för att undvika tvivel och utan begränsning, detta inkluderar inte uppdateringar av innehåll).
 
-### We might suspend, withdraw or restrict our site
+### Vi kan stänga av, ta bort eller begränsa vår webbplats
 
-Our site is made available free of charge. We do not guarantee that our site, or any content on it, will always be available or be uninterrupted.
+Vår webbplats görs tillgänglig utan kostnad. Vi garanterar inte att vår webbplats, eller något innehåll på den, alltid kommer att vara tillgänglig eller oavbruten.
 
-We may suspend or withdraw or restrict the availability of all or any part of our site for business and operational reasons. Where possible, we will try to give you reasonable notice of any suspension or withdrawal (for the avoidance of doubt and without limitation, this does not include suspension or withdrawal of content).
+Vi kan stänga av eller ta bort eller begränsa tillgängligheten av hela eller delar av vår webbplats av affärsmässiga och operativa skäl. Där det är möjligt kommer vi att försöka ge dig rimligt meddelande om eventuell avstängning eller återkallande (för att undvika tvivel och utan begränsning, detta inkluderar inte avstängning eller återkallande av innehåll).
 
-You are also responsible for ensuring that all persons who access our site through your internet connection are aware of these Terms of Website Use and other applicable terms and conditions, and that they comply with them.
+Du är också ansvarig för att säkerställa att alla personer som får tillgång till vår webbplats genom din internetanslutning är medvetna om dessa Villkor för Webbplatsanvändning och andra tillämpliga villkor, och att de följer dem.
 
-### Our site is directed at UK, Spanish and German users
+### Vår webbplats riktar sig till brittiska, spanska och tyska användare
 
-Our site is mainly directed to people residing in the United Kingdom, Spain and Germany. We do not claim that content available on or through our site is appropriate for use or available in other locations.
+Vår webbplats riktar sig främst till personer bosatta i Storbritannien, Spanien och Tyskland. Vi gör inte anspråk på att innehåll som är tillgängligt på eller genom vår webbplats är lämpligt för användning eller tillgängligt på andra platser.
 
-### Keep your account details safe and secure
+### Håll dina kontouppgifter säkra
 
-If you choose, or you are provided with, a user identification code, password or any other piece of information as part of our security procedures, you must treat such information as confidential. You must not disclose it to any third party.
+Om du väljer, eller du förses med, en användaridentifieringskod, lösenord eller annan information som en del av våra säkerhetsförfaranden, måste du behandla sådan information som konfidentiell. Du får inte lämna ut den till någon tredje part.
 
-We have the right to disable any user identification code or password, whether chosen by you or allocated by us, at any time, if in our reasonable opinion you have failed to comply with any of the provisions of these Terms of Website Use.
+Vi har rätt att inaktivera någon användaridentifieringskod eller lösenord, oavsett om det valts av dig eller tilldelats av oss, när som helst, om vi enligt vår rimliga uppfattning anser att du har misslyckats med att följa någon av bestämmelserna i dessa Villkor för Webbplatsanvändning.
 
-If you know or suspect that anyone other than you knows your user identification code or password, you must promptly notify us at our email address, admin@mallorcacycleshuttle.com.
+Om du vet eller misstänker att någon annan än du känner till din användaridentifieringskod eller lösenord måste du omgående meddela oss på vår e-postadress, admin@mallorcacycleshuttle.com.
 
-### The ways in which you can use our site
+### Hur du kan använda vår webbplats
 
-You may use our site only legally. You may not use our site illegally for the following purposes:
+Du får endast använda vår webbplats lagligt. Du får inte använda vår webbplats olagligt för följande ändamål:
 
-- In any way that breaches any applicable local, national or international law or regulation.
-- In any way that is unlawful or fraudulent, or has any unlawful or fraudulent purpose or effect.
-- For the purpose of harming or attempting to harm minors in any way.
-- To send, knowingly receive, upload, download, use or re-use any material which does not comply with our Content Standards which are set out below.
-- To transmit, or procure the sending of, any unsolicited or unauthorised advertising or promotional material or any other form of similar solicitation (spam).
-- To knowingly transmit any data, send or upload any material that contains viruses, Trojan horses, worms, time bombs, keystroke loggers, spyware, adware or any other harmful programs or similar computer code designed to adversely affect the operation of any computer software or hardware.
+- På något sätt som bryter mot någon tillämplig lokal, nationell eller internationell lag eller förordning.
+- På något sätt som är olagligt eller bedrägligt, eller har något olagligt eller bedrägligt syfte eller effekt.
+- I syfte att skada eller försöka skada minderåriga på något sätt.
+- För att skicka, medvetet ta emot, ladda upp, ladda ner, använda eller återanvända något material som inte överensstämmer med våra Innehållsstandarder som anges nedan.
+- För att överföra, eller tillhandahålla sändning av, oönskad eller obehörig reklam eller marknadsföringsmaterial eller någon annan form av liknande uppvädring (spam).
+- För att medvetet överföra någon data, skicka eller ladda upp något material som innehåller virus, trojanska hästar, maskar, tidsinställda bomber, tangenttryckningsloggare, spionprogram, adware eller andra skadliga program eller liknande datorkod utformad för att negativt påverka driften av någon datorprogramvara eller hårdvara.
 
-You also agree and confirm that:
+Du samtycker också till och bekräftar att:
 
-- Not to reproduce, duplicate copy or re-sell any part of our site in contravention of the provisions of our Terms of Website Use.
-- Not to access without authority, interfere with, damage or disrupt any part of our site; any equipment or network on which our site is stored; any software used in the provision of our site; or any equipment or network or software owned or used by any third party.
+- Inte reproducera, duplicera, kopiera eller återförsälja någon del av vår webbplats i strid med bestämmelserna i våra Villkor för Webbplatsanvändning.
+- Inte få åtkomst utan auktorisering, störa, skada eller avbryta någon del av vår webbplats; någon utrustning eller nätverk på vilket vår webbplats lagras; någon programvara som används i tillhandahållandet av vår webbplats; eller någon utrustning eller nätverk eller programvara som ägs eller används av någon tredje part.
 
-### How you may use material on our site
+### Hur du kan använda material på vår webbplats
 
-We are the owner or the licensee of all intellectual property rights in our site, and in the material published on it. Those works are protected by copyright laws and treaties around the world. All such rights are reserved.
+Vi är ägare eller licenstagare av alla immateriella rättigheter på vår webbplats och i materialet som publiceras på den. Dessa verk skyddas av upphovsrättslagar och fördrag runt om i världen. Alla sådana rättigheter är förbehållna.
 
-You may print off one copy and may download extracts, of any page(s) from our site for your personal use and you may draw the attention of others within your organisation to content posted on our site.
+Du kan skriva ut en kopia och kan ladda ner utdrag av vilken sida som helst från vår webbplats för ditt personliga bruk och du kan uppmärksamma andra inom din organisation på innehåll som publicerats på vår webbplats.
 
-You must not modify the paper or digital copies of any materials you have printed off or downloaded in any way, and you must not use any illustrations, photographs, video or audio sequences or any graphics separately from any accompanying text.
+Du får inte modifiera pappers- eller digitala kopior av material som du har skrivit ut eller laddat ner på något sätt, och du får inte använda några illustrationer, fotografier, video- eller ljudsekvenser eller någon grafik separat från någon medföljande text.
 
-Our status (and that of any identified contributors) as the authors of content on our site must always be acknowledged.
+Vår status (och den för eventuella identifierade bidragsgivare) som författare till innehåll på vår webbplats måste alltid erkännas.
 
-You must not use any part of the content on our site for commercial purposes without obtaining a licence to do so from us or our licensors. You may not reproduce in any format (including on another website) any part of our site (including content, images, designs, look and feel) without our prior written consent.
+Du får inte använda någon del av innehållet på vår webbplats för kommersiella ändamål utan att erhålla en licens att göra det från oss eller våra licensgivare. Du får inte reproducera i något format (inklusive på en annan webbplats) någon del av vår webbplats (inklusive innehåll, bilder, design, utseende och känsla) utan vårt tidigare skriftliga samtycke.
 
-If you print off, copy or download any part of our site in breach of these Terms of Website Use, your right to use our site will cease immediately and you must, at our option, return or destroy any copies of the materials you have made.
+Om du skriver ut, kopierar eller laddar ner någon del av vår webbplats i strid med dessa Villkor för Webbplatsanvändning, kommer din rätt att använda vår webbplats att upphöra omedelbart och du måste, efter vårt val, returnera eller förstöra alla kopior av materialet som du har gjort.
 
-### You must not rely on the information on our site
+### Du får inte förlita dig på informationen på vår webbplats
 
-The content on our site is provided for general information only. It is not intended to amount to advice on which you should rely. You must obtain professional or specialist advice before taking, or refraining from, any action on the basis of the content on our site.
+Innehållet på vår webbplats tillhandahålls endast för allmän information. Det är inte avsett att utgöra råd som du bör förlita dig på. Du måste inhämta professionell eller specialistråd innan du vidtar, eller avstår från, någon åtgärd baserat på innehållet på vår webbplats.
 
-Although we aim to update the information on our site regularly, we make no representations, warranties or guarantees, whether expressed or implied, that the content on our site is accurate, complete or up to date. Any of the material on our site may be inaccurate or out of date at any given time, and we are under no obligation to update such material.
+Även om vi strävar efter att uppdatera informationen på vår webbplats regelbundet, gör vi inga representationer, garantier eller garantier, vare sig uttryckta eller underförstådda, att innehållet på vår webbplats är korrekt, fullständigt eller uppdaterat. Allt material på vår webbplats kan vara felaktigt eller inaktuellt vid en given tidpunkt, och vi är inte skyldiga att uppdatera sådant material.
 
-We therefore disclaim all liability and responsibility arising from any reliance placed on the information and content on our site by any visitor to the site, or by anyone who may be informed of any of its contents.
+Vi friskriver oss därför från allt ansvar och ansvar som uppstår från något beroende som läggs på informationen och innehållet på vår webbplats av någon besökare på webbplatsen, eller av någon som kan informeras om något av dess innehåll.
 
-You understand that you download from, or otherwise obtain content or services through our site at your own discretion and risk.
+Du förstår att du laddar ner från, eller på annat sätt erhåller innehåll eller tjänster genom vår webbplats på egen risk.
 
-### We will not be held accountable for any user generated content
+### Vi kommer inte att hållas ansvariga för användargenererat innehåll
 
-This website may include information and materials uploaded by other users of the site, including to comments, bulletin boards and chat rooms. This information and these materials have not been verified or approved by us. The views expressed by other users on our site do not represent our views or values.
+Denna webbplats kan innehålla information och material som laddats upp av andra användare av webbplatsen, inklusive kommentarer, anslagstavlor och chattrum. Denna information och dessa material har inte verifierats eller godkänts av oss. De åsikter som uttrycks av andra användare på vår webbplats representerar inte våra åsikter eller värderingar.
 
-If you wish to complain about information and materials uploaded by other users please contact us on admin@mallorcacycleshuttle.com
+Om du vill klaga på information och material som laddats upp av andra användare, vänligen kontakta oss på admin@mallorcacycleshuttle.com
 
-### Loss or damage suffered by you
+### Förlust eller skada som du drabbas av
 
-Please note that we only provide our site for domestic and private use. Without prejudice to that, the following terms apply.
+Observera att vi endast tillhandahåller vår webbplats för inhemsk och privat användning. Utan att det påverkar det, gäller följande villkor.
 
-**Whether you are a consumer or a business user:**
+**Oavsett om du är en konsument eller företagsanvändare:**
 
-- We do not exclude or limit in any way our liability to you where it would be unlawful to do so.
-- Different limitations and exclusions of liability will apply to liability arising as a result of the supply of any products to you, which will be set out in our Terms and Conditions of Supply.
+- Vi utesluter eller begränsar inte på något sätt vårt ansvar gentemot dig där det skulle vara olagligt att göra det.
+- Olika begränsningar och undantag från ansvar kommer att gälla för ansvar som uppstår till följd av leveransen av produkter till dig, vilket kommer att anges i våra Villkor för Leverans.
 
-**If you are a business user:**
+**Om du är en företagsanvändare:**
 
-We exclude all implied conditions, warranties, representations or other terms that may apply to our site or any content on it.
+Vi utesluter alla underförstådda villkor, garantier, representationer eller andra villkor som kan gälla för vår webbplats eller något innehåll på den.
 
-We will not be liable to you for any loss or damage, whether in contract, tort (including negligence), breach of statutory duty, or otherwise, even if foreseeable, arising under or in connection with:
+Vi kommer inte att vara ansvariga gentemot dig för någon förlust eller skada, vare sig i kontrakt, skadestånd (inklusive vårdslöshet), lagstadgad pliktbrott, eller på annat sätt, även om det är förutsägbart, som uppstår under eller i samband med:
 
-- use of, or inability to use, our site; or
-- use of or reliance on any content displayed on our site.
+- användning av, eller oförmåga att använda, vår webbplats; eller
+- användning av eller beroende av något innehåll som visas på vår webbplats.
 
-In particular, we will not be liable for: loss of profits, sales, business, or revenue; business interruption; loss of anticipated savings; loss of business opportunity, goodwill or reputation; or any indirect or consequential loss or damage.
+I synnerhet kommer vi inte att vara ansvariga för: förlust av vinster, försäljning, affärer eller intäkter; affärsavbrott; förlust av förväntade besparingar; förlust av affärsmöjligheter, goodwill eller rykte; eller någon indirekt eller följdskada eller skada.
 
-**If you are a consumer user:**
+**Om du är en konsumentanvändare:**
 
-You agree not to use our site for any commercial or business purposes, and we have no liability to you for any loss of profit, loss of business, business interruption, or loss of business opportunity.
+Du samtycker till att inte använda vår webbplats för några kommersiella eller affärsmässiga ändamål, och vi har inget ansvar gentemot dig för någon förlust av vinst, förlust av affärer, affärsavbrott eller förlust av affärsmöjligheter.
 
-If defective digital content that we have supplied, damages a device or digital content belonging to you and this is caused by our failure to use reasonable care and skill, we will either repair the damage or pay you compensation. However, we will not be liable for damage that you could have avoided by following our advice to apply an update offered to you free of charge or for damage that was caused by you failing to a) correctly follow installation instructions or b) to have in place the minimum system requirements advised by us or c) to have in place suitable virus protection software.
+Om felaktigt digitalt innehåll som vi har levererat skadar en enhet eller digitalt innehåll som tillhör dig och detta orsakas av att vi misslyckades med att använda rimlig omsorg och skicklighet, kommer vi antingen att reparera skadan eller betala dig ersättning. Vi kommer dock inte att vara ansvariga för skador som du kunde ha undvikit genom att följa våra råd att tillämpa en uppdatering som erbjuds dig kostnadsfritt eller för skador som orsakades av att du misslyckades med a) att korrekt följa installationsinstruktioner eller b) att ha minsta systemkrav som vi rekommenderat eller c) att ha lämplig virusskyddsprogramvara på plats.
 
-### Rules about uploading content to our site
+### Regler för att ladda upp innehåll till vår webbplats
 
-Whenever you make use of a feature that allows you to upload content to our site, or to make contact with other users of our site, you must comply with our Content Standards.
+När du använder en funktion som låter dig ladda upp innehåll till vår webbplats, eller att ta kontakt med andra användare av vår webbplats, måste du följa våra Innehållsstandarder.
 
-You warrant that any such contribution does comply with those standards, and you will be liable to us and indemnify us for any breach of that warranty. This means you will be responsible for any loss or damage we suffer as a result of your breach of warranty.
+Du garanterar att ett sådant bidrag överensstämmer med dessa standarder, och du kommer att vara ansvarig gentemot oss och ersätta oss för eventuell överträdelse av den garantin. Detta innebär att du kommer att vara ansvarig för eventuell förlust eller skada vi drabbas av till följd av din överträdelse av garantin.
 
-Any content you upload to our site will be considered non-confidential and non-proprietary, and we have the right to use, copy, modify, adapt, distribute, publish and disclose to third parties any such material for any purpose.
+Allt innehåll du laddar upp till vår webbplats kommer att betraktas som icke-konfidentiellt och icke-proprietärt, och vi har rätt att använda, kopiera, modifiera, anpassa, distribuera, publicera och lämna ut till tredje parter sådant material för vilket ändamål som helst.
 
-We also have the right to disclose your identity to any third party who is claiming that any content posted or uploaded by you to our site constitutes a violation of their intellectual property rights, or of their right to privacy.
+Vi har också rätt att lämna ut din identitet till någon tredje part som hävdar att något innehåll som publicerats eller laddats upp av dig till vår webbplats utgör en överträdelse av deras immateriella rättigheter, eller av deras rätt till integritet.
 
-We will not be responsible, or liable to any third party, for the content or accuracy of any materials posted by you or any other user of our site.
+Vi kommer inte att vara ansvariga, eller ansvariga gentemot någon tredje part, för innehållet eller noggrannheten i något material som publicerats av dig eller någon annan användare av vår webbplats.
 
-We have the right to remove any posting you make on our site if, in our opinion, your post does not comply with these Terms of Website Use including without limitation our Content Standards. You are solely responsible for securing and backing up your content.
+Vi har rätt att ta bort vilket inlägg du gör på vår webbplats om, enligt vår uppfattning, ditt inlägg inte överensstämmer med dessa Villkor för Webbplatsanvändning inklusive utan begränsning våra Innehållsstandarder. Du är ensam ansvarig för att säkra och säkerhetskopiera ditt innehåll.
 
-### Do not introduce viruses to our site; We are not responsible for viruses
+### Införa inte virus på vår webbplats; Vi är inte ansvariga för virus
 
-We do not guarantee that our site, including without limitation .gpx files you download from it, will be secure or free from bugs or viruses. You are responsible for configuring your information technology, computer programmes and platform to access our site. You should use your own virus protection software.
+Vi garanterar inte att vår webbplats, inklusive utan begränsning .gpx-filer du laddar ner från den, kommer att vara säker eller fri från buggar eller virus. Du är ansvarig för att konfigurera din informationsteknik, datorprogram och plattform för att komma åt vår webbplats. Du bör använda din egen virusskyddsprogramvara.
 
-You must not misuse our site by knowingly introducing viruses, trojans, worms, logic bombs or other material that is malicious or technologically harmful. You must not attempt to gain unauthorised access to our site, the server on which our site is stored or any server, computer or database connected to our site. You must not attack our site via a denial-of-service attack or a distributed denial-of service attack.
+Du får inte missbruka vår webbplats genom att medvetet införa virus, trojaner, maskar, logiska bomber eller annat material som är skadligt eller tekniskt skadligt. Du får inte försöka få obehörig åtkomst till vår webbplats, servern på vilken vår webbplats lagras eller någon server, dator eller databas som är ansluten till vår webbplats. Du får inte attackera vår webbplats via en överbelastningsattack eller en distribuerad överbelastningsattack.
 
-By breaching this provision, you would commit a criminal offence under the Computer Misuse Act 1990. We will report any such breach to the relevant law enforcement authorities and we will co-operate with those authorities by disclosing your identity to them. In the event of such a breach, your right to use our site will cease immediately.
+Genom att bryta mot denna bestämmelse skulle du begå ett brott enligt Computer Misuse Act 1990. Vi kommer att rapportera en sådan överträdelse till relevanta brottsbekämpande myndigheter och vi kommer att samarbeta med dessa myndigheter genom att lämna ut din identitet till dem. I händelse av en sådan överträdelse kommer din rätt att använda vår webbplats att upphöra omedelbart.
 
-### Linking to our site – rules
+### Länkning till vår webbplats – regler
 
-You may link to our home page, provided you do so in a way that is fair and legal and does not damage our reputation or take advantage of it.
+Du kan länka till vår startsida, förutsatt att du gör det på ett sätt som är rättvist och lagligt och inte skadar vårt rykte eller drar fördel av det.
 
-You must not establish a link in such a way as to suggest any form of association, approval or endorsement on our part where none exists.
+Du får inte etablera en länk på ett sådant sätt att det antyder någon form av association, godkännande eller stöd från vår sida där inget sådant finns.
 
-You must not establish a link to our site in any website that is not owned by you.
+Du får inte etablera en länk till vår webbplats på någon webbplats som inte ägs av dig.
 
-Our site must not be framed on any other site, nor may you create a link to any part of our site other than the home page.
+Vår webbplats får inte ramas in på någon annan webbplats, och du får inte skapa en länk till någon del av vår webbplats förutom startsidan.
 
-We reserve the right to withdraw linking permission without notice.
+Vi förbehåller oss rätten att återkalla länkningstillstånd utan föregående meddelande.
 
-The website in which you are linking must comply in all respects with the Content Standards.
+Webbplatsen som du länkar till måste överensstämma i alla avseenden med Innehållsstandarderna.
 
-If you wish to link to or make any use of content on our site other than that set out above, please contact admin@mallorcacycleshuttle.com.
+Om du vill länka till eller använda innehåll på vår webbplats på annat sätt än vad som anges ovan, vänligen kontakta admin@mallorcacycleshuttle.com.
 
-### We are not responsible for websites we link to
+### Vi är inte ansvariga för webbplatser vi länkar till
 
-Where our site contains links to other sites and resources provided by third parties, these links are provided for your information only. Such links should not be interpreted as approval by us of those linked websites or information you may obtain from them.
+Där vår webbplats innehåller länkar till andra webbplatser och resurser som tillhandahålls av tredje parter, tillhandahålls dessa länkar endast för din information. Sådana länkar bör inte tolkas som ett godkännande av oss av dessa länkade webbplatser eller information du kan erhålla från dem.
 
-We have no control over the contents of those sites or resources.
+Vi har ingen kontroll över innehållet på dessa webbplatser eller resurser.
 
-### Operating interactive services
+### Drift av interaktiva tjänster
 
-We may from time to time provide interactive services on our site, including, without limitation:
+Vi kan då och då tillhandahålla interaktiva tjänster på vår webbplats, inklusive, utan begränsning:
 
-- Allowing users to comment on blog posts, articles and guides.
-- Allowing users to submit blog posts, articles and guides to the site.
+- Tillåta användare att kommentera blogginlägg, artiklar och guider.
+- Tillåta användare att skicka in blogginlägg, artiklar och guider till webbplatsen.
 
-Where we do provide any interactive service, we will provide clear information to you about the kind of service offered, if it is moderated and what form of moderation is used (including whether it is human or technical).
+Där vi tillhandahåller någon interaktiv tjänst kommer vi att tillhandahålla tydlig information till dig om vilken typ av tjänst som erbjuds, om den är modererad och vilken form av moderering som används (inklusive om det är mänsklig eller teknisk).
 
-We will do our best to assess any possible risks for users (and in particular, for children) from third parties when they use any interactive service provided on our site, and we will decide in each case whether it is appropriate to use moderation of the relevant service (including what kind of moderation to use) in the light of those risks. However, we are under no obligation to oversee, monitor or moderate any interactive service we provide on our site, and we expressly exclude our liability for any loss or damage arising from the use of any interactive service by a user in contravention of our Content Standards, whether the service is moderated or not.
+Vi kommer att göra vårt bästa för att bedöma eventuella möjliga risker för användare (och i synnerhet för barn) från tredje parter när de använder någon interaktiv tjänst som tillhandahålls på vår webbplats, och vi kommer att besluta i varje fall om det är lämpligt att använda moderering av den relevanta tjänsten (inklusive vilken typ av moderering som ska användas) mot bakgrund av dessa risker. Vi är dock inte skyldiga att övervaka, bevaka eller moderera någon interaktiv tjänst vi tillhandahåller på vår webbplats, och vi uttryckligen utesluter vårt ansvar för eventuell förlust eller skada som uppstår från användningen av någon interaktiv tjänst av en användare i strid med våra Innehållsstandarder, oavsett om tjänsten är modererad eller inte.
 
-The use of any of our interactive services by a minor is subject to the consent of their parent or guardian. We advise parents who permit their children to use an interactive service that it is important that they communicate with their children about their safety online, as moderation is not foolproof. Minors who are using any interactive service should be made aware of the potential risks to them.
+Användningen av någon av våra interaktiva tjänster av en minderårig är föremål för samtycke från deras förälder eller vårdnadshavare. Vi råder föräldrar som tillåter sina barn att använda en interaktiv tjänst att det är viktigt att de kommunicerar med sina barn om deras säkerhet online, eftersom moderering inte är foolsäker. Minderåriga som använder någon interaktiv tjänst bör göras medvetna om de potentiella riskerna för dem.
 
-Where we do moderate an interactive service, we will normally provide you with a means of contacting the moderator, should a concern or difficulty arise.
+Där vi modererar en interaktiv tjänst kommer vi normalt att förse dig med ett sätt att kontakta moderatorn, om ett problem eller en svårighet uppstår.
 
-### Rules for user contributed content
+### Regler för användarbidrag
 
-The following content standards apply to any and all material which you contribute to our site ("contributions"), and to any interactive services associated with it ("Content Standards").
+Följande innehållsstandarder gäller för allt material som du bidrar med till vår webbplats ("bidrag"), och för alla interaktiva tjänster associerade med den ("Innehållsstandarder").
 
-You must comply with the spirit and the letter of the following standards. The standards apply to each part of any contribution as well as to its whole.
+Du måste följa andan och bokstaven i följande standarder. Standarderna gäller för varje del av ett bidrag såväl som för dess helhet.
 
-**Contributions must:**
+**Bidrag måste:**
 
-- Be accurate (where they state facts).
-- Be genuinely held (where they state opinions).
-- Comply with applicable law in the UK and in any country from which they are posted.
+- Vara korrekta (där de anger fakta).
+- Vara genuint hållna (där de anger åsikter).
+- Överensstämma med tillämplig lag i Storbritannien och i alla länder från vilka de publiceras.
 
-**Contributions must not:**
+**Bidrag får inte:**
 
-- Contain any material which is defamatory of any person.
-- Contain any material which is obscene, offensive, hateful or inflammatory.
-- Promote sexually explicit material.
-- Promote violence.
-- Promote discrimination based on race, sex, religion, nationality, disability, sexual orientation or age.
-- Infringe any copyright, database right or trade mark of any other person.
-- Be likely to deceive any person.
-- Be made in breach of any legal duty owed to a third party, such as a contractual duty or a duty of confidence.
-- Promote any illegal activity.
-- Be threatening, abuse or invade another's privacy, or cause annoyance, inconvenience or needless anxiety.
-- Be likely to harass, upset, embarrass, alarm or annoy any other person.
-- Be used to impersonate any person, or to misrepresent your identity or affiliation with any person.
-- Give the impression that they emanate from us, if this is not the case.
-- Advocate, promote or assist any unlawful act such as (by way of example only) copyright infringement or computer misuse.
+- Innehålla något material som är ärekränkande för någon person.
+- Innehålla något material som är obscent, stötande, hatiskt eller inflammatoriskt.
+- Främja sexuellt explicit material.
+- Främja våld.
+- Främja diskriminering baserad på ras, kön, religion, nationalitet, funktionshinder, sexuell läggning eller ålder.
+- Göra intrång i någon upphovsrätt, databasrätt eller varumärke som tillhör någon annan person.
+- Vara benägna att lura någon person.
+- Göras i strid med någon juridisk skyldighet gentemot en tredje part, såsom en avtalsmässig skyldighet eller en tystnadsplikt.
+- Främja någon olaglig aktivitet.
+- Vara hotfulla, missbrukande eller invadera någon annans integritet, eller orsaka irritation, olägenhet eller onödig oro.
+- Vara benägna att trakassera, uppröra, genera, larma eller störa någon annan person.
+- Användas för att utge sig för att vara någon person, eller för att felaktigt framställa din identitet eller tillhörighet med någon person.
+- Ge intrycket av att de härstammar från oss, om så inte är fallet.
+- Förespråka, främja eller bistå någon olaglig handling såsom (till exempel) upphovsrättsintrång eller datormissbruk.
 
-### We may suspend or withhold your use
+### Vi kan stänga av eller undanhålla din användning
 
-The following terms of our Terms of Website Use Policy constitute our Acceptable Use Policy:
+Följande villkor i våra Villkor för Webbplatsanvändning utgör vår Policy för Acceptabel Användning:
 
-- We may make changes to these terms
-- Ways you may and may not use our site
-- How we operate interactive services
-- Rules for content you contribute to our site and any interactive services
-- Why we may suspend or terminate your use
+- Vi kan göra ändringar i dessa villkor
+- Sätt du får och inte får använda vår webbplats
+- Hur vi driver interaktiva tjänster
+- Regler för innehåll du bidrar med till vår webbplats och eventuella interaktiva tjänster
+- Varför vi kan stänga av eller avsluta din användning
 
-We will determine, in our discretion, whether there has been a breach of our Acceptable Use Policy through your use of our site. When a breach of this policy has occurred, we may take such action as we deem appropriate.
+Vi kommer att avgöra, efter eget gottfinnande, om det har skett en överträdelse av vår Policy för Acceptabel Användning genom din användning av vår webbplats. När en överträdelse av denna policy har inträffat kan vi vidta sådana åtgärder som vi anser lämpliga.
 
-Failure to comply with our Acceptable Use Policy constitutes a material breach of the Terms of Website Use Policy upon which you are permitted to use our site, and may result in our taking all or any of the following actions:
+Underlåtenhet att följa vår Policy för Acceptabel Användning utgör en väsentlig överträdelse av Villkoren för Webbplatsanvändning på vilka du har tillstånd att använda vår webbplats, och kan resultera i att vi vidtar alla eller någon av följande åtgärder:
 
-- Immediate, temporary or permanent withdrawal of your right to use our site.
-- Immediate, temporary or permanent removal of any posting or material uploaded by you to our site.
-- Issue of a warning to you.
-- Legal proceedings against you for reimbursement of all costs on an indemnity basis (including, but not limited to, reasonable administrative and legal costs) resulting from the breach.
-- Further legal action against you.
-- Disclosure of such information to law enforcement authorities as we reasonably feel is necessary.
+- Omedelbart, tillfälligt eller permanent återkallande av din rätt att använda vår webbplats.
+- Omedelligt, tillfälligt eller permanent borttagande av något inlägg eller material som laddats upp av dig till vår webbplats.
+- Utfärdande av en varning till dig.
+- Rättsliga förfaranden mot dig för återbetalning av alla kostnader på ersättningsbas (inklusive, men inte begränsat till, rimliga administrativa och juridiska kostnader) till följd av överträdelsen.
+- Ytterligare rättsliga åtgärder mot dig.
+- Utlämnande av sådan information till brottsbekämpande myndigheter som vi rimligen anser är nödvändig.
 
-We exclude liability for actions taken in response to breaches of our Acceptable Use Policy.
+Vi utesluter ansvar för åtgärder som vidtas som svar på överträdelser av vår Policy för Acceptabel Användning.
 
-The actions and responses described above are not limited, and we may take any other action we reasonably deem appropriate in respect of breach of our Acceptable Use Policy or our Terms of Website Use Policy.
+De åtgärder och svar som beskrivs ovan är inte begränsade, och vi kan vidta alla andra åtgärder vi rimligen anser är lämpliga med avseende på överträdelse av vår Policy för Acceptabel Användning eller våra Villkor för Webbplatsanvändning.
 
-## Waiver and release of liability
+## Ansvarsfrihet och ansvarsfriskrivning
 
-In consideration of Autocares Devesa SL providing the site in connection with activities including, but not limited to cycling and route planning (the "Activities"), you agree to the terms of this Autocares Devesa SL Waiver and Release of Liability ("Release") set out below.
+Med tanke på att Autocares Devesa SL tillhandahåller webbplatsen i samband med aktiviteter inklusive, men inte begränsat till cykling och ruttplanering ("Aktiviteterna"), samtycker du till villkoren i denna Autocares Devesa SL Ansvarsfrihet och Ansvarsfriskrivning ("Ansvarsfrihet") som anges nedan.
 
-You fully understand and acknowledge the following:
+Du förstår och erkänner fullt ut följande:
 
-- The Activities have inherent risks, dangers, and hazards;
-- Your participation in the Activities carries with it the potential for property loss and serious injury or illness, including, but not limited to, bodily injury, disease, strains, fractures, partial and/or total paralysis, death or other ailments that could cause serious disability;
-- The risks and dangers arising out of or related to the Activities may be caused by negligence of yourself, the owners, employees, officers or agents of Autocares Devesa SL, the negligence of sponsors, manufacturers, manufacturers, bike dealers, highways authorities, drivers of vehicles, promoters, clubs, agencies, personal trainers, participants, or other parties, as well as accidents, breaches of contract, the forces of nature, or other causes. Risks and dangers may arise from foreseeable or unforeseeable causes including, but not limited to, those caused by terrain, darkness, altitude, temperature, weather, condition of participants, equipment, inadequate safety equipment, vehicular traffic, actions of other parties, fixed or moving objects, lack of hydration, and such other risks, dangers, and hazards that are integral to the Activities in an outdoor or recreational environment; and
-- You assume all risks and dangers relating to the Activities and all responsibility for any losses and/or damages. You are also solely responsible for whether you will or will not wear a helmet or other protective gear or equipment.
+- Aktiviteterna har inneboende risker, faror och risker;
+- Ditt deltagande i Aktiviteterna medför potential för egendomsförlust och allvarlig skada eller sjukdom, inklusive, men inte begränsat till, kroppsskada, sjukdom, stukningar, frakturer, partiell och/eller total förlamning, död eller andra åkommor som kan orsaka allvarlig funktionsnedsättning;
+- Riskerna och farorna som uppstår från eller är relaterade till Aktiviteterna kan orsakas av vårdslöshet från din sida, ägarna, anställda, tjänstemän eller ombud för Autocares Devesa SL, vårdslöshet från sponsorer, tillverkare, cykelhandlare, vägmyndigheter, förare av fordon, promotorer, klubbar, byråer, personliga tränare, deltagare eller andra parter, såväl som olyckor, avtalsbrott, naturkrafter eller andra orsaker. Risker och faror kan uppstå från förutsägbara eller oförutsägbara orsaker inklusive, men inte begränsat till, de som orsakas av terräng, mörker, höjd, temperatur, väder, deltagarnas tillstånd, utrustning, otillräcklig säkerhetsutrustning, fordonst rafik, åtgärder från andra parter, fasta eller rörliga objekt, brist på hydrering och sådana andra risker, faror och risker som är integrerade i Aktiviteterna i en utomhus- eller rekreationsmiljö; och
+- Du tar alla risker och faror relaterade till Aktiviteterna och allt ansvar för eventuella förluster och/eller skador. Du är också ensam ansvarig för om du kommer eller inte kommer att bära hjälm eller annan skyddsutrustning.
 
-Further, to the fullest extent permitted by law, you on behalf of yourself, your personal representatives and your heirs voluntarily agree to release, waive, discharge, hold harmless, defend and indemnify Autocares Devesa SL, and its owners, agents, officers and employees from any and all claims, actions or losses which may arise out of your use of Autocares Devesa SL services arising out of or relating to the Activities; and
+Vidare, i den utsträckning som lagen tillåter, samtycker du på dina egna vägnar, dina personliga representanter och dina arvingar frivilligt till att frita, avstå från, friskriva från ansvar, skydda och ersätta Autocares Devesa SL, och dess ägare, ombud, tjänstemän och anställda från alla och eventuella anspråk, åtgärder eller förluster som kan uppstå från din användning av Autocares Devesa SL-tjänster som uppstår från eller relaterar till Aktiviteterna; och
 
-specifically understand that you are releasing, discharging, and waiving any claims or actions that you may have presently or in the future for the negligent acts or other conduct by the owners, agents, officers or employees of Autocares Devesa SL.
+specifikt förstår att du fritar, friskriver från ansvar och avstår från alla anspråk eller åtgärder som du kan ha för närvarande eller i framtiden för vårdslösa handlingar eller annat beteende av ägarna, ombudet, tjänstemännen eller de anställda på Autocares Devesa SL.
 
-### If part of these terms becomes invalid
+### Om en del av dessa villkor blir ogiltiga
 
-If any provision or part-provision of these Terms of Website Use is or becomes invalid, illegal or unenforceable, it shall be deemed modified to the minimum extent necessary to make it valid, legal and enforceable. If such modification is not possible, the relevant provision or part-provision shall be deemed deleted. Any modification to or deletion of a provision or part-provision under this clause shall not affect the validity and enforceability of the rest of these Terms of Website Use.
+Om någon bestämmelse eller del-bestämmelse av dessa Villkor för Webbplatsanvändning är eller blir ogiltig, olaglig eller omöjlig att verkställa, ska den anses modifierad i den utsträckning som är nödvändig för att göra den giltig, laglig och verkställbar. Om en sådan modifiering inte är möjlig, ska den relevanta bestämmelsen eller del-bestämmelsen anses raderad. Varje modifiering av eller radering av en bestämmelse eller del-bestämmelse enligt denna klausul ska inte påverka giltigheten och verkställbarheten av resten av dessa Villkor för Webbplatsanvändning.
 
-### Which country's laws apply to any disputes
+### Vilket lands lagar gäller för eventuella tvister
 
-If you are a consumer, please note that these Terms of Website Use, their subject matter and their formation, are governed by Spanish law. You and we both agree that the courts of Spain will have exclusive jurisdiction.
+Om du är en konsument, observera att dessa Villkor för Webbplatsanvändning, deras ämne och deras bildande, regleras av spansk lag. Du och vi samtycker båda till att domstolarna i Spanien ska ha exklusiv jurisdiktion.
 
-If you are a business, these Terms of Website Use, their subject matter and their formation (and any non-contractual disputes or claims) are governed by Spanish law. We both agree to the exclusive jurisdiction of the courts of Spain.
+Om du är ett företag regleras dessa Villkor för Webbplatsanvändning, deras ämne och deras bildande (och eventuella icke-avtalsmässiga tvister eller anspråk) av spansk lag. Vi samtycker båda till domstolarnas exklusiva jurisdiktion i Spanien.

@@ -1,76 +1,76 @@
 ---
-title: "Mallorca: The Top 10 Things to Do"
-description: "What not to miss when cycling in Mallorca! Essential experiences and routes for the ultimate cycling adventure."
-category: "Guides"
+title: "Mallorca: De 10 bästa sakerna att göra"
+description: "Vad du inte får missa när du cyklar på Mallorca! Viktiga upplevelser och rutter för det ultimata cykeläventyret."
+category: "Guider"
 featured_image: "/img/blog/top-10-things-mallorca.webp"
-excerpt: "Mallorca is a cycling paradise offering endless attractive routes. From world-famous Sa Calobra to the stunning Andratx-Pollença route, discover the must-do experiences for your cycling trip."
+excerpt: "Mallorca är ett cykelparadis som erbjuder oändliga attraktiva rutter. Från det världsberömda Sa Calobra till den fantastiska Andratx-Pollença-rutten, upptäck de måste-göra-upplevelserna för din cykelresa."
 translationKey: "blog-top-10-things"
 ---
 
-## What not to miss when cycling in Mallorca!
+## Vad du inte får missa när du cyklar på Mallorca!
 
-**Cycling in Mallorca? No visit is complete without these**
+**Cyklar du på Mallorca? Inget besök är komplett utan dessa**
 
-Mallorca is a cycling paradise, offering an almost endless array of attractive cycling routes that will make you want to explore every corner of the island. To help you make the most of your cycling trip, here are our top 10+ recommendations of things you should not miss. Enjoy!
+Mallorca är ett cykelparadis och erbjuder en nästan oändlig rad av attraktiva cykelrutter som kommer att få dig att vilja utforska varje hörn av ön. För att hjälpa dig att få ut det mesta av din cykelresa, här är våra topp 10+ rekommendationer av saker du inte bör missa. Njut!
 
-## 1. The amazing Coast to Coast route.
+## 1. Den fantastiska kust-till-kust rutten.
 
-Ride through the (Unesco World Heritage!) Serra de Tramuntana mountains from either Port d'Andratx to Port de Pollença or Port de Pollença to Port d'Andratx.
+Cykla genom (Unesco världsarv!) Serra de Tramuntana-bergen från antingen Port d'Andratx till Port de Pollença eller Port de Pollença till Port d'Andratx.
 
-Is this the best cycle route in the world? It is certainly the best ride in Mallorca. If I was given only one more ride ever, this would be it. Take the <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">bike bus</a> to either Port d'Andratx or Port de Pollença, and ride back. Choose routes from 115km up to 167km including the longest and highest climb (or descent on the island of Puig Major. Your cycling soul will thank you for this. Fantastic views, excellent surfaces and good cafés are regularly available. Oh, one small other thing - most of the tarmac is butter smooth!
+Är detta den bästa cykelrutten i världen? Det är verkligen den bästa turen på Mallorca. Om jag fick en sista tur, skulle detta vara den. Ta <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">cykelbussen</a> till antingen Port d'Andratx eller Port de Pollença och cykla tillbaka. Välj rutter från 115km upp till 167km inklusive den längsta och högsta klättringen (eller nedförsbacken på ön Puig Major. Din cykelsjäl kommer att tacka dig för detta. Fantastiska vyer, utmärkta ytor och bra kaféer finns regelbundet. Å, en liten annan sak - det mesta av asfalten är smörlen!
 
-## 2. Sa Calobra to the summit of Coll dels Reis
+## 2. Sa Calobra till toppen av Coll dels Reis
 
-The world renowned climb up from the port of Sa Calobra. Often regarded as one of the world's best climbs which includes the famous 270 degree switchback. Now with the option of getting the <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Sa Calobra Express</a> to the start point so you can attempt a PB with fresh legs – a true highlight of cycling in Mallorca.
+Den världsberömda klättringen upp från hamnen i Sa Calobra. Ofta betraktad som en av världens bästa klättringar som inkluderar den berömda 270-graders sicksacken. Nu med möjligheten att ta <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Sa Calobra Express</a> till startpunkten så att du kan försöka ett PB med friska ben – en verklig höjdpunkt av cykling på Mallorca.
 
 ## 3. Cap Formentor
 
-Stunning coastal and forest scenery, I challenge you to find a better 20km of road anywhere. Take care at the short tunnel, even though it is now lit, there will be hire cars about! Stop off at the Formentor Beach on the way back and take a swim in the clean Mediterranean. An iconic route you cannot miss when cycling in Mallorca. Now this route is available to those cyclists staying in the South of the island, take a scheduled <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Mallorca Cycle Shuttle bike bus to Port de Pollença</a>.
+Fantastisk kust- och skogslandskap, jag utmanar dig att hitta en bättre 20km väg någonstans. Var försiktig vid den korta tunneln, även om den nu är belyst kommer det att finnas hyrbilar omkring! Stanna vid Formentor Beach på vägen tillbaka och ta ett dopp i det rena Medelhavet. En ikonisk rutt du inte kan missa när du cyklar på Mallorca. Nu är denna rutt tillgänglig för cyklister som bor i södra delen av ön, ta en schemalagd <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Mallorca Cycle Shuttle cykelbuss till Port de Pollença</a>.
 
-## 4. Port Valldemossa climb
+## 4. Port Valldemossa klättring
 
-A bonkers climb at a length of 7.9km and an average grade of 5.2 %. The road is so narrow in places and many hair pins that you will question why you ever contemplated it, even started it. A third of the way down you will know – it is brilliant, a route like this is reason enough to cycle. Amazing views that lead to an oasis of a Port that is so welcoming it is difficult to leave. The surface is a bit bumpy in places now, but the restaurant is still as good and as reasonable as ever.
+En galen klättring med en längd på 7,9 km och en genomsnittlig lutning på 5,2%. Vägen är så smal på sina ställen och många hårnålskurvor att du kommer att ifrågasätta varför du någonsin övervägde det, till och med började det. En tredjedel ner kommer du att veta – det är lysande, en sådan rutt är anledning nog att cykla. Fantastiska vyer som leder till en oas av en hamn som är så välkomnande att det är svårt att lämna. Ytan är lite knagglig på sina ställen nu, men restaurangen är fortfarande lika bra och rimlig som alltid.
 
-This climb is a great addition to your <a href="/en/bike-shuttle/andratx-pollenca-guide/">Coast to Coast epic</a>.
+Denna klättring är ett utmärkt tillägg till din <a href="/en/bike-shuttle/andratx-pollenca-guide/">kust-till-kust episka</a>.
 
-## 5. Port des Canonge climb
+## 5. Port des Canonge klättring
 
-Great little descent from the ma-10 at the 80km marker and then a winding 4.9km climb up from a beautiful bay. It is a very scenic detour that will add just under 10 very worthwhile km to your ride. Just off the ma-10 between Banyalbufar and Port Valldemossa this excellent swirling descent down to the 70m wide bay at the bottom is off the beaten path and a joy.
+Bra liten nedförsbacke från ma-10 vid 80km-markören och sedan en slingrande 4,9km klättring upp från en vacker vik. Det är en mycket naturskön omväg som lägger till knappt 10 mycket värdefulla km till din tur. Strax utanför ma-10 mellan Banyalbufar och Port Valldemossa är denna utmärkta virvlande nedförsbacke ner till den 70m breda viken längst ner utanför den upptrampade stigen och en glädje.
 
-This climb is a great addition to your <a href="/en/bike-shuttle/andratx-pollenca-guide/">Coast to Coast epic</a>.
+Denna klättring är ett utmärkt tillägg till din <a href="/en/bike-shuttle/andratx-pollenca-guide/">kust-till-kust episka</a>.
 
-## 6. The Orient Valley and the Coll de Soller
+## 6. Orient Valley och Coll de Soller
 
-Begin with 28 hairpins followed by another 26, then cut through a tranquil valley and climb the Coll d'Orient and Coll d'Honor. Stop for lunch at the brilliant Cycling Planet in Alaro and say hello to the owners Laura Brunot and David Muntaner (World Madison Champion). Memory making.
+Börja med 28 hårnålskurvor följt av ytterligare 26, skär sedan genom en lugn dal och klättra Coll d'Orient och Coll d'Honor. Stanna för lunch på den lysande Cycling Planet i Alaro och säg hej till ägarna Laura Brunot och David Muntaner (Världsmästare i Madison). Minnesvärt.
 
-This is a great addition to your <a href="/en/bike-shuttle/andratx-pollenca-guide/">Coast to Coast epic</a>.
+Detta är ett utmärkt tillägg till din <a href="/en/bike-shuttle/andratx-pollenca-guide/">kust-till-kust episka</a>.
 
-## 7. Watch the sun set and the moon rise from Talaia d'Albercutx
+## 7. Titta på solnedgången och månen stiga från Talaia d'Albercutx
 
-Turn up through the car park at the Mirador de Formentor on the way to Cap de Formentor for the couple of extra km up to the 'Pepperpot', the road is not brilliant but fine if you are careful.. Every full moon. Look to the west and as the sun sinks below the mountains, turn to the east and watch the full moon come out of the sea.
+Vänd upp genom parkeringen vid Mirador de Formentor på vägen till Cap de Formentor för det extra paret km upp till 'Pepperpot', vägen är inte lysande men bra om du är försiktig.. Varje fullmåne. Titta västerut och när solen sjunker under bergen, vänd österut och titta på fullmånen komma upp ur havet.
 
-If you are not lucky enough to be cycling in Mallorca for this event, take the next best and get up early to watch the sun come out of the sea from either Cap de Formentor or Talaia d'Albercutx . Obviously you will need lights when setting off in the dark!
+Om du inte har turen att cykla på Mallorca för denna händelse, ta näst bäst och stiga upp tidigt för att titta på solen komma upp ur havet från antingen Cap de Formentor eller Talaia d'Albercutx. Uppenbarligen kommer du att behöva ljus när du ger dig av i mörkret!
 
-## 8. The Bay of Pollenca route
+## 8. Pollença-vikens rutt
 
-Do the full bay when cycling in Mallorca you can't miss climbing up to Cap Formentor as well as to La Victoria and the edge of the military base on the opposite side. You get to see across the bay of Pollença from both sides. 77km with 1700m of climbing. Don't, whatever you do, forget to take pictures.
+Gör hela viken när du cyklar på Mallorca kan du inte missa att klättra upp till Cap Formentor såväl som till La Victoria och kanten av militärbasen på motsatt sida. Du får se över Pollença-viken från båda sidor. 77km med 1700m klättring. Glöm inte, vad du än gör, att ta bilder.
 
-## 9. Climb the Coll de Sa Battalla and descend the F1 grade surface of Coll de Femenia
+## 9. Klättra Coll de Sa Battalla och cykla ner F1-grad ytan av Coll de Femenia
 
-Cruise the lanes to Caimari, climb the winding tree lined Col de Sa Bataia, down past Lluc then back towards Pollença, acing those amazing sweeping, swooping cambered corners and trying to not grin for 7km. Obviously take care that your enthusiasm does not surpass your ability
+Cruisa genom vägarna till Caimari, klättra den slingrande trädkantade Col de Sa Bataia, ner förbi Lluc sedan tillbaka mot Pollença, ta de fantastiska svepande, svängende bankade hörnen och försök att inte flina i 7km. Uppenbarligen var försiktig att din entusiasm inte överträffar din förmåga
 
-## 10. Almond cake & coffee
+## 10. Mandelkaka & kaffe
 
-Stop at out of the way local (non-tourist) cafés and sample locally made almond cakes with excellent coffee. Repeat as necessary.
+Stanna vid undanskymda lokala (icke-turist) kaféer och prova lokalt gjorda mandelkakor med utmärkt kaffe. Upprepa vid behov.
 
-## 11. Fresh OJ at the Aqueduct
+## 11. Färsk OJ vid akvedukten
 
-Stop at the aqueduct on the ma-10 at the Sa Calobra turn off and relax under the trees with a cup of fresh OJ squeezed from locally picked oranges.
+Stanna vid akvedukten på ma-10 vid Sa Calobra-avtagsvägen och koppla av under träden med en kopp färsk OJ pressad från lokalt plockade apelsiner.
 
-## 12. Climb the Puig de Randa
+## 12. Klättra Puig de Randa
 
-On a clear day (which is most of them), you can see pretty much the whole island from up here. Also called Cura de Randa after the name of the monastery at the top, is the most popular climb in Mallorca not situated in Serra de Tramuntana. It is a place full of history, where Mallorca's first hermitage was built in the 13th century. In fact, while climbing the 7.5km up Puig de Randa, you will find 3 separate hermitages: Santuari de Nostra Senyora de Gracia; Ermita de Sant Honorat; Santuari de Cura.
+På en klar dag (vilket är de flesta av dem) kan du se nästan hela ön härifrån. Även kallad Cura de Randa efter namnet på klostret högst upp, är den mest populära klättringen på Mallorca som inte ligger i Serra de Tramuntana. Det är en plats full av historia, där Mallorcas första eremitage byggdes på 1200-talet. Faktiskt, medan du klättrar de 7,5km upp Puig de Randa hittar du 3 separata eremitage: Santuari de Nostra Senyora de Gracia; Ermita de Sant Honorat; Santuari de Cura.
 
-## 13. Climb San Salvador
+## 13. Klättra San Salvador
 
-Located in the eastern part of Mallorca, the climb up to the San Salvador monastery is 5km with an average of 7%. Starting near Felanitx it snakes its way up to the highest point in Felanitx district, at an altitude of 510 metres. It has spectacular 360 degree views of the whole island on a clear day including views of the Creu de Sant Salvador (cross). The view point has a working water well for topping up your water bottles and the monastery is now a small hotel, restaurant and cafe which is perfect for cake and coffee.
+Beläget i östra delen av Mallorca är klättringen upp till San Salvador-klostret 5km med ett genomsnitt på 7%. Från nära Felanitx slingrar den sig upp till den högsta punkten i Felanitx-distriktet, på en höjd av 510 meter. Den har spektakulära 360-graders vyer av hela ön på en klar dag inklusive vyer av Creu de Sant Salvador (kors). Utsiktspunkten har en fungerande vattenbrunn för påfyllning av dina vattenflaskor och klostret är nu ett litet hotell, restaurang och kafé som är perfekt för kaka och kaffe.

@@ -1,44 +1,44 @@
 ---
-title: "Bus out, bike back in Mallorca"
-description: "How to discover more of the island with Mallorca Cycle Shuttle - our experience using the bike bus service from 2016 to 2025."
+title: "Buss ut, cykel tillbaka på Mallorca"
+description: "Hur man upptäcker mer av ön med Mallorca Cycle Shuttle - vår erfarenhet av att använda cykelbustjänsten från 2016 till 2025."
 date: 2024-12-28
 draft: false
-category: "Cycling Stories"
+category: "Cykelberättelser"
 featured_image: "/img/blog/bus-out-bike-back.webp"
-excerpt: "Our impressions of using Mallorca Cycle Shuttle bike bus services since 2016 - opening up new routes, climbs and villages across the island."
+excerpt: "Våra intryck av att använda Mallorca Cycle Shuttles cykelbustjänster sedan 2016 - öppnar upp nya rutter, klättringar och byar över hela ön."
 translationKey: "blog-bus-out-bike-back"
 ---
 
-## Bus out, bike back in Mallorca
-### How to discover more of the island
+## Buss ut, cykel tillbaka på Mallorca
+### Hur man upptäcker mer av ön
 
-## Our impressions of Mallorca Cycle Shuttle
+## Våra intryck av Mallorca Cycle Shuttle
 
-We first used the excellent <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Mallorca Cycle Shuttle</a> in 2016. Since then we've gone back in 2017, 2018, 2019, 2022, 2023, 2024 and again in 2025. Every trip, they handled our airport pick-ups and drop-offs smoothly, and every driver was welcoming and friendly.
+Vi använde först den utmärkta <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Mallorca Cycle Shuttle</a> 2016. Sedan dess har vi återvänt 2017, 2018, 2019, 2022, 2023, 2024 och igen 2025. Varje resa har de hanterat våra flygplatsupphämtningar och avlämningar smidigt, och varje förare har varit välkomnande och vänlig.
 
-We regularly take the <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">scheduled bike bus</a> to <a href="/en/bike-shuttle/andratx-pollenca-guide/" target="_blank">Andratx</a> from our hotel in Port de Pollença and this return ride is always the highlight of the trip.
+Vi tar regelbundet den <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">schemalagda cykelbussen</a> till <a href="/en/bike-shuttle/andratx-pollenca-guide/" target="_blank">Andratx</a> från vårt hotell i Port de Pollença och denna returtur är alltid höjdpunkten på resan.
 
-## Why we use the bike bus
+## Varför vi använder cykelbussen
 
-We've cycled in Mallorca for years, but taking a one-way <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">bike bus</a> opened up new roads, climbs and villages like Andratx, Estellencs and Banyalbufar. My comfortable daily limit is around 70 miles (about 110 km). Doing that distance in a straight line from A to B instead of a loop was a game-changer.
+Vi har cyklat på Mallorca i år, men att ta en enkelriktad <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">cykelbuss</a> öppnade upp nya vägar, klättringar och byar som Andratx, Estellencs och Banyalbufar. Min bekväma dagliga gräns är runt 70 miles (cirka 110 km). Att göra den distansen i en rak linje från A till B istället för en loop var en game-changer.
 
-If, like me, you come to Mallorca to ride, you might hesitate to get on a bus instead of staying on two wheels. Don't. You'll reach stunning parts of the island that are otherwise a stretch to include in a packed week. Thanks to the shuttle we finally ticked off climbs and routes that kept eluding us on earlier trips.
+Om du, liksom jag, kommer till Mallorca för att cykla kan du tveka att ta en buss istället för att stanna på två hjul. Gör det inte. Du kommer att nå fantastiska delar av ön som annars är en sträcka att inkludera i en packad vecka. Tack vare shutteln bockade vi äntligen av klättringar och rutter som fortsatte att undkomma oss på tidigare resor.
 
-## Highlights and plans
+## Höjdpunkter och planer
 
-The <a href="/en/bike-shuttle/andratx-pollenca-guide/" target="_blank">Andratx to Port de Pollença</a> ride is the standout of our trips and remains a must-do for us. Next up for us in 2026: "The Big Daddy" challenge taking in Port des Canonge, Port de Valldemossa and Sa Calobra.
+<a href="/en/bike-shuttle/andratx-pollenca-guide/" target="_blank">Andratx till Port de Pollença</a>-turen är höjdpunkten på våra resor och förblir ett måste för oss. Nästa upp för oss 2026: "The Big Daddy"-utmaningen som tar in Port des Canonge, Port de Valldemossa och Sa Calobra.
 
-**Booking tip:** popular Andratx days can sell out weeks ahead. Book early in your stay so your legs are fresh and you've got weather wiggle room. If the forecast turns, <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Mallorca Cycle Shuttle</a> have been quick to reschedule or refund.
+**Bokningstips:** populära Andratx-dagar kan sälja slut veckor i förväg. Boka tidigt under din vistelse så att dina ben är friska och du har väderutrymme. Om prognosen ändras har <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Mallorca Cycle Shuttle</a> varit snabba med att omboka eller återbetala.
 
-## How they looked after our bikes
+## Hur de tog hand om våra cyklar
 
-We bring our own bikes, so care in transit mattered. No issues at all. Bikes were packed between mattresses and strapped securely. They arrived unmarked and ready to ride.
+Vi tar med våra egna cyklar, så omvårdnad under transport var viktigt. Inga problem alls. Cyklarna packades mellan madrasser och spändes fast säkert. De anlände omärkta och redo att cykla.
 
-## Why we now add optional bike rescue cover
+## Varför vi nu lägger till valfri cykelräddningsförsäkring
 
-Back in 2016 two riders in our group touched wheels, leading to a low-speed tumble. No ambulance was needed, but one rider didn't want to continue and the other had a badly out-of-true rear wheel. They waited over four hours roadside before a €115 taxi finally arrived. Lesson learned. Since then we have added <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank">Mallorca Bicycle Rescue</a> for peace of mind. If the body or bike fails, you're not wasting half a day sorting transport.
+Tillbaka 2016 rörde två cyklister i vår grupp hjul, vilket ledde till ett fall i låg hastighet. Ingen ambulans behövdes, men en cyklist ville inte fortsätta och den andra hade ett rejält ojusterat bakhjul. De väntade över fyra timmar vid vägkanten innan en €115 taxi äntligen anlände. Läxa lärd. Sedan dess har vi lagt till <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank">Mallorca Bicycle Rescue</a> för sinnesfrid. Om kroppen eller cykeln sviker slösar du inte bort en halv dag med att ordna transport.
 
-## Here's to a brilliant 2026!
+## Här är till ett fantastiskt 2026!
 
 **Lucy Taylor**
-London, 28 December 2025
+London, 28 december 2025

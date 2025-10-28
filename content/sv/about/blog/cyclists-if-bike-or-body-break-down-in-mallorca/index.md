@@ -1,38 +1,38 @@
 ---
-title: "Cyclists: If Bike or Body Break Down in Mallorca"
-description: "What to do when things go wrong on your cycling trip in Mallorca"
+title: "Cyklister: Om cykel eller kropp går sönder på Mallorca"
+description: "Vad du ska göra när något går fel på din cykelresa på Mallorca"
 category: "Tips"
 featured_image: "/img/blog/breakdown-mallorca.webp"
-excerpt: "Essential advice for cyclists facing mechanical issues or injuries in Mallorca. Know who to call, where to go, and how to get help when you need it most."
+excerpt: "Viktiga råd för cyklister som möter mekaniska problem eller skador på Mallorca. Veta vem du ska ringa, var du ska åka och hur du får hjälp när du behöver det mest."
 translationKey: "blog-cyclists-breakdown"
 ---
 
 ## Mallorca Bicycle Rescue
 
-**A Mallorcan answer to Murphy's law**
+**Ett mallorcanskt svar på Murphys lag**
 
-<a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank">Mallorca Bicycle Rescue</a> wants to make sure that you have the best Mallorca cycling trip possible.
+<a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank">Mallorca Bicycle Rescue</a> vill se till att du får den bästa möjliga cykelresan på Mallorca.
 
-If you have their <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank">bike rescue</a> policy, a number of vehicles island-wide are available to you if and when you may need them. If your bike or body breaks down, they will take you and your riding partner (if required) + bike, quickly and efficiently to the nearest bike repair shop or back to your accommodation. Your choice.
+Om du har deras <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank">cykelräddnings</a>försäkring finns ett antal fordon över hela ön tillgängliga för dig om och när du kan behöva dem. Om din cykel eller kropp går sönder tar de dig och din ridpartner (om det behövs) + cykel, snabbt och effektivt till närmaste cykelverkstad eller tillbaka till ditt boende. Ditt val.
 
-Your alternative would be to call a taxi, which can prove difficult. Taxi drivers are reluctant to go out to pick up someone on the roadside in the middle of nowhere and there are very strict zoning laws governing which taxi can go where, and if you aren't sure of your exact whereabouts, the language barrier can be frustrating for both sides. Not to mention where to put your bike!
+Ditt alternativ skulle vara att ringa en taxi, vilket kan visa sig vara svårt. Taxiförare är ovilliga att åka ut för att hämta upp någon på vägkanten mitt i ingenstans och det finns mycket strikta zonlagar som styr vilken taxi som kan åka vart, och om du inte är säker på var du befinner dig exakt kan språkbarriären vara frustrerande för båda sidor. För att inte tala om var du ska ställa din cykel!
 
-Save yourself all this hassle and take out <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank">Mallorca Bicycle Rescue</a> cover and ensure that you waste no time in cycling paradise.
+Bespara dig allt detta krångel och teckna <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank">Mallorca Bicycle Rescue</a>-försäkring och se till att du inte slösar bort någon tid i cykelparadiset.
 
-## A Real Story from the Road
+## En riktig historia från vägen
 
-During our last visit, we were a group of ten friends, all experienced cyclists and experienced Mallorca-goers. A member of our group pulled a muscle in his back at the base of Col dels Reis near the Roman aqueduct. Not wanting to admit defeat, he carried on, and we all descended the spectacular Sa Calobra down to the Port. However, he did not have the strength to complete the climb that came after, and halfway up he had to stop. Luckily, with his rescue cover, he could simply call them and they sent out a vehicle immediately which arrived around 45 minutes later. They took him back to Port Pollença with his bike, and we continued our ride confidently knowing he was in good hands.
+Under vårt senaste besök var vi en grupp på tio vänner, alla erfarna cyklister och erfarna Mallorca-besökare. En medlem i vår grupp drog en muskel i ryggen vid basen av Col dels Reis nära den romerska akvedukten. Han ville inte erkänna nederlag, så han fortsatte och vi alla cyklade ner den spektakulära Sa Calobra ner till hamnen. Men han hade inte styrkan att klara klättringen som kom efter, och halvvägs upp var han tvungen att stanna. Lyckligtvis kunde han med sin räddningsförsäkring helt enkelt ringa dem och de skickade ut ett fordon omedelbart som anlände efter ungefär 45 minuter. De tog honom tillbaka till Port Pollença med hans cykel, och vi fortsatte vår tur med tillförsikt och visste att han var i goda händer.
 
-I don't know about you, but I'd rather not waste my time sitting on the roadside for hours, watching other cyclists go by, waiting on an unreliable taxi. I'd rather not have to walk for miles to find a suitable place to be picked up, either. I'd kick myself!
+Jag vet inte vad gäller dig, men jag skulle hellre inte slösa bort min tid med att sitta vid vägkanten i timmar, se andra cyklister passera förbi, vänta på en opålitlig taxi. Jag skulle inte heller vilja gå i mil för att hitta en lämplig plats att bli upphämtad. Jag skulle sparka mig själv!
 
-## Why It Makes Sense
+## Varför det är vettigt
 
-The cover is so simple to get, and so reasonable, that it's a no-brainer. Also, as part of a group, do I really want to be the one who disrupts everyone else's day and make them lose out on their hard earned holiday time whilst I try and sort out my issue, knowing that I could have just purchased this cover? Low cost, and low hassle. Simple. There is no reason for a sensible cyclist to not take out this cover. The approximate cost is about €4 a day I think.
+Försäkringen är så enkel att få och så rimlig att det är en no-brainer. Dessutom, som en del av en grupp, vill jag verkligen vara den som stör alla andras dag och får dem att missa sin välförtjänta semestertid medan jag försöker lösa mitt problem, med vetskap om att jag bara kunde ha köpt denna försäkring? Låg kostnad och lite krångel. Enkelt. Det finns ingen anledning för en förståndig cyklist att inte teckna denna försäkring. Den ungefärliga kostnaden är cirka €4 per dag tror jag.
 
-Most of us are prepared and able to fix small issues with our bikes ourselves, but more complicated situations can inevitably arise. In addition there is only so much pain I, as a leisure cyclist, am prepared to ride through. It's my holiday too after all! Some may call me weak, but I intend to enjoy my time in the brilliant Mallorca and I will make sure I make the most of it by being prepared.
+De flesta av oss är förberedda och kan fixa små problem med våra cyklar själva, men mer komplicerade situationer kan oundvikligen uppstå. Dessutom finns det bara så mycket smärta jag, som en fritidscyklist, är beredd att cykla igenom. Det är min semester också trots allt! Vissa kanske kallar mig svag, men jag avser att njuta av min tid på det fantastiska Mallorca och jag kommer att se till att jag får ut det mesta av det genom att vara förberedd.
 
-Sh*t happens, and thanks to Murphy's Law it may happen during your well earned break in Mallorca. If it does, trust <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank">Mallorca Bicycle Rescue</a> to save you time, money and remove you quickly from what may have become a frustrating and stressful situation.
+Skit händer, och tack vare Murphys lag kan det hända under din välförtjänta paus på Mallorca. Om det händer, lita på <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank">Mallorca Bicycle Rescue</a> för att spara dig tid, pengar och snabbt ta dig bort från vad som kan ha blivit en frustrerande och stressig situation.
 
-**Happy cycling, see you on the road. Be safe.**
+**Lycklig cykling, vi ses på vägen. Var säker.**
 
 *Steven Locke, Edinburgh.*

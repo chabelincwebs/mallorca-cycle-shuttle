@@ -1,82 +1,82 @@
 ---
-title: "2025 Traffic Laws for Cyclists in Mallorca"
-description: "Stay safe and legal with our comprehensive guide to the latest cycling regulations and traffic laws in Mallorca for 2025."
+title: "2025 Trafikregler för cyklister på Mallorca"
+description: "Håll dig säker och laglig med vår omfattande guide till de senaste cykelreglerna och trafiklagarna på Mallorca för 2025."
 category: "Tips"
 featured_image: "/img/blog/traffic-laws.webp"
-excerpt: "Understanding Mallorca's cycling laws ensures a safe and enjoyable ride. Learn about group riding rules, helmet requirements, road positioning, and the latest 2025 regulations affecting cyclists."
+excerpt: "Att förstå Mallorcas cykellagar säkerställer en säker och njutbar tur. Lär dig om gruppcykelregler, hjälmkrav, vägpositionering och de senaste 2025-regleringarna som påverkar cyklister."
 date: 2024-01-01
 translationKey: "blog-2025-traffic-laws"
 ---
 
-This week, the DGT ("Dirección General de Tráfico") announced new traffic laws for 2025 that affect both car and motorcycle drivers as well as cyclists.
+Denna vecka meddelade DGT ("Dirección General de Tráfico") nya trafikregler för 2025 som påverkar både bil- och motorcykelförare såväl som cyklister.
 
-We know that it can be confusing to find out which laws apply to you as a cyclist amid all the information, so to make it easier for you and keep you up-to-date, we have created this article. So, which laws will apply to cyclists in 2025?
+Vi vet att det kan vara förvirrande att ta reda på vilka lagar som gäller för dig som cyklist mitt i all information, så för att göra det enklare för dig och hålla dig uppdaterad har vi skapat den här artikeln. Så vilka lagar gäller för cyklister 2025?
 
-For cars, the rule of leaving a 1.5-meter space when overtaking a cyclist remains. What changes this year is that drivers must reduce their speed by 20 km/h below the maximum allowed speed on the road when overtaking a cyclist. In other words, on a road with a maximum speed of 90 km/h, cars must overtake cyclists at a maximum speed of 70 km/h. Failure to comply with this law could result in a fine of 200 euros and 6 points off the driver's license.
+För bilar förblir regeln att lämna 1,5 meter utrymme när man kör om en cyklist. Det som ändras i år är att förare måste minska sin hastighet med 20 km/h under den maximala tillåtna hastigheten på vägen när de kör om en cyklist. Med andra ord, på en väg med en maxhastighet på 90 km/h måste bilar köra om cyklister med en maxhastighet på 70 km/h. Att inte följa denna lag kan resultera i böter på 200 euro och 6 poäng avdrag från körkort.
 
-Regarding rules that will directly affect cyclists, there is the mandatory use of the helmet. Until now, cyclists were not required to wear helmets in certain situations. Starting in 2025, helmets will be mandatory at all times, with no exceptions.
+Vad gäller regler som direkt påverkar cyklister finns kravet på obligatorisk hjälmanvändning. Fram till nu var cyklister inte tvungna att bära hjälm i vissa situationer. Från och med 2025 kommer hjälmar att vara obligatoriska alltid, utan undantag.
 
-The rule to use lights and reflective gear in low visibility situations and at night remains. Cyclists must be visible to other road users from a distance of at least 150 meters.
+Regeln att använda ljus och reflekterande utrustning i situationer med dålig sikt och på natten kvarstår. Cyklister måste vara synliga för andra trafikanter från ett avstånd på minst 150 meter.
 
-## Other laws and regulations that will remain in effect in 2025:
+## Andra lagar och regler som förblir i kraft 2025:
 
-### Mobile phone use: NO
+### Mobiltelefon användning: NEJ
 
-It is completely prohibited to use a mobile phone while riding a bike. Headphones connected to sound devices are also prohibited. Headphones impair hearing and can cause distractions.
+Det är helt förbjudet att använda en mobiltelefon när du cyklar. Hörlurar anslutna till ljudenheter är också förbjudna. Hörlurar försämrar hörseln och kan orsaka distraktioner.
 
-**Using a mobile phone or headphones: 200€**
+**Att använda mobiltelefon eller hörlurar: 200€**
 
-### No alcohol
+### Ingen alkohol
 
-Yes, the maximum alcohol limit for drivers in general (0.5 g/l of alcohol in blood or a breath alcohol level higher than 0.25 milligrams per liter) also applies to cyclists. They are also required, like other drivers, to take an alcohol test if requested by an officer.
+Ja, den maximala alkoholgränsen för förare i allmänhet (0,5 g/l alkohol i blodet eller en andningsalkoholnivå högre än 0,25 milligram per liter) gäller också cyklister. De är också skyldiga, liksom andra förare, att ta ett alkoholtest om det begärs av en polis.
 
-**Positive alcohol test: 500–1,000€**
+**Positivt alkoholtest: 500–1 000€**
 
-### Right of way
+### Företräde
 
-Cyclists have priority over motor vehicles when riding on a bike lane, bike crossing, or properly marked shoulder.
+Cyklister har företräde framför motorfordon när de cyklar på en cykelbana, cykelöverfart eller korrekt markerad vägren.
 
-### Groups in roundabouts
+### Grupper i rondeller
 
-Cyclists riding in a group have priority—everyone, from the first to the last—at roundabouts, just like at other intersections, when the first cyclist has already entered the roundabout.
+Cyklister som cyklar i grupp har företräde—alla, från första till sista—i rondeller, precis som vid andra korsningar, när den första cyklisten redan har kört in i rondellen.
 
-### Starting to move
+### Att börja köra
 
-Before starting to move, all cyclists must—just like other drivers—check the road they are entering, ensuring no vehicles are nearby or that they are far enough away that it is safe to start moving, and signal the maneuver.
+Innan de börjar köra måste alla cyklister—precis som andra förare—kontrollera vägen de kör in på, se till att inga fordon är i närheten eller att de är tillräckligt långt borta så att det är säkert att börja köra, och signalera manövern.
 
-**Dangerous merging: 200€**
+**Farlig sammanslagning: 200€**
 
-### No riding on the sidewalk
+### Ingen cykling på trottoaren
 
-It is prohibited to ride a bike on sidewalks and pedestrian zones unless specifically marked as a shared bike lane with pedestrians.
+Det är förbjudet att cykla på trottoarer och gångzoner om det inte specifikt är markerat som en delad cykelbana med fotgängare.
 
-**Riding on the sidewalk: up to 100€**
+**Cykling på trottoaren: upp till 100€**
 
-### On the right
+### På höger sida
 
-In the city, bicycles must ride as close to the right side of the road as possible, leaving a safety gap from the curb or parked vehicles. When riding in a group, cyclists may ride two abreast at most.
+I staden måste cyklar cykla så nära höger sida av vägen som möjligt, lämna ett säkerhetsavstånd från trottoarkanten eller parkerade fordon. När man cyklar i grupp får cyklister cykla högst två i bredd.
 
-**Riding in an unordered group in the city: 100€**
+**Cykling i oordnad grupp i staden: 100€**
 
-### In parallel
+### Parallellt
 
-Cyclists are allowed to ride in parallel on the road, staying as close as possible to the right side of the road. However, in areas with limited visibility (such as curves) or when there are crowds, they must ride single file.
+Cyklister får cykla parallellt på vägen och hålla sig så nära höger sida av vägen som möjligt. Men i områden med begränsad sikt (som kurvor) eller när det är trångt måste de cykla på fil.
 
-**Riding in an unordered group on the road: 100€**
+**Cykling i oordnad grupp på vägen: 100€**
 
-## Other tips and rules to follow to improve cyclist safety:
+## Andra tips och regler att följa för att förbättra cykelsäkerheten:
 
-- Always signal if you are going to brake suddenly. The best way is to move your arm up and down to alert other drivers. This is mandatory.
-- Whenever possible, ride on the bike lane or shoulder if available.
-- Don't ride a bike if you are under the influence of alcohol.
-- Do not use your mobile phone or wear headphones while cycling. The risks are the same as if you were driving a car.
-- Always obey traffic signals, such as traffic lights. They are mandatory for all road users.
-- Always wear a helmet.
-- Remember that pedestrians have priority over bikes—respect crosswalks.
-- When riding in parallel on the road, keep in mind that the rightmost rider must stay on the shoulder, and it is not allowed in areas with poor visibility or in crowded sections.
+- Signalera alltid om du ska bromsa plötsligt. Det bästa sättet är att röra armen upp och ner för att varna andra förare. Detta är obligatoriskt.
+- När det är möjligt, cykla på cykelbanan eller vägrenen om den finns.
+- Cykla inte om du är påverkad av alkohol.
+- Använd inte din mobiltelefon eller bär hörlurar när du cyklar. Riskerna är desamma som om du körde bil.
+- Följ alltid trafiksignaler, såsom trafikljus. De är obligatoriska för alla trafikanter.
+- Bär alltid hjälm.
+- Kom ihåg att fotgängare har företräde framför cyklar—respektera övergångsställen.
+- När du cyklar parallellt på vägen, tänk på att den högra cyklisten måste hålla sig på vägrenen, och det är inte tillåtet i områden med dålig sikt eller i trånga sektioner.
 
-We promote responsible use of the road. Remember that following traffic laws and respecting other road users is key to ensuring your own safety and the safety of others around you. We want you to be able to use the roads safely for a long time.
+Vi främjar ansvarsfull användning av vägen. Kom ihåg att följa trafiklagarna och respektera andra trafikanter är nyckeln till att säkerställa din egen säkerhet och andras säkerhet runt omkring dig. Vi vill att du ska kunna använda vägarna säkert under lång tid.
 
 ---
 
-*While we have made every effort to ensure that all necessary information has been included in this article, we cannot guarantee that we didn't miss any relevant information or that when you read this article new laws have been released. Therefore, we kindly ask you to review all relevant guidelines and information you may need during your cycling holidays. Please note that we cannot be held responsible for any fines or penalties incurred due to missing or incomplete information.*
+*Även om vi har gjort allt vi kan för att säkerställa att all nödvändig information har inkluderats i den här artikeln, kan vi inte garantera att vi inte missade någon relevant information eller att när du läser denna artikel nya lagar har släppts. Därför ber vi dig vänligen att granska alla relevanta riktlinjer och information du kan behöva under din cykelsemester. Observera att vi inte kan hållas ansvariga för eventuella böter eller påföljder som uppstår på grund av saknad eller ofullständig information.*

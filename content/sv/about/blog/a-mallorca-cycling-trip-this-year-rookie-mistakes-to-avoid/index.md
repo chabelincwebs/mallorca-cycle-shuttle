@@ -1,122 +1,122 @@
 ---
-title: "A Mallorca Cycling Trip this year? Rookie mistakes to avoid!"
-description: "Don't waste your Mallorca cycling trip. Learn the common rookie mistakes and what to do instead – from sunrise starts to essential gear and local etiquette."
+title: "En Mallorca cykelresa i år? Nybörjarmisstag att undvika!"
+description: "Slösa inte bort din Mallorca cykelresa. Lär dig de vanliga nybörjarmistagen och vad du ska göra istället – från soluppgångsst arter till viktig utrustning och lokal etikett."
 date: 2024-01-01
-category: "Cycling Tips"
+category: "Cykeltips"
 featured_image: "/img/blog/rookie-mistakes-mallorca.webp"
-excerpt: "You came to ride. Don't waste the trip. Here are the common ways people mess it up – and what to do instead."
+excerpt: "Du kom för att cykla. Slösa inte bort resan. Här är de vanliga sätten folk gör fel – och vad du ska göra istället."
 translationKey: "blog-rookie-mistakes"
 ---
 
-Short version: you came to ride. Don't waste the trip. Here are the common ways people mess it up – and what to do instead.
+Kort version: du kom för att cykla. Slösa inte bort resan. Här är de vanliga sätten folk gör fel – och vad du ska göra istället.
 
-Roll at sunrise on big-ticket days (Cap de Formentor, Sa Calobra, MA-10).
-Carry photo ID and a phone with WhatsApp.
-Respect grippy-but-slippery roads when damp.
-Plan A/B days – don't empty the tank on day 1.
-Cover up and hydrate. Sunscreen, bottles, electrolytes.
-Book shuttles early in season. Have <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank">Mallorca Bicycle Rescue</a> in your pocket.
+Rulla vid soluppgången på stora dagar (Cap de Formentor, Sa Calobra, MA-10).
+Ha med fotolegitimation och en telefon med WhatsApp.
+Respektera grepp-men-hala vägar när de är fuktiga.
+Planera A/B-dagar – tömm inte tanken dag 1.
+Täck över och hydr era. Solkräm, flaskor, elektrolyter.
+Boka shuttles tidigt på säsongen. Ha <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank">Mallorca Bicycle Rescue</a> i fickan.
 
-## 1) Sleeping late
-**The mistake:** rolling out after 9 when traffic wakes up.
+## 1) Att sova länge
+**Misstaget:** att rulla ut efter 9 när trafiken vaknar.
 
-**Do this instead:** get up earlier and enjoy near-empty roads, soft light, and cooler temps. Sunrise starts are gold for:
+**Gör detta istället:** stiga upp tidigare och njut av nästan tomma vägar, mjukt ljus och svalare temperaturer. Soluppgångsstarter är guld för:
 
-- Cap de Formentor – fewer cars, easier photos, less wind.
-- Sa Calobra – descend before coach traffic, climb mostly in the shade.
-- MA-10 <a href="/en/bike-shuttle/andratx-pollenca-guide/" target="_blank">Andratx to Pollença</a> – longer day, more café / picture stops, less heat.
+- Cap de Formentor – färre bilar, enklare foton, mindre vind.
+- Sa Calobra – nedförsbacke före busstrafik, klättra mestadels i skuggan.
+- MA-10 <a href="/en/bike-shuttle/andratx-pollenca-guide/" target="_blank">Andratx till Pollença</a> – längre dag, fler kafé/bildstopp, mindre hetta.
 
-Pro tip: plenty of restaurants on arrival for breakfast and en route.
+Pro-tips: gott om restauranger vid ankomsten för frukost och på vägen.
 
-## 2) Not carrying photo ID
-**The mistake:** leaving ID at the hotel.
+## 2) Att inte ha med fotolegitimation
+**Misstaget:** att lämna legitimationen på hotellet.
 
-**Do this instead:** carry photo ID (passport or national ID). In Spain the law states police can request it, and it speeds up everything if anything goes sideways.
+**Gör detta istället:** ha med fotolegitimation (pass eller nationellt ID). I Spanien anger lagen att polisen kan begära det, och det påskyndar allt om något går fel.
 
-## 3) Treating the tarmac like back home
-**The mistake:** braking and cornering as if you're on your home roads.
+## 3) Att behandla asfalten som hemma
+**Misstaget:** att bromsa och ta kurvor som om du är på dina hemvägar.
 
-**Do this instead:** Mallorca's surfaces are smooth and fast but can be slick with morning dew or after the first rain because of the increased percentage of gravel in the tarmac to deal with the summer heat. Brake early, be gentle on paint lines and polished patches, and save the heroics for another time.
+**Gör detta istället:** Mallorcas ytor är släta och snabba men kan vara hala med morgondagg eller efter det första regnet på grund av den ökade andelen grus i asfalten för att klara sommarhettan. Bromsa tidigt, var försiktig på målningslinjer och polerade fläckar, och spara hjältedåden till en annan gång.
 
-## 4) Skipping the best route on the island
-**The mistake:** avoiding the MA-10 coast to coast route between <a href="/en/bike-shuttle/andratx-pollenca-guide/" target="_blank">Andratx to Pollença</a> because it looks "too big".
+## 4) Att hoppa över den bästa rutten på ön
+**Misstaget:** att undvika MA-10 kust-till-kust rutten mellan <a href="/en/bike-shuttle/andratx-pollenca-guide/" target="_blank">Andratx till Pollença</a> eftersom den ser "för stor" ut.
 
-**Do this instead:** pick your flavour – 115 to 167 km with real climbing and café heaven – and make it your marquee ride. It is tough and absolutely brilliant. Get the training in before arrival.
+**Gör detta istället:** välj din variant – 115 till 167 km med verklig klättring och kaféhimmel – och gör den till din huvudtur. Den är tuff och absolut lysande. Träna före ankomsten.
 
-## 5) Ignoring Cap de Formentor
-**The mistake:** skipping one of the world's most photogenic lighthouse rides. If you stay in the South, <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Mallorca Cycle Shuttle</a> can now bring you up to Port de Pollença.
+## 5) Att ignorera Cap de Formentor
+**Misstaget:** att hoppa över en av världens mest fotogeniska fyrtur er. Om du bor i söder kan <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Mallorca Cycle Shuttle</a> nu ta dig upp till Port de Pollença.
 
-Cars are now banned from going to the lighthouse from the beginning of June to the end October 10am to 10pm.
+Bilar är nu förbjudna att åka till fyren från början av juni till slutet av oktober 10:00 till 22:00.
 
-## 6) Not riding Sa Calobra
-**The mistake:** telling yourself you'll "save it for next time".
+## 6) Att inte cykla Sa Calobra
+**Misstaget:** att säga till dig själv att du ska "spara det till nästa gång".
 
-**Do this instead:** do it right this time. Either ride in and out or take the <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Sa Calobra Express</a> to hit the climb with fresh legs and chase a PB. Want more? Add Cala Tuent for scenery and more climbing.
+**Gör detta istället:** gör det rätt den här gången. Antingen cykla in och ut eller ta <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Sa Calobra Express</a> för att ta klättringen med friska ben och jaga ett PB. Vill ha mer? Lägg till Cala Tuent för landskapet och mer klättring.
 
-## 7) Forgetting bike rescue
-**The mistake:** a snapped mech hanger or body breakdown turns into a half-day faff for you and your group.
+## 7) Att glömma cykelräddning
+**Misstaget:** en avbruten växelhängare eller kroppsnedbrytning förvandlas till ett halvdagskrångel för dig och din grupp.
 
-**Do this instead:** carry a <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank">Mallorca Bicycle Rescue</a> policy. When the bike or your body breaks down, you get picked up and taken either to a bike shop or back to your base – your choice. Coverage runs from sunrise to sunset.
+**Gör detta istället:** ha en <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank">Mallorca Bicycle Rescue</a>-försäkring. När cykeln eller din kropp går sönder blir du upphämtad och tagen antingen till en cykelaffär eller tillbaka till din bas – ditt val. Täckningen gäller från soluppgång till solnedgång.
 
-## 8) Skipping sunscreen and hydration
-**The mistake:** "I don't burn."
+## 8) Att hoppa över solkräm och hydrering
+**Misstaget:** "Jag bränner inte."
 
-**Do this instead:** sunscreen on face, neck, ears, arms; reapply at long café stops. Two bottles, top up often, add electrolytes. The island gets 308+ sunny days per year – act accordingly.
+**Gör detta istället:** solkräm på ansikte, nacke, öron, armar; applicera om vid långa kaféstopp. Två flaskor, fyll på ofta, lägg till elektrolyter. Ön får 308+ soliga dagar per år – agera därefter.
 
-## 9) Overcooking day one
-**The mistake:** full-gas on arrival, limp the rest of the week.
+## 9) Att överkoka dag ett
+**Misstaget:** full gas vid ankomsten, halta resten av veckan.
 
-**Do this instead:** alternate big and easy days. Think: opener, marquee, recovery spin, second marquee, easy spin.
+**Gör detta istället:** alternaera stora och lätta dagar. Tänk: öppnare, huvudtur, återhämtningsspinn, andra huvudtur, lätt spinn.
 
-## 10) Alcohol amnesia
-**The mistake:** gin and tonics like it's a recovery drink.
+## 10) Alkoholamnesi
+**Misstaget:** gin och tonic som om det är en återhämtningsdryck.
 
-**Do this instead:** enjoy the terrace, but keep it moderate if tomorrow matters.
+**Gör detta istället:** njut av terrassen, men håll det måttligt om morgondagen spelar roll.
 
-## 11) Assuming "cheapest is best"
-**The mistake:** bargain-basement prices with champagne expectations.
+## 11) Att anta "billigast är bäst"
+**Misstaget:** fynd-källarpriser med champagneförväntningar.
 
-**Do this instead:** Mallorca has brilliant, sustainable businesses that charge fair prices for proper service. Book those.
+**Gör detta istället:** Mallorca har lysande, hållbara företag som tar ut rimliga priser för ordentlig service. Boka dem.
 
-## 12) Riding on pavements and walkways
-**The mistake:** using pedestrian spaces to shortcut.
+## 12) Att cykla på trottoarer och gångvägar
+**Misstaget:** att använda fotgängarutrymmen för genvägar.
 
-**Do this instead:** use the smooth roads. Safer for everyone.
+**Gör detta istället:** använd de släta vägarna. Säkrare för alla.
 
-## 13) Forgetting the local lanes
-**The mistake:** missing out on over 7 000km of small almost traffic free cami rurals (local roads).
+## 13) Att glömma de lokala vägarna
+**Misstaget:** att missa över 7 000 km av små nästan trafikfria cami rurals (lokala vägar).
 
-**Do this instead:** go off the beaten path. If you do get 'lost' it's part of the adventure, with 20 minutes more pedalling you will figure out where you are - Mallorca is not the size of Australia!
+**Gör detta istället:** åk utanför de upptrampade stigarna. Om du blir "vilse" är det en del av äventyret, med 20 minuter mer trampande kommer du att räkna ut var du är - Mallorca är inte Australiens storlek!
 
-## 14) Forgetting local respect
-**The mistake:** assuming drivers are anti-bike like they are in your home country.
+## 14) Att glömma lokal respekt
+**Misstaget:** att anta att förare är anti-cykel som de är i ditt hemland.
 
-**Do this instead:** many locals ride – and they respect cyclists. Act like an idiot? Get treated like an idiot! Its not rocket science. A little courtesy goes a long way. Buses included.
+**Gör detta istället:** många lokala cyklar – och de respekterar cyklister. Bete dig som en idiot? Bli behandlad som en idiot! Det är inte raketvetenskap. Lite artighet går långt. Bussar inkluderade.
 
-## Reminder: Pack list for a smooth week
-- Photo ID, payment card, health card/insurance details
-- Phone with WhatsApp and offline maps
-- Sunscreen, lip balm, lightweight gilet/arm warmers
-- 2 bottles, electrolytes, ride food, cash for cafés
-- 2 spare tubes, mini-pump or CO₂, quick link, multi-tool
-- Lights for tunnels and dusk, small first-aid
+## Påminnelse: Packningslista för en smidig vecka
+- Fotolegitimation, betalkort, hälsokort/försäkringsdetaljer
+- Telefon med WhatsApp och offline kartor
+- Solkräm, läppbalsam, lätt gilet/armvärmare
+- 2 flaskor, elektrolyter, turmat, kontanter för kaféer
+- 2 extra slangar, minipump eller CO₂, snabblänk, multiverktyg
+- Ljus för tunnlar och skymning, liten första hjälpen
 
-## Plan your rides with us
-- 300+ <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">scheduled bike buses</a> each year to bucket-list starts
-- <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank">Mallorca Bicycle Rescue</a> for when bike or body breaks
-- 24/7/365 private airport transfers for cyclists
-- <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Sa Calobra Express</a> for PB attempts with fresh legs
+## Planera dina turer med oss
+- 300+ <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">schemalagda cykelbussar</a> varje år till bucket-list starter
+- <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank">Mallorca Bicycle Rescue</a> för när cykel eller kropp går sönder
+- 24/7/365 privata flygplatstransfer för cyklister
+- <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Sa Calobra Express</a> för PB-försök med friska ben
 
-## FAQs
+## Vanliga frågor
 
-**Do I need to carry ID while riding?**
-Yes – carry photo ID so you can identify yourself if asked by police or in case of an incident.
+**Måste jag ha legitimation när jag cyklar?**
+Ja – ha fotolegitimation så att du kan identifiera dig om du blir ombedd av polisen eller vid en incident.
 
-**What time should I start big rides?**
-Around sunrise. It avoids heat and traffic and gives you the best road conditions.
+**Vilken tid ska jag börja stora turer?**
+Runt soluppgången. Det undviker hetta och trafik och ger dig de bästa vägförhållandena.
 
-**Are there seasonal traffic rules for Formentor?**
-Rules can change. Check current access information before you go; bikes remain a great option early. Latest info end 2025 is no cars between 10:00 and 22:00 1 June to 31 October. 2026 these months may be extended.
+**Finns det säsongsmässiga trafikregler för Formentor?**
+Reglerna kan ändras. Kontrollera aktuell tillgångsinformation innan du åker; cyklar förblir ett bra alternativ tidigt. Senaste info slutet av 2025 är inga bilar mellan 10:00 och 22:00 1 juni till 31 oktober. 2026 kan dessa månader utökas.
 
-**Is tap water OK to drink?**
-Calcium content is high in local tap water. Bottled water from cafés and shops is your friend.
+**Är kranvatten OK att dricka?**
+Kalciumhalten är hög i lokalt kranvatten. Flaskvatten från kaféer och butiker är din vän.

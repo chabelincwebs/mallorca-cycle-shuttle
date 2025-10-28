@@ -1,73 +1,73 @@
 ﻿---
-title: "Cookie Policy"
+title: "Cookiepolicy"
 translationKey: cookie-policy
 ---
 
-Autocares Devesa SL, Mallorca Cycle Shuttle and Mallorca Bicycle Rescue inform you here about the use of cookies on its website: mallorcacycleshuttle.com
+Autocares Devesa SL, Mallorca Cycle Shuttle och Mallorca Bicycle Rescue informerar dig här om användningen av cookies på vår webbplats: mallorcacycleshuttle.com
 
-## What are cookies?
+## Vad är cookies?
 
-Cookies are files that can be downloaded to your computer through web pages. They are tools that have an essential role for the provision of numerous services of the information society. Among others, they allow a website to store and retrieve information about the browsing habits of a user or their team and, depending on the information obtained, they can be used to recognize the user and improve the service offered.
+Cookies är filer som kan laddas ner till din dator via webbsidor. De är verktyg som har en väsentlig roll för tillhandahållandet av många tjänster i informationssamhället. Bland annat tillåter de en webbplats att lagra och hämta information om en användares eller deras enhets surfvanor och, beroende på den information som erhålls, kan de användas för att känna igen användaren och förbättra den tjänst som erbjuds.
 
-## Types of cookies
+## Typer av cookies
 
-Depending on the entity that manages the domain from which the cookies are sent and treat the data obtained, two types can be distinguished:
+Beroende på vilken enhet som hanterar domänen från vilken cookies skickas och behandlar de erhållna uppgifterna kan två typer urskiljas:
 
-**Own cookies:** Those that are sent to the user's terminal equipment from a computer or domain managed by the editor itself and from which the service requested by the user is provided.
+**Egna cookies:** De som skickas till användarens terminalutrustning från en dator eller domän som hanteras av utgivaren själv och från vilken den tjänst som användaren begär tillhandahålls.
 
-**Third party cookies:** Those that are sent to the user's terminal equipment from a computer or domain that is not managed by the publisher, but by another entity that processes the data obtained through the cookies.
+**Tredjepartscookies:** De som skickas till användarens terminalutrustning från en dator eller domän som inte hanteras av utgivaren, utan av en annan enhet som behandlar de uppgifter som erhålls genom cookies.
 
-In the event that cookies are installed from a computer or domain managed by the publisher itself but the information collected through them is managed by a third party, they can not be considered as own cookies.
+I händelse av att cookies installeras från en dator eller domän som hanteras av utgivaren själv men informationen som samlas in genom dem hanteras av en tredje part, kan de inte betraktas som egna cookies.
 
-There is also a second classification according to the period of time they remain stored in the client's browser, which may be:
+Det finns också en andra klassificering enligt den tidsperiod de förblir lagrade i klientens webbläsare, vilket kan vara:
 
-**Session cookies:** Designed to collect and store data while the user accesses a web page. They are usually used to store information that only interests to keep for the provision of the service requested by the user on a single occasion (eg a list of products purchased).
+**Sessionscookies:** Utformade för att samla in och lagra data medan användaren besöker en webbsida. De används vanligtvis för att lagra information som endast är av intresse att behålla för tillhandahållandet av tjänsten som användaren begär vid ett enstaka tillfälle (t.ex. en lista över köpta produkter).
 
-**Persistent cookies:** The data is still stored in the terminal and can be accessed and processed for a period defined by the person responsible for the cookie, which can range from a few minutes to several years.
+**Permanenta cookies:** Uppgifterna lagras fortfarande i terminalen och kan nås och bearbetas under en period som definieras av den som ansvarar för cookien, vilket kan variera från några minuter till flera år.
 
-Finally, there is another classification with six types of cookies according to the purpose for which the data obtained is treated:
+Slutligen finns det en annan klassificering med sex typer av cookies enligt det syfte för vilket de erhållna uppgifterna behandlas:
 
-**Technical cookies:** Those that allow the user to navigate through a web page, platform or application and the use of different options or services that exist in it, such as controlling traffic and data communication, identify the session, access restricted access parts, remember the elements that make up an order, perform the purchase process of an order, make the request for registration or participation in an event, use security elements during navigation, store contents for the dissemination of videos or sound or share content through social networks.
+**Tekniska cookies:** De som gör det möjligt för användaren att navigera genom en webbsida, plattform eller applikation och användningen av olika alternativ eller tjänster som finns i den, såsom att kontrollera trafik och datakommunikation, identifiera sessionen, få tillgång till delar med begränsad åtkomst, komma ihåg elementen som utgör en beställning, utföra inköpsprocessen av en beställning, göra begäran om registrering eller deltagande i ett evenemang, använda säkerhetselement under navigering, lagra innehåll för spridning av videor eller ljud eller dela innehåll via sociala nätverk.
 
-**Personalization cookies:** They allow the user to access the service with some predefined general characteristics based on a series of criteria in the user's terminal, such as the language, the type of browser through which the user accesses the service, the configuration regional from where you access the service, etc.
+**Personaliseringscookies:** De tillåter användaren att komma åt tjänsten med vissa fördefinierade allmänna egenskaper baserade på en serie kriterier i användarens terminal, såsom språk, typ av webbläsare genom vilken användaren kommer åt tjänsten, den regionala konfigurationen från vilken du kommer åt tjänsten, etc.
 
-**Analysis Cookies:** They allow the person responsible for them to monitor and analyze the behavior of the users of the websites to which they are linked. The information collected through this type of cookies is used in the measurement of the activity of the websites, application or platform and for the elaboration of navigation profiles of the users of said sites, applications and platforms, in order to introduce improvements in function of the analysis of the data of use made by the users of the service.
+**Analyscookies:** De tillåter den ansvariga för dem att övervaka och analysera beteendet hos användarna av de webbplatser till vilka de är länkade. Informationen som samlas in genom denna typ av cookies används i mätningen av aktiviteten på webbplatserna, applikationen eller plattformen och för utarbetandet av navigationsprofiler för användarna av nämnda webbplatser, applikationer och plattformar, i syfte att införa förbättringar baserat på analysen av de användningsdata som användarna av tjänsten gör.
 
-**Advertising cookies:** They allow the management, in the most efficient way possible, of the advertising spaces.
+**Annonskookies:** De tillåter hantering, på det mest effektiva sättet möjligt, av annonsutrymmena.
 
-**Behavioral advertising cookies:** They store user behavior information obtained through the continuous observation of their browsing habits, which allows developing a specific profile to display advertising based on it.
+**Beteendebaserade annonskookies:** De lagrar information om användarbeteende som erhålls genom kontinuerlig observation av deras surfvanor, vilket möjliggör utveckling av en specifik profil för att visa reklam baserat på den.
 
-**External social network cookies:** They are used so that visitors can interact with the content of different social platforms (facebook, youtube, twitter, linkedIn, etc.) and that they are generated only for the users of said social networks. The conditions of use of these cookies and the information collected is regulated by the privacy policy of the corresponding social platform.
+**Externa sociala nätverkscookies:** De används så att besökare kan interagera med innehållet på olika sociala plattformar (facebook, youtube, twitter, linkedIn, etc.) och att de endast genereras för användarna av nämnda sociala nätverk. Användningsvillkoren för dessa cookies och den information som samlas in regleras av sekretesspolicyn för motsvarande sociala plattform.
 
-## Deactivation and elimination of cookies
+## Avaktivering och borttagning av cookies
 
-You have the option to allow, block or eliminate the cookies installed on your computer by configuring the browser options installed on your computer. When you disable cookies, some of the available services may no longer be operational. The way to disable cookies is different for each browser, but it can usually be done from the Tools or Options menu. You can also consult the browser's Help menu where you can find instructions. The user may at any time choose which cookies he wants to work on this website.
+Du har möjlighet att tillåta, blockera eller ta bort cookies som installerats på din dator genom att konfigurera webbläsaralternativen som installerats på din dator. När du inaktiverar cookies kan vissa av de tillgängliga tjänsterna sluta fungera. Sättet att inaktivera cookies är olika för varje webbläsare, men det kan vanligtvis göras från menyn Verktyg eller Alternativ. Du kan också konsultera webbläsarens hjälpmeny där du kan hitta instruktioner. Användaren kan när som helst välja vilka cookies han vill arbeta med på denna webbplats.
 
-You can allow, block or delete the cookies installed on your computer by configuring the browser options installed on your computer:
+Du kan tillåta, blockera eller ta bort cookies som installerats på din dator genom att konfigurera webbläsaralternativen som installerats på din dator:
 
-- **Microsoft Internet Explorer or Microsoft Edge:** http://windows.microsoft.com/es-es/windows-vista/Block-or-allow-cookies
+- **Microsoft Internet Explorer eller Microsoft Edge:** http://windows.microsoft.com/es-es/windows-vista/Block-or-allow-cookies
 - **Mozilla Firefox:** http://support.mozilla.org/en/kb/impedir-que-los-sitios-web-guarden-sus-preferencia
 - **Chrome:** https://support.google.com/accounts/answer/61416?hl=en
 - **Safari:** http://safari.helpmax.net/es/privacidad-y-seguridad/como-gestionar-las-cookies/
 - **Opera:** http://help.opera.com/Linux/10.60/es-ES/cookies.html
 
-In addition, you can also manage the cookie store in your browser through tools such as the following:
+Dessutom kan du också hantera cookie-lagringen i din webbläsare genom verktyg som följande:
 
 - **Ghostery:** www.ghostery.com/
 - **Your Online Choices:** www.youronlinechoices.com
 
-## Cookies used in mallorcacycleshuttle.com
+## Cookies som används på mallorcacycleshuttle.com
 
-Next, the cookies that are being used in this portal are identified, as well as their typology and function:
+Därefter identifieras de cookies som används på denna portal, liksom deras typologi och funktion:
 
-## Acceptance of the Cookies Policy
+## Godkännande av cookiepolicyn
 
-mallorcacycleshuttle.com, assumes that you accept the use of cookies. However, it shows information about your cookies policy at the bottom or top of any page of the portal with each login in order for you to be aware.
+mallorcacycleshuttle.com förutsätter att du accepterar användningen av cookies. Den visar dock information om din cookiepolicy längst ner eller högst upp på någon sida på portalen vid varje inloggning för att du ska vara medveten.
 
-Given this information it is possible to carry out the following actions:
+Med tanke på denna information är det möjligt att utföra följande åtgärder:
 
-**Accept cookies:** This warning will not be displayed again when accessing any portal page during this session.
+**Acceptera cookies:** Denna varning kommer inte att visas igen när du går in på någon portalsida under denna session.
 
-**Close:** The notice is hidden on this page.
+**Stäng:** Meddelandet är dolt på denna sida.
 
-**Modify your settings:** You can get more information about what cookies are, know the Cookies Policy of: mallorcacycleshuttle.com and modify the configuration of your browser.
+**Ändra dina inställningar:** Du kan få mer information om vad cookies är, lära känna cookiepolicyn för: mallorcacycleshuttle.com och ändra konfigurationen av din webbläsare.

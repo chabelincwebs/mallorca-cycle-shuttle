@@ -1,75 +1,75 @@
 ---
-title: "Cycling Sa Calobra With a Twist: Add Cala Tuent"
-description: "You've ridden Sa Calobra before. Now add Cala Tuent for quieter roads, stunning views, and proper adventure vibes. Here's how to fold it into your day."
+title: "Cykla Sa Calobra med en twist: Lägg till Cala Tuent"
+description: "Du har cyklat Sa Calobra förut. Lägg nu till Cala Tuent för lugnare vägar, fantastisk utsikt och äkta äventyrsstäm ning. Här är hur du lägger till det i din dag."
 date: 2024-01-01
-category: "Cycling Tips"
+category: "Cykeltips"
 featured_image: "/img/blog/cala-tuent-sa-calobra.webp"
-excerpt: "Turn Sa Calobra into something more. Add Cala Tuent for empty roads, turquoise bays, and a fresh angle on Mallorca's best-known climb."
+excerpt: "Förvandla Sa Calobra till något mer. Lägg till Cala Tuent för tomma vägar, turkosa vikar och en fräsch vinkel på Mallorcas mest kända klättring."
 translationKey: "blog-sa-calobra-cala-tuent"
 ---
 
-You've ridden Sa Calobra before. You've flown down those hairpins, glanced at that left-hand turn about four-fifths of the way down, and wondered where it leads. Short answer: to a quieter, stunning out-and-back that makes Sa Calobra even better. Here's how to fold Cala Tuent into your day without wrecking the flow.
+Du har cyklat Sa Calobra förut. Du har flugit ner de hårnålskurvorna, skymtat den vänstra svängen ungefär fyra femtedelar ner och undrat vart den leder. Kort svar: till en lugnare, fantastisk ut-och-tillbaka som gör Sa Calobra ännu bättre. Här är hur du lägger till Cala Tuent i din dag utan att förstöra flödet.
 
-## Why add Cala Tuent?
+## Varför lägga till Cala Tuent?
 
-- Extra views, zero crowds, proper adventure vibes.
-- Smooth hairpins down to a turquoise bay, then a satisfying climb back.
-- An easy way to turn a great ride into a memorable one.
-- The add-on: ~10.5 km total with +334 m climbing. Out and back. Worth it.
+- Extra utsikt, noll folkmassor, äkta äventyrsstämning.
+- Smidiga hårnålskurvor ner till en turkos vik, sedan en tillfredsställande klättring tillbaka.
+- Ett enkelt sätt att förvandla en bra tur till en minnesvärd en.
+- Tillägget: ~10,5 km totalt med +334 m klättring. Ut och tillbaka. Värt det.
 
-## The route at a glance
+## Rutten i korthet
 
-1. Descend Sa Calobra from Coll dels Reis to the Port as usual.
-2. Skip the port stop and turn back uphill.
-3. After roughly 2 km of gentle climbing, take the signed turn for Cala Tuent / Es Vergeret on your right.
-4. You'll meet a 7% ramp for about 1 km straight away. Don't panic. Settle in.
-5. Continue through peaceful, near-empty roads to the Ermita de Sant Llorenç and Mirador. Views of Cala Tuent will hit you here.
-6. Enjoy the scenic hairpins down to the bay.
-7. Return the same way to the Sa Calobra road, then rejoin the main climb to Coll dels Reis.
+1. Cykla ner Sa Calobra från Coll dels Reis till hamnen som vanligt.
+2. Hoppa över hamnstoppet och vänd tillbaka uppför.
+3. Efter ungefär 2 km av försiktig klättring, ta den skyltade svängen för Cala Tuent / Es Vergeret till höger.
+4. Du möter en 7% ramp i ungefär 1 km direkt. Panik inte. Sätt dig in.
+5. Fortsätt genom fridfulla, nästan tomma vägar till Ermita de Sant Llorenç och Mirador. Utsikten över Cala Tuent kommer att träffa dig här.
+6. Njut av de natursköna hårnålskurvorna ner till viken.
+7. Återvänd samma väg till Sa Calobra-vägen, sedan återanslut den huvudsakliga klättringen till Coll dels Reis.
 
-## What it feels like
+## Hur det känns
 
-Expect a brief sting in the legs leaving the main road, then calm, quiet mountain riding. No buses. Few cars. Often no other cyclists. The descent to the bay is a joy; the climb back rewards steady pacing. Rejoining Sa Calobra with the other cyclists who have not been to Cala Tuent may make you feel a little smug.
+Förvänta dig en kort stick i benen när du lämnar huvudvägen, sedan lugn, tyst bergsrida. Inga bussar. Få bilar. Ofta inga andra cyklister. Nedförsbacken till viken är en glädje; klättringen tillbaka belönar jämn taktik. Att återansluta Sa Calobra med de andra cyklisterna som inte har varit till Cala Tuent kan göra dig lite självbelåten.
 
-## Food and water
+## Mat och vatten
 
-There's one restaurant at Cala Tuent: Es Vergeret. It's a lovely terrace over the sea. If you want a meal, phone ahead in season. Otherwise, carry snacks and water—there are no shops.
+Det finns en restaurang vid Cala Tuent: Es Vergeret. Det är en underbar terrass över havet. Om du vill ha en måltid, ring i förväg under säsongen. Annars, ta med snacks och vatten—det finns inga butiker.
 
-- **Es Vergeret:** Open March to October, closed Mondays. Contact: <a href="https://www.esvergeret.com/en/contact" target="_blank">https://www.esvergeret.com/en/contact</a>
-- Quick options: coffee, cake, ice cream.
-- Full plates: seafood pasta and similar carb-friendly dishes.
+- **Es Vergeret:** Öppet mars till oktober, stängt måndagar. Kontakt: <a href="https://www.esvergeret.com/en/contact" target="_blank">https://www.esvergeret.com/en/contact</a>
+- Snabba alternativ: kaffe, kaka, glass.
+- Fulla tallrikar: skaldjurspasta och liknande kolhydratvänliga rätter.
 
-## Distances and elevation
+## Avstånd och höjd
 
-- **Cala Tuent add-on:** ~10.5 km, +334 m.
-- **Classic big day from Port de Pollença/Alcúdia/Can Picafort including Cala Tuent:** ~113 km, +2,374 m.
-- **Without Cala Tuent:** ~103 km, +2,040 m.
-- **Time-saver option (see shuttle below):** Lluc → Sa Calobra via Cala Tuent → back to Port de Pollença ~78 km, +1,583 m.
-- **Without Cala Tuent:** ~68 km, +1,249 m.
+- **Cala Tuent-tillägg:** ~10,5 km, +334 m.
+- **Klassisk stor dag från Port de Pollença/Alcúdia/Can Picafort inklusive Cala Tuent:** ~113 km, +2 374 m.
+- **Utan Cala Tuent:** ~103 km, +2 040 m.
+- **Tidsbesparing alternativ (se shuttle nedan):** Lluc → Sa Calobra via Cala Tuent → tillbaka till Port de Pollença ~78 km, +1 583 m.
+- **Utan Cala Tuent:** ~68 km, +1 249 m.
 
-## Smart ways to include it
+## Smarta sätt att inkludera det
 
-- **Full-fat mountain loop:** Up Coll de sa Batalla hairpins, down Coll de Femenia on the way home. Add Cala Tuent between your Sa Calobra descent and final climb.
-- **Short on time or want fresher legs?** Use our <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Sa Calobra Express</a>. We drop at the Repsol in Lluc, so you can focus on the best bits and still add Cala Tuent without blowing the schedule.
+- **Full-fett bergsloop:** Upp Coll de sa Bataia hårnålskurvor, ner Coll de Femenia på vägen hem. Lägg till Cala Tuent mellan din Sa Calobra nedförsbacke och sista klättring.
+- **Kort om tid eller vill ha fräschare ben?** Använd vår <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Sa Calobra Express</a>. Vi släpper vid Repsol i Lluc, så du kan fokusera på de bästa bitarna och fortfarande lägga till Cala Tuent utan att springa schemat.
 
-We run the <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Sa Calobra Express</a> with a drop-off at the Repsol Lluc. Ideal if you're limited on time or want to climb with fresh legs or want to use it as a starting point to add more distance (Cala Tuent, up and over Puig Major etc)
+Vi kör <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Sa Calobra Express</a> med en avsläpp vid Repsol Lluc. Idealiskt om du har begränsat med tid eller vill klättra med friska ben eller vill använda det som en startpunkt för att lägga till mer avstånd (Cala Tuent, upp och över Puig Major etc)
 
-## Safety and support
+## Säkerhet och stöd
 
-Sa Calobra and its add-ons are hotspots for mechanicals and tired legs. Have a plan.
+Sa Calobra och dess tillägg är hotspots för mekaniska fel och trötta ben. Ha en plan.
 
-If bike or body break down, our <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank">Mallorca Bicycle Rescue</a> will collect you and your bike and take you where you need to go. Peace of mind on big mountain days.
+Om cykel eller kropp går sönder kommer vår <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank">Mallorca Bicycle Rescue</a> att hämta dig och din cykel och ta dig dit du behöver åka. Sinnesro på stora bergsdagar.
 
-## Tips that actually help
+## Tips som faktiskt hjälper
 
-- **Pace the add-on.** Keep it aerobic; the main climb is still ahead of you.
-- **Gears matter.** Compact or mid-compact with a friendly cassette saves the day.
-- **Start earlier.** Beat bus traffic on the main Sa Calobra road and enjoy quieter views.
-- **Season notes.** Es Vergeret runs March–October, closed Mondays. Outside those months, bring your own supplies.
-- **Photos.** Loads of options for scenic photos and <a href="https://www.mallorcacyclingphotos.com/" target="_blank">Mallorca Bike Fotos</a> are on Sa Calobra in season to capture professional images of you in action.
+- **Takta tillägget.** Håll det aerobiskt; huvudklättringen är fortfarande framför dig.
+- **Växlar spelar roll.** Compact eller mid-compact med en vänlig kassett räddar dagen.
+- **Börja tidigare.** Slå busstrafiken på huvudvägen till Sa Calobra och njut av lugnare utsikter.
+- **Säsongsnoter.** Es Vergeret går mars–oktober, stängt måndagar. Utanför dessa månader, ta med egna förnödenheter.
+- **Foton.** Massor av alternativ för natursköna foton och <a href="https://www.mallorcacyclingphotos.com/" target="_blank">Mallorca Bike Fotos</a> är på Sa Calobra under säsongen för att fånga professionella bilder av dig i aktion.
 
-## Bottom line
+## Slutresultatet
 
-Yes, improving your PR on Sa Calobra is fun. But adding Cala Tuent gives you something most riders miss: empty ribbon roads, a gorgeous bay, and a fresh angle on Mallorca's best-known climb. Do it once and you'll wonder why you waited.
+Ja, att förbättra ditt PR på Sa Calobra är kul. Men att lägga till Cala Tuent ger dig något de flesta cyklister missar: tomma bandvägar, en underbar vik och en fräsch vinkel på Mallorcas mest kända klättring. Gör det en gång och du undrar varför du väntade.
 
-Ride it this year. You won't be disappointed.
+Cykla det i år. Du kommer inte bli besviken.

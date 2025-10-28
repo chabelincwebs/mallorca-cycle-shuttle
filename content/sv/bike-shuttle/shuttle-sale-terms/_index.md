@@ -1,79 +1,79 @@
 ---
-title: "Shuttle Terms & Conditions of Sale"
-description: "Terms for purchasing Mallorca Cycle Shuttle products and services."
+title: "Shuttlevillkor & Försäljningsvillkor"
+description: "Villkor för köp av Mallorca Cycle Shuttle-produkter och -tjänster."
 translationKey: shuttle-sale-terms
 ---
 
-Your agreement to these Mallorca Cycle Shuttle terms and conditions confirms that you understand the ticket you are purchasing.
+Ditt godkännande av dessa Mallorca Cycle Shuttle-villkor bekräftar att du förstår biljetten du köper.
 
-## Fitness and Skills
+## Kondition och färdigheter
 
-By purchasing a shuttle bus ticket, you confirm that you are fit enough and have the skills required to cycle back to your starting point. If you are unsure of your ability to complete the return ride, please choose an easier route or do not purchase a ticket.
+Genom att köpa en shuttlebussbiljett bekräftar du att du är tillräckligt fit och har de färdigheter som krävs för att cykla tillbaka till din startpunkt. Om du är osäker på din förmåga att slutföra returresan, vänligen välj en enklare rutt eller köp inte en biljett.
 
-## Children
+## Barn
 
-Our shuttle buses are not suitable for young children. Children aged 15 and under must be accompanied by a paying adult.
+Våra shuttlebussar är inte lämpliga för små barn. Barn i åldern 15 år och yngre måste åtföljas av en betalande vuxen.
 
-## Ticket Validity
+## Biljettgiltighet
 
-Your ticket is valid only for the Mallorca Cycle Shuttle service at the time and date stated on the ticket. The ticket remains the property of the company and must be made available for inspection by the driver on request.
+Din biljett är endast giltig för Mallorca Cycle Shuttle-tjänsten vid den tid och det datum som anges på biljetten. Biljetten förblir företagets egendom och måste göras tillgänglig för inspektion av föraren på begäran.
 
-## Refunds and Changes
+## Återbetalningar och ändringar
 
-Tickets are non-refundable.
+Biljetter är inte återbetalningsbara.
 
-**Flexi tickets:** You are allowed one free date change to a service that suits you better more than 48 hours before travel, provided seats are available on the new service. Additional changes incur an administration charge of €10 per ticket per change.
+**Flexibiljetter:** Du tillåts en kostnadsfri datumändring till en tjänst som passar dig bättre mer än 48 timmar före resan, förutsatt att platser är tillgängliga på den nya tjänsten. Ytterligare ändringar medför en administrationsavgift på €10 per biljett per ändring.
 
-**Standard tickets:** A change may or may not be possible, depending on availability on the new service. Where a change is possible, an administration charge of €10 per ticket per change will be made.
+**Standardbiljetter:** En ändring kan eller kanske inte är möjlig, beroende på tillgängligheten på den nya tjänsten. Där en ändring är möjlig kommer en administrationsavgift på €10 per biljett per ändring att göras.
 
-No changes to any ticket are possible less than 48 hours before travel.
+Inga ändringar av någon biljett är möjliga mindre än 48 timmar före resan.
 
-## Boarding and Departure
+## Ombordstigning och avresa
 
-The shuttle bus cannot wait for latecomers. No refunds will be given to passengers who do not arrive in time for departure. Please arrive at least 5 minutes before your chosen bike-loading time so we can load and secure your bicycle before departure.
+Shuttlebussen kan inte vänta på sena passagerare. Inga återbetalningar kommer att ges till passagerare som inte anländer i tid för avresan. Vänligen anländ minst 5 minuter före din valda cykelpackningstid så att vi kan lasta och säkra din cykel före avresan.
 
-## Service Cancellations
+## Tjänsteavbrott
 
-We reserve the right to cancel or suspend services as necessary and without prior notice.
+Vi förbehåller oss rätten att avbryta eller avbryta tjänster efter behov och utan föregående meddelande.
 
-If fewer than 6 passengers are booked on a scheduled service, the service may not run. If the service does not run, you may choose either a full refund for tickets purchased or a transfer to an alternative scheduled shuttle, if seats are available.
+Om färre än 6 passagerare är bokade på en schemalagd tjänst, kan tjänsten inte köras. Om tjänsten inte körs kan du välja antingen full återbetalning för köpta biljetter eller överföring till en alternativ schemalagd shuttle, om platser är tillgängliga.
 
-If we cancel a shuttle for reasons within our control, you may choose either a full refund or a transfer to an alternative scheduled shuttle with available seats.
+Om vi avbryter en shuttle av skäl inom vår kontroll kan du välja antingen full återbetalning eller överföring till en alternativ schemalagd shuttle med tillgängliga platser.
 
-If we cancel due to inclement weather, you may choose either a full refund or a transfer to an alternative scheduled shuttle with available seats.
+Om vi avbryter på grund av dåligt väder kan du välja antingen full återbetalning eller överföring till en alternativ schemalagd shuttle med tillgängliga platser.
 
-If we need to adjust collection times, please monitor your email and telephone for messages from us.
+Om vi behöver justera upphämtningstider, vänligen övervaka din e-post och telefon för meddelanden från oss.
 
-If we cancel a service for reasons outside our control (excluding inclement weather), no refunds will be possible.
+Om vi avbryter en tjänst av skäl utanför vår kontroll (exklusive dåligt väder) kommer inga återbetalningar att vara möjliga.
 
-## Personal Belongings
+## Personliga tillhörigheter
 
-We take no responsibility for items left on the bus. Personal items are carried at the owner's risk, and Mallorca Cycle Shuttle cannot accept responsibility for items that are damaged or lost.
+Vi tar inget ansvar för föremål som lämnats kvar på bussen. Personliga föremål bärs på ägarens risk, och Mallorca Cycle Shuttle kan inte acceptera ansvar för föremål som skadas eller försvinner.
 
-## Conduct
+## Uppförande
 
-Smoking and alcoholic drinks are not permitted on the shuttle bus.
+Rökning och alkoholhaltiga drycker är inte tillåtna på shuttlebussen.
 
-Mallorca Cycle Shuttle reserves the right to refuse entry to vehicles and premises to intoxicated persons. In such cases, tickets will not be refunded.
+Mallorca Cycle Shuttle förbehåller sig rätten att vägra inträde till fordon och lokaler för berusade personer. I sådana fall kommer biljetter inte att återbetalas.
 
-We will not tolerate abusive or threatening behaviour towards staff or other passengers and reserve the right to refuse entry to vehicles and premises. In such cases, tickets will not be refunded.
+Vi kommer inte att tolerera missbrukande eller hotfullt beteende mot personal eller andra passagerare och förbehåller oss rätten att vägra inträde till fordon och lokaler. I sådana fall kommer biljetter inte att återbetalas.
 
-Please be mindful of other passengers. Anyone behaving in a disruptive manner will be asked to disembark.
+Var vänlig mot andra passagerare. Alla som beter sig störande kommer att uppmanas att gå av.
 
-## Route Information
+## Ruttinformation
 
-The shuttle bus does not stop en route.
+Shuttlebussen stannar inte på vägen.
 
-As a transport service, we are not responsible for the state of the roads or whether any particular road is open or closed to cyclists. There are many return routes from each of our destinations, and you may need to choose an alternative if your first choice is unavailable. Please check the official road status for Mallorca before you ride.
+Som en transporttjänst är vi inte ansvariga för vägarnas tillstånd eller om någon viss väg är öppen eller stängd för cyklister. Det finns många returvägar från var och en av våra destinationer, och du kan behöva välja ett alternativ om ditt första val inte är tillgängligt. Vänligen kontrollera den officiella vägstatusen för Mallorca innan du cyklar.
 
-## Facilities
+## Faciliteter
 
-There are no toilet or water facilities on our vehicles.
+Det finns inga toalett- eller vattenfaciliteter på våra fordon.
 
-## Privacy
+## Integritet
 
-Mallorca Cycle Shuttle will not share customer information with third parties, and we do not retain financial information.
+Mallorca Cycle Shuttle kommer inte att dela kundinformation med tredje parter, och vi behåller inte finansiell information.
 
-## E-Bikes
+## Elcyklar
 
-If you have an e-bike that is larger than a standard road or mountain bike, please tell us at the time of booking so we can ensure there is sufficient space in the trailer.
+Om du har en elcykel som är större än en standard landsvägs- eller mountainbike, vänligen meddela oss vid bokningstillfället så att vi kan säkerställa att det finns tillräckligt med utrymme i släpvagnen.

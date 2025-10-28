@@ -1,25 +1,25 @@
 ---
-title: "Mallorca Airport Transfers"
-description: "Convenient airport transfer services for cyclists in Mallorca"
+title: "Mallorca Flygplatstransfer"
+description: "Bekväma flygplatstransfertjänster för cyklister på Mallorca"
 translationKey: airport-transfers
 
-hero_subtitle: "Designed by cyclists for cyclists"
+hero_subtitle: "Designad av cyklister för cyklister"
 
-intro_text: "Our Mallorca airport transfers are designed by cyclists for cyclists, catering to groups of all sizes. We offer reliable, efficient, and stress-free door-to-door private airport transfers from Palma de Mallorca Airport to all areas of Mallorca, available 24 hours a day, 7 days a week, 365 days a year through our bus company, MALLORCA HOLIDAY TRANSFERS."
+intro_text: "Våra Mallorca flygplatstransfer är designade av cyklister för cyklister, anpassade för grupper av alla storlekar. Vi erbjuder pålitlig, effektiv och stressfri dörr-till-dörr privat flygplatstransfer från Palma de Mallorca flygplats till alla områden av Mallorca, tillgänglig 24 timmar om dygnet, 7 dagar i veckan, 365 dagar om året genom vårt bussföretag, MALLORCA HOLIDAY TRANSFERS."
 
-section_title: "Why Choose Our Mallorca Airport Transfers?"
+section_title: "Varför Välja Vår Mallorca Flygplatstransfer?"
 
 features:
-  - title: "By Cyclists, for Cyclists"
-    text: "Join over 30,000 happy customers each year who trust us for their Mallorca transfers."
-  - title: "Private Transfers"
-    text: "All our transfers are private for you and your group, ensuring comfort and convenience."
-  - title: "Flight Monitoring"
-    text: "We monitor all flight times for delays, so we're always there when you arrive."
-  - title: "Instant Booking"
-    text: "Use the form below for an instant quote and to book your transfer."
-  - title: "Immediate Confirmation"
-    text: "Your booking confirmation is sent instantly to your email (check your spam folder just in case!)."
-  - title: "Office at the Airport"
-    text: "Any issues, we are there to help. Service comes first."
+  - title: "Av Cyklister, för Cyklister"
+    text: "Gå med över 30 000 nöjda kunder varje år som litar på oss för sina Mallorca-transporter."
+  - title: "Privata Transporter"
+    text: "Alla våra transporter är privata för dig och din grupp, vilket säkerställer komfort och bekvämlighet."
+  - title: "Flygövervakning"
+    text: "Vi övervakar alla flygtider för förseningar, så vi är alltid där när du anländer."
+  - title: "Omedelbar Bokning"
+    text: "Använd formuläret nedan för en omedelbar offert och för att boka din transfer."
+  - title: "Omedelbar Bekräftelse"
+    text: "Din bokningsbekräftelse skickas omedelbart till din e-post (kontrollera din skräppostmapp ifall!)."
+  - title: "Kontor på Flygplatsen"
+    text: "Vid eventuella problem är vi där för att hjälpa till. Service kommer först."
 ---

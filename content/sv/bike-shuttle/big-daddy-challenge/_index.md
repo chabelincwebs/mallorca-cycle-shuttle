@@ -1,23 +1,23 @@
 ---
-title: "Master Cycling Guide: The Big Daddy Challenge"
-description: "Epic all-day traverse of Mallorcas Serra de Tramuntana with 8 classified cols and optional bonus ports"
+title: "Mästarguide: Big Daddy Challenge"
+description: "Episk heldagstur genom Mallorcas Serra de Tramuntana med 8 klassificerade pass och valfria bonushamnar"
 translationKey: "guide-big-daddy"
 ---
 
 <p class="header-subtitle">
-Bike out, bus back.
+Cykla ut, buss tillbaka.
 </p>
 
 <div class="hero-intro-banner">
 <div class="hero-intro-content">
 <p class="hero-intro-centered fade-in-up">
-Will this be your <strong>best day on a bike?</strong>
+Kommer detta att bli din <strong>bästa dag på cykel?</strong>
 </p>
 <p class="hero-intro-main fade-in-up delay-1">
-An epic, all-day traverse of <span class="highlight">Mallorca's Serra de Tramuntana</span> with three optional "bonus" ports for extra bite: <strong>Port des Canonge</strong>, <strong>Port de Valldemossa</strong>, and <strong>Port de Sa Calobra</strong>
+En episk, heldags genomfärd av <span class="highlight">Mallorcas Serra de Tramuntana</span> med tre valfria "bonus"-hamnar för extra bett: <strong>Port des Canonge</strong>, <strong>Port de Valldemossa</strong>, och <strong>Port de Sa Calobra</strong>
 </p>
 <p class="hero-intro-features fade-in-up delay-2">
-Butter-smooth tarmac • 8 classified cols • Coastal cliffs • Pine forest • High mountains • Frequent café villages
+Silkeslent asfalt • 8 klassificerade pass • Kustklippor • Tallskog • Höga berg • Frekventa byar med caféer
 </p>
 </div>
 </div>
@@ -251,15 +251,15 @@ html {
 <span style="font-size: 1.5rem;">📸</span>
 <span class="card-toggle">+</span>
 </div>
-<h3>Snapshot</h3>
+<h3>Ögonblicksbild</h3>
 </div>
 <div class="info-card-content">
-<p><strong>Distance & climbing:</strong> Roughly 162–167 km with ~4,300 m of ascent</p>
-<p><strong>Cols:</strong> 8 classified</p>
-<p><strong>Surface:</strong> Butter-smooth tarmac</p>
-<p><strong>Scenery:</strong> Coastal cliffs, pine forest, high mountains</p>
-<p><strong>Fuel stops:</strong> Frequent café villages</p>
-<p><strong>Difficulty:</strong> Not for everyone – unrelenting in places</p>
+<p><strong>Distans & klättring:</strong> Ungefär 162–167 km med ~4,300 m stigning</p>
+<p><strong>Pass:</strong> 8 klassificerade</p>
+<p><strong>Vägyta:</strong> Silkeslent asfalt</p>
+<p><strong>Landskap:</strong> Kustklippor, tallskog, höga berg</p>
+<p><strong>Tankstopp:</strong> Frekventa byar med caféer</p>
+<p><strong>Svårighetsgrad:</strong> Inte för alla – obönhörlig på vissa ställen</p>
 </div>
 </div>
 
@@ -269,12 +269,12 @@ html {
 <span style="font-size: 1.5rem;">🔑</span>
 <span class="card-toggle">+</span>
 </div>
-<h3>What It Is</h3>
+<h3>Vad det är</h3>
 </div>
 <div class="info-card-content">
-<p>An epic, all-day traverse of Mallorca's Serra de Tramuntana with three optional "bonus" ports for extra bite: Port des Canonge, Port de Valldemossa, and Port de Sa Calobra.</p>
-<p>You set the pace and the stopping strategy. We get you to the start by <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank" rel="noopener noreferrer">shuttle</a>; you ride the spine of the range; you finish with a bus back.</p>
-<p>Expect long, steady climbs, stacked back-to-back. "Unrelenting" is the word riders use most.</p>
+<p>En episk, heldags genomfärd av Mallorcas Serra de Tramuntana med tre valfria "bonus"-hamnar för extra bett: Port des Canonge, Port de Valldemossa, och Port de Sa Calobra.</p>
+<p>Du sätter takten och stoppstrategin. Vi tar dig till starten med <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank" rel="noopener noreferrer">shuttle</a>; du cyklar längs bergskedjans ryggrad; du avslutar med en buss tillbaka.</p>
+<p>Förvänta dig långa, stadiga klättringar, staplade rygg mot rygg. "Obönhörlig" är ordet cyklister använder mest.</p>
 </div>
 </div>
 
@@ -284,13 +284,13 @@ html {
 <span style="font-size: 1.5rem;">🚴</span>
 <span class="card-toggle">+</span>
 </div>
-<h3>Route Concept</h3>
+<h3>Ruttkoncept</h3>
 </div>
 <div class="info-card-content">
-<p><strong>Bike bus to the start</strong> – roll out fresh.</p>
-<p><strong>Ride the Tramuntana</strong> – stitch together the classic coastal road and high-mountain passes.</p>
-<p><strong>Optional add-ons</strong> – drop to sea level at one or more ports, then climb back out.</p>
-<p><strong>Bus back</strong> – legs up, stories out.</p>
+<p><strong>Cykelbuss till starten</strong> – rulla ut fräsch.</p>
+<p><strong>Cykla Tramuntana</strong> – sy ihop den klassiska kustvägen och höga bergspass.</p>
+<p><strong>Valfria tillägg</strong> – åk ner till havsnivå vid en eller flera hamnar, sedan klättra tillbaka upp.</p>
+<p><strong>Buss tillbaka</strong> – benen upp, berättelserna ut.</p>
 </div>
 </div>
 
@@ -300,12 +300,12 @@ html {
 <span style="font-size: 1.5rem;">📊</span>
 <span class="card-toggle">+</span>
 </div>
-<h3>Key Stats</h3>
+<h3>Nyckelstatistik</h3>
 </div>
 <div class="info-card-content">
-<p><strong>Full Big Daddy:</strong> ~162–167 km / ~4,300 m depending on add-ons</p>
-<p><strong>Shortest return-route options:</strong> From ~115 km / ~2,400 m</p>
-<p><strong>Views:</strong> You'll crest 8 classified cols wrapped in some of Mallorca's finest views – limestone peaks, terraced hillsides, turquoise coves. On clear days you can see across the Med toward Barcelona.</p>
+<p><strong>Full Big Daddy:</strong> ~162–167 km / ~4,300 m beroende på tillägg</p>
+<p><strong>Kortaste återvändsrutt-alternativ:</strong> Från ~115 km / ~2,400 m</p>
+<p><strong>Vyer:</strong> Du kommer att nå toppen av 8 klassificerade pass omgivna av några av Mallorcas finaste vyer – kalkstenstoppar, terrasserade bergssluttningar, turkosa vikar. På klara dagar kan du se över Medelhavet mot Barcelona.</p>
 </div>
 </div>
 
@@ -315,11 +315,11 @@ html {
 <span style="font-size: 1.5rem;">☕</span>
 <span class="card-toggle">+</span>
 </div>
-<h3>Café Strategy</h3>
+<h3>Caféstrategi</h3>
 </div>
 <div class="info-card-content">
-<p>If your fuel of choice is excellent coffee plus cake or tapas, you're in luck. Roughly every hour you roll through a village with solid options – Estellencs, Banyalbufar, Deià, Valldemossa, Sóller, and more.</p>
-<p><strong>Pro tip:</strong> If you descend to any Port, you're at sea level – the only way out is up.</p>
+<p>Om ditt bränsle av val är utmärkt kaffe plus kaka eller tapas, har du tur. Ungefär varje timme rullar du genom en by med solida alternativ – Estellencs, Banyalbufar, Deià, Valldemossa, Sóller, och mer.</p>
+<p><strong>Proffstips:</strong> Om du åker ner till någon hamn, är du på havsnivå – enda vägen ut är upp.</p>
 </div>
 </div>
 
@@ -329,12 +329,12 @@ html {
 <span style="font-size: 1.5rem;">💪</span>
 <span class="card-toggle">+</span>
 </div>
-<h3>Who Should Do It</h3>
+<h3>Vem bör göra det</h3>
 </div>
 <div class="info-card-content">
-<p><strong>This is hard – very hard.</strong></p>
-<p>It's a personal sportive with better scenery, better surfaces, and usually better weather than most events.</p>
-<p>If you're not there yet, get there – the memories are worth the work.</p>
+<p><strong>Detta är svårt – mycket svårt.</strong></p>
+<p>Det är ett personligt sportive med bättre landskap, bättre vägyta, och vanligtvis bättre väder än de flesta evenemang.</p>
+<p>Om du inte är där än, ta dig dit – minnena är värda arbetet.</p>
 </div>
 </div>
 
@@ -344,13 +344,13 @@ html {
 <span style="font-size: 1.5rem;">🗺️</span>
 <span class="card-toggle">+</span>
 </div>
-<h3>Variations & Files</h3>
+<h3>Variationer & filer</h3>
 </div>
 <div class="info-card-content">
-<p>You can scale the challenge:</p>
-<p><strong>Shortest return-route options:</strong> From ~115 km / ~2,400 m</p>
-<p><strong>Full Big Daddy:</strong> ~162–167 km / ~4,300 m depending on add-ons</p>
-<p><strong>GPX files:</strong> Full GPX files available below.</p>
+<p>Du kan skala utmaningen:</p>
+<p><strong>Kortaste återvändsrutt-alternativ:</strong> Från ~115 km / ~2,400 m</p>
+<p><strong>Full Big Daddy:</strong> ~162–167 km / ~4,300 m beroende på tillägg</p>
+<p><strong>GPX-filer:</strong> Fullständiga GPX-filer tillgängliga nedan.</p>
 </div>
 </div>
 
@@ -360,12 +360,12 @@ html {
 <span style="font-size: 1.5rem;">🚌</span>
 <span class="card-toggle">+</span>
 </div>
-<h3>Logistics</h3>
+<h3>Logistik</h3>
 </div>
 <div class="info-card-content">
-<p><strong>Bike out, bus back:</strong> Take the <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank" rel="noopener noreferrer">scheduled bike bus</a> to the start, ride back along the Tramuntana, and meet the return bus.</p>
-<p><strong>Schedules:</strong> See our current scheduled bike bus times to plan your day.</p>
-<p><strong>Road surfaces:</strong> Predominantly smooth tarmac; watch for damp patches on shaded or coastal sections.</p>
+<p><strong>Cykla ut, buss tillbaka:</strong> Ta den <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank" rel="noopener noreferrer">schemalagda cykelbussen</a> till starten, cykla tillbaka längs Tramuntana, och möt returbussen.</p>
+<p><strong>Schema:</strong> Se våra nuvarande schemalagda cykelbuss-tider för att planera din dag.</p>
+<p><strong>Vägytor:</strong> Huvudsakligen slät asfalt; håll utkik efter fuktiga fläckar på skuggade eller kustsektioner.</p>
 </div>
 </div>
 
@@ -375,16 +375,16 @@ html {
 <span style="font-size: 1.5rem;">🛟</span>
 <span class="card-toggle">+</span>
 </div>
-<h3>Peace of Mind</h3>
+<h3>Sinnesfrid</h3>
 </div>
 <div class="info-card-content">
 <p><strong>Mallorca Bicycle Rescue</strong></p>
-<p>Murphy's law happens. If bike or body breaks down:</p>
+<p>Murphys lag händer. Om cykel eller kropp går sönder:</p>
 <ul>
-<li>We take you to a local bike shop, back to your accommodation, or to your rental shop – your choice.</li>
-<li>Simple, fast, island-wide.</li>
+<li>Vi tar dig till en lokal cykelaffär, tillbaka till ditt boende, eller till din uthyrningsaffär – ditt val.</li>
+<li>Enkelt, snabbt, över hela ön.</li>
 </ul>
-<p><a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank" rel="noopener noreferrer">Get cover</a> before you roll so you can ride far without second-guessing.</p>
+<p><a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank" rel="noopener noreferrer">Skaffa skydd</a> innan du rullar så du kan cykla långt utan att tvivla.</p>
 </div>
 </div>
 
@@ -394,11 +394,11 @@ html {
 <span style="font-size: 1.5rem;">📅</span>
 <span class="card-toggle">+</span>
 </div>
-<h3>Schedule</h3>
+<h3>Schema</h3>
 </div>
 <div class="info-card-content">
-<p>Use the bike bus to Port d'Andratx from Port de Pollença/Alcúdia/Playa de Muro and from Peguera, Playa de Palma & Santa Ponsa to Port de Pollença.</p>
-<p><a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank" rel="noopener noreferrer" class="cta">View Schedule & Book →</a></p>
+<p>Använd cykelbussen till Port d'Andratx från Port de Pollença/Alcúdia/Playa de Muro och från Peguera, Playa de Palma & Santa Ponsa till Port de Pollença.</p>
+<p><a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank" rel="noopener noreferrer" class="cta">Visa schema & boka →</a></p>
 </div>
 </div>
 
@@ -408,13 +408,13 @@ html {
 <span style="font-size: 1.5rem;">💡</span>
 <span class="card-toggle">+</span>
 </div>
-<h3>Summary</h3>
+<h3>Sammanfattning</h3>
 </div>
 <div class="info-card-content">
-<p>Big miles, big vertical, big coastline, big mountains.</p>
-<p>The Big Daddy Challenge is Mallorca's all-day masterpiece.</p>
-<p>Plan your cafés, respect the climbs, carry what you need, and give yourself time.</p>
-<p>Then go see why riders come back calling it their best day on a bike.</p>
+<p>Stora mil, stor höjd, stor kustlinje, stora berg.</p>
+<p>Big Daddy Challenge är Mallorcas heldags mästerverk.</p>
+<p>Planera dina caféer, respektera klättringarna, bär med dig vad du behöver, och ge dig själv tid.</p>
+<p>Gå sedan och se varför cyklister kommer tillbaka och kallar det sin bästa dag på cykel.</p>
 </div>
 </div>
 
@@ -424,12 +424,12 @@ html {
 <span style="font-size: 1.5rem;">👕</span>
 <span class="card-toggle">+</span>
 </div>
-<h3>Finisher's Gear</h3>
+<h3>Finisher-kläder</h3>
 </div>
 <div class="info-card-content">
-<p><strong>Celebrate your achievement!</strong></p>
-<p>Get your exclusive Port d'Andratx-Port de Pollença finisher's t-shirt and show the world you conquered this epic route.</p>
-<p style="color: var(--brand, #f10000); font-weight: 700; margin-top: 1rem;">Shop Now →</p>
+<p><strong>Fira din prestation!</strong></p>
+<p>Få din exklusiva Port d'Andratx-Port de Pollença finisher-t-shirt och visa världen att du erövrade denna episka rutt.</p>
+<p style="color: var(--brand, #f10000); font-weight: 700; margin-top: 1rem;">Handla nu →</p>
 </div>
 </div>
 
@@ -439,12 +439,12 @@ html {
 <span style="font-size: 1.5rem;">🚌</span>
 <span class="card-toggle">+</span>
 </div>
-<h3>Book Your Shuttle</h3>
+<h3>Boka din shuttle</h3>
 </div>
 <div class="info-card-content">
-<p><strong>Need a ride to start your adventure?</strong></p>
-<p>Browse all departure towns and book your shuttle to Port d'Andratx or Port de Pollença. We've got you covered!</p>
-<p style="color: var(--brand, #f10000); font-weight: 700; margin-top: 1rem;">View Shuttles →</p>
+<p><strong>Behöver du skjuts för att starta ditt äventyr?</strong></p>
+<p>Bläddra bland alla avgångsorter och boka din shuttle till Port d'Andratx eller Port de Pollença. Vi har dig täckt!</p>
+<p style="color: var(--brand, #f10000); font-weight: 700; margin-top: 1rem;">Visa shuttles →</p>
 </div>
 </div>
 
@@ -1304,7 +1304,7 @@ path.route-polyline {
 <div class="routes-column">
 
 <div class="route-section">
-<h2 id="north-routes" class="route-direction-header">North Routes – Andratx → Pollença</h2>
+<h2 id="north-routes" class="route-direction-header">Nordrutter – Andratx → Pollença</h2>
 </div>
 
 <div class="route-accordion">
@@ -1314,11 +1314,11 @@ path.route-polyline {
       <div class="route-title-section">
         <span class="route-icon">▶</span>
         <div>
-          <div class="route-title">Big Daddy Challenge (8 classified cols)</div>
+          <div class="route-title">Big Daddy Challenge (8 klassificerade pass)</div>
           <div class="route-stats-inline">
             <span>📏 162 km</span>
             <span>⛰️ 4,267 m</span>
-            <span class="difficulty-badge difficulty-very-hard">Very Hard</span>
+            <span class="difficulty-badge difficulty-very-hard">Mycket svår</span>
           </div>
         </div>
       </div>
@@ -1328,7 +1328,7 @@ path.route-polyline {
     </div>
     <div class="route-content">
       <div class="route-content-inner">
-        <p class="route-description">Coastal section + Port des Canonge + Port Valldemossa → long side Puig Major → aqueduct → Coll dels Reis → Sa Calobra (down & up) → Lluc → Pollença/Port. Very hard.</p>
+        <p class="route-description">Kustsektion + Port des Canonge + Port Valldemossa → långa sidan Puig Major → akvеdukt → Coll dels Reis → Sa Calobra (ner & upp) → Lluc → Pollença/Port. Mycket svår.</p>
         <div id="map-north-1" class="route-map"></div>
         <div class="elevation-profile">
           <canvas id="chart-north-1"></canvas>
@@ -1345,7 +1345,7 @@ path.route-polyline {
 <div class="routes-column">
 
 <div class="route-section">
-<h2 id="south-routes" class="route-direction-header">South Routes – Pollença → Andratx</h2>
+<h2 id="south-routes" class="route-direction-header">Sydrutter – Pollença → Andratx</h2>
 </div>
 
 <div class="route-accordion">
@@ -1355,11 +1355,11 @@ path.route-polyline {
       <div class="route-title-section">
         <span class="route-icon">▶</span>
         <div>
-          <div class="route-title">Big Daddy Challenge (reverse)</div>
+          <div class="route-title">Big Daddy Challenge (omvänd)</div>
           <div class="route-stats-inline">
             <span>📏 167 km</span>
             <span>⛰️ 4,121 m</span>
-            <span class="difficulty-badge difficulty-very-hard">Very Hard</span>
+            <span class="difficulty-badge difficulty-very-hard">Mycket svår</span>
           </div>
         </div>
       </div>
@@ -1369,7 +1369,7 @@ path.route-polyline {
     </div>
     <div class="route-content">
       <div class="route-content-inner">
-        <p class="route-description">As above conceptually, including the three "ports" (Canonge, Valldemossa, Sa Calobra). For strong climbers only.</p>
+        <p class="route-description">Som ovan konceptuellt, inklusive de tre "hamnarna" (Canonge, Valldemossa, Sa Calobra). Endast för starka klättrare.</p>
         <div id="map-south-3" class="route-map"></div>
         <div class="elevation-profile">
           <canvas id="chart-south-3"></canvas>
@@ -1733,14 +1733,14 @@ function renderElevationChart(routeId, coordinates) {
 <a href="https://mallorcacycleshuttle.company.site/products/Andratx-Pollenca-Finishers-Unisex-Classic-T-p788401800" target="_blank" rel="noopener noreferrer" style="text-decoration: none; display: block;">
 <div style="background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%); border-radius: 1rem; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; display: flex; flex-wrap: wrap; align-items: center;">
 <div style="flex: 1 1 350px; min-width: 300px;">
-<img src="/img/finishers-tshirt-andratx-pollenca.webp" alt="Andratx-Pollença Finisher's T-Shirt" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+<img src="/img/finishers-tshirt-andratx-pollenca.webp" alt="Andratx-Pollença Finisher-T-shirt" style="width: 100%; height: 100%; object-fit: cover; display: block;">
 </div>
 <div style="flex: 1 1 400px; padding: 2.5rem;">
-<h2 style="color: var(--brand, #f10000); margin-bottom: 0.75rem; font-size: 1.75rem; font-weight: 700;">Commemorate Your Ride</h2>
-<h3 style="color: #333; font-size: 1.2rem; font-weight: 600; margin-bottom: 0.75rem;">Andratx-Pollença Finisher's T-Shirt</h3>
-<p style="color: #666; font-size: 1rem; margin-bottom: 1.5rem; line-height: 1.6;">Celebrate completing this epic route with our exclusive finisher's t-shirt. Available in multiple colors and sizes.</p>
+<h2 style="color: var(--brand, #f10000); margin-bottom: 0.75rem; font-size: 1.75rem; font-weight: 700;">Hedra din cykeltur</h2>
+<h3 style="color: #333; font-size: 1.2rem; font-weight: 600; margin-bottom: 0.75rem;">Andratx-Pollença Finisher-T-shirt</h3>
+<p style="color: #666; font-size: 1rem; margin-bottom: 1.5rem; line-height: 1.6;">Fira att du genomfört denna episka rutt med vår exklusiva finisher-t-shirt. Tillgänglig i flera färger och storlekar.</p>
 <div style="display: inline-block; padding: 0.9rem 2rem; background: linear-gradient(135deg, var(--brand, #f10000) 0%, #ff3333 100%); color: white; border-radius: 0.5rem; font-size: 1rem; font-weight: 700; box-shadow: 0 4px 15px rgba(241, 0, 0, 0.3);">
-Shop Now →
+Handla nu →
 </div>
 </div>
 </div>

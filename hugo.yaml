@@ -173,6 +173,34 @@ languages:
         - name: "Shuttle Verkoopvoorwaarden"
           url: "/fiets-shuttle/shuttle-verkoopvoorwaarden/"
           weight: 5
+  sv:
+    languageName: "Svenska"
+    weight: 8
+    contentDir: content/sv
+    menus:
+      main:
+        - name: "Räddningsvillkor"
+          url: "/bike-rescue/rescue-sale-terms/"
+          weight: 1
+        - name: "Privata Shuttlebokningar"
+          url: "/bike-shuttle/private-shuttle-bookings/"
+          weight: 2
+      legal:
+        - name: "Rättsligt Meddelande"
+          url: "/about/legal-notice/"
+          weight: 1
+        - name: "Cookiepolicy"
+          url: "/about/cookie-policy/"
+          weight: 2
+        - name: "Integritetspolicy"
+          url: "/about/privacy-policy/"
+          weight: 3
+        - name: "Räddningsförsäljningsvillkor"
+          url: "/bike-rescue/rescue-sale-terms/"
+          weight: 4
+        - name: "Shuttleförsäljningsvillkor"
+          url: "/bike-shuttle/shuttle-sale-terms/"
+          weight: 5
 
 markup:
   goldmark:

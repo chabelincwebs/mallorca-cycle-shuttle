@@ -1,23 +1,23 @@
 ---
-title: "Sa Calobra, the jewel in Mallorca's cycling crown"
-description: "Discover why the legendary Coll dels Reis climb to Sa Calobra is considered one of the world's greatest cycling routes and an absolute must-do for any road cyclist visiting Mallorca."
-category: "Routes"
+title: "Sa Calobra, juvelen i Mallorcas cykelkrona"
+description: "Upptäck varför den legendariska Coll dels Reis-klättringen till Sa Calobra anses vara en av världens bästa cykelrutter och ett absolut måste för alla landsvägscyklister som besöker Mallorca."
+category: "Rutter"
 featured_image: "/img/blog/sa-calobra-jewel.webp"
-excerpt: "The 12 km stretch of road from Port de Sa Calobra to the top of Coll dels Reis regularly features in most cyclists' top 10 climbs in the world. Learn why this engineering marvel is reason enough to visit Mallorca."
+excerpt: "Den 12 km långa vägsträckan från Port de Sa Calobra till toppen av Coll dels Reis finns regelbundet med i de flesta cyklisters topp 10 klättringar i världen. Lär dig varför detta tekniska underverk är anledning nog att besöka Mallorca."
 date: 2024-01-01
 translationKey: "blog-sa-calobra-jewel"
 ---
 
-## The World Class Coll dels Reis Climb
+## Den världsklassiga Coll dels Reis-klättringen
 
-Reason enough to come to Mallorca.
+Anledning nog att komma till Mallorca.
 
-The 12 km stretch of road from Port de Sa Calobra to the top of Coll dels Reis (682m) and down to the aqueduct is more than enough reason to visit Mallorca for cycling. It regularly features in most cyclists' top 10 climbs in the world, and for any road cyclist, it is an absolute must-do. The scenery is breathtaking, and the ride itself is nothing short of spectacular.
+Den 12 km långa vägsträckan från Port de Sa Calobra till toppen av Coll dels Reis (682m) och ner till akvedukten är mer än tillräckligt skäl att besöka Mallorca för cykling. Den finns regelbundet med i de flesta cyklisters topp 10 klättringar i världen, och för alla landsvägscyklister är det ett absolut måste. Landskapet är hisnande och själva turen är inget annat än spektakulär.
 
-The road, with an average gradient of 7%, was built in 1932 without the use of machinery, and its design avoids tunnels to fully embrace the stunning landscape. The road clings to the mountainside as though a giant had dropped a strand of spaghetti. With straights, 50 bends (including several hairpin turns), and a 270-degree loop where the road goes underneath itself, it keeps cyclists on their toes—either with wide smiles or nervous grins.
+Vägen, med en genomsnittlig lutning på 7%, byggdes 1932 utan användning av maskiner, och dess design undviker tunnlar för att fullt ut omfamna det fantastiska landskapet. Vägen klänger sig fast vid bergsidan som om en jätte hade tappat en spagettistrand. Med raksträckor, 50 kurvor (inklusive flera hårnålskurvor) och en 270-graders loop där vägen går under sig själv håller den cyklisterna på tå—antingen med breda leenden eller nervösa flin.
 
-We owe this engineering marvel to Antonio Paretti, the Palma-born engineer, who also designed the road to Cap de Formentor. Under his guidance, 31,000 cubic meters of rock were removed by hand to bring his vision to life. His design cleverly used the mountain's natural curves to maintain a consistent gradient, with the exception of the final 2 km, which are the most challenging. These sections contain two short, steep bends, with a gradient of up to 11.5%, just enough to test any cyclist's limits.
+Vi har detta tekniska underverk att tacka Antonio Paretti för, den Palma-födda ingenjören, som också designade vägen till Cap de Formentor. Under hans ledning togs 31 000 kubikmeter sten bort för hand för att förverkliga hans vision. Hans design använde smartt bergets naturliga kurvor för att bibehålla en konsekvent lutning, med undantag för de sista 2 km, som är de mest utmanande. Dessa sträckor innehåller två korta, branta kurvor, med en lutning på upp till 11,5%, precis nog för att testa varje cyklists gränser.
 
-As someone who spent 136 days photographing cyclists on Sa Calobra for <a href="https://www.mallorcacyclingphotos.com/" target="_blank">Mallorca Cycling Photos</a> during both Spring and Autumn, I can confidently say that the best times to ride this iconic route are either before 11:00 AM or after 3:30 PM. During the middle of the day, tourist buses and hire cars begin to create congestion. However, even if you ride during the busier hours, it's often just a matter of pulling over for a few minutes and allowing the traffic to pass—soon enough, the road will clear again. No matter when you decide to ride, I'm sure you'll have a fantastic experience—just make sure you're fit enough to tackle it! Personally, if I have to ride this incredible road in the summer, I always go early in the morning to avoid the intense midday heat.
+Som någon som tillbringade 136 dagar med att fotografera cyklister på Sa Calobra för <a href="https://www.mallorcacyclingphotos.com/" target="_blank">Mallorca Cycling Photos</a> under både vår och höst kan jag med tillförsikt säga att de bästa tiderna att cykla denna ikoniska rutt är antingen före 11:00 eller efter 15:30. Under mitten av dagen börjar turistbussar och hyrbilar skapa trafikstockningar. Men även om du cyklar under de mer trafikerade timmarna är det ofta bara en fråga om att dra åt sidan några minuter och låta trafiken passera—snart nog blir vägen fri igen. Oavsett när du bestämmer dig för att cykla är jag säker på att du kommer att ha en fantastisk upplevelse—se bara till att du är tillräckligt fit för att klara det! Personligen, om jag måste cykla denna otroliga väg på sommaren åker jag alltid tidigt på morgonen för att undvika den intensiva middagshettan.
 
-If you're cycling in Mallorca and want to conquer Sa Calobra with fresh legs to aim for a personal best (PB), consider taking the <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Sa Calobra Express</a> from Port de Pollença, Alcudia, Can Picafort, or Playa de Muro to the aqueduct and start the climb with fresh legs.
+Om du cyklar på Mallorca och vill erövra Sa Calobra med friska ben för att sikta på ett personligt rekord (PB), överväg att ta <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Sa Calobra Express</a> från Port de Pollença, Alcudia, Can Picafort eller Playa de Muro till akvedukten och börja klättringen med friska ben.

@@ -1,40 +1,40 @@
 ---
-title: "Rescue Terms & Conditions of Sale"
-description: "Terms for purchasing Mallorca Bicycle Rescue products and services."
+title: "Räddningsvillkor & Försäljningsvillkor"
+description: "Villkor för köp av Mallorca Cykelräddningsprodukter och -tjänster."
 translationKey: rescue-sale-terms
 ---
 
-## 1) What we provide
-We return you and your specified bicycle to your choice of: your accommodation or a bicycle repair facility (or your rental outlet). Island-wide coverage on standard roads only.
+## 1) Vad vi tillhandahåller
+Vi återför dig och din specificerade cykel till ditt val av: ditt boende eller en cykelreparationsanläggning (eller din uthyrningsbutik). Täckning över hela ön endast på standardvägar.
 
-## 2) Eligibility & conditions
-- Your bike must be roadworthy and maintained per manufacturer guidance.  
-- Each cover is for one rider and one stated bike; carry valid ID.  
-- You must be >1 km from your accommodation and >1 km from an open repair facility.  
-- Calls must be during operating hours (from one hour after sunrise to sunset).  
-- Cover must be purchased >12 hours before use.
+## 2) Behörighet & villkor
+- Din cykel måste vara körbar och underhållen enligt tillverkarens riktlinjer.
+- Varje täckning är för en cyklist och en angiven cykel; bär giltigt ID.
+- Du måste vara >1 km från ditt boende och >1 km från en öppen reparationsanläggning.
+- Samtal måste göras under öppettider (från en timme efter soluppgång till solnedgång).
+- Täckningen måste köpas >12 timmar före användning.
 
-## 3) Exclusions
-- Races, competitions, sportives (including inability to operate everywhere on Mallorca 312 day).  
-- Off-road locations (4×4-only tracks).  
-- Non-standard bikes: tandems, hand bikes, recumbents are currently not covered.  
-- “I’m just tired.” Rest, eat, drink, continue when appropriate.  
-- Routine fixes must be at least attempted (e.g. a slipped chain). Try to refit it yourself; if not, ask a friendly cyclist. If still not possible, call us.  
-- Outside operating hours; some areas on 312 day; **no service** on 25 December.
+## 3) Undantag
+- Tävlingar, tävlingar, sportives (inklusive oförmåga att agera överallt på Mallorca 312-dagen).
+- Utanför vägar (4×4-endast spår).
+- Icke-standardcyklar: tandembara, handbara, liggcyklar täcks för närvarande inte.
+- "Jag är bara trött." Vila, ät, drick, fortsätt när det är lämpligt.
+- Rutinmässiga reparationer måste åtminstone försökas (t.ex. en avsladd kedja). Försök att sätta tillbaka den själv; om inte, be en vänlig cyklist. Om det fortfarande inte är möjligt, ring oss.
+- Utanför öppettider; vissa områden på 312-dagen; **ingen service** den 25 december.
 
-## 4) Claims & misuse
-- One claim per policy per week per issue.  
-- 14-day covers allow **two** claims for the **same** issue if a repair has been made in the intervening period.  
-- Different issues aren’t capped, but suspected abuse may result in cancellation and refund of the unused portion.
+## 4) Anspråk & missbruk
+- Ett anspråk per policy per vecka per problem.
+- 14-dagars täckning tillåter **två** anspråk för **samma** problem om en reparation har gjorts under mellantiden.
+- Olika problem är inte begränsade, men misstänkt missbruk kan resultera i uppsägning och återbetalning av den oanvända delen.
 
-## 5) Emergencies & safety
-For medical emergencies, call an ambulance first; we will recover and store your bike.
+## 5) Nödsituationer & säkerhet
+För medicinska nödsituationer, ring en ambulans först; vi återhämtar och lagrar din cykel.
 
 ## 6) Administration
-We may cancel and refund the unused portion of a policy if necessary.  
-Information you provide must be accurate.  
-We’re not liable beyond obligations expressly stated here.
+Vi kan avbryta och återbetala den oanvända delen av en policy om det är nödvändigt.
+Information du tillhandahåller måste vara korrekt.
+Vi är inte ansvariga utöver förpliktelser som uttryckligen anges här.
 
-## 7) Special dates
-No service on **25 December**.  
-Restricted service on **Mallorca 312** day because of closed roads.
+## 7) Speciella datum
+Ingen service den **25 december**.
+Begränsad service på **Mallorca 312**-dagen på grund av stängda vägar.
