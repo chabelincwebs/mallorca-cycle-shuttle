@@ -1,5 +1,5 @@
 ---
-title: "Emergency Rescue Request"
+title: "Akut Räddningsbegäran"
 layout: "rescue-app"
 type: "rescue-app"
 robots: "noindex, nofollow"

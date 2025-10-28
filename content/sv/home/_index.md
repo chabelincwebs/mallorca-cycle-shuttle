@@ -1,42 +1,42 @@
 ---
-title: "Mallorca Bicycle Rescue"
-description: "Your trusted cycling companion in Mallorca's Tramuntana mountains. Bike rescue service, shuttles, and airport transfers for cyclists."
+title: "Mallorca Cykelräddning"
+description: "Din pålitliga cykelpartner i Mallorcas Tramuntana-berg. Cykelräddningstjänst, shuttletransporter och flygplatstransfers för cyklister."
 
 # ============================================
 # HERO SECTION
 # ============================================
-hero_title: "Your Safety Net in Mallorca's Mountains"
-hero_subtitle: "Professional bike rescue, shuttles, and support for cyclists exploring the stunning Tramuntana"
+hero_title: "Ditt Skyddsnät i Mallorcas Berg"
+hero_subtitle: "Professionell cykelräddning, shuttletransporter och stöd för cyklister som utforskar den fantastiska Tramuntana"
 
 hero_ctas:
-  - text: "Get Bike Rescue"
+  - text: "Hämta Cykelräddning"
     url: "https://mallorcacycleshuttle.company.site/products/"
     style: "primary"
-  - text: "Book a Shuttle"
+  - text: "Boka en Shuttle"
     url: "https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235"
     style: "secondary"
-  - text: "Airport Transfer"
+  - text: "Flygplatstransfer"
     url: "/en/mallorca-airport-transfers/"
     style: "tertiary"
 
 # ============================================
 # SERVICES SECTION
 # ============================================
-services_title: "Our Services"
+services_title: "Våra Tjänster"
 
 services:
-  - title: "Bike Rescue Service"
-    description: "Peace of mind on every ride. Our 24/7 rescue service picks you up anywhere in Mallorca if you have a mechanical issue, injury, or just need a lift back."
+  - title: "Cykelräddningstjänst"
+    description: "Sinnesro på varje cykeltur. Vår räddningstjänst är tillgänglig dygnet runt och hämtar dig var som helst på Mallorca om du har mekaniska problem, skada eller bara behöver skjuts hem."
     icon: "/img/icon-rescue.svg"
     link: "/en/bike-rescue/rescue-home/"
 
-  - title: "Scheduled Shuttles"
-    description: "Start your epic rides from the best locations. We shuttle you and your bike to iconic routes like Sa Calobra, Formentor, and the Big Daddy Challenge."
+  - title: "Schemalagda Shuttletransporter"
+    description: "Börja dina episka turer från de bästa platserna. Vi skjutsar dig och din cykel till ikoniska rutter som Sa Calobra, Formentor och Big Daddy Challenge."
     icon: "/img/icon-shuttle.svg"
     link: "https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235"
 
-  - title: "Airport Transfers"
-    description: "Seamless airport pickup and drop-off with secure bike transport. Start your cycling holiday stress-free from the moment you land."
+  - title: "Flygplatstransfers"
+    description: "Sömlös upphämtning och avlämning vid flygplatsen med säker cykeltransport. Starta din cykelsemester stressfritt från det ögonblick du landar."
     icon: "/img/icon-transfer.svg"
     link: "/en/mallorca-airport-transfers/"
 
@@ -44,18 +44,18 @@ services:
 # CONTENT BLOCKS (Alternating)
 # ============================================
 content_blocks:
-  - title: "Why Cyclists Choose Us"
-    text: "For over 11 years, we've been the trusted safety net for cyclists in Mallorca. With thousands of rescues completed and countless shuttles run, we understand what riders need. Professional drivers, secure bike transport, and local knowledge you can count on."
+  - title: "Därför Väljer Cyklister Oss"
+    text: "I över 11 år har vi varit det pålitliga skyddsnätet för cyklister på Mallorca. Med tusentals genomförda räddningar och otaliga shuttletransporter förstår vi vad cyklister behöver. Professionella förare, säker cykeltransport och lokalkännedom du kan lita på."
     image: "/img/content-block-1.webp"
     cta:
-      text: "Read Our Story"
+      text: "Läs Vår Historia"
       url: "/en/about/blog/"
 
-  - title: "Explore Mallorca's Best Routes"
-    text: "From the legendary Sa Calobra to the challenging Andratx-Pollença traverse, Mallorca offers world-class cycling. Our comprehensive route guides help you plan your perfect ride with detailed maps, elevation profiles, and insider tips."
+  - title: "Utforska Mallorcas Bästa Rutter"
+    text: "Från den legendariska Sa Calobra till den utmanande Andratx-Pollença-sträckan erbjuder Mallorca cykling i världsklass. Våra omfattande ruttguider hjälper dig att planera den perfekta turen med detaljerade kartor, höjdprofiler och insidertips."
     image: "/img/content-block-2.webp"
     cta:
-      text: "View Route Guides"
+      text: "Visa Ruttguider"
       url: "/en/bike-shuttle/andratx-pollenca-guide/"
 
 # ============================================
@@ -63,21 +63,21 @@ content_blocks:
 # ============================================
 stats:
   - number: "15000"
-    label: "Cyclists Helped"
+    label: "Cyklister Hjälpta"
 
   - number: "11"
-    label: "Years of Service"
+    label: "År av Service"
 
   - number: "5000"
-    label: "Rescues Completed"
+    label: "Räddningar Genomförda"
 
   - number: "98"
-    label: "Satisfaction Rate"
+    label: "Nöjdhetsgrad"
 
 # ============================================
 # FEATURED ROUTES
 # ============================================
-routes_title: "Popular Cycling Routes"
+routes_title: "Populära Cykelrutter"
 
 featured_routes:
   - title: "Sa Calobra"
@@ -85,70 +85,70 @@ featured_routes:
     elevation: "1,400m"
     image: "/img/route-sa-calobra.webp"
     link: "/en/bike-shuttle/sa-calobra-guide/"
-    badge: "Most Popular"
+    badge: "Mest Populär"
 
-  - title: "Andratx to Pollença"
+  - title: "Andratx till Pollença"
     distance: "85 km"
     elevation: "1,800m"
     image: "/img/route-andratx-pollenca.webp"
     link: "/en/bike-shuttle/andratx-pollenca-guide/"
-    badge: "Epic"
+    badge: "Episk"
 
   - title: "Big Daddy Challenge"
     distance: "140 km"
     elevation: "3,200m"
     image: "/img/route-big-daddy.webp"
     link: "/en/bike-shuttle/big-daddy-challenge/"
-    badge: "Challenge"
+    badge: "Utmaning"
 
 # ============================================
 # TESTIMONIALS
 # ============================================
-testimonials_title: "What Cyclists Say"
+testimonials_title: "Vad Cyklister Säger"
 
 testimonials:
-  - quote: "Blah blah blah this rescue service saved our cycling trip when my friend had a mechanical issue. Professional, fast, and friendly. Highly recommend!"
+  - quote: "Den här räddningstjänsten räddade vår cykelresa när min vän fick mekaniska problem. Professionellt, snabbt och vänligt. Rekommenderas varmt!"
     name: "Sarah M."
     location: "UK"
 
-  - quote: "Blah blah blah the shuttle to Sa Calobra was perfect. Great driver, secure bike transport, and we started our ride from exactly where we wanted. Worth every penny."
+  - quote: "Shuttletransporten till Sa Calobra var perfekt. Fantastisk förare, säker cykeltransport och vi startade vår tur från exakt där vi ville. Värt varje krona."
     name: "Marco R."
-    location: "Germany"
+    location: "Tyskland"
 
-  - quote: "Blah blah blah used them three times during our week in Mallorca. Airport transfer and two rescues. The peace of mind alone is worth it. These guys know cycling."
+  - quote: "Använde dem tre gånger under vår vecka på Mallorca. Flygplatstransfer och två räddningar. Sinnesron i sig är värd det. Dessa killar förstår cykling."
     name: "Emily & Tom"
-    location: "Netherlands"
+    location: "Nederländerna"
 
 # ============================================
 # FAQ SECTION
 # ============================================
-faq_title: "Frequently Asked Questions"
+faq_title: "Vanliga Frågor"
 
 faq:
-  - question: "How quickly can you rescue me?"
-    answer: "Blah blah blah typical response time is 30-60 minutes depending on your location in Mallorca. We have multiple vehicles stationed across the island for fast response."
+  - question: "Hur snabbt kan ni rädda mig?"
+    answer: "Typisk responstid är 30-60 minuter beroende på din plats på Mallorca. Vi har flera fordon stationerade över hela ön för snabb respons."
 
-  - question: "Do I need to book the rescue service in advance?"
-    answer: "Blah blah blah you purchase the rescue service in advance (valid for your entire stay), but you only call us when you actually need a pickup. No booking required for the rescue itself."
+  - question: "Behöver jag boka räddningstjänsten i förväg?"
+    answer: "Du köper räddningstjänsten i förväg (giltig under hela din vistelse), men du ringer bara oss när du faktiskt behöver upphämtning. Ingen bokning krävs för själva räddningen."
 
-  - question: "Can you transport multiple cyclists and bikes?"
-    answer: "Blah blah blah yes! Our vehicles can accommodate groups of cyclists with secure bike racks. Perfect for riding groups or cycling clubs."
+  - question: "Kan ni transportera flera cyklister och cyklar?"
+    answer: "Ja! Våra fordon kan rymma grupper av cyklister med säkra cykelhållare. Perfekt för cykelgrupper eller cykelklubbar."
 
-  - question: "What areas do you cover in Mallorca?"
-    answer: "Blah blah blah we cover the entire island of Mallorca, with a focus on the Tramuntana mountain region where most cyclists ride. From Andratx to Pollença and everywhere in between."
+  - question: "Vilka områden täcker ni på Mallorca?"
+    answer: "Vi täcker hela ön Mallorca, med fokus på Tramuntana-bergsregionen där de flesta cyklister cyklar. Från Andratx till Pollença och överallt däremellan."
 
-  - question: "Are your drivers cyclists too?"
-    answer: "Blah blah blah absolutely! Our drivers are experienced cyclists who know the routes, the challenges, and exactly what you need. They speak English, Spanish, and German."
+  - question: "Är era förare också cyklister?"
+    answer: "Absolut! Våra förare är erfarna cyklister som känner till rutterna, utmaningarna och exakt vad du behöver. De talar engelska, spanska och tyska."
 
-  - question: "What payment methods do you accept?"
-    answer: "Blah blah blah we accept all major credit cards, PayPal, and bank transfers. Payment is processed securely through our booking system."
+  - question: "Vilka betalningsmetoder accepterar ni?"
+    answer: "Vi accepterar alla större kreditkort, PayPal och banköverföringar. Betalning behandlas säkert genom vårt bokningssystem."
 
 # ============================================
 # FINAL CTA BANNER
 # ============================================
 final_cta:
-  title: "Ready to Ride with Confidence?"
-  subtitle: "Get your bike rescue service today and explore Mallorca worry-free"
-  button_text: "Get Started"
+  title: "Redo att Cykla med Självförtroende?"
+  subtitle: "Skaffa din cykelräddningstjänst idag och utforska Mallorca utan oro"
+  button_text: "Kom Igång"
   button_url: "https://mallorcacycleshuttle.company.site/products/"
 ---

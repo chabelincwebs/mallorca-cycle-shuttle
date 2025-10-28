@@ -1,8 +1,8 @@
 ---
-title: "Mallorca Cycle Shuttle Blog"
-description: "Expert guides, route tips, and insider knowledge to help you make the most of your cycling adventure in Mallorca"
+title: "Mallorca Cykelshuttle Blogg"
+description: "Expertguider, rutttips och insiderkunskap för att hjälpa dig få ut det mesta av ditt cykeläventyr på Mallorca"
 translationKey: "blog-index"
 hero_image: "/img/blog-hero.webp"
-hero_title: "Mallorca Cycle Shuttle Blog"
-hero_subtitle: "Expert guides, route tips, and insider knowledge to help you make the most of your cycling adventure in Mallorca"
+hero_title: "Mallorca Cykelshuttle Blogg"
+hero_subtitle: "Expertguider, rutttips och insiderkunskap för att hjälpa dig få ut det mesta av ditt cykeläventyr på Mallorca"
 ---

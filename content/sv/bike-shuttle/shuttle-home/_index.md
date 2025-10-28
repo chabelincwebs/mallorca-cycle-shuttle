@@ -1,8 +1,8 @@
 ---
-title: "Bike Shuttle Service"
-description: "Coming soon - Mallorca Cycle Shuttle service"
+title: "Cykelshuttle Service"
+description: "Kommer snart - Mallorca Cykelshuttle service"
 ---
 
-# Bike Shuttle Service
+# Cykelshuttle Service
 
-Content coming soon...
+Innehåll kommer snart...
