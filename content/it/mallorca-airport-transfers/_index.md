@@ -1,6 +1,7 @@
 ---
 title: "Transfer aeroporto Maiorca"
 description: "Servizi di transfer da/per l'aeroporto pensati per ciclisti a Maiorca"
+translationKey: airport-transfers
 
 hero_subtitle: "Progettato da ciclisti per ciclisti"
 

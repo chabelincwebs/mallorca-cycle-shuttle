@@ -1,6 +1,7 @@
 ---
 title: "Trasllats a l'aeroport de Mallorca"
 description: "Serveis de trasllat a l'aeroport pensats per a ciclistes a Mallorca"
+translationKey: airport-transfers
 
 hero_subtitle: "Dissenyat per ciclistes per a ciclistes"
 

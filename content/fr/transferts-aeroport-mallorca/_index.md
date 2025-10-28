@@ -1,6 +1,7 @@
 ---
 title: "Transferts Aéroport Majorque"
 description: "Services de transfert aéroport pratiques pour cyclistes à Majorque"
+translationKey: airport-transfers
 
 hero_subtitle: "Conçu par des cyclistes pour des cyclistes"
 
