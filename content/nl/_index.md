@@ -180,7 +180,7 @@ faq:
     answer: "Wees op tijd. Meld je met ID of ticket vóór de op je ticket vermelde laadtijd. Volledige voorwaarden hier."
 
   - question: "Privéshuttles"
-    answer: "Heb je een groep en wil je buiten het schema of op een ander tijdstip? Mail dan naar admin@mallorcacycleshuttle.com met datum, opstapplaats, bestemming en groepsgrootte – we doen ons best om je in te plannen."
+    answer: "Heb je een groep en wil je buiten het schema of op een ander tijdstip? <a href='/nl/fiets-shuttle/prive-shuttle-boekingen/'>Boek hier</a>."
 
   - question: "Welke betaalmiddelen accepteren jullie?"
     answer: "Alle gangbare credit- en debitcards."

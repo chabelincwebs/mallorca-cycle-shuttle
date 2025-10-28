@@ -180,7 +180,7 @@ faq:
     answer: "Sei pünktlich. Komm mit Ausweis oder Ticket vor der auf deinem Ticket angegebenen Verladezeit. Die vollständigen AGB gibt's hier."
 
   - question: "Private Shuttles"
-    answer: "Du hast eine Gruppe und willst abseits des Plans oder zu einer anderen Zeit fahren? Schreib an admin@mallorcacycleshuttle.com mit Datum, Abholort, Ziel und Gruppengröße – wir versuchen, dich unterzubringen."
+    answer: "Du hast eine Gruppe und willst abseits des Plans oder zu einer anderen Zeit fahren? Bitte <a href='/de/fahrrad-shuttle/private-shuttle-buchungen/'>hier buchen</a>."
 
   - question: "Welche Zahlarten akzeptiert ihr?"
     answer: "Alle gängigen Kredit- und Debitkarten."

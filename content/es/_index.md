@@ -180,7 +180,7 @@ faq:
     answer: "Sé puntual. Llega con tu identificación o billete antes de la hora de carga indicada en tu ticket. Términos y condiciones completos aquí."
 
   - question: "Shuttles privados"
-    answer: "Si sois un grupo y queréis ir a un sitio fuera del horario o a otra hora, escribe a admin@mallorcacycleshuttle.com con fecha, lugar de recogida, destino y tamaño del grupo e intentaremos encajaros."
+    answer: "Si sois un grupo y queréis ir a un sitio fuera del horario o a otra hora, por favor <a href='/es/shuttle-bici/reservas-shuttle-privado/'>reserva aquí</a>."
 
   - question: "¿Qué formas de pago aceptáis?"
     answer: "Todas las principales tarjetas de crédito y débito."

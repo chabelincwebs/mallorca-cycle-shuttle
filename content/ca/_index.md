@@ -180,7 +180,7 @@ faq:
     answer: "Sigues puntual. Presenta el teu document d'identitat o el bitllet abans de l'hora de càrrega indicada. Termes i condicions complets aquí."
 
   - question: "Busos llançadora privats"
-    answer: "Si sou un grup i voleu anar a un lloc fora d'horari o a una altra hora, escriu a admin@mallorcacycleshuttle.com amb la data, lloc de recollida, destinació i mida del grup, i farem el possible per encaixar-vos."
+    answer: "Si sou un grup i voleu anar a un lloc fora d'horari o a una altra hora, si us plau <a href='/ca/shuttle-bici/reserves-shuttle-privat/'>reserva aquí</a>."
 
   - question: "Quins tipus de pagament accepteu?"
     answer: "Totes les principals targetes de crèdit i dèbit."

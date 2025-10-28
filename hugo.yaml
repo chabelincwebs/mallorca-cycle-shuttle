@@ -13,6 +13,9 @@ languages:
         - name: "Rescue T&C's"
           url: "/bike-rescue/rescue-sale-terms/"
           weight: 1
+        - name: "Private Shuttle Bookings"
+          url: "/bike-shuttle/private-shuttle-bookings/"
+          weight: 2
       legal:
         - name: "Legal Notice"
           url: "/about/legal-notice/"

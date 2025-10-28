@@ -180,7 +180,7 @@ faq:
     answer: "Soyez à l'heure. Présentez une pièce d'identité ou votre billet avant l'heure de chargement indiquée. CG complètes ici."
 
   - question: "Navettes privées"
-    answer: "Si vous êtes un groupe et souhaitez un trajet hors horaire ou vers une autre destination, écrivez à admin@mallorcacycleshuttle.com avec date, lieu de prise en charge, destination et taille du groupe – nous ferons au mieux."
+    answer: "Si vous êtes un groupe et souhaitez un trajet hors horaire ou vers une autre destination, veuillez <a href='/fr/navette-velo/reservations-navette-privee/'>réserver ici</a>."
 
   - question: "Quels types de paiement acceptez-vous ?"
     answer: "Toutes les principales cartes de crédit et de débit."

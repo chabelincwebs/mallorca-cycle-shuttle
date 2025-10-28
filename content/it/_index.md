@@ -180,7 +180,7 @@ faq:
     answer: "Sii puntuale. Presentati con documento o biglietto prima dell'orario di carico indicato. Termini e condizioni completi qui."
 
   - question: "Shuttles privati"
-    answer: "Se siete un gruppo e volete andare fuori orario o verso una destinazione non in programma, scrivi a admin@mallorcacycleshuttle.com con data, luogo di ritiro, destinazione e numero persone: faremo il possibile per inserirvi."
+    answer: "Se siete un gruppo e volete andare fuori orario o verso una destinazione non in programma, per favore <a href='/it/shuttle-bici/prenotazioni-shuttle-privato/'>prenota qui</a>."
 
   - question: "Quali metodi di pagamento accettate?"
     answer: "Tutte le principali carte di credito e debito."

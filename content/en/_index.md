@@ -180,7 +180,7 @@ faq:
     answer: "Be on time. Arrive with any i.d. or your ticket before the bike loading time stated on your ticket. Full Terms and Conditions here."
 
   - question: "Private Shuttles"
-    answer: "If you have a group, and want to go somewhere not on the schedule or at a different time, please email admin@mallorcacycleshuttle.com with required date, place of collection, destination and group size and we will do our best to fit you in."
+    answer: "If you have a group, and want to go somewhere not on the schedule or at a different time, please <a href='/en/bike-shuttle/private-shuttle-bookings/'>book here</a>."
 
   - question: "Which types of payment do you accept?"
     answer: "All major credit and debit cards."
