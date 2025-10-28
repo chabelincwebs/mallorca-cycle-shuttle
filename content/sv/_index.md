@@ -16,7 +16,7 @@ hero_ctas:
     url: "https://mallorcacycleshuttle.company.site/products/"
     style: "primary"
   - text: "Boka Flygplatstransfer"
-    url: "/en/mallorca-airport-transfers/"
+    url: "/sv/mallorca-flygplatstransfer/"
     style: "secondary"
 
 # ============================================
@@ -28,7 +28,7 @@ services:
   - title: "Cykelräddningstjänst"
     description: "Trygghet på varje tur. Försäkringstagare räddas överallt på Mallorca om cykeln eller kroppen går sönder."
     icon: "/img/icon-rescue.svg"
-    link: "/en/bike-rescue/rescue-home/"
+    link: "/sv/cykel-raddning/raddning-start/"
 
   - title: "Schemalagda Shuttles"
     description: "Vi tar dig och din cykel i komfort till starten av de ikoniska enkelriktade rutterna."
@@ -38,7 +38,7 @@ services:
   - title: "Flygplatstransfer"
     description: "Sömlös flygplatstransfer. Börja din cykelsemester stressfritt från det ögonblick du landar."
     icon: "/img/icon-transfer.svg"
-    link: "/en/mallorca-airport-transfers/"
+    link: "/sv/mallorca-flygplatstransfer/"
 
 # ============================================
 # CONTENT BLOCKS (Alternating)
@@ -49,14 +49,14 @@ content_blocks:
     image: "/img/content-block-1.webp"
     cta:
       text: "Läs Vår Historia"
-      url: "/en/about/blog/"
+      url: "/sv/om/blogg/"
 
   - title: "Utforska Mallorcas Bästa Rutter"
     text: "Från den utmanande Andratx-Pollença kust-till-kust till de legendariska klättringarna från hamnarna i Sa Calobra och Valldemossa till de tysta vägarna inåt landet, Mallorca är ett cykelparadis i världsklass. Våra omfattande ruttguider hjälper dig att planera dina perfekta enkelturer med detaljerade kartor, höjdprofiler och insidertips."
     image: "/img/content-block-2.webp"
     cta:
       text: "Visa Ruttguider"
-      url: "/en/bike-shuttle/andratx-pollenca-guide/"
+      url: "/sv/cykel-shuttle/andratx-pollenca-guide/"
 
 # ============================================
 # STATS SECTION
@@ -84,21 +84,21 @@ featured_routes:
     distance: "20 km"
     elevation: "682m"
     image: "/img/route-sa-calobra.webp"
-    link: "/en/bike-shuttle/sa-calobra-guide/"
+    link: "/sv/cykel-shuttle/sa-calobra-guide/"
     badge: "Mest Populär"
 
   - title: "Port d'Andratx till Port de Pollença"
     distance: "121 km"
     elevation: "2500m"
     image: "/img/route-andratx-pollenca.webp"
-    link: "/en/bike-shuttle/andratx-pollenca-guide/"
+    link: "/sv/cykel-shuttle/andratx-pollenca-guide/"
     badge: "Episk"
 
   - title: "Big Daddy Challenge"
     distance: "167 km"
     elevation: "4,200m"
     image: "/img/route-big-daddy.webp"
-    link: "/en/bike-shuttle/big-daddy-challenge/"
+    link: "/sv/cykel-shuttle/big-daddy-challenge/"
     badge: "Utmaning"
 
 # ============================================
@@ -159,7 +159,7 @@ faq:
     answer: "Vi behandlar varje cykel som om den vore vår egen. Varje cykel packas säkert i specialanpassade släpvagnar, dämpade mellan madrasser, vilket säkerställer att den kommer fram i samma skick som när den packades före avfärd."
 
   - question: "Vad gör vi?"
-    answer: "Vi driver en reguljär cykelshuttletjänst för att transportera dig och din cykel till starten av Mallorcas ikoniska enkelriktade bucketlist-rutter. Kolla in <a href='https://mallorcacycleshuttle.company.site/products/' target='_blank' rel='noopener noreferrer'>schemat här</a>. Vi erbjuder en cykel- och cyklarräddningstjänst vid haverier. <a href='https://mallorcacycleshuttle.company.site/products/' target='_blank' rel='noopener noreferrer'>Länk här</a>. Vi tillhandahåller privata flygplatstransfer med direkta offerter tillgängliga <a href='/en/mallorca-airport-transfers/'>här</a>."
+    answer: "Vi driver en reguljär cykelshuttletjänst för att transportera dig och din cykel till starten av Mallorcas ikoniska enkelriktade bucketlist-rutter. Kolla in <a href='https://mallorcacycleshuttle.company.site/products/' target='_blank' rel='noopener noreferrer'>schemat här</a>. Vi erbjuder en cykel- och cyklarräddningstjänst vid haverier. <a href='https://mallorcacycleshuttle.company.site/products/' target='_blank' rel='noopener noreferrer'>Länk här</a>. Vi tillhandahåller privata flygplatstransfer med direkta offerter tillgängliga <a href='/sv/mallorca-flygplatstransfer/'>här</a>."
 
   - question: "Vart går de schemalagda cykelshuttles till och från?"
     answer: "Aktuella rutter finns <a href='https://mallorcacycleshuttle.company.site/products/' target='_blank' rel='noopener noreferrer'>här</a>."
@@ -180,7 +180,7 @@ faq:
     answer: "Var i tid. Ankom med något ID eller din biljett före cykelinlastningen som anges på din biljett. Fullständiga Villkor här."
 
   - question: "Privata Shuttles"
-    answer: "Om du har en grupp och vill åka någonstans som inte finns i schemat eller vid en annan tid, vänligen <a href='/en/bike-shuttle/private-shuttle-bookings/'>boka här</a>."
+    answer: "Om du har en grupp och vill åka någonstans som inte finns i schemat eller vid en annan tid, vänligen <a href='/sv/cykel-shuttle/privata-shuttle-bokningar/'>boka här</a>."
 
   - question: "Vilka betalningstyper accepterar ni?"
     answer: "Alla större kredit- och betalkort."

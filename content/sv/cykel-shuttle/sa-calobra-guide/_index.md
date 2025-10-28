@@ -28,7 +28,7 @@ route_cards:
     full_content: |
       Innan cyklister tar sig an Sa Calobra måste de först nå Coll dels Reis, passet som markerar toppen av vägen. Från norr klättrar cyklister antingen Coll de Femenia (7.2 km vid ~6%) eller Coll de Sa Batalla (7.8 km vid ~5%), medan de från söder klättrar Puig Major-vägen från Sóller (14.8 km vid ~5.8%). Alla rutter innebär avsevärd klättring innan nedförsbacken och efterföljande uppförsbacken till Sa Calobra.
 
-      För de som vill göra klättringen med fräschare ben eller lägga till ytterligare en sektion till klättringen (Cala Tuent eller kanske gå upp och över Puig Major till Soller eller till <a href="/sv/bike-shuttle/andratx-pollenca-guide/" target="_blank">Andratx till Pollença</a>) kan de ta <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Mallorca Cycle Shuttle</a> som lämnar av cyklister och deras cyklar vid Repsol-garaget i Lluc och kör från Alcudia, Port Alcudia, Port de Pollenca, Playa de Palma, Santa Ponca och Peguera.
+      För de som vill göra klättringen med fräschare ben eller lägga till ytterligare en sektion till klättringen (Cala Tuent eller kanske gå upp och över Puig Major till Soller eller till <a href="/sv/cykel-shuttle/andratx-pollenca-guide/" target="_blank">Andratx till Pollença</a>) kan de ta <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Mallorca Cycle Shuttle</a> som lämnar av cyklister och deras cyklar vid Repsol-garaget i Lluc och kör från Alcudia, Port Alcudia, Port de Pollenca, Playa de Palma, Santa Ponca och Peguera.
 
   - title: "Nedförsbacken"
     image: "/img/sa-calobra-descent.webp"
@@ -82,7 +82,7 @@ Under 1900-talet blev vägen populär bland bilister och så småningom bland cy
 
 Innan cyklister tar sig an Sa Calobra måste de först nå Coll dels Reis, passet som markerar toppen av vägen. Från norr klättrar cyklister antingen Coll de Femenia (7.2 km vid ~6 %) eller Coll de Sa Batalla (7.8 km vid ~5 %), medan de från söder klättrar Puig Major-vägen från Sóller (14.8 km vid ~5.8 %). Alla rutter innebär avsevärd klättring innan nedförsbacken och efterföljande uppförsbacken till Sa Calobra.
 
-För de som vill göra klättringen med fräschare ben eller lägga till ytterligare en sektion till klättringen (Cala Tuent eller kanske gå upp och över Puig Major till Soller eller till <a href="/sv/bike-shuttle/andratx-pollenca-guide/" target="_blank">Andratx till Pollença</a>) kan de ta <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Mallorca Cycle Shuttle</a> som lämnar av cyklister och deras cyklar vid Repsol-garaget i Lluc och kör från Alcudia, Port Alcudia, Port de Pollenca, Playa de Palma, Santa Ponca och Peguera.
+För de som vill göra klättringen med fräschare ben eller lägga till ytterligare en sektion till klättringen (Cala Tuent eller kanske gå upp och över Puig Major till Soller eller till <a href="/sv/cykel-shuttle/andratx-pollenca-guide/" target="_blank">Andratx till Pollença</a>) kan de ta <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Mallorca Cycle Shuttle</a> som lämnar av cyklister och deras cyklar vid Repsol-garaget i Lluc och kör från Alcudia, Port Alcudia, Port de Pollenca, Playa de Palma, Santa Ponca och Peguera.
 
 ### Nedförsbacken
 

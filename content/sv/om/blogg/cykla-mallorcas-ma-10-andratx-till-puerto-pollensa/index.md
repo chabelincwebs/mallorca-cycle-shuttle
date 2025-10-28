@@ -14,7 +14,7 @@ Att säga att Mallorca är mitt cykelhimmel skulle vara en underdrift och sedan 
 
 ## Ikoniska klättringar och bucket list tur med Mallorca Cycle Shuttle
 
-Bekant med de ikoniska klättringarna och turerna lokalt i det området (Coll de Sa Bataia, Femenia, Sa Calobra, Coll de Sóller och Cap de Formentor) bestämde jag mig för att bocka av en bucket list cykeltur från listan och besöka mer av bergen genom att boka mig själv på <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Mallorca Cycle Shuttle</a> för att cykla tillbaka "hem" från <a href="/en/bike-shuttle/andratx-pollenca-guide/" target="_blank">Andratx till Puerto Pollensa</a>. Detta skulle låta mig se delar av Tramuntana på cykel som jag aldrig varit till tidigare samtidigt som jag kunde njuta av det utan att förvandla dagen till en episk distans.
+Bekant med de ikoniska klättringarna och turerna lokalt i det området (Coll de Sa Bataia, Femenia, Sa Calobra, Coll de Sóller och Cap de Formentor) bestämde jag mig för att bocka av en bucket list cykeltur från listan och besöka mer av bergen genom att boka mig själv på <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Mallorca Cycle Shuttle</a> för att cykla tillbaka "hem" från <a href="/sv/cykel-shuttle/andratx-pollenca-guide/" target="_blank">Andratx till Puerto Pollensa</a>. Detta skulle låta mig se delar av Tramuntana på cykel som jag aldrig varit till tidigare samtidigt som jag kunde njuta av det utan att förvandla dagen till en episk distans.
 
 ## En naturskön resa genom Tramuntanabergen
 

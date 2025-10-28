@@ -24,7 +24,7 @@ Boka shuttles tidigt på säsongen. Ha <a href="https://mallorcacycleshuttle.com
 
 - Cap de Formentor – färre bilar, enklare foton, mindre vind.
 - Sa Calobra – nedförsbacke före busstrafik, klättra mestadels i skuggan.
-- MA-10 <a href="/en/bike-shuttle/andratx-pollenca-guide/" target="_blank">Andratx till Pollença</a> – längre dag, fler kafé/bildstopp, mindre hetta.
+- MA-10 <a href="/sv/cykel-shuttle/andratx-pollenca-guide/" target="_blank">Andratx till Pollença</a> – längre dag, fler kafé/bildstopp, mindre hetta.
 
 Pro-tips: gott om restauranger vid ankomsten för frukost och på vägen.
 
@@ -39,7 +39,7 @@ Pro-tips: gott om restauranger vid ankomsten för frukost och på vägen.
 **Gör detta istället:** Mallorcas ytor är släta och snabba men kan vara hala med morgondagg eller efter det första regnet på grund av den ökade andelen grus i asfalten för att klara sommarhettan. Bromsa tidigt, var försiktig på målningslinjer och polerade fläckar, och spara hjältedåden till en annan gång.
 
 ## 4) Att hoppa över den bästa rutten på ön
-**Misstaget:** att undvika MA-10 kust-till-kust rutten mellan <a href="/en/bike-shuttle/andratx-pollenca-guide/" target="_blank">Andratx till Pollença</a> eftersom den ser "för stor" ut.
+**Misstaget:** att undvika MA-10 kust-till-kust rutten mellan <a href="/sv/cykel-shuttle/andratx-pollenca-guide/" target="_blank">Andratx till Pollença</a> eftersom den ser "för stor" ut.
 
 **Gör detta istället:** välj din variant – 115 till 167 km med verklig klättring och kaféhimmel – och gör den till din huvudtur. Den är tuff och absolut lysande. Träna före ankomsten.
 

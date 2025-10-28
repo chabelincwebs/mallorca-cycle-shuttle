@@ -31,19 +31,19 @@ Fantastisk kust- och skogslandskap, jag utmanar dig att hitta en bättre 20km v�
 
 En galen klättring med en längd på 7,9 km och en genomsnittlig lutning på 5,2%. Vägen är så smal på sina ställen och många hårnålskurvor att du kommer att ifrågasätta varför du någonsin övervägde det, till och med började det. En tredjedel ner kommer du att veta – det är lysande, en sådan rutt är anledning nog att cykla. Fantastiska vyer som leder till en oas av en hamn som är så välkomnande att det är svårt att lämna. Ytan är lite knagglig på sina ställen nu, men restaurangen är fortfarande lika bra och rimlig som alltid.
 
-Denna klättring är ett utmärkt tillägg till din <a href="/en/bike-shuttle/andratx-pollenca-guide/">kust-till-kust episka</a>.
+Denna klättring är ett utmärkt tillägg till din <a href="/sv/cykel-shuttle/andratx-pollenca-guide/">kust-till-kust episka</a>.
 
 ## 5. Port des Canonge klättring
 
 Bra liten nedförsbacke från ma-10 vid 80km-markören och sedan en slingrande 4,9km klättring upp från en vacker vik. Det är en mycket naturskön omväg som lägger till knappt 10 mycket värdefulla km till din tur. Strax utanför ma-10 mellan Banyalbufar och Port Valldemossa är denna utmärkta virvlande nedförsbacke ner till den 70m breda viken längst ner utanför den upptrampade stigen och en glädje.
 
-Denna klättring är ett utmärkt tillägg till din <a href="/en/bike-shuttle/andratx-pollenca-guide/">kust-till-kust episka</a>.
+Denna klättring är ett utmärkt tillägg till din <a href="/sv/cykel-shuttle/andratx-pollenca-guide/">kust-till-kust episka</a>.
 
 ## 6. Orient Valley och Coll de Soller
 
 Börja med 28 hårnålskurvor följt av ytterligare 26, skär sedan genom en lugn dal och klättra Coll d'Orient och Coll d'Honor. Stanna för lunch på den lysande Cycling Planet i Alaro och säg hej till ägarna Laura Brunot och David Muntaner (Världsmästare i Madison). Minnesvärt.
 
-Detta är ett utmärkt tillägg till din <a href="/en/bike-shuttle/andratx-pollenca-guide/">kust-till-kust episka</a>.
+Detta är ett utmärkt tillägg till din <a href="/sv/cykel-shuttle/andratx-pollenca-guide/">kust-till-kust episka</a>.
 
 ## 7. Titta på solnedgången och månen stiga från Talaia d'Albercutx
 

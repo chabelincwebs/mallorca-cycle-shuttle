@@ -16,7 +16,7 @@ translationKey: "blog-bus-out-bike-back"
 
 Vi använde först den utmärkta <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Mallorca Cycle Shuttle</a> 2016. Sedan dess har vi återvänt 2017, 2018, 2019, 2022, 2023, 2024 och igen 2025. Varje resa har de hanterat våra flygplatsupphämtningar och avlämningar smidigt, och varje förare har varit välkomnande och vänlig.
 
-Vi tar regelbundet den <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">schemalagda cykelbussen</a> till <a href="/en/bike-shuttle/andratx-pollenca-guide/" target="_blank">Andratx</a> från vårt hotell i Port de Pollença och denna returtur är alltid höjdpunkten på resan.
+Vi tar regelbundet den <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">schemalagda cykelbussen</a> till <a href="/sv/cykel-shuttle/andratx-pollenca-guide/" target="_blank">Andratx</a> från vårt hotell i Port de Pollença och denna returtur är alltid höjdpunkten på resan.
 
 ## Varför vi använder cykelbussen
 
@@ -26,7 +26,7 @@ Om du, liksom jag, kommer till Mallorca för att cykla kan du tveka att ta en bu
 
 ## Höjdpunkter och planer
 
-<a href="/en/bike-shuttle/andratx-pollenca-guide/" target="_blank">Andratx till Port de Pollença</a>-turen är höjdpunkten på våra resor och förblir ett måste för oss. Nästa upp för oss 2026: "The Big Daddy"-utmaningen som tar in Port des Canonge, Port de Valldemossa och Sa Calobra.
+<a href="/sv/cykel-shuttle/andratx-pollenca-guide/" target="_blank">Andratx till Port de Pollença</a>-turen är höjdpunkten på våra resor och förblir ett måste för oss. Nästa upp för oss 2026: "The Big Daddy"-utmaningen som tar in Port des Canonge, Port de Valldemossa och Sa Calobra.
 
 **Bokningstips:** populära Andratx-dagar kan sälja slut veckor i förväg. Boka tidigt under din vistelse så att dina ben är friska och du har väderutrymme. Om prognosen ändras har <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Mallorca Cycle Shuttle</a> varit snabba med att omboka eller återbetala.
 

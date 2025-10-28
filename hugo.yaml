@@ -180,26 +180,26 @@ languages:
     menus:
       main:
         - name: "Räddningsvillkor"
-          url: "/bike-rescue/rescue-sale-terms/"
+          url: "/cykel-raddning/raddning-forsaljningsvillkor/"
           weight: 1
         - name: "Privata Shuttlebokningar"
-          url: "/bike-shuttle/private-shuttle-bookings/"
+          url: "/cykel-shuttle/privata-shuttle-bokningar/"
           weight: 2
       legal:
         - name: "Rättsligt Meddelande"
-          url: "/about/legal-notice/"
+          url: "/om/rattsligt-meddelande/"
           weight: 1
         - name: "Cookiepolicy"
-          url: "/about/cookie-policy/"
+          url: "/om/cookiepolicy/"
           weight: 2
         - name: "Integritetspolicy"
-          url: "/about/privacy-policy/"
+          url: "/om/integritetspolicy/"
           weight: 3
         - name: "Räddningsförsäljningsvillkor"
-          url: "/bike-rescue/rescue-sale-terms/"
+          url: "/cykel-raddning/raddning-forsaljningsvillkor/"
           weight: 4
         - name: "Shuttleförsäljningsvillkor"
-          url: "/bike-shuttle/shuttle-sale-terms/"
+          url: "/cykel-shuttle/shuttle-forsaljningsvillkor/"
           weight: 5
 
 markup:

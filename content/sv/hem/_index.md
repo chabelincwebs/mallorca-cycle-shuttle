@@ -16,7 +16,7 @@ hero_ctas:
     url: "https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235"
     style: "secondary"
   - text: "Flygplatstransfer"
-    url: "/en/mallorca-airport-transfers/"
+    url: "/sv/mallorca-flygplatstransfer/"
     style: "tertiary"
 
 # ============================================
@@ -28,7 +28,7 @@ services:
   - title: "Cykelräddningstjänst"
     description: "Sinnesro på varje cykeltur. Vår räddningstjänst är tillgänglig dygnet runt och hämtar dig var som helst på Mallorca om du har mekaniska problem, skada eller bara behöver skjuts hem."
     icon: "/img/icon-rescue.svg"
-    link: "/en/bike-rescue/rescue-home/"
+    link: "/sv/cykel-raddning/raddning-start/"
 
   - title: "Schemalagda Shuttletransporter"
     description: "Börja dina episka turer från de bästa platserna. Vi skjutsar dig och din cykel till ikoniska rutter som Sa Calobra, Formentor och Big Daddy Challenge."
@@ -38,7 +38,7 @@ services:
   - title: "Flygplatstransfers"
     description: "Sömlös upphämtning och avlämning vid flygplatsen med säker cykeltransport. Starta din cykelsemester stressfritt från det ögonblick du landar."
     icon: "/img/icon-transfer.svg"
-    link: "/en/mallorca-airport-transfers/"
+    link: "/sv/mallorca-flygplatstransfer/"
 
 # ============================================
 # CONTENT BLOCKS (Alternating)
@@ -49,14 +49,14 @@ content_blocks:
     image: "/img/content-block-1.webp"
     cta:
       text: "Läs Vår Historia"
-      url: "/en/about/blog/"
+      url: "/sv/om/blogg/"
 
   - title: "Utforska Mallorcas Bästa Rutter"
     text: "Från den legendariska Sa Calobra till den utmanande Andratx-Pollença-sträckan erbjuder Mallorca cykling i världsklass. Våra omfattande ruttguider hjälper dig att planera den perfekta turen med detaljerade kartor, höjdprofiler och insidertips."
     image: "/img/content-block-2.webp"
     cta:
       text: "Visa Ruttguider"
-      url: "/en/bike-shuttle/andratx-pollenca-guide/"
+      url: "/sv/cykel-shuttle/andratx-pollenca-guide/"
 
 # ============================================
 # STATS SECTION
@@ -84,21 +84,21 @@ featured_routes:
     distance: "70 km"
     elevation: "1,400m"
     image: "/img/route-sa-calobra.webp"
-    link: "/en/bike-shuttle/sa-calobra-guide/"
+    link: "/sv/cykel-shuttle/sa-calobra-guide/"
     badge: "Mest Populär"
 
   - title: "Andratx till Pollença"
     distance: "85 km"
     elevation: "1,800m"
     image: "/img/route-andratx-pollenca.webp"
-    link: "/en/bike-shuttle/andratx-pollenca-guide/"
+    link: "/sv/cykel-shuttle/andratx-pollenca-guide/"
     badge: "Episk"
 
   - title: "Big Daddy Challenge"
     distance: "140 km"
     elevation: "3,200m"
     image: "/img/route-big-daddy.webp"
-    link: "/en/bike-shuttle/big-daddy-challenge/"
+    link: "/sv/cykel-shuttle/big-daddy-challenge/"
     badge: "Utmaning"
 
 # ============================================
