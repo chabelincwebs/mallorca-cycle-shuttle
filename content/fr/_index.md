@@ -94,7 +94,7 @@ featured_routes:
     link: "/fr/navette-velo/andratx-pollenca-guide/"
     badge: "Épique"
 
-  - title: "Big Daddy Challenge"
+  - title: "Le Grand Défi"
     distance: "167 km"
     elevation: "4,200m"
     image: "/img/route-big-daddy.webp"

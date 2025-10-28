@@ -94,7 +94,7 @@ featured_routes:
     link: "/es/shuttle-bici/andratx-pollenca-guide/"
     badge: "Épica"
 
-  - title: "Big Daddy Challenge"
+  - title: "El Gran Desafío"
     distance: "167 km"
     elevation: "4,200m"
     image: "/img/route-big-daddy.webp"

@@ -31,7 +31,7 @@ services:
     link: "/nl/bike-rescue/rescue-home/"
 
   - title: "Geplande Shuttles"
-    description: "Begin uw epische ritten vanaf de beste locaties. We brengen u en uw fiets naar iconische routes zoals Sa Calobra, Formentor en de Big Daddy Challenge."
+    description: "Begin uw epische ritten vanaf de beste locaties. We brengen u en uw fiets naar iconische routes zoals Sa Calobra, Formentor en de De Grote Uitdaging."
     icon: "/img/icon-shuttle.svg"
     link: "https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235"
 
@@ -94,7 +94,7 @@ featured_routes:
     link: "/nl/bike-shuttle/andratx-pollenca-guide/"
     badge: "Episch"
 
-  - title: "Big Daddy Challenge"
+  - title: "De Grote Uitdaging"
     distance: "140 km"
     elevation: "3.200m"
     image: "/img/route-big-daddy.webp"

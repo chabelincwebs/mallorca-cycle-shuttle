@@ -1424,7 +1424,7 @@ path.route-polyline {
       <div class="route-title-section">
         <span class="route-icon">▶</span>
         <div>
-          <div class="route-title">Big Daddy Challenge (8 geclassificeerde cols)</div>
+          <div class="route-title">De Grote Uitdaging (8 geclassificeerde cols)</div>
           <div class="route-stats-inline">
             <span>📏 162 km</span>
             <span>⛰️ 4,267 m</span>
@@ -1580,7 +1580,7 @@ path.route-polyline {
       <div class="route-title-section">
         <span class="route-icon">▶</span>
         <div>
-          <div class="route-title">Big Daddy Challenge (reverse)</div>
+          <div class="route-title">De Grote Uitdaging (reverse)</div>
           <div class="route-stats-inline">
             <span>📏 167 km</span>
             <span>⛰️ 4,121 m</span>

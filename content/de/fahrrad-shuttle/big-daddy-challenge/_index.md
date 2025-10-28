@@ -1,5 +1,5 @@
 ---
-title: "Meister-Radsportführer: Die Big Daddy Challenge"
+title: "Meister-Radsportführer: Die Die Große Herausforderung"
 description: "Epische Tagestour durch Mallorcas Serra de Tramuntana mit 8 klassifizierten Pässen und optionalen Bonusstrecken"
 translationKey: "guide-big-daddy"
 type: "bike-shuttle"
@@ -413,7 +413,7 @@ html {
 </div>
 <div class="info-card-content">
 <p>Große Kilometer, große Höhenmeter, große Küste, große Berge.</p>
-<p>Die Big Daddy Challenge ist Mallorcas Tagesmeisterwerk.</p>
+<p>Die Die Große Herausforderung ist Mallorcas Tagesmeisterwerk.</p>
 <p>Planen Sie Ihre Cafés, respektieren Sie die Anstiege, tragen Sie, was Sie brauchen, und nehmen Sie sich Zeit.</p>
 <p>Dann gehen Sie und sehen Sie, warum Fahrer zurückkommen und es ihren besten Tag auf dem Fahrrad nennen.</p>
 </div>
@@ -1315,7 +1315,7 @@ path.route-polyline {
       <div class="route-title-section">
         <span class="route-icon">▶</span>
         <div>
-          <div class="route-title">Big Daddy Challenge (8 klassifizierte Pässe)</div>
+          <div class="route-title">Die Große Herausforderung (8 klassifizierte Pässe)</div>
           <div class="route-stats-inline">
             <span>📏 162 km</span>
             <span>⛰️ 4.267 m</span>
@@ -1356,7 +1356,7 @@ path.route-polyline {
       <div class="route-title-section">
         <span class="route-icon">▶</span>
         <div>
-          <div class="route-title">Big Daddy Challenge (Rückwärts)</div>
+          <div class="route-title">Die Große Herausforderung (Rückwärts)</div>
           <div class="route-stats-inline">
             <span>📏 167 km</span>
             <span>⛰️ 4.121 m</span>

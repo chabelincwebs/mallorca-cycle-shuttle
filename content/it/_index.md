@@ -94,7 +94,7 @@ featured_routes:
     link: "/it/navetta-bici/andratx-pollenca-guide/"
     badge: "Epica"
 
-  - title: "Big Daddy Challenge"
+  - title: "La Grande Sfida"
     distance: "167 km"
     elevation: "4,200m"
     image: "/img/route-big-daddy.webp"

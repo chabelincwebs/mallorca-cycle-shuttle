@@ -1,5 +1,5 @@
 ---
-title: "Master Fietsgids: De Big Daddy Challenge"
+title: "Master Fietsgids: De De Grote Uitdaging"
 description: "Epische dagtocht door Mallorca's Serra de Tramuntana met 8 geclassificeerde cols en optionele bonus havens"
 translationKey: "guide-big-daddy"
 type: "bike-shuttle"
@@ -413,7 +413,7 @@ html {
 </div>
 <div class="info-card-content">
 <p>Grote afstanden, grote hoogtemeters, grote kustlijn, grote bergen.</p>
-<p>De Big Daddy Challenge is Mallorca's meesterwerk voor een hele dag.</p>
+<p>De De Grote Uitdaging is Mallorca's meesterwerk voor een hele dag.</p>
 <p>Plan je cafés, respecteer de beklimmingen, neem mee wat je nodig hebt en gun jezelf tijd.</p>
 <p>Ga dan zien waarom renners terugkomen met het verhaal dat dit hun beste dag op de fiets was.</p>
 </div>
@@ -1315,7 +1315,7 @@ path.route-polyline {
       <div class="route-title-section">
         <span class="route-icon">▶</span>
         <div>
-          <div class="route-title">Big Daddy Challenge (8 geclassificeerde cols)</div>
+          <div class="route-title">De Grote Uitdaging (8 geclassificeerde cols)</div>
           <div class="route-stats-inline">
             <span>📏 162 km</span>
             <span>⛰️ 4.267 m</span>
@@ -1356,7 +1356,7 @@ path.route-polyline {
       <div class="route-title-section">
         <span class="route-icon">▶</span>
         <div>
-          <div class="route-title">Big Daddy Challenge (omgekeerd)</div>
+          <div class="route-title">De Grote Uitdaging (omgekeerd)</div>
           <div class="route-stats-inline">
             <span>📏 167 km</span>
             <span>⛰️ 4.121 m</span>

@@ -1383,7 +1383,7 @@ path.route-polyline {
       <div class="route-title-section">
         <span class="route-icon">▶</span>
         <div>
-          <div class="route-title">Big Daddy Challenge (8 cols classificats)</div>
+          <div class="route-title">El Gran Repte (8 cols classificats)</div>
           <div class="route-stats-inline">
             <span>📏 162 km</span>
             <span>⛰️ 4,267 m</span>
@@ -1539,7 +1539,7 @@ path.route-polyline {
       <div class="route-title-section">
         <span class="route-icon">▶</span>
         <div>
-          <div class="route-title">Big Daddy Challenge (reverse)</div>
+          <div class="route-title">El Gran Repte (reverse)</div>
           <div class="route-stats-inline">
             <span>📏 167 km</span>
             <span>⛰️ 4,121 m</span>

@@ -94,7 +94,7 @@ featured_routes:
     link: "/ca/shuttle-bici/andratx-pollenca-guide/"
     badge: "Èpica"
 
-  - title: "Big Daddy Challenge"
+  - title: "El Gran Repte"
     distance: "167 km"
     elevation: "4,200m"
     image: "/img/route-big-daddy.webp"

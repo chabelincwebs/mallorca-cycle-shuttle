@@ -94,7 +94,7 @@ featured_routes:
     link: "/nl/fiets-shuttle/andratx-pollenca-gids/"
     badge: "Episch"
 
-  - title: "Big Daddy Challenge"
+  - title: "De Grote Uitdaging"
     distance: "167 km"
     elevation: "4,200m"
     image: "/img/route-big-daddy.webp"

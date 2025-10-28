@@ -94,7 +94,7 @@ featured_routes:
     link: "/de/fahrrad-shuttle/andratx-pollenca-leitfaden/"
     badge: "Episch"
 
-  - title: "Big Daddy Challenge"
+  - title: "Die Große Herausforderung"
     distance: "167 km"
     elevation: "4,200m"
     image: "/img/route-big-daddy.webp"
