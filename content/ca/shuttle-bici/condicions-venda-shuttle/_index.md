@@ -1,7 +1,7 @@
 ---
 title: "Condicions de Venda Shuttle"
 description: "Termes per a la compra de productes i serveis de Mallorca Cycle Shuttle."
-translationKey: bus llançadora?-sale-terms
+translationKey: shuttle-sale-terms
 ---
 
 La vostra acceptació d'aquests termes i condicions de Mallorca Cycle Shuttle confirma que enteneu el bitllet que esteu comprant.
