@@ -1,5 +1,5 @@
 ---
-title: "Blog"
+title: "Blog de Mallorca Cycle Shuttle"
 description: "Últimas noticias, guías y consejos de ciclismo para Mallorca"
 translationKey: "blog-index"
 hero_image: "/img/blog-hero.webp"
