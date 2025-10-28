@@ -31,19 +31,19 @@ Paisaje costero y de bosque espectacular. Te reto a encontrar 20 km mejores en o
 
 Una subida "loca": 7,9 km y 5,2 % de media. Carretera muy estrecha en tramos y muchas herraduras; te preguntarás por qué la empezaste. Un tercio de bajada más tarde lo sabrás: es brillante; rutas así justifican pedalear. Vistas increíbles hacia un puerto tan acogedor que cuesta irse. El firme está algo bacheado en partes, pero el restaurante sigue igual de bueno y a precio razonable.
 
-Una gran adición a tu <a href="/es/shuttle-bici/andratx-pollenca-guide/">epopeya de Costa a Costa</a>.
+Una gran adición a tu <a href="/es/shuttle-bici/guia-andratx-pollenca/">epopeya de Costa a Costa</a>.
 
 ## 5. Subida a Port des Canonge
 
 Bajada preciosa desde la MA-10 a la altura del km 80 y luego una subida de 4,9 km desde una bahía preciosa. Desvío muy escénico que añade casi 10 km muy bien invertidos. Entre Banyalbufar y Port de Valldemossa, esta bajada serpenteante hasta la bahía de 70 m es poco transitada y una delicia.
 
-También perfecta para tu <a href="/es/shuttle-bici/andratx-pollenca-guide/">epopeya de Costa a Costa</a>.
+También perfecta para tu <a href="/es/shuttle-bici/guia-andratx-pollenca/">epopeya de Costa a Costa</a>.
 
 ## 6. El valle de Orient y el Coll de Sóller
 
 Empieza con 28 curvas, luego otras 26, atraviesa un valle tranquilo y sube el Coll d'Orient y el Coll d'Honor. Para a comer en el magnífico Cycling Planet en Alaró y saluda a Laura Brunot y a David Muntaner (campeón del mundo de Madison). Memorable.
 
-Otra gran adición a tu <a href="/es/shuttle-bici/andratx-pollenca-guide/">epopeya de Costa a Costa</a>.
+Otra gran adición a tu <a href="/es/shuttle-bici/guia-andratx-pollenca/">epopeya de Costa a Costa</a>.
 
 ## 7. Ver ponerse el sol y salir la luna desde la Talaia d'Albercutx
 

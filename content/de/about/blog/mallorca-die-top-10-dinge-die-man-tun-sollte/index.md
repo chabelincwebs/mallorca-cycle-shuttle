@@ -31,19 +31,19 @@ Spektakuläre Küsten- und Waldszenerie – finde irgendwo 20 bessere Kilometer,
 
 Ein verrückter Anstieg: 7,9 km Länge, Ø-Steigung 5,2 %. Die Straße ist stellenweise extrem schmal, mit vielen Serpentinen – du fragst dich, warum du das überhaupt angefangen hast. Ein Drittel der Abfahrt später weißt du es: genial – für solche Strecken fährst du Rad. Tolle Ausblicke führen zu einem kleinen Hafen, der so einladend ist, dass der Abschied schwerfällt. Der Belag ist stellenweise holprig, aber das Restaurant ist weiterhin top und fair bepreist.
 
-Eine großartige Ergänzung zu deinem <a href="/de/fahrrad-shuttle/andratx-pollenca-guide/">Coast-to-Coast-Epos</a>.
+Eine großartige Ergänzung zu deinem <a href="/de/fahrrad-shuttle/andratx-pollenca-leitfaden/">Coast-to-Coast-Epos</a>.
 
 ## 5. Anstieg Port des Canonge
 
 Schöner kleiner Abstecher von der MA-10 am km-Marker 80: Erst eine kurvige Abfahrt, dann ein 4,9-km-Anstieg aus einer wunderschönen Bucht. Ein sehr szenischer Umweg, der knapp 10 absolut lohnende Kilometer addiert. Zwischen Banyalbufar und Port Valldemossa gelegen – die großartige Abfahrt hinunter zur 70-m-breiten Bucht ist ein Geheimtipp und ein Genuss.
 
-Auch das ist eine tolle Ergänzung zu deinem <a href="/de/fahrrad-shuttle/andratx-pollenca-guide/">Coast-to-Coast-Epos</a>.
+Auch das ist eine tolle Ergänzung zu deinem <a href="/de/fahrrad-shuttle/andratx-pollenca-leitfaden/">Coast-to-Coast-Epos</a>.
 
 ## 6. Das Orient-Tal und der Coll de Sóller
 
 Starte mit 28 Kehren, dann weiteren 26, anschließend durch ein stilles Tal und über den Coll d'Orient und Coll d'Honor. Mittagessen im großartigen Cycling Planet in Alaró – grüß die Besitzer Laura Brunot und David Muntaner (Madison-Weltmeister). Unvergesslich.
 
-Ebenfalls eine super Ergänzung zu deinem <a href="/de/fahrrad-shuttle/andratx-pollenca-guide/">Coast-to-Coast-Epos</a>.
+Ebenfalls eine super Ergänzung zu deinem <a href="/de/fahrrad-shuttle/andratx-pollenca-leitfaden/">Coast-to-Coast-Epos</a>.
 
 ## 7. Sonnenuntergang und Mondaufgang von der Talaia d'Albercutx
 

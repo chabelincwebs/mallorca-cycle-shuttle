@@ -31,19 +31,19 @@ Adembenemende kust- en boslandschappen; beter 20 km wegdek ga je moeilijk vinden
 
 Een knotsgekke klim: 7,9 km met gemiddeld 5,2 %. De weg is soms heel smal met veel haarspeldbochten – je vraagt je af waarom je begon. Na een derde van de afdaling weet je het: briljant; voor zulke routes fiets je. Prachtige uitzichten naar een haventje dat zo welkom voelt dat weggaan lastig is. Het wegdek is hier en daar hobbelig, maar het restaurant is nog steeds top en betaalbaar.
 
-Een perfecte toevoeging aan je <a href="/nl/fiets-shuttle/andratx-pollenca-guide/">Coast-to-Coast-epos</a>.
+Een perfecte toevoeging aan je <a href="/nl/fiets-shuttle/andratx-pollenca-gids/">Coast-to-Coast-epos</a>.
 
 ## 5. Klim naar Port des Canonge
 
 Heerlijke afdaling vanaf de MA-10 bij km-paal 80 en dan 4,9 km klimmen vanuit een prachtige baai. Een zeer schilderlijke omweg die net geen 10 uiterst waardevolle kilometers toevoegt. Tussen Banyalbufar en Port Valldemossa: deze slingerende afdaling naar de 70 m brede baai ligt buiten de gebaande paden en is puur genieten.
 
-Ook ideaal als toevoeging aan je <a href="/nl/fiets-shuttle/andratx-pollenca-guide/">Coast-to-Coast-epos</a>.
+Ook ideaal als toevoeging aan je <a href="/nl/fiets-shuttle/andratx-pollenca-gids/">Coast-to-Coast-epos</a>.
 
 ## 6. De Orient-vallei en de Coll de Sóller
 
 Begin met 28 haarspelden, dan nog 26, steek een rustige vallei over en klim de Coll d'Orient en Coll d'Honor. Lunch bij het geweldige Cycling Planet in Alaró en zeg hoi tegen Laura Brunot en David Muntaner (wereldkampioen Madison). Pure herinneringen.
 
-Nog een topstuk voor je <a href="/nl/fiets-shuttle/andratx-pollenca-guide/">Coast-to-Coast-epos</a>.
+Nog een topstuk voor je <a href="/nl/fiets-shuttle/andratx-pollenca-gids/">Coast-to-Coast-epos</a>.
 
 ## 7. Zonsondergang en maansopkomst vanaf Talaia d'Albercutx
 

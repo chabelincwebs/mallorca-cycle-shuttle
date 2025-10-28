@@ -24,7 +24,7 @@ Buche Shuttles früh in der Saison. Habe <a href="https://mallorcacycleshuttle.c
 
 - Cap de Formentor – weniger Autos, einfachere Fotos, weniger Wind.
 - Sa Calobra – Abfahrt vor dem Bus-Verkehr, Aufstieg meist im Schatten.
-- MA-10 <a href="/de/bike-shuttle/andratx-pollenca-guide/" target="_blank">Andratx nach Pollença</a> – längerer Tag, mehr Café-/Foto-Stopps, weniger Hitze.
+- MA-10 <a href="/de/fahrrad-shuttle/andratx-pollenca-leitfaden/" target="_blank">Andratx nach Pollença</a> – längerer Tag, mehr Café-/Foto-Stopps, weniger Hitze.
 
 Profi-Tipp: Viele Restaurants bei Ankunft für Frühstück und unterwegs.
 
@@ -39,7 +39,7 @@ Profi-Tipp: Viele Restaurants bei Ankunft für Frühstück und unterwegs.
 **Tu stattdessen dies:** Mallorcas Straßen sind glatt und schnell, können aber rutschig sein bei Morgentau oder nach dem ersten Regen wegen des erhöhten Kiesanteils im Asphalt, um mit der Sommerhitze umzugehen. Bremse früh, sei vorsichtig auf Farblinien und polierten Stellen, und hebe dir die Heldentaten für ein andermal auf.
 
 ## 4) Die beste Route der Insel auslassen
-**Der Fehler:** Die MA-10-Küstenroute zwischen <a href="/de/bike-shuttle/andratx-pollenca-guide/" target="_blank">Andratx und Pollença</a> meiden, weil sie "zu groß" aussieht.
+**Der Fehler:** Die MA-10-Küstenroute zwischen <a href="/de/fahrrad-shuttle/andratx-pollenca-leitfaden/" target="_blank">Andratx und Pollença</a> meiden, weil sie "zu groß" aussieht.
 
 **Tu stattdessen dies:** Wähle deine Variante – 115 bis 167 km mit echtem Klettern und Café-Himmel – und mache sie zu deiner Hauptfahrt. Sie ist hart und absolut brillant. Trainiere vor der Ankunft.
 

@@ -31,19 +31,19 @@ Paesaggi costieri e forestali mozzafiato, ti sfido a trovare 20 km migliori di s
 
 Una salita folle con una lunghezza di 7,9 km e una pendenza media del 5,2%. La strada è così stretta in alcuni punti e molti tornanti che ti chiederai perché l'hai mai contemplata, anche iniziata. A un terzo della discesa saprai – è brillante, un percorso come questo è motivo sufficiente per pedalare. Viste incredibili che portano a un'oasi di un Porto così accogliente che è difficile andarsene. La superficie è un po' accidentata in alcuni punti ora, ma il ristorante è ancora buono e ragionevole come sempre.
 
-Questa salita è un'ottima aggiunta alla tua <a href="/it/bike-shuttle/andratx-pollenca-guide/">epica da Costa a Costa</a>.
+Questa salita è un'ottima aggiunta alla tua <a href="/it/shuttle-bici/guida-andratx-pollenca/">epica da Costa a Costa</a>.
 
 ## 5. Salita di Port des Canonge
 
 Grande piccola discesa dalla ma-10 al marker di 80 km e poi una salita tortuosa di 4,9 km da una bellissima baia. È una deviazione molto panoramica che aggiungerà poco meno di 10 km molto validi alla tua corsa. Proprio fuori dalla ma-10 tra Banyalbufar e Port Valldemossa questa eccellente discesa vorticosa fino alla baia larga 70 m in fondo è fuori dai sentieri battuti e una gioia.
 
-Questa salita è un'ottima aggiunta alla tua <a href="/it/bike-shuttle/andratx-pollenca-guide/">epica da Costa a Costa</a>.
+Questa salita è un'ottima aggiunta alla tua <a href="/it/shuttle-bici/guida-andratx-pollenca/">epica da Costa a Costa</a>.
 
 ## 6. La Valle dell'Orient e il Coll de Soller
 
 Inizia con 28 tornanti seguiti da altri 26, poi taglia attraverso una valle tranquilla e scala il Coll d'Orient e il Coll d'Honor. Fermati per pranzo al brillante Cycling Planet ad Alaro e saluta i proprietari Laura Brunot e David Muntaner (Campione del Mondo Madison). Creazione di ricordi.
 
-Questa è un'ottima aggiunta alla tua <a href="/it/bike-shuttle/andratx-pollenca-guide/">epica da Costa a Costa</a>.
+Questa è un'ottima aggiunta alla tua <a href="/it/shuttle-bici/guida-andratx-pollenca/">epica da Costa a Costa</a>.
 
 ## 7. Guarda il tramonto e l'alba della luna dal Talaia d'Albercutx
 

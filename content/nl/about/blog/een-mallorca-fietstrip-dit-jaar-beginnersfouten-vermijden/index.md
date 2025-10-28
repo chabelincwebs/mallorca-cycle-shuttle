@@ -24,7 +24,7 @@ Boek shuttles vroeg in het seizoen. Heb <a href="https://mallorcacycleshuttle.co
 
 - Cap de Formentor – minder auto's, makkelijker foto's, minder wind.
 - Sa Calobra – afdalen vóór het touringcarverkeer, klimmen grotendeels in de schaduw.
-- MA-10 <a href="/nl/fiets-shuttle/andratx-pollenca-guide/" target="_blank">Andratx naar Pollença</a> – langere dag, meer café/fotostops, minder hitte.
+- MA-10 <a href="/nl/fiets-shuttle/andratx-pollenca-gids/" target="_blank">Andratx naar Pollença</a> – langere dag, meer café/fotostops, minder hitte.
 
 Pro tip: volop restaurants bij aankomst voor ontbijt en onderweg.
 
@@ -39,7 +39,7 @@ Pro tip: volop restaurants bij aankomst voor ontbijt en onderweg.
 **Doe dit in plaats daarvan:** het wegdek van Mallorca is glad en snel, maar kan glibberig zijn bij ochtenddauw of na de eerste regen vanwege het verhoogde percentage grind in het asfalt om de zomerhitte aan te kunnen. Rem vroeg, wees voorzichtig op verf en gepolijste stukken, en bewaar de heldendaden voor een andere keer.
 
 ## 4) De beste route van het eiland overslaan
-**De fout:** de MA-10 kust-tot-kust route tussen <a href="/nl/fiets-shuttle/andratx-pollenca-guide/" target="_blank">Andratx naar Pollença</a> vermijden omdat het "te groot" lijkt.
+**De fout:** de MA-10 kust-tot-kust route tussen <a href="/nl/fiets-shuttle/andratx-pollenca-gids/" target="_blank">Andratx naar Pollença</a> vermijden omdat het "te groot" lijkt.
 
 **Doe dit in plaats daarvan:** kies je variant – 115 tot 167 km met serieus klimwerk en café-paradijs – en maak het je paradepaardje. Het is zwaar en absoluut briljant. Zorg dat je de training vóór aankomst hebt gedaan.
 

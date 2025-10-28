@@ -31,19 +31,19 @@ Paisatges costaners i de bosc esplèndids. Et reto a trobar 20 km millors enlloc
 
 Una pujada "esbojarrada": 7,9 km i pendent mitjana del 5,2 %. Carretera molt estreta en trams i moltes paelles; et preguntaràs per què l'has començada. Un terç de baixada més tard ho tindràs clar: és brillant – rutes així donen sentit a pedalar. Vistes increïbles cap a un port tan acollidor que costa marxar. L'asfalt és una mica irregular en alguns punts, però el restaurant continua sent molt bo i a preu raonable.
 
-Una gran sumptuosa afegida a la teva <a href="/ca/shuttle-bici/andratx-pollenca-guide/">epopeia de Costa a Costa</a>.
+Una gran sumptuosa afegida a la teva <a href="/ca/shuttle-bici/guia-andratx-pollenca/">epopeia de Costa a Costa</a>.
 
 ## 5. Pujada a Port des Canonge
 
 Baixada preciosa des de la MA-10 al punt del km 80 i després una pujada de 4,9 km des d'una cala bellíssima. Un desviament molt escènic que afegeix poc menys de 10 km ben aprofitats. Entre Banyalbufar i Port de Valldemossa, aquesta baixada sinuosa fins a la cala de 70 m és poc concorreguda i un plaer.
 
-També ideal per a la teva <a href="/ca/shuttle-bici/andratx-pollenca-guide/">epopeia de Costa a Costa</a>.
+També ideal per a la teva <a href="/ca/shuttle-bici/guia-andratx-pollenca/">epopeia de Costa a Costa</a>.
 
 ## 6. La vall d'Orient i el Coll de Sóller
 
 Comença amb 28 revolts, després 26 més, travessa una vall tranquil·la i puja el Coll d'Orient i el Coll d'Honor. Dina al magnífic Cycling Planet d'Alaró i saluda la Laura Brunot i en David Muntaner (campió del món de Madison). Memorable.
 
-Una altra peça per a la teva <a href="/ca/shuttle-bici/andratx-pollenca-guide/">epopeia de Costa a Costa</a>.
+Una altra peça per a la teva <a href="/ca/shuttle-bici/guia-andratx-pollenca/">epopeia de Costa a Costa</a>.
 
 ## 7. Posta de sol i sortida de la lluna des de la Talaia d'Albercutx
 

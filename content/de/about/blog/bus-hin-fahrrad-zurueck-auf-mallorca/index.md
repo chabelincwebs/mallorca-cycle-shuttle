@@ -16,7 +16,7 @@ translationKey: "blog-bus-out-bike-back"
 
 Wir haben zum ersten Mal den ausgezeichneten <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Mallorca Cycle Shuttle</a> im Jahr 2016 genutzt. Seitdem sind wir 2017, 2018, 2019, 2022, 2023, 2024 und wieder 2025 zurückgekommen. Bei jeder Reise haben sie unsere Flughafen-Abholungen und -Absetzungen reibungslos gehandhabt, und jeder Fahrer war freundlich und einladend.
 
-Wir nehmen regelmäßig den <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">planmäßigen Bike-Bus</a> nach <a href="/de/bike-shuttle/andratx-pollenca-guide/" target="_blank">Andratx</a> von unserem Hotel in Port de Pollença, und diese Rückfahrt ist immer das Highlight der Reise.
+Wir nehmen regelmäßig den <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">planmäßigen Bike-Bus</a> nach <a href="/de/fahrrad-shuttle/andratx-pollenca-leitfaden/" target="_blank">Andratx</a> von unserem Hotel in Port de Pollença, und diese Rückfahrt ist immer das Highlight der Reise.
 
 ## Warum wir den Bike-Bus nutzen
 
@@ -26,7 +26,7 @@ Wenn du, wie ich, nach Mallorca kommst, um zu fahren, zögerst du vielleicht, in
 
 ## Highlights und Pläne
 
-Die <a href="/de/bike-shuttle/andratx-pollenca-guide/" target="_blank">Andratx nach Port de Pollença</a>-Fahrt ist der Höhepunkt unserer Reisen und bleibt ein Muss für uns. Als Nächstes für uns im Jahr 2026: Die "Big Daddy"-Herausforderung mit Port des Canonge, Port de Valldemossa und Sa Calobra.
+Die <a href="/de/fahrrad-shuttle/andratx-pollenca-leitfaden/" target="_blank">Andratx nach Port de Pollença</a>-Fahrt ist der Höhepunkt unserer Reisen und bleibt ein Muss für uns. Als Nächstes für uns im Jahr 2026: Die "Big Daddy"-Herausforderung mit Port des Canonge, Port de Valldemossa und Sa Calobra.
 
 **Buchungstipp:** Beliebte Andratx-Tage können Wochen im Voraus ausverkauft sein. Buche früh in deinem Aufenthalt, damit deine Beine frisch sind und du Wetter-Spielraum hast. Wenn sich die Wettervorhersage ändert, war <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Mallorca Cycle Shuttle</a> schnell mit Umbuchung oder Rückerstattung.
 

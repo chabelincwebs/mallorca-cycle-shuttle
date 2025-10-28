@@ -31,19 +31,19 @@ Paysages côtiers et forestiers superbes. Je te défie de trouver 20 km plus bea
 
 Une ascension dingue : 7,9 km à 5,2 % de moyenne. Route étroite par endroits et de nombreux lacets ; tu te demanderas pourquoi tu t'y es lancé. Un tiers de la descente plus tard, tu sauras : c'est brillant – ce genre de route justifie le vélo. Vues incroyables vers un petit port si accueillant qu'il est difficile de repartir. Revêtement un peu bosselé par endroits, mais le restaurant reste excellent et abordable.
 
-À ajouter absolument à ton <a href="/fr/navette-velo/andratx-pollenca-guide/">épopée Côte à Côte</a>.
+À ajouter absolument à ton <a href="/fr/navette-velo/guide-andratx-pollenca/">épopée Côte à Côte</a>.
 
 ## 5. Montée de Port des Canonge
 
 Jolie descente depuis la MA-10 au repère 80 km, puis une montée sinueuse de 4,9 km depuis une belle crique. Un détour très scénique qui ajoute à peine 10 km parfaitement rentabilisés. Entre Banyalbufar et Port de Valldemossa, cette descente ondoyante vers une crique de 70 m de large est hors des sentiers battus et un vrai plaisir.
 
-Idéale aussi pour ton <a href="/fr/navette-velo/andratx-pollenca-guide/">épopée Côte à Côte</a>.
+Idéale aussi pour ton <a href="/fr/navette-velo/guide-andratx-pollenca/">épopée Côte à Côte</a>.
 
 ## 6. La vallée d'Orient et le Coll de Sóller
 
 Commence par 28 épingles, puis 26 de plus, traverse une vallée paisible et enchaîne Coll d'Orient et Coll d'Honor. Déjeuner au superbe Cycling Planet à Alaró – salue Laura Brunot et David Muntaner (champion du monde de Madison). Inoubliable.
 
-Encore une belle pièce pour ton <a href="/fr/navette-velo/andratx-pollenca-guide/">épopée Côte à Côte</a>.
+Encore une belle pièce pour ton <a href="/fr/navette-velo/guide-andratx-pollenca/">épopée Côte à Côte</a>.
 
 ## 7. Coucher de soleil et lever de lune depuis la Talaia d'Albercutx
 
