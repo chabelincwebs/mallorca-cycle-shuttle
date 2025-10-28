@@ -1,0 +1,646 @@
+{{ define "title" }}{{ .Title }}{{ end }}
+
+{{ define "main" }}
+
+{{/* ========================================
+     HERO SECTION - Background Image with Overlay
+     ======================================== */}}
+<section class="guide-hero"{{ with .Params.hero_image }} style="background-image: url('{{ . }}');"{{ end }}>
+  <div class="guide-hero-overlay"></div>
+  <div class="guide-hero-content">
+    <h1 class="guide-hero-title">{{ .Params.hero_title | default .Title }}</h1>
+    {{ with .Params.hero_subtitle }}
+      <p class="guide-hero-subtitle">{{ . }}</p>
+    {{ end }}
+  </div>
+</section>
+
+{{/* ========================================
+     STATS DASHBOARD
+     ======================================== */}}
+{{ with .Params.stats }}
+<section class="stats-dashboard">
+  <div class="container">
+    <div class="stats-grid">
+      {{ range . }}
+      <div class="stat-card fade-in-up">
+        <div class="stat-icon">{{ .icon }}</div>
+        <div class="stat-value">{{ .value }}</div>
+        <div class="stat-label">{{ .label }}</div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{/* ========================================
+     ROUTE JOURNEY CARDS - Expandable Accordions
+     ======================================== */}}
+{{ with .Params.route_cards }}
+<section class="route-journey">
+  <div class="container">
+    <div class="journey-cards-grid">
+      {{ range $index, $card := . }}
+      <div class="journey-card fade-in-up" data-delay="{{ mul $index 100 }}">
+        <div class="journey-card-image">
+          <img src="{{ $card.image }}" alt="{{ $card.title }}" loading="lazy">
+          <div class="journey-card-overlay"></div>
+        </div>
+        <div class="journey-card-content">
+          <h3 class="journey-card-title">{{ $card.title }}</h3>
+          <p class="journey-card-excerpt">{{ $card.excerpt }}</p>
+          <button class="journey-expand-btn" data-card="{{ $index }}">
+            <span class="expand-text">Read More</span>
+            <span class="expand-icon">→</span>
+          </button>
+        </div>
+        <div class="journey-card-expanded" id="card-{{ $index }}">
+          <div class="expanded-content">
+            {{ $card.full_content | markdownify }}
+          </div>
+          <button class="journey-collapse-btn" data-card="{{ $index }}">
+            <span class="collapse-icon">↑</span>
+            <span class="collapse-text">Show Less</span>
+          </button>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{/* ========================================
+     MAIN GUIDE CONTENT
+     ======================================== */}}
+<article class="guide-content">
+  <div class="container">
+    {{ .Content }}
+  </div>
+</article>
+
+{{/* ========================================
+     STYLES
+     ======================================== */}}
+<style>
+/* ==================== HERO SECTION ==================== */
+.guide-hero {
+  margin: 0 0 3rem 0;
+  padding: 6rem 2rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 28px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.guide-hero-overlay {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.3) 100%);
+  border-radius: 28px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.guide-hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    rgba(241, 0, 0, 0.8) 20%,
+    rgba(241, 0, 0, 1) 50%,
+    rgba(241, 0, 0, 0.8) 80%,
+    transparent 100%
+  );
+  z-index: 2;
+}
+
+.guide-hero-content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.guide-hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.guide-hero-subtitle {
+  font-size: 1.35rem;
+  line-height: 1.7;
+  color: #ffffff;
+  font-weight: 500;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* ==================== STATS DASHBOARD ==================== */
+.stats-dashboard {
+  padding: 2rem 0 3rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.stat-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(241, 0, 0, 0.15);
+  border-color: rgba(241, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.stat-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--brand, #f10000);
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 0.95rem;
+  color: #666;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ==================== ROUTE JOURNEY CARDS ==================== */
+.route-journey {
+  padding: 3rem 0 2rem;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+}
+
+.journey-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+.journey-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 24px;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.journey-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 48px rgba(241, 0, 0, 0.15);
+  border-color: rgba(241, 0, 0, 0.3);
+}
+
+.journey-card-image {
+  position: relative;
+  height: 240px;
+  overflow: hidden;
+}
+
+.journey-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.journey-card:hover .journey-card-image img {
+  transform: scale(1.08);
+}
+
+.journey-card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 100%);
+  pointer-events: none;
+}
+
+.journey-card-content {
+  padding: 2rem;
+}
+
+.journey-card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #222;
+  margin: 0 0 1rem 0;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+.journey-card-excerpt {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666;
+  margin: 0 0 1.5rem 0;
+}
+
+.journey-expand-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, var(--brand, #f10000) 0%, #ff3333 100%);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(241, 0, 0, 0.25);
+}
+
+.journey-expand-btn:hover {
+  background: linear-gradient(135deg, #d00000 0%, #f10000 100%);
+  transform: translateX(4px);
+  box-shadow: 0 6px 24px rgba(241, 0, 0, 0.4);
+}
+
+.expand-icon {
+  transition: transform 0.3s ease;
+}
+
+.journey-expand-btn:hover .expand-icon {
+  transform: translateX(4px);
+}
+
+.journey-card-expanded {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  background: rgba(248, 249, 250, 0.5);
+}
+
+.journey-card-expanded.active {
+  max-height: 2000px;
+}
+
+.expanded-content {
+  padding: 2rem;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+.expanded-content h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #222;
+  margin: 1.5rem 0 0.75rem 0;
+}
+
+.expanded-content p {
+  margin: 0 0 1rem 0;
+}
+
+.expanded-content ul, .expanded-content ol {
+  margin: 0 0 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.expanded-content li {
+  margin-bottom: 0.5rem;
+}
+
+.journey-collapse-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 1rem;
+  background: rgba(241, 0, 0, 0.05);
+  color: var(--brand, #f10000);
+  border: none;
+  border-top: 1px solid rgba(241, 0, 0, 0.1);
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.journey-collapse-btn:hover {
+  background: rgba(241, 0, 0, 0.1);
+}
+
+.collapse-icon {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.journey-collapse-btn:hover .collapse-icon {
+  transform: translateY(-3px);
+}
+
+/* ==================== GUIDE CONTENT ==================== */
+.guide-content {
+  padding: 2rem 0 4rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.guide-content .container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.guide-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  margin: 3rem 0 1.5rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid var(--brand, #f10000);
+}
+
+.guide-content h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin: 2rem 0 1rem 0;
+}
+
+.guide-content h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #444;
+  margin: 1.5rem 0 0.75rem 0;
+}
+
+.guide-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+  margin: 0 0 1.5rem 0;
+}
+
+.guide-content ul, .guide-content ol {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+  margin: 0 0 1.5rem 0;
+  padding-left: 2rem;
+}
+
+.guide-content li {
+  margin-bottom: 0.75rem;
+}
+
+.guide-content a {
+  color: var(--brand, #f10000);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.guide-content a:hover {
+  color: #d00000;
+  text-decoration: underline;
+}
+
+.guide-content strong {
+  font-weight: 700;
+  color: #222;
+}
+
+/* ==================== FADE-IN ANIMATIONS ==================== */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ==================== CONTAINER ==================== */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 1024px) {
+  .journey-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .guide-hero {
+    padding: 4rem 1.5rem;
+    margin-bottom: 2rem;
+    min-height: 300px;
+  }
+
+  .guide-hero-title {
+    font-size: 2rem;
+  }
+
+  .guide-hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .journey-card-image {
+    height: 200px;
+  }
+
+  .journey-card-title {
+    font-size: 1.3rem;
+  }
+
+  .guide-content .container {
+    padding: 0 1.5rem;
+  }
+
+  .guide-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .guide-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .guide-content p, .guide-content ul, .guide-content ol {
+    font-size: 1rem;
+  }
+}
+</style>
+
+{{/* ========================================
+     JAVASCRIPT - Accordion Functionality
+     ======================================== */}}
+<script>
+// Fade-in on scroll animation
+const observerOptions = {
+  threshold: 0.1,
+  rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const delay = entry.target.dataset.delay || 0;
+      setTimeout(() => {
+        entry.target.classList.add('visible');
+      }, delay);
+    }
+  });
+}, observerOptions);
+
+document.querySelectorAll('.fade-in-up').forEach(el => {
+  observer.observe(el);
+});
+
+// Accordion expand/collapse functionality
+document.addEventListener('DOMContentLoaded', () => {
+  // Helper function to check if we're on a large screen (desktop/tablet with 3 cards)
+  const isLargeScreen = () => window.innerWidth > 1024;
+
+  // Expand all cards (for large screens)
+  const expandAllCards = () => {
+    document.querySelectorAll('.journey-card-expanded').forEach(section => {
+      section.classList.add('active');
+    });
+    document.querySelectorAll('.journey-expand-btn').forEach(btn => {
+      btn.style.display = 'none';
+    });
+  };
+
+  // Collapse all cards (for large screens)
+  const collapseAllCards = () => {
+    document.querySelectorAll('.journey-card-expanded').forEach(section => {
+      section.classList.remove('active');
+    });
+    document.querySelectorAll('.journey-expand-btn').forEach(btn => {
+      btn.style.display = 'inline-flex';
+    });
+  };
+
+  // Expand single card (for mobile)
+  const expandSingleCard = (cardIndex) => {
+    const expandedSection = document.getElementById(`card-${cardIndex}`);
+    const card = document.querySelectorAll('.journey-card')[cardIndex];
+    const expandBtn = card.querySelector('.journey-expand-btn');
+
+    expandedSection.classList.add('active');
+    expandBtn.style.display = 'none';
+
+    setTimeout(() => {
+      expandedSection.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }, 100);
+  };
+
+  // Collapse single card (for mobile)
+  const collapseSingleCard = (cardIndex) => {
+    const expandedSection = document.getElementById(`card-${cardIndex}`);
+    const card = document.querySelectorAll('.journey-card')[cardIndex];
+    const expandBtn = card.querySelector('.journey-expand-btn');
+
+    expandedSection.classList.remove('active');
+    expandBtn.style.display = 'inline-flex';
+
+    card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  };
+
+  // Expand buttons
+  document.querySelectorAll('.journey-expand-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const cardIndex = parseInt(e.currentTarget.dataset.card);
+
+      if (isLargeScreen()) {
+        // Large screen: expand all cards
+        expandAllCards();
+      } else {
+        // Mobile: expand only clicked card
+        expandSingleCard(cardIndex);
+      }
+    });
+  });
+
+  // Collapse buttons
+  document.querySelectorAll('.journey-collapse-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const cardIndex = parseInt(e.currentTarget.dataset.card);
+
+      if (isLargeScreen()) {
+        // Large screen: collapse all cards
+        collapseAllCards();
+      } else {
+        // Mobile: collapse only clicked card
+        collapseSingleCard(cardIndex);
+      }
+    });
+  });
+});
+</script>
+
+{{ end }}
