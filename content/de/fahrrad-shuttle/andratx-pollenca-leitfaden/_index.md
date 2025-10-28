@@ -1271,7 +1271,7 @@ path.route-polyline {
           <div class="route-stats-inline">
             <span>📏 121 km</span>
             <span>⛰️ 2,440 m</span>
-            <span class="difficulty-badge difficulty-moderate">Moderate</span>
+            <span class="difficulty-badge difficulty-moderate">Moderat</span>
           </div>
         </div>
       </div>
@@ -1300,7 +1300,7 @@ path.route-polyline {
           <div class="route-stats-inline">
             <span>📏 132 km</span>
             <span>⛰️ 2,573 m</span>
-            <span class="difficulty-badge difficulty-moderate">Moderate</span>
+            <span class="difficulty-badge difficulty-moderate">Moderat</span>
           </div>
         </div>
       </div>
@@ -1456,7 +1456,7 @@ path.route-polyline {
           <div class="route-stats-inline">
             <span>📏 121 km</span>
             <span>⛰️ 2,700 m</span>
-            <span class="difficulty-badge difficulty-moderate">Moderate</span>
+            <span class="difficulty-badge difficulty-moderate">Moderat</span>
           </div>
         </div>
       </div>
@@ -1514,7 +1514,7 @@ path.route-polyline {
           <div class="route-stats-inline">
             <span>📏 125 km</span>
             <span>⛰️ 2,650 m</span>
-            <span class="difficulty-badge difficulty-moderate">Moderate</span>
+            <span class="difficulty-badge difficulty-moderate">Moderat</span>
           </div>
         </div>
       </div>
@@ -1898,7 +1898,7 @@ function renderElevationChart(routeId, coordinates) {
     data: {
       labels: sampledDistances.map(d => d.toFixed(1)),
       datasets: [{
-        label: 'Elevation (m)',
+        label: 'Höhe (m)',
         data: sampledElevations,
         borderColor: '#f10000',
         backgroundColor: 'rgba(241, 0, 0, 0.1)',
@@ -1915,18 +1915,18 @@ function renderElevationChart(routeId, coordinates) {
         legend: { display: false },
         tooltip: {
           callbacks: {
-            title: (context) => 'Distance: ' + context[0].label + ' km',
-            label: (context) => 'Elevation: ' + context.parsed.y.toFixed(0) + ' m'
+            title: (context) => 'Entfernung: ' + context[0].label + ' km',
+            label: (context) => 'Höhe: ' + context.parsed.y.toFixed(0) + ' m'
           }
         }
       },
       scales: {
         x: {
-          title: { display: true, text: 'Distance (km)' },
+          title: { display: true, text: 'Entfernung (km)' },
           ticks: { maxTicksLimit: 15 }
         },
         y: {
-          title: { display: true, text: 'Elevation (m)' }
+          title: { display: true, text: 'Höhe (m)' }
         }
       },
       interaction: {

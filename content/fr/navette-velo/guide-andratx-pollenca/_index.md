@@ -1898,7 +1898,7 @@ function renderElevationChart(routeId, coordinates) {
     data: {
       labels: sampledDistances.map(d => d.toFixed(1)),
       datasets: [{
-        label: 'Elevation (m)',
+        label: 'Altitude (m)',
         data: sampledElevations,
         borderColor: '#f10000',
         backgroundColor: 'rgba(241, 0, 0, 0.1)',
@@ -1916,7 +1916,7 @@ function renderElevationChart(routeId, coordinates) {
         tooltip: {
           callbacks: {
             title: (context) => 'Distance: ' + context[0].label + ' km',
-            label: (context) => 'Elevation: ' + context.parsed.y.toFixed(0) + ' m'
+            label: (context) => 'Altitude: ' + context.parsed.y.toFixed(0) + ' m'
           }
         }
       },
@@ -1926,7 +1926,7 @@ function renderElevationChart(routeId, coordinates) {
           ticks: { maxTicksLimit: 15 }
         },
         y: {
-          title: { display: true, text: 'Elevation (m)' }
+          title: { display: true, text: 'Altitude (m)' }
         }
       },
       interaction: {

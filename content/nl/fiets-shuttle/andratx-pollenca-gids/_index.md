@@ -1939,7 +1939,7 @@ function renderElevationChart(routeId, coordinates) {
     data: {
       labels: sampledDistances.map(d => d.toFixed(1)),
       datasets: [{
-        label: 'Elevation (m)',
+        label: 'Hoogte (m)',
         data: sampledElevations,
         borderColor: '#f10000',
         backgroundColor: 'rgba(241, 0, 0, 0.1)',
@@ -1956,18 +1956,18 @@ function renderElevationChart(routeId, coordinates) {
         legend: { display: false },
         tooltip: {
           callbacks: {
-            title: (context) => 'Distance: ' + context[0].label + ' km',
-            label: (context) => 'Elevation: ' + context.parsed.y.toFixed(0) + ' m'
+            title: (context) => 'Afstand: ' + context[0].label + ' km',
+            label: (context) => 'Hoogte: ' + context.parsed.y.toFixed(0) + ' m'
           }
         }
       },
       scales: {
         x: {
-          title: { display: true, text: 'Distance (km)' },
+          title: { display: true, text: 'Afstand (km)' },
           ticks: { maxTicksLimit: 15 }
         },
         y: {
-          title: { display: true, text: 'Elevation (m)' }
+          title: { display: true, text: 'Hoogte (m)' }
         }
       },
       interaction: {

@@ -31,7 +31,7 @@ services:
     link: "/nl/fiets-redding/redding-startpagina/"
 
   - title: "Geplande shuttles"
-    description: "We brengen jou en je fiets comfortabel naar de start van de iconische one-way routes."
+    description: "We brengen jou en je fiets comfortabel naar de start van de iconische enkele reis routes."
     icon: "/img/icon-shuttle.svg"
     link: "https://mallorcacycleshuttle.company.site/nl/products/Scheduled-Bike-Buses-c15728235"
 
@@ -52,7 +52,7 @@ content_blocks:
       url: "/nl/about/blog/"
 
   - title: "Ontdek de beste routes van Mallorca"
-    text: "Van de uitdagende Andratx–Pollença coast-to-coast en de legendarische klimmen vanaf de havens van Sa Calobra en Valldemossa tot de rustige binnenwegen – Mallorca is een fietsparadijs van wereldklasse. Onze uitgebreide routegidsen helpen je perfecte one-way ritten te plannen met gedetailleerde kaarten, hoogteprofielen en insider-tips."
+    text: "Van de uitdagende Andratx–Pollença coast-to-coast en de legendarische klimmen vanaf de havens van Sa Calobra en Valldemossa tot de rustige binnenwegen – Mallorca is een fietsparadijs van wereldklasse. Onze uitgebreide routegidsen helpen je perfecte enkele reis ritten te plannen met gedetailleerde kaarten, hoogteprofielen en insider-tips."
     image: "/img/content-block-2.webp"
     cta:
       text: "Bekijk routegidsen"
@@ -147,7 +147,7 @@ faq:
     answer: "Ja! Onze voertuigen kunnen groepen aan. Perfect voor ploegjes of clubs."
 
   - question: "Welke gebieden dekken jullie op Mallorca?"
-    answer: "Het hele eiland Mallorca, met focus op de Serra de Tramuntana waar de beste one-way routes zijn – van Andratx tot Pollença en alles daartussen."
+    answer: "Het hele eiland Mallorca, met focus op de Serra de Tramuntana waar de beste enkele reis routes zijn – van Andratx tot Pollença en alles daartussen."
 
   - question: "Zijn jullie chauffeurs ook fietsers?"
     answer: "Absoluut! Veel chauffeurs zijn ervaren fietsers die de routes, de uitdagingen en jouw noden kennen."
@@ -159,7 +159,7 @@ faq:
     answer: "We behandelen elke fiets alsof het onze eigen is. Elke fiets wordt veilig ingeladen in maatwerkaanhangers, opgevangen tussen matrassen, zodat hij in dezelfde staat aankomt als bij vertrek."
 
   - question: "Wat doen jullie precies?"
-    answer: "We rijden een regelmatige bike shuttle die jou en je fiets naar de start van Mallorca's iconische one-way bucket-list routes brengt (<a href='https://mallorcacycleshuttle.company.site/nl/products/' target='_blank' rel='noopener noreferrer'>dienstregeling hier</a>). We bieden redding voor fiets én fietser bij pech (<a href='https://mallorcacycleshuttle.company.site/nl/products/' target='_blank' rel='noopener noreferrer'>link hier</a>). En we verzorgen privé-luchthaventransfers met directe prijsopgave (<a href='/nl/mallorca-luchthavenoverdrachten/'>hier</a>)."
+    answer: "We rijden een regelmatige bike shuttle die jou en je fiets naar de start van Mallorca's iconische enkele reis bucket-list routes brengt (<a href='https://mallorcacycleshuttle.company.site/nl/products/' target='_blank' rel='noopener noreferrer'>dienstregeling hier</a>). We bieden redding voor fiets én fietser bij pech (<a href='https://mallorcacycleshuttle.company.site/nl/products/' target='_blank' rel='noopener noreferrer'>link hier</a>). En we verzorgen privé-luchthaventransfers met directe prijsopgave (<a href='/nl/mallorca-luchthavenoverdrachten/'>hier</a>)."
 
   - question: "Waarheen en vanwaar rijden de geplande bike shuttles?"
     answer: "De actuele routes vind je <a href='https://mallorcacycleshuttle.company.site/nl/products/' target='_blank' rel='noopener noreferrer'>hier</a>."
