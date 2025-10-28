@@ -1,5 +1,5 @@
 ---
-title: "Mallorca Bicycle Rescue"
+title: "Secours Vélo Majorque"
 description: "Votre partenaire de confiance pour le cyclisme dans la Tramuntana de Majorque. Assistance vélo, navettes et transferts aéroport pour cyclistes."
 
 # ============================================

@@ -1,5 +1,5 @@
 ---
-title: "Mallorca Bicycle Rescue"
+title: "Soccorso Ciclisti Maiorca"
 description: "Il tuo compagno di fiducia per pedalare nella Tramuntana di Maiorca. Soccorso bici, shuttles e transfer da/per l'aeroporto per ciclisti."
 
 # ============================================

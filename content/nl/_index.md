@@ -1,5 +1,5 @@
 ---
-title: "Mallorca Bicycle Rescue"
+title: "Fietsredding Mallorca"
 description: "Je betrouwbare fietsmaat in de Tramuntana van Mallorca. Fietsredding, shuttles en luchthaventransfers voor wielrenners."
 
 # ============================================

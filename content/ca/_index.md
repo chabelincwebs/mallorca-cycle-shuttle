@@ -1,5 +1,5 @@
 ---
-title: "Mallorca Bicycle Rescue"
+title: "Rescat de Bicicletes Mallorca"
 description: "El teu company de confiança per al ciclisme a la Serra de Tramuntana de Mallorca. Servei de rescat de bicicletes, busos llançadora i trasllats a l'aeroport per a ciclistes."
 
 # ============================================

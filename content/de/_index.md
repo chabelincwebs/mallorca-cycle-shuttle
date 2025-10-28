@@ -1,5 +1,5 @@
 ---
-title: "Mallorca Bicycle Rescue"
+title: "Mallorca Fahrrad-Rettung"
 description: "Dein verlässlicher Begleiter fürs Radfahren im Tramuntana-Gebirge Mallorcas. Pannenhilfe, Shuttle-Services und Flughafentransfers für Radfahrer."
 
 # ============================================
