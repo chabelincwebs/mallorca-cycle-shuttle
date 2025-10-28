@@ -1,8 +1,8 @@
 ---
-title: "Soccorso Bici Mallorca"
+title: "Soccorso Bici Maiorca"
 description: "Ritiro ciclisti in tutta l'isola se la tua bici o il tuo corpo si guasta. Semplice. Veloce. Affidabile."
 translationKey: rescue-home
-hero_title: "Soccorso Bici Mallorca"
+hero_title: "Soccorso Bici Maiorca"
 hero_subtitle: "Se la tua bici o il tuo corpo si guasta, ti portiamo dove devi essere."
 
 cta:
@@ -46,7 +46,7 @@ good_to_know:
 faq_title: "Domande Frequenti"
 
 final_cta_title: "Pronto per la Tranquillità?"
-final_cta_text: "Ottieni la tua copertura di soccorso oggi e pedala senza preoccupazioni a Mallorca"
+final_cta_text: "Ottieni la tua copertura di soccorso oggi e pedala senza preoccupazioni a Maiorca"
 
 faq:
   - q: "È una polizza per ciclista?"
@@ -74,7 +74,7 @@ faq:
   - q: "E-bike?"
     a: "Coperte per problemi meccanici. Una batteria scarica non è un motivo di soccorso; gestisci la ricarica per favore—consideralo un'esperienza di apprendimento."
   - q: "Gare/granfondo?"
-    a: "Non coperte. Non possiamo operare nemmeno durante la Mallorca 312 dove ci sono chiusure strade."
+    a: "Non coperte. Non possiamo operare nemmeno durante la Maiorca 312 dove ci sono chiusure strade."
   - q: "Posso cancellare?"
     a: "Sì—rimborso completo purché la copertura non sia iniziata."
   - q: "Quali informazioni servono per acquistare?"

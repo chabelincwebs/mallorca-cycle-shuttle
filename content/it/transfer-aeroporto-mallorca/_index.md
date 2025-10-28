@@ -1,5 +1,5 @@
 ---
-title: "Transfer Aeroporto Mallorca"
+title: "Transfer Aeroporto Maiorca"
 description: "Servizi di transfer dall'aeroporto convenienti per ciclisti a Maiorca"
 translationKey: airport-transfers
 type: "mallorca-airport-transfers"

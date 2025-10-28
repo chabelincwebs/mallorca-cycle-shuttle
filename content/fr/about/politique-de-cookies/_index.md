@@ -2,7 +2,7 @@
 title: "Politique de Cookies"
 ---
 
-Autocares Devesa SL, Mallorca Cycle Shuttle et Mallorca Bicycle Rescue vous informent de l'utilisation de cookies sur leur site web : mallorcacycleshuttle.com.
+Autocares Devesa SL, Majorque Cycle Shuttle et Majorque Bicycle Rescue vous informent de l'utilisation de cookies sur leur site web : mallorcacycleshuttle.com.
 
 ## Que sont les cookies ?
 

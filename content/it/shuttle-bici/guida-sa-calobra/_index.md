@@ -28,7 +28,7 @@ route_cards:
     full_content: |
       Prima di affrontare Sa Calobra i ciclisti devono raggiungere il Coll dels Reis, il passo che segna la cima della strada. Da nord, i ciclisti salgono tramite il Coll de Femenia (7,2 km al ~6%) o il Coll de Sa Batalla (7,8 km al ~5%), mentre da sud salgono la strada del Puig Major da Sóller (14,8 km al ~5,8%). Tutti i percorsi comportano una salita sostanziale prima della discesa e della successiva salita di Sa Calobra.
 
-      Per coloro che desiderano fare la salita con le gambe più fresche o aggiungere un'altra sezione alla salita (Cala Tuent o forse su e giù per il Puig Major verso Sóller o verso <a href="/it/shuttle-bici/guida-andratx-pollenca/" target="_blank">Andratx a Pollença</a>) possono prendere il <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Mallorca Cycle Shuttle</a> che lascia i ciclisti e le loro biciclette alla stazione di servizio Repsol a Lluc e parte da Alcudia, Port Alcudia, Port de Pollença, Playa de Palma, Santa Ponsa e Peguera.
+      Per coloro che desiderano fare la salita con le gambe più fresche o aggiungere un'altra sezione alla salita (Cala Tuent o forse su e giù per il Puig Major verso Sóller o verso <a href="/it/shuttle-bici/guida-andratx-pollenca/" target="_blank">Andratx a Pollença</a>) possono prendere il <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Maiorca Cycle Shuttle</a> che lascia i ciclisti e le loro biciclette alla stazione di servizio Repsol a Lluc e parte da Alcudia, Port Alcudia, Port de Pollença, Playa de Palma, Santa Ponsa e Peguera.
 
   - title: "La Discesa"
     image: "/img/sa-calobra-descent.webp"
@@ -36,7 +36,7 @@ route_cards:
     full_content: |
       Al Coll dels Reis c'è un cartello che segna la vetta e l'inizio della discesa. La discesa di 9,5 km scende circa 682 m attraverso circa 26 tornanti. La strada è stretta e protetta da bassi muri di pietra in alcuni punti; i ciclisti scendono attraverso gallerie di roccia e passano per lo spettacolare ponte a spirale di 270°.
 
-      Poiché i ciclisti devono scendere prima di salire, è consigliabile affrontare la discesa con cautela, sia per conoscere la strada sia per conservare energia per la salita di ritorno. La rugiada mattutina può rendere l'asfalto scivoloso. La strada può essere affollata di pullman, auto a noleggio e altri ciclisti tra le 11:30 e le 15:00, quindi molte guide raccomandano di scendere la mattina presto (il <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Mallorca Cycle Shuttle</a> ti porta all'orario di partenza ideale).
+      Poiché i ciclisti devono scendere prima di salire, è consigliabile affrontare la discesa con cautela, sia per conoscere la strada sia per conservare energia per la salita di ritorno. La rugiada mattutina può rendere l'asfalto scivoloso. La strada può essere affollata di pullman, auto a noleggio e altri ciclisti tra le 11:30 e le 15:00, quindi molte guide raccomandano di scendere la mattina presto (il <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Maiorca Cycle Shuttle</a> ti porta all'orario di partenza ideale).
 
   - title: "La Salita"
     image: "/img/sa-calobra-climb.webp"
@@ -49,11 +49,11 @@ route_cards:
       Dopo circa 5 km la strada diventa più esposta e iniziano i famosi tornanti. Il gradiente aumenta a circa 7 – 8%, e i ciclisti serpeggiano attraverso successive curve tagliate nel calcare. Il paesaggio cambia costantemente, con scorci del mare turchese sottostante. I tornanti richiedono un ritmo attento: non cercare di attaccare troppo forte all'inizio, poiché la sezione più ripida è avanti.
 
       #### Sezione Finale (ultimi 3 km)
-      Metti il tuo miglior sorriso per i fotografi di <a href="https://www.mallorcacyclingphotos.com/" target="_blank">Mallorca Bike Fotos</a> in questa sezione per le tue foto d'azione professionali!
+      Metti il tuo miglior sorriso per i fotografi di <a href="https://www.mallorcacyclingphotos.com/" target="_blank">Maiorca Bike Fotos</a> in questa sezione per le tue foto d'azione professionali!
 
       Gli ultimi tre chilometri della salita sono i più ripidi ed esposti. I gradienti raggiungono il 9 – 11%, e i ciclisti attraversano il ponte a spirale di 270° (il "nodo della cravatta"). Dopo aver girato il nodo, continua a spingere fino al cartello del Coll dels Reis circa 500 m sopra. C'è un piccolo parcheggio e un caffè al nodo della cravatta, ma non c'è acqua sulla salita stessa: riempi le borracce al porto prima di salire.
 
-      **Nota di Sicurezza:** Tra il bivio per Cala Tuent e il Porto c'è un punto critico per gli incidenti. <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank">Mallorca Bicycle Rescue</a> è spesso qui a soccorrere gli sfortunati. Fai attenzione!
+      **Nota di Sicurezza:** Tra il bivio per Cala Tuent e il Porto c'è un punto critico per gli incidenti. <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank">Maiorca Bicycle Rescue</a> è spesso qui a soccorrere gli sfortunati. Fai attenzione!
 ---
 
 ## Introduzione
@@ -82,11 +82,11 @@ Durante il XX secolo la strada divenne popolare tra gli automobilisti e infine t
 
 Prima di affrontare Sa Calobra i ciclisti devono raggiungere il Coll dels Reis, il passo che segna la cima della strada. Da nord, i ciclisti salgono tramite il Coll de Femenia (7,2 km al ~6%) o il Coll de Sa Battaglia (7,8 km al ~5%), mentre da sud salgono la strada del Puig Major da Sóller (14,8 km al ~5,8%). Tutti i percorsi comportano una salita sostanziale prima della discesa e della successiva salita di Sa Calobra.
 
-Per coloro che desiderano fare la salita con le gambe più fresche o aggiungere un'altra sezione alla salita (Cala Tuent o forse su e giù per il Puig Major verso Sóller o verso <a href="/it/shuttle-bici/guida-andratx-pollenca/" target="_blank">Andratx a Pollença</a>) possono prendere il <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Mallorca Cycle Shuttle</a> che lascia i ciclisti e le loro biciclette alla stazione di servizio Repsol a Lluc e parte da Alcudia, Port Alcudia, Port de Pollença, Playa de Palma, Santa Ponsa e Peguera.
+Per coloro che desiderano fare la salita con le gambe più fresche o aggiungere un'altra sezione alla salita (Cala Tuent o forse su e giù per il Puig Major verso Sóller o verso <a href="/it/shuttle-bici/guida-andratx-pollenca/" target="_blank">Andratx a Pollença</a>) possono prendere il <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Maiorca Cycle Shuttle</a> che lascia i ciclisti e le loro biciclette alla stazione di servizio Repsol a Lluc e parte da Alcudia, Port Alcudia, Port de Pollença, Playa de Palma, Santa Ponsa e Peguera.
 
 ### La Discesa
 
-Al Coll dels Reis c'è un cartello che segna la vetta e l'inizio della discesa. La discesa di 9,5 km scende circa 682 m attraverso circa 26 tornanti. La strada è stretta e protetta da bassi muri di pietra in alcuni punti; i ciclisti scendono attraverso gallerie di roccia e passano per lo spettacolare ponte a spirale di 270°. Poiché i ciclisti devono scendere prima di salire, è consigliabile affrontare la discesa con cautela, sia per conoscere la strada sia per conservare energia per la salita di ritorno. La rugiada mattutina può rendere l'asfalto scivoloso. La strada può essere affollata di pullman, auto a noleggio e altri ciclisti tra le 11:30 e le 15:00, quindi molte guide raccomandano di scendere la mattina presto (il <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Mallorca Cycle Shuttle</a> ti porta all'orario di partenza ideale).
+Al Coll dels Reis c'è un cartello che segna la vetta e l'inizio della discesa. La discesa di 9,5 km scende circa 682 m attraverso circa 26 tornanti. La strada è stretta e protetta da bassi muri di pietra in alcuni punti; i ciclisti scendono attraverso gallerie di roccia e passano per lo spettacolare ponte a spirale di 270°. Poiché i ciclisti devono scendere prima di salire, è consigliabile affrontare la discesa con cautela, sia per conoscere la strada sia per conservare energia per la salita di ritorno. La rugiada mattutina può rendere l'asfalto scivoloso. La strada può essere affollata di pullman, auto a noleggio e altri ciclisti tra le 11:30 e le 15:00, quindi molte guide raccomandano di scendere la mattina presto (il <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Maiorca Cycle Shuttle</a> ti porta all'orario di partenza ideale).
 
 ### La Salita
 
@@ -100,7 +100,7 @@ Dopo circa 5 km la strada diventa più esposta e iniziano i famosi tornanti. Il 
 
 #### Sezione Finale (ultimi 3 km)
 
-Metti il tuo miglior sorriso per i fotografi di <a href="https://www.mallorcacyclingphotos.com/" target="_blank">Mallorca Bike Fotos</a> in questa sezione per le tue foto d'azione professionali!
+Metti il tuo miglior sorriso per i fotografi di <a href="https://www.mallorcacyclingphotos.com/" target="_blank">Maiorca Bike Fotos</a> in questa sezione per le tue foto d'azione professionali!
 
 Gli ultimi tre chilometri della salita sono i più ripidi ed esposti. I gradienti raggiungono il 9 – 11%, e i ciclisti attraversano il ponte a spirale di 270° (il "nodo della cravatta"). Dopo aver girato il nodo, continua a spingere fino al cartello del Coll dels Reis circa 500 m sopra. C'è un piccolo parcheggio e un caffè al nodo della cravatta, ma non c'è acqua sulla salita stessa: riempi le borracce al porto prima di salire.
 
@@ -113,7 +113,7 @@ Gli ultimi tre chilometri della salita sono i più ripidi ed esposti. I gradient
 
 Un buon ciclista di club può salire Sa Calobra in 30–45 minuti; un ciclista ricreativo può impiegare un'ora o più. Dosati, specialmente sulla discesa e nei primi chilometri.
 
-Tra il bivio per Cala Tuent e il Porto c'è un punto critico per gli incidenti - che siano le mani dei ciclisti stanche per tutta la frenata in discesa, o la concentrazione che cala o la velocità che supera l'abilità, qui accadono diversi incidenti. <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank">Mallorca Bicycle Rescue</a> è spesso qui a soccorrere gli sfortunati. Fai attenzione!
+Tra il bivio per Cala Tuent e il Porto c'è un punto critico per gli incidenti - che siano le mani dei ciclisti stanche per tutta la frenata in discesa, o la concentrazione che cala o la velocità che supera l'abilità, qui accadono diversi incidenti. <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank">Maiorca Bicycle Rescue</a> è spesso qui a soccorrere gli sfortunati. Fai attenzione!
 
 ## Buono a Sapersi: Consigli Pratici
 
@@ -144,7 +144,7 @@ Pedalare a Sa Calobra è un'esperienza indimenticabile, ma alcune considerazioni
 ### Fotografia e Punti di Interesse
 
 - **Punti panoramici:** Ci sono punti panoramici spettacolari per tutta la discesa e salita. Decidi se stai pedalando per il tempo o per goderti il paesaggio.
-- **Foto professionali:** In alta stagione <a href="https://www.mallorcacyclingphotos.com/" target="_blank">Mallorca Bike Fotos</a> si posiziona sulla salita e poi vende foto online.
+- **Foto professionali:** In alta stagione <a href="https://www.mallorcacyclingphotos.com/" target="_blank">Maiorca Bike Fotos</a> si posiziona sulla salita e poi vende foto online.
 - **Acquedotto e chiosco di succo:** Alcuni chilometri prima del Coll dels Reis un acquedotto attraversa la strada e c'è un popolare chiosco di succo d'arancia, un posto perfetto per rifornirsi.
 
 ## Perché Prendere il Traghetto?
@@ -175,7 +175,7 @@ Non c'è alloggio turistico a Sa Calobra stessa perché l'area è protetta. L'un
 
 1. Parti da Port Pollensa o Alcúdia la mattina presto e pedala attraverso il Coll de Femenia o Coll de Sa Battaglia, fermandoti all'acquedotto/chiosco di succo d'arancia vicino alla cima.
 
-   **Oppure** prendi il <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Mallorca Cycle Shuttle</a> alla stazione di servizio Repsol a Lluc.
+   **Oppure** prendi il <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Maiorca Cycle Shuttle</a> alla stazione di servizio Repsol a Lluc.
 
 2. Scendi il Coll dels Reis verso Sa Calobra, facendo attenzione sui tornanti.
 

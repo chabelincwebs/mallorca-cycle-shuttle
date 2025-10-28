@@ -1,6 +1,6 @@
 ---
 title: "Termini e Condizioni di Vendita del Soccorso"
-description: "Condizioni per l'acquisto di prodotti e servizi di Mallorca Bicycle Rescue."
+description: "Condizioni per l'acquisto di prodotti e servizi di Maiorca Bicycle Rescue."
 translationKey: rescue-sale-terms
 ---
 
@@ -15,7 +15,7 @@ Ti riportiamo, insieme alla bici specificata, a tua scelta: al tuo alloggio oppu
 - La copertura deve essere acquistata >12 ore prima dell'uso.
 
 ## 3) Esclusioni
-- Gare, competizioni, "sportive" (inclusa l'impossibilità di operare ovunque il giorno della Mallorca 312).
+- Gare, competizioni, "sportive" (inclusa l'impossibilità di operare ovunque il giorno della Maiorca 312).
 - Luoghi fuoristrada (piste accessibili solo 4×4).
 - Bici non standard: tandem, hand bike, recumbent attualmente non coperte.
 - "Sono solo stanco." Riposati, mangia, bevi e riprendi quando opportuno.
@@ -37,4 +37,4 @@ La nostra responsabilità non va oltre quanto espressamente dichiarato qui.
 
 ## 7) Date speciali
 **Nessun servizio** il **25 dicembre**.
-Servizio limitato il giorno della **Mallorca 312** a causa delle chiusure stradali.
+Servizio limitato il giorno della **Maiorca 312** a causa delle chiusure stradali.

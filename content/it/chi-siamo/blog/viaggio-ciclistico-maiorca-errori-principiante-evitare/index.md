@@ -15,7 +15,7 @@ Porta con te un documento d'identità con foto e un telefono con WhatsApp.
 Rispetta le strade che hanno aderenza ma scivolano quando umide.
 Pianifica giorni A/B: non svuotare il serbatoio il primo giorno.
 Copriti e idratati. Crema solare, borracce, elettroliti.
-Prenota le navette in anticipo durante la stagione. Tieni <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank">Mallorca Bicycle Rescue</a> a portata di mano.
+Prenota le navette in anticipo durante la stagione. Tieni <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank">Maiorca Bicycle Rescue</a> a portata di mano.
 
 ## 1) Dormire fino a tardi
 **L'errore:** partire dopo le 9 quando il traffico si risveglia.
@@ -44,7 +44,7 @@ Consiglio pro: molti ristoranti all'arrivo per la colazione e lungo il percorso.
 **Fai questo invece:** scegli il tuo stile – da 115 a 167 km con vere salite e paradiso dei bar – e rendilo la tua uscita principale. È dura e assolutamente brillante. Fai l'allenamento prima di arrivare.
 
 ## 5) Ignorare Cap de Formentor
-**L'errore:** saltare una delle uscite verso il faro più fotogeniche al mondo. Se soggiorni nel Sud, <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Mallorca Cycle Shuttle</a> può ora portarti fino a Port de Pollença.
+**L'errore:** saltare una delle uscite verso il faro più fotogeniche al mondo. Se soggiorni nel Sud, <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Maiorca Cycle Shuttle</a> può ora portarti fino a Port de Pollença.
 
 Le auto sono ora vietate dall'andare al faro dall'inizio di giugno alla fine di ottobre dalle 10:00 alle 22:00.
 
@@ -56,7 +56,7 @@ Le auto sono ora vietate dall'andare al faro dall'inizio di giugno alla fine di 
 ## 7) Dimenticare il soccorso bici
 **L'errore:** un gancio del cambio rotto o un cedimento fisico si trasforma in una perdita di mezza giornata per te e il tuo gruppo.
 
-**Fai questo invece:** porta con te una polizza <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank">Mallorca Bicycle Rescue</a>. Quando la bici o il tuo corpo si rompe, vieni prelevato e portato in un negozio di bici o alla tua base – a tua scelta. La copertura va dall'alba al tramonto.
+**Fai questo invece:** porta con te una polizza <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank">Maiorca Bicycle Rescue</a>. Quando la bici o il tuo corpo si rompe, vieni prelevato e portato in un negozio di bici o alla tua base – a tua scelta. La copertura va dall'alba al tramonto.
 
 ## 8) Saltare crema solare e idratazione
 **L'errore:** "Io non mi scotto."
@@ -103,7 +103,7 @@ Le auto sono ora vietate dall'andare al faro dall'inizio di giugno alla fine di 
 
 ## Pianifica le tue uscite con noi
 - Oltre 300 <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">autobus programmati per bici</a> ogni anno per partenze da bucket list
-- <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank">Mallorca Bicycle Rescue</a> per quando bici o corpo si rompono
+- <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank">Maiorca Bicycle Rescue</a> per quando bici o corpo si rompono
 - Trasferimenti aeroportuali privati 24/7/365 per ciclisti
 - <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Sa Calobra Express</a> per tentativi di record personale con gambe fresche
 

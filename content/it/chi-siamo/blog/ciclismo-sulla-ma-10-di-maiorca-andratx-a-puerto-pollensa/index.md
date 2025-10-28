@@ -12,9 +12,9 @@ translationKey: "blog-ma10-andratx-pollensa-john"
 
 Dire che Maiorca è il mio paradiso ciclistico sarebbe un eufemismo e dal 2013 visito regolarmente il nord dell'isola a Puerto Pollença e mi godo la Tramuntana e dintorni in bicicletta.
 
-## Salite iconiche e uscita da bucket list con Mallorca Cycle Shuttle
+## Salite iconiche e uscita da bucket list con Maiorca Cycle Shuttle
 
-Familiare con le salite iconiche e le strade locali di quella zona (Coll de Sa Bataia, Femenia, Sa Calobra, Coll de Sóller e Cap de Formentor) ho deciso di spuntare un'uscita dalla bucket list e visitare più montagne prenotandomi con <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Mallorca Cycle Shuttle</a> per pedalare "a casa" da <a href="/it/shuttle-bici/guida-andratx-pollenca/" target="_blank">Andratx a Puerto Pollensa</a>. Questo mi avrebbe permesso di vedere parti della Tramuntana in bicicletta che non avevo mai visto prima e di godermela senza trasformare la giornata in un'epica a livello di distanza.
+Familiare con le salite iconiche e le strade locali di quella zona (Coll de Sa Bataia, Femenia, Sa Calobra, Coll de Sóller e Cap de Formentor) ho deciso di spuntare un'uscita dalla bucket list e visitare più montagne prenotandomi con <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Maiorca Cycle Shuttle</a> per pedalare "a casa" da <a href="/it/shuttle-bici/guida-andratx-pollenca/" target="_blank">Andratx a Puerto Pollensa</a>. Questo mi avrebbe permesso di vedere parti della Tramuntana in bicicletta che non avevo mai visto prima e di godermela senza trasformare la giornata in un'epica a livello di distanza.
 
 ## Un viaggio panoramico attraverso la Tramuntana
 
@@ -38,7 +38,7 @@ Arrivando a Soller hai in realtà 2 opzioni: Salire il Coll de Sóller (incredib
 
 Da lì è strada sinuosa attraverso foresta di pini freschi fino al Monastero di Lluc o una sosta cibo/bevande al famoso garage di Sa Bataia prima di scendere la Femenia che potrebbe essere la mia discesa preferita sull'isola. Mai ripida, panoramica e abbastanza docile per "lasciarsi andare".
 
-Con un sorriso soddisfatto sulla faccia ho finito gli ultimi chilometri sulla discesa leggerissima dritto attraverso Pollença e di ritorno al Porto in quella che è stata una giornata indimenticabile resa possibile interamente prenotando con <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Mallorca Cycle Shuttle</a> anche coperto in sicurezza dall'assicurazione <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank">soccorso</a> che avevo con loro, il che significava che in nessun momento ho avuto paura di rimanere bloccato.
+Con un sorriso soddisfatto sulla faccia ho finito gli ultimi chilometri sulla discesa leggerissima dritto attraverso Pollença e di ritorno al Porto in quella che è stata una giornata indimenticabile resa possibile interamente prenotando con <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Maiorca Cycle Shuttle</a> anche coperto in sicurezza dall'assicurazione <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank">soccorso</a> che avevo con loro, il che significava che in nessun momento ho avuto paura di rimanere bloccato.
 
 ## Perché dovresti pedalare sul percorso MA-10 a Maiorca
 

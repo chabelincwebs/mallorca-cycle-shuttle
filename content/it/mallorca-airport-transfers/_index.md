@@ -1,5 +1,5 @@
 ---
-title: "Transfer aeroporto Mallorca"
+title: "Transfer aeroporto Maiorca"
 description: "Servizi di transfer da/per l'aeroporto pensati per ciclisti a Maiorca"
 
 hero_subtitle: "Progettato da ciclisti per ciclisti"

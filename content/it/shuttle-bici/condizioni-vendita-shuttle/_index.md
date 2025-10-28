@@ -1,10 +1,10 @@
 ---
 title: "Condizioni di Vendita Shuttle"
-description: "Termini per l'acquisto di prodotti e servizi di Mallorca Cycle Shuttle."
+description: "Termini per l'acquisto di prodotti e servizi di Maiorca Cycle Shuttle."
 translationKey: shuttle-sale-terms
 ---
 
-La vostra accettazione di questi termini e condizioni di Mallorca Cycle Shuttle conferma che avete compreso il biglietto che state acquistando.
+La vostra accettazione di questi termini e condizioni di Maiorca Cycle Shuttle conferma che avete compreso il biglietto che state acquistando.
 
 ## Idoneità fisica e abilità
 
@@ -16,7 +16,7 @@ I nostri autobus shuttle non sono adatti per bambini piccoli. I bambini di 15 an
 
 ## Validità del biglietto
 
-Il vostro biglietto è valido solo per il servizio Mallorca Cycle Shuttle all'ora e alla data indicate sul biglietto. Il biglietto rimane proprietà dell'azienda e deve essere disponibile per l'ispezione da parte dell'autista su richiesta.
+Il vostro biglietto è valido solo per il servizio Maiorca Cycle Shuttle all'ora e alla data indicate sul biglietto. Il biglietto rimane proprietà dell'azienda e deve essere disponibile per l'ispezione da parte dell'autista su richiesta.
 
 ## Rimborsi e modifiche
 
@@ -48,13 +48,13 @@ Se cancelliamo un servizio per motivi al di fuori del nostro controllo (escluse 
 
 ## Effetti personali
 
-Non ci assumiamo la responsabilità per gli oggetti lasciati sull'autobus. Gli effetti personali vengono trasportati a rischio del proprietario e Mallorca Cycle Shuttle non può accettare la responsabilità per oggetti danneggiati o persi.
+Non ci assumiamo la responsabilità per gli oggetti lasciati sull'autobus. Gli effetti personali vengono trasportati a rischio del proprietario e Maiorca Cycle Shuttle non può accettare la responsabilità per oggetti danneggiati o persi.
 
 ## Comportamento
 
 Non è consentito fumare e consumare bevande alcoliche sull'autobus shuttle.
 
-Mallorca Cycle Shuttle si riserva il diritto di rifiutare l'ingresso a veicoli e strutture alle persone in stato di ebbrezza. In tali casi, i biglietti non verranno rimborsati.
+Maiorca Cycle Shuttle si riserva il diritto di rifiutare l'ingresso a veicoli e strutture alle persone in stato di ebbrezza. In tali casi, i biglietti non verranno rimborsati.
 
 Non tollereremo comportamenti offensivi o minacciosi nei confronti del personale o di altri passeggeri e ci riserviamo il diritto di rifiutare l'ingresso a veicoli e strutture. In tali casi, i biglietti non verranno rimborsati.
 
@@ -72,7 +72,7 @@ Non ci sono servizi igienici o acqua sui nostri veicoli.
 
 ## Privacy
 
-Mallorca Cycle Shuttle non condividerà le informazioni dei clienti con terze parti e non conserviamo informazioni finanziarie.
+Maiorca Cycle Shuttle non condividerà le informazioni dei clienti con terze parti e non conserviamo informazioni finanziarie.
 
 ## Biciclette elettriche
 

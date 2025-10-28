@@ -1,10 +1,10 @@
 ---
 title: "Conditions Générales du Service de Navette"
-description: "Conditions d'achat des produits et services de Mallorca Cycle Shuttle."
+description: "Conditions d'achat des produits et services de Majorque Cycle Shuttle."
 translationKey: shuttle-sale-terms
 ---
 
-Votre acceptation de ces conditions générales de Mallorca Cycle Shuttle confirme que vous comprenez le billet que vous achetez.
+Votre acceptation de ces conditions générales de Majorque Cycle Shuttle confirme que vous comprenez le billet que vous achetez.
 
 ## Condition physique et compétences
 
@@ -16,7 +16,7 @@ Nos bus navettes ne conviennent pas aux jeunes enfants. Les enfants de 15 ans et
 
 ## Validité du billet
 
-Votre billet n'est valable que pour le service Mallorca Cycle Shuttle à l'heure et à la date indiquées sur le billet. Le billet reste la propriété de l'entreprise et doit être disponible pour inspection par le conducteur sur demande.
+Votre billet n'est valable que pour le service Majorque Cycle Shuttle à l'heure et à la date indiquées sur le billet. Le billet reste la propriété de l'entreprise et doit être disponible pour inspection par le conducteur sur demande.
 
 ## Remboursements et modifications
 
@@ -48,13 +48,13 @@ Si nous annulons un service pour des raisons indépendantes de notre volonté (�
 
 ## Effets personnels
 
-Nous n'assumons aucune responsabilité pour les articles laissés dans le bus. Les effets personnels sont transportés aux risques du propriétaire, et Mallorca Cycle Shuttle ne peut accepter la responsabilité des articles endommagés ou perdus.
+Nous n'assumons aucune responsabilité pour les articles laissés dans le bus. Les effets personnels sont transportés aux risques du propriétaire, et Majorque Cycle Shuttle ne peut accepter la responsabilité des articles endommagés ou perdus.
 
 ## Comportement
 
 Il est interdit de fumer et de consommer des boissons alcoolisées dans le bus navette.
 
-Mallorca Cycle Shuttle se réserve le droit de refuser l'entrée aux véhicules et aux locaux aux personnes en état d'ébriété. Dans de tels cas, les billets ne seront pas remboursés.
+Majorque Cycle Shuttle se réserve le droit de refuser l'entrée aux véhicules et aux locaux aux personnes en état d'ébriété. Dans de tels cas, les billets ne seront pas remboursés.
 
 Nous ne tolérerons pas les comportements abusifs ou menaçants envers le personnel ou les autres passagers et nous nous réservons le droit de refuser l'entrée aux véhicules et aux locaux. Dans de tels cas, les billets ne seront pas remboursés.
 
@@ -72,7 +72,7 @@ Il n'y a pas de toilettes ni d'eau dans nos véhicules.
 
 ## Confidentialité
 
-Mallorca Cycle Shuttle ne partagera pas les informations des clients avec des tiers, et nous ne conservons pas d'informations financières.
+Majorque Cycle Shuttle ne partagera pas les informations des clients avec des tiers, et nous ne conservons pas d'informations financières.
 
 ## Vélos électriques
 

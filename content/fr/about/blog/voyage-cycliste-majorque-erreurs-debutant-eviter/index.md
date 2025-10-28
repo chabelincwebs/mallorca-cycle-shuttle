@@ -15,7 +15,7 @@ Emportez une pièce d'identité avec photo et un téléphone avec WhatsApp.
 Respectez les routes adhérentes-mais-glissantes quand elles sont humides.
 Planifiez des jours A/B – ne videz pas le réservoir le jour 1.
 Couvrez-vous et hydratez-vous. Crème solaire, bidons, électrolytes.
-Réservez les navettes tôt dans la saison. Ayez <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank">Mallorca Bicycle Rescue</a> dans votre poche.
+Réservez les navettes tôt dans la saison. Ayez <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank">Majorque Bicycle Rescue</a> dans votre poche.
 
 ## 1) Dormir tard
 **L'erreur :** partir après 9h quand la circulation se réveille.
@@ -44,7 +44,7 @@ Conseil pro : plein de restaurants à l'arrivée pour le petit-déjeuner et en r
 **Faites plutôt ceci :** choisissez votre saveur – 115 à 167 km avec de vraies montées et paradis des cafés – et faites-en votre sortie phare. C'est dur et absolument brillant. Entraînez-vous avant l'arrivée.
 
 ## 5) Ignorer Cap de Formentor
-**L'erreur :** sauter l'une des sorties de phare les plus photogéniques au monde. Si vous séjournez dans le Sud, <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Mallorca Cycle Shuttle</a> peut maintenant vous amener jusqu'à Port de Pollença.
+**L'erreur :** sauter l'une des sorties de phare les plus photogéniques au monde. Si vous séjournez dans le Sud, <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Majorque Cycle Shuttle</a> peut maintenant vous amener jusqu'à Port de Pollença.
 
 Les voitures sont désormais interdites d'aller au phare du début juin à fin octobre de 10h à 22h.
 
@@ -56,7 +56,7 @@ Les voitures sont désormais interdites d'aller au phare du début juin à fin o
 ## 7) Oublier le secours vélo
 **L'erreur :** une patte de dérailleur cassée ou une défaillance physique se transforme en galère d'une demi-journée pour vous et votre groupe.
 
-**Faites plutôt ceci :** prenez une assurance <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank">Mallorca Bicycle Rescue</a>. Quand le vélo ou votre corps lâche, vous êtes récupéré et emmené soit chez un réparateur de vélos soit à votre base – votre choix. La couverture s'étend du lever au coucher du soleil.
+**Faites plutôt ceci :** prenez une assurance <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank">Majorque Bicycle Rescue</a>. Quand le vélo ou votre corps lâche, vous êtes récupéré et emmené soit chez un réparateur de vélos soit à votre base – votre choix. La couverture s'étend du lever au coucher du soleil.
 
 ## 8) Oublier la crème solaire et l'hydratation
 **L'erreur :** "Je ne brûle pas."
@@ -103,7 +103,7 @@ Les voitures sont désormais interdites d'aller au phare du début juin à fin o
 
 ## Planifiez vos sorties avec nous
 - 300+ <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">bus à vélos programmés</a> chaque année vers des départs de bucket-list
-- <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank">Mallorca Bicycle Rescue</a> pour quand le vélo ou le corps lâche
+- <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank">Majorque Bicycle Rescue</a> pour quand le vélo ou le corps lâche
 - Transferts aéroport privés 24/7/365 pour cyclistes
 - <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Sa Calobra Express</a> pour tentatives de record avec jambes fraîches
 

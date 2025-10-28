@@ -9,7 +9,7 @@ En vigueur depuis le 25 mai 2018
 Cette notice explique comment nous collectons et traitons vos données personnelles lors de l'utilisation de mallorcacycleshuttle.com. En nous fournissant vos données, vous déclarez avoir plus de 13 ans.
 
 **Coordonnées**
-- Dénominations légales : Autocares Devesa SL, Mallorca Cycle Shuttle et Mallorca Bicycle Rescue
+- Dénominations légales : Autocares Devesa SL, Majorque Cycle Shuttle et Majorque Bicycle Rescue
 - Email : support@mallorcacycleshuttle.com
 - Adresse postale : Caller Fuster 36 A Polígono, Pollença 07440
 

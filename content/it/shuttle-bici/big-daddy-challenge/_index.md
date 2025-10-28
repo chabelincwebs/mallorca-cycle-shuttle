@@ -379,7 +379,7 @@ html {
 <h3>Tranquillità</h3>
 </div>
 <div class="info-card-content">
-<p><strong>Mallorca Bicycle Rescue</strong></p>
+<p><strong>Maiorca Bicycle Rescue</strong></p>
 <p>La legge di Murphy succede. Se bici o corpo si rompono:</p>
 <ul>
 <li>Ti portiamo in un negozio di biciclette locale, al tuo alloggio o al tuo negozio di noleggio – a tua scelta.</li>

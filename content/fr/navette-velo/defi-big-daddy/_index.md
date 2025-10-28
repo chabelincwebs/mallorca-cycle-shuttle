@@ -379,7 +379,7 @@ html {
 <h3>Tranquillité d'esprit</h3>
 </div>
 <div class="info-card-content">
-<p><strong>Mallorca Bicycle Rescue</strong></p>
+<p><strong>Majorque Bicycle Rescue</strong></p>
 <p>La loi de Murphy existe. Si le vélo ou le corps tombe en panne :</p>
 <ul>
 <li>Nous vous emmenons chez un magasin de vélos local, à votre hébergement ou chez votre loueur – à votre choix.</li>

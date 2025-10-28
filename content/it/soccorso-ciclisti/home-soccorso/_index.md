@@ -1,9 +1,9 @@
 ---
-title: "Soccorso Ciclisti Mallorca"
+title: "Soccorso Ciclisti Maiorca"
 description: "Recupero ciclisti in tutta l'isola se la tua bici o il tuo corpo si guastano. Semplice. Veloce. Affidabile."
 translationKey: rescue-home
 type: "bike-rescue"
-hero_title: "Soccorso Ciclisti Mallorca"
+hero_title: "Soccorso Ciclisti Maiorca"
 hero_subtitle: "Se la tua bici o il tuo corpo si guasta, ti portiamo dove devi essere."
 
 cta:
@@ -75,7 +75,7 @@ faq:
   - q: "E-bike?"
     a: "Coperte per problemi meccanici. Una batteria scarica non è un motivo di soccorso; gestisci la ricarica—consideralo un'esperienza di apprendimento."
   - q: "Gare/sportive?"
-    a: "Non coperte. Non possiamo inoltre operare durante la Mallorca 312 dove ci sono chiusure stradali."
+    a: "Non coperte. Non possiamo inoltre operare durante la Maiorca 312 dove ci sono chiusure stradali."
   - q: "Posso cancellare?"
     a: "Sì—rimborso completo finché la copertura non è iniziata."
   - q: "Quali informazioni servono per acquistare?"

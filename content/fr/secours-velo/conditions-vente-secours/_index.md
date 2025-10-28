@@ -1,6 +1,6 @@
 ---
 title: "Conditions Générales de Vente du Service de Secours"
-description: "Conditions pour l'achat de produits et services de Mallorca Bicycle Rescue."
+description: "Conditions pour l'achat de produits et services de Majorque Bicycle Rescue."
 translationKey: rescue-sale-terms
 ---
 
@@ -22,7 +22,7 @@ La couverture doit être achetée >12 heures avant utilisation.
 
 ### 3) Exclusions
 
-Courses, compétitions, "sportives" (y compris l'impossibilité d'opérer partout le jour de la Mallorca 312).
+Courses, compétitions, "sportives" (y compris l'impossibilité d'opérer partout le jour de la Majorque 312).
 
 Lieux hors route (pistes réservées 4×4).
 
@@ -58,4 +58,4 @@ Notre responsabilité ne va pas au-delà des obligations expressément énoncée
 
 Aucun service le 25 décembre.
 
-Service restreint le jour de la Mallorca 312 en raison des fermetures de routes.
+Service restreint le jour de la Majorque 312 en raison des fermetures de routes.

@@ -1,9 +1,9 @@
 ---
-title: "Secours Cycliste Mallorca"
+title: "Secours Cycliste Majorque"
 description: "Prise en charge de cyclistes sur toute l'île si ton vélo ou ton corps flanche. Simple. Rapide. Fiable."
 translationKey: rescue-home
 type: "bike-rescue"
-hero_title: "Secours Cycliste Mallorca"
+hero_title: "Secours Cycliste Majorque"
 hero_subtitle: "Si ton vélo ou ton corps flanche, on t'emmène là où tu dois être."
 
 cta:
@@ -47,7 +47,7 @@ good_to_know:
 faq_title: "Foire Aux Questions"
 
 final_cta_title: "Prêt pour la Tranquillité d'Esprit ?"
-final_cta_text: "Obtiens ta couverture de secours aujourd'hui et roule sans souci à travers Mallorca"
+final_cta_text: "Obtiens ta couverture de secours aujourd'hui et roule sans souci à travers Majorque"
 
 faq:
   - q: "Une police par cycliste ?"
@@ -75,7 +75,7 @@ faq:
   - q: "Vélos électriques ?"
     a: "Couverts pour les problèmes mécaniques. Une batterie à plat n'est pas une raison de secours ; gère la recharge s'il te plaît—considère ça comme une expérience d'apprentissage."
   - q: "Courses/sportives ?"
-    a: "Non couvertes. On ne peut pas non plus intervenir pendant la Mallorca 312 où il y a des fermetures de routes."
+    a: "Non couvertes. On ne peut pas non plus intervenir pendant la Majorque 312 où il y a des fermetures de routes."
   - q: "Puis-je annuler ?"
     a: "Oui—remboursement complet tant que la couverture n'a pas commencé."
   - q: "Quelles infos ai-je besoin pour acheter ?"

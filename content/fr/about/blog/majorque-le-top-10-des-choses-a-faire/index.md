@@ -25,7 +25,7 @@ La montée mondialement connue depuis le port de Sa Calobra, souvent citée parm
 
 ## 3. Cap de Formentor
 
-Paysages côtiers et forestiers superbes. Je te défie de trouver 20 km plus beaux ailleurs. Prudence dans le court tunnel : il est éclairé, mais les voitures de location y passent. Au retour, halte à la plage de Formentor pour un bain en Méditerranée. Un itinéraire iconique à ne pas manquer. Désormais accessible aussi si tu loges au sud : prends le <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Mallorca Cycle Shuttle bus vélo jusqu'à Port de Pollença</a>.
+Paysages côtiers et forestiers superbes. Je te défie de trouver 20 km plus beaux ailleurs. Prudence dans le court tunnel : il est éclairé, mais les voitures de location y passent. Au retour, halte à la plage de Formentor pour un bain en Méditerranée. Un itinéraire iconique à ne pas manquer. Désormais accessible aussi si tu loges au sud : prends le <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Majorque Cycle Shuttle bus vélo jusqu'à Port de Pollença</a>.
 
 ## 4. Montée vers Port de Valldemossa
 

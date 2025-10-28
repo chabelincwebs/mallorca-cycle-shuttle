@@ -58,7 +58,7 @@ Nous exploitons le <a href="https://mallorcacycleshuttle.company.site/products/S
 
 Sa Calobra et ses ajouts sont des points chauds pour les problèmes mécaniques et jambes fatiguées. Ayez un plan.
 
-Si le vélo ou le corps lâche, notre <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank">Mallorca Bicycle Rescue</a> viendra vous chercher avec votre vélo et vous emmènera où vous devez aller. Tranquillité d'esprit lors des grandes journées de montagne.
+Si le vélo ou le corps lâche, notre <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank">Majorque Bicycle Rescue</a> viendra vous chercher avec votre vélo et vous emmènera où vous devez aller. Tranquillité d'esprit lors des grandes journées de montagne.
 
 ## Conseils qui aident vraiment
 
@@ -66,7 +66,7 @@ Si le vélo ou le corps lâche, notre <a href="https://mallorcacycleshuttle.comp
 - **Les vitesses comptent.** Compact ou mi-compact avec une cassette sympathique sauve la journée.
 - **Commencez plus tôt.** Battez la circulation des bus sur la route principale de Sa Calobra et profitez de vues plus calmes.
 - **Notes de saison.** Es Vergeret fonctionne mars–octobre, fermé les lundis. En dehors de ces mois, apportez vos propres provisions.
-- **Photos.** Plein d'options pour des photos panoramiques et <a href="https://www.mallorcacyclingphotos.com/" target="_blank">Mallorca Bike Fotos</a> est sur Sa Calobra en saison pour capturer des images professionnelles de vous en action.
+- **Photos.** Plein d'options pour des photos panoramiques et <a href="https://www.mallorcacyclingphotos.com/" target="_blank">Majorque Bike Fotos</a> est sur Sa Calobra en saison pour capturer des images professionnelles de vous en action.
 
 ## Conclusion
 

@@ -28,7 +28,7 @@ route_cards:
     full_content: |
       Avant de s'attaquer à Sa Calobra, les cyclistes doivent d'abord atteindre le Coll dels Reis, le col qui marque le sommet de la route. Depuis le nord, les cyclistes grimpent soit le Coll de Femenia (7,2 km à ~6%) soit le Coll de Sa Batalla (7,8 km à ~5%), tandis que depuis le sud ils grimpent la route du Puig Major depuis Sóller (14,8 km à ~5,8%). Tous les itinéraires impliquent une montée importante avant la descente et la remontée ultérieure de Sa Calobra.
 
-      Pour ceux qui souhaitent effectuer la montée avec des jambes plus fraîches ou ajouter une autre section à l'ascension (Cala Tuent ou peut-être franchir le Puig Major vers Soller ou vers <a href="/fr/navette-velo/guide-andratx-pollenca/" target="_blank">Andratx à Pollença</a>), ils peuvent prendre la <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Mallorca Cycle Shuttle</a> qui dépose les cyclistes et leurs vélos au garage Repsol à Lluc et fonctionne depuis Alcudia, Port Alcudia, Port de Pollença, Playa de Palma, Santa Ponça et Peguera.
+      Pour ceux qui souhaitent effectuer la montée avec des jambes plus fraîches ou ajouter une autre section à l'ascension (Cala Tuent ou peut-être franchir le Puig Major vers Soller ou vers <a href="/fr/navette-velo/guide-andratx-pollenca/" target="_blank">Andratx à Pollença</a>), ils peuvent prendre la <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Majorque Cycle Shuttle</a> qui dépose les cyclistes et leurs vélos au garage Repsol à Lluc et fonctionne depuis Alcudia, Port Alcudia, Port de Pollença, Playa de Palma, Santa Ponça et Peguera.
 
   - title: "La Descente"
     image: "/img/sa-calobra-descent.webp"
@@ -36,7 +36,7 @@ route_cards:
     full_content: |
       Au Coll dels Reis, il y a un panneau marquant le sommet et le début de la descente. La descente de 9,5 km chute d'environ 682 m à travers environ 26 virages en épingle à cheveux. La route est étroite et protégée par de bas murs de pierre par endroits ; les cyclistes descendent à travers des tunnels rocheux et passent devant le spectaculaire pont en boucle à 270°.
 
-      Comme les cyclistes doivent descendre avant de monter, il est sage de prendre la descente avec prudence, à la fois pour apprendre la route et pour préserver l'énergie pour la montée de retour. La rosée du matin peut rendre le bitume glissant. La route peut être occupée par des autocars, des voitures de location et d'autres cyclistes entre 11h30 et 15h00, donc de nombreux guides recommandent de descendre tôt le matin (la <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Mallorca Cycle Shuttle</a> vous y amène à l'heure de départ idéale).
+      Comme les cyclistes doivent descendre avant de monter, il est sage de prendre la descente avec prudence, à la fois pour apprendre la route et pour préserver l'énergie pour la montée de retour. La rosée du matin peut rendre le bitume glissant. La route peut être occupée par des autocars, des voitures de location et d'autres cyclistes entre 11h30 et 15h00, donc de nombreux guides recommandent de descendre tôt le matin (la <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Majorque Cycle Shuttle</a> vous y amène à l'heure de départ idéale).
 
   - title: "La Montée"
     image: "/img/sa-calobra-climb.webp"
@@ -49,11 +49,11 @@ route_cards:
       Après environ 5 km, la route devient plus exposée et les célèbres épingles à cheveux commencent. Le gradient monte à environ 7 – 8%, et les cyclistes serpentent à travers des lacets successifs taillés dans le calcaire. Le paysage change constamment, avec des aperçus de la mer turquoise en contrebas. Les épingles à cheveux nécessitent un rythme prudent—essayez de ne pas attaquer trop fort au début, car la section la plus raide se trouve devant.
 
       #### Section Finale (3 derniers km)
-      Affichez votre plus beau sourire pour les photographes de <a href="https://www.mallorcacyclingphotos.com/" target="_blank">Mallorca Bike Fotos</a> dans cette section pour vos photos d'action professionnelles !
+      Affichez votre plus beau sourire pour les photographes de <a href="https://www.mallorcacyclingphotos.com/" target="_blank">Majorque Bike Fotos</a> dans cette section pour vos photos d'action professionnelles !
 
       Les trois derniers kilomètres de la montée sont les plus raides et les plus exposés. Les gradients atteignent 9 – 11%, et les cyclistes traversent le pont en spirale à 270° (le "nœud de cravate"). Après avoir contourné le nœud, continuez à pousser jusqu'au panneau Coll dels Reis environ 500 m plus haut. Il y a une petite aire de stationnement et un café au nœud de cravate, mais pas d'eau sur la montée elle-même—remplissez les bidons au port avant de monter.
 
-      **Note de Sécurité :** Entre l'embranchement vers Cala Tuent et le port se trouve un point chaud pour les accidents. <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank">Mallorca Bicycle Rescue</a> intervient souvent ici pour secourir les malheureux. Soyez prudent !
+      **Note de Sécurité :** Entre l'embranchement vers Cala Tuent et le port se trouve un point chaud pour les accidents. <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank">Majorque Bicycle Rescue</a> intervient souvent ici pour secourir les malheureux. Soyez prudent !
 ---
 
 ## Introduction
@@ -82,11 +82,11 @@ Au cours du 20e siècle, la route est devenue populaire auprès des automobilist
 
 Avant de s'attaquer à Sa Calobra, les cyclistes doivent d'abord atteindre le Coll dels Reis, le col qui marque le sommet de la route. Depuis le nord, les cyclistes grimpent soit le Coll de Femenia (7,2 km à ~6%) soit le Coll de Sa Batalla (7,8 km à ~5%), tandis que depuis le sud ils grimpent la route du Puig Major depuis Sóller (14,8 km à ~5,8%). Tous les itinéraires impliquent une montée importante avant la descente et la remontée ultérieure de Sa Calobra.
 
-Pour ceux qui souhaitent effectuer la montée avec des jambes plus fraîches ou ajouter une autre section à l'ascension (Cala Tuent ou peut-être franchir le Puig Major vers Soller ou vers <a href="/fr/navette-velo/guide-andratx-pollenca/" target="_blank">Andratx à Pollença</a>), ils peuvent prendre la <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Mallorca Cycle Shuttle</a> qui dépose les cyclistes et leurs vélos au garage Repsol à Lluc et fonctionne depuis Alcudia, Port Alcudia, Port de Pollença, Playa de Palma, Santa Ponça et Peguera.
+Pour ceux qui souhaitent effectuer la montée avec des jambes plus fraîches ou ajouter une autre section à l'ascension (Cala Tuent ou peut-être franchir le Puig Major vers Soller ou vers <a href="/fr/navette-velo/guide-andratx-pollenca/" target="_blank">Andratx à Pollença</a>), ils peuvent prendre la <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Majorque Cycle Shuttle</a> qui dépose les cyclistes et leurs vélos au garage Repsol à Lluc et fonctionne depuis Alcudia, Port Alcudia, Port de Pollença, Playa de Palma, Santa Ponça et Peguera.
 
 ### La Descente
 
-Au Coll dels Reis, il y a un panneau marquant le sommet et le début de la descente. La descente de 9,5 km chute d'environ 682 m à travers environ 26 virages en épingle à cheveux. La route est étroite et protégée par de bas murs de pierre par endroits ; les cyclistes descendent à travers des tunnels rocheux et passent devant le spectaculaire pont en boucle à 270°. Comme les cyclistes doivent descendre avant de monter, il est sage de prendre la descente avec prudence, à la fois pour apprendre la route et pour préserver l'énergie pour la montée de retour. La rosée du matin peut rendre le bitume glissant. La route peut être occupée par des autocars, des voitures de location et d'autres cyclistes entre 11h30 et 15h00, donc de nombreux guides recommandent de descendre tôt le matin (la <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Mallorca Cycle Shuttle</a> vous y amène à l'heure de départ idéale).
+Au Coll dels Reis, il y a un panneau marquant le sommet et le début de la descente. La descente de 9,5 km chute d'environ 682 m à travers environ 26 virages en épingle à cheveux. La route est étroite et protégée par de bas murs de pierre par endroits ; les cyclistes descendent à travers des tunnels rocheux et passent devant le spectaculaire pont en boucle à 270°. Comme les cyclistes doivent descendre avant de monter, il est sage de prendre la descente avec prudence, à la fois pour apprendre la route et pour préserver l'énergie pour la montée de retour. La rosée du matin peut rendre le bitume glissant. La route peut être occupée par des autocars, des voitures de location et d'autres cyclistes entre 11h30 et 15h00, donc de nombreux guides recommandent de descendre tôt le matin (la <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Majorque Cycle Shuttle</a> vous y amène à l'heure de départ idéale).
 
 ### La Montée
 
@@ -100,7 +100,7 @@ Après environ 5 km, la route devient plus exposée et les célèbres épingles 
 
 #### Section Finale (3 derniers km)
 
-Affichez votre plus beau sourire pour les photographes de <a href="https://www.mallorcacyclingphotos.com/" target="_blank">Mallorca Bike Fotos</a> dans cette section pour vos photos d'action professionnelles !
+Affichez votre plus beau sourire pour les photographes de <a href="https://www.mallorcacyclingphotos.com/" target="_blank">Majorque Bike Fotos</a> dans cette section pour vos photos d'action professionnelles !
 
 Les trois derniers kilomètres de la montée sont les plus raides et les plus exposés. Les gradients atteignent 9 – 11%, et les cyclistes traversent le pont en spirale à 270° (le "nœud de cravate"). Après avoir contourné le nœud, continuez à pousser jusqu'au panneau Coll dels Reis environ 500 m plus haut. Il y a une petite aire de stationnement et un café au nœud de cravate, mais pas d'eau sur la montée elle-même—remplissez les bidons au port avant de monter.
 
@@ -113,7 +113,7 @@ Les trois derniers kilomètres de la montée sont les plus raides et les plus ex
 
 Un bon cycliste de club peut grimper Sa Calobra en 30–45 minutes ; un cycliste récréatif peut mettre une heure ou plus. Gérez votre rythme, surtout pendant la descente et les premiers kilomètres.
 
-Entre l'embranchement vers Cala Tuent et le port se trouve un point chaud pour les accidents - que ce soit parce que les mains des cyclistes sont fatiguées de tout le freinage pendant la descente, ou que la concentration baisse ou que la vitesse dépasse la capacité, un certain nombre de chutes se produisent ici. <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank">Mallorca Bicycle Rescue</a> intervient souvent ici pour secourir les malheureux. Soyez prudent !
+Entre l'embranchement vers Cala Tuent et le port se trouve un point chaud pour les accidents - que ce soit parce que les mains des cyclistes sont fatiguées de tout le freinage pendant la descente, ou que la concentration baisse ou que la vitesse dépasse la capacité, un certain nombre de chutes se produisent ici. <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank">Majorque Bicycle Rescue</a> intervient souvent ici pour secourir les malheureux. Soyez prudent !
 
 ## Bon à Savoir : Conseils Pratiques
 
@@ -144,7 +144,7 @@ Faire du vélo à Sa Calobra est une expérience inoubliable, mais quelques cons
 ### Photographie et Points d'Intérêt
 
 - **Points de vue :** Il y a des points de vue spectaculaires tout le long de la descente et de la montée. Décidez si vous roulez pour le temps ou pour profiter du paysage.
-- **Photos professionnelles :** En haute saison, <a href="https://www.mallorcacyclingphotos.com/" target="_blank">Mallorca Bike Fotos</a> se positionne sur la montée et vend ensuite des photos en ligne.
+- **Photos professionnelles :** En haute saison, <a href="https://www.mallorcacyclingphotos.com/" target="_blank">Majorque Bike Fotos</a> se positionne sur la montée et vend ensuite des photos en ligne.
 - **Aqueduc et Stand de Jus d'Orange :** Quelques kilomètres avant le Coll dels Reis, un aqueduc traverse la route et il y a un stand de jus d'orange populaire, un endroit parfait pour se ravitailler.
 
 ## Pourquoi Prendre le Ferry ?
@@ -175,7 +175,7 @@ Il n'y a pas d'hébergement touristique à Sa Calobra même car la zone est prot
 
 1. Partez de Port Pollença ou d'Alcúdia tôt le matin et roulez à travers le Coll de Femenia ou le Coll de Sa Battaglia, en vous arrêtant à l'aqueduc/stand de jus d'orange près du sommet.
 
-   **Ou** prenez la <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Mallorca Cycle Shuttle</a> jusqu'au garage Repsol à Lluc.
+   **Ou** prenez la <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">Majorque Cycle Shuttle</a> jusqu'au garage Repsol à Lluc.
 
 2. Descendez le Coll dels Reis jusqu'à Sa Calobra, en faisant attention dans les épingles à cheveux.
 
