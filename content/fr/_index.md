@@ -77,7 +77,7 @@ stats:
 # ============================================
 # FEATURED ROUTES
 # ============================================
-routes_title: "Itinéraires cyclistes populaires"
+routes_title: "Majorque Incontournable"
 
 featured_routes:
   - title: "Port d'Andratx → Port de Pollença"

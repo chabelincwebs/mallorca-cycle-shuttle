@@ -77,7 +77,7 @@ stats:
 # ============================================
 # FEATURED ROUTES
 # ============================================
-routes_title: "Populaire fietsroutes"
+routes_title: "Onmisbaar Mallorca"
 
 featured_routes:
   - title: "Port d'Andratx naar Port de Pollença"

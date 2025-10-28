@@ -77,7 +77,7 @@ stats:
 # ============================================
 # FEATURED ROUTES
 # ============================================
-routes_title: "Route ciclistiche popolari"
+routes_title: "Maiorca Imperdibile"
 
 featured_routes:
   - title: "Port d'Andratx → Port de Pollença"

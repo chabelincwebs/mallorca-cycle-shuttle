@@ -105,34 +105,62 @@ a:hover { text-decoration: underline; }
   font-weight: 700 !important;
 }
 
-/* Buy Rescue button - modern styling */
+/* Header CTA Buttons - Apple 2025 Style */
 .header-cta-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  padding: 0.625rem 1.25rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  text-decoration: none;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
+  letter-spacing: -0.01em;
+}
+
+/* Secondary Buttons - More Prominent */
+.header-cta-secondary {
+  background: rgba(0, 0, 0, 0.08);
+  color: #1d1d1f;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.header-cta-secondary:hover {
+  background: rgba(0, 0, 0, 0.12);
+  border-color: rgba(0, 0, 0, 0.2);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  text-decoration: none;
+}
+
+.header-cta-secondary:active {
+  transform: scale(0.98);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Primary Button - Red Brand */
+.header-cta-primary {
   background: linear-gradient(135deg, var(--brand) 0%, #ff3333 100%);
   color: white;
-  padding: 0.65rem 1.3rem;
-  border-radius: 25px;
-  font-weight: 700;
-  font-size: 0.95rem;
-  text-decoration: none;
-  box-shadow: 0 4px 12px rgba(241, 0, 0, 0.25);
-  transition: all 0.3s ease;
   border: none;
-  white-space: nowrap;
+  font-weight: 600;
+  box-shadow: 0 3px 10px rgba(241, 0, 0, 0.25);
 }
 
-.header-cta-btn:hover {
+.header-cta-primary:hover {
   background: linear-gradient(135deg, #d00000 0%, #f10000 100%);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(241, 0, 0, 0.35);
+  transform: translateY(-1px);
+  box-shadow: 0 5px 15px rgba(241, 0, 0, 0.35);
   text-decoration: none;
 }
 
-.header-cta-btn:active {
-  transform: translateY(0);
-  box-shadow: 0 2px 8px rgba(241, 0, 0, 0.3);
+.header-cta-primary:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 6px rgba(241, 0, 0, 0.3);
 }
 
 /* Responsive header */
@@ -173,16 +201,100 @@ a:hover { text-decoration: underline; }
 /* optional: reduce default paragraph spacing in hero a touch */
 .hero p{ margin:0 0 .75rem 0 !important; }
 /* — FAQ accordion — */
-.faq-list{ display:grid; gap:.5rem; }
-.faq-item{
-  border:1px solid #eee; border-radius:.6rem; padding:.6rem .9rem; background:#fff;
+/* ============================================
+   APPLE 2025 FAQ STYLES
+   ============================================ */
+
+.faq-list {
+  display: grid;
+  gap: 1rem;
 }
-.faq-item > summary{
-  cursor:pointer; font-weight:600; list-style:none; outline:none;
+
+.faq-item {
+  background: #ffffff;
+  border: none;
+  border-radius: 16px;
+  padding: 1.5rem 1.75rem;
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.04),
+    0 1px 2px rgba(0, 0, 0, 0.06);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
 }
-.faq-item > summary::-webkit-details-marker{ display:none; }
-.faq-item[open]{ border-color:#ddd; background:#fafafa; }
-.faq-item .answer{ margin-top:.5rem; color:var(--text); }
+
+.faq-item:hover {
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.08),
+    0 2px 4px rgba(0, 0, 0, 0.06);
+  transform: translateY(-2px);
+}
+
+.faq-item > summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.0625rem;
+  list-style: none;
+  outline: none;
+  color: #1d1d1f;
+  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding-right: 2rem;
+  transition: color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.faq-item > summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item > summary::after {
+  content: '›';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+  font-size: 1.75rem;
+  color: #86868b;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 400;
+  line-height: 1;
+}
+
+.faq-item:hover > summary {
+  color: #0071e3;
+}
+
+.faq-item:hover > summary::after {
+  color: #0071e3;
+}
+
+.faq-item[open] {
+  background: #f5f5f7;
+  box-shadow:
+    0 4px 16px rgba(0, 0, 0, 0.08),
+    0 2px 4px rgba(0, 0, 0, 0.06),
+    inset 0 0 0 2px rgba(0, 113, 227, 0.1);
+}
+
+.faq-item[open] > summary {
+  color: #0071e3;
+  margin-bottom: 1rem;
+}
+
+.faq-item[open] > summary::after {
+  transform: translateY(-50%) rotate(270deg);
+  color: #0071e3;
+}
+
+.faq-item .answer {
+  margin-top: 0;
+  color: #424245;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+}
 /* — override: buttons to exactly 15px padding — */
 .cta{
   display:inline-block !important;
@@ -216,30 +328,150 @@ main .container .prose a     { word-break: break-word; }
 main { overflow-x: hidden; }
 /* ----------------------------------------------------------------------- */
 
-/* Language switcher - pill/badge style for desktop */
-.lang-desktop a {
-  background: #f0f0f0;
-  padding: 0.4rem 0.8rem;
-  border-radius: 20px;
-  border: 2px solid transparent;
-  transition: all 0.3s ease;
+/* ============================================
+   APPLE 2025 GLOBE LANGUAGE SWITCHER
+   ============================================ */
+
+/* Globe Container */
+.lang-globe-container {
+  position: relative;
+}
+
+/* Globe Button - Matches Hamburger Size */
+.lang-globe-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  min-width: 36px;
+  height: 36px;
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  padding: 0 4px;
+  cursor: pointer;
+  color: #1d1d1f;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
+}
+
+.lang-globe-btn:hover {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.lang-globe-btn:active {
+  transform: scale(0.96);
+}
+
+/* Globe and Chevron Icons */
+.globe-icon {
+  width: 20px;
+  height: 20px;
+  color: #1d1d1f;
+  flex-shrink: 0;
+}
+
+.chevron-icon {
+  width: 10px;
+  height: 10px;
+  color: #6e6e73;
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  flex-shrink: 0;
+  margin-left: -2px;
+}
+
+.lang-globe-container.active .chevron-icon {
+  transform: rotate(180deg);
+}
+
+/* Dropdown Menu - Frosted Glass Apple Style */
+.lang-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 200px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: saturate(1.8) blur(20px);
+  -webkit-backdrop-filter: saturate(1.8) blur(20px);
+  border-radius: 16px;
+  box-shadow:
+    0 4px 6px rgba(0, 0, 0, 0.07),
+    0 10px 20px rgba(0, 0, 0, 0.1),
+    0 0 0 1px rgba(0, 0, 0, 0.05);
+  padding: 0.5rem;
+  opacity: 0;
+  transform: translateY(-8px) scale(0.95);
+  pointer-events: none;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1000;
+}
+
+.lang-globe-container.active .lang-dropdown {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+/* Dropdown Items */
+.lang-dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 0.75rem;
+  border-radius: 8px;
   text-decoration: none;
-  color: #333;
+  color: #1d1d1f;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.lang-dropdown-item:hover {
+  background: rgba(0, 0, 0, 0.05);
+  text-decoration: none;
+}
+
+.lang-dropdown-item.active {
+  background: rgba(0, 122, 255, 0.08);
+  color: #0071e3;
   font-weight: 500;
 }
 
-.lang-desktop a:hover {
-  background: #e0e0e0;
-  border-color: #ccc;
-  transform: translateY(-1px);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+/* Language Code */
+.lang-code {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #6e6e73;
+  min-width: 2rem;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
+  letter-spacing: 0.02em;
+  flex-shrink: 0;
 }
 
-.lang-desktop a.active {
-  background: #f00000 !important;
-  color: white !important;
-  border-color: #d00000 !important;
-  font-weight: 700 !important;
+.lang-dropdown-item.active .lang-code {
+  color: #0071e3;
+}
+
+/* Language Name */
+.lang-name {
+  flex: 1;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
+  letter-spacing: -0.01em;
+}
+
+/* Checkmark Icon for Active Language */
+.lang-checkmark {
+  width: 16px;
+  height: 16px;
+  stroke: #0071e3;
+  flex-shrink: 0;
+}
+
+/* Active state enhancement */
+.lang-dropdown-item.active .lang-name {
+  color: #0071e3;
 }
 
 /* Language switcher - responsive */
@@ -264,52 +496,77 @@ main { overflow-x: hidden; }
 
 
 /* Hamburger Menu Styles */
+/* ============================================
+   APPLE 2025 HAMBURGER MENU & MOBILE NAV
+   ============================================ */
+
+/* Hamburger Icon - Clean Modern Design */
 .hamburger {
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  width: 32px;
-  height: 26px;
+  justify-content: center;
+  gap: 6px;
+  width: 36px;
+  height: 36px;
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  padding: 0;
+  cursor: pointer;
   z-index: 1001;
-  background: rgba(240, 240, 240, 0.5);
-  border-radius: 4px;
-  padding: 6px 4px;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hamburger:hover {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.hamburger:active {
+  transform: scale(0.96);
 }
 
 .hamburger span {
   display: block;
-  width: 100%;
-  height: 4px;
-  background-color: #000 !important;
+  width: 20px;
+  height: 2px;
+  margin: 0 auto;
+  background-color: #1d1d1f;
   border-radius: 2px;
-  transition: all 0.3s ease;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hamburger.active span:nth-child(1) {
-  transform: translateY(7px) rotate(45deg);
+  transform: translateY(8px) rotate(45deg);
 }
 
 .hamburger.active span:nth-child(2) {
   opacity: 0;
+  transform: translateX(-10px);
 }
 
 .hamburger.active span:nth-child(3) {
-  transform: translateY(-7px) rotate(-45deg);
+  transform: translateY(-8px) rotate(-45deg);
 }
 
-/* Mobile Navigation */
+/* Mobile Navigation - Frosted Glass Panel */
 .mobile-nav {
   display: block;
   position: fixed;
   top: 0;
   left: -100%;
-  width: 280px;
+  width: 320px;
+  max-width: 85vw;
   height: 100vh;
-  background: white;
-  box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: saturate(1.8) blur(20px);
+  -webkit-backdrop-filter: saturate(1.8) blur(20px);
+  box-shadow:
+    4px 0 24px rgba(0, 0, 0, 0.08),
+    2px 0 8px rgba(0, 0, 0, 0.04);
   z-index: 1000;
-  transition: left 0.3s ease;
+  transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   overflow-y: auto;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
 }
 
 .mobile-nav.active {
@@ -319,47 +576,75 @@ main { overflow-x: hidden; }
 .mobile-nav-content {
   display: flex;
   flex-direction: column;
-  padding: 80px 20px 20px 20px;
+  padding: 90px 0 120px 0;
+  gap: 0;
+}
+
+.mobile-nav-content > a,
+.mobile-nav-content > .menu-item-with-submenu {
+  margin: 0;
 }
 
 .mobile-nav-content a {
-  padding: 15px 20px;
-  color: var(--text);
+  padding: 18px 28px;
+  color: #1d1d1f;
   text-decoration: none;
-  border-bottom: 1px solid #eee;
-  font-size: 1.1rem;
-  transition: background 0.2s ease;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .mobile-nav-content a:hover {
-  background: #f5f5f5;
-  color: var(--brand);
+  background: rgba(0, 0, 0, 0.04);
+  color: #0071e3;
+  padding-left: 32px;
 }
 
-/* Submenu Styles */
+/* Submenu Styles - Clean Apple Design */
 .menu-item-with-submenu {
   position: relative;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .menu-parent {
   display: block;
-  padding: 15px 20px;
-  color: var(--text);
-  font-size: 1.1rem;
+  padding: 18px 28px;
+  color: #1d1d1f;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
   cursor: pointer;
-  transition: background 0.2s ease;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.menu-parent::after {
+  content: '›';
+  position: absolute;
+  right: 28px;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+  font-size: 1.5rem;
+  color: #6e6e73;
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-item-with-submenu:hover .menu-parent {
-  background: #f5f5f5;
-  color: var(--brand);
+  background: rgba(0, 0, 0, 0.04);
+  color: #0071e3;
+  padding-left: 32px;
+}
+
+.menu-item-with-submenu:hover .menu-parent::after {
+  transform: translateY(-50%) rotate(90deg);
 }
 
 .submenu {
   display: none;
-  background: #fafafa;
-  padding-left: 20px;
+  background: rgba(0, 0, 0, 0.02);
 }
 
 .menu-item-with-submenu:hover .submenu {
@@ -367,19 +652,79 @@ main { overflow-x: hidden; }
 }
 
 .submenu a {
-  padding: 12px 20px;
-  color: var(--text);
-  text-decoration: none;
-  border-bottom: 1px solid #e5e5e5;
-  font-size: 1rem;
-  display: block;
-  transition: background 0.2s ease;
+  padding: 14px 28px 14px 48px;
+  color: #424245;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
 }
 
 .submenu a:hover {
-  background: #f0f0f0;
-  color: var(--brand);
-  padding-left: 25px;
+  background: rgba(0, 0, 0, 0.04);
+  color: #0071e3;
+  padding-left: 52px;
+}
+
+/* Mobile Nav CTA Buttons Container */
+.mobile-nav-ctas {
+  position: fixed;
+  bottom: 0;
+  left: -100%;
+  width: 320px;
+  max-width: 85vw;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: saturate(1.8) blur(20px);
+  -webkit-backdrop-filter: saturate(1.8) blur(20px);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 16px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1001;
+  transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.mobile-nav.active + .mobile-nav-ctas {
+  left: 0;
+}
+
+.mobile-nav-ctas .mobile-cta-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  text-decoration: none;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
+  letter-spacing: -0.01em;
+}
+
+.mobile-nav-ctas .mobile-cta-secondary {
+  background: rgba(0, 0, 0, 0.08);
+  color: #1d1d1f;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.mobile-nav-ctas .mobile-cta-secondary:active {
+  transform: scale(0.98);
+  background: rgba(0, 0, 0, 0.12);
+}
+
+.mobile-nav-ctas .mobile-cta-primary {
+  background: linear-gradient(135deg, var(--brand) 0%, #ff3333 100%);
+  color: white;
+  border: none;
+  box-shadow: 0 3px 10px rgba(241, 0, 0, 0.25);
+}
+
+.mobile-nav-ctas .mobile-cta-primary:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 6px rgba(241, 0, 0, 0.3);
 }
 
 /* Overlay when menu is open */
@@ -390,10 +735,12 @@ main { overflow-x: hidden; }
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
   z-index: 999;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-overlay.active {
@@ -985,9 +1332,9 @@ main { overflow-x: hidden; }
 
 .homepage-routes-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
-  max-width: 1200px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -1056,6 +1403,10 @@ main { overflow-x: hidden; }
   margin: 0;
 }
 
+/* ============================================
+   APPLE 2025 TESTIMONIALS CAROUSEL STYLES
+   ============================================ */
+
 /* Testimonials Section */
 .homepage-testimonials {
   padding: 1.75rem 0 5rem 0;
@@ -1069,7 +1420,7 @@ main { overflow-x: hidden; }
   margin: 0 auto;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .homepage-testimonials-carousel {
@@ -1080,112 +1431,144 @@ main { overflow-x: hidden; }
 
 .testimonials-track {
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   gap: 2rem;
 }
 
+/* Testimonial Cards - Apple 2025 Style */
 .homepage-testimonial-card {
   flex: 0 0 calc(33.333% - 1.35rem);
   width: calc(33.333% - 1.35rem);
-  background: #f8f9fa;
-  border-radius: 1rem;
-  padding: 2rem;
-  border-left: 4px solid var(--brand);
+  background: #ffffff;
+  border: none;
+  border-radius: 16px;
+  padding: 2rem 2.25rem;
   box-sizing: border-box;
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.04),
+    0 1px 2px rgba(0, 0, 0, 0.06);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
 }
 
-/* Carousel Navigation Buttons */
+.homepage-testimonial-card:hover {
+  box-shadow:
+    0 4px 16px rgba(0, 0, 0, 0.08),
+    0 2px 4px rgba(0, 0, 0, 0.06);
+  transform: translateY(-4px);
+}
+
+/* Carousel Navigation Buttons - Minimal Chevron Style */
 .carousel-btn {
-  background: var(--brand);
-  color: white;
-  border: none;
-  width: 50px;
-  height: 50px;
+  background: rgba(0, 0, 0, 0.05);
+  color: #1d1d1f;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
-  font-size: 2rem;
+  font-size: 1.5rem;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
   line-height: 1;
   padding: 0;
+  font-weight: 300;
 }
 
 .carousel-btn:hover {
-  background: #d10000;
-  transform: scale(1.1);
+  background: rgba(0, 113, 227, 0.1);
+  border-color: rgba(0, 113, 227, 0.2);
+  color: #0071e3;
+  box-shadow: 0 4px 12px rgba(0, 113, 227, 0.15);
+  transform: scale(1.05);
 }
 
 .carousel-btn:active {
-  transform: scale(0.95);
+  transform: scale(0.98);
 }
 
-/* Carousel Dots */
+/* Carousel Dots - Pill Shape */
 .carousel-dots {
   display: flex;
   justify-content: center;
-  gap: 0.75rem;
+  gap: 0.5rem;
   margin-top: 2rem;
 }
 
 .carousel-dot {
-  width: 12px;
-  height: 12px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
-  background: #ddd;
+  background: rgba(0, 0, 0, 0.15);
   border: none;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   padding: 0;
 }
 
 .carousel-dot.active {
-  background: var(--brand);
-  width: 32px;
-  border-radius: 6px;
+  background: #0071e3;
+  width: 28px;
+  border-radius: 4px;
 }
 
-.carousel-dot:hover {
-  background: #bbb;
+.carousel-dot:hover:not(.active) {
+  background: rgba(0, 113, 227, 0.4);
 }
 
+/* Star Rating - Clean Apple Style */
 .homepage-testimonial-stars {
-  color: #ffc107;
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
+  color: #0071e3;
+  font-size: 0.875rem;
+  margin-bottom: 1.25rem;
+  letter-spacing: 0.1em;
+  font-weight: 500;
 }
 
+/* Quote Text - Large, Prominent, NOT Italic */
 .homepage-testimonial-text {
-  font-size: 1.05rem;
+  font-size: 1.125rem;
   line-height: 1.6;
-  color: var(--text);
-  margin: 0 0 1.5rem 0;
-  font-style: italic;
+  color: #1d1d1f;
+  margin: 0 0 1.75rem 0;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.01em;
 }
 
+/* Author Attribution */
 .homepage-testimonial-author {
-  font-size: 0.95rem;
-  color: var(--muted);
+  font-size: 0.9375rem;
+  color: #6e6e73;
+  line-height: 1.5;
 }
 
 .homepage-testimonial-author strong {
-  color: var(--text);
-  font-weight: 700;
+  color: #1d1d1f;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.125rem;
 }
 
 /* Mobile Responsive */
 @media (max-width: 1024px) {
   .homepage-testimonial-card {
     min-width: 100%;
+    padding: 1.75rem 2rem;
   }
 
   .carousel-btn {
-    width: 40px;
-    height: 40px;
-    font-size: 1.5rem;
+    width: 44px;
+    height: 44px;
+    font-size: 1.25rem;
+  }
+
+  .homepage-testimonial-text {
+    font-size: 1.0625rem;
   }
 }
 

@@ -77,7 +77,7 @@ stats:
 # ============================================
 # FEATURED ROUTES
 # ============================================
-routes_title: "Populära Cykelrutter"
+routes_title: "Omissbar Mallorca"
 
 featured_routes:
   - title: "Port d'Andratx till Port de Pollença"

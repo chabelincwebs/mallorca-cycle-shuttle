@@ -42,26 +42,75 @@
         </div>
 
         <div class="header-right">
-          <!-- Language Switcher - Desktop -->
-          <nav class="lang-desktop">
-            {{- range .Site.Home.AllTranslations -}}
-              {{- $langCode := .Language.Lang -}}
-              {{- $linkURL := .RelPermalink -}}
-              {{- $isActive := eq $langCode $.Language.Lang -}}
+          <!-- Header CTA Buttons -->
+          <a href="{{ if eq .Site.Language.Lang "en" }}https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235{{ else if eq .Site.Language.Lang "de" }}https://mallorcacycleshuttle.company.site/de/products/Scheduled-Bike-Buses-c15728235{{ else if eq .Site.Language.Lang "es" }}https://mallorcacycleshuttle.company.site/es/products/Scheduled-Bike-Buses-c15728235{{ else if eq .Site.Language.Lang "it" }}https://mallorcacycleshuttle.company.site/it/products/Scheduled-Bike-Buses-c15728235{{ else if eq .Site.Language.Lang "fr" }}https://mallorcacycleshuttle.company.site/fr/products/Scheduled-Bike-Buses-c15728235{{ else if eq .Site.Language.Lang "ca" }}https://mallorcacycleshuttle.company.site/ca/products/Scheduled-Bike-Buses-c15728235{{ else if eq .Site.Language.Lang "nl" }}https://mallorcacycleshuttle.company.site/nl/products/Scheduled-Bike-Buses-c15728235{{ else if eq .Site.Language.Lang "sv" }}https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235{{ end }}"
+             class="header-cta-btn header-cta-secondary"
+             target="_blank"
+             rel="noopener noreferrer">
+            {{ if eq .Site.Language.Lang "en" }}Shuttle Schedule{{ else if eq .Site.Language.Lang "de" }}Shuttle-Fahrplan{{ else if eq .Site.Language.Lang "es" }}Horarios Shuttle{{ else if eq .Site.Language.Lang "it" }}Orari Shuttle{{ else if eq .Site.Language.Lang "fr" }}Horaires Navette{{ else if eq .Site.Language.Lang "ca" }}Horaris Shuttle{{ else if eq .Site.Language.Lang "nl" }}Shuttle Dienstregeling{{ else if eq .Site.Language.Lang "sv" }}Shuttle Schema{{ end }}
+          </a>
 
-              {{- if $isActive -}}
-                {{- $linkURL = $.RelPermalink -}}
-              {{- else -}}
-                {{- range $.Translations -}}
-                  {{- if eq .Language.Lang $langCode -}}
-                    {{- $linkURL = .RelPermalink -}}
+          <a href="{{ if eq .Site.Language.Lang "en" }}/en/bike-shuttle/private-shuttle-bookings/{{ else if eq .Site.Language.Lang "de" }}/de/fahrrad-shuttle/private-shuttle-buchungen/{{ else if eq .Site.Language.Lang "es" }}/es/shuttle-bici/reservas-shuttle-privado/{{ else if eq .Site.Language.Lang "it" }}/it/shuttle-bici/prenotazioni-shuttle-privato/{{ else if eq .Site.Language.Lang "fr" }}/fr/navette-velo/reservations-navette-privee/{{ else if eq .Site.Language.Lang "ca" }}/ca/shuttle-bici/reserves-shuttle-privat/{{ else if eq .Site.Language.Lang "nl" }}/nl/fiets-shuttle/prive-shuttle-boekingen/{{ else if eq .Site.Language.Lang "sv" }}/sv/cykel-shuttle/privata-shuttle-bokningar/{{ end }}"
+             class="header-cta-btn header-cta-secondary">
+            {{ if eq .Site.Language.Lang "en" }}Private Shuttles{{ else if eq .Site.Language.Lang "de" }}Private Shuttles{{ else if eq .Site.Language.Lang "es" }}Shuttles Privados{{ else if eq .Site.Language.Lang "it" }}Shuttle Privati{{ else if eq .Site.Language.Lang "fr" }}Navettes Privées{{ else if eq .Site.Language.Lang "ca" }}Shuttles Privats{{ else if eq .Site.Language.Lang "nl" }}Privé Shuttles{{ else if eq .Site.Language.Lang "sv" }}Privata Shuttles{{ end }}
+          </a>
+
+          <a href="{{ if eq .Site.Language.Lang "en" }}https://mallorcacycleshuttle.company.site/products/{{ else if eq .Site.Language.Lang "de" }}https://mallorcacycleshuttle.company.site/de/products/{{ else if eq .Site.Language.Lang "es" }}https://mallorcacycleshuttle.company.site/es/products/{{ else if eq .Site.Language.Lang "it" }}https://mallorcacycleshuttle.company.site/it/products/{{ else if eq .Site.Language.Lang "fr" }}https://mallorcacycleshuttle.company.site/fr/products/{{ else if eq .Site.Language.Lang "ca" }}https://mallorcacycleshuttle.company.site/ca/products/{{ else if eq .Site.Language.Lang "nl" }}https://mallorcacycleshuttle.company.site/nl/products/{{ else if eq .Site.Language.Lang "sv" }}https://mallorcacycleshuttle.company.site/products/{{ end }}"
+             class="header-cta-btn header-cta-primary">
+            {{ i18n "buy_rescue" }}
+          </a>
+
+          <!-- Language Switcher - Desktop Globe Dropdown -->
+          <div class="lang-desktop lang-globe-container">
+            <button class="lang-globe-btn" aria-label="Select language" aria-expanded="false">
+              <svg class="globe-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="10" cy="10" r="8.5"/>
+                <path d="M2 10h16M10 2a8 8 0 0 1 0 16 8 8 0 0 1 0-16" stroke-linecap="round"/>
+                <path d="M10 2c-1.5 2-2.5 5-2.5 8s1 6 2.5 8M10 2c1.5 2 2.5 5 2.5 8s-1 6-2.5 8" stroke-linecap="round"/>
+              </svg>
+              <svg class="chevron-icon" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                <path d="M2.5 3.75L5 6.25L7.5 3.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+
+            <div class="lang-dropdown">
+              {{- range .Site.Home.AllTranslations -}}
+                {{- $langCode := .Language.Lang -}}
+                {{- $linkURL := .RelPermalink -}}
+                {{- $isActive := eq $langCode $.Language.Lang -}}
+
+                {{- if $isActive -}}
+                  {{- $linkURL = $.RelPermalink -}}
+                {{- else -}}
+                  {{- range $.Translations -}}
+                    {{- if eq .Language.Lang $langCode -}}
+                      {{- $linkURL = .RelPermalink -}}
+                    {{- end -}}
                   {{- end -}}
                 {{- end -}}
-              {{- end -}}
 
-              <a href="{{ $linkURL }}" {{ if $isActive }}class="lang-link active"{{ else }}class="lang-link"{{ end }}>{{ upper $langCode }}</a>
-            {{- end -}}
-          </nav>
+                {{- $langName := "" -}}
+                {{- if eq $langCode "en" -}}{{ $langName = "English" }}{{- end -}}
+                {{- if eq $langCode "de" -}}{{ $langName = "Deutsch" }}{{- end -}}
+                {{- if eq $langCode "es" -}}{{ $langName = "Español" }}{{- end -}}
+                {{- if eq $langCode "fr" -}}{{ $langName = "Français" }}{{- end -}}
+                {{- if eq $langCode "it" -}}{{ $langName = "Italiano" }}{{- end -}}
+                {{- if eq $langCode "ca" -}}{{ $langName = "Català" }}{{- end -}}
+                {{- if eq $langCode "nl" -}}{{ $langName = "Nederlands" }}{{- end -}}
+                {{- if eq $langCode "sv" -}}{{ $langName = "Svenska" }}{{- end -}}
+
+                <a href="{{ $linkURL }}" class="lang-dropdown-item{{ if $isActive }} active{{ end }}">
+                  <span class="lang-code">{{ upper $langCode }}</span>
+                  <span class="lang-name">{{ $langName }}</span>
+                  {{- if $isActive -}}
+                  <svg class="lang-checkmark" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M13.5 4L6 11.5L2.5 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  {{- end -}}
+                </a>
+              {{- end -}}
+            </div>
+          </div>
 
           <!-- Language Switcher - Mobile -->
           <select class="lang-mobile" onchange="if(this.value) window.location.href=this.value">
@@ -83,12 +132,6 @@
               <option value="{{ $linkURL }}" {{ if $isActive }}selected{{ end }}>{{ upper $langCode }}</option>
             {{- end -}}
           </select>
-
-          <!-- Buy Rescue Button -->
-          <a href="{{ if eq .Site.Language.Lang "en" }}https://mallorcacycleshuttle.company.site/products/{{ else if eq .Site.Language.Lang "de" }}https://mallorcacycleshuttle.company.site/de/products/{{ else if eq .Site.Language.Lang "es" }}https://mallorcacycleshuttle.company.site/es/products/{{ else if eq .Site.Language.Lang "it" }}https://mallorcacycleshuttle.company.site/it/products/{{ else if eq .Site.Language.Lang "fr" }}https://mallorcacycleshuttle.company.site/fr/products/{{ else if eq .Site.Language.Lang "ca" }}https://mallorcacycleshuttle.company.site/ca/products/{{ else if eq .Site.Language.Lang "nl" }}https://mallorcacycleshuttle.company.site/nl/products/{{ end }}"
-             class="header-cta-btn">
-            {{ i18n "buy_rescue" }}
-          </a>
         </div>
       </div>
 
@@ -218,6 +261,26 @@
           {{ end }}
         </div>
       </nav>
+
+      <!-- Mobile Navigation CTA Buttons -->
+      <div class="mobile-nav-ctas">
+        <a href="{{ if eq .Site.Language.Lang "en" }}https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235{{ else if eq .Site.Language.Lang "de" }}https://mallorcacycleshuttle.company.site/de/products/Scheduled-Bike-Buses-c15728235{{ else if eq .Site.Language.Lang "es" }}https://mallorcacycleshuttle.company.site/es/products/Scheduled-Bike-Buses-c15728235{{ else if eq .Site.Language.Lang "it" }}https://mallorcacycleshuttle.company.site/it/products/Scheduled-Bike-Buses-c15728235{{ else if eq .Site.Language.Lang "fr" }}https://mallorcacycleshuttle.company.site/fr/products/Scheduled-Bike-Buses-c15728235{{ else if eq .Site.Language.Lang "ca" }}https://mallorcacycleshuttle.company.site/ca/products/Scheduled-Bike-Buses-c15728235{{ else if eq .Site.Language.Lang "nl" }}https://mallorcacycleshuttle.company.site/nl/products/Scheduled-Bike-Buses-c15728235{{ else if eq .Site.Language.Lang "sv" }}https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235{{ end }}"
+           class="mobile-cta-btn mobile-cta-secondary"
+           target="_blank"
+           rel="noopener noreferrer">
+          {{ if eq .Site.Language.Lang "en" }}Shuttle Schedule{{ else if eq .Site.Language.Lang "de" }}Shuttle-Fahrplan{{ else if eq .Site.Language.Lang "es" }}Horarios Shuttle{{ else if eq .Site.Language.Lang "it" }}Orari Shuttle{{ else if eq .Site.Language.Lang "fr" }}Horaires Navette{{ else if eq .Site.Language.Lang "ca" }}Horaris Shuttle{{ else if eq .Site.Language.Lang "nl" }}Shuttle Dienstregeling{{ else if eq .Site.Language.Lang "sv" }}Shuttle Schema{{ end }}
+        </a>
+
+        <a href="{{ if eq .Site.Language.Lang "en" }}/en/bike-shuttle/private-shuttle-bookings/{{ else if eq .Site.Language.Lang "de" }}/de/fahrrad-shuttle/private-shuttle-buchungen/{{ else if eq .Site.Language.Lang "es" }}/es/shuttle-bici/reservas-shuttle-privado/{{ else if eq .Site.Language.Lang "it" }}/it/shuttle-bici/prenotazioni-shuttle-privato/{{ else if eq .Site.Language.Lang "fr" }}/fr/navette-velo/reservations-navette-privee/{{ else if eq .Site.Language.Lang "ca" }}/ca/shuttle-bici/reserves-shuttle-privat/{{ else if eq .Site.Language.Lang "nl" }}/nl/fiets-shuttle/prive-shuttle-boekingen/{{ else if eq .Site.Language.Lang "sv" }}/sv/cykel-shuttle/privata-shuttle-bokningar/{{ end }}"
+           class="mobile-cta-btn mobile-cta-secondary">
+          {{ if eq .Site.Language.Lang "en" }}Private Shuttles{{ else if eq .Site.Language.Lang "de" }}Private Shuttles{{ else if eq .Site.Language.Lang "es" }}Shuttles Privados{{ else if eq .Site.Language.Lang "it" }}Shuttle Privati{{ else if eq .Site.Language.Lang "fr" }}Navettes Privées{{ else if eq .Site.Language.Lang "ca" }}Shuttles Privats{{ else if eq .Site.Language.Lang "nl" }}Privé Shuttles{{ else if eq .Site.Language.Lang "sv" }}Privata Shuttles{{ end }}
+        </a>
+
+        <a href="{{ if eq .Site.Language.Lang "en" }}https://mallorcacycleshuttle.company.site/products/{{ else if eq .Site.Language.Lang "de" }}https://mallorcacycleshuttle.company.site/de/products/{{ else if eq .Site.Language.Lang "es" }}https://mallorcacycleshuttle.company.site/es/products/{{ else if eq .Site.Language.Lang "it" }}https://mallorcacycleshuttle.company.site/it/products/{{ else if eq .Site.Language.Lang "fr" }}https://mallorcacycleshuttle.company.site/fr/products/{{ else if eq .Site.Language.Lang "ca" }}https://mallorcacycleshuttle.company.site/ca/products/{{ else if eq .Site.Language.Lang "nl" }}https://mallorcacycleshuttle.company.site/nl/products/{{ else if eq .Site.Language.Lang "sv" }}https://mallorcacycleshuttle.company.site/products/{{ end }}"
+           class="mobile-cta-btn mobile-cta-primary">
+          {{ i18n "buy_rescue" }}
+        </a>
+      </div>
     </header>
 
     <main>
@@ -407,6 +470,57 @@
           const navLinks = mobileNav.querySelectorAll('a');
           navLinks.forEach(link => {
             link.addEventListener('click', closeMenu);
+          });
+        }
+      })();
+    </script>
+
+    {{/* Language Globe Dropdown Script */}}
+    <script>
+      (function() {
+        const globeBtn = document.querySelector('.lang-globe-btn');
+        const dropdown = document.querySelector('.lang-dropdown');
+        const container = document.querySelector('.lang-globe-container');
+
+        if (globeBtn && dropdown && container) {
+          let isOpen = false;
+
+          function openDropdown() {
+            isOpen = true;
+            container.classList.add('active');
+            globeBtn.setAttribute('aria-expanded', 'true');
+          }
+
+          function closeDropdown() {
+            isOpen = false;
+            container.classList.remove('active');
+            globeBtn.setAttribute('aria-expanded', 'false');
+          }
+
+          // Toggle on button click
+          globeBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            isOpen ? closeDropdown() : openDropdown();
+          });
+
+          // Close when clicking outside
+          document.addEventListener('click', (e) => {
+            if (isOpen && !container.contains(e.target)) {
+              closeDropdown();
+            }
+          });
+
+          // Close when pressing Escape
+          document.addEventListener('keydown', (e) => {
+            if (isOpen && e.key === 'Escape') {
+              closeDropdown();
+            }
+          });
+
+          // Close when clicking a language link
+          const langLinks = dropdown.querySelectorAll('a');
+          langLinks.forEach(link => {
+            link.addEventListener('click', closeDropdown);
           });
         }
       })();

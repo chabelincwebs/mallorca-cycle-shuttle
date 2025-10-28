@@ -77,7 +77,7 @@ stats:
 # ============================================
 # FEATURED ROUTES
 # ============================================
-routes_title: "Rutes ciclistes populars"
+routes_title: "Mallorca Imprescindible"
 
 featured_routes:
   - title: "Port d'Andratx a Port de Pollença"
