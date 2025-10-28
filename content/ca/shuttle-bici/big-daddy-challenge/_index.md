@@ -24,17 +24,46 @@ Asfalt suau com la mantega • 8 colls classificats • Penya-segats costaners �
 </div>
 
 <style>
-/* Center Page Title */
+/* Apple 2025 Design System - CSS Variables */
+:root {
+  --font-system: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Segoe UI', sans-serif;
+  --brand-color: #f10000;
+  --text-primary: #1d1d1f;
+  --text-secondary: #86868b;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f5f5f7;
+  --border-light: rgba(0, 0, 0, 0.08);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --radius-sm: 12px;
+  --radius-md: 18px;
+  --radius-lg: 24px;
+}
+
+/* Typography Reset */
+h1, h2, h3, p {
+  font-family: var(--font-system);
+  margin: 0;
+  padding: 0;
+}
+
+/* Page Title - Centered */
 h1 {
   text-align: center;
   margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.015em;
 }
 
 /* Header Subtitle - Below Title */
 .header-subtitle {
   font-size: 1.25rem;
   line-height: 1.6;
-  color: #555;
+  color: var(--text-secondary);
   font-weight: 500;
   font-style: italic;
   text-align: center;
@@ -43,149 +72,104 @@ h1 {
   letter-spacing: -0.01em;
 }
 
-/* Hero Intro Banner - Premium Glassmorphism */
+/* Hero Intro Banner - Clean Card Design */
 .hero-intro-banner {
   margin: 0 0 2rem 0;
-  padding: 1.8rem 2.5rem 3rem 2.5rem;
-  background: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 28px;
-  box-shadow: 0 16px 64px rgba(0, 0, 0, 0.08);
-  position: relative;
-  overflow: hidden;
+  padding: 2rem 2.5rem;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-fast);
 }
 
-.hero-intro-banner::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, rgba(241, 0, 0, 0.06) 0%, rgba(255, 51, 51, 0.02) 100%);
-  z-index: 0;
-  border-radius: 28px;
+.hero-intro-banner:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
 }
 
-.hero-intro-banner::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 5px;
-  background: linear-gradient(90deg,
-    transparent 0%,
-    rgba(241, 0, 0, 0.6) 20%,
-    rgba(241, 0, 0, 1) 50%,
-    rgba(241, 0, 0, 0.6) 80%,
-    transparent 100%
-  );
-}
-
+/* Hero Intro Content */
 .hero-intro-content {
-  position: relative;
-  z-index: 1;
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 1rem;
 }
 
-/* Italic First Line */
-.hero-intro-italic {
-  font-size: 1.25rem;
-  line-height: 1.6;
-  color: #555;
-  font-weight: 500;
-  font-style: italic;
-  text-align: center;
-  margin: 0;
-  letter-spacing: -0.01em;
-}
-
-/* Centered "brilliant" Line */
+/* Centered Text */
 .hero-intro-centered {
   font-size: 2rem;
-  line-height: 1.4;
-  font-weight: 800;
+  line-height: 1.3;
+  font-weight: 700;
   text-align: center;
-  margin: 0;
-  color: #111;
+  color: var(--text-primary);
+  letter-spacing: -0.015em;
 }
 
 .hero-intro-centered strong {
-  background: linear-gradient(135deg, rgba(241, 0, 0, 1) 0%, rgba(255, 51, 51, 0.9) 100%);
+  background: linear-gradient(135deg, var(--brand-color) 0%, #ff3333 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-/* Main Intro Paragraph */
+/* Main Paragraph */
 .hero-intro-main {
-  font-size: 1.35rem;
-  line-height: 1.7;
-  color: #222;
-  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+  font-weight: 400;
   text-align: center;
-  margin: 0;
   letter-spacing: -0.01em;
 }
 
 .hero-intro-main strong {
-  font-weight: 700;
-  color: #111;
+  font-weight: 600;
+  color: var(--text-primary);
 }
 
-.hero-intro-main .highlight {
-  background: linear-gradient(135deg, rgba(241, 0, 0, 0.12) 0%, rgba(255, 51, 51, 0.08) 100%);
+/* Highlight Styles */
+.highlight {
+  background: linear-gradient(135deg, rgba(241, 0, 0, 0.1) 0%, rgba(255, 51, 51, 0.05) 100%);
   padding: 0.15rem 0.5rem;
-  border-radius: 6px;
-  font-weight: 700;
-  color: #111;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  color: var(--text-primary);
 }
 
-.hero-intro-main .highlight-red {
-  background: linear-gradient(135deg, rgba(241, 0, 0, 1) 0%, rgba(255, 51, 51, 0.95) 100%);
+.highlight-red {
+  background: linear-gradient(135deg, var(--brand-color) 0%, #ff3333 100%);
   color: white;
   padding: 0.2rem 0.75rem;
-  border-radius: 8px;
-  font-weight: 800;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
   letter-spacing: 0.5px;
-  box-shadow: 0 4px 16px rgba(241, 0, 0, 0.3);
+  box-shadow: 0 4px 16px rgba(241, 0, 0, 0.25);
 }
 
-/* Hero Links - Clickable Highlights */
+/* Hero Links with Hover Effects */
 .hero-link {
   text-decoration: none;
   display: inline-block;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all var(--transition-fast);
   cursor: pointer;
 }
 
 .hero-link:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(241, 0, 0, 0.4);
-}
-
-/* Smooth scroll behavior */
-html {
-  scroll-behavior: smooth;
+  box-shadow: 0 6px 20px rgba(241, 0, 0, 0.3);
 }
 
 /* Features Line */
 .hero-intro-features {
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #555;
+  color: var(--text-secondary);
   text-align: center;
-  margin: 0;
   font-weight: 500;
   letter-spacing: 0.3px;
 }
 
-/* Fade-in animations */
+/* Fade-in Animations */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -198,24 +182,33 @@ html {
 }
 
 .fade-in-up {
-  animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  animation: fadeInUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
   opacity: 0;
 }
 
 .fade-in-up.delay-1 {
-  animation-delay: 0.2s;
+  animation-delay: 0.15s;
 }
 
 .fade-in-up.delay-2 {
-  animation-delay: 0.4s;
+  animation-delay: 0.3s;
 }
 
 .fade-in-up.delay-3 {
-  animation-delay: 0.6s;
+  animation-delay: 0.45s;
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
 }
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
   .header-subtitle {
     font-size: 1.1rem;
     margin-bottom: 2rem;
@@ -223,21 +216,20 @@ html {
   }
 
   .hero-intro-banner {
-    padding: 1.2rem 1.5rem 2rem 1.5rem;
-    margin: 0 0 3rem 0;
+    padding: 1.5rem;
+    margin: 0 0 2rem 0;
   }
 
   .hero-intro-centered {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 
   .hero-intro-main {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
   }
 
-  .hero-intro-main .highlight-red {
+  .hero-intro-features {
     font-size: 1rem;
-    padding: 0.15rem 0.5rem;
   }
 }
 </style>
@@ -594,22 +586,20 @@ html {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, rgba(241, 0, 0, 0.05) 0%, rgba(255, 51, 51, 0.02) 100%);
-  opacity: 0;
-  transition: opacity 0.4s ease;
-  z-index: 0;
-  border-radius: 20px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--brand-color, #f10000) 0%, #ff3333 100%);
+  transition: height 0.3s ease;
+  z-index: 2;
+}
+
+.info-card:hover::before {
+  height: 5px;
 }
 
 .info-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 48px rgba(241, 0, 0, 0.15);
   border-color: rgba(241, 0, 0, 0.2);
-}
-
-.info-card:hover::before {
-  opacity: 1;
 }
 
 .info-card.expanded {
@@ -623,14 +613,14 @@ html {
 }
 
 .info-card.expanded::before {
-  opacity: 1;
+  height: 5px;
 }
 
 .info-card-header {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  padding: 1.5rem 1.5rem 1.25rem 1.5rem;
+  padding: 1.75rem 1.5rem 1rem 1.5rem;
   user-select: none;
   position: relative;
   z-index: 1;
@@ -641,6 +631,20 @@ html {
   align-items: flex-start;
   justify-content: space-between;
   position: relative;
+}
+
+/* Info Icon - Monochrome Style */
+.info-icon {
+  font-size: 2.5rem;
+  filter: grayscale(100%);
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.info-card:hover .info-icon {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 /* Floating Icon Badge - Top Right */
@@ -655,21 +659,28 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.4rem;
+  font-size: 2.5rem;
+  filter: grayscale(100%);
+  opacity: 0.6;
   box-shadow: 0 4px 16px rgba(241, 0, 0, 0.3);
   border: 3px solid rgba(255, 255, 255, 0.9);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 2;
+  background: none;
+  border: none;
+  box-shadow: none;
 }
 
 .info-card:hover .info-card-header-top > span:first-child {
-  transform: rotate(12deg) scale(1.1);
-  box-shadow: 0 6px 24px rgba(241, 0, 0, 0.4);
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 .info-card.expanded .info-card-header-top > span:first-child {
-  transform: scale(1.15);
-  background: linear-gradient(135deg, rgba(241, 0, 0, 1) 0%, rgba(255, 51, 51, 0.95) 100%);
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 .info-card-header h3 {

@@ -6,7 +6,15 @@
   <section class="homepage-hero">
     <div class="homepage-hero-overlay"></div>
     <div class="homepage-hero-image">
-      <img src="{{ .Params.hero_image | default "/img/hero-main.webp" }}" alt="{{ .Params.hero_title }}">
+      {{- $heroImage := "/img/hero-main.webp" -}}
+      {{- if eq .Params.translationKey "rescue-home" -}}
+        {{- $heroImage = "/img/hero-rescue.webp" -}}
+      {{- else if eq .Params.translationKey "airport-transfers" -}}
+        {{- $heroImage = "/img/hero-airport.webp" -}}
+      {{- else if .Params.hero_image -}}
+        {{- $heroImage = .Params.hero_image -}}
+      {{- end -}}
+      <img src="{{ $heroImage }}" alt="{{ .Params.hero_title }}">
     </div>
 
     <div class="homepage-hero-content">
@@ -326,5 +334,220 @@
       updateCarousel();
     });
   </script>
+
+  {{/* ========================================
+       APPLE CARD STYLE - Service Cards
+       ======================================== */}}
+  <style>
+    /* ==================== APPLE 2025 CSS VARIABLES ==================== */
+    :root {
+      --font-system: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      --brand-color: #f10000;
+      --text-primary: #1d1d1f;
+      --text-secondary: #6e6e73;
+      --bg-primary: #ffffff;
+      --bg-secondary: #f5f5f7;
+      --border-light: #d2d2d7;
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+      --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+      --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+      --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+    }
+
+    /* ==================== SERVICE CARDS SECTION ==================== */
+    .homepage-services {
+      padding: 2rem 0 4rem 0;
+      background: var(--bg-primary);
+    }
+
+    .homepage-section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin: 0 0 3rem 0;
+      letter-spacing: -0.02em;
+      font-family: var(--font-system);
+    }
+
+    .homepage-services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* ==================== APPLE CARD STYLE ==================== */
+    .homepage-service-card {
+      background: var(--bg-secondary);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem 2rem;
+      transition: all var(--transition-fast);
+      border: none;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .homepage-service-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: var(--bg-primary);
+      opacity: 0;
+      transition: opacity var(--transition-fast);
+      border-radius: var(--radius-lg);
+      z-index: 0;
+    }
+
+    .homepage-service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .homepage-service-card:hover::before {
+      opacity: 1;
+    }
+
+    /* All content needs to be above the ::before overlay */
+    .homepage-service-card > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ==================== SERVICE ICON ==================== */
+    .homepage-service-icon {
+      width: 64px;
+      height: 64px;
+      margin: 0 0 1.5rem 0;
+      transition: transform var(--transition-fast);
+    }
+
+    .homepage-service-card:hover .homepage-service-icon {
+      transform: translateY(-4px) scale(1.05);
+    }
+
+    .homepage-service-icon img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: contain;
+    }
+
+    /* ==================== SERVICE CONTENT ==================== */
+    .homepage-service-card h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin: 0 0 0.75rem 0;
+      line-height: 1.3;
+      letter-spacing: -0.01em;
+      font-family: var(--font-system);
+    }
+
+    .homepage-service-card p {
+      font-size: 1.0625rem;
+      line-height: 1.6;
+      color: var(--text-secondary);
+      margin: 0 0 1.5rem 0;
+      font-family: var(--font-system);
+    }
+
+    /* ==================== SERVICE LINK ==================== */
+    .homepage-service-link {
+      display: inline-flex;
+      align-items: center;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--brand-color);
+      text-decoration: none;
+      transition: all var(--transition-fast);
+      font-family: var(--font-system);
+    }
+
+    .homepage-service-link:hover {
+      text-decoration: none;
+      transform: translateX(4px);
+    }
+
+    /* ==================== FADE-IN ANIMATION ==================== */
+    .fade-in-on-scroll {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .fade-in-on-scroll.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ==================== RESPONSIVE ==================== */
+    @media (max-width: 1024px) {
+      .homepage-services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .homepage-services {
+        padding: 1.5rem 0 3rem 0;
+      }
+
+      .homepage-section-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .homepage-services-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+      }
+
+      .homepage-service-card {
+        padding: 2rem 1.5rem;
+      }
+
+      .homepage-service-card h3 {
+        font-size: 1.35rem;
+      }
+
+      .homepage-service-card p {
+        font-size: 1rem;
+      }
+    }
+
+    /* ==================== ROUTES SECTION ==================== */
+    .homepage-routes {
+      padding: 2.5rem 0 2rem 0;
+      background: #f8f9fa;
+    }
+
+    @media (max-width: 768px) {
+      .homepage-routes {
+        padding: 1.25rem 0 2rem 0;
+      }
+    }
+
+    /* ==================== CONTAINER ==================== */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 0 1.5rem;
+      }
+    }
+  </style>
 
 {{ end }}

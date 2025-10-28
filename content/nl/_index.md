@@ -80,13 +80,6 @@ stats:
 routes_title: "Populaire fietsroutes"
 
 featured_routes:
-  - title: "Sa Calobra"
-    distance: "20 km"
-    elevation: "682m"
-    image: "/img/route-sa-calobra.webp"
-    link: "/nl/fiets-shuttle/sa-calobra-gids/"
-    badge: "Meest populair"
-
   - title: "Port d'Andratx naar Port de Pollença"
     distance: "121 km"
     elevation: "2500m"
@@ -100,6 +93,20 @@ featured_routes:
     image: "/img/route-big-daddy.webp"
     link: "/nl/fiets-shuttle/big-daddy-challenge/"
     badge: "Uitdaging"
+
+  - title: "Sa Calobra"
+    distance: "20 km"
+    elevation: "682m"
+    image: "/img/route-sa-calobra.webp"
+    link: "/nl/fiets-shuttle/sa-calobra-gids/"
+    badge: "Meest populair"
+
+  - title: "Cap de Formentor"
+    distance: "40 km"
+    elevation: "1500m"
+    image: "/img/cap-formentor-route.webp"
+    link: "/nl/fiets-shuttle/cap-formentor-gids/"
+    badge: "Onmisbaar"
 
 # ============================================
 # TESTIMONIALS

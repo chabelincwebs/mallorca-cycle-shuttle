@@ -6,7 +6,11 @@
 <section class="rescue-hero">
   <div class="rescue-hero-overlay"></div>
   <div class="rescue-hero-image">
-    <img src="{{ .Params.hero_image | default "/img/hero-main.webp" }}" alt="{{ .Params.hero_title }}">
+    {{- $heroImage := "/img/hero-rescue.webp" -}}
+    {{- if .Params.hero_image -}}
+      {{- $heroImage = .Params.hero_image -}}
+    {{- end -}}
+    <img src="{{ $heroImage }}" alt="{{ .Params.hero_title }}">
   </div>
 
   <div class="rescue-hero-content">
@@ -151,6 +155,20 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  /* Ken Burns effect - subtle slow zoom */
+  animation: kenBurnsZoom 10s ease-in-out infinite alternate;
+  transform-origin: center center;
+  will-change: transform;
+}
+
+/* Ken Burns animation keyframes */
+@keyframes kenBurnsZoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.3);
+  }
 }
 
 .rescue-hero-content {

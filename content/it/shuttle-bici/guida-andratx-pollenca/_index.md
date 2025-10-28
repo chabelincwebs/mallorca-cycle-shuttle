@@ -23,17 +23,43 @@ Salite sceniche e impegnative • Discese ampie e scorrevoli • Asfalto liscio 
 </div>
 
 <style>
-/* Center Page Title */
+/* Apple 2025 Design System */
+:root {
+  --font-system: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", system-ui, sans-serif;
+  --brand-color: #f10000;
+  --text-primary: #1d1d1f;
+  --text-secondary: #86868b;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f5f5f7;
+  --border-light: rgba(0, 0, 0, 0.1);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.12);
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --radius-sm: 12px;
+  --radius-md: 20px;
+  --radius-lg: 28px;
+}
+
+/* Typography Reset */
+h1, h2, h3, p {
+  font-family: var(--font-system);
+}
+
+/* Page Title */
 h1 {
   text-align: center;
   margin-bottom: 1rem;
+  color: var(--text-primary);
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
-/* Header Subtitle - Below Title */
+/* Header Subtitle */
 .header-subtitle {
   font-size: 1.25rem;
   line-height: 1.6;
-  color: #555;
+  color: var(--text-secondary);
   font-weight: 500;
   font-style: italic;
   text-align: center;
@@ -42,18 +68,17 @@ h1 {
   letter-spacing: -0.01em;
 }
 
-/* Hero Intro Banner - Premium Glassmorphism */
+/* Hero Intro Banner - Clean Card Design */
 .hero-intro-banner {
   margin: 0 0 2rem 0;
-  padding: 1.8rem 2.5rem 3rem 2.5rem;
-  background: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 28px;
-  box-shadow: 0 16px 64px rgba(0, 0, 0, 0.08);
+  padding: 2rem 2.5rem 3rem 2.5rem;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
   position: relative;
   overflow: hidden;
+  transition: all var(--transition-fast);
 }
 
 .hero-intro-banner::before {
@@ -62,26 +87,19 @@ h1 {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, rgba(241, 0, 0, 0.06) 0%, rgba(255, 51, 51, 0.02) 100%);
-  z-index: 0;
-  border-radius: 28px;
-}
-
-.hero-intro-banner::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 5px;
+  height: 4px;
   background: linear-gradient(90deg,
     transparent 0%,
-    rgba(241, 0, 0, 0.6) 20%,
-    rgba(241, 0, 0, 1) 50%,
-    rgba(241, 0, 0, 0.6) 80%,
+    var(--brand-color) 20%,
+    var(--brand-color) 80%,
     transparent 100%
   );
+  opacity: 0.8;
+}
+
+.hero-intro-banner:hover {
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(241, 0, 0, 0.15);
 }
 
 .hero-intro-content {
@@ -89,33 +107,22 @@ h1 {
   z-index: 1;
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 1rem;
 }
 
-/* Italic First Line */
-.hero-intro-italic {
-  font-size: 1.25rem;
-  line-height: 1.6;
-  color: #555;
-  font-weight: 500;
-  font-style: italic;
-  text-align: center;
-  margin: 0;
-  letter-spacing: -0.01em;
-}
-
-/* Centered "brilliant" Line */
+/* Centered Text */
 .hero-intro-centered {
   font-size: 2rem;
-  line-height: 1.4;
-  font-weight: 800;
+  line-height: 1.3;
+  font-weight: 700;
   text-align: center;
   margin: 0;
-  color: #111;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
 }
 
 .hero-intro-centered strong {
-  background: linear-gradient(135deg, rgba(241, 0, 0, 1) 0%, rgba(255, 51, 51, 0.9) 100%);
+  background: linear-gradient(135deg, var(--brand-color) 0%, #ff3333 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -125,7 +132,7 @@ h1 {
 .hero-intro-main {
   font-size: 1.35rem;
   line-height: 1.7;
-  color: #222;
+  color: var(--text-primary);
   font-weight: 500;
   text-align: center;
   margin: 0;
@@ -134,41 +141,42 @@ h1 {
 
 .hero-intro-main strong {
   font-weight: 700;
-  color: #111;
+  color: var(--text-primary);
 }
 
-.hero-intro-main .highlight {
-  background: linear-gradient(135deg, rgba(241, 0, 0, 0.12) 0%, rgba(255, 51, 51, 0.08) 100%);
+/* Highlight Styles - Gradient Text */
+.highlight {
+  background: linear-gradient(135deg, rgba(241, 0, 0, 0.1) 0%, rgba(255, 51, 51, 0.05) 100%);
   padding: 0.15rem 0.5rem;
-  border-radius: 6px;
+  border-radius: var(--radius-sm);
   font-weight: 700;
-  color: #111;
+  color: var(--text-primary);
 }
 
-.hero-intro-main .highlight-red {
-  background: linear-gradient(135deg, rgba(241, 0, 0, 1) 0%, rgba(255, 51, 51, 0.95) 100%);
+.highlight-red {
+  background: linear-gradient(135deg, var(--brand-color) 0%, #ff3333 100%);
   color: white;
   padding: 0.2rem 0.75rem;
-  border-radius: 8px;
+  border-radius: var(--radius-sm);
   font-weight: 800;
   letter-spacing: 0.5px;
-  box-shadow: 0 4px 16px rgba(241, 0, 0, 0.3);
+  box-shadow: 0 4px 12px rgba(241, 0, 0, 0.25);
 }
 
-/* Hero Links - Clickable Highlights */
+/* Hero Links with Hover Effects */
 .hero-link {
   text-decoration: none;
   display: inline-block;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all var(--transition-fast);
   cursor: pointer;
 }
 
 .hero-link:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(241, 0, 0, 0.4);
+  box-shadow: 0 6px 20px rgba(241, 0, 0, 0.35);
 }
 
-/* Smooth scroll behavior */
+/* Smooth Scroll */
 html {
   scroll-behavior: smooth;
 }
@@ -177,14 +185,14 @@ html {
 .hero-intro-features {
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #555;
+  color: var(--text-secondary);
   text-align: center;
   margin: 0;
   font-weight: 500;
   letter-spacing: 0.3px;
 }
 
-/* Fade-in animations */
+/* Fade-in Animations - Faster */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -197,20 +205,20 @@ html {
 }
 
 .fade-in-up {
-  animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  animation: fadeInUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
   opacity: 0;
 }
 
 .fade-in-up.delay-1 {
-  animation-delay: 0.2s;
+  animation-delay: 0.15s;
 }
 
 .fade-in-up.delay-2 {
-  animation-delay: 0.4s;
+  animation-delay: 0.3s;
 }
 
 .fade-in-up.delay-3 {
-  animation-delay: 0.6s;
+  animation-delay: 0.45s;
 }
 
 /* Mobile Responsive */
@@ -222,8 +230,8 @@ html {
   }
 
   .hero-intro-banner {
-    padding: 1.2rem 1.5rem 2rem 1.5rem;
-    margin: 0 0 3rem 0;
+    padding: 1.5rem 1.25rem 2rem 1.25rem;
+    margin: 0 0 2rem 0;
   }
 
   .hero-intro-centered {
@@ -540,18 +548,18 @@ html {
   position: relative;
 }
 
+/* Top Accent Bar */
 .info-card::before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, rgba(241, 0, 0, 0.05) 0%, rgba(255, 51, 51, 0.02) 100%);
-  opacity: 0;
-  transition: opacity 0.4s ease;
-  z-index: 0;
-  border-radius: 20px;
+  height: 4px;
+  background: linear-gradient(90deg, transparent 0%, var(--brand-color) 20%, var(--brand-color) 80%, transparent 100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+  z-index: 1;
 }
 
 .info-card:hover {
@@ -561,6 +569,7 @@ html {
 }
 
 .info-card:hover::before {
+  height: 5px;
   opacity: 1;
 }
 
@@ -575,6 +584,7 @@ html {
 }
 
 .info-card.expanded::before {
+  height: 5px;
   opacity: 1;
 }
 
@@ -582,7 +592,7 @@ html {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  padding: 1.5rem 1.5rem 1.25rem 1.5rem;
+  padding: 1.75rem 1.5rem 1rem 1.5rem;
   user-select: none;
   position: relative;
   z-index: 1;
@@ -595,33 +605,23 @@ html {
   position: relative;
 }
 
-/* Floating Icon Badge - Top Right */
+/* Monochrome Icon Style */
 .info-card-header-top > span:first-child {
-  position: absolute;
-  top: -0.5rem;
-  right: -0.5rem;
-  width: 56px;
-  height: 56px;
-  background: linear-gradient(135deg, rgba(241, 0, 0, 0.9) 0%, rgba(255, 51, 51, 0.85) 100%);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.4rem;
-  box-shadow: 0 4px 16px rgba(241, 0, 0, 0.3);
-  border: 3px solid rgba(255, 255, 255, 0.9);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 2;
+  font-size: 2.5rem;
+  filter: grayscale(100%);
+  opacity: 0.6;
+  transition: all 0.3s ease;
 }
 
 .info-card:hover .info-card-header-top > span:first-child {
-  transform: rotate(12deg) scale(1.1);
-  box-shadow: 0 6px 24px rgba(241, 0, 0, 0.4);
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 .info-card.expanded .info-card-header-top > span:first-child {
-  transform: scale(1.15);
-  background: linear-gradient(135deg, rgba(241, 0, 0, 1) 0%, rgba(255, 51, 51, 0.95) 100%);
+  filter: grayscale(0%);
+  opacity: 1;
 }
 
 .info-card-header h3 {

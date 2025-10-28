@@ -23,172 +23,147 @@ Scenic challenging climbs • Sweeping descents • Butter smooth tarmac • Reg
 </div>
 
 <style>
-/* Center Page Title */
-h1 {
-  text-align: center;
-  margin-bottom: 1rem;
+/* ============================================
+   APPLE 2025 DESIGN SYSTEM
+   ============================================ */
+
+/* System Font Stack */
+:root {
+  --font-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --brand-color: #f10000;
+  --text-primary: #1d1d1f;
+  --text-secondary: #6e6e73;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f5f5f7;
+  --border-light: #d2d2d7;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
 }
 
-/* Header Subtitle - Below Title */
+/* Typography Reset */
+h1, h2, h3, p {
+  font-family: var(--font-system);
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Page Title */
+h1 {
+  text-align: center;
+  margin-bottom: 0.75rem;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+/* Header Subtitle */
 .header-subtitle {
   font-size: 1.25rem;
-  line-height: 1.6;
-  color: #555;
+  line-height: 1.5;
+  color: var(--text-secondary);
   font-weight: 500;
   font-style: italic;
   text-align: center;
-  margin: 0 auto 2.5rem auto;
+  margin: 0 auto 3rem auto;
   max-width: 800px;
-  letter-spacing: -0.01em;
 }
 
-/* Hero Intro Banner - Premium Glassmorphism */
+/* Hero Intro Banner - Clean Card */
 .hero-intro-banner {
-  margin: 0 0 2rem 0;
-  padding: 1.8rem 2.5rem 3rem 2.5rem;
-  background: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 28px;
-  box-shadow: 0 16px 64px rgba(0, 0, 0, 0.08);
-  position: relative;
-  overflow: hidden;
-}
-
-.hero-intro-banner::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, rgba(241, 0, 0, 0.06) 0%, rgba(255, 51, 51, 0.02) 100%);
-  z-index: 0;
-  border-radius: 28px;
-}
-
-.hero-intro-banner::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 5px;
-  background: linear-gradient(90deg,
-    transparent 0%,
-    rgba(241, 0, 0, 0.6) 20%,
-    rgba(241, 0, 0, 1) 50%,
-    rgba(241, 0, 0, 0.6) 80%,
-    transparent 100%
-  );
+  margin: 0 auto 4rem auto;
+  padding: 3rem 2.5rem;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  max-width: 1000px;
 }
 
 .hero-intro-content {
-  position: relative;
-  z-index: 1;
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
-}
-
-/* Italic First Line */
-.hero-intro-italic {
-  font-size: 1.25rem;
-  line-height: 1.6;
-  color: #555;
-  font-weight: 500;
-  font-style: italic;
-  text-align: center;
-  margin: 0;
-  letter-spacing: -0.01em;
+  gap: 1rem;
 }
 
 /* Centered "brilliant" Line */
 .hero-intro-centered {
-  font-size: 2rem;
-  line-height: 1.4;
-  font-weight: 800;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 700;
   text-align: center;
-  margin: 0;
-  color: #111;
+  color: var(--text-primary);
+  letter-spacing: -0.03em;
 }
 
 .hero-intro-centered strong {
-  background: linear-gradient(135deg, rgba(241, 0, 0, 1) 0%, rgba(255, 51, 51, 0.9) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--brand-color);
 }
 
 /* Main Intro Paragraph */
 .hero-intro-main {
-  font-size: 1.35rem;
-  line-height: 1.7;
-  color: #222;
-  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+  font-weight: 400;
   text-align: center;
-  margin: 0;
   letter-spacing: -0.01em;
 }
 
 .hero-intro-main strong {
-  font-weight: 700;
-  color: #111;
+  font-weight: 600;
 }
 
 .hero-intro-main .highlight {
-  background: linear-gradient(135deg, rgba(241, 0, 0, 0.12) 0%, rgba(255, 51, 51, 0.08) 100%);
-  padding: 0.15rem 0.5rem;
-  border-radius: 6px;
-  font-weight: 700;
-  color: #111;
+  font-weight: 600;
 }
 
 .hero-intro-main .highlight-red {
-  background: linear-gradient(135deg, rgba(241, 0, 0, 1) 0%, rgba(255, 51, 51, 0.95) 100%);
-  color: white;
-  padding: 0.2rem 0.75rem;
-  border-radius: 8px;
-  font-weight: 800;
-  letter-spacing: 0.5px;
-  box-shadow: 0 4px 16px rgba(241, 0, 0, 0.3);
+  background: linear-gradient(90deg, #f10000 0%, #ff4444 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+  font-size: 1.15em;
+  letter-spacing: -0.02em;
 }
 
-/* Hero Links - Clickable Highlights */
+/* Hero Links */
 .hero-link {
   text-decoration: none;
   display: inline-block;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
+  transition: var(--transition-fast);
 }
 
 .hero-link:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(241, 0, 0, 0.4);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(241, 0, 0, 0.3);
 }
 
-/* Smooth scroll behavior */
+/* Smooth scroll */
 html {
   scroll-behavior: smooth;
 }
 
 /* Features Line */
 .hero-intro-features {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #555;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
   text-align: center;
-  margin: 0;
-  font-weight: 500;
-  letter-spacing: 0.3px;
+  font-weight: 400;
 }
 
-/* Fade-in animations */
+/* Fade-in animations - faster */
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(15px);
   }
   to {
     opacity: 1;
@@ -197,24 +172,24 @@ html {
 }
 
 .fade-in-up {
-  animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  animation: fadeInUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
   opacity: 0;
 }
 
 .fade-in-up.delay-1 {
-  animation-delay: 0.2s;
+  animation-delay: 0.15s;
 }
 
 .fade-in-up.delay-2 {
-  animation-delay: 0.4s;
-}
-
-.fade-in-up.delay-3 {
-  animation-delay: 0.6s;
+  animation-delay: 0.3s;
 }
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
   .header-subtitle {
     font-size: 1.1rem;
     margin-bottom: 2rem;
@@ -222,21 +197,16 @@ html {
   }
 
   .hero-intro-banner {
-    padding: 1.2rem 1.5rem 2rem 1.5rem;
-    margin: 0 0 3rem 0;
+    padding: 2rem 1.5rem;
+    margin-bottom: 3rem;
   }
 
   .hero-intro-centered {
-    font-size: 1.6rem;
+    font-size: 1.75rem;
   }
 
   .hero-intro-main {
-    font-size: 1.15rem;
-  }
-
-  .hero-intro-main .highlight-red {
-    font-size: 1rem;
-    padding: 0.15rem 0.5rem;
+    font-size: 1.1rem;
   }
 }
 </style>
@@ -248,7 +218,7 @@ html {
 <div class="info-card" onclick="toggleCard(this)">
 <div class="info-card-header">
 <div class="info-card-header-top">
-<span style="font-size: 1.5rem;">📸</span>
+<span class="info-icon">📸</span>
 <span class="card-toggle">+</span>
 </div>
 <h3>Snapshot</h3>
@@ -263,7 +233,7 @@ html {
 <div class="info-card" onclick="toggleCard(this)">
 <div class="info-card-header">
 <div class="info-card-header-top">
-<span style="font-size: 1.5rem;">🔑</span>
+<span class="info-icon">🔑</span>
 <span class="card-toggle">+</span>
 </div>
 <h3>Key Sections</h3>
@@ -284,7 +254,7 @@ html {
 <div class="info-card" onclick="toggleCard(this)">
 <div class="info-card-header">
 <div class="info-card-header-top">
-<span style="font-size: 1.5rem;">☕</span>
+<span class="info-icon">☕</span>
 <span class="card-toggle">+</span>
 </div>
 <h3>Café/Refuel Stops</h3>
@@ -306,7 +276,7 @@ html {
 <div class="info-card" onclick="toggleCard(this)">
 <div class="info-card-header">
 <div class="info-card-header-top">
-<span style="font-size: 1.5rem;">💡</span>
+<span class="info-icon">💡</span>
 <span class="card-toggle">+</span>
 </div>
 <h3>Good to Know</h3>
@@ -330,7 +300,7 @@ html {
 <div class="info-card" onclick="toggleCard(this)">
 <div class="info-card-header">
 <div class="info-card-header-top">
-<span style="font-size: 1.5rem;">📅</span>
+<span class="info-icon">📅</span>
 <span class="card-toggle">+</span>
 </div>
 <h3>Schedule</h3>
@@ -344,7 +314,7 @@ html {
 <div class="info-card" onclick="toggleCard(this)">
 <div class="info-card-header">
 <div class="info-card-header-top">
-<span style="font-size: 1.5rem;">⭐</span>
+<span class="info-icon">⭐</span>
 <span class="card-toggle">+</span>
 </div>
 <h3>Social Proof</h3>
@@ -358,7 +328,7 @@ html {
 <div class="info-card" onclick="toggleCard(this)">
 <div class="info-card-header">
 <div class="info-card-header-top">
-<span style="font-size: 1.5rem;">📊</span>
+<span class="info-icon">📊</span>
 <span class="card-toggle">+</span>
 </div>
 <h3>Key Stats</h3>
@@ -372,7 +342,7 @@ html {
 <div class="info-card" onclick="toggleCard(this)">
 <div class="info-card-header">
 <div class="info-card-header-top">
-<span style="font-size: 1.5rem;">📷</span>
+<span class="info-icon">📷</span>
 <span class="card-toggle">+</span>
 </div>
 <h3>Memory Maker!</h3>
@@ -385,7 +355,7 @@ html {
 <div class="info-card" onclick="toggleCard(this)">
 <div class="info-card-header">
 <div class="info-card-header-top">
-<span style="font-size: 1.5rem;">🍰</span>
+<span class="info-icon">🍰</span>
 <span class="card-toggle">+</span>
 </div>
 <h3>Quick Fuel Tips</h3>
@@ -401,7 +371,7 @@ html {
 <div class="info-card" onclick="window.open('https://mallorcacycleshuttle.company.site/products/Andratx-Pollenca-Finishers-Unisex-Classic-T-p788401800', '_blank')" style="cursor: pointer;">
 <div class="info-card-header">
 <div class="info-card-header-top">
-<span style="font-size: 1.5rem;">👕</span>
+<span class="info-icon">👕</span>
 <span class="card-toggle">+</span>
 </div>
 <h3>Finisher's Gear</h3>
@@ -409,14 +379,14 @@ html {
 <div class="info-card-content">
 <p><strong>Celebrate your achievement!</strong></p>
 <p>Get your exclusive Port d'Andratx-Port de Pollença finisher's t-shirt and show the world you conquered this epic route.</p>
-<p style="color: var(--brand, #f10000); font-weight: 700; margin-top: 1rem;">Shop Now →</p>
+<p style="color: var(--brand, #f10000); font-weight: 600; margin-top: 1rem;">Shop Now →</p>
 </div>
 </div>
 
 <div class="info-card" onclick="window.open('https://mallorcacycleshuttle.company.site/products/Departure-towns-c28971057', '_blank')" style="cursor: pointer;">
 <div class="info-card-header">
 <div class="info-card-header-top">
-<span style="font-size: 1.5rem;">🚌</span>
+<span class="info-icon">🚌</span>
 <span class="card-toggle">+</span>
 </div>
 <h3>Book Your Shuttle</h3>
@@ -424,14 +394,14 @@ html {
 <div class="info-card-content">
 <p><strong>Need a ride to start your adventure?</strong></p>
 <p>Browse all departure towns and book your shuttle to Port d'Andratx or Port de Pollença. We've got you covered!</p>
-<p style="color: var(--brand, #f10000); font-weight: 700; margin-top: 1rem;">View Shuttles →</p>
+<p style="color: var(--brand, #f10000); font-weight: 600; margin-top: 1rem;">View Shuttles →</p>
 </div>
 </div>
 
 <div class="info-card" onclick="toggleCard(this)">
 <div class="info-card-header">
 <div class="info-card-header-top">
-<span style="font-size: 1.5rem;">📋</span>
+<span class="info-icon">📋</span>
 <span class="card-toggle">+</span>
 </div>
 <h3>Coming Soon</h3>
@@ -450,87 +420,238 @@ html {
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 
 <style>
-/* Info Cards Wrapper */
+/* ============================================
+   INFO CARDS - CLEAN APPLE STYLE
+   ============================================ */
+
 .info-cards-wrapper {
-  margin: 2rem 0 3rem 0;
-  padding: 2rem;
-  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 50%, #f1f3f5 100%);
-  border-radius: 24px;
-  position: relative;
+  margin: 3rem auto 4rem auto;
+  max-width: 1200px;
 }
 
-.info-cards-wrapper::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image:
-    radial-gradient(circle at 20% 50%, rgba(241, 0, 0, 0.03) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(255, 51, 51, 0.02) 0%, transparent 50%);
-  border-radius: 24px;
-  pointer-events: none;
-}
-
-/* Info Cards Grid */
 .info-cards-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.5rem;
-  position: relative;
-  z-index: 1;
+  gap: 1rem;
 }
 
 @media (min-width: 768px) {
   .info-cards-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.75rem;
+    gap: 1.25rem;
   }
 }
 
 @media (min-width: 1024px) {
   .info-cards-grid {
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 1.5rem;
   }
 }
 
-/* Hide all cards when one is expanded */
+/* Hide cards when one is expanded */
 .info-cards-grid.has-expanded .info-card {
   display: none;
 }
 
-/* Show only the expanded card */
 .info-cards-grid.has-expanded .info-card.expanded {
   display: block;
 }
 
-/* Routes 2-Column Layout - Premium Wrapper */
-.routes-2col-wrapper {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 3rem;
-  margin: 3rem 0 2rem 0;
-  padding: 2.5rem;
-  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 50%, #f1f3f5 100%);
-  border-radius: 28px;
+.info-card {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: var(--transition-fast);
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
   position: relative;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.04);
 }
 
-.routes-2col-wrapper::before {
+.info-card::before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  background-image:
-    radial-gradient(circle at 30% 40%, rgba(241, 0, 0, 0.04) 0%, transparent 50%),
-    radial-gradient(circle at 70% 70%, rgba(255, 51, 51, 0.03) 0%, transparent 50%);
-  border-radius: 28px;
-  pointer-events: none;
+  height: 4px;
+  background: linear-gradient(90deg, var(--brand-color) 0%, #ff4444 100%);
+  opacity: 0.3;
+  transition: var(--transition-fast);
+}
+
+.info-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(241, 0, 0, 0.2);
+}
+
+.info-card:hover::before {
+  opacity: 1;
+  height: 5px;
+}
+
+.info-card.expanded {
+  background: var(--bg-primary);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(241, 0, 0, 0.3);
+  grid-column: 1 / -1;
+}
+
+.info-card.expanded::before {
+  opacity: 1;
+  height: 5px;
+}
+
+.info-card-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.75rem 1.5rem 1rem 1.5rem;
+  user-select: none;
+}
+
+.info-card-header-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.info-icon {
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: grayscale(100%);
+  opacity: 0.6;
+  transition: var(--transition-fast);
+}
+
+.info-card:hover .info-icon {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.info-card-header h3 {
+  margin: 0;
+  font-size: 1.125rem;
+  color: var(--text-primary);
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.card-toggle {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--text-secondary);
+  transition: var(--transition-fast);
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-secondary);
+  border-radius: 50%;
+}
+
+.info-card:hover .card-toggle {
+  background: rgba(241, 0, 0, 0.1);
+  color: var(--brand-color);
+}
+
+.info-card.expanded .card-toggle {
+  transform: rotate(45deg);
+  background: rgba(241, 0, 0, 0.15);
+  color: var(--brand-color);
+}
+
+.info-card-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1), padding 0.3s ease;
+  padding: 0 1.5rem;
+}
+
+.info-card.expanded .info-card-content {
+  max-height: 2000px;
+  padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.info-card-content p {
+  margin: 0 0 1rem 0;
+  line-height: 1.6;
+  color: var(--text-primary);
+  font-size: 0.9375rem;
+}
+
+.info-card-content p:last-child {
+  margin-bottom: 0;
+}
+
+.info-card-content strong {
+  font-weight: 600;
+}
+
+.info-card-content a {
+  color: var(--brand-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--transition-fast);
+  border-bottom: 1px solid rgba(241, 0, 0, 0.2);
+}
+
+.info-card-content a:hover {
+  border-bottom-color: var(--brand-color);
+}
+
+.info-card-content .cta {
+  display: inline-block;
+  background: var(--brand-color);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 1rem;
+  transition: var(--transition-fast);
+  box-shadow: 0 2px 8px rgba(241, 0, 0, 0.2);
+  border: none;
+}
+
+.info-card-content .cta:hover {
+  background: #d10000;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(241, 0, 0, 0.3);
+}
+
+.info-card-content ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.info-card-content li {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+  font-size: 0.9375rem;
+}
+
+.info-card-content li:last-child {
+  margin-bottom: 0;
+}
+
+/* ============================================
+   ROUTES 2-COLUMN LAYOUT
+   ============================================ */
+
+.routes-2col-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin: 4rem auto 3rem auto;
+  max-width: 1400px;
 }
 
 @media (min-width: 768px) {
@@ -544,426 +665,106 @@ html {
   display: flex;
   flex-direction: column;
   gap: 0;
-  position: relative;
-  z-index: 1;
 }
 
-/* Hide all routes when one is expanded */
+/* Hide routes when one is expanded */
 .routes-2col-wrapper.has-expanded .route-item {
   display: none;
 }
 
-/* Show only the expanded route */
 .routes-2col-wrapper.has-expanded .route-item.active {
   display: block;
 }
 
-/* Make the column containing the active route span full width */
 .routes-2col-wrapper.has-expanded .routes-column:has(.route-item.active) {
   grid-column: 1 / -1;
 }
 
-/* Hide empty columns when a route is expanded */
 .routes-2col-wrapper.has-expanded .routes-column:not(:has(.route-item.active)) {
   display: none;
 }
 
-.info-card {
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 20px;
-  overflow: hidden;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
-  position: relative;
-}
-
-.info-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, rgba(241, 0, 0, 0.05) 0%, rgba(255, 51, 51, 0.02) 100%);
-  opacity: 0;
-  transition: opacity 0.4s ease;
-  z-index: 0;
-  border-radius: 20px;
-}
-
-.info-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 48px rgba(241, 0, 0, 0.15);
-  border-color: rgba(241, 0, 0, 0.2);
-}
-
-.info-card:hover::before {
-  opacity: 1;
-}
-
-.info-card.expanded {
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  box-shadow: 0 16px 64px rgba(241, 0, 0, 0.2);
-  border-color: rgba(241, 0, 0, 0.3);
-  grid-column: 1 / -1;
-  transform: scale(1.02);
-}
-
-.info-card.expanded::before {
-  opacity: 1;
-}
-
-.info-card-header {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  padding: 1.5rem 1.5rem 1.25rem 1.5rem;
-  user-select: none;
-  position: relative;
-  z-index: 1;
-}
-
-.info-card-header-top {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  position: relative;
-}
-
-/* Floating Icon Badge - Top Right */
-.info-card-header-top > span:first-child {
-  position: absolute;
-  top: -0.5rem;
-  right: -0.5rem;
-  width: 56px;
-  height: 56px;
-  background: linear-gradient(135deg, rgba(241, 0, 0, 0.9) 0%, rgba(255, 51, 51, 0.85) 100%);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.4rem;
-  box-shadow: 0 4px 16px rgba(241, 0, 0, 0.3);
-  border: 3px solid rgba(255, 255, 255, 0.9);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 2;
-}
-
-.info-card:hover .info-card-header-top > span:first-child {
-  transform: rotate(12deg) scale(1.1);
-  box-shadow: 0 6px 24px rgba(241, 0, 0, 0.4);
-}
-
-.info-card.expanded .info-card-header-top > span:first-child {
-  transform: scale(1.15);
-  background: linear-gradient(135deg, rgba(241, 0, 0, 1) 0%, rgba(255, 51, 51, 0.95) 100%);
-}
-
-.info-card-header h3 {
-  margin: 0;
-  font-size: 1.2rem;
-  color: #222;
-  font-weight: 700;
-  padding-right: 3rem;
-  line-height: 1.3;
-}
-
-.card-toggle {
-  font-size: 1.8rem;
-  font-weight: 300;
-  color: rgba(241, 0, 0, 0.8);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  flex-shrink: 0;
-  width: 32px;
-  height: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(241, 0, 0, 0.08);
-  border-radius: 50%;
-  margin-top: -0.25rem;
-}
-
-.info-card:hover .card-toggle {
-  background: rgba(241, 0, 0, 0.12);
-  transform: scale(1.1);
-}
-
-.info-card.expanded .card-toggle {
-  transform: rotate(45deg) scale(1.15);
-  background: rgba(241, 0, 0, 0.15);
-  color: rgba(241, 0, 0, 1);
-}
-
-.info-card-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), padding 0.5s ease;
-  padding: 0 1.5rem;
-  position: relative;
-  z-index: 1;
-}
-
-.info-card.expanded .info-card-content {
-  max-height: 2000px;
-  padding: 0 1.5rem 1.75rem 1.5rem;
-}
-
-.info-card-content p {
-  margin: 0 0 0.85rem 0;
-  line-height: 1.7;
-  color: #333;
-  font-size: 0.95rem;
-}
-
-.info-card-content p:last-child {
-  margin-bottom: 0;
-}
-
-.info-card-content strong {
-  color: #111;
-  font-weight: 700;
-}
-
-.info-card-content a {
-  color: rgba(241, 0, 0, 0.9);
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  border-bottom: 1px solid rgba(241, 0, 0, 0.3);
-}
-
-.info-card-content a:hover {
-  color: rgba(241, 0, 0, 1);
-  border-bottom-color: rgba(241, 0, 0, 0.6);
-}
-
-.info-card-content .cta {
-  display: inline-block;
-  background: linear-gradient(135deg, rgba(241, 0, 0, 1) 0%, rgba(255, 51, 51, 0.95) 100%);
-  color: white;
-  padding: 0.85rem 1.75rem;
-  border-radius: 12px;
-  text-decoration: none;
-  font-weight: 700;
-  margin-top: 1rem;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 16px rgba(241, 0, 0, 0.25);
-  border: none;
-  border-bottom: none;
-}
-
-.info-card-content .cta:hover {
-  background: linear-gradient(135deg, rgba(209, 0, 0, 1) 0%, rgba(241, 0, 0, 1) 100%);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 24px rgba(241, 0, 0, 0.4);
-}
-
-.info-card-content ul {
-  margin: 0;
-  padding-left: 1.5rem;
-}
-
-.info-card-content li {
-  margin-bottom: 0.65rem;
-  line-height: 1.7;
-  color: #333;
-  font-size: 0.95rem;
-}
-
-/* Finisher's Gear CTA Card - Special Styling */
-.info-card-cta {
-  background: white;
-  border: 2px solid var(--brand, #f10000);
-  border-radius: 12px;
-  overflow: hidden;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  box-shadow: 0 6px 20px rgba(241, 0, 0, 0.15);
-  text-decoration: none;
-  display: block;
-  position: relative;
-  grid-column: 1 / -1;
-}
-
-.info-card-cta::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, rgba(241, 0, 0, 0.03) 0%, transparent 100%);
-  pointer-events: none;
-}
-
-.info-card-cta:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 30px rgba(241, 0, 0, 0.25);
-  border-width: 3px;
-}
-
-.info-card-cta .info-card-header {
-  background: linear-gradient(135deg, #fff5f5 0%, #fff 100%);
-  padding: 1.25rem;
-  user-select: none;
-}
-
-.info-card-content-cta {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease, padding 0.4s ease;
-  padding: 0 1.25rem;
-}
-
-.info-card-content-cta p {
-  margin: 0 0 0.75rem 0;
-  line-height: 1.6;
-  color: var(--text);
-}
-
-.info-card-content-cta p:last-child {
-  margin-bottom: 0;
-}
-
-.info-card-content ul {
-  margin: 0;
-  padding-left: 1.25rem;
-  line-height: 1.8;
-}
-
-.info-card-content li {
-  margin-bottom: 0.5rem;
-}
-
-.info-card-content a {
-  color: var(--brand);
-  text-decoration: underline;
-}
-
-.info-card-content a:hover {
-  text-decoration: none;
-}
-
-/* Accordion Section Headers */
+/* Route Section Headers */
 .route-section {
-  margin: 2rem 0 1.5rem 0;
-  padding: 1.5rem;
-  background: linear-gradient(135deg, #f8f8f8 0%, #fff 100%);
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  margin: 0 0 2rem 0;
 }
 
 .route-section h2 {
-  margin: 0;
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 700;
-  color: var(--text);
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  text-align: center;
+  padding: 2rem;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  scroll-margin-top: 2rem;
 }
 
-/* Accordion Container */
+/* Route Accordion */
 .route-accordion {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  margin: 1.5rem 0 3rem 0;
+  gap: 1rem;
+  margin: 0 0 2rem 0;
 }
 
-/* Accordion Item - Glassmorphism */
 .route-item {
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.65);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  background: var(--bg-primary);
   overflow: hidden;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
-  position: relative;
-}
-
-.route-item::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, rgba(241, 0, 0, 0.04) 0%, rgba(255, 51, 51, 0.01) 100%);
-  opacity: 0;
-  transition: opacity 0.4s ease;
-  z-index: 0;
-  border-radius: 20px;
+  transition: var(--transition-fast);
+  box-shadow: var(--shadow-sm);
 }
 
 .route-item:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 48px rgba(241, 0, 0, 0.12);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
   border-color: rgba(241, 0, 0, 0.2);
 }
 
-.route-item:hover::before {
-  opacity: 1;
-}
-
 .route-item.active {
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background: var(--bg-primary);
   border-color: rgba(241, 0, 0, 0.3);
-  box-shadow: 0 16px 64px rgba(241, 0, 0, 0.18);
-  transform: scale(1.01);
+  box-shadow: var(--shadow-lg);
 }
 
-.route-item.active::before {
-  opacity: 1;
-}
-
-/* Accordion Header - Premium Glass Effect */
+/* Route Header */
 .route-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem 1.75rem;
+  padding: 1.25rem 1.5rem;
   cursor: pointer;
   user-select: none;
-  gap: 1.25rem;
+  gap: 1rem;
   flex-wrap: wrap;
   background: transparent;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
-  z-index: 1;
+  transition: var(--transition-fast);
 }
 
 .route-header:hover {
-  background: rgba(255, 245, 245, 0.3);
+  background: rgba(245, 245, 247, 0.5);
 }
 
 .route-item.active .route-header {
-  background: rgba(255, 240, 240, 0.4);
-  padding-bottom: 1.75rem;
+  padding-bottom: 1.5rem;
 }
 
-/* Close X button - only show when route is active */
+/* Close X button */
 .route-item.active .route-header::after {
   content: '✕';
   position: absolute;
   top: 1rem;
   right: 1rem;
-  font-size: 1.5rem;
-  color: var(--brand, #f10000);
-  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  font-weight: 600;
   line-height: 1;
-  opacity: 0.7;
+  opacity: 0.6;
   transition: opacity 0.2s ease;
 }
 
@@ -980,9 +781,9 @@ html {
 }
 
 .route-icon {
-  font-size: 1.5rem;
-  transition: transform 0.3s ease;
-  color: var(--brand);
+  font-size: 1.25rem;
+  transition: transform 0.2s ease;
+  color: var(--brand-color);
 }
 
 .route-item.active .route-icon {
@@ -990,18 +791,18 @@ html {
 }
 
 .route-title {
-  font-weight: 700;
-  font-size: 1.15rem;
-  color: var(--text);
+  font-weight: 600;
+  font-size: 1.0625rem;
+  color: var(--text-primary);
   line-height: 1.3;
 }
 
 .route-stats-inline {
   display: flex;
   gap: 0.75rem;
-  color: #555;
-  font-size: 0.9rem;
-  font-weight: 600;
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  font-weight: 500;
   flex-wrap: wrap;
   align-items: center;
 }
@@ -1011,66 +812,50 @@ html {
   display: flex;
   align-items: center;
   gap: 0.35rem;
-  padding: 0.5rem 1rem;
-  background: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0.375rem 0.75rem;
+  background: var(--bg-secondary);
+  border-radius: 6px;
+  transition: var(--transition-fast);
 }
 
 .route-stats-inline span:hover {
-  background: rgba(255, 255, 255, 0.8);
-  transform: translateY(-1px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  background: rgba(245, 245, 247, 0.8);
 }
 
 .difficulty-badge {
   display: inline-block;
-  padding: 0.5rem 1.1rem;
-  border-radius: 20px;
-  font-size: 0.75rem;
-  font-weight: 800;
+  padding: 0.375rem 0.875rem;
+  border-radius: 6px;
+  font-size: 0.6875rem;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.8px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  letter-spacing: 0.5px;
+  transition: var(--transition-fast);
 }
 
 .difficulty-badge:hover {
   transform: scale(1.05);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.16);
 }
 
 .difficulty-moderate {
-  background: linear-gradient(135deg, #FFA726 0%, #FF9800 100%);
+  background: #FFA726;
   color: white;
-  border: 2px solid #FF9800;
 }
 
 .difficulty-hard {
-  background: linear-gradient(135deg, #EF5350 0%, #E53935 100%);
+  background: #EF5350;
   color: white;
-  border: 2px solid #E53935;
 }
 
 .difficulty-very-hard {
-  background: linear-gradient(135deg, #C62828 0%, #B71C1C 100%);
+  background: #C62828;
   color: white;
-  border: 2px solid #B71C1C;
 }
 
 .difficulty-epic {
-  background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+  background: #FFD700;
   color: #000;
-  border: 2px solid #FFA500;
-  font-weight: 900;
-  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+  font-weight: 800;
 }
 
 .route-actions {
@@ -1079,33 +864,31 @@ html {
 }
 
 .gpx-download {
-  padding: 0.6rem 1rem;
-  background: linear-gradient(135deg, #f5f5f5 0%, #fff 100%);
-  border: 2px solid #ddd;
-  border-radius: 8px;
-  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
   font-weight: 600;
-  color: var(--text);
+  color: var(--text-primary);
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: var(--transition-fast);
   white-space: nowrap;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 .gpx-download:hover {
-  background: var(--brand);
+  background: var(--brand-color);
   color: white;
-  border-color: var(--brand);
+  border-color: var(--brand-color);
   text-decoration: none;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(241,0,0,0.3);
+  transform: translateY(-1px);
 }
 
-/* Accordion Content */
+/* Route Content */
 .route-content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease;
+  transition: max-height 0.3s ease;
 }
 
 .route-item.active .route-content {
@@ -1113,26 +896,27 @@ html {
 }
 
 .route-content-inner {
-  padding: 0 1.25rem 1.25rem 1.25rem;
+  padding: 0 1.5rem 1.5rem 1.5rem;
 }
 
 .route-description {
   margin: 0 0 1.5rem 0;
   padding: 1rem;
-  background: #f9f9f9;
-  border-left: 3px solid var(--brand);
+  background: var(--bg-secondary);
+  border-left: 3px solid var(--brand-color);
   border-radius: 4px;
   font-style: italic;
-  color: var(--muted);
+  color: var(--text-secondary);
+  line-height: 1.6;
 }
 
-/* Map and Elevation Containers */
+/* Map and Elevation */
 .route-map {
   height: 500px;
   width: 100%;
-  border-radius: 8px;
+  border-radius: var(--radius-sm);
   margin-bottom: 1.5rem;
-  border: 1px solid #eee;
+  border: 1px solid var(--border-light);
   overflow: hidden;
   background: #aad3df;
 }
@@ -1180,7 +964,6 @@ html {
   position: absolute !important;
 }
 
-/* Critical: Override main.css rule that forces height:auto on all SVGs */
 main .container .prose .route-map svg,
 .route-map .leaflet-overlay-pane svg,
 .route-map svg {
@@ -1252,21 +1035,12 @@ path.route-polyline {
   width: 100%;
   background: white;
   padding: 1rem;
-  border-radius: 8px;
-  border: 1px solid #eee;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-light);
 }
 
 .elevation-profile canvas {
   max-width: 100% !important;
-}
-
-/* Coming Soon Placeholder */
-.coming-soon {
-  padding: 2rem;
-  text-align: center;
-  background: #f9f9f9;
-  border-radius: 8px;
-  color: var(--muted);
 }
 
 /* Mobile Responsive */
@@ -1278,7 +1052,7 @@ path.route-polyline {
   }
 
   .route-stats-inline {
-    font-size: 0.85rem;
+    font-size: 0.8125rem;
   }
 
   .route-map {
@@ -1753,12 +1527,8 @@ function renderMap(routeId, coordinates, config) {
   const mapId = 'map-' + routeId;
   const mapDiv = document.getElementById(mapId);
 
-  console.log('Rendering map for', routeId);
-  console.log('Map div dimensions:', mapDiv.offsetWidth, 'x', mapDiv.offsetHeight);
-
   // Initialize map
   const map = L.map(mapId).setView([coordinates[0].lat, coordinates[0].lon], 10);
-  console.log('Map initialized');
 
   // Add tiles
   const tileLayer = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -1766,18 +1536,9 @@ function renderMap(routeId, coordinates, config) {
     maxZoom: 19
   });
 
-  tileLayer.on('tileload', function() {
-    console.log('Tile loaded for', routeId);
-  });
-
-  tileLayer.on('tileerror', function(error) {
-    console.error('Tile error for', routeId, error);
-  });
-
   tileLayer.addTo(map);
-  console.log('Tiles added');
 
-  // Add route line with explicit stroke properties
+  // Add route line
   const routeLine = L.polyline(coordinates.map(c => [c.lat, c.lon]), {
     color: '#f10000',
     weight: 3,
@@ -1786,33 +1547,13 @@ function renderMap(routeId, coordinates, config) {
     lineCap: 'round',
     lineJoin: 'round',
     className: 'route-polyline',
-    smoothFactor: 0,  // Disable path simplification
-    noClip: true      // Don't clip the path
+    smoothFactor: 0,
+    noClip: true
   }).addTo(map);
 
-  // Explicitly bring polyline to front
   routeLine.bringToFront();
 
-  console.log('Route line added with', coordinates.length, 'points');
-  console.log('Route line bounds:', routeLine.getBounds());
-
-  // Check the actual DOM element
-  setTimeout(() => {
-    const pathElement = routeLine.getElement();
-    if (pathElement) {
-      console.log('Route line DOM element found');
-      console.log('Path element tag:', pathElement.tagName);
-      console.log('Path element class:', pathElement.className);
-      console.log('Path computed stroke:', window.getComputedStyle(pathElement).stroke);
-      console.log('Path computed stroke-width:', window.getComputedStyle(pathElement).strokeWidth);
-      console.log('Path computed display:', window.getComputedStyle(pathElement).display);
-      console.log('Path computed visibility:', window.getComputedStyle(pathElement).visibility);
-    } else {
-      console.error('Route line DOM element NOT found!');
-    }
-  }, 500);
-
-  // Create custom marker icons with inline SVG
+  // Create custom marker icons
   const startIcon = L.divIcon({
     html: '<div style="width:30px;height:30px;background:#00ff00;border:3px solid white;border-radius:50%;box-shadow:0 2px 5px rgba(0,0,0,0.3);"></div>',
     className: 'custom-marker',
@@ -1827,87 +1568,23 @@ function renderMap(routeId, coordinates, config) {
     iconAnchor: [15, 15]
   });
 
-  // Add markers with custom icons
+  // Add markers
   L.marker([coordinates[0].lat, coordinates[0].lon], { icon: startIcon })
     .addTo(map)
     .bindPopup('<strong>Start:</strong> ' + config.startName);
-  console.log('Start marker added');
 
   const lastIdx = coordinates.length - 1;
   L.marker([coordinates[lastIdx].lat, coordinates[lastIdx].lon], { icon: endIcon })
     .addTo(map)
     .bindPopup('<strong>End:</strong> ' + config.endName);
-  console.log('End marker added');
 
   // Fit bounds
   map.fitBounds(routeLine.getBounds(), { padding: [50, 50] });
-  console.log('Bounds fitted');
 
   // Force resize after animation
   setTimeout(() => {
     map.invalidateSize();
-    console.log('Map invalidated for', routeId, 'new dimensions:', mapDiv.offsetWidth, 'x', mapDiv.offsetHeight);
-
-    // Debug: Check tile visibility
-    const tiles = mapDiv.querySelectorAll('.leaflet-tile');
-    console.log('Number of tiles in DOM:', tiles.length);
-    if (tiles.length > 0) {
-      console.log('First tile dimensions:', tiles[0].offsetWidth, 'x', tiles[0].offsetHeight);
-      console.log('First tile computed style:', window.getComputedStyle(tiles[0]).width, window.getComputedStyle(tiles[0]).height);
-    }
-
-    // Debug: Check route visibility
-    const overlayPane = mapDiv.querySelector('.leaflet-overlay-pane');
-    console.log('Overlay pane:', overlayPane ? 'found' : 'NOT FOUND');
-
-    if (overlayPane) {
-      const svgs = overlayPane.querySelectorAll('svg');
-      console.log('SVGs in overlay:', svgs.length);
-      if (svgs.length > 0) {
-        const svg = svgs[0];
-        console.log('SVG dimensions:', svg.getAttribute('width'), 'x', svg.getAttribute('height'));
-        console.log('SVG style:', svg.style.cssText);
-        console.log('SVG position:', window.getComputedStyle(svg).position);
-      }
-    }
-
-    const paths = mapDiv.querySelectorAll('path');
-    console.log('Number of path elements:', paths.length);
-    if (paths.length > 0) {
-      const pathStyle = window.getComputedStyle(paths[0]);
-      console.log('Path stroke:', pathStyle.stroke, 'stroke-width:', pathStyle.strokeWidth, 'visibility:', pathStyle.visibility);
-      console.log('Path d attribute length:', paths[0].getAttribute('d') ? paths[0].getAttribute('d').length : 0);
-
-      // Check path bounding box
-      try {
-        const bbox = paths[0].getBBox();
-        console.log('Path bbox:', bbox.x, bbox.y, bbox.width, bbox.height);
-
-        // Check if bbox is outside visible area
-        const svg = paths[0].closest('svg');
-        const svgRect = svg.getBoundingClientRect();
-        const pathRect = paths[0].getBoundingClientRect();
-        console.log('SVG screen position:', svgRect.x, svgRect.y, svgRect.width, svgRect.height);
-        console.log('Path screen position:', pathRect.x, pathRect.y, pathRect.width, pathRect.height);
-        console.log('SVG viewBox:', svg.getAttribute('viewBox'));
-        console.log('SVG transform:', svg.style.transform);
-
-        // Sample first few path coordinates
-        const dAttr = paths[0].getAttribute('d');
-        const firstCoords = dAttr.substring(0, 200);
-        console.log('First 200 chars of path d:', firstCoords);
-      } catch(e) {
-        console.log('Could not get bbox:', e.message);
-      }
-    }
-
-    // Debug: Check markers
-    const markers = mapDiv.querySelectorAll('.leaflet-marker-icon');
-    console.log('Number of markers:', markers.length);
-    if (markers.length > 0) {
-      console.log('First marker dimensions:', markers[0].offsetWidth, 'x', markers[0].offsetHeight);
-    }
-  }, 1000);
+  }, 500);
 }
 
 // Render elevation chart
@@ -1981,17 +1658,17 @@ function renderElevationChart(routeId, coordinates) {
 </script>
 
 <!-- Finisher's T-Shirt Product -->
-<div id="finishers-gear" class="finishers-tshirt-horizontal" style="margin: 4rem auto 2rem; max-width: 1000px; scroll-margin-top: 2rem;">
+<div id="finishers-gear" class="finishers-tshirt" style="margin: 4rem auto 3rem; max-width: 900px; scroll-margin-top: 2rem;">
 <a href="https://mallorcacycleshuttle.company.site/products/Andratx-Pollenca-Finishers-Unisex-Classic-T-p788401800" target="_blank" rel="noopener noreferrer" style="text-decoration: none; display: block;">
-<div style="background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%); border-radius: 1rem; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; display: flex; flex-wrap: wrap; align-items: center;">
+<div style="background: var(--bg-primary); border: 1px solid var(--border-light); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); overflow: hidden; transition: var(--transition-fast); display: flex; flex-wrap: wrap; align-items: center;">
 <div style="flex: 1 1 350px; min-width: 300px;">
 <img src="/img/finishers-tshirt-andratx-pollenca.webp" alt="Andratx-Pollença Finisher's T-Shirt" style="width: 100%; height: 100%; object-fit: cover; display: block;">
 </div>
 <div style="flex: 1 1 400px; padding: 2.5rem;">
-<h2 style="color: var(--brand, #f10000); margin-bottom: 0.75rem; font-size: 1.75rem; font-weight: 700;">Commemorate Your Ride</h2>
-<h3 style="color: #333; font-size: 1.2rem; font-weight: 600; margin-bottom: 0.75rem;">Andratx-Pollença Finisher's T-Shirt</h3>
-<p style="color: #666; font-size: 1rem; margin-bottom: 1.5rem; line-height: 1.6;">Celebrate completing this epic route with our exclusive finisher's t-shirt. Available in multiple colors and sizes.</p>
-<div style="display: inline-block; padding: 0.9rem 2rem; background: linear-gradient(135deg, var(--brand, #f10000) 0%, #ff3333 100%); color: white; border-radius: 0.5rem; font-size: 1rem; font-weight: 700; box-shadow: 0 4px 15px rgba(241, 0, 0, 0.3);">
+<h2 style="color: var(--brand-color); margin-bottom: 0.75rem; font-size: 1.75rem; font-weight: 600;">Commemorate Your Ride</h2>
+<h3 style="color: var(--text-primary); font-size: 1.125rem; font-weight: 600; margin-bottom: 0.75rem;">Andratx-Pollença Finisher's T-Shirt</h3>
+<p style="color: var(--text-secondary); font-size: 1rem; margin-bottom: 1.5rem; line-height: 1.5;">Celebrate completing this epic route with our exclusive finisher's t-shirt. Available in multiple colors and sizes.</p>
+<div style="display: inline-block; padding: 0.75rem 1.75rem; background: var(--brand-color); color: white; border-radius: var(--radius-sm); font-size: 1rem; font-weight: 600; box-shadow: 0 2px 8px rgba(241, 0, 0, 0.2);">
 Shop Now →
 </div>
 </div>
@@ -2001,90 +1678,20 @@ Shop Now →
 
 <style>
 /* Hover effects for finisher's t-shirt */
-.finishers-tshirt-horizontal a > div:hover {
-transform: translateY(-4px);
-box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+.finishers-tshirt a > div:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(241, 0, 0, 0.2);
 }
 
 /* Mobile responsive */
 @media (max-width: 768px) {
-.finishers-tshirt-horizontal > a > div {
-flex-direction: column;
-}
+  .finishers-tshirt > a > div {
+    flex-direction: column;
+  }
 
-.finishers-tshirt-horizontal > a > div > div:first-child {
-max-height: 350px;
-}
+  .finishers-tshirt > a > div > div:first-child {
+    max-height: 350px;
+  }
 }
 </style>
-
-<style>
-/* Route Direction Headers - Premium Glassmorphism */
-.route-direction-header {
-  font-size: 2rem;
-  font-weight: 800;
-  padding: 2rem 2.5rem;
-  margin: 4rem 0 2.5rem;
-  background: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 24px;
-  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.08);
-  color: #111;
-  position: relative;
-  overflow: hidden;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  text-align: center;
-  letter-spacing: -0.02em;
-  scroll-margin-top: 2rem;
-}
-
-.route-direction-header::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, rgba(241, 0, 0, 0.08) 0%, rgba(255, 51, 51, 0.03) 100%);
-  z-index: 0;
-  border-radius: 24px;
-}
-
-.route-direction-header::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 5px;
-  background: linear-gradient(90deg,
-    transparent 0%,
-    rgba(241, 0, 0, 0.6) 20%,
-    rgba(241, 0, 0, 1) 50%,
-    rgba(241, 0, 0, 0.6) 80%,
-    transparent 100%
-  );
-  border-radius: 0 0 24px 24px;
-  transition: height 0.4s ease;
-}
-
-.route-direction-header:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 16px 64px rgba(241, 0, 0, 0.12);
-  border-color: rgba(241, 0, 0, 0.2);
-}
-
-.route-direction-header:hover::after {
-  height: 6px;
-}
-
-/* Add directional arrows via text content */
-.route-direction-header {
-  position: relative;
-  z-index: 1;
-}
-
-</style>
-

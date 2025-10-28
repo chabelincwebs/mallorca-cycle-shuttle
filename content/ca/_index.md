@@ -80,13 +80,6 @@ stats:
 routes_title: "Rutes ciclistes populars"
 
 featured_routes:
-  - title: "Sa Calobra"
-    distance: "20 km"
-    elevation: "682m"
-    image: "/img/route-sa-calobra.webp"
-    link: "/ca/shuttle-bici/sa-calobra-guide/"
-    badge: "La més popular"
-
   - title: "Port d'Andratx a Port de Pollença"
     distance: "121 km"
     elevation: "2500m"
@@ -100,6 +93,20 @@ featured_routes:
     image: "/img/route-big-daddy.webp"
     link: "/ca/shuttle-bici/big-daddy-challenge/"
     badge: "Repte"
+
+  - title: "Sa Calobra"
+    distance: "20 km"
+    elevation: "682m"
+    image: "/img/route-sa-calobra.webp"
+    link: "/ca/shuttle-bici/sa-calobra-guide/"
+    badge: "La més popular"
+
+  - title: "Cap de Formentor"
+    distance: "40 km"
+    elevation: "1500m"
+    image: "/img/cap-formentor-route.webp"
+    link: "/ca/shuttle-bici/cap-formentor-guia/"
+    badge: "Imprescindible"
 
 # ============================================
 # TESTIMONIALS

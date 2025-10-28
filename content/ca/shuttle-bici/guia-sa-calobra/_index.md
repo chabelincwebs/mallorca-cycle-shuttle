@@ -6,6 +6,39 @@ hero_image: "/img/sa-calobra-hero-master-guide.webp"
 hero_title: "Guia Mestra: Ciclisme Sa Calobra"
 layout: "guide-hero"
 type: "shuttle-bici"
+hero_css: |
+  .hero-section {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+    animation: kenBurnsZoom 10s ease-in-out infinite alternate;
+    z-index: 0;
+  }
+
+  .hero-section > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  @keyframes kenBurnsZoom {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.3);
+    }
+  }
 
 stats:
   - icon: "📏"

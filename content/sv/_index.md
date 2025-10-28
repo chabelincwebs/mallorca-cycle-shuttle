@@ -80,13 +80,6 @@ stats:
 routes_title: "Populära Cykelrutter"
 
 featured_routes:
-  - title: "Sa Calobra"
-    distance: "20 km"
-    elevation: "682m"
-    image: "/img/route-sa-calobra.webp"
-    link: "/sv/cykel-shuttle/sa-calobra-guide/"
-    badge: "Mest Populär"
-
   - title: "Port d'Andratx till Port de Pollença"
     distance: "121 km"
     elevation: "2500m"
@@ -100,6 +93,20 @@ featured_routes:
     image: "/img/route-big-daddy.webp"
     link: "/sv/cykel-shuttle/big-daddy-challenge/"
     badge: "Utmaning"
+
+  - title: "Sa Calobra"
+    distance: "20 km"
+    elevation: "682m"
+    image: "/img/route-sa-calobra.webp"
+    link: "/sv/cykel-shuttle/sa-calobra-guide/"
+    badge: "Mest Populär"
+
+  - title: "Cap de Formentor"
+    distance: "40 km"
+    elevation: "1500m"
+    image: "/img/cap-formentor-route.webp"
+    link: "/sv/cykel-shuttle/cap-formentor-guide/"
+    badge: "Omissbar"
 
 # ============================================
 # TESTIMONIALS
