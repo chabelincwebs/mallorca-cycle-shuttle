@@ -2,6 +2,7 @@
 title: "Mallorca Bicycle Rescue"
 description: "Island-wide cyclist pickup if your bike or body breaks. Simple. Fast. Reliable."
 translationKey: rescue-home
+type: "bike-rescue"
 hero_title: "Mallorca Bicycle Rescue"
 hero_subtitle: "If your bike or your body breaks, we get you where you need to be."
 

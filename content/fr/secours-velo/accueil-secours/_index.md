@@ -2,6 +2,7 @@
 title: "Secours Cycliste Mallorca"
 description: "Prise en charge de cyclistes sur toute l'île si ton vélo ou ton corps flanche. Simple. Rapide. Fiable."
 translationKey: rescue-home
+type: "bike-rescue"
 hero_title: "Secours Cycliste Mallorca"
 hero_subtitle: "Si ton vélo ou ton corps flanche, on t'emmène là où tu dois être."
 

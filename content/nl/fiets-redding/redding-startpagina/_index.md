@@ -2,6 +2,7 @@
 title: "Mallorca Fiets Reddingsdienst"
 description: "Eilandwijde ophaal van wielrenners als je fiets of lichaam het begeeft. Simpel. Snel. Betrouwbaar."
 translationKey: rescue-home
+type: "bike-rescue"
 hero_title: "Mallorca Fiets Reddingsdienst"
 hero_subtitle: "Als je fiets of je lichaam het begeeft, brengen we je waar je moet zijn."
 

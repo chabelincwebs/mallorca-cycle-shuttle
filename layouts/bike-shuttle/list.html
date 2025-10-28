@@ -1,0 +1,20 @@
+{{ define "title" }}{{ .Title }}{{ end }}
+
+{{ define "main" }}
+<section>
+  <div class="container content-wrap">
+    <article class="prose content-prose">
+      <h1>{{ .Title }}</h1>
+      {{ with .Content }}{{ . }}{{ end }}
+
+      {{ if .Pages }}
+        <ul>
+          {{ range .Pages }}
+            <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+          {{ end }}
+        </ul>
+      {{ end }}
+    </article>
+  </div>
+</section>
+{{ end }}
