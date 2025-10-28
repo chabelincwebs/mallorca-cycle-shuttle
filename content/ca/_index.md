@@ -9,7 +9,7 @@ hero_title: "Treu el màxim partit de Mallorca"
 hero_subtitle: "Busos llançadora programats, rescat de bicicletes i trasllats a l'aeroport - per ciclistes i per a ciclistes"
 
 hero_ctas:
-  - text: "Reserva el teu shuttle"
+  - text: "Reserva el teu bus llançadora"
     url: "https://mallorcacycleshuttle.company.site/ca/products/Scheduled-Bike-Buses-c15728235"
     style: "secondary"
   - text: "Demana el rescat de bici"
@@ -45,7 +45,7 @@ services:
 # ============================================
 content_blocks:
   - title: "Per què els ciclistes ens trien"
-    text: "Des de 2015 som el referent a Mallorca per a ciclistes: operem shuttles, fem rescats per tota l'illa i cuidem les bicicletes com si fossin nostres. Comptaràs amb un equip amable i fiable, autobusos còmodes i coneixement local en què pots confiar."
+    text: "Des de 2015 som el referent a Mallorca per a ciclistes: operem busos llançadora, fem rescats per tota l'illa i cuidem les bicicletes com si fossin nostres. Comptaràs amb un equip amable i fiable, autobusos còmodes i coneixement local en què pots confiar."
     image: "/img/content-block-1.webp"
     cta:
       text: "La nostra història"
@@ -111,11 +111,11 @@ testimonials:
     name: "Sarah M."
     location: "Països Baixos"
 
-  - quote: "El shuttle cap a Sa Calobra va ser perfecte. Gran conductor, transport segur de les bicis i vam començar exactament on volíem, amb cames fresques. Val cada cèntim."
+  - quote: "El bus llançadora cap a Sa Calobra va ser perfecte. Gran conductor, transport segur de les bicis i vam començar exactament on volíem, amb cames fresques. Val cada cèntim."
     name: "Marco R."
     location: "Alemanya"
 
-  - quote: "Els hem fet servir 14 vegades al llarg dels anys per a la setmana del club a Mallorca. Trasllat a l'aeroport i shuttle programat fins a Andratx. La tranquil·litat ja val la pena. Saben què fan."
+  - quote: "Els hem fet servir 14 vegades al llarg dels anys per a la setmana del club a Mallorca. Trasllat a l'aeroport i bus llançadora programat fins a Andratx. La tranquil·litat ja val la pena. Saben què fan."
     name: "Emily & Tom"
     location: "Regne Unit"
 
@@ -161,25 +161,25 @@ faq:
   - question: "Què fem exactament?"
     answer: "Operem un bus llançadora regular per portar-te amb la teva bici a l'inici de les rutes icòniques d'anada de Mallorca (<a href='https://mallorcacycleshuttle.company.site/ca/products/' target='_blank' rel='noopener noreferrer'>horaris aquí</a>). Oferim rescat de bicicleta i ciclista en cas d'avaria (<a href='https://mallorcacycleshuttle.company.site/ca/products/' target='_blank' rel='noopener noreferrer'>enllaç aquí</a>). I fem trasllats privats a l'aeroport amb pressupost instantani (<a href='/ca/mallorca-airport-transfers/'>aquí</a>)."
 
-  - question: "D'on surten i cap on van els shuttles programats?"
+  - question: "D'on surten i cap on van els busos llançadora programats?"
     answer: "Les rutes actuals són <a href='https://mallorcacycleshuttle.company.site/ca/products/' target='_blank' rel='noopener noreferrer'>aquí</a>."
 
-  - question: "Com funciona el servei de shuttle?"
-    answer: "Tria el shuttle que millor t'encaixi. Reserva amb antelació, les places són limitades. Arriba almenys 15 minuts abans de la sortida amb el teu DNI o el bitllet (al mòbil és ideal) per carregar la bici. <a href='https://mallorcacycleshuttle.company.site/ca/products/' target='_blank' rel='noopener noreferrer'>Reserva aquí</a>. Gaudeix del trajecte fins a la destinació i estima la tornada en bici. Simple, eficient i essencial."
+  - question: "Com funciona el servei de bus llançadora?"
+    answer: "Tria el bus llançadora que millor t'encaixi. Reserva amb antelació, les places són limitades. Arriba almenys 15 minuts abans de la sortida amb el teu DNI o el bitllet (al mòbil és ideal) per carregar la bici. <a href='https://mallorcacycleshuttle.company.site/ca/products/' target='_blank' rel='noopener noreferrer'>Reserva aquí</a>. Gaudeix del trajecte fins a la destinació i estima la tornada en bici. Simple, eficient i essencial."
 
-  - question: "Quan funcionen els shuttles programats?"
+  - question: "Quan funcionen els busos llançadora programats?"
     answer: "Durant les principals temporades ciclistes de primavera i tardor. L'horari complet del bus de bicis és <a href='https://mallorcacycleshuttle.company.site/ca/products/' target='_blank' rel='noopener noreferrer'>aquí</a>."
 
   - question: "Com reservo?"
     answer: "A través del nostre sistema de reserves en línia, just <a href='https://mallorcacycleshuttle.company.site/ca/products/' target='_blank' rel='noopener noreferrer'>aquí</a>."
 
   - question: "Què passa si arribo tard?"
-    answer: "Per garantir un servei eficient, hem de complir l'horari anunciat i no podem esperar els endarrerits. Arriba al punt de sortida abans de l'hora de càrrega indicada al teu bitllet. Com que la teva absència pot impedir que altres reservin, no podem reemborsar els shuttles perduts."
+    answer: "Per garantir un servei eficient, hem de complir l'horari anunciat i no podem esperar els endarrerits. Arriba al punt de sortida abans de l'hora de càrrega indicada al teu bitllet. Com que la teva absència pot impedir que altres reservin, no podem reemborsar els busos llançadora perduts."
 
   - question: "Quins són els vostres termes i condicions?"
     answer: "Sigues puntual. Presenta el teu document d'identitat o el bitllet abans de l'hora de càrrega indicada. Termes i condicions complets aquí."
 
-  - question: "Shuttles privats"
+  - question: "Busos llançadora privats"
     answer: "Si sou un grup i voleu anar a un lloc fora d'horari o a una altra hora, escriu a admin@mallorcacycleshuttle.com amb la data, lloc de recollida, destinació i mida del grup, i farem el possible per encaixar-vos."
 
   - question: "Quins tipus de pagament accepteu?"
@@ -189,9 +189,9 @@ faq:
     answer: "Sí. Hi ha places limitades, així que millor reservar aviat per no quedar-te sense. Recomanem reservar al principi de l'estada: cames fresques i un dia de marge si el temps falla. <a href='https://mallorcacycleshuttle.company.site/ca/products/' target='_blank' rel='noopener noreferrer'>Reserva aquí</a>."
 
   - question: "Cancel·lacions i reemborsaments"
-    answer: "Podem cancel·lar o suspendre serveis si cal i sense avís previ. Si es cancel·la un shuttle, hi ha reemborsament total o canvi a un altre bus. Si vols canviar la data, pot ser possible i es decideix cas per cas. Per a tota la informació, consulta els Termes i Condicions complets aquí."
+    answer: "Podem cancel·lar o suspendre serveis si cal i sense avís previ. Si es cancel·la un bus llançadora, hi ha reemborsament total o canvi a un altre bus. Si vols canviar la data, pot ser possible i es decideix cas per cas. Per a tota la informació, consulta els Termes i Condicions complets aquí."
 
-  - question: "Quant duren els shuttles?"
+  - question: "Quant duren els bus llançadora?s?"
     answer: "Màxim dues recollides per servei. Exemple cap a Andratx: Port de Pollença, càrrega de bicis a les 07:15; després Alcúdia, càrrega a les 07:35; arribada mitjana a Andratx cap a les 09:15 segons el trànsit."
 
   - question: "Hi ha lavabos als autobusos?"

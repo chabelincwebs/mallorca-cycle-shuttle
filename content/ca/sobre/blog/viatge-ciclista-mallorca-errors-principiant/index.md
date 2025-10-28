@@ -15,7 +15,7 @@ Duu document amb foto i un telèfon amb WhatsApp.
 Respecta l'asfalt: agarrant però relliscós amb humitat.
 Planifica dies A/B – no et buidis el dia 1.
 Cobreix-te i hidrata't. Protector solar, bidons, electròlits.
-Reserva els shuttles d'hora a la temporada. Porta <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank">Mallorca Bicycle Rescue</a> a la butxaca.
+Reserva els busos llançadora d'hora a la temporada. Porta <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank">Mallorca Bicycle Rescue</a> a la butxaca.
 
 ## 1) Adormir-te
 

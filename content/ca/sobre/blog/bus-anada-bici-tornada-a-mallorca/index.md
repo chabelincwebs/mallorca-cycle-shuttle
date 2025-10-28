@@ -22,7 +22,7 @@ Prenem regularment el <a href="https://mallorcacycleshuttle.company.site/product
 
 Hem pedalat a Mallorca durant anys, però agafar un <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">bus per a bicicletes</a> d'anada va obrir noves carreteres, pujades i pobles com Andratx, Estellencs i Banyalbufar. El meu límit diari còmode està al voltant de 110 km (unes 70 milles). Fer aquesta distància en línia recta d'A a B en lloc d'un bucle va ser un canvi radical.
 
-Si, com jo, vens a Mallorca per pedalar, potser dubtaràs a pujar a un bus en lloc de quedar-te sobre dues rodes. No ho facis. Arribaràs a parts impressionants de l'illa que d'altra manera són difícils d'incloure en una setmana completa. Gràcies al shuttle finalment vam ratl·lar pujades i rutes que se'ns escapaven en viatges anteriors.
+Si, com jo, vens a Mallorca per pedalar, potser dubtaràs a pujar a un bus en lloc de quedar-te sobre dues rodes. No ho facis. Arribaràs a parts impressionants de l'illa que d'altra manera són difícils d'incloure en una setmana completa. Gràcies al bus llançadora finalment vam ratl·lar pujades i rutes que se'ns escapaven en viatges anteriors.
 
 ## Punts destacats i plans
 

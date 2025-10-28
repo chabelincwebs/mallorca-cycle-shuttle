@@ -1,10 +1,10 @@
 ---
 title: "Ajudant ciclistes des de 2015"
-description: "Celebrant una dècada donant suport a ciclistes a Mallorca amb serveis de shuttle, rescat de bicicletes i compromís amb aventures ciclistes segures i sostenibles."
+description: "Celebrant una dècada donant suport a ciclistes a Mallorca amb serveis de bus llançadora, rescat de bicicletes i compromís amb aventures ciclistes segures i sostenibles."
 date: 2025-02-01
 category: "Notícies de ciclisme"
 featured_image: "/img/blog/11-years-helping-cyclists.webp"
-excerpt: "2025 marca una fita emocionant en celebrar que ajudem ciclistes des de 2015. Descobreix les novetats d'aquest any, des de carreteres millorades fins a nous serveis de shuttle des del Sud."
+excerpt: "2025 marca una fita emocionant en celebrar que ajudem ciclistes des de 2015. Descobreix les novetats d'aquest any, des de carreteres millorades fins a nous serveis de bus llançadora des del Sud."
 translationKey: "blog-11-years-helping-cyclists"
 ---
 
@@ -14,7 +14,7 @@ translationKey: "blog-11-years-helping-cyclists"
 
 No ho hauríem pogut fer sense vosaltres, la increïble comunitat ciclista. Gràcies!
 
-Aquest any, redoblam el nostre compromís d'ajudar a fer que cada ruta sigui segura, sostenible i inoblidable, tant per a ciclistes com per a locals. Per primera vegada, finalment introduïm <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">serveis de shuttle programats</a> des del Sud! (Més detalls a baix.)
+Aquest any, redoblam el nostre compromís d'ajudar a fer que cada ruta sigui segura, sostenible i inoblidable, tant per a ciclistes com per a locals. Per primera vegada, finalment introduïm <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">serveis de bus llançadora programats</a> des del Sud! (Més detalls a baix.)
 
 Tant si visiteu Mallorca per primera vegada com si torneu per una altra temporada increïble, aquí teniu tot el que necessiteu saber per aprofitar al màxim la vostra aventura ciclista el 2025.
 
@@ -73,11 +73,11 @@ Us encanta compartir les vostres aventures ciclistes a Mallorca? <a href="https:
 
 No oblideu etiquetar les vostres fotos amb @mallorcabikefotos – ens encantaria destacar-vos a les nostres xarxes!
 
-## Nous serveis de shuttle des del Sud – Per fi!
+## Nous serveis de bus llançadora des del Sud – Per fi!
 
 Els ciclistes que s'allotgen al sud de Mallorca ara poden arribar a les millors rutes ciclistes de l'illa més fàcilment que mai!
 
-Els nostres nous <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">serveis de shuttle programats</a> connecten:
+Els nostres nous <a href="https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235" target="_blank">serveis de bus llançadora programats</a> connecten:
 
 **Playa de Palma; Santa Ponça & Paguera** amb **Port de Pollença** i **Lluc**, les portes d'entrada a Cap de Formentor, Sa Calobra i la icònica ruta costanera MA-10.
 

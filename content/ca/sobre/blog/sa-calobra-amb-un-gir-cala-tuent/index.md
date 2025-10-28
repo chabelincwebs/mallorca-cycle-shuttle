@@ -44,7 +44,7 @@ Hi ha un restaurant a Cala Tuent: Es Vergeret. Una bonica terrassa sobre el mar.
 - **Extra de Cala Tuent:** ~10,5 km, +334 m.
 - **Dia gran clàssic des de Port de Pollença/Alcúdia/Can Picafort incloent Cala Tuent:** ~113 km, +2.374 m.
 - **Sense Cala Tuent:** ~103 km, +2.040 m.
-- **Opció estalvia-temps (veure shuttle a sota):** Lluc → Sa Calobra via Cala Tuent → tornada a Port de Pollença ~78 km, +1.583 m.
+- **Opció estalvia-temps (veure bus llançadora a sota):** Lluc → Sa Calobra via Cala Tuent → tornada a Port de Pollença ~78 km, +1.583 m.
 - **Sense Cala Tuent:** ~68 km, +1.249 m.
 
 ## Maneres intel·ligents d'incloure-ho
