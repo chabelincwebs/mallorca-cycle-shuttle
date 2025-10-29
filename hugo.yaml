@@ -229,6 +229,34 @@ languages:
         - name: "Shuttlesalgsvilkår"
           url: "/sykkel-shuttle/shuttle-salgsvilkar/"
           weight: 5
+  da:
+    languageName: "Dansk"
+    weight: 10
+    contentDir: content/da
+    menus:
+      main:
+        - name: "Redningsvilkår"
+          url: "/cykel-redning/redning-salgsvilkar/"
+          weight: 1
+        - name: "Private Shuttlebestillinger"
+          url: "/cykel-shuttle/private-shuttle-bestillinger/"
+          weight: 2
+      legal:
+        - name: "Juridisk Meddelelse"
+          url: "/om/juridisk-meddelelse/"
+          weight: 1
+        - name: "Cookiepolitik"
+          url: "/om/cookiepolitik/"
+          weight: 2
+        - name: "Privatlivspolitik"
+          url: "/om/privatlivspolitik/"
+          weight: 3
+        - name: "Redningssalgsvilkår"
+          url: "/cykel-redning/redning-salgsvilkar/"
+          weight: 4
+        - name: "Shuttlesalgsvilkår"
+          url: "/cykel-shuttle/shuttle-salgsvilkar/"
+          weight: 5
 
 markup:
   goldmark:

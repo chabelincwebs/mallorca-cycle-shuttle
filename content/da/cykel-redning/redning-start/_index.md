@@ -1,0 +1,85 @@
+---
+title: "Mallorca Cykelredning"
+description: "Ø-omfattende cyklist-afhentning hvis cyklen eller kroppen svigter. Enkelt. Hurtigt. Pålideligt."
+translationKey: rescue-home
+type: "bike-rescue"
+hero_title: "Mallorca Cykelredning"
+hero_subtitle: "Hvis din cykel eller krop svigter, får vi dig derhen hvor du skal være."
+
+cta:
+  label: "Køb redningsdækning"
+  url: "https://mallorcacycleshuttle.company.site/products/"
+
+note: "Hurtigt, enkelt, ø-omfattende."
+
+features:
+  - title: "Hvorfor cyklister køber"
+    text: "Tryghed – udforsk øen uden bekymringer. Hele din dag er ikke ødelagt—heller ikke gruppens."
+    image: "/img/es-colomer.webp"
+  - title: "Spar tid & stress"
+    text: "Undgå taxi-zone-hovedpine, sprogkomplikationer og lang venten ved vejkanten."
+    image: "/img/peace-sign-mbr.webp"
+  - title: "Klar når det behøves"
+    text: "Ét opkald, WhatsApp os din placering, vi bekræfter og sender køretøj ETA."
+    image: "/img/couple-lighthouse.webp"
+
+pricing:
+  - label: "Dæk dit ophold"
+    price: "Fra €16"
+    desc: "Én rytter + én specificeret cykel. Få en police for dig selv og dine cykelvenner."
+    image: "/img/cdf.webp"
+  - label: "Maksimer din tid"
+    price: "Pakker med god værdi"
+    desc: "Du er her i begrænset tid, så at vente ved vejkanten er sandsynligvis ikke den bedste måde at bruge din dag på!"
+    image: "/img/down-cdf.webp"
+  - label: "Cykel eller Krop"
+    price: "Bedst for længere ophold"
+    desc: "Hurtigt, enkelt, ø-omfattende. [Køb nu](https://mallorcacycleshuttle.company.site/products/)"
+    image: "/img/climbing-sc.webp"
+
+good_to_know_title: "Godt at vide"
+good_to_know:
+  - "Typisk respons: ~30–40 minutter; kan være længere på meget afsides steder som Port de Sa Calobra under forårets rush-tid."
+  - "Driftstider: fra én time efter solopgang til solnedgang."
+  - "Kun veje: vi afhenter cyklister fra veje et standard (ikke-4×4) køretøj kan køre på."
+  - "Medicinske nødsituationer: ring til ambulance først; vi sikrer/transporterer din cykel (cykler passer ikke i ambulancer)."
+
+faq_title: "Ofte Stillede Spørgsmål"
+
+final_cta_title: "Klar til Tryghed?"
+final_cta_text: "Skaf dig redningsdækning i dag og cykl bekymringsfrit over hele Mallorca"
+
+faq:
+  - q: "Er det én police per rytter?"
+    a: "Ja. Én police = én person + én specificeret cykel. ID kan anmodes om for at forhindre at en gruppe prøver at dække alle med én police."
+  - q: "Er leje- eller lånte cykler dækket?"
+    a: "Ja—så længe det er cyklen specificeret ved køb (forhindrer gruppemisbrug)."
+  - q: "Hvor vil I tage mig?"
+    a: "Dit valg: nærmeste åbne cykelbutik, dit overnatningssted, eller dit udlejningssted."
+  - q: "Hvor længe skal jeg vente?"
+    a: "Målet er 30–40 minutter; kan være længere i afsides områder (f.eks. Port de Sa Calobra på meget travle dage). Vi har køretøjer over hele øen og kan bringe ekstra støtte ind."
+  - q: "Hvor mange krav kan jeg fremsætte?"
+    a: "Én gang per police per uge per problem (f.eks. 14-dages dækning inkluderer to krav for samme problem). Forskellige problemer er ikke begrænset, men misbrug kan føre til annullering og refusion af ubrugt del."
+  - q: "Minimumsafstand fra butik/hotel?"
+    a: "Mindst 1 km fra dit overnatningssted eller en åben cykelbutik."
+  - q: "Hvornår kan jeg købe?"
+    a: "Mindst 12 timer før du har brug for det. Vi er redning og genvinding, ikke en taxa."
+  - q: "Opererer I om natten?"
+    a: "Nej. Fra én time efter solopgang til solnedgang."
+  - q: "Medicinske problemer?"
+    a: "Ring til ambulance. Vi afhenter og tager vare på din cykel, men vi er ikke læger."
+  - q: "Afhentning udenfor vej?"
+    a: "Nej. Du skal være på en vej et standard (ikke-4×4) køretøj kan køre på."
+  - q: "Tandemcykler, håndcykler, ligge cykler?"
+    a: "For øjeblikket ikke dækket—de passer ikke i alle køretøjer."
+  - q: "El-cykler?"
+    a: "Dækket for mekaniske problemer. Et fladt batteri er ikke en redningsgrund; venligst håndter opladning—betragt det som en læringserfaring."
+  - q: "Løb/sportiv?"
+    a: "Ikke dækket. Vi kan heller ikke operere under Mallorca 312 hvor der er vejafspærringer."
+  - q: "Kan jeg annullere?"
+    a: "Ja—fuld refusion så længe dækningen ikke er startet."
+  - q: "Hvilken information skal jeg bruge for at købe?"
+    a: "Navn, kontaktdetaljer, overnatningsadresse, startdato og cykeldetaljer."
+  - q: "Kan jeg skifte cykel under opholdet?"
+    a: "Ja—e-mail os mindst 12 timer i forvejen og vi opdaterer policen."
+---
