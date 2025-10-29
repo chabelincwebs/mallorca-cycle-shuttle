@@ -201,6 +201,34 @@ languages:
         - name: "Shuttleförsäljningsvillkor"
           url: "/cykel-shuttle/shuttle-forsaljningsvillkor/"
           weight: 5
+  nb:
+    languageName: "Norsk"
+    weight: 9
+    contentDir: content/nb
+    menus:
+      main:
+        - name: "Redningsvilkår"
+          url: "/sykkel-redning/redning-salgsvilkar/"
+          weight: 1
+        - name: "Private Shuttlebestillinger"
+          url: "/sykkel-shuttle/private-shuttle-bestillinger/"
+          weight: 2
+      legal:
+        - name: "Juridisk Merknad"
+          url: "/om/juridisk-merknad/"
+          weight: 1
+        - name: "Informasjonskapselpolicy"
+          url: "/om/informasjonskapselpolicy/"
+          weight: 2
+        - name: "Personvernpolicy"
+          url: "/om/personvernpolicy/"
+          weight: 3
+        - name: "Redningssalgsvilkår"
+          url: "/sykkel-redning/redning-salgsvilkar/"
+          weight: 4
+        - name: "Shuttlesalgsvilkår"
+          url: "/sykkel-shuttle/shuttle-salgsvilkar/"
+          weight: 5
 
 markup:
   goldmark:
