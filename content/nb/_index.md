@@ -59,7 +59,7 @@ content_blocks:
     image: "/img/content-block-1.webp"
     cta:
       text: "Les Vår Historie"
-      url: "/nb/om/blogg/"
+      url: "/nb/about/blog/om-oss/"
 
   - title: "Utforsk Mallorcas Beste Ruter"
     text: "Fra den utfordrende Andratx-Pollença kyst-til-kyst til de legendariske klatringene fra havnene i Sa Calobra og Valldemossa til de stille innlandsveiene, Mallorca er et sykkelparadis i verdensklasse. Våre omfattende ruteguider hjelper deg med å planlegge dine perfekte enveisturer med detaljerte kart, høydeprofiler og innsidertips."
@@ -90,33 +90,26 @@ stats:
 routes_title: "Uunngåelig Mallorca"
 
 featured_routes:
-  - title: "Port d'Andratx til Port de Pollença"
+  - title: "Andratx til Pollença"
     distance: "121 km"
     elevation: "2500m"
     image: "/img/route-andratx-pollenca.webp"
     link: "/nb/sykkel-shuttle/andratx-pollenca-guide/"
-    badge: "Episk"
+    badge: "Mestersykkelguide"
 
   - title: "Big Daddy Challenge"
     distance: "167 km"
     elevation: "4,200m"
     image: "/img/route-big-daddy.webp"
     link: "/nb/sykkel-shuttle/big-daddy-challenge/"
-    badge: "Utfordring"
+    badge: "Mestersykkelguide"
 
-  - title: "Sa Calobra"
+  - title: "Sa Calobra Guide"
     distance: "20 km"
     elevation: "682m"
     image: "/img/route-sa-calobra.webp"
     link: "/nb/sykkel-shuttle/sa-calobra-guide/"
-    badge: "Mest Populær"
-
-  - title: "Cap de Formentor"
-    distance: "40 km"
-    elevation: "1500m"
-    image: "/img/cap-formentor-route.webp"
-    link: "/nb/sykkel-shuttle/cap-formentor-guide/"
-    badge: "Uunngåelig"
+    badge: "Mestersykkelguide"
 
 # ============================================
 # TESTIMONIALS

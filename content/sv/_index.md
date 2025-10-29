@@ -59,7 +59,7 @@ content_blocks:
     image: "/img/content-block-1.webp"
     cta:
       text: "Läs Vår Historia"
-      url: "/sv/om/blogg/"
+      url: "/sv/about/blog/om-oss/"
 
   - title: "Utforska Mallorcas Bästa Rutter"
     text: "Från den utmanande Andratx-Pollença kust-till-kust till de legendariska klättringarna från hamnarna i Sa Calobra och Valldemossa till de tysta vägarna inåt landet, Mallorca är ett cykelparadis i världsklass. Våra omfattande ruttguider hjälper dig att planera dina perfekta enkelturer med detaljerade kartor, höjdprofiler och insidertips."
@@ -90,33 +90,26 @@ stats:
 routes_title: "Omissbar Mallorca"
 
 featured_routes:
-  - title: "Port d'Andratx till Port de Pollença"
+  - title: "Andratx till Pollença"
     distance: "121 km"
     elevation: "2500m"
     image: "/img/route-andratx-pollenca.webp"
     link: "/sv/cykel-shuttle/andratx-pollenca-guide/"
-    badge: "Episk"
+    badge: "Mästarcykelguide"
 
   - title: "Big Daddy Challenge"
     distance: "167 km"
     elevation: "4,200m"
     image: "/img/route-big-daddy.webp"
     link: "/sv/cykel-shuttle/big-daddy-challenge/"
-    badge: "Utmaning"
+    badge: "Mästarcykelguide"
 
-  - title: "Sa Calobra"
+  - title: "Sa Calobra Guide"
     distance: "20 km"
     elevation: "682m"
     image: "/img/route-sa-calobra.webp"
     link: "/sv/cykel-shuttle/sa-calobra-guide/"
-    badge: "Mest Populär"
-
-  - title: "Cap de Formentor"
-    distance: "40 km"
-    elevation: "1500m"
-    image: "/img/cap-formentor-route.webp"
-    link: "/sv/cykel-shuttle/cap-formentor-guide/"
-    badge: "Omissbar"
+    badge: "Mästarcykelguide"
 
 # ============================================
 # TESTIMONIALS

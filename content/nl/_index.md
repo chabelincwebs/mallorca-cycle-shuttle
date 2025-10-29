@@ -59,7 +59,7 @@ content_blocks:
     image: "/img/content-block-1.webp"
     cta:
       text: "Lees ons verhaal"
-      url: "/nl/about/blog/"
+      url: "/nl/about/blog/over-ons/"
 
   - title: "Ontdek de beste routes van Mallorca"
     text: "Van de uitdagende Andratx–Pollença coast-to-coast en de legendarische klimmen vanaf de havens van Sa Calobra en Valldemossa tot de rustige binnenwegen – Mallorca is een fietsparadijs van wereldklasse. Onze uitgebreide routegidsen helpen je perfecte enkele reis ritten te plannen met gedetailleerde kaarten, hoogteprofielen en insider-tips."
@@ -90,33 +90,26 @@ stats:
 routes_title: "Onmisbaar Mallorca"
 
 featured_routes:
-  - title: "Port d'Andratx naar Port de Pollença"
+  - title: "Andratx naar Pollença"
     distance: "121 km"
     elevation: "2500m"
     image: "/img/route-andratx-pollenca.webp"
     link: "/nl/fiets-shuttle/andratx-pollenca-gids/"
-    badge: "Episch"
+    badge: "Meester Fietsgids"
 
-  - title: "De Grote Uitdaging"
+  - title: "Big Daddy Challenge"
     distance: "167 km"
     elevation: "4,200m"
     image: "/img/route-big-daddy.webp"
     link: "/nl/fiets-shuttle/big-daddy-challenge/"
-    badge: "Uitdaging"
+    badge: "Meester Fietsgids"
 
-  - title: "Sa Calobra"
+  - title: "Sa Calobra Gids"
     distance: "20 km"
     elevation: "682m"
     image: "/img/route-sa-calobra.webp"
     link: "/nl/fiets-shuttle/sa-calobra-gids/"
-    badge: "Meest populair"
-
-  - title: "Cap de Formentor"
-    distance: "40 km"
-    elevation: "1500m"
-    image: "/img/cap-formentor-route.webp"
-    link: "/nl/fiets-shuttle/cap-formentor-gids/"
-    badge: "Onmisbaar"
+    badge: "Meester Fietsgids"
 
 # ============================================
 # TESTIMONIALS

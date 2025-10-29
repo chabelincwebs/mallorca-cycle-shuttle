@@ -59,7 +59,7 @@ content_blocks:
     image: "/img/content-block-1.webp"
     cta:
       text: "Unsere Story"
-      url: "/de/about/blog/"
+      url: "/de/about/blog/uber-uns/"
 
   - title: "Entdecke Mallorcas beste Routen"
     text: "Vom fordernden Andratx-Pollença Coast-to-Coast über die legendären Anstiege von den Häfen Sa Calobra und Valldemossa bis zu ruhigen Wegen im Inselinneren – Mallorca ist ein Rad-Paradies auf Weltklasse-Niveau. Unsere ausführlichen Routenguides helfen dir bei perfekten One-Way-Touren – mit detaillierten Karten, Höhenprofilen und Insider-Tipps."
@@ -90,33 +90,26 @@ stats:
 routes_title: "Unverzichtbares Mallorca"
 
 featured_routes:
-  - title: "Port d'Andratx nach Port de Pollença"
+  - title: "Andratx nach Pollença"
     distance: "121 km"
     elevation: "2500m"
     image: "/img/route-andratx-pollenca.webp"
     link: "/de/fahrrad-shuttle/andratx-pollenca-leitfaden/"
-    badge: "Episch"
+    badge: "Meister-Radführer"
 
-  - title: "Die Große Herausforderung"
+  - title: "Big Daddy Challenge"
     distance: "167 km"
     elevation: "4,200m"
     image: "/img/route-big-daddy.webp"
     link: "/de/fahrrad-shuttle/big-daddy-challenge/"
-    badge: "Herausforderung"
+    badge: "Meister-Radführer"
 
-  - title: "Sa Calobra"
+  - title: "Sa Calobra Leitfaden"
     distance: "20 km"
     elevation: "682m"
     image: "/img/route-sa-calobra.webp"
     link: "/de/fahrrad-shuttle/sa-calobra-leitfaden/"
-    badge: "Am beliebtesten"
-
-  - title: "Cap de Formentor"
-    distance: "40 km"
-    elevation: "1500m"
-    image: "/img/cap-formentor-route.webp"
-    link: "/de/fahrrad-shuttle/cap-formentor-leitfaden/"
-    badge: "Unverzichtbar"
+    badge: "Meister-Radführer"
 
 # ============================================
 # TESTIMONIALS

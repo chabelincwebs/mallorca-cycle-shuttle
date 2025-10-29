@@ -55,18 +55,27 @@ services:
 # ============================================
 content_blocks:
   - title: "Why Cyclists Choose Us"
-    text: "Since 2015, we’ve been Mallorca’s go-to transport for cyclists—running shuttles, handling island-wide rescues, and looking after bikes as if they’re ours. Expect a friendly, reliable team, comfortable buses, and local knowledge you can count on."
+    text: "Since 2015, we've been Mallorca's go-to transport for cyclists—running shuttles, handling island-wide rescues, and looking after bikes as if they're ours. Expect a friendly, reliable team, comfortable buses, and local knowledge you can count on."
     image: "/img/content-block-1.webp"
     cta:
       text: "Read Our Story"
-      url: "/en/about/blog/"
+      url: "/en/about/blog/about-us/"
 
   - title: "Explore Mallorca's Best Routes"
     text: "From the challenging Andratx-Pollença Coast-to-Coast to the legendary climbs from the Ports of Sa Calobra and Valldemossa to the quiet lanes of the interior, Mallorca is a world-class cycling paradise. Our comprehensive route guides help you plan your perfect one way rides with detailed maps, elevation profiles, and insider tips."
     image: "/img/content-block-2.webp"
     cta:
       text: "View Route Guides"
-      url: "/en/bike-shuttle/andratx-pollenca-guide/"
+      type: "dropdown"
+      routes:
+        - name: "Andratx-Pollença Guide"
+          url: "/en/bike-shuttle/andratx-pollenca-guide/"
+        - name: "Big Daddy Challenge"
+          url: "/en/bike-shuttle/big-daddy-challenge/"
+        - name: "Sa Calobra Guide"
+          url: "/en/bike-shuttle/sa-calobra-guide/"
+        - name: "Cap de Formentor Guide"
+          url: "/en/bike-shuttle/cap-formentor-guide/"
 
 # ============================================
 # STATS SECTION

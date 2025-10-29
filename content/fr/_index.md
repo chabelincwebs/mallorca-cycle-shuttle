@@ -59,7 +59,7 @@ content_blocks:
     image: "/img/content-block-1.webp"
     cta:
       text: "Lire notre histoire"
-      url: "/fr/about/blog/"
+      url: "/fr/about/blog/a-propos/"
 
   - title: "Explorez les meilleures routes de Majorque"
     text: "De l'exigeant Andratx-Pollença côte-à-côte aux ascensions mythiques depuis les ports de Sa Calobra et Valldemossa, jusqu'aux routes paisibles de l'intérieur, Majorque est un paradis cycliste de niveau mondial. Nos guides complets vous aident à planifier vos allers simples parfaits avec cartes détaillées, profils d'élévation et astuces d'initiés."
@@ -90,33 +90,26 @@ stats:
 routes_title: "Majorque Incontournable"
 
 featured_routes:
-  - title: "Port d'Andratx → Port de Pollença"
+  - title: "Andratx à Pollença"
     distance: "121 km"
     elevation: "2500m"
     image: "/img/route-andratx-pollenca.webp"
     link: "/fr/navette-velo/andratx-pollenca-guide/"
-    badge: "Épique"
+    badge: "Guide Cycliste Expert"
 
-  - title: "Le Grand Défi"
+  - title: "Big Daddy Challenge"
     distance: "167 km"
     elevation: "4,200m"
     image: "/img/route-big-daddy.webp"
     link: "/fr/navette-velo/big-daddy-challenge/"
-    badge: "Défi"
+    badge: "Guide Cycliste Expert"
 
-  - title: "Sa Calobra"
+  - title: "Guide Sa Calobra"
     distance: "20 km"
     elevation: "682m"
     image: "/img/route-sa-calobra.webp"
     link: "/fr/navette-velo/sa-calobra-guide/"
-    badge: "Le plus populaire"
-
-  - title: "Cap de Formentor"
-    distance: "40 km"
-    elevation: "1500m"
-    image: "/img/cap-formentor-route.webp"
-    link: "/fr/navette-velo/cap-formentor-guide/"
-    badge: "Incontournable"
+    badge: "Guide Cycliste Expert"
 
 # ============================================
 # TESTIMONIALS

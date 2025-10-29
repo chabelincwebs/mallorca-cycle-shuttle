@@ -70,7 +70,21 @@
             <h2>{{ $block.title }}</h2>
             <p>{{ $block.text }}</p>
             {{ if $block.cta }}
-              <a href="{{ $block.cta.url }}" class="homepage-text-cta">{{ $block.cta.text }} →</a>
+              {{ if eq $block.cta.type "dropdown" }}
+                {{/* Render dropdown selector */}}
+                <div class="route-guide-selector">
+                  <label for="route-select-{{ $index }}">{{ $block.cta.text }}</label>
+                  <select id="route-select-{{ $index }}" class="route-select" onchange="if(this.value) window.location.href=this.value">
+                    <option value="">Select a guide...</option>
+                    {{ range $block.cta.routes }}
+                      <option value="{{ .url }}">{{ .name }}</option>
+                    {{ end }}
+                  </select>
+                </div>
+              {{ else }}
+                {{/* Render simple link */}}
+                <a href="{{ $block.cta.url }}" class="homepage-text-cta">{{ $block.cta.text }} →</a>
+              {{ end }}
             {{ end }}
           </div>
           <div class="homepage-content-block-image">
@@ -558,6 +572,67 @@
     @media (max-width: 768px) {
       .container {
         padding: 0 1.5rem;
+      }
+    }
+
+    /* ==================== ROUTE GUIDE SELECTOR (DROPDOWN) ==================== */
+    .route-guide-selector {
+      margin-top: 1.5rem;
+    }
+
+    .route-guide-selector label {
+      display: block;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 0.75rem;
+      font-family: var(--font-system);
+      letter-spacing: -0.01em;
+    }
+
+    .route-select {
+      width: 100%;
+      max-width: 400px;
+      padding: 0.875rem 1.125rem;
+      font-size: 1rem;
+      font-family: var(--font-system);
+      color: var(--text-primary);
+      background: var(--bg-primary);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      cursor: pointer;
+      transition: all var(--transition-fast);
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236e6e73' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 1rem center;
+      padding-right: 2.5rem;
+      outline: none;
+    }
+
+    .route-select:hover {
+      border-color: var(--brand-color);
+      box-shadow: 0 0 0 3px rgba(241, 0, 0, 0.1);
+    }
+
+    .route-select:focus {
+      border-color: var(--brand-color);
+      box-shadow: 0 0 0 4px rgba(241, 0, 0, 0.15);
+    }
+
+    .route-select option {
+      padding: 0.75rem;
+      font-family: var(--font-system);
+    }
+
+    .route-select option:first-child {
+      color: var(--text-secondary);
+    }
+
+    @media (max-width: 768px) {
+      .route-select {
+        max-width: 100%;
+        font-size: 16px; /* Prevents iOS zoom on focus */
       }
     }
   </style>

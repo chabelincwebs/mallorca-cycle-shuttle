@@ -59,7 +59,7 @@ content_blocks:
     image: "/img/content-block-1.webp"
     cta:
       text: "Lee nuestra historia"
-      url: "/es/about/blog/"
+      url: "/es/about/blog/sobre-nosotros/"
 
   - title: "Explora las mejores rutas de Mallorca"
     text: "Desde el exigente Andratx-Pollença costa a costa y las subidas míticas desde los puertos de Sa Calobra y Valldemossa hasta los caminos tranquilos del interior, Mallorca es un paraíso ciclista de primer nivel. Nuestros guías de ruta te ayudan a planificar tus rutas de ida perfectas con mapas detallados, perfiles de elevación y consejos de la casa."
@@ -90,33 +90,26 @@ stats:
 routes_title: "Mallorca Imprescindible"
 
 featured_routes:
-  - title: "Port d'Andratx a Port de Pollença"
+  - title: "Andratx a Pollença"
     distance: "121 km"
     elevation: "2500m"
     image: "/img/route-andratx-pollenca.webp"
     link: "/es/shuttle-bici/andratx-pollenca-guide/"
-    badge: "Épica"
+    badge: "Guía Maestra de Ciclismo"
 
-  - title: "El Gran Desafío"
+  - title: "Big Daddy Challenge"
     distance: "167 km"
     elevation: "4,200m"
     image: "/img/route-big-daddy.webp"
     link: "/es/shuttle-bici/big-daddy-challenge/"
-    badge: "Desafío"
+    badge: "Guía Maestra de Ciclismo"
 
-  - title: "Sa Calobra"
+  - title: "Guía de Sa Calobra"
     distance: "20 km"
     elevation: "682m"
     image: "/img/route-sa-calobra.webp"
     link: "/es/shuttle-bici/sa-calobra-guide/"
-    badge: "La más popular"
-
-  - title: "Cap de Formentor"
-    distance: "40 km"
-    elevation: "1500m"
-    image: "/img/cap-formentor-route.webp"
-    link: "/es/shuttle-bici/cap-formentor-guia/"
-    badge: "Imprescindible"
+    badge: "Guía Maestra de Ciclismo"
 
 # ============================================
 # TESTIMONIALS

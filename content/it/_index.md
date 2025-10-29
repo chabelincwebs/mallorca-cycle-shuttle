@@ -59,7 +59,7 @@ content_blocks:
     image: "/img/content-block-1.webp"
     cta:
       text: "La nostra storia"
-      url: "/it/about/blog/"
+      url: "/it/chi-siamo/blog/chi-siamo/"
 
   - title: "Esplora le migliori route di Maiorca"
     text: "Dall'impegnativa Andratx-Pollença costa-a-costa alle salite leggendarie dai porti di Sa Calobra e Valldemossa fino alle strade tranquille dell'interno, Maiorca è un paradiso ciclistico di livello mondiale. Le nostre guide ti aiutano a pianificare perfette route di sola andata con mappe dettagliate, profili altimetrici e consigli da insider."
@@ -90,33 +90,26 @@ stats:
 routes_title: "Maiorca Imperdibile"
 
 featured_routes:
-  - title: "Port d'Andratx → Port de Pollença"
+  - title: "Andratx a Pollença"
     distance: "121 km"
     elevation: "2500m"
     image: "/img/route-andratx-pollenca.webp"
     link: "/it/navetta-bici/andratx-pollenca-guide/"
-    badge: "Epica"
+    badge: "Guida Ciclistica Magistrale"
 
-  - title: "La Grande Sfida"
+  - title: "Big Daddy Challenge"
     distance: "167 km"
     elevation: "4,200m"
     image: "/img/route-big-daddy.webp"
     link: "/it/navetta-bici/big-daddy-challenge/"
-    badge: "Sfida"
+    badge: "Guida Ciclistica Magistrale"
 
-  - title: "Sa Calobra"
+  - title: "Guida Sa Calobra"
     distance: "20 km"
     elevation: "682m"
     image: "/img/route-sa-calobra.webp"
     link: "/it/navetta-bici/sa-calobra-guide/"
-    badge: "La più popolare"
-
-  - title: "Cap de Formentor"
-    distance: "40 km"
-    elevation: "1500m"
-    image: "/img/cap-formentor-route.webp"
-    link: "/it/navetta-bici/cap-formentor-guida/"
-    badge: "Imperdibile"
+    badge: "Guida Ciclistica Magistrale"
 
 # ============================================
 # TESTIMONIALS
