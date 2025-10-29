@@ -6,8 +6,9 @@
     <title>{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}</title>
     {{ with .Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Resource hints for external domains -->
+    <link rel="preconnect" href="https://mallorcacycleshuttle.company.site" crossorigin>
+    <link rel="dns-prefetch" href="https://mallorcacycleshuttle.company.site">
 
     <!-- Plain static CSS to avoid CDN/pipeline issues -->
     <link rel="stylesheet" href="/css/main.css" />

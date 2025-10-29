@@ -25,9 +25,9 @@
           {{/* Featured Image */}}
           <div class="blog-card-image">
             {{ if .Params.featured_image }}
-              <img src="{{ .Params.featured_image }}" alt="{{ .Title }}">
+              <img src="{{ .Params.featured_image }}" alt="{{ .Title }}" loading="lazy">
             {{ else }}
-              <img src="{{ .Params.hero_image | default "/img/hero-main.webp" }}" alt="{{ .Title }}">
+              <img src="{{ .Params.hero_image | default "/img/hero-main.webp" }}" alt="{{ .Title }}" loading="lazy">
             {{ end }}
           </div>
 

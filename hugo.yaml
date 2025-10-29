@@ -263,6 +263,32 @@ markup:
     renderer:
       unsafe: true
 
+# Minification for performance
+minify:
+  minifyOutput: true
+  tdewolff:
+    css:
+      keepCSS2: false
+      precision: 0
+    html:
+      keepComments: false
+      keepConditionalComments: true
+      keepDefaultAttrVals: true
+      keepDocumentTags: true
+      keepEndTags: true
+      keepQuotes: false
+      keepWhitespace: false
+    js:
+      keepVarNames: false
+      precision: 0
+    json:
+      keepNumbers: false
+      precision: 0
+    svg:
+      precision: 0
+    xml:
+      keepWhitespace: false
+
 # Tracking Configuration
 params:
   # Google Analytics 4 - Replace with your actual Measurement ID

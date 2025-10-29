@@ -36,7 +36,7 @@
       <div class="homepage-services-grid">
         {{ range . }}
         <div class="homepage-service-card fade-in-on-scroll">
-          <div class="homepage-service-icon"><img src="{{ .icon }}" alt="{{ .title }}"></div>
+          <div class="homepage-service-icon"><img src="{{ .icon }}" alt="{{ .title }}" loading="lazy"></div>
           <h3>{{ .title }}</h3>
           <p>{{ .description }}</p>
           <a href="{{ .link }}" class="homepage-service-link">Learn More →</a>
@@ -58,7 +58,7 @@
             <p>{{ $block.text }}</p>
             {{ if $block.cta }}<a href="{{ $block.cta.url }}" class="homepage-text-cta">{{ $block.cta.text }} →</a>{{ end }}
           </div>
-          <div class="homepage-content-block-image"><img src="{{ $block.image }}" alt="{{ $block.title }}"></div>
+          <div class="homepage-content-block-image"><img src="{{ $block.image }}" alt="{{ $block.title }}" loading="lazy"></div>
         </div>
       {{ end }}
     </div>
@@ -90,7 +90,7 @@
         {{ range . }}
         <a href="{{ .link }}" class="homepage-route-card fade-in-on-scroll">
           <div class="homepage-route-image">
-            <img src="{{ .image }}" alt="{{ .title }}">
+            <img src="{{ .image }}" alt="{{ .title }}" loading="lazy">
             {{ if .badge }}<span class="homepage-route-badge">{{ .badge }}</span>{{ end }}
           </div>
           <div class="homepage-route-content">

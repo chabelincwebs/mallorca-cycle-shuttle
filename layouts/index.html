@@ -46,7 +46,7 @@
         {{ range . }}
         <a href="{{ .link }}" class="homepage-service-card fade-in-on-scroll">
           <div class="homepage-service-icon">
-            <img src="{{ .icon }}" alt="{{ .title }}">
+            <img src="{{ .icon }}" alt="{{ .title }}" loading="lazy">
           </div>
           <h3>{{ .title }}</h3>
           <p>{{ .description }}</p>
@@ -88,7 +88,7 @@
             {{ end }}
           </div>
           <div class="homepage-content-block-image">
-            <img src="{{ $block.image }}" alt="{{ $block.title }}">
+            <img src="{{ $block.image }}" alt="{{ $block.title }}" loading="lazy">
           </div>
         </div>
       {{ end }}
@@ -125,7 +125,7 @@
         {{ range . }}
         <a href="{{ .link }}" class="homepage-route-card fade-in-on-scroll">
           <div class="homepage-route-image">
-            <img src="{{ .image }}" alt="{{ .title }}">
+            <img src="{{ .image }}" alt="{{ .title }}" loading="lazy">
             {{ if .badge }}
               <span class="homepage-route-badge">{{ .badge }}</span>
             {{ end }}

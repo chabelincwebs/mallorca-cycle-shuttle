@@ -165,6 +165,12 @@ a:hover { text-decoration: underline; }
 
 /* Responsive header */
 @media (max-width: 768px) {
+  /* Disable backdrop-filter on mobile for better performance */
+  .header {
+    background: rgb(255, 255, 255);
+    backdrop-filter: none;
+  }
+
   .header-container {
     padding: 0.6rem 1rem;
   }
@@ -981,6 +987,7 @@ main { overflow-x: hidden; }
   height: 100%;
   object-fit: cover;
   object-position: center;
+  aspect-ratio: 16 / 9;
   /* Ken Burns effect - subtle slow zoom */
   animation: kenBurnsZoom 10s ease-in-out infinite alternate;
   transform-origin: center center;
@@ -1218,6 +1225,7 @@ main { overflow-x: hidden; }
   width: 100%;
   height: 100%;
   object-fit: contain;
+  aspect-ratio: 1 / 1;
 }
 
 .homepage-service-card h3 {
@@ -1317,6 +1325,7 @@ main { overflow-x: hidden; }
   height: auto;
   display: block;
   transition: transform 0.5s ease;
+  aspect-ratio: 4 / 3;
 }
 
 .homepage-content-block-image:hover img {
@@ -1399,6 +1408,7 @@ main { overflow-x: hidden; }
   height: 100%;
   object-fit: cover;
   transition: transform 0.5s ease;
+  aspect-ratio: 16 / 9;
 }
 
 .homepage-route-card:hover .homepage-route-image img {
