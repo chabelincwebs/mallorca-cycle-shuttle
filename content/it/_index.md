@@ -6,18 +6,23 @@ description: "Il tuo compagno di fiducia per pedalare nella Tramuntana di Maiorc
 # HERO SECTION
 # ============================================
 hero_title: "Sfrutta al massimo Maiorca"
-hero_subtitle: "Shuttles programmati, soccorso bici e transfer aeroporto – da ciclisti per ciclisti"
+hero_subtitle: "Comprendere e servire i ciclisti dal 2015"
 
 hero_ctas:
-  - text: "Prenota lo shuttle"
+  - text: "Shuttle Programmato"
     url: "https://mallorcacycleshuttle.company.site/it/products/Scheduled-Bike-Buses-c15728235"
     style: "secondary"
-  - text: "Richiedi il soccorso bici"
+  - text: "Shuttle Privato"
+    url: "/it/shuttle-bici/prenotazioni-shuttle-privato/"
+    style: "secondary"
+  - text: "Soccorso Bici"
     url: "https://mallorcacycleshuttle.company.site/it/products/"
     style: "primary"
-  - text: "Prenota il transfer aeroporto"
+  - text: "Transfer Aeroporto"
     url: "/it/mallorca-airport-transfers/"
     style: "secondary"
+
+hero_tagline: "Sfrutta al massimo il tuo tempo limitato"
 
 # ============================================
 # SERVICES SECTION
@@ -34,6 +39,11 @@ services:
     description: "Ti portiamo, insieme alla tua bici, comodamente all'inizio delle iconiche route di sola andata."
     icon: "/img/icon-shuttle.svg"
     link: "https://mallorcacycleshuttle.company.site/it/products/Scheduled-Bike-Buses-c15728235"
+
+  - title: "Shuttle Bici Privati"
+    description: "Bici andata/bus ritorno o bus andata/bici ritorno con il tuo gruppo all'orario che preferisci."
+    icon: "/img/icon-shuttle.svg"
+    link: "/it/shuttle-bici/prenotazioni-shuttle-privato/"
 
   - title: "Transfer aeroporto"
     description: "Transfer aeroporto senza intoppi. Inizia la vacanza in bici senza stress dal momento dell'atterraggio."

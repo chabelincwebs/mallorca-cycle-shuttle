@@ -6,18 +6,23 @@ description: "Your trusted cycling companion in Mallorca's Tramuntana mountains.
 # HERO SECTION
 # ============================================
 hero_title: "Make the most of Mallorca"
-hero_subtitle: "Scheduled bike shuttles, bike rescue and airport transfers by cyclists for cyclists"
+hero_subtitle: "Understanding & serving cyclists since 2015"
 
 hero_ctas:
-  - text: "Book Your Shuttle"
+  - text: "Scheduled Shuttle"
     url: "https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235"
     style: "secondary"
-  - text: "Get Bike Rescue"
+  - text: "Private Shuttle"
+    url: "/en/bike-shuttle/private-shuttle-bookings/"
+    style: "secondary"
+  - text: "Bike Rescue"
     url: "https://mallorcacycleshuttle.company.site/products/"
     style: "primary"
-  - text: "Book Airport Transfers"
+  - text: "Airport Transfers"
     url: "/en/mallorca-airport-transfers/"
     style: "secondary"
+
+hero_tagline: "Make the most of your limited time"
 
 # ============================================
 # SERVICES SECTION
@@ -34,6 +39,11 @@ services:
     description: "We take you and your bike in comfort to the start of the iconic one way routes."
     icon: "/img/icon-shuttle.svg"
     link: "https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235"
+
+  - title: "Private Bike Shuttles"
+    description: "Bike out/bus back or bus out/bike back with your group at the time of your choosing."
+    icon: "/img/icon-shuttle.svg"
+    link: "/en/bike-shuttle/private-shuttle-bookings/"
 
   - title: "Airport Transfers"
     description: "Seamless airport transfers. Start your cycling holiday stress-free from the moment you land."
@@ -80,33 +90,26 @@ stats:
 routes_title: "Unmissable Mallorca"
 
 featured_routes:
-  - title: "Port d'Andratx to Port de Pollença"
+  - title: "Andratx to Pollença"
     distance: "121 km"
     elevation: "2500m"
     image: "/img/route-andratx-pollenca.webp"
     link: "/en/bike-shuttle/andratx-pollenca-guide/"
-    badge: "Epic"
+    badge: "Master Cycling Guide"
 
   - title: "Big Daddy Challenge"
     distance: "167 km"
     elevation: "4,200m"
     image: "/img/route-big-daddy.webp"
     link: "/en/bike-shuttle/big-daddy-challenge/"
-    badge: "Challenge"
+    badge: "Master Cycling Guide"
 
-  - title: "Sa Calobra"
+  - title: "Sa Calobra Guide"
     distance: "20 km"
     elevation: "682m"
     image: "/img/route-sa-calobra.webp"
     link: "/en/bike-shuttle/sa-calobra-guide/"
-    badge: "Most Popular"
-
-  - title: "Cap de Formentor"
-    distance: "40 km"
-    elevation: "1500m"
-    image: "/img/cap-formentor-route.webp"
-    link: "/en/bike-shuttle/cap-formentor-guide/"
-    badge: "Unmissable"
+    badge: "Master Cycling Guide"
 
 # ============================================
 # TESTIMONIALS

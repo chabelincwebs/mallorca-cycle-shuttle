@@ -6,18 +6,23 @@ description: "Dein verlässlicher Begleiter fürs Radfahren im Tramuntana-Gebirg
 # HERO SECTION
 # ============================================
 hero_title: "Hol das Beste aus Mallorca raus"
-hero_subtitle: "Geplante Bike-Shuttles, Pannenhilfe und Flughafentransfers – von Radfahrern für Radfahrer"
+hero_subtitle: "Radfahrer verstehen & bedienen seit 2015"
 
 hero_ctas:
-  - text: "Shuttle buchen"
+  - text: "Geplante Shuttle"
     url: "https://mallorcacycleshuttle.company.site/de/products/Scheduled-Bike-Buses-c15728235"
     style: "secondary"
-  - text: "Pannenhilfe holen"
+  - text: "Private Shuttle"
+    url: "/de/fahrrad-shuttle/private-shuttle-buchungen/"
+    style: "secondary"
+  - text: "Fahrradrettung"
     url: "https://mallorcacycleshuttle.company.site/de/products/"
     style: "primary"
-  - text: "Flughafentransfer buchen"
+  - text: "Flughafentransfers"
     url: "/de/mallorca-flughafentransfers/"
     style: "secondary"
+
+hero_tagline: "Machen Sie das Beste aus Ihrer begrenzten Zeit"
 
 # ============================================
 # SERVICES SECTION
@@ -34,6 +39,11 @@ services:
     description: "Wir bringen dich und dein Rad bequem zum Start der ikonischen One-Way-Routen."
     icon: "/img/icon-shuttle.svg"
     link: "https://mallorcacycleshuttle.company.site/de/products/Scheduled-Bike-Buses-c15728235"
+
+  - title: "Private Fahrrad-Shuttles"
+    description: "Mit dem Rad hin/Bus zurück oder Bus hin/Rad zurück mit Ihrer Gruppe zur Wunschzeit."
+    icon: "/img/icon-shuttle.svg"
+    link: "/de/fahrrad-shuttle/private-shuttle-buchungen/"
 
   - title: "Flughafentransfers"
     description: "Reibungslose Transfers vom Flughafen. Starte deinen Radurlaub stressfrei ab dem Moment der Landung."

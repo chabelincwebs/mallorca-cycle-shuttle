@@ -6,18 +6,23 @@ description: "Din pålidelige cykelpartner i Mallorcas Tramuntana-bjerge. Cykelr
 # HERO SECTION
 # ============================================
 hero_title: "Få mest muligt ud af Mallorca"
-hero_subtitle: "Planlagte cykelshuttles, cykelredning og lufthavnstransfer af cyklister for cyklister"
+hero_subtitle: "Forståelse og betjening af cyklister siden 2015"
 
 hero_ctas:
-  - text: "Bestil Din Shuttle"
+  - text: "Planlagt Shuttle"
     url: "https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235"
     style: "secondary"
-  - text: "Skaf Cykelredning"
+  - text: "Privat Shuttle"
+    url: "/da/cykel-shuttle/private-shuttle-bestillinger/"
+    style: "secondary"
+  - text: "Cykelredning"
     url: "https://mallorcacycleshuttle.company.site/products/"
     style: "primary"
-  - text: "Bestil Lufthavnstransfer"
+  - text: "Lufthavnstransfer"
     url: "/da/mallorca-lufthavnstransfer/"
     style: "secondary"
+
+hero_tagline: "Få mest muligt ud af din begrænsede tid"
 
 # ============================================
 # SERVICES SECTION
@@ -34,6 +39,11 @@ services:
     description: "Vi tager dig og din cykel i komfort til starten af de ikoniske envejsruter."
     icon: "/img/icon-shuttle.svg"
     link: "https://mallorcacycleshuttle.company.site/products/Scheduled-Bike-Buses-c15728235"
+
+  - title: "Private Cykelshuttles"
+    description: "Cykel ud/bus tilbage eller bus ud/cykel tilbage med din gruppe på det tidspunkt, du vælger."
+    icon: "/img/icon-shuttle.svg"
+    link: "/da/cykel-shuttle/private-shuttle-bestillinger/"
 
   - title: "Lufthavnstransfer"
     description: "Problemfri lufthavnstransfer. Start din cykelferie stressfrit fra det øjeblik du lander."

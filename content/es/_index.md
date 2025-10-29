@@ -6,18 +6,23 @@ description: "Tu compañero de confianza para el ciclismo en la Tramuntana de Ma
 # HERO SECTION
 # ============================================
 hero_title: "Sácale todo el partido a Mallorca"
-hero_subtitle: "Shuttles programados, rescate de bicicletas y traslados al aeropuerto – por ciclistas y para ciclistas"
+hero_subtitle: "Entendiendo y sirviendo a ciclistas desde 2015"
 
 hero_ctas:
-  - text: "Reserva tu shuttle"
+  - text: "Shuttle Programado"
     url: "https://mallorcacycleshuttle.company.site/es/products/Scheduled-Bike-Buses-c15728235"
     style: "secondary"
-  - text: "Consigue rescate de bici"
+  - text: "Shuttle Privado"
+    url: "/es/shuttle-bici/reservas-shuttle-privado/"
+    style: "secondary"
+  - text: "Rescate en Bici"
     url: "https://mallorcacycleshuttle.company.site/es/products/"
     style: "primary"
-  - text: "Reserva traslados al aeropuerto"
+  - text: "Traslados Aeropuerto"
     url: "/es/mallorca-airport-transfers/"
     style: "secondary"
+
+hero_tagline: "Aprovecha al máximo tu tiempo limitado"
 
 # ============================================
 # SERVICES SECTION
@@ -34,6 +39,11 @@ services:
     description: "Te llevamos a ti y a tu bici con total comodidad al inicio de las icónicas rutas de ida."
     icon: "/img/icon-shuttle.svg"
     link: "https://mallorcacycleshuttle.company.site/es/products/Scheduled-Bike-Buses-c15728235"
+
+  - title: "Shuttles Privados en Bici"
+    description: "Bici ida/bus vuelta o bus ida/bici vuelta con tu grupo a la hora que elijas."
+    icon: "/img/icon-shuttle.svg"
+    link: "/es/shuttle-bici/reservas-shuttle-privado/"
 
   - title: "Traslados al aeropuerto"
     description: "Traslados al aeropuerto sin complicaciones. Empieza tus vacaciones ciclistas sin estrés desde que aterrizas."

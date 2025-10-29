@@ -6,18 +6,23 @@ description: "Votre partenaire de confiance pour le cyclisme dans la Tramuntana 
 # HERO SECTION
 # ============================================
 hero_title: "Profitez au maximum de Majorque"
-hero_subtitle: "Navettes programmées, assistance vélo et transferts aéroport – par des cyclistes, pour des cyclistes"
+hero_subtitle: "Comprendre et servir les cyclistes depuis 2015"
 
 hero_ctas:
-  - text: "Réserver votre navette"
+  - text: "Navette Programmée"
     url: "https://mallorcacycleshuttle.company.site/fr/products/Scheduled-Bike-Buses-c15728235"
     style: "secondary"
-  - text: "Obtenir l'assistance vélo"
+  - text: "Navette Privée"
+    url: "/fr/navette-velo/reservations-navette-privee/"
+    style: "secondary"
+  - text: "Secours Vélo"
     url: "https://mallorcacycleshuttle.company.site/fr/products/"
     style: "primary"
-  - text: "Réserver transferts aéroport"
+  - text: "Transferts Aéroport"
     url: "/fr/mallorca-airport-transfers/"
     style: "secondary"
+
+hero_tagline: "Profitez au maximum de votre temps limité"
 
 # ============================================
 # SERVICES SECTION
@@ -34,6 +39,11 @@ services:
     description: "On vous emmène, vous et votre vélo, confortablement au départ des itinéraires iconiques en aller simple."
     icon: "/img/icon-shuttle.svg"
     link: "https://mallorcacycleshuttle.company.site/fr/products/Scheduled-Bike-Buses-c15728235"
+
+  - title: "Navettes Vélo Privées"
+    description: "Vélo aller/bus retour ou bus aller/vélo retour avec votre groupe à l'heure de votre choix."
+    icon: "/img/icon-shuttle.svg"
+    link: "/fr/navette-velo/reservations-navette-privee/"
 
   - title: "Transferts aéroport"
     description: "Transferts aéroport sans accroc. Commencez vos vacances à vélo sans stress dès l'atterrissage."

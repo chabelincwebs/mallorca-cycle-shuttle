@@ -6,18 +6,23 @@ description: "El teu company de confiança per al ciclisme a la Serra de Tramunt
 # HERO SECTION
 # ============================================
 hero_title: "Treu el màxim partit de Mallorca"
-hero_subtitle: "Busos llançadora programats, rescat de bicicletes i trasllats a l'aeroport - per ciclistes i per a ciclistes"
+hero_subtitle: "Entenent i servint ciclistes des de 2015"
 
 hero_ctas:
-  - text: "Reserva el teu bus llançadora"
+  - text: "Shuttle Programat"
     url: "https://mallorcacycleshuttle.company.site/ca/products/Scheduled-Bike-Buses-c15728235"
     style: "secondary"
-  - text: "Demana el rescat de bici"
+  - text: "Shuttle Privat"
+    url: "/ca/shuttle-bici/reserves-shuttle-privat/"
+    style: "secondary"
+  - text: "Rescat en Bici"
     url: "https://mallorcacycleshuttle.company.site/ca/products/"
     style: "primary"
-  - text: "Reserva trasllats a l'aeroport"
+  - text: "Trasllats Aeroport"
     url: "/ca/mallorca-airport-transfers/"
     style: "secondary"
+
+hero_tagline: "Aprofita al màxim el teu temps limitat"
 
 # ============================================
 # SERVICES SECTION
@@ -34,6 +39,11 @@ services:
     description: "Et portem a tu i a la teva bici amb tota comoditat a l'inici de les icòniques rutes d'anada."
     icon: "/img/icon-shuttle.svg"
     link: "https://mallorcacycleshuttle.company.site/ca/products/Scheduled-Bike-Buses-c15728235"
+
+  - title: "Shuttles Privats en Bici"
+    description: "Bici anada/bus tornada o bus anada/bici tornada amb el teu grup a l'hora que triïs."
+    icon: "/img/icon-shuttle.svg"
+    link: "/ca/shuttle-bici/reserves-shuttle-privat/"
 
   - title: "Trasllats a l'aeroport"
     description: "Trasllats a l'aeroport sense complicacions. Comença les teves vacances ciclistes sense estrès des del moment d'aterrar."

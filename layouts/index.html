@@ -28,6 +28,10 @@
           </a>
         {{ end }}
       </div>
+
+      {{ if .Params.hero_tagline }}
+      <p class="homepage-hero-tagline">{{ .Params.hero_tagline }}</p>
+      {{ end }}
     </div>
   </section>
 
@@ -40,14 +44,14 @@
       <h2 class="homepage-section-title">{{ $.Params.services_title }}</h2>
       <div class="homepage-services-grid">
         {{ range . }}
-        <div class="homepage-service-card fade-in-on-scroll">
+        <a href="{{ .link }}" class="homepage-service-card fade-in-on-scroll">
           <div class="homepage-service-icon">
             <img src="{{ .icon }}" alt="{{ .title }}">
           </div>
           <h3>{{ .title }}</h3>
           <p>{{ .description }}</p>
-          <a href="{{ .link }}" class="homepage-service-link">Learn More →</a>
-        </div>
+          <span class="homepage-service-link">Learn More →</span>
+        </a>
         {{ end }}
       </div>
     </div>
@@ -375,14 +379,17 @@
 
     .homepage-services-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: 1.5rem;
-      max-width: 1200px;
+      max-width: 1400px;
       margin: 0 auto;
     }
 
     /* ==================== APPLE CARD STYLE ==================== */
     .homepage-service-card {
+      display: block;
+      text-decoration: none;
+      color: inherit;
       background: var(--bg-secondary);
       border-radius: var(--radius-lg);
       padding: 2.5rem 2rem;
@@ -391,6 +398,11 @@
       position: relative;
       overflow: hidden;
       cursor: pointer;
+    }
+
+    .homepage-service-card:hover,
+    .homepage-service-card:focus {
+      text-decoration: none;
     }
 
     .homepage-service-card::before {

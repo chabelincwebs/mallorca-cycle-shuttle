@@ -6,18 +6,23 @@ description: "Je betrouwbare fietsmaat in de Tramuntana van Mallorca. Fietsreddi
 # HERO SECTION
 # ============================================
 hero_title: "Haal alles uit Mallorca"
-hero_subtitle: "Geplande bike shuttles, fietsredding en luchthaventransfers – door fietsers, voor fietsers"
+hero_subtitle: "Wielrenners begrijpen en bedienen sinds 2015"
 
 hero_ctas:
-  - text: "Reserveer je shuttle"
+  - text: "Geplande Shuttle"
     url: "https://mallorcacycleshuttle.company.site/nl/products/Scheduled-Bike-Buses-c15728235"
     style: "secondary"
-  - text: "Vraag fietsredding aan"
+  - text: "Privé Shuttle"
+    url: "/nl/fiets-shuttle/prive-shuttle-boekingen/"
+    style: "secondary"
+  - text: "Fietsredding"
     url: "https://mallorcacycleshuttle.company.site/nl/products/"
     style: "primary"
-  - text: "Reserveer luchthaventransfer"
+  - text: "Luchthavenoverdrachten"
     url: "/nl/mallorca-luchthavenoverdrachten/"
     style: "secondary"
+
+hero_tagline: "Haal het meeste uit je beperkte tijd"
 
 # ============================================
 # SERVICES SECTION
@@ -34,6 +39,11 @@ services:
     description: "We brengen jou en je fiets comfortabel naar de start van de iconische enkele reis routes."
     icon: "/img/icon-shuttle.svg"
     link: "https://mallorcacycleshuttle.company.site/nl/products/Scheduled-Bike-Buses-c15728235"
+
+  - title: "Privé Fiets Shuttles"
+    description: "Fiets heen/bus terug of bus heen/fiets terug met je groep op het tijdstip van je keuze."
+    icon: "/img/icon-shuttle.svg"
+    link: "/nl/fiets-shuttle/prive-shuttle-boekingen/"
 
   - title: "Luchthaventransfers"
     description: "Naadloze transfers van en naar de luchthaven. Begin je fietsvakantie stressvrij vanaf het moment dat je landt."
