@@ -262,3 +262,14 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+
+# Tracking Configuration
+params:
+  # Google Analytics 4 - Replace with your actual Measurement ID
+  googleAnalytics: "G-XXXXXXXXXX"
+  
+  # Meta (Facebook) Pixel - Replace with your actual Pixel ID
+  metaPixel: "XXXXXXXXXXXXXXX"
+  
+  # Enable tracking (set to false to disable globally, e.g., in development)
+  enableTracking: true

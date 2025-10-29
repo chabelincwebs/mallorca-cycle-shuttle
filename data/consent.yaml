@@ -1,59 +1,324 @@
+# Cookie Consent Categories and Tracking Scripts
+# This file defines cookie categories and their associated scripts
+# Scripts are loaded based on user consent preferences
+
 categories:
+  # FUNCTIONAL COOKIES (Required - Always Active)
   functional:
     name:
       en: "Functional"
       de: "Funktional"
       es: "Funcionales"
+      it: "Funzionali"
+      fr: "Fonctionnels"
+      ca: "Funcionals"
+      nl: "Functioneel"
+      sv: "Funktionella"
+      nb: "Funksjonelle"
+      da: "Funktionelle"
     description:
       en: "Essential cookies for basic website functionality"
       de: "Notwendige Cookies für grundlegende Website-Funktionen"
       es: "Cookies esenciales para la funcionalidad básica del sitio web"
+      it: "Cookie essenziali per la funzionalità di base del sito web"
+      fr: "Cookies essentiels pour les fonctionnalités de base du site web"
+      ca: "Cookies essencials per a la funcionalitat bàsica del lloc web"
+      nl: "Essentiële cookies voor basisfunctionaliteit van de website"
+      sv: "Nödvändiga cookies för grundläggande webbplatsfunktionalitet"
+      nb: "Essensielle informasjonskapsler for grunnleggende nettstedfunksjonalitet"
+      da: "Essentielle cookies til grundlæggende webstedsfunktionalitet"
     required: true
-    scripts:
-      # Example: Add your functional scripts here
-      # - src: "/js/essential.js"
-      #   async: true
+    scripts: []
 
+  # ANALYTICS COOKIES (Optional - Requires Consent)
   analytics:
     name:
       en: "Analytics"
       de: "Analytik"
       es: "Analíticas"
+      it: "Analitiche"
+      fr: "Analytiques"
+      ca: "Analítiques"
+      nl: "Analytics"
+      sv: "Analytiska"
+      nb: "Analytiske"
+      da: "Analytiske"
     description:
-      en: "Cookies that help us understand how visitors use our website"
-      de: "Cookies, die uns helfen zu verstehen, wie Besucher unsere Website nutzen"
-      es: "Cookies que nos ayudan a comprender cómo los visitantes usan nuestro sitio web"
+      en: "Cookies that help us understand how visitors use our website and improve user experience"
+      de: "Cookies, die uns helfen zu verstehen, wie Besucher unsere Website nutzen und die Benutzererfahrung verbessern"
+      es: "Cookies que nos ayudan a comprender cómo los visitantes usan nuestro sitio web y mejorar la experiencia del usuario"
+      it: "Cookie che ci aiutano a capire come i visitatori utilizzano il nostro sito web e a migliorare l'esperienza utente"
+      fr: "Cookies qui nous aident à comprendre comment les visiteurs utilisent notre site web et à améliorer l'expérience utilisateur"
+      ca: "Cookies que ens ajuden a comprendre com els visitants utilitzen el nostre lloc web i millorar l'experiència d'usuari"
+      nl: "Cookies die ons helpen begrijpen hoe bezoekers onze website gebruiken en de gebruikerservaring verbeteren"
+      sv: "Cookies som hjälper oss förstå hur besökare använder vår webbplats och förbättra användarupplevelsen"
+      nb: "Informasjonskapsler som hjelper oss å forstå hvordan besøkende bruker nettstedet vårt og forbedre brukeropplevelsen"
+      da: "Cookies der hjælper os med at forstå, hvordan besøgende bruger vores websted og forbedre brugeroplevelsen"
     required: false
     scripts:
-      # Example: Google Analytics
-      # - src: "https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
-      #   async: true
-      # - inline: |
-      #     window.dataLayer = window.dataLayer || [];
-      #     function gtag(){dataLayer.push(arguments);}
-      #     gtag('js', new Date());
-      #     gtag('config', 'GA_MEASUREMENT_ID');
+      # Google Analytics 4 - Main Script
+      - src: "https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.googleAnalytics }}"
+        async: true
 
+      # GA4 Configuration with Enhanced E-commerce and Custom Events
+      - inline: |
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          // GA4 Configuration with Enhanced Measurement
+          gtag('config', '{{ .Site.Params.googleAnalytics }}', {
+            'anonymize_ip': true,
+            'cookie_flags': 'SameSite=None;Secure',
+            'allow_google_signals': true,
+            'allow_ad_personalization_signals': false,
+            'page_path': window.location.pathname,
+            'page_location': window.location.href,
+            'page_title': document.title,
+            'language': document.documentElement.lang || 'en',
+            'content_group': window.location.pathname.includes('/landing') ? 'Landing Page' : 'Content Page'
+          });
+
+          // Enhanced E-commerce Tracking
+          // Track product views (for shuttle/rescue services)
+          function trackServiceView(serviceName, serviceCategory, servicePrice) {
+            gtag('event', 'view_item', {
+              currency: 'EUR',
+              value: servicePrice,
+              items: [{
+                item_id: serviceName.toLowerCase().replace(/\s+/g, '_'),
+                item_name: serviceName,
+                item_category: serviceCategory,
+                price: servicePrice,
+                quantity: 1
+              }]
+            });
+          }
+
+          // Track begin checkout (when user clicks booking button)
+          function trackBeginCheckout(serviceName, servicePrice) {
+            gtag('event', 'begin_checkout', {
+              currency: 'EUR',
+              value: servicePrice,
+              items: [{
+                item_id: serviceName.toLowerCase().replace(/\s+/g, '_'),
+                item_name: serviceName,
+                price: servicePrice,
+                quantity: 1
+              }]
+            });
+          }
+
+          // Landing Page Specific Tracking
+          if (window.location.pathname.includes('-landing')) {
+            gtag('event', 'landing_page_view', {
+              'page_type': 'advertising_landing',
+              'landing_page_name': document.title,
+              'traffic_source': document.referrer || 'direct',
+              'page_language': document.documentElement.lang
+            });
+          }
+
+          // CTA Button Click Tracking
+          document.addEventListener('DOMContentLoaded', function() {
+            // Track all CTA buttons
+            document.querySelectorAll('.header-cta-btn, .hero-cta-btn, [class*="cta"]').forEach(function(button) {
+              button.addEventListener('click', function(e) {
+                var buttonText = this.textContent.trim();
+                var buttonType = this.classList.contains('header-cta-primary') ? 'primary' : 'secondary';
+                var destination = this.href || this.getAttribute('data-href') || 'unknown';
+
+                gtag('event', 'cta_click', {
+                  'button_text': buttonText,
+                  'button_type': buttonType,
+                  'button_location': this.closest('header') ? 'header' : 'content',
+                  'destination_url': destination,
+                  'page_path': window.location.pathname
+                });
+
+                // If it's a booking button, track as begin_checkout
+                if (destination.includes('company.site') || destination.includes('booking')) {
+                  var serviceName = 'Unknown Service';
+                  if (buttonText.includes('Rescue') || buttonText.includes('Redning') || buttonText.includes('Rettung')) {
+                    serviceName = 'Bike Rescue Service';
+                  } else if (buttonText.includes('Shuttle')) {
+                    serviceName = 'Bike Shuttle Service';
+                  } else if (buttonText.includes('Transfer') || buttonText.includes('Airport')) {
+                    serviceName = 'Airport Transfer';
+                  }
+                  trackBeginCheckout(serviceName, 0);
+                }
+              });
+            });
+
+            // Track external link clicks
+            document.querySelectorAll('a[href^="http"]').forEach(function(link) {
+              if (!link.href.includes(window.location.hostname)) {
+                link.addEventListener('click', function(e) {
+                  gtag('event', 'click', {
+                    'event_category': 'external_link',
+                    'event_label': this.href,
+                    'link_text': this.textContent.trim(),
+                    'page_path': window.location.pathname
+                  });
+                });
+              }
+            });
+
+            // Scroll Depth Tracking
+            var scrollMarks = {25: false, 50: false, 75: false, 100: false};
+            var pageHeight = Math.max(
+              document.body.scrollHeight,
+              document.body.offsetHeight,
+              document.documentElement.clientHeight,
+              document.documentElement.scrollHeight,
+              document.documentElement.offsetHeight
+            );
+
+            window.addEventListener('scroll', function() {
+              var scrollPosition = window.pageYOffset + window.innerHeight;
+              var scrollPercent = Math.round((scrollPosition / pageHeight) * 100);
+
+              [25, 50, 75, 100].forEach(function(mark) {
+                if (scrollPercent >= mark && !scrollMarks[mark]) {
+                  scrollMarks[mark] = true;
+                  gtag('event', 'scroll', {
+                    'event_category': 'engagement',
+                    'event_label': mark + '%',
+                    'value': mark,
+                    'page_path': window.location.pathname
+                  });
+                }
+              });
+            });
+          });
+
+  # MARKETING COOKIES (Optional - Requires Consent)
   marketing:
     name:
       en: "Marketing"
       de: "Marketing"
       es: "Marketing"
+      it: "Marketing"
+      fr: "Marketing"
+      ca: "Màrqueting"
+      nl: "Marketing"
+      sv: "Marknadsföring"
+      nb: "Markedsføring"
+      da: "Marketing"
     description:
-      en: "Cookies used to deliver personalized advertisements"
-      de: "Cookies zur Bereitstellung personalisierter Werbung"
-      es: "Cookies utilizadas para ofrecer anuncios personalizados"
+      en: "Cookies used to deliver personalized advertisements and measure campaign effectiveness"
+      de: "Cookies zur Bereitstellung personalisierter Werbung und Messung der Kampagneneffektivität"
+      es: "Cookies utilizadas para ofrecer anuncios personalizados y medir la efectividad de las campañas"
+      it: "Cookie utilizzati per fornire pubblicità personalizzate e misurare l'efficacia delle campagne"
+      fr: "Cookies utilisés pour diffuser des publicités personnalisées et mesurer l'efficacité des campagnes"
+      ca: "Cookies utilitzades per oferir anuncis personalitzats i mesurar l'efectivitat de les campanyes"
+      nl: "Cookies gebruikt voor gepersonaliseerde advertenties en het meten van campagne-effectiviteit"
+      sv: "Cookies som används för att leverera personliga annonser och mäta kampanjeffektivitet"
+      nb: "Informasjonskapsler brukt til å levere personlig tilpassede annonser og måle kampanjeeffektivitet"
+      da: "Cookies brugt til at levere personlige annoncer og måle kampagneeffektivitet"
     required: false
     scripts:
-      # Example: Facebook Pixel
-      # - inline: |
-      #     !function(f,b,e,v,n,t,s)
-      #     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      #     n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      #     if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      #     n.queue=[];t=b.createElement(e);t.async=!0;
-      #     t.src=v;s=b.getElementsByTagName(e)[0];
-      #     s.parentNode.insertBefore(t,s)}(window, document,'script',
-      #     'https://connect.facebook.net/en_US/fbevents.js');
-      #     fbq('init', 'YOUR_PIXEL_ID');
-      #     fbq('track', 'PageView');
+      # Meta (Facebook) Pixel with Advanced Conversion Tracking
+      - inline: |
+          !function(f,b,e,v,n,t,s)
+          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+          n.queue=[];t=b.createElement(e);t.async=!0;
+          t.src=v;s=b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t,s)}(window, document,'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+
+          fbq('init', '{{ .Site.Params.metaPixel }}');
+          fbq('track', 'PageView');
+
+          // Enhanced Conversion Tracking for Landing Pages
+          if (window.location.pathname.includes('-landing')) {
+            var landingType = 'Unknown';
+            var landingName = document.title;
+
+            // Identify landing page type
+            if (window.location.pathname.includes('airport')) {
+              landingType = 'Airport Transfer';
+            } else if (window.location.pathname.includes('rescue') || window.location.pathname.includes('redning') || window.location.pathname.includes('rettung')) {
+              landingType = 'Bike Rescue';
+            } else if (window.location.pathname.includes('shuttle')) {
+              landingType = 'Bike Shuttle';
+            }
+
+            // Track landing page view as Lead event
+            fbq('track', 'Lead', {
+              content_name: landingName,
+              content_category: landingType,
+              source: document.referrer || 'direct',
+              language: document.documentElement.lang
+            });
+
+            // Track specific shuttle routes
+            if (window.location.pathname.includes('sa-calobra')) {
+              fbq('track', 'ViewContent', {
+                content_name: 'Sa Calobra Shuttle',
+                content_category: 'Bike Shuttle',
+                content_type: 'product'
+              });
+            } else if (window.location.pathname.includes('port-andratx') || window.location.pathname.includes('andratx')) {
+              fbq('track', 'ViewContent', {
+                content_name: 'Port Andratx Shuttle',
+                content_category: 'Bike Shuttle',
+                content_type: 'product'
+              });
+            } else if (window.location.pathname.includes('pollenca') || window.location.pathname.includes('pollença')) {
+              fbq('track', 'ViewContent', {
+                content_name: 'Port de Pollença Shuttle',
+                content_category: 'Bike Shuttle',
+                content_type: 'product'
+              });
+            }
+          }
+
+          // Track CTA Button Clicks as Conversion Events
+          document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.header-cta-btn, .hero-cta-btn, [class*="cta"]').forEach(function(button) {
+              button.addEventListener('click', function(e) {
+                var buttonText = this.textContent.trim();
+                var destination = this.href || this.getAttribute('data-href') || '';
+                var eventType = 'AddToCart';
+                var contentName = 'Unknown Service';
+
+                // Determine service type from button
+                if (buttonText.includes('Rescue') || buttonText.includes('Redning') || buttonText.includes('Rettung')) {
+                  contentName = 'Bike Rescue Service';
+                  eventType = 'AddToCart';
+                } else if (buttonText.includes('Shuttle')) {
+                  contentName = 'Bike Shuttle Service';
+                  eventType = 'AddToCart';
+                } else if (buttonText.includes('Transfer') || buttonText.includes('Airport')) {
+                  contentName = 'Airport Transfer Service';
+                  eventType = 'AddToCart';
+                } else if (buttonText.includes('Book') || buttonText.includes('Reserve') || buttonText.includes('Buy')) {
+                  eventType = 'InitiateCheckout';
+                }
+
+                // Track the conversion event
+                fbq('track', eventType, {
+                  content_name: contentName,
+                  content_category: 'Service',
+                  content_type: 'product',
+                  value: 0,
+                  currency: 'EUR',
+                  button_text: buttonText,
+                  page_path: window.location.pathname
+                });
+
+                // If clicking to external booking system, track as InitiateCheckout
+                if (destination.includes('company.site') || destination.includes('booking')) {
+                  fbq('track', 'InitiateCheckout', {
+                    content_name: contentName,
+                    value: 0,
+                    currency: 'EUR'
+                  });
+                }
+              });
+            });
+          });
