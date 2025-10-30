@@ -218,4 +218,5 @@ final_cta:
   subtitle: "Skaff deg sykkelredningstjenesten din i dag og utforsk Mallorca bekymringsfritt"
   button_text: "Kom i Gang"
   button_url: "https://mallorcacycleshuttle.company.site/products/"
+translationKey: "homepage"
 ---

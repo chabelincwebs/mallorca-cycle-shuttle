@@ -1836,3 +1836,10 @@ max-height: 350px;
 
 </style>
 
+## Component Routes - Detailed Guides
+
+The Big Daddy Challenge combines Mallorca's most iconic climbs. Get detailed information about each section:
+
+- **[Sa Calobra Guide](/en/bike-shuttle/sa-calobra-guide/)** - Full details on the famous 26-hairpin climb and what to expect
+- **[Cap de Formentor Guide](/en/bike-shuttle/cap-formentor-guide/)** - Complete guide to the stunning coastal route
+- **[Andratx to Pollença (MA-10) Guide](/en/bike-shuttle/andratx-pollenca-guide/)** - Everything you need to know about the 60km Tramuntana traverse

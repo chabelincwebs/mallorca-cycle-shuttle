@@ -186,3 +186,11 @@ Es gibt keine touristische Unterkunft in Sa Calobra selbst, da das Gebiet gesch�
 5. Rückkehr über Puig Major oder zurück durch die Femenia/Batalla Anstiege zu Ihrer Basis.
 
 Radfahrer, die Mallorca besuchen, sollten Sa Calobra in ihre Reiseroute aufnehmen. Durch richtige Vorbereitung, frühes Starten, ausreichend Wasser mitbringen und sich des Verkehrs und Wetters bewusst sein, können Fahrer einen sicheren und unvergesslichen Aufstieg genießen. Ob Sie zurückklettern oder mit der Fähre nach Port Sóller fahren, Sa Calobra bietet ein Erlebnis, das lange nach Ende der Fahrt bei Ihnen bleibt.
+
+## Verwandte Radstrecken
+
+Auf der Suche nach weiteren herausfordernden Anstiegen auf Mallorca? Schauen Sie sich diese anderen ikonischen Routen an:
+
+- **[Cap de Formentor Guide](/de/fahrrad-shuttle/cap-formentor-guide/)** - Mallorcas schönste Küstenroute mit dramatischem Klippencycling und Leuchtturmblick
+- **[Andratx nach Pollença (MA-10) Leitfaden](/de/fahrrad-shuttle/andratx-pollenca-leitfaden/)** - Die komplette 60 km lange Reise durch die Tramuntana-Berge
+- **[Big Daddy Challenge](/de/fahrrad-shuttle/big-daddy-challenge/)** - Kombinieren Sie alle großen Anstiege einschließlich Sa Calobra an einem epischen Tag

@@ -186,3 +186,11 @@ There is no tourist accommodation in Sa Calobra itself because the area is prote
 5. Return via Puig Major or back through the Femenia/Batalla climbs to your base.
 
 Cyclists visiting Mallorca should include Sa Calobra in their itinerary. By preparing properly, starting early, bringing sufficient water and being aware of traffic and weather, riders can enjoy a safe and memorable ascent. Whether you choose to climb back up or ferry to Port Sóller, Sa Calobra offers an experience that stays with you long after the ride ends.
+
+## Related Cycling Routes
+
+Looking for more challenging climbs in Mallorca? Check out these other iconic routes:
+
+- **[Cap de Formentor Guide](/en/bike-shuttle/cap-formentor-guide/)** - Mallorca's most scenic coastal route with dramatic cliffside cycling and lighthouse views
+- **[Andratx to Pollença (MA-10) Guide](/en/bike-shuttle/andratx-pollenca-guide/)** - The complete 60km journey through the Tramuntana mountains
+- **[Big Daddy Challenge](/en/bike-shuttle/big-daddy-challenge/)** - Combine all the major climbs including Sa Calobra in one epic day

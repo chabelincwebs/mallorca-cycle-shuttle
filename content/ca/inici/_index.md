@@ -123,4 +123,5 @@ final_cta:
   subtitle: "Contracta el teu servei de rescat de bicicletes avui i explora Mallorca sense preocupacions"
   button_text: "Començar"
   button_url: "https://mallorcacycleshuttle.company.site/products/"
+translationKey: "homepage"
 ---

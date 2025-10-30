@@ -151,4 +151,5 @@ final_cta:
   subtitle: "Get your bike rescue service today and explore Mallorca worry-free"
   button_text: "Get Started"
   button_url: "https://mallorcacycleshuttle.company.site/products/"
+translationKey: "homepage"
 ---

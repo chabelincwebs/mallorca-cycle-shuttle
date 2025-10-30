@@ -2003,3 +2003,10 @@ max-height: 350px;
 
 </style>
 
+## Verwandte Radstrecken
+
+Bereit, mehr von Mallorcas ikonischen Anstiegen zu bewältigen? Erkunden Sie diese herausfordernden Routen:
+
+- **[Sa Calobra Leitfaden](/de/fahrrad-shuttle/sa-calobra-leitfaden/)** - Die legendäre 26-Haarnadelkurven-Abfahrt und -Aufstieg, Mallorcas berühmteste Straße
+- **[Cap de Formentor Guide](/de/fahrrad-shuttle/cap-formentor-guide/)** - Spektakuläres Küstencycling zum Leuchtturm an Mallorcas nördlichster Spitze
+- **[Big Daddy Challenge](/de/fahrrad-shuttle/big-daddy-challenge/)** - Kombinieren Sie Andratx-Pollença mit Sa Calobra und mehr für die ultimative Herausforderung

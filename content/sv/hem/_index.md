@@ -151,4 +151,5 @@ final_cta:
   subtitle: "Skaffa din cykelräddningstjänst idag och utforska Mallorca utan oro"
   button_text: "Kom Igång"
   button_url: "https://mallorcacycleshuttle.company.site/products/"
+translationKey: "homepage"
 ---

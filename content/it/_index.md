@@ -218,4 +218,5 @@ final_cta:
   subtitle: "Attiva oggi il soccorso bici ed esplora Maiorca senza pensieri"
   button_text: "Inizia ora"
   button_url: "https://mallorcacycleshuttle.company.site/it/products/"
+translationKey: "homepage"
 ---

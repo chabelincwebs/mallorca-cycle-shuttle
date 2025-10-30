@@ -1,6 +1,7 @@
 ---
 title: "Política de Privacidad"
 description: "Lea nuestra política de privacidad para entender cómo Mallorca Cycle Shuttle recopila, utiliza y protege su información personal."
+translationKey: "privacy-policy"
 ---
 ﻿---
 title: "Política de privacidad"

@@ -151,4 +151,5 @@ final_cta:
   subtitle: "Krijg vandaag nog uw fiets reddingsdienst en verken Mallorca zorgeloos"
   button_text: "Begin Nu"
   button_url: "https://mallorcacycleshuttle.company.site/products/"
+translationKey: "homepage"
 ---

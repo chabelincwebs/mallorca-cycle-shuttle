@@ -1,6 +1,7 @@
 ---
 title: "Terms & Conditions of Sale"
 description: "Terms for purchasing Mallorca Bicycle Rescue products and services."
+translationKey: "rescue-terms"
 ---
 
 # TERMS (plain-English, binding)

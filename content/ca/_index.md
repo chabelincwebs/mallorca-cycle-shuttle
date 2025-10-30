@@ -218,4 +218,5 @@ final_cta:
   subtitle: "Aconsegueix avui el servei de rescat i explora Mallorca sense preocupacions"
   button_text: "Comença ara"
   button_url: "https://mallorcacycleshuttle.company.site/ca/products/"
+translationKey: "homepage"
 ---

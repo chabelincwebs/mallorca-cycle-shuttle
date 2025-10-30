@@ -909,3 +909,11 @@ Consider booking a <a href="https://mallorcacycleshuttle.company.site/products/S
 And don't forget to puchase your <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank" rel="noopener noreferrer">bike rescue</a> policy before you ride – peace of mind for you and your group.
 
 Enjoy one of Mallorca's most spectacular coastal rides!
+
+## Related Cycling Routes
+
+Want to explore more of Mallorca's legendary climbs? These routes are also essential:
+
+- **[Sa Calobra Guide](/en/bike-shuttle/sa-calobra-guide/)** - Mallorca's most famous climb with 26 hairpins and the iconic spiral bridge
+- **[Andratx to Pollença (MA-10) Guide](/en/bike-shuttle/andratx-pollenca-guide/)** - The complete 60km journey through the Tramuntana mountains
+- **[Big Daddy Challenge](/en/bike-shuttle/big-daddy-challenge/)** - Take on all major climbs including Cap Formentor in one epic ride

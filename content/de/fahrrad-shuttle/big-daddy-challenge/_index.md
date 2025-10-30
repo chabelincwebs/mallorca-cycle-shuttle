@@ -1821,3 +1821,11 @@ max-height: 350px;
 }
 
 </style>
+
+## Teilstrecken - Detaillierte Leitfäden
+
+Die Big Daddy Challenge kombiniert Mallorcas ikonischste Anstiege. Detaillierte Informationen zu jedem Abschnitt:
+
+- **[Sa Calobra Leitfaden](/de/fahrrad-shuttle/sa-calobra-leitfaden/)** - Vollständige Details zum berühmten 26-Haarnadelkurven-Anstieg
+- **[Cap de Formentor Guide](/de/fahrrad-shuttle/cap-formentor-guide/)** - Kompletter Leitfaden zur atemberaubenden Küstenroute
+- **[Andratx nach Pollença (MA-10) Leitfaden](/de/fahrrad-shuttle/andratx-pollenca-leitfaden/)** - Alles, was Sie über die 60 km lange Tramuntana-Durchquerung wissen müssen

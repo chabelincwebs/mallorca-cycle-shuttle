@@ -123,4 +123,5 @@ final_cta:
   subtitle: "Ottieni il tuo servizio di soccorso bici oggi ed esplora Maiorca senza preoccupazioni"
   button_text: "Inizia"
   button_url: "https://mallorcacycleshuttle.company.site/products/"
+translationKey: "homepage"
 ---

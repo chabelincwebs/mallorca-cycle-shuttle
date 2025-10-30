@@ -218,4 +218,5 @@ final_cta:
   subtitle: "Regel vandaag je fietsredding en verken Mallorca zorgeloos"
   button_text: "Nu starten"
   button_url: "https://mallorcacycleshuttle.company.site/nl/products/"
+translationKey: "homepage"
 ---

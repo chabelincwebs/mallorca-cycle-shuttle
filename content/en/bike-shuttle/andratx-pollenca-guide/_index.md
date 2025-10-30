@@ -1695,3 +1695,11 @@ Shop Now →
   }
 }
 </style>
+
+## Related Cycling Routes
+
+Ready to tackle more of Mallorca's iconic climbs? Explore these challenging routes:
+
+- **[Sa Calobra Guide](/en/bike-shuttle/sa-calobra-guide/)** - The legendary 26-hairpin descent and climb, Mallorca's most famous road
+- **[Cap de Formentor Guide](/en/bike-shuttle/cap-formentor-guide/)** - Spectacular coastal cycling to the lighthouse at Mallorca's northern tip
+- **[Big Daddy Challenge](/en/bike-shuttle/big-daddy-challenge/)** - Combine Andratx-Pollença with Sa Calobra and more for the ultimate challenge

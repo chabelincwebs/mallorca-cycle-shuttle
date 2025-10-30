@@ -218,4 +218,5 @@ final_cta:
   subtitle: "Hol dir jetzt die Pannenhilfe und erkunde Mallorca ohne Stress"
   button_text: "Jetzt starten"
   button_url: "https://mallorcacycleshuttle.company.site/de/products/"
+translationKey: "homepage"
 ---

@@ -909,3 +909,11 @@ Erwägen Sie die Buchung eines <a href="https://mallorcacycleshuttle.company.sit
 Und vergessen Sie nicht, Ihre <a href="https://mallorcacycleshuttle.company.site/products/Rescue-&-Recovery-c15728236" target="_blank" rel="noopener noreferrer">Fahrrad-Rettungs</a>-Police zu erwerben, bevor Sie fahren – Sicherheit für Sie und Ihre Gruppe.
 
 Genießen Sie eine der spektakulärsten Küstentouren Mallorcas!
+
+## Verwandte Radstrecken
+
+Möchten Sie mehr von Mallorcas legendären Anstiegen erkunden? Diese Routen sind ebenfalls unverzichtbar:
+
+- **[Sa Calobra Leitfaden](/de/fahrrad-shuttle/sa-calobra-leitfaden/)** - Mallorcas berühmtester Anstieg mit 26 Haarnadelkurven und der ikonischen Spiralbrücke
+- **[Andratx nach Pollença (MA-10) Leitfaden](/de/fahrrad-shuttle/andratx-pollenca-leitfaden/)** - Die komplette 60 km lange Reise durch die Tramuntana-Berge
+- **[Big Daddy Challenge](/de/fahrrad-shuttle/big-daddy-challenge/)** - Nehmen Sie alle großen Anstiege einschließlich Cap Formentor an einem epischen Tag in Angriff

@@ -1,6 +1,7 @@
 ---
 title: "Impressum"
 description: "Impressum und Nutzungsbedingungen für die Website von Mallorca Cycle Shuttle. Informationen über Autocares Devesa SL und rechtliche Compliance."
+translationKey: "legal-notice"
 ---
 ﻿---
 title: "Rechtlicher Hinweis"

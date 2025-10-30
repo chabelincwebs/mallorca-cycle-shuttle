@@ -218,4 +218,5 @@ final_cta:
   subtitle: "Activez votre assistance vélo aujourd'hui et explorez Majorque l'esprit tranquille"
   button_text: "Commencer maintenant"
   button_url: "https://mallorcacycleshuttle.company.site/fr/products/"
+translationKey: "homepage"
 ---

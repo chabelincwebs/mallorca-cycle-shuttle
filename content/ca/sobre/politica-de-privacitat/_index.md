@@ -1,6 +1,7 @@
 ---
 title: "Política de Privacitat"
 description: "Política de privacitat del lloc web"
+translationKey: "privacy-policy"
 ---
 
 La següent política de privacitat és efectiva des del 25 de maig de 2018:
