@@ -1,6 +1,7 @@
 ---
 title: "Rättsligt Meddelande"
 translationKey: legal-notice
+description: "Rättsligt meddelande och användarvillkor för Mallorca Cycle Shuttle webbplats. Information om Autocares Devesa SL och juridisk efterlevnad."
 ---
 
 **Företagsnamn:** Autocares Devesa SL

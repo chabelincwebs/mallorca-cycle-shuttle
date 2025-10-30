@@ -66,6 +66,16 @@
 
     <!-- JSON-LD Structured Data -->
     {{- partial "schema-organization.html" . -}}
+
+    <!-- Article Schema for Blog Posts -->
+    {{- partial "schema-article.html" . -}}
+
+    <!-- Service Schemas for Rescue and Shuttle Pages -->
+    {{ if or (in .RelPermalink "/bike-rescue") (in .RelPermalink "/fahrrad-rettung") (in .RelPermalink "/rescate-bici") (in .RelPermalink "/soccorso-bici") (in .RelPermalink "/secours-velo") (in .RelPermalink "/rescat-bici") (in .RelPermalink "/rescat-ciclistes") (in .RelPermalink "/fiets-redding") (in .RelPermalink "/cykel-raddning") (in .RelPermalink "/sykkel-redning") (in .RelPermalink "/cykel-redning") }}
+      {{- partial "schema-service-rescue.html" . -}}
+    {{ else if or (in .RelPermalink "/bike-shuttle") (in .RelPermalink "/fahrrad-shuttle") (in .RelPermalink "/shuttle-bici") (in .RelPermalink "/navette-velo") (in .RelPermalink "/fiets-shuttle") (in .RelPermalink "/cykel-shuttle") (in .RelPermalink "/sykkel-shuttle") }}
+      {{- partial "schema-service-shuttle.html" . -}}
+    {{ end }}
   </head>
   <body>
     <!-- Menu Overlay -->

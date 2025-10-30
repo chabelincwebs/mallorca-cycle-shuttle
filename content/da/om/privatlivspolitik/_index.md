@@ -1,6 +1,7 @@
 ---
 title: "Privatlivspolitik"
 translationKey: privacy-policy
+description: "Læs vores privatlivspolitik for at forstå hvordan Mallorca Cycle Shuttle indsamler, bruger og beskytter dine personlige oplysninger."
 ---
 
 Følgende privatlivspolitik er gældende fra 25. maj 2018:

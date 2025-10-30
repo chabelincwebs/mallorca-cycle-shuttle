@@ -1,5 +1,6 @@
 ---
 title: "Politique de Confidentialité"
+description: "Lisez notre politique de confidentialité pour comprendre comment Mallorca Cycle Shuttle collecte, utilise et protège vos informations personnelles."
 ---
 
 En vigueur depuis le 25 mai 2018

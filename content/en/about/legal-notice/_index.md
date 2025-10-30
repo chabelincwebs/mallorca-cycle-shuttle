@@ -1,3 +1,7 @@
+---
+title: "Legal Notice"
+description: "Legal notice and terms of use for Mallorca Cycle Shuttle website. Information about Autocares Devesa SL and legal compliance."
+---
 ﻿---
 title: "Legal Notice"
 translationKey: legal-notice
@@ -265,3 +269,4 @@ If any provision or part-provision of these Terms of Website Use is or becomes i
 If you are a consumer, please note that these Terms of Website Use, their subject matter and their formation, are governed by Spanish law. You and we both agree that the courts of Spain will have exclusive jurisdiction.
 
 If you are a business, these Terms of Website Use, their subject matter and their formation (and any non-contractual disputes or claims) are governed by Spanish law. We both agree to the exclusive jurisdiction of the courts of Spain.
+

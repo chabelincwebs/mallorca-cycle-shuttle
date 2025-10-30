@@ -1,3 +1,7 @@
+---
+title: "Política de Privacidad"
+description: "Lea nuestra política de privacidad para entender cómo Mallorca Cycle Shuttle recopila, utiliza y protege su información personal."
+---
 ﻿---
 title: "Política de privacidad"
 ---
@@ -100,3 +104,4 @@ Usted puede configurar su navegador para rechazar todas o algunas cookies, o par
 ## 11. Cambios en esta política
 
 Publicaremos cualquier cambio en esta página y, cuando corresponda, se lo notificaremos por correo electrónico o al iniciar sesión. Es posible que deba leer y aceptar los nuevos términos para continuar usando el sitio.
+

@@ -1,3 +1,7 @@
+---
+title: "Aviso Legal"
+description: "Aviso legal y condiciones de uso del sitio web de Mallorca Cycle Shuttle. Información sobre Autocares Devesa SL y cumplimiento legal."
+---
 ﻿---
 title: "Aviso legal"
 translationKey: legal-notice
@@ -216,3 +220,4 @@ Si alguna disposición de estas Condiciones resultara inválida/ilegal/inaplicab
 Si es consumidor, estas Condiciones (formación, objeto) se rigen por la ley española y los tribunales de España tendrán jurisdicción exclusiva.
 
 Si es empresario, estas Condiciones (incluidos conflictos extracontractuales) se rigen por la ley española y ambas partes se someten a la jurisdicción exclusiva de los tribunales de España.
+

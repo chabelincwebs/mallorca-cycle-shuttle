@@ -1,6 +1,7 @@
 ---
 title: "Juridisk merknad"
 translationKey: legal-notice
+description: "Juridisk merknad og brukervilkår for Mallorca Cycle Shuttle nettsted. Informasjon om Autocares Devesa SL og juridisk overholdelse."
 ---
 
 **Firmanavn:** Autocares Devesa SL

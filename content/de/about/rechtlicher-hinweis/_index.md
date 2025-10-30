@@ -1,3 +1,7 @@
+---
+title: "Impressum"
+description: "Impressum und Nutzungsbedingungen für die Website von Mallorca Cycle Shuttle. Informationen über Autocares Devesa SL und rechtliche Compliance."
+---
 ﻿---
 title: "Rechtlicher Hinweis"
 ---
@@ -193,3 +197,4 @@ Sollte eine Bestimmung dieser Bedingungen ganz/teilweise unwirksam, rechtswidrig
 ### Anwendbares Recht und Gerichtsstand
 
 Für Verbraucher und Unternehmer gelten spanisches Recht und die ausschließliche Zuständigkeit der spanischen Gerichte für Streitigkeiten aus/über diese Nutzungsbedingungen.
+

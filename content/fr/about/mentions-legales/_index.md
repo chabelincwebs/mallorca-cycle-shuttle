@@ -1,6 +1,7 @@
 ---
 title: "Mentions Légales"
 translationKey: legal-notice
+description: "Mentions légales et conditions d'utilisation du site web de Mallorca Cycle Shuttle. Informations sur Autocares Devesa SL et conformité légale."
 ---
 
 **Raison sociale:** Autocares Devesa SL

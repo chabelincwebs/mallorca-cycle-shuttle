@@ -1,6 +1,7 @@
 ---
 title: "Note Legali"
 translationKey: legal-notice
+description: "Avviso legale e termini di utilizzo del sito web di Mallorca Cycle Shuttle. Informazioni su Autocares Devesa SL e conformità legale."
 ---
 
 **Denominazione sociale:** Autocares Devesa SL

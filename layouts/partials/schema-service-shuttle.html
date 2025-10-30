@@ -1,0 +1,74 @@
+{{/* JSON-LD Schema.org markup for Bicycle Shuttle Service */}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Bicycle Shuttle Service",
+  "name": "{{ .Site.Title }} - Bicycle Shuttle",
+  "description": "Premium cycling shuttle service in Mallorca. Transport to iconic climbs like Sa Calobra, Cap Formentor, and Andratx-Pollença route.",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "{{ .Site.Title }}",
+    "legalName": "Autocares Devesa SL",
+    "url": "{{ .Site.BaseURL }}",
+    "telephone": "+34-XXX-XXX-XXX",
+    "email": "admin@mallorcacycleshuttle.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Calle Fuster 36 a",
+      "addressLocality": "Pollença",
+      "postalCode": "07460",
+      "addressRegion": "Balearic Islands",
+      "addressCountry": "ES"
+    }
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Mallorca"
+  },
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "serviceUrl": "{{ .Permalink }}",
+    "availableLanguage": ["English", "German", "Spanish", "Italian", "French", "Catalan", "Dutch", "Swedish", "Norwegian", "Danish"]
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Bicycle Shuttle Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Sa Calobra Shuttle",
+          "description": "Premium shuttle service to the iconic Sa Calobra climb with professional cyclist support"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Cap Formentor Shuttle",
+          "description": "Transport service to Cap Formentor, one of Mallorca's most spectacular coastal routes"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Andratx-Pollença Shuttle",
+          "description": "Shuttle service for the challenging MA-10 route through the Tramuntana mountains"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Private Shuttle Bookings",
+          "description": "Custom private shuttle services for individuals, groups, and cycling events"
+        }
+      }
+    ]
+  },
+  "priceRange": "€€"
+}
+</script>

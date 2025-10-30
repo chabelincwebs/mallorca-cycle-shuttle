@@ -1,6 +1,7 @@
 ---
 title: "Avís Legal"
 translationKey: legal-notice
+description: "Avís legal i condicions d'ús del lloc web de Mallorca Cycle Shuttle. Informació sobre Autocares Devesa SL i compliment legal."
 ---
 
 **Nom de l'empresa:** Autocares Devesa SL

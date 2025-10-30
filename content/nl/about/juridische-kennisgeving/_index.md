@@ -1,5 +1,6 @@
 ---
 title: "Juridische Kennisgeving"
+description: "Juridische kennisgeving en gebruiksvoorwaarden voor de website van Mallorca Cycle Shuttle. Informatie over Autocares Devesa SL en juridische naleving."
 ---
 
 **Bedrijfsnaam:** Autocares Devesa SL

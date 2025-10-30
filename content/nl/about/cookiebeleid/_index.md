@@ -1,6 +1,7 @@
 ---
 title: "Cookiebeleid"
 translationKey: cookie-policy
+description: "Ontdek hoe Mallorca Cycle Shuttle cookies gebruikt om uw browse-ervaring te verbeteren en websiteverkeer te analyseren."
 ---
 
 Autocares Devesa SL, Mallorca Cycle Shuttle en Mallorca Bicycle Rescue informeren u hier over het gebruik van cookies op de website: mallorcacycleshuttle.com

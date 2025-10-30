@@ -1,0 +1,79 @@
+{{/* JSON-LD Schema.org markup for Bicycle Rescue Service */}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Bicycle Rescue Service",
+  "name": "{{ .Site.Title }} - Bicycle Rescue",
+  "description": "24/7 emergency bicycle rescue service in Mallorca. Professional support for mechanical breakdowns, accidents, and emergencies across the island.",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "{{ .Site.Title }}",
+    "legalName": "Autocares Devesa SL",
+    "url": "{{ .Site.BaseURL }}",
+    "telephone": "+34-XXX-XXX-XXX",
+    "email": "admin@mallorcacycleshuttle.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Calle Fuster 36 a",
+      "addressLocality": "Pollença",
+      "postalCode": "07460",
+      "addressRegion": "Balearic Islands",
+      "addressCountry": "ES"
+    }
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Mallorca"
+  },
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "serviceUrl": "{{ .Permalink }}",
+    "availableLanguage": ["English", "German", "Spanish", "Italian", "French", "Catalan", "Dutch", "Swedish", "Norwegian", "Danish"]
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Bicycle Rescue Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Emergency Bicycle Rescue",
+          "description": "24/7 emergency rescue service for cyclists experiencing mechanical failures or accidents"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Mechanical Support",
+          "description": "Professional assistance for bicycle mechanical breakdowns anywhere on Mallorca"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Transport Service",
+          "description": "Safe transport for cyclists and bicycles to hotels or repair shops"
+        }
+      }
+    ]
+  },
+  "hoursAvailable": {
+    "@type": "OpeningHoursSpecification",
+    "opens": "00:00",
+    "closes": "23:59",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ]
+  }
+}
+</script>

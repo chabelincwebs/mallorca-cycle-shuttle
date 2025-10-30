@@ -1,6 +1,7 @@
 ---
 title: "Informasjonskapselpolicy"
 translationKey: cookie-policy
+description: "Lær om hvordan Mallorca Cycle Shuttle bruker informasjonskapsler for å forbedre din nettleseropplevelse og analysere nettstedstrafikk."
 ---
 
 Autocares Devesa SL, Mallorca Cycle Shuttle og Mallorca Bicycle Rescue informerer deg her om bruken av informasjonskapsler på nettstedet: mallorcacycleshuttle.com

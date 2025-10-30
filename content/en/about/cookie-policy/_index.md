@@ -1,3 +1,7 @@
+---
+title: "Cookie Policy"
+description: "Learn about how Mallorca Cycle Shuttle uses cookies to enhance your browsing experience and analyze website traffic."
+---
 ﻿---
 title: "Cookie Policy"
 translationKey: cookie-policy
@@ -71,3 +75,4 @@ Given this information it is possible to carry out the following actions:
 **Close:** The notice is hidden on this page.
 
 **Modify your settings:** You can get more information about what cookies are, know the Cookies Policy of: mallorcacycleshuttle.com and modify the configuration of your browser.
+

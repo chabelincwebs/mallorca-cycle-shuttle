@@ -1,6 +1,7 @@
 ---
 title: "Informativa sui Cookie"
 translationKey: cookie-policy
+description: "Scopri come Mallorca Cycle Shuttle utilizza i cookie per migliorare la tua esperienza di navigazione e analizzare il traffico del sito web."
 ---
 
 Autocares Devesa SL, Maiorca Cycle Shuttle e Maiorca Bicycle Rescue vi informano qui sull'uso dei cookie sul suo sito web: mallorcacycleshuttle.com

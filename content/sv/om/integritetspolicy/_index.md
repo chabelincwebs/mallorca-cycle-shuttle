@@ -1,6 +1,7 @@
 ---
 title: "Integritetspolicy"
 translationKey: privacy-policy
+description: "Läs vår integritetspolicy för att förstå hur Mallorca Cycle Shuttle samlar in, använder och skyddar din personliga information."
 ---
 
 Följande integritetspolicy gäller från 25 maj 2018:

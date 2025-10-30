@@ -1,0 +1,41 @@
+{{/* JSON-LD Schema.org markup for Article (Blog Posts) */}}
+{{ if and (eq .Section "blog") (not .IsSection) }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{ .Title }}",
+  "description": "{{ with .Params.description }}{{ . }}{{ else }}{{ with .Params.excerpt }}{{ . }}{{ end }}{{ end }}",
+  "image": {
+    "@type": "ImageObject",
+    "url": "{{ with .Params.featured_image }}{{ . | absURL }}{{ else }}{{ "/img/hero-main.webp" | absURL }}{{ end }}",
+    "width": 1200,
+    "height": 630
+  },
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  {{ with .Lastmod }}"dateModified": "{{ .Format "2006-01-02T15:04:05Z07:00" }}",{{ end }}
+  "author": {
+    "@type": "Organization",
+    "name": "{{ .Site.Title }}",
+    "url": "{{ .Site.BaseURL }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ .Site.Title }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ "/img/logo.svg" | absURL }}",
+      "width": 600,
+      "height": 60
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ .Permalink }}"
+  },
+  {{ with .Params.category }}"articleSection": "{{ . }}",{{ end }}
+  "inLanguage": "{{ .Language.Lang }}",
+  "url": "{{ .Permalink }}"
+}
+</script>
+{{ end }}

@@ -1,3 +1,7 @@
+---
+title: "Datenschutzerklärung"
+description: "Lesen Sie unsere Datenschutzerklärung, um zu verstehen, wie Mallorca Cycle Shuttle Ihre persönlichen Daten sammelt, verwendet und schützt."
+---
 ﻿---
 title: "Datenschutzerklärung"
 translationKey: privacy-policy
@@ -101,3 +105,4 @@ Sie können Ihren Browser so einstellen, dass er alle/ausgewählte Cookies block
 ## 11. Änderungen dieser Datenschutzerklärung
 
 Änderungen veröffentlichen wir auf dieser Seite und informieren Sie ggf. per E-Mail oder beim nächsten Login (mit Anzeige der neuen Bedingungen, deren Kenntnisnahme/Akzeptanz ggf. erforderlich ist).
+

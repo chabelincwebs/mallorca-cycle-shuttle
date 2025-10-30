@@ -1,3 +1,7 @@
+---
+title: "Privacy Policy"
+description: "Read our privacy policy to understand how Mallorca Cycle Shuttle collects, uses, and protects your personal information."
+---
 ﻿---
 title: "Privacy Policy"
 translationKey: privacy-policy
@@ -122,3 +126,4 @@ If you wish, it is always in your control to set your browser to refuse all or s
 ## 11. Changes to our privacy policy
 
 Any changes we may make to our privacy policy in the future will be posted on this page and, where appropriate, notified to you by e-mail or when you next log onto our site. The new terms may be displayed on-screen and you may be required to read and accept them to continue your use of our site.
+

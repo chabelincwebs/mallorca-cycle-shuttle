@@ -1,6 +1,7 @@
 ---
 title: "Política de Cookies"
 translationKey: cookie-policy
+description: "Conegueu com Mallorca Cycle Shuttle utilitza cookies per millorar la vostra experiència de navegació i analitzar el trànsit del lloc web."
 ---
 
 Autocares Devesa SL, Mallorca Cycle Shuttle i Mallorca Bicycle Rescue us informen aquí sobre l'ús de cookies al seu lloc web: mallorcacycleshuttle.com
