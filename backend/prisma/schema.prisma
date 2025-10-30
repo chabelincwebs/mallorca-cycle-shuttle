@@ -1,0 +1,531 @@
+// Prisma Schema for Mallorca Cycle Shuttle Booking System
+// With Spanish Fiscal Compliance (VeriFactu 2026)
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ============================================================================
+// ADMIN & AUTHENTICATION
+// ============================================================================
+
+model AdminUser {
+  id            Int       @id @default(autoincrement())
+  email         String    @unique
+  passwordHash  String    @map("password_hash")
+  role          String    // "super_admin" | "staff"
+  permissions   Json      @default("[]") // Array of permission strings
+  totpSecret    String?   @map("totp_secret")
+  totpEnabled   Boolean   @default(false) @map("totp_enabled")
+  fullName      String    @map("full_name")
+  createdAt     DateTime  @default(now()) @map("created_at")
+  updatedAt     DateTime  @updatedAt @map("updated_at")
+  lastLogin     DateTime? @map("last_login")
+  active        Boolean   @default(true)
+
+  // Relations
+  invoicesCreated          Invoice[]            @relation("InvoiceCreatedBy")
+  privateBookingsConfirmed PrivateBooking[]     @relation("PrivateBookingConfirmedBy")
+  servicesCreated          ScheduledService[]   @relation("ServiceCreatedBy")
+  servicesCancelled        ScheduledService[]   @relation("ServiceCancelledBy")
+  b2bCustomersCreated      B2BCustomer[]        @relation("B2BCustomerCreatedBy")
+  auditLogs                AuditLog[]
+
+  @@index([email])
+  @@map("admin_users")
+}
+
+// ============================================================================
+// B2B CUSTOMERS
+// ============================================================================
+
+model B2BCustomer {
+  id                 Int       @id @default(autoincrement())
+  companyName        String    @map("company_name")
+  companyCif         String    @unique @map("company_cif")
+  companyAddress     String    @map("company_address")
+  companyPostal      String    @map("company_postal")
+  companyCity        String    @map("company_city")
+  companyRegion      String    @map("company_region")
+  companyCountry     String    @default("España") @map("company_country")
+  contactName        String    @map("contact_name")
+  contactEmail       String    @map("contact_email")
+  contactPhone       String    @map("contact_phone")
+  customerType       String    @map("customer_type") // "hotel" | "bike_shop" | "agency" | "other"
+  paymentTerms       String    @default("prepaid") @map("payment_terms") // "prepaid" | "net7" | "net15" | "net30"
+  creditLimit        Decimal   @default(0) @db.Decimal(10, 2) @map("credit_limit")
+  currentBalance     Decimal   @default(0) @db.Decimal(10, 2) @map("current_balance")
+  facturaeEnabled    Boolean   @default(true) @map("facturae_enabled")
+  facturaeEmail      String?   @map("facturae_email")
+  discountPercentage Decimal   @default(0) @db.Decimal(5, 2) @map("discount_percentage")
+  active             Boolean   @default(true)
+  notes              String?
+  createdAt          DateTime  @default(now()) @map("created_at")
+  updatedAt          DateTime  @updatedAt @map("updated_at")
+  createdById        Int       @map("created_by")
+
+  // Relations
+  createdBy          AdminUser          @relation("B2BCustomerCreatedBy", fields: [createdById], references: [id])
+  scheduledBookings  ScheduledBooking[]
+  privateBookings    PrivateBooking[]
+  invoices           Invoice[]
+
+  @@index([companyCif])
+  @@index([contactEmail])
+  @@map("b2b_customers")
+}
+
+// ============================================================================
+// FLEET MANAGEMENT
+// ============================================================================
+
+model Bus {
+  id                  Int       @id @default(autoincrement())
+  name                String
+  licensePlate        String    @unique @map("license_plate")
+  capacity            Int
+  bikeCapacity        Int       @map("bike_capacity")
+  availabilityType    String    @map("availability_type") // "always" | "seasonal" | "manual"
+  availabilityRules   Json?     @map("availability_rules") // {"start_date": "2025-04-01", "end_date": "2025-10-31"}
+  bookingCutoffHours  Int       @default(18) @map("booking_cutoff_hours")
+  active              Boolean   @default(true)
+  notes               String?
+  createdAt           DateTime  @default(now()) @map("created_at")
+  updatedAt           DateTime  @updatedAt @map("updated_at")
+
+  // Relations
+  scheduledServices ScheduledService[]
+  privateBookings   PrivateBooking[]
+
+  @@index([active])
+  @@map("buses")
+}
+
+// ============================================================================
+// ROUTES
+// ============================================================================
+
+model Route {
+  id           Int      @id @default(autoincrement())
+  nameEn       String   @map("name_en")
+  nameDe       String?  @map("name_de")
+  nameEs       String?  @map("name_es")
+  nameIt       String?  @map("name_it")
+  nameFr       String?  @map("name_fr")
+  nameCa       String?  @map("name_ca")
+  nameNl       String?  @map("name_nl")
+  nameSv       String?  @map("name_sv")
+  nameNb       String?  @map("name_nb")
+  nameDa       String?  @map("name_da")
+  locationType String   @map("location_type") // "pickup" | "dropoff" | "both"
+  coordinates  Json?    // {"lat": 39.xxxx, "lng": 2.xxxx}
+  displayOrder Int      @default(0) @map("display_order")
+  active       Boolean  @default(true)
+  createdAt    DateTime @default(now()) @map("created_at")
+
+  // Relations
+  scheduledServicesPickup1  ScheduledService[]  @relation("ServicePickup1")
+  scheduledServicesPickup2  ScheduledService[]  @relation("ServicePickup2")
+  scheduledServicesDropoff  ScheduledService[]  @relation("ServiceDropoff")
+  scheduledBookings         ScheduledBooking[]
+  privateBookingsPickup     PrivateBooking[]    @relation("PrivatePickup")
+  privateBookingsDropoff    PrivateBooking[]    @relation("PrivateDropoff")
+
+  @@index([locationType, active])
+  @@map("routes")
+}
+
+// ============================================================================
+// SCHEDULED SERVICES
+// ============================================================================
+
+model ScheduledService {
+  id                  Int       @id @default(autoincrement())
+  busId               Int       @map("bus_id")
+  serviceDate         DateTime  @map("service_date") @db.Date
+  departureTime       DateTime  @map("departure_time") @db.Time
+  routePickup1Id      Int       @map("route_pickup1_id")
+  routePickup2Id      Int?      @map("route_pickup2_id")
+  routeDropoffId      Int       @map("route_dropoff_id")
+  totalSeats          Int       @map("total_seats")
+  seatsAvailable      Int       @map("seats_available")
+  priceStandard       Decimal   @db.Decimal(10, 2) @map("price_standard")
+  priceFlexi          Decimal   @db.Decimal(10, 2) @map("price_flexi")
+  ivaRate             Decimal   @default(0.10) @db.Decimal(5, 4) @map("iva_rate")
+  bookingCutoffTime   DateTime  @default(dbgenerated("'16:00:00'::time")) @map("booking_cutoff_time") @db.Time
+  status              String    @default("active") // "active" | "cancelled" | "completed"
+  cancellationReason  String?   @map("cancellation_reason")
+  cancelledAt         DateTime? @map("cancelled_at")
+  cancelledById       Int?      @map("cancelled_by")
+  createdAt           DateTime  @default(now()) @map("created_at")
+  createdById         Int       @map("created_by")
+
+  // Relations
+  bus              Bus                @relation(fields: [busId], references: [id])
+  routePickup1     Route              @relation("ServicePickup1", fields: [routePickup1Id], references: [id])
+  routePickup2     Route?             @relation("ServicePickup2", fields: [routePickup2Id], references: [id])
+  routeDropoff     Route              @relation("ServiceDropoff", fields: [routeDropoffId], references: [id])
+  createdBy        AdminUser          @relation("ServiceCreatedBy", fields: [createdById], references: [id])
+  cancelledBy      AdminUser?         @relation("ServiceCancelledBy", fields: [cancelledById], references: [id])
+  bookings         ScheduledBooking[]
+
+  @@unique([busId, serviceDate, departureTime])
+  @@index([serviceDate, status])
+  @@index([status])
+  @@map("scheduled_services")
+}
+
+// ============================================================================
+// SCHEDULED BOOKINGS
+// ============================================================================
+
+model ScheduledBooking {
+  id                      Int       @id @default(autoincrement())
+  bookingReference        String    @unique @map("booking_reference")
+  serviceId               Int       @map("service_id")
+  customerType            String    @map("customer_type") // "b2c" | "b2b"
+  b2bCustomerId           Int?      @map("b2b_customer_id")
+  ticketType              String    @map("ticket_type") // "standard" | "flexi"
+  seatsBooked             Int       @map("seats_booked")
+  bikesCount              Int       @default(0) @map("bikes_count")
+  pickupLocationId        Int       @map("pickup_location_id")
+  customerName            String    @map("customer_name")
+  customerEmail           String    @map("customer_email")
+  customerPhone           String    @map("customer_phone")
+  customerLanguage        String    @map("customer_language")
+  pricePerSeat            Decimal   @db.Decimal(10, 2) @map("price_per_seat")
+  ivaRate                 Decimal   @db.Decimal(5, 4) @map("iva_rate")
+  ivaAmount               Decimal   @db.Decimal(10, 2) @map("iva_amount")
+  totalAmount             Decimal   @db.Decimal(10, 2) @map("total_amount")
+  discountApplied         Decimal   @default(0) @db.Decimal(5, 2) @map("discount_applied")
+  paymentMethod           String    @map("payment_method") // "stripe" | "paypal" | "credit"
+  paymentId               String?   @map("payment_id")
+  paymentStatus           String    @default("completed") @map("payment_status") // "pending" | "completed" | "refunded"
+  paidAt                  DateTime? @map("paid_at")
+  changeToken             String?   @unique @map("change_token")
+  changesRemaining        Int       @default(0) @map("changes_remaining")
+  originalBookingId       Int?      @map("original_booking_id")
+  status                  String    @default("confirmed") // "confirmed" | "cancelled" | "completed" | "no_show"
+  cancellationRefundAmount Decimal? @db.Decimal(10, 2) @map("cancellation_refund_amount")
+  cancelledAt             DateTime? @map("cancelled_at")
+  confirmationSent        Boolean   @default(false) @map("confirmation_sent")
+  reminderSent            Boolean   @default(false) @map("reminder_sent")
+  invoiceId               Int?      @map("invoice_id")
+  createdAt               DateTime  @default(now()) @map("created_at")
+  updatedAt               DateTime  @updatedAt @map("updated_at")
+
+  // Relations
+  service           ScheduledService    @relation(fields: [serviceId], references: [id])
+  b2bCustomer       B2BCustomer?        @relation(fields: [b2bCustomerId], references: [id])
+  pickupLocation    Route               @relation(fields: [pickupLocationId], references: [id])
+  originalBooking   ScheduledBooking?   @relation("BookingChanges", fields: [originalBookingId], references: [id])
+  changedBookings   ScheduledBooking[]  @relation("BookingChanges")
+  invoice           Invoice?            @relation(fields: [invoiceId], references: [id])
+
+  @@index([bookingReference])
+  @@index([serviceId])
+  @@index([customerEmail])
+  @@index([b2bCustomerId])
+  @@map("scheduled_bookings")
+}
+
+// ============================================================================
+// PRIVATE BOOKINGS
+// ============================================================================
+
+model PrivateBooking {
+  id                       Int       @id @default(autoincrement())
+  bookingReference         String    @unique @map("booking_reference")
+  busId                    Int?      @map("bus_id")
+  customerType             String    @map("customer_type") // "b2c" | "b2b"
+  b2bCustomerId            Int?      @map("b2b_customer_id")
+  serviceDate              DateTime  @map("service_date") @db.Date
+  departureTime            DateTime  @map("departure_time") @db.Time
+  routePickupId            Int       @map("route_pickup_id")
+  routeDropoffId           Int       @map("route_dropoff_id")
+  customerName             String    @map("customer_name")
+  customerEmail            String    @map("customer_email")
+  customerPhone            String    @map("customer_phone")
+  customerLanguage         String    @map("customer_language")
+  passengersCount          Int       @map("passengers_count")
+  bikesCount               Int       @default(0) @map("bikes_count")
+  basePrice                Decimal   @db.Decimal(10, 2) @map("base_price")
+  ivaRate                  Decimal   @db.Decimal(5, 4) @map("iva_rate")
+  ivaAmount                Decimal   @db.Decimal(10, 2) @map("iva_amount")
+  totalAmount              Decimal   @db.Decimal(10, 2) @map("total_amount")
+  discountApplied          Decimal   @default(0) @db.Decimal(5, 2) @map("discount_applied")
+  paymentMethod            String    @map("payment_method") // "stripe" | "paypal" | "credit"
+  paymentId                String?   @map("payment_id")
+  paymentStatus            String    @default("completed") @map("payment_status") // "pending" | "completed" | "refunded"
+  paidAt                   DateTime? @map("paid_at")
+  status                   String    @default("pending") // "pending" | "confirmed" | "cancelled" | "completed" | "no_show"
+  adminNotes               String?   @map("admin_notes")
+  confirmedAt              DateTime? @map("confirmed_at")
+  confirmedById            Int?      @map("confirmed_by")
+  confirmationSent         Boolean   @default(false) @map("confirmation_sent")
+  reminderSent             Boolean   @default(false) @map("reminder_sent")
+  invoiceId                Int?      @map("invoice_id")
+  createdAt                DateTime  @default(now()) @map("created_at")
+  updatedAt                DateTime  @updatedAt @map("updated_at")
+
+  // Relations
+  bus           Bus?         @relation(fields: [busId], references: [id])
+  b2bCustomer   B2BCustomer? @relation(fields: [b2bCustomerId], references: [id])
+  routePickup   Route        @relation("PrivatePickup", fields: [routePickupId], references: [id])
+  routeDropoff  Route        @relation("PrivateDropoff", fields: [routeDropoffId], references: [id])
+  confirmedBy   AdminUser?   @relation("PrivateBookingConfirmedBy", fields: [confirmedById], references: [id])
+  invoice       Invoice?     @relation(fields: [invoiceId], references: [id])
+
+  @@index([bookingReference])
+  @@index([serviceDate, status])
+  @@index([customerEmail])
+  @@map("private_bookings")
+}
+
+// ============================================================================
+// FISCAL COMPLIANCE (VeriFactu)
+// ============================================================================
+
+model InvoiceSeries {
+  id            Int      @id @default(autoincrement())
+  seriesCode    String   @map("series_code")
+  description   String
+  invoiceType   String   @map("invoice_type") // "standard" | "rectificative" | "simplified"
+  currentNumber Int      @default(0) @map("current_number")
+  year          Int
+  active        Boolean  @default(true)
+  createdAt     DateTime @default(now()) @map("created_at")
+
+  // Relations
+  invoices Invoice[]
+
+  @@unique([seriesCode, year])
+  @@map("invoice_series")
+}
+
+model Invoice {
+  id                    Int       @id @default(autoincrement())
+  invoiceNumber         String    @unique @map("invoice_number")
+  seriesId              Int       @map("series_id")
+  invoiceYear           Int       @map("invoice_year")
+  invoiceSequence       Int       @map("invoice_sequence")
+  invoiceType           String    @map("invoice_type") // "standard" | "rectificative" | "simplified"
+  rectifiedInvoiceId    Int?      @map("rectified_invoice_id")
+  rectificationReason   String?   @map("rectification_reason")
+  customerType          String    @map("customer_type") // "b2c" | "b2b"
+  b2bCustomerId         Int?      @map("b2b_customer_id")
+  customerName          String    @map("customer_name")
+  customerCif           String?   @map("customer_cif")
+  customerAddress       String    @map("customer_address")
+  customerPostal        String    @map("customer_postal")
+  customerCity          String    @map("customer_city")
+  customerRegion        String?   @map("customer_region")
+  customerCountry       String    @default("España") @map("customer_country")
+  customerEmail         String?   @map("customer_email")
+  issueDate             DateTime  @map("issue_date") @db.Date
+  serviceDate           DateTime  @map("service_date") @db.Date
+  baseAmount            Decimal   @db.Decimal(10, 2) @map("base_amount")
+  iva10Base             Decimal   @default(0) @db.Decimal(10, 2) @map("iva_10_base")
+  iva10Amount           Decimal   @default(0) @db.Decimal(10, 2) @map("iva_10_amount")
+  iva21Base             Decimal   @default(0) @db.Decimal(10, 2) @map("iva_21_base")
+  iva21Amount           Decimal   @default(0) @db.Decimal(10, 2) @map("iva_21_amount")
+  totalIva              Decimal   @db.Decimal(10, 2) @map("total_iva")
+  totalAmount           Decimal   @db.Decimal(10, 2) @map("total_amount")
+  paymentMethod         String    @map("payment_method")
+  paymentReference      String?   @map("payment_reference")
+  paymentStatus         String    @default("paid") @map("payment_status") // "pending" | "paid" | "refunded" | "partial_refund"
+  verifactuId           String    @unique @map("verifactu_id")
+  verifactuTimestamp    DateTime  @map("verifactu_timestamp")
+  verifactuHash         String    @map("verifactu_hash")
+  verifactuPreviousHash String?   @map("verifactu_previous_hash")
+  verifactuQrCode       String?   @map("verifactu_qr_code") @db.Text
+  verifactuHuella       String?   @map("verifactu_huella")
+  aeatSubmitted         Boolean   @default(false) @map("aeat_submitted")
+  aeatSubmissionId      String?   @map("aeat_submission_id")
+  aeatSubmittedAt       DateTime? @map("aeat_submitted_at")
+  aeatSubmissionAttempts Int      @default(0) @map("aeat_submission_attempts")
+  aeatLastError         String?   @map("aeat_last_error")
+  facturaeGenerated     Boolean   @default(false) @map("facturae_generated")
+  facturaeXml           String?   @map("facturae_xml") @db.Text
+  facturaeSent          Boolean   @default(false) @map("facturae_sent")
+  facturaeSentAt        DateTime? @map("facturae_sent_at")
+  pdfGenerated          Boolean   @default(false) @map("pdf_generated")
+  pdfUrl                String?   @map("pdf_url")
+  status                String    @default("issued") // "draft" | "issued" | "sent" | "paid" | "cancelled"
+  notes                 String?
+  createdAt             DateTime  @default(now()) @map("created_at")
+  createdById           Int       @map("created_by")
+
+  // Relations
+  series                InvoiceSeries      @relation(fields: [seriesId], references: [id])
+  b2bCustomer           B2BCustomer?       @relation(fields: [b2bCustomerId], references: [id])
+  rectifiedInvoice      Invoice?           @relation("InvoiceRectification", fields: [rectifiedInvoiceId], references: [id])
+  rectifyingInvoices    Invoice[]          @relation("InvoiceRectification")
+  createdBy             AdminUser          @relation("InvoiceCreatedBy", fields: [createdById], references: [id])
+  lines                 InvoiceLine[]
+  verifactuRecords      VerifactuRecord[]
+  scheduledBookings     ScheduledBooking[]
+  privateBookings       PrivateBooking[]
+
+  @@unique([invoiceYear, seriesId, invoiceSequence])
+  @@index([invoiceNumber])
+  @@index([issueDate])
+  @@index([customerType, b2bCustomerId])
+  @@index([verifactuId])
+  @@map("invoices")
+}
+
+model InvoiceLine {
+  id          Int     @id @default(autoincrement())
+  invoiceId   Int     @map("invoice_id")
+  lineNumber  Int     @map("line_number")
+  description String  @db.Text
+  quantity    Int     @default(1)
+  unitPrice   Decimal @db.Decimal(10, 2) @map("unit_price")
+  ivaRate     Decimal @db.Decimal(5, 4) @map("iva_rate")
+  ivaAmount   Decimal @db.Decimal(10, 2) @map("iva_amount")
+  subtotal    Decimal @db.Decimal(10, 2)
+  total       Decimal @db.Decimal(10, 2)
+  bookingType String? @map("booking_type") // "scheduled" | "private"
+  bookingId   Int?    @map("booking_id")
+
+  // Relations
+  invoice Invoice @relation(fields: [invoiceId], references: [id], onDelete: Cascade)
+
+  @@unique([invoiceId, lineNumber])
+  @@index([invoiceId])
+  @@map("invoice_lines")
+}
+
+model VerifactuRecord {
+  id                  Int       @id @default(autoincrement())
+  invoiceId           Int       @map("invoice_id")
+  submissionTimestamp DateTime  @default(now()) @map("submission_timestamp")
+  submissionPayload   Json      @map("submission_payload")
+  aeatResponseCode    String?   @map("aeat_response_code")
+  aeatResponseMessage String?   @map("aeat_response_message")
+  aeatCsv             String?   @map("aeat_csv")
+  submissionStatus    String    @map("submission_status") // "pending" | "success" | "failed" | "retry"
+  retryCount          Int       @default(0) @map("retry_count")
+  nextRetryAt         DateTime? @map("next_retry_at")
+  errorCode           String?   @map("error_code")
+  errorMessage        String?   @map("error_message")
+  createdAt           DateTime  @default(now()) @map("created_at")
+
+  // Relations
+  invoice Invoice @relation(fields: [invoiceId], references: [id])
+
+  @@index([invoiceId])
+  @@index([submissionStatus])
+  @@index([nextRetryAt])
+  @@map("verifactu_records")
+}
+
+// ============================================================================
+// NOTIFICATIONS
+// ============================================================================
+
+model EmailTemplate {
+  id         Int      @id @default(autoincrement())
+  templateKey String  @unique @map("template_key")
+  name       String
+  subjectEn  String   @map("subject_en") @db.Text
+  subjectDe  String?  @map("subject_de") @db.Text
+  subjectEs  String?  @map("subject_es") @db.Text
+  subjectIt  String?  @map("subject_it") @db.Text
+  subjectFr  String?  @map("subject_fr") @db.Text
+  subjectCa  String?  @map("subject_ca") @db.Text
+  subjectNl  String?  @map("subject_nl") @db.Text
+  subjectSv  String?  @map("subject_sv") @db.Text
+  subjectNb  String?  @map("subject_nb") @db.Text
+  subjectDa  String?  @map("subject_da") @db.Text
+  bodyEn     String   @map("body_en") @db.Text
+  bodyDe     String?  @map("body_de") @db.Text
+  bodyEs     String?  @map("body_es") @db.Text
+  bodyIt     String?  @map("body_it") @db.Text
+  bodyFr     String?  @map("body_fr") @db.Text
+  bodyCa     String?  @map("body_ca") @db.Text
+  bodyNl     String?  @map("body_nl") @db.Text
+  bodySv     String?  @map("body_sv") @db.Text
+  bodyNb     String?  @map("body_nb") @db.Text
+  bodyDa     String?  @map("body_da") @db.Text
+  active     Boolean  @default(true)
+  createdAt  DateTime @default(now()) @map("created_at")
+  updatedAt  DateTime @updatedAt @map("updated_at")
+
+  // Relations
+  notifications NotificationQueue[]
+
+  @@map("email_templates")
+}
+
+model NotificationQueue {
+  id                Int       @id @default(autoincrement())
+  recipientEmail    String    @map("recipient_email")
+  recipientPhone    String?   @map("recipient_phone")
+  templateId        Int       @map("template_id")
+  templateVariables Json?     @map("template_variables")
+  subject           String    @db.Text
+  bodyHtml          String    @map("body_html") @db.Text
+  attachments       Json?
+  scheduledFor      DateTime  @map("scheduled_for")
+  status            String    @default("pending") // "pending" | "sent" | "failed"
+  sentAt            DateTime? @map("sent_at")
+  errorMessage      String?   @map("error_message")
+  retryCount        Int       @default(0) @map("retry_count")
+  bookingType       String?   @map("booking_type") // "scheduled" | "private"
+  bookingId         Int?      @map("booking_id")
+  invoiceId         Int?      @map("invoice_id")
+  createdAt         DateTime  @default(now()) @map("created_at")
+
+  // Relations
+  template EmailTemplate @relation(fields: [templateId], references: [id])
+
+  @@index([status, scheduledFor])
+  @@index([recipientEmail])
+  @@map("notification_queue")
+}
+
+// ============================================================================
+// AUDIT & SETTINGS
+// ============================================================================
+
+model AuditLog {
+  id            Int       @id @default(autoincrement())
+  adminUserId   Int?      @map("admin_user_id")
+  ipAddress     String?   @map("ip_address") @db.Inet
+  userAgent     String?   @map("user_agent")
+  action        String
+  entityType    String    @map("entity_type")
+  entityId      Int       @map("entity_id")
+  previousValue Json?     @map("previous_value")
+  newValue      Json?     @map("new_value")
+  details       String?
+  severity      String    @default("info") // "info" | "warning" | "critical"
+  createdAt     DateTime  @default(now()) @map("created_at")
+
+  // Relations
+  adminUser AdminUser? @relation(fields: [adminUserId], references: [id])
+
+  @@index([entityType, entityId])
+  @@index([adminUserId])
+  @@index([createdAt])
+  @@index([action])
+  @@map("audit_log")
+}
+
+model SystemSetting {
+  id           Int       @id @default(autoincrement())
+  settingKey   String    @unique @map("setting_key")
+  settingValue String    @map("setting_value") @db.Text
+  description  String?
+  updatedAt    DateTime  @updatedAt @map("updated_at")
+  updatedById  Int?      @map("updated_by")
+
+  @@map("system_settings")
+}
