@@ -130,11 +130,12 @@
             </button>
 
             <div class="lang-dropdown">
-              {{- range .Site.Home.AllTranslations -}}
-                {{- $langCode := .Language.Lang -}}
-                {{- $linkURL := .RelPermalink -}}
+              {{- range .Site.Languages -}}
+                {{- $langCode := .Lang -}}
+                {{- $translation := $.GetPage (printf "/%s" $langCode) -}}
                 {{- $isActive := eq $langCode $.Language.Lang -}}
 
+                {{- $linkURL := "" -}}
                 {{- if $isActive -}}
                   {{- $linkURL = $.RelPermalink -}}
                 {{- else -}}
@@ -142,6 +143,9 @@
                     {{- if eq .Language.Lang $langCode -}}
                       {{- $linkURL = .RelPermalink -}}
                     {{- end -}}
+                  {{- end -}}
+                  {{- if not $linkURL -}}
+                    {{- $linkURL = printf "/%s/" $langCode -}}
                   {{- end -}}
                 {{- end -}}
 
@@ -172,11 +176,11 @@
 
           <!-- Language Switcher - Mobile -->
           <select class="lang-mobile" onchange="if(this.value) window.location.href=this.value">
-            {{- range .Site.Home.AllTranslations -}}
-              {{- $langCode := .Language.Lang -}}
-              {{- $linkURL := .RelPermalink -}}
+            {{- range .Site.Languages -}}
+              {{- $langCode := .Lang -}}
               {{- $isActive := eq $langCode $.Language.Lang -}}
 
+              {{- $linkURL := "" -}}
               {{- if $isActive -}}
                 {{- $linkURL = $.RelPermalink -}}
               {{- else -}}
@@ -184,6 +188,9 @@
                   {{- if eq .Language.Lang $langCode -}}
                     {{- $linkURL = .RelPermalink -}}
                   {{- end -}}
+                {{- end -}}
+                {{- if not $linkURL -}}
+                  {{- $linkURL = printf "/%s/" $langCode -}}
                 {{- end -}}
               {{- end -}}
 
