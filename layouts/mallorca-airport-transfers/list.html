@@ -193,12 +193,12 @@
 
 /* Booking Section */
 .transfers-booking {
-  padding: 3rem 0 4rem 0;
+  padding: 1.5rem 0 2rem 0;
   background: white;
 }
 
 .transfers-iframe-container {
-  max-width: 520px;
+  max-width: 900px;
   margin: 0 auto;
   border-radius: 1rem;
   overflow: hidden;
@@ -209,7 +209,6 @@
 .transfers-booking-iframe {
   display: block;
   width: 100%;
-  max-width: 520px;
   height: 720px;
   border: 0;
   overflow: hidden;
@@ -218,24 +217,39 @@
 }
 
 /* Responsive adjustments for booking iframe */
-@media (max-width: 640px) {
+@media (max-width: 768px) {
+  .transfers-iframe-container {
+    max-width: 600px;
+  }
+
   .transfers-booking-iframe {
-    height: 780px; /* Slightly taller on mobile for better form visibility */
+    height: 780px;
+  }
+}
+
+@media (max-width: 640px) {
+  .transfers-booking {
+    padding: 1rem 0 1.5rem 0;
   }
 
   .transfers-iframe-container {
+    max-width: 100%;
     border-radius: 0.5rem;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .transfers-booking-iframe {
+    height: 800px;
   }
 }
 
 @media (max-width: 480px) {
   .transfers-booking {
-    padding: 2rem 0 3rem 0;
+    padding: 0.75rem 0 1rem 0;
   }
 
   .transfers-booking-iframe {
-    height: 820px; /* Extra height for smaller screens */
+    height: 840px;
   }
 }
 
