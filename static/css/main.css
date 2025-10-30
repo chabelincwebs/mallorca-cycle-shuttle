@@ -171,6 +171,27 @@ a:hover { text-decoration: underline; }
     backdrop-filter: none;
   }
 
+  /* Disable backdrop-filter on all mobile elements for performance */
+  .lang-dropdown,
+  .mobile-nav,
+  .mobile-nav-ctas,
+  .stat-card,
+  .blog-card {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+
+  /* Solid backgrounds for elements that had backdrop-filter */
+  .lang-dropdown,
+  .mobile-nav,
+  .mobile-nav-ctas {
+    background: rgb(255, 255, 255) !important;
+  }
+
+  .stat-card {
+    background: rgba(255, 255, 255, 0.98) !important;
+  }
+
   .header-container {
     padding: 0.6rem 1rem;
   }
@@ -186,6 +207,70 @@ a:hover { text-decoration: underline; }
   .header-cta-btn {
     padding: 0.5rem 1rem;
     font-size: 0.85rem;
+  }
+
+  /* Disable Ken Burns animation on mobile for performance */
+  .homepage-hero-image img,
+  .guide-hero::before,
+  .blog-hero::before {
+    animation: none !important;
+    will-change: auto;
+    transform: scale(1) !important;
+  }
+
+  /* Increase touch targets to 44px minimum (Apple/Google recommendation) */
+  .lang-globe-btn {
+    min-width: 44px !important;
+    height: 44px !important;
+  }
+
+  .hamburger {
+    width: 44px !important;
+    height: 44px !important;
+  }
+
+  .footer-social-links a {
+    width: 48px !important;
+    height: 48px !important;
+  }
+
+  /* Hide header CTA buttons on mobile - show in hamburger menu instead */
+  .header-cta-btn {
+    display: none;
+  }
+
+  /* iOS zoom prevention - all form inputs need 16px minimum font-size */
+  .lang-mobile,
+  select,
+  input,
+  textarea {
+    font-size: 16px !important;
+    padding: 0.75rem 1rem;
+    min-height: 44px;
+  }
+
+  /* Testimonial carousel - mobile layout */
+  .testimonials-carousel-wrapper {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .carousel-btn {
+    position: static;
+    margin: 0 0.5rem;
+  }
+
+  .carousel-btn-prev,
+  .carousel-btn-next {
+    order: 2;
+  }
+
+  .homepage-testimonials-carousel {
+    order: 1;
+  }
+
+  .carousel-dots {
+    order: 3;
   }
 }
 
@@ -560,12 +645,13 @@ main { overflow-x: hidden; }
   position: fixed;
   top: 0;
   left: -100%;
-  width: 320px;
-  max-width: 85vw;
+  width: min(320px, 90vw);
+  max-width: 90vw;
   height: 100vh;
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: saturate(1.8) blur(20px);
   -webkit-backdrop-filter: saturate(1.8) blur(20px);
+  box-sizing: border-box;
   box-shadow:
     4px 0 24px rgba(0, 0, 0, 0.08),
     2px 0 8px rgba(0, 0, 0, 0.04);
@@ -676,11 +762,12 @@ main { overflow-x: hidden; }
   position: fixed;
   bottom: 0;
   left: -100%;
-  width: 320px;
-  max-width: 85vw;
+  width: min(320px, 90vw);
+  max-width: 90vw;
   background: rgba(255, 255, 255, 0.98);
   backdrop-filter: saturate(1.8) blur(20px);
   -webkit-backdrop-filter: saturate(1.8) blur(20px);
+  box-sizing: border-box;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding: 16px 20px 20px 20px;
   display: flex;
@@ -1695,7 +1782,8 @@ main { overflow-x: hidden; }
 
 @media (max-width: 640px) {
   .homepage-hero {
-    min-height: 60vh;
+    min-height: max(50vh, 400px);
+    padding: 3rem 1rem;
   }
 
   .homepage-hero-ctas {
@@ -1743,5 +1831,55 @@ main { overflow-x: hidden; }
 
   .homepage-stat-number {
     font-size: 2.5rem;
+  }
+}
+
+/* ============================================
+   COOKIE CONSENT MOBILE OPTIMIZATION
+   ============================================ */
+
+@media (max-width: 640px) {
+  #cookie-consent-banner {
+    padding: 1rem !important;
+  }
+
+  #cookie-consent-banner .container {
+    padding: 0 !important;
+  }
+
+  #cookie-consent-banner > div > div:first-child {
+    flex-direction: column !important;
+    gap: 1rem !important;
+  }
+
+  #cookie-consent-banner > div > div:first-child > div:first-child {
+    min-width: 100% !important;
+  }
+
+  #cookie-consent-banner h3 {
+    font-size: 1rem !important;
+  }
+
+  #cookie-consent-banner p {
+    font-size: 0.85rem !important;
+  }
+
+  #cookie-consent-banner button {
+    width: 100% !important;
+    padding: 0.75rem 1rem !important;
+    font-size: 0.9rem !important;
+  }
+
+  #cookie-consent-banner > div > div:last-child {
+    width: 100% !important;
+    flex-direction: column !important;
+  }
+
+  #cookie-consent-options > div:last-child {
+    flex-direction: column !important;
+  }
+
+  #cookie-consent-options button {
+    width: 100% !important;
   }
 }
