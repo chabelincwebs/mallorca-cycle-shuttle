@@ -209,13 +209,14 @@ a:hover { text-decoration: underline; }
     font-size: 0.85rem;
   }
 
-  /* Disable Ken Burns animation on mobile for performance */
+  /* Ken Burns animation on mobile - run once for 'wow' factor without battery drain */
   .homepage-hero-image img,
   .guide-hero::before,
   .blog-hero::before {
-    animation: none !important;
-    will-change: auto;
-    transform: scale(1) !important;
+    animation-iteration-count: 1 !important;
+    animation-direction: normal !important;
+    animation-fill-mode: forwards !important;
+    will-change: transform;
   }
 
   /* Increase touch targets to 44px minimum (Apple/Google recommendation) */
@@ -271,6 +272,16 @@ a:hover { text-decoration: underline; }
 
   .carousel-dots {
     order: 3;
+  }
+}
+
+/* Ken Burns animation on desktop/tablet - infinite loop for continuous effect */
+@media (min-width: 769px) {
+  .homepage-hero-image img,
+  .guide-hero::before,
+  .blog-hero::before {
+    animation-iteration-count: infinite !important;
+    animation-direction: alternate !important;
   }
 }
 

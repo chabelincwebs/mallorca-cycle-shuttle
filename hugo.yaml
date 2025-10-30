@@ -2,6 +2,7 @@
 title: "Mallorca Cycle Shuttle"
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: true
+enableRobotsTXT: true
 
 languages:
   en:

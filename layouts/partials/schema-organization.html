@@ -1,0 +1,55 @@
+{{/* JSON-LD Schema.org markup for Organization/LocalBusiness */}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "{{ .Site.Title }}",
+  "legalName": "Autocares Devesa SL",
+  "url": "{{ .Site.BaseURL }}",
+  "logo": "{{ "/img/logo.svg" | absURL }}",
+  "description": "Your trusted partner since 2015 for cycling adventures in Mallorca",
+  "foundingDate": "2015",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Calle Fuster 36 a",
+    "addressLocality": "Pollença",
+    "postalCode": "07460",
+    "addressRegion": "Balearic Islands",
+    "addressCountry": "ES"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "39.8739",
+    "longitude": "3.0699"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "admin@mallorcacycleshuttle.com",
+    "contactType": "Customer Service",
+    "areaServed": "ES",
+    "availableLanguage": ["English", "German", "Spanish", "Italian", "French", "Catalan", "Dutch", "Swedish", "Norwegian", "Danish"]
+  },
+  "priceRange": "€€",
+  "image": "{{ "/img/hero-main.webp" | absURL }}",
+  "telephone": "+34-XXX-XXX-XXX",
+  "taxID": "B08359606",
+  "alternateName": [
+    "Mallorca Cycle Shuttle",
+    "Mallorca Bicycle Rescue",
+    "Mallorca Holiday Transfers"
+  ],
+  "serviceArea": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": "39.6153",
+      "longitude": "2.9560"
+    },
+    "geoRadius": "50000"
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Mallorca"
+  }
+}
+</script>
