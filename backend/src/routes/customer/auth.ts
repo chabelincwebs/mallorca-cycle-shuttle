@@ -14,15 +14,16 @@ const magicLinkTokens = new Map<string, { bookingReference: string; email: strin
  * Request magic link for booking access
  * POST /api/customer/auth/request-link
  */
-router.post('/request-link', async (req: Request, res: Response) => {
+router.post('/request-link', async (req: Request, res: Response): Promise<any> => {
   try {
     const { bookingReference, email } = req.body;
 
     if (!bookingReference || !email) {
-      return res.status(400).json({
+      res.status(400).json({
         success: false,
         error: 'Booking reference and email are required'
       });
+      return;
     }
 
     // Verify booking exists and email matches
@@ -38,7 +39,7 @@ router.post('/request-link', async (req: Request, res: Response) => {
     });
 
     if (!booking) {
-      return res.status(404).json({
+      res.status(404).json({
         success: false,
         error: 'Booking not found'
       });
@@ -46,7 +47,7 @@ router.post('/request-link', async (req: Request, res: Response) => {
 
     // Verify email matches (case insensitive)
     if (booking.customerEmail.toLowerCase() !== email.toLowerCase()) {
-      return res.status(403).json({
+      res.status(403).json({
         success: false,
         error: 'Email does not match booking'
       });
@@ -187,12 +188,12 @@ router.post('/request-link', async (req: Request, res: Response) => {
  * Verify magic link token and return JWT
  * POST /api/customer/auth/verify-token
  */
-router.post('/verify-token', async (req: Request, res: Response) => {
+router.post('/verify-token', async (req: Request, res: Response): Promise<any> => {
   try {
     const { token } = req.body;
 
     if (!token) {
-      return res.status(400).json({
+      res.status(400).json({
         success: false,
         error: 'Token is required'
       });
@@ -201,7 +202,7 @@ router.post('/verify-token', async (req: Request, res: Response) => {
     // Check if token exists
     const tokenData = magicLinkTokens.get(token);
     if (!tokenData) {
-      return res.status(401).json({
+      res.status(401).json({
         success: false,
         error: 'Invalid or expired token'
       });
@@ -210,7 +211,7 @@ router.post('/verify-token', async (req: Request, res: Response) => {
     // Check if token is expired
     if (new Date() > tokenData.expiresAt) {
       magicLinkTokens.delete(token);
-      return res.status(401).json({
+      res.status(401).json({
         success: false,
         error: 'Token has expired'
       });
@@ -229,7 +230,7 @@ router.post('/verify-token', async (req: Request, res: Response) => {
 
     if (!booking) {
       magicLinkTokens.delete(token);
-      return res.status(404).json({
+      res.status(404).json({
         success: false,
         error: 'Booking not found'
       });

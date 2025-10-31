@@ -16,15 +16,16 @@ declare global {
 /**
  * Middleware to authenticate customer requests using JWT
  */
-export function authenticateCustomer(req: Request, res: Response, next: NextFunction) {
+export function authenticateCustomer(req: Request, res: Response, next: NextFunction): void {
   try {
     // Get token from Authorization header
     const authHeader = req.headers.authorization;
     if (!authHeader || !authHeader.startsWith('Bearer ')) {
-      return res.status(401).json({
+      res.status(401).json({
         success: false,
         error: 'No authentication token provided'
       });
+      return;
     }
 
     const token = authHeader.substring(7); // Remove 'Bearer ' prefix
@@ -39,10 +40,11 @@ export function authenticateCustomer(req: Request, res: Response, next: NextFunc
 
     // Verify it's a customer token (not admin)
     if (decoded.type !== 'customer') {
-      return res.status(403).json({
+      res.status(403).json({
         success: false,
         error: 'Invalid token type'
       });
+      return;
     }
 
     // Attach customer data to request
@@ -54,17 +56,19 @@ export function authenticateCustomer(req: Request, res: Response, next: NextFunc
     next();
   } catch (error) {
     if (error instanceof jwt.JsonWebTokenError) {
-      return res.status(401).json({
+      res.status(401).json({
         success: false,
         error: 'Invalid authentication token'
       });
+      return;
     }
 
     if (error instanceof jwt.TokenExpiredError) {
-      return res.status(401).json({
+      res.status(401).json({
         success: false,
         error: 'Authentication token has expired'
       });
+      return;
     }
 
     console.error('Error authenticating customer:', error);

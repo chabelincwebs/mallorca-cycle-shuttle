@@ -85,6 +85,128 @@ Content-Type: application/json
 
 All portal endpoints require `Authorization: Bearer <token>` header.
 
+### Get Booking History
+
+```http
+GET /api/customer/portal/history
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+```
+
+**Description:** Get all bookings associated with the customer's email address.
+
+**Response:**
+```json
+{
+  "success": true,
+  "data": {
+    "totalBookings": 3,
+    "bookings": [
+      {
+        "bookingReference": "MCS-20251031-A7K2",
+        "status": "confirmed",
+        "ticketType": "flexi",
+        "serviceDate": "2025-11-05",
+        "departureTime": "08:00:00",
+        "pickupLocation": "Port de Pollença",
+        "dropoffLocation": "Sa Calobra",
+        "seatsBooked": 2,
+        "bikesCount": 2,
+        "totalAmount": "55.00",
+        "paymentStatus": "completed",
+        "createdAt": "2025-10-15T10:00:00.000Z",
+        "cancelledAt": null,
+        "changesRemaining": 1
+      },
+      {
+        "bookingReference": "MCS-2024-B-9876",
+        "status": "completed",
+        "ticketType": "standard",
+        "serviceDate": "2024-08-15",
+        "departureTime": "08:00:00",
+        "pickupLocation": "Port de Pollença",
+        "dropoffLocation": "Sa Calobra",
+        "seatsBooked": 1,
+        "bikesCount": 1,
+        "totalAmount": "27.50",
+        "paymentStatus": "completed",
+        "createdAt": "2024-08-01T09:30:00.000Z",
+        "cancelledAt": null,
+        "changesRemaining": 0
+      }
+    ]
+  }
+}
+```
+
+**Notes:**
+- Returns all bookings for the customer's email (case-insensitive)
+- Includes cancelled, completed, and active bookings
+- Ordered by creation date (newest first)
+- Useful for showing booking history on customer dashboard
+
+### Get Available Services for Changes
+
+```http
+GET /api/customer/portal/available-services
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+```
+
+**Description:** Get all future services available for flexi ticket changes.
+
+**Response:**
+```json
+{
+  "success": true,
+  "data": {
+    "currentService": {
+      "id": 3,
+      "serviceDate": "2025-11-05",
+      "departureTime": "08:00:00",
+      "pickupLocation": "Port de Pollença",
+      "dropoffLocation": "Sa Calobra"
+    },
+    "availableServices": [
+      {
+        "id": 5,
+        "serviceDate": "2025-11-10",
+        "departureTime": "08:00:00",
+        "pickupLocations": ["Port de Pollença", "Pollença Town"],
+        "dropoffLocation": "Sa Calobra",
+        "seatsAvailable": 15,
+        "totalSeats": 48,
+        "priceStandard": "25.00",
+        "priceFlexi": "27.50"
+      },
+      {
+        "id": 7,
+        "serviceDate": "2025-11-15",
+        "departureTime": "08:00:00",
+        "pickupLocations": ["Port de Pollença"],
+        "dropoffLocation": "Sa Calobra",
+        "seatsAvailable": 20,
+        "totalSeats": 48,
+        "priceStandard": "25.00",
+        "priceFlexi": "27.50"
+      }
+    ]
+  }
+}
+```
+
+**Filtering Logic:**
+- Only active services (`status: 'active'`)
+- Only future services (after today)
+- Only services with enough available seats for the booking
+- Only services with the customer's pickup location available
+- Excludes current service
+- Limited to next 30 services
+- Sorted by service date (ascending)
+
+**Notes:**
+- Helps customers find alternative dates/times before changing
+- Shows real-time seat availability
+- Includes pricing for reference (flexi changes don't cost extra)
+
 ### View Booking
 
 ```http
@@ -469,6 +591,8 @@ backend/src/
 - ✅ Cancel booking with refunds
 - ✅ Email notifications
 - ✅ Multilingual support (EN, DE, ES)
+- ✅ Booking history endpoint
+- ✅ Available services for changes endpoint
 
 **TODO:**
 - [ ] Add rate limiting on auth endpoints
@@ -476,7 +600,6 @@ backend/src/
 - [ ] QR code generation for tickets
 - [ ] Add Redis for token storage (production)
 - [ ] Complete remaining languages (FR, CA, IT, NL, DA, NB, SV)
-- [ ] Booking history (if customer has multiple bookings)
 
 ##Status
 

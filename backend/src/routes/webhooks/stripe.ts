@@ -68,9 +68,23 @@ router.post(
           break;
 
         case 'charge.refunded':
-          // When a charge is refunded, we get both charge.refunded and refund.created
-          // We'll handle it in refund.created to avoid duplicate processing
-          console.log('Charge refunded event received (will be handled by refund.created)');
+          // When a charge is refunded, we get both charge.refunded and refund.created/succeeded
+          // We'll handle it in refund.succeeded to avoid duplicate processing
+          console.log('Charge refunded event received (will be handled by refund.succeeded)');
+          break;
+
+        case 'refund.created':
+          // Refund was initiated but not yet completed
+          console.log('Refund created:', event.data.object.id);
+          break;
+
+        case 'refund.succeeded':
+          await handleRefundSucceeded(event.data.object as Stripe.Refund);
+          break;
+
+        case 'refund.failed':
+          console.log('Refund failed:', event.data.object.id);
+          // TODO: Handle failed refund (notify admin)
           break;
 
         case 'payment_intent.canceled':

@@ -14,7 +14,7 @@ router.use(authenticateCustomer);
  * Get booking details
  * GET /api/customer/portal/booking
  */
-router.get('/booking', async (req: Request, res: Response) => {
+router.get('/booking', async (req: Request, res: Response): Promise<any> => {
   try {
     const bookingReference = req.customer!.bookingReference;
 
@@ -49,7 +49,7 @@ router.get('/booking', async (req: Request, res: Response) => {
     });
 
     if (!booking) {
-      return res.status(404).json({
+      res.status(404).json({
         success: false,
         error: 'Booking not found'
       });
@@ -72,13 +72,13 @@ router.get('/booking', async (req: Request, res: Response) => {
  * Change booking to different service (flexi tickets only)
  * POST /api/customer/portal/booking/change
  */
-router.post('/booking/change', async (req: Request, res: Response) => {
+router.post('/booking/change', async (req: Request, res: Response): Promise<any> => {
   try {
     const bookingReference = req.customer!.bookingReference;
     const { newServiceId, changeToken } = req.body;
 
     if (!newServiceId || !changeToken) {
-      return res.status(400).json({
+      res.status(400).json({
         success: false,
         error: 'New service ID and change token are required'
       });
@@ -94,7 +94,7 @@ router.post('/booking/change', async (req: Request, res: Response) => {
     });
 
     if (!currentBooking) {
-      return res.status(404).json({
+      res.status(404).json({
         success: false,
         error: 'Booking not found'
       });
@@ -102,7 +102,7 @@ router.post('/booking/change', async (req: Request, res: Response) => {
 
     // Verify booking is flexi type
     if (currentBooking.ticketType !== 'flexi') {
-      return res.status(403).json({
+      res.status(403).json({
         success: false,
         error: 'Only flexi tickets can be changed'
       });
@@ -110,7 +110,7 @@ router.post('/booking/change', async (req: Request, res: Response) => {
 
     // Verify change token
     if (currentBooking.changeToken !== changeToken) {
-      return res.status(403).json({
+      res.status(403).json({
         success: false,
         error: 'Invalid change token'
       });
@@ -118,7 +118,7 @@ router.post('/booking/change', async (req: Request, res: Response) => {
 
     // Verify has changes remaining
     if (currentBooking.changesRemaining <= 0) {
-      return res.status(403).json({
+      res.status(403).json({
         success: false,
         error: 'No changes remaining for this booking'
       });
@@ -126,7 +126,7 @@ router.post('/booking/change', async (req: Request, res: Response) => {
 
     // Verify booking is not cancelled
     if (currentBooking.status === 'cancelled') {
-      return res.status(400).json({
+      res.status(400).json({
         success: false,
         error: 'Cannot change a cancelled booking'
       });
@@ -143,7 +143,7 @@ router.post('/booking/change', async (req: Request, res: Response) => {
     });
 
     if (!newService) {
-      return res.status(404).json({
+      res.status(404).json({
         success: false,
         error: 'New service not found'
       });
@@ -151,7 +151,7 @@ router.post('/booking/change', async (req: Request, res: Response) => {
 
     // Verify new service is active
     if (newService.status !== 'active') {
-      return res.status(400).json({
+      res.status(400).json({
         success: false,
         error: 'Selected service is not available'
       });
@@ -159,7 +159,7 @@ router.post('/booking/change', async (req: Request, res: Response) => {
 
     // Verify new service has enough seats
     if (newService.seatsAvailable < currentBooking.seatsBooked) {
-      return res.status(400).json({
+      res.status(400).json({
         success: false,
         error: `New service only has ${newService.seatsAvailable} seats available. You need ${currentBooking.seatsBooked}.`
       });
@@ -168,7 +168,7 @@ router.post('/booking/change', async (req: Request, res: Response) => {
     // Verify pickup location is valid for new service
     const validPickupIds = [newService.routePickup1Id, newService.routePickup2Id].filter(Boolean);
     if (!validPickupIds.includes(currentBooking.pickupLocationId)) {
-      return res.status(400).json({
+      res.status(400).json({
         success: false,
         error: 'Your pickup location is not available for the new service'
       });
@@ -183,7 +183,7 @@ router.post('/booking/change', async (req: Request, res: Response) => {
     cutoffDateTime.setHours(cutoffTime.getHours(), cutoffTime.getMinutes(), 0, 0);
 
     if (now > cutoffDateTime) {
-      return res.status(400).json({
+      res.status(400).json({
         success: false,
         error: 'Booking deadline has passed for the new service'
       });
@@ -280,10 +280,171 @@ router.post('/booking/change', async (req: Request, res: Response) => {
 });
 
 /**
+ * Get booking history by email
+ * GET /api/customer/portal/history
+ */
+router.get('/history', async (req: Request, res: Response): Promise<any> => {
+  try {
+    const customerEmail = req.customer!.email;
+
+    const bookings = await prisma.scheduledBooking.findMany({
+      where: {
+        customerEmail: {
+          equals: customerEmail,
+          mode: 'insensitive'
+        }
+      },
+      include: {
+        service: {
+          include: {
+            routePickup1: true,
+            routePickup2: true,
+            routeDropoff: true
+          }
+        },
+        pickupLocation: true
+      },
+      orderBy: {
+        createdAt: 'desc'
+      }
+    });
+
+    res.json({
+      success: true,
+      data: {
+        totalBookings: bookings.length,
+        bookings: bookings.map(booking => ({
+          bookingReference: booking.bookingReference,
+          status: booking.status,
+          ticketType: booking.ticketType,
+          serviceDate: booking.service.serviceDate,
+          departureTime: booking.service.departureTime,
+          pickupLocation: booking.pickupLocation.nameEn,
+          dropoffLocation: booking.service.routeDropoff.nameEn,
+          seatsBooked: booking.seatsBooked,
+          bikesCount: booking.bikesCount,
+          totalAmount: booking.totalAmount,
+          paymentStatus: booking.paymentStatus,
+          createdAt: booking.createdAt,
+          cancelledAt: booking.cancelledAt,
+          changesRemaining: booking.changesRemaining
+        }))
+      }
+    });
+  } catch (error) {
+    console.error('Error fetching booking history:', error);
+    res.status(500).json({
+      success: false,
+      error: 'Failed to fetch booking history'
+    });
+  }
+});
+
+/**
+ * Get available services for booking changes
+ * GET /api/customer/portal/available-services
+ */
+router.get('/available-services', async (req: Request, res: Response): Promise<any> => {
+  try {
+    const bookingReference = req.customer!.bookingReference;
+
+    // Get current booking to know pickup location
+    const currentBooking = await prisma.scheduledBooking.findUnique({
+      where: { bookingReference },
+      include: {
+        service: {
+          include: {
+            routePickup1: true,
+            routePickup2: true,
+            routeDropoff: true,
+            bus: true
+          }
+        },
+        pickupLocation: true
+      }
+    });
+
+    if (!currentBooking) {
+      res.status(404).json({
+        success: false,
+        error: 'Booking not found'
+      });
+    }
+
+    // Find all active future services that have the same pickup location available
+    const now = new Date();
+    const availableServices = await prisma.scheduledService.findMany({
+      where: {
+        status: 'active',
+        serviceDate: {
+          gte: now
+        },
+        seatsAvailable: {
+          gte: currentBooking.seatsBooked
+        },
+        OR: [
+          { routePickup1Id: currentBooking.pickupLocationId },
+          { routePickup2Id: currentBooking.pickupLocationId }
+        ],
+        // Exclude current service
+        NOT: {
+          id: currentBooking.serviceId
+        }
+      },
+      include: {
+        routePickup1: true,
+        routePickup2: true,
+        routeDropoff: true,
+        bus: {
+          select: {
+            name: true,
+            capacity: true
+          }
+        }
+      },
+      orderBy: {
+        serviceDate: 'asc'
+      },
+      take: 30 // Limit to next 30 services
+    });
+
+    res.json({
+      success: true,
+      data: {
+        currentService: {
+          id: currentBooking.service.id,
+          serviceDate: currentBooking.service.serviceDate,
+          departureTime: currentBooking.service.departureTime,
+          pickupLocation: currentBooking.pickupLocation.nameEn,
+          dropoffLocation: currentBooking.service.routeDropoff?.nameEn
+        },
+        availableServices: availableServices.map(service => ({
+          id: service.id,
+          serviceDate: service.serviceDate,
+          departureTime: service.departureTime,
+          pickupLocations: [service.routePickup1?.nameEn, service.routePickup2?.nameEn].filter(Boolean),
+          dropoffLocation: service.routeDropoff.nameEn,
+          seatsAvailable: service.seatsAvailable,
+          totalSeats: service.bus?.capacity,
+          priceStandard: service.priceStandard,
+          priceFlexi: service.priceFlexi
+        }))
+      }
+    });
+  } catch (error) {
+    console.error('Error fetching available services:', error);
+    res.status(500).json({
+      success: false,
+      error: 'Failed to fetch available services'
+    });
+  }
+});
+
+/**
  * Cancel booking and request refund
  * POST /api/customer/portal/booking/cancel
  */
-router.post('/booking/cancel', async (req: Request, res: Response) => {
+router.post('/booking/cancel', async (req: Request, res: Response): Promise<any> => {
   try {
     const bookingReference = req.customer!.bookingReference;
     const { reason } = req.body;
@@ -302,7 +463,7 @@ router.post('/booking/cancel', async (req: Request, res: Response) => {
     });
 
     if (!booking) {
-      return res.status(404).json({
+      res.status(404).json({
         success: false,
         error: 'Booking not found'
       });
@@ -310,7 +471,7 @@ router.post('/booking/cancel', async (req: Request, res: Response) => {
 
     // Verify booking is not already cancelled
     if (booking.status === 'cancelled') {
-      return res.status(400).json({
+      res.status(400).json({
         success: false,
         error: 'Booking is already cancelled'
       });
@@ -318,7 +479,7 @@ router.post('/booking/cancel', async (req: Request, res: Response) => {
 
     // Verify service hasn't already been completed
     if (booking.status === 'completed') {
-      return res.status(400).json({
+      res.status(400).json({
         success: false,
         error: 'Cannot cancel a completed service'
       });
@@ -359,7 +520,6 @@ router.post('/booking/cancel', async (req: Request, res: Response) => {
         data: {
           status: 'cancelled',
           cancelledAt: new Date(),
-          cancellationReason: reason,
           cancellationRefundAmount: refundAmount
         }
       });

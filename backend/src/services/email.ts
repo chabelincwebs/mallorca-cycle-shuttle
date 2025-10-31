@@ -306,9 +306,16 @@ function getBookingConfirmationTemplate(data: BookingEmailData): string {
       <p><strong>${t.destination}:</strong> ${dropoffLocation}</p>
       <p><strong>${t.passengers}:</strong> ${seatsBooked}</p>
       ${bikesCount > 0 ? `<p><strong>${t.bikes}:</strong> ${bikesCount}</p>` : ''}
-      <p><strong>${t.ticketType}:</strong> ${ticketType === 'flexi' ? t.flexiTicket : t.standardTicket}</p>
+      <p><strong>${t.ticketType}:</strong> ${ticketType === 'flexi' ? t.flexiTicket : ticketType === 'private' ? t.privateShuttle : t.standardTicket}</p>
       <p><strong>${t.total}:</strong> €${totalAmount.toFixed(2)}</p>
     </div>
+
+    ${ticketType === 'private' ? `
+    <div style="background-color: #d1ecf1; padding: 15px; border-left: 4px solid #0c5460; margin: 20px 0;">
+      <p><strong>${t.privateBookingNotice}</strong></p>
+      <p>${t.privateBookingText}</p>
+    </div>
+    ` : ''}
 
     ${changeToken ? `
     <div style="background-color: #fff3cd; padding: 15px; border-left: 4px solid #ffc107; margin: 20px 0;">
@@ -525,6 +532,7 @@ function getTranslations(language: string): Record<string, string> {
       ticketType: 'Ticket Type',
       flexiTicket: 'Flexi (Free Changes)',
       standardTicket: 'Standard',
+      privateShuttle: 'Private Shuttle',
       total: 'Total',
       flexiTicketInfo: 'Flexi Ticket - Free Change Available',
       changeTokenInfo: 'Use this token to change your booking:',
@@ -559,7 +567,9 @@ function getTranslations(language: string): Record<string, string> {
       refundText: 'Your refund has been processed successfully.',
       refundAmount: 'Refund Amount',
       processed: 'Processed',
-      refundTiming: 'The refund will appear in your account within 5-10 business days.'
+      refundTiming: 'The refund will appear in your account within 5-10 business days.',
+      privateBookingNotice: 'Private Shuttle - Pending Confirmation',
+      privateBookingText: 'Your payment has been received. Our team will review your private shuttle request and confirm availability within 24 hours. You will receive a confirmation email once approved.'
     },
     de: {
       bookingConfirmation: 'Buchungsbestätigung',
@@ -576,6 +586,7 @@ function getTranslations(language: string): Record<string, string> {
       ticketType: 'Ticketart',
       flexiTicket: 'Flexi (Kostenlose Änderungen)',
       standardTicket: 'Standard',
+      privateShuttle: 'Privater Shuttle',
       total: 'Gesamt',
       flexiTicketInfo: 'Flexi-Ticket - Kostenlose Änderung verfügbar',
       changeTokenInfo: 'Verwenden Sie diesen Token, um Ihre Buchung zu ändern:',
@@ -610,7 +621,9 @@ function getTranslations(language: string): Record<string, string> {
       refundText: 'Ihre Rückerstattung wurde erfolgreich bearbeitet.',
       refundAmount: 'Rückerstattungsbetrag',
       processed: 'Bearbeitet',
-      refundTiming: 'Die Rückerstattung wird innerhalb von 5-10 Werktagen auf Ihrem Konto erscheinen.'
+      refundTiming: 'Die Rückerstattung wird innerhalb von 5-10 Werktagen auf Ihrem Konto erscheinen.',
+      privateBookingNotice: 'Privater Shuttle - Bestätigung ausstehend',
+      privateBookingText: 'Ihre Zahlung wurde erhalten. Unser Team wird Ihre Anfrage für einen privaten Shuttle prüfen und die Verfügbarkeit innerhalb von 24 Stunden bestätigen. Sie erhalten eine Bestätigungs-E-Mail, sobald die Buchung genehmigt wurde.'
     },
     es: {
       bookingConfirmation: 'Confirmación de Reserva',
@@ -627,6 +640,7 @@ function getTranslations(language: string): Record<string, string> {
       ticketType: 'Tipo de Billete',
       flexiTicket: 'Flexi (Cambios Gratuitos)',
       standardTicket: 'Estándar',
+      privateShuttle: 'Shuttle Privado',
       total: 'Total',
       flexiTicketInfo: 'Billete Flexi - Cambio Gratuito Disponible',
       changeTokenInfo: 'Usa este token para cambiar tu reserva:',
@@ -661,7 +675,9 @@ function getTranslations(language: string): Record<string, string> {
       refundText: 'Tu reembolso ha sido procesado exitosamente.',
       refundAmount: 'Monto del Reembolso',
       processed: 'Procesado',
-      refundTiming: 'El reembolso aparecerá en tu cuenta en 5-10 días hábiles.'
+      refundTiming: 'El reembolso aparecerá en tu cuenta en 5-10 días hábiles.',
+      privateBookingNotice: 'Shuttle Privado - Confirmación Pendiente',
+      privateBookingText: 'Hemos recibido tu pago. Nuestro equipo revisará tu solicitud de shuttle privado y confirmará la disponibilidad en 24 horas. Recibirás un correo de confirmación una vez aprobado.'
     },
     // Add more languages as needed...
     fr: { ...{} }, // French translations
@@ -677,11 +693,118 @@ function getTranslations(language: string): Record<string, string> {
   return translations[language] || translations['en'];
 }
 
+/**
+ * Send admin notification for new private booking
+ */
+export async function sendAdminPrivateBookingNotification(data: BookingEmailData): Promise<boolean> {
+  const adminEmail = process.env.ADMIN_EMAIL || FROM_EMAIL;
+
+  const subject = `🚐 New Private Shuttle Request - ${data.bookingReference}`;
+  const html = getAdminPrivateBookingNotificationTemplate(data);
+
+  return sendEmail({
+    to: adminEmail,
+    subject,
+    html
+  });
+}
+
+/**
+ * Get admin notification template for private booking
+ */
+function getAdminPrivateBookingNotificationTemplate(data: BookingEmailData): string {
+  const {
+    bookingReference,
+    customerName,
+    customerEmail,
+    serviceDate,
+    departureTime,
+    pickupLocation,
+    dropoffLocation,
+    seatsBooked,
+    bikesCount,
+    totalAmount
+  } = data;
+
+  const date = formatDate(serviceDate, 'en');
+  const time = formatTime(departureTime, 'en');
+
+  return `
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Private Shuttle Request</title>
+</head>
+<body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px;">
+  <div style="background-color: #6c757d; color: white; padding: 20px; text-align: center;">
+    <h1 style="margin: 0;">🚐 New Private Shuttle Request</h1>
+  </div>
+
+  <div style="padding: 20px; background-color: #f9f9f9;">
+    <p><strong>A new private shuttle booking has been submitted and paid. Please review and confirm availability.</strong></p>
+
+    <div style="background-color: white; padding: 15px; border-left: 4px solid #6c757d; margin: 20px 0;">
+      <h2 style="margin-top: 0; color: #6c757d;">Booking Details</h2>
+      <p><strong>Reference:</strong> ${bookingReference}</p>
+      <p><strong>Status:</strong> ⏳ Pending Approval</p>
+      <p><strong>Payment:</strong> ✅ Completed (€${totalAmount.toFixed(2)})</p>
+    </div>
+
+    <div style="background-color: white; padding: 15px; border-left: 4px solid #0066cc; margin: 20px 0;">
+      <h2 style="margin-top: 0; color: #0066cc;">Customer Information</h2>
+      <p><strong>Name:</strong> ${customerName}</p>
+      <p><strong>Email:</strong> ${customerEmail}</p>
+    </div>
+
+    <div style="background-color: white; padding: 15px; border-left: 4px solid #28a745; margin: 20px 0;">
+      <h2 style="margin-top: 0; color: #28a745;">Service Details</h2>
+      <p><strong>Date:</strong> ${date}</p>
+      <p><strong>Departure Time:</strong> ${time}</p>
+      <p><strong>Pickup:</strong> ${pickupLocation}</p>
+      <p><strong>Dropoff:</strong> ${dropoffLocation}</p>
+      <p><strong>Passengers:</strong> ${seatsBooked}</p>
+      ${bikesCount > 0 ? `<p><strong>Bikes:</strong> ${bikesCount}</p>` : ''}
+    </div>
+
+    <div style="background-color: #fff3cd; padding: 15px; border-left: 4px solid #ffc107; margin: 20px 0;">
+      <p><strong>⚠️ Action Required</strong></p>
+      <p>Please review this booking in the admin panel and:</p>
+      <ul>
+        <li>Verify bus availability</li>
+        <li>Check route feasibility</li>
+        <li>Confirm or reject the booking</li>
+      </ul>
+      <p>The customer has been notified that their booking is pending approval.</p>
+    </div>
+
+    <div style="text-align: center; margin: 30px 0;">
+      <a href="${process.env.ADMIN_PANEL_URL || 'http://localhost:3000/admin'}/private-shuttles/${bookingReference}"
+         style="background-color: #0066cc; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px; display: inline-block;">
+        Review in Admin Panel
+      </a>
+    </div>
+
+    <p style="color: #666; font-size: 12px; margin-top: 30px;">
+      This is an automated notification from the Mallorca Cycle Shuttle booking system.
+    </p>
+  </div>
+
+  <div style="text-align: center; padding: 20px; color: #666; font-size: 12px;">
+    <p>Autocares Devesa SL | CIF: B08359606</p>
+  </div>
+</body>
+</html>
+  `;
+}
+
 export default {
   sendEmail,
   sendBookingConfirmation,
   sendPaymentReceipt,
   sendServiceReminder,
   sendCancellationConfirmation,
-  sendRefundConfirmation
+  sendRefundConfirmation,
+  sendAdminPrivateBookingNotification
 };
