@@ -4,6 +4,11 @@ import express, { Request, Response, NextFunction } from 'express';
   import compression from 'compression';
   import dotenv from 'dotenv';
   import adminAuthRoutes from './routes/admin/auth';
+  import fleetRoutes from './routes/admin/fleet';
+  import servicesRoutes from './routes/admin/services';
+  import bookingsRoutes from './routes/admin/bookings';
+  import paymentsRoutes from './routes/admin/payments';
+  import stripeWebhookRoutes from './routes/webhooks/stripe';
 
   dotenv.config();
 
@@ -17,7 +22,11 @@ import express, { Request, Response, NextFunction } from 'express';
     credentials: true
   }));
 
-  // Body parsing middleware
+  // Stripe webhook route MUST come before body parsing middleware
+  // Stripe needs the raw body for signature verification
+  app.use('/webhooks/stripe', express.raw({ type: 'application/json' }), stripeWebhookRoutes);
+
+  // Body parsing middleware (for all other routes)
   app.use(express.json());
   app.use(express.urlencoded({ extended: true }));
 
@@ -49,7 +58,14 @@ import express, { Request, Response, NextFunction } from 'express';
       endpoints: {
         health: '/health',
         admin: {
-          auth: '/api/admin/auth'
+          auth: '/api/admin/auth',
+          fleet: '/api/admin/fleet',
+          services: '/api/admin/services',
+          bookings: '/api/admin/bookings',
+          payments: '/api/admin/payments'
+        },
+        webhooks: {
+          stripe: '/webhooks/stripe'
         }
       }
     });
@@ -57,6 +73,10 @@ import express, { Request, Response, NextFunction } from 'express';
 
   // API Routes
   app.use('/api/admin/auth', adminAuthRoutes);
+  app.use('/api/admin/fleet', fleetRoutes);
+  app.use('/api/admin/services', servicesRoutes);
+  app.use('/api/admin/bookings', bookingsRoutes);
+  app.use('/api/admin/payments', paymentsRoutes);
 
   // 404 handler
   app.use((req: Request, res: Response) => {
@@ -81,5 +101,10 @@ import express, { Request, Response, NextFunction } from 'express';
     console.log(`📊 Environment: ${process.env.NODE_ENV || 'development'}`);
     console.log(`🗄️  Database: ${process.env.DATABASE_URL ? 'Connected' : 'Not configured'}`);
     console.log(`🔐 Admin Auth: http://0.0.0.0:${PORT}/api/admin/auth`);
+    console.log(`🚌 Fleet Management: http://0.0.0.0:${PORT}/api/admin/fleet`);
+    console.log(`📅 Scheduled Services: http://0.0.0.0:${PORT}/api/admin/services`);
+    console.log(`📋 Bookings: http://0.0.0.0:${PORT}/api/admin/bookings`);
+    console.log(`💰 Payments: http://0.0.0.0:${PORT}/api/admin/payments`);
+    console.log(`💳 Stripe Webhook: http://0.0.0.0:${PORT}/webhooks/stripe`);
     console.log(`\n🚀 Ready to accept requests!`);
   });
