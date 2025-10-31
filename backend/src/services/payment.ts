@@ -1,5 +1,6 @@
 import Stripe from 'stripe';
 import { PrismaClient } from '@prisma/client';
+import { sendBookingConfirmation, sendPaymentReceipt } from './email';
 
 const prisma = new PrismaClient();
 
@@ -160,16 +161,58 @@ export async function handlePaymentSucceeded(paymentIntent: Stripe.PaymentIntent
   }
 
   try {
-    await prisma.scheduledBooking.update({
+    // Update booking payment status
+    const booking = await prisma.scheduledBooking.update({
       where: { bookingReference },
       data: {
         paymentStatus: 'completed',
         paymentId: paymentIntent.id,
         paidAt: new Date()
+      },
+      include: {
+        service: {
+          include: {
+            routePickup1: true,
+            routePickup2: true,
+            routeDropoff: true
+          }
+        },
+        pickupLocation: true
       }
     });
 
     console.log(`Payment completed for booking ${bookingReference}`);
+
+    // Send confirmation emails
+    try {
+      const emailData = {
+        bookingReference: booking.bookingReference,
+        customerName: booking.customerName,
+        customerEmail: booking.customerEmail,
+        customerLanguage: booking.customerLanguage,
+        serviceDate: booking.service.serviceDate,
+        departureTime: booking.service.departureTime,
+        pickupLocation: booking.pickupLocation.nameEn, // TODO: use correct language
+        dropoffLocation: booking.service.routeDropoff.nameEn, // TODO: use correct language
+        seatsBooked: booking.seatsBooked,
+        bikesCount: booking.bikesCount,
+        totalAmount: parseFloat(booking.totalAmount.toString()),
+        ticketType: booking.ticketType,
+        paymentStatus: booking.paymentStatus,
+        changeToken: booking.changeToken
+      };
+
+      // Send booking confirmation
+      await sendBookingConfirmation(emailData);
+
+      // Send payment receipt
+      await sendPaymentReceipt(emailData);
+
+      console.log(`Confirmation emails sent to ${booking.customerEmail}`);
+    } catch (emailError) {
+      // Log error but don't throw - payment was successful
+      console.error('Error sending confirmation emails:', emailError);
+    }
   } catch (error) {
     console.error('Error updating booking payment status:', error);
     throw error;

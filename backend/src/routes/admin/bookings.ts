@@ -3,6 +3,7 @@ import { PrismaClient } from '@prisma/client';
 import { authenticate } from '../../middleware/auth';
 import { generateBookingReference, generateChangeToken } from '../../utils/booking-reference';
 import { createPaymentIntent } from '../../services/payment';
+import { sendBookingConfirmation } from '../../services/email';
 
 const router = Router();
 const prisma = new PrismaClient();
@@ -427,6 +428,32 @@ router.post('/public/create', async (req: Request, res: Response) => {
           paymentId: paymentIntent.id
         }
       });
+
+      // Send initial booking confirmation email (payment pending)
+      try {
+        const emailData = {
+          bookingReference: booking.bookingReference,
+          customerName: booking.customerName,
+          customerEmail: booking.customerEmail,
+          customerLanguage: booking.customerLanguage,
+          serviceDate: booking.service.serviceDate,
+          departureTime: booking.service.departureTime,
+          pickupLocation: booking.pickupLocation.nameEn, // TODO: use customer's language
+          dropoffLocation: booking.service.routeDropoff.nameEn, // TODO: use customer's language
+          seatsBooked: booking.seatsBooked,
+          bikesCount: booking.bikesCount,
+          totalAmount: parseFloat(booking.totalAmount.toString()),
+          ticketType: booking.ticketType,
+          paymentStatus: 'pending',
+          changeToken: booking.changeToken
+        };
+
+        await sendBookingConfirmation(emailData);
+        console.log(`Booking confirmation email sent to ${booking.customerEmail}`);
+      } catch (emailError) {
+        // Log error but don't fail the booking - email is non-critical at this stage
+        console.error('Error sending booking confirmation email:', emailError);
+      }
     } catch (error) {
       console.error('Error creating payment intent:', error);
       // If payment intent creation fails, we should cancel the booking

@@ -1,7 +1,7 @@
 # Mallorca Cycle Shuttle Backend - Current Status
 
 **Last Updated:** October 31, 2025
-**Status:** Core booking system operational, payment integration complete
+**Status:** Core booking system operational, payment integration complete, email notifications active
 
 ## 🎯 What's Been Built
 
@@ -67,7 +67,7 @@
 
 ---
 
-#### 4. Stripe Payment Integration ⭐ NEW
+#### 4. Stripe Payment Integration
 
 **Payment Service** (`src/services/payment.ts`):
 - `createPaymentIntent()` - Create Stripe payment for bookings
@@ -99,7 +99,37 @@
 
 ---
 
-#### 5. Database Schema (Prisma)
+#### 5. Email Notification System ⭐ NEW
+
+**Email Service** (`src/services/email.ts`):
+- `sendBookingConfirmation()` - Booking confirmation emails
+- `sendPaymentReceipt()` - Payment receipt after successful payment
+- `sendServiceReminder()` - 24h before service (TODO: scheduled job)
+- `sendCancellationConfirmation()` - Cancellation confirmations
+- `sendRefundConfirmation()` - Refund confirmations
+- SendGrid integration with graceful fallback
+- HTML email templates with inline CSS
+- Multilingual support (EN, DE, ES complete; 7 more in progress)
+
+**Integration Points:**
+- **Booking Creation** - Sends confirmation email immediately
+- **Payment Webhook** - Sends updated confirmation + receipt after payment
+- **Cancellation** - Ready for integration (TODO)
+- **Refunds** - Ready for integration (TODO)
+
+**Features:**
+- Automatic email after booking created
+- Automatic email after payment completed
+- Graceful degradation if SendGrid not configured
+- Logs to console instead of failing
+- Supports 10 languages (3 complete, 7 placeholders)
+- Professional HTML templates
+
+**Documentation:** `EMAIL_API_SUMMARY.md`
+
+---
+
+#### 6. Database Schema (Prisma)
 
 **15 Tables Defined:**
 - `admin_users` - Admin accounts (with 2FA fields)
@@ -167,11 +197,11 @@
 - ⏳ AEAT submission connector
 
 ### Notifications
-- ⏳ Email service integration (SendGrid)
-- ⏳ Booking confirmation emails
-- ⏳ Service reminders (24h before)
-- ⏳ Cancellation confirmations
-- ⏳ Email templates (10 languages)
+- ✅ Email service integration (SendGrid) - COMPLETE
+- ✅ Booking confirmation emails - COMPLETE
+- ⏳ Service reminders (24h before) - Scheduled job needed
+- ⏳ Cancellation confirmations - Ready for integration
+- ✅ Email templates (10 languages) - 3 complete, 7 placeholders
 
 ### Customer Features
 - ⏳ Ticket change system (flexi tickets)
@@ -223,11 +253,14 @@
 - Validates booking cutoff times
 - Generates unique booking references
 - Creates change tokens for flexi tickets
+- Sends booking confirmation emails
+- Sends payment receipt emails
 
 ### What's Missing
 
 ❌ **Cannot yet:**
-- Send confirmation emails
+- Send service reminder emails (24h before)
+- Send cancellation/refund confirmation emails
 - Generate invoices
 - Submit to AEAT (Spanish tax authority)
 - Change/cancel flexi tickets
@@ -254,6 +287,11 @@
 - Stripe SDK ✅
 - Webhook integration ✅
 
+**Email:**
+- SendGrid SDK ✅
+- HTML email templates ✅
+- Multilingual support (3/10 languages) ✅
+
 **Authentication:**
 - JWT ✅
 - TOTP 2FA fields (ready, not implemented)
@@ -278,7 +316,8 @@ backend/
 │   │   └── webhooks/
 │   │       └── stripe.ts             ✅ Payment webhook handler
 │   ├── services/
-│   │   └── payment.ts                ✅ Stripe payment service
+│   │   ├── payment.ts                ✅ Stripe payment service
+│   │   └── email.ts                  ✅ SendGrid email service
 │   └── utils/
 │       └── booking-reference.ts      ✅ Reference generator
 ├── prisma/
@@ -290,6 +329,7 @@ backend/
 ├── SERVICES_API_SUMMARY.md           ✅ Services documentation
 ├── BOOKINGS_API_SUMMARY.md           ✅ Bookings documentation
 ├── PAYMENT_API_SUMMARY.md            ✅ Payment documentation
+├── EMAIL_API_SUMMARY.md              ✅ Email notification documentation
 ├── .env.example                      ✅ Environment template
 └── package.json                      ✅ Dependencies configured
 ```
@@ -312,9 +352,10 @@ STRIPE_SECRET_KEY=sk_test_...
 STRIPE_PUBLISHABLE_KEY=pk_test_...
 STRIPE_WEBHOOK_SECRET=whsec_...
 
-# Email (NOT YET USED)
-SENDGRID_API_KEY=...
-SENDGRID_FROM_EMAIL=...
+# Email (READY TO USE)
+SENDGRID_API_KEY=SG.xxxxxxxxxxxxxxxxxxxxxxxx
+SENDGRID_FROM_EMAIL=noreply@mallorcacycleshuttle.com
+SENDGRID_FROM_NAME=Mallorca Cycle Shuttle
 
 # VeriFactu (NOT YET USED)
 VERIFACTU_HMAC_SECRET=...
@@ -377,26 +418,27 @@ pnpm dev
 
 ## 📈 Progress Tracking
 
-**Lines of Code Written:** ~3,800 lines
+**Lines of Code Written:** ~4,500 lines
+- Email service: 650+ lines
 - Payment service: 270 lines
 - Webhook handler: 105 lines
 - Payment routes: 210 lines
-- Bookings routes: 495 lines
+- Bookings routes: 520 lines (updated with email)
 - Services routes: 550+ lines
 - Fleet routes: 400+ lines
 - Utilities & seed data: ~1,700 lines
 
-**APIs Completed:** 4/8 planned modules
+**APIs Completed:** 5/8 planned modules
 - ✅ Fleet Management
 - ✅ Scheduled Services
 - ✅ Bookings
 - ✅ Payments
+- ✅ Email Notifications (core complete)
 - ⏳ Invoicing (VeriFactu)
-- ⏳ Notifications
 - ⏳ Customer Portal
 - ⏳ Admin Dashboard
 
-**Completion:** ~50% of core functionality
+**Completion:** ~60% of core functionality
 
 ---
 
@@ -405,10 +447,11 @@ pnpm dev
 - `SERVICES_API_SUMMARY.md` - Services API details
 - `BOOKINGS_API_SUMMARY.md` - Bookings API details
 - `PAYMENT_API_SUMMARY.md` - Payment integration guide
+- `EMAIL_API_SUMMARY.md` - Email notification system guide
 - `.env.example` - Environment configuration
 - `prisma/schema.prisma` - Database schema
 
 ---
 
-**Status:** Production-ready for core booking flow with payment processing.
-**Next session:** Email notifications or customer portal implementation.
+**Status:** Production-ready for core booking flow with payment processing and email notifications.
+**Next session:** Customer portal or invoice generation (VeriFactu compliance).
