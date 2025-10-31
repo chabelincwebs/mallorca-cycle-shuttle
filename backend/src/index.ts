@@ -8,6 +8,9 @@ import express, { Request, Response, NextFunction } from 'express';
   import servicesRoutes from './routes/admin/services';
   import bookingsRoutes from './routes/admin/bookings';
   import paymentsRoutes from './routes/admin/payments';
+  import invoicesRoutes from './routes/admin/invoices';
+  import dashboardRoutes from './routes/admin/dashboard';
+  import b2bCustomersRoutes from './routes/admin/b2b-customers';
   import stripeWebhookRoutes from './routes/webhooks/stripe';
   import customerAuthRoutes from './routes/customer/auth';
   import customerPortalRoutes from './routes/customer/portal';
@@ -61,10 +64,13 @@ import express, { Request, Response, NextFunction } from 'express';
         health: '/health',
         admin: {
           auth: '/api/admin/auth',
+          dashboard: '/api/admin/dashboard',
           fleet: '/api/admin/fleet',
           services: '/api/admin/services',
           bookings: '/api/admin/bookings',
-          payments: '/api/admin/payments'
+          payments: '/api/admin/payments',
+          invoices: '/api/admin/invoices',
+          b2bCustomers: '/api/admin/b2b-customers'
         },
         customer: {
           auth: '/api/customer/auth',
@@ -79,10 +85,13 @@ import express, { Request, Response, NextFunction } from 'express';
 
   // API Routes - Admin
   app.use('/api/admin/auth', adminAuthRoutes);
+  app.use('/api/admin/dashboard', dashboardRoutes);
   app.use('/api/admin/fleet', fleetRoutes);
   app.use('/api/admin/services', servicesRoutes);
   app.use('/api/admin/bookings', bookingsRoutes);
   app.use('/api/admin/payments', paymentsRoutes);
+  app.use('/api/admin/invoices', invoicesRoutes);
+  app.use('/api/admin/b2b-customers', b2bCustomersRoutes);
 
   // API Routes - Customer Portal
   app.use('/api/customer/auth', customerAuthRoutes);
@@ -111,10 +120,13 @@ import express, { Request, Response, NextFunction } from 'express';
     console.log(`📊 Environment: ${process.env.NODE_ENV || 'development'}`);
     console.log(`🗄️  Database: ${process.env.DATABASE_URL ? 'Connected' : 'Not configured'}`);
     console.log(`🔐 Admin Auth: http://0.0.0.0:${PORT}/api/admin/auth`);
+    console.log(`📊 Dashboard: http://0.0.0.0:${PORT}/api/admin/dashboard`);
     console.log(`🚌 Fleet Management: http://0.0.0.0:${PORT}/api/admin/fleet`);
     console.log(`📅 Scheduled Services: http://0.0.0.0:${PORT}/api/admin/services`);
     console.log(`📋 Bookings: http://0.0.0.0:${PORT}/api/admin/bookings`);
     console.log(`💰 Payments: http://0.0.0.0:${PORT}/api/admin/payments`);
+    console.log(`🧾 Invoices (VeriFactu): http://0.0.0.0:${PORT}/api/admin/invoices`);
+    console.log(`🏢 B2B Customers: http://0.0.0.0:${PORT}/api/admin/b2b-customers`);
     console.log(`👤 Customer Portal: http://0.0.0.0:${PORT}/api/customer/portal`);
     console.log(`🔑 Customer Auth: http://0.0.0.0:${PORT}/api/customer/auth`);
     console.log(`💳 Stripe Webhook: http://0.0.0.0:${PORT}/webhooks/stripe`);

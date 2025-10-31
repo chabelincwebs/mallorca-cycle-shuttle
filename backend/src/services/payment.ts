@@ -1,6 +1,7 @@
 import Stripe from 'stripe';
 import { PrismaClient } from '@prisma/client';
 import { sendBookingConfirmation, sendPaymentReceipt } from './email';
+import { createInvoiceFromScheduledBooking, createInvoiceFromPrivateBooking } from './invoice';
 
 const prisma = new PrismaClient();
 
@@ -212,6 +213,16 @@ export async function handlePaymentSucceeded(paymentIntent: Stripe.PaymentIntent
     } catch (emailError) {
       // Log error but don't throw - payment was successful
       console.error('Error sending confirmation emails:', emailError);
+    }
+
+    // Generate invoice automatically
+    try {
+      const invoice = await createInvoiceFromScheduledBooking(booking.id);
+      console.log(`✅ Invoice ${invoice.invoiceNumber} generated for booking ${bookingReference}`);
+    } catch (invoiceError) {
+      // Log error but don't throw - payment was successful
+      console.error('Error generating invoice:', invoiceError);
+      // Invoice can be generated manually later from admin panel
     }
   } catch (error) {
     console.error('Error updating booking payment status:', error);
