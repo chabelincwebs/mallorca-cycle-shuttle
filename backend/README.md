@@ -126,6 +126,93 @@ pnpm dev
 
 The API will be available at: **http://localhost:3001**
 
+## Local Development Workflow
+
+### Daily Development Process
+
+1. **Start PostgreSQL** (if not already running)
+   ```bash
+   sudo service postgresql start
+   sudo service postgresql status  # Verify it's running
+   ```
+
+2. **Start Development Server**
+   ```bash
+   cd /mnt/c/Users/photo/Documents/mallorca-cycle-shuttle/backend
+   pnpm dev
+   ```
+
+   The server will start with hot-reload enabled. Any changes to `.ts` files will automatically restart the server.
+
+3. **Test Endpoints**
+   ```bash
+   # Health check
+   curl http://localhost:3001/health
+
+   # Database connection test
+   curl http://localhost:3001/api/test-db
+   ```
+
+4. **View Database** (optional)
+   ```bash
+   # Open Prisma Studio - a visual database browser
+   pnpm prisma:studio
+   ```
+
+   This opens a web interface at http://localhost:5555 where you can view and edit data.
+
+### Making Database Changes
+
+When you need to modify the database schema:
+
+1. **Edit the schema**
+   ```bash
+   nano prisma/schema.prisma  # or use VS Code
+   ```
+
+2. **Create and apply migration**
+   ```bash
+   npx prisma migrate dev --name describe_your_change
+   ```
+
+3. **The migration will:**
+   - Create SQL migration file
+   - Apply changes to database
+   - Regenerate Prisma Client
+
+### Stopping the Development Server
+
+Press **Ctrl+C** in the terminal where `pnpm dev` is running.
+
+### Troubleshooting Local Development
+
+**PostgreSQL not running:**
+```bash
+sudo service postgresql start
+```
+
+**Port 3001 already in use:**
+```bash
+# Find and kill the process
+lsof -ti:3001 | xargs kill -9
+# Or change the port in .env
+PORT=3002
+```
+
+**Database connection error:**
+```bash
+# Verify PostgreSQL is running
+sudo service postgresql status
+
+# Test connection manually
+psql -U shuttle_dev -d mallorca_shuttle_dev
+```
+
+**Prisma Client out of sync:**
+```bash
+npx prisma generate
+```
+
 ## Project Structure
 
 ```

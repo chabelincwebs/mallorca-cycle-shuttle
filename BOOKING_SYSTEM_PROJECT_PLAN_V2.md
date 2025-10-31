@@ -1861,7 +1861,7 @@ async function sendFacturae(invoice: Invoice): Promise<void> {
 
 ## Progress Log
 
-**Last Updated:** 2025-10-30
+**Last Updated:** 2025-10-31
 
 ### 2025-10-30 (Session 1 - Part 1: Planning)
 - ✅ Analyzed Spanish fiscal compliance requirements (VeriFactu 2026)
@@ -1899,17 +1899,48 @@ async function sendFacturae(invoice: Invoice): Promise<void> {
 - ✅ User generated SSH key for secure server access
 - 🔄 **Status:** VPS provisioning in progress, ready for server setup
 
-### [Next Session - When VPS is Ready]
+### 2025-10-31 (Session 2: Local Development Setup)
+- ✅ Transitioned from VPS-first to local development approach
+- ✅ Installed PostgreSQL 16 locally on WSL2 Ubuntu
+- ✅ Created local database: `mallorca_shuttle_dev`
+- ✅ Created database user: `shuttle_dev` with CREATEDB permission
+- ✅ Configured local .env file with PostgreSQL connection
+- ✅ Installed all project dependencies (707 packages via pnpm)
+- ✅ Generated Prisma Client
+- ✅ Ran initial database migration successfully
+- ✅ Verified all 15 tables + _prisma_migrations created
+  - admin_users, b2b_customers, buses, routes
+  - scheduled_services, scheduled_bookings, private_bookings
+  - invoice_series, invoices, invoice_lines
+  - verifactu_records, email_templates, notification_queue
+  - audit_log, system_settings
+- ✅ Created basic Express server (src/index.ts)
+  - Health check endpoint: GET /health
+  - Database test endpoint: GET /api/test-db
+- ✅ Started development server successfully (port 3001)
+- ✅ Tested both endpoints - all working correctly
+- ✅ Documented "Local Development Workflow" in README.md
+- ✅ Updated Progress Log
+- 🔄 **Status:** Local development environment fully operational
+
+### [Next Session - VPS Setup or Continue Local Development]
+**Option A: VPS Setup (when ready)**
 - [ ] Connect to VPS via SSH and verify access
 - [ ] Update system packages (apt update && apt upgrade)
 - [ ] Install Node.js 20 LTS, PostgreSQL 16, Nginx
 - [ ] Configure firewall (UFW) and SSL (Let's Encrypt)
 - [ ] Clone repository to VPS
 - [ ] Set up production environment variables
-- [ ] Run database migrations
-- [ ] Build Express.js server with middleware
-- [ ] Implement JWT authentication + 2FA
-- [ ] Create first API endpoints
+- [ ] Run database migrations on VPS
+- [ ] Deploy and test server on VPS
+
+**Option B: Continue Local Development**
+- [ ] Implement JWT authentication middleware
+- [ ] Implement TOTP 2FA setup
+- [ ] Create admin authentication routes (login, logout, 2FA)
+- [ ] Create first admin endpoints (fleet management)
+- [ ] Test authentication flow locally
+- [ ] Create seed script for initial admin user
 
 **Instructions for Future Sessions:**
 - Update this log at the start and end of each session
