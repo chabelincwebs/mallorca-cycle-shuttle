@@ -9,6 +9,8 @@ import express, { Request, Response, NextFunction } from 'express';
   import bookingsRoutes from './routes/admin/bookings';
   import paymentsRoutes from './routes/admin/payments';
   import stripeWebhookRoutes from './routes/webhooks/stripe';
+  import customerAuthRoutes from './routes/customer/auth';
+  import customerPortalRoutes from './routes/customer/portal';
 
   dotenv.config();
 
@@ -64,6 +66,10 @@ import express, { Request, Response, NextFunction } from 'express';
           bookings: '/api/admin/bookings',
           payments: '/api/admin/payments'
         },
+        customer: {
+          auth: '/api/customer/auth',
+          portal: '/api/customer/portal'
+        },
         webhooks: {
           stripe: '/webhooks/stripe'
         }
@@ -71,12 +77,16 @@ import express, { Request, Response, NextFunction } from 'express';
     });
   });
 
-  // API Routes
+  // API Routes - Admin
   app.use('/api/admin/auth', adminAuthRoutes);
   app.use('/api/admin/fleet', fleetRoutes);
   app.use('/api/admin/services', servicesRoutes);
   app.use('/api/admin/bookings', bookingsRoutes);
   app.use('/api/admin/payments', paymentsRoutes);
+
+  // API Routes - Customer Portal
+  app.use('/api/customer/auth', customerAuthRoutes);
+  app.use('/api/customer/portal', customerPortalRoutes);
 
   // 404 handler
   app.use((req: Request, res: Response) => {
@@ -105,6 +115,8 @@ import express, { Request, Response, NextFunction } from 'express';
     console.log(`📅 Scheduled Services: http://0.0.0.0:${PORT}/api/admin/services`);
     console.log(`📋 Bookings: http://0.0.0.0:${PORT}/api/admin/bookings`);
     console.log(`💰 Payments: http://0.0.0.0:${PORT}/api/admin/payments`);
+    console.log(`👤 Customer Portal: http://0.0.0.0:${PORT}/api/customer/portal`);
+    console.log(`🔑 Customer Auth: http://0.0.0.0:${PORT}/api/customer/auth`);
     console.log(`💳 Stripe Webhook: http://0.0.0.0:${PORT}/webhooks/stripe`);
     console.log(`\n🚀 Ready to accept requests!`);
   });
