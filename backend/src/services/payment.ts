@@ -1,6 +1,7 @@
 import Stripe from 'stripe';
 import { PrismaClient } from '@prisma/client';
 import { sendBookingConfirmation, sendPaymentReceipt, sendAdminPrivateBookingNotification } from './email';
+import { sendScheduledBookingConfirmation, sendPrivateBookingPending, sendPaymentReceived } from './whatsapp';
 import { createInvoiceFromScheduledBooking, createInvoiceFromPrivateBooking } from './invoice';
 
 const prisma = new PrismaClient();
@@ -233,6 +234,37 @@ async function handleScheduledBookingPaymentSucceeded(bookingReference: string, 
     console.error('Error sending confirmation emails:', emailError);
   }
 
+  // Send WhatsApp notifications (if phone number is provided)
+  if (booking.customerPhone) {
+    try {
+      await sendScheduledBookingConfirmation(
+        {
+          ...booking,
+          scheduledService: {
+            date: booking.service.serviceDate,
+            departureTime: booking.service.departureTime,
+            route: { fromLocation: { name: booking.pickupLocation.nameEn } }
+          }
+        },
+        booking.customerPhone,
+        booking.customerLanguage
+      );
+
+      await sendPaymentReceived(
+        booking.bookingReference,
+        parseFloat(booking.totalAmount.toString()),
+        'EUR',
+        booking.customerPhone,
+        booking.customerLanguage
+      );
+
+      console.log(`WhatsApp notifications sent to ${booking.customerPhone}`);
+    } catch (whatsappError) {
+      // Log error but don't throw - payment was successful
+      console.error('Error sending WhatsApp notifications:', whatsappError);
+    }
+  }
+
   // Generate invoice automatically
   try {
     const invoice = await createInvoiceFromScheduledBooking(booking.id);
@@ -306,6 +338,30 @@ async function handlePrivateBookingPaymentSucceeded(bookingReference: string, pa
   } catch (adminEmailError) {
     // Log error but don't throw - payment was successful
     console.error('Error sending admin notification:', adminEmailError);
+  }
+
+  // Send WhatsApp notifications (if phone number is provided)
+  if (booking.customerPhone) {
+    try {
+      await sendPrivateBookingPending(
+        booking,
+        booking.customerPhone,
+        booking.customerLanguage
+      );
+
+      await sendPaymentReceived(
+        booking.bookingReference,
+        parseFloat(booking.totalAmount.toString()),
+        'EUR',
+        booking.customerPhone,
+        booking.customerLanguage
+      );
+
+      console.log(`WhatsApp notifications sent to ${booking.customerPhone}`);
+    } catch (whatsappError) {
+      // Log error but don't throw - payment was successful
+      console.error('Error sending WhatsApp notifications:', whatsappError);
+    }
   }
 
   // Note: Invoice generation happens after admin confirmation, not immediately after payment
