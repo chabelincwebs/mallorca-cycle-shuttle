@@ -4,7 +4,97 @@ This log tracks all major development milestones and features added to the backe
 
 ---
 
-## Session: November 1, 2025 (Evening) - Real Routes & UX Improvements
+## Session: November 1, 2025 (Evening Session 2) - UI/UX Polish
+
+**Duration:** ~1 hour
+**Status:** ✅ Complete
+**Lines of Code:** ~110+ modified lines
+
+### What Was Built
+
+#### 1. Grey Color Scheme (Professional UI)
+- **Modified:** `static/css/booking-form.css` (v9 → v11)
+  - Changed all UI element colors from red to grey tones
+  - Active step indicators: `var(--brand, #f10000)` → `#333`
+  - Input/select focus borders: `#f10000` → `#666`
+  - Button backgrounds: red → grey (`#555`, hover `#444`)
+  - Service card selected states: red → grey (`#666` border, `#f8f8f8` background)
+  - Ticket option states: red → grey (`#999` hover, `#666` selected)
+  - Red color RESERVED for error states only (`.error-message`, `.terms-checkbox.error`)
+
+**Key Features:**
+- Clear visual hierarchy using grey tones
+- Red color exclusively for error highlighting
+- Improved professional appearance
+- Better accessibility with consistent color usage
+
+---
+
+#### 2. Mandatory Terms Checkbox
+- **Modified:** `static/js/scheduled-booking-form.js` (v7 → v8)
+  - Added terms checkbox to Step 2 (Passenger Details)
+  - Required text: "Arrive at least 5 min early, we have bikes to pack! I understand latecomers get left behind, no refunds."
+  - Client-side validation prevents proceeding without acceptance
+  - Visual error feedback with red border flash (2-second duration)
+  - Translations added for all 10 languages:
+    - English (EN): "Arrive at least 5 min early..."
+    - German (DE): "Mindestens 5 Minuten früher kommen..."
+    - Spanish (ES): "¡Llega al menos 5 minutos antes..."
+    - French (FR): "Arrivez au moins 5 min à l'avance..."
+    - Catalan (CA): "Arribeu almenys 5 min abans..."
+    - Italian (IT): "Arriva almeno 5 minuti prima..."
+    - Dutch (NL): "Kom minimaal 5 minuten eerder..."
+    - Danish (DA): "Ankom mindst 5 min før..."
+    - Norwegian (NB): "Ankom minst 5 min før..."
+    - Swedish (SV): "Ankom minst 5 minuter före..."
+
+- **Modified:** `static/css/booking-form.css` (v9 → v11)
+  - Added `.terms-checkbox` styling section
+  - Light grey background (#f8f8f8)
+  - Rounded corners (0.5rem)
+  - Flexbox layout for checkbox + text
+  - Error state with red border and pink background
+  - Responsive padding and spacing
+
+**Key Features:**
+- Legal protection with mandatory acceptance
+- Clear communication of punctuality policy
+- Multi-language support maintains consistency
+- Visual feedback prevents accidental skipping
+- Professional styling matches form design
+
+---
+
+#### 3. Cache-Busting Updates
+- **Modified:** `content/en/bike-shuttle/scheduled-shuttle-bookings/_index.md`
+  - Updated CSS version: v9 → v11
+  - Updated JS version: v7 → v8
+  - Ensures users see latest changes without hard refresh
+
+---
+
+### Technical Improvements
+- Systematic color scheme conversion using grep to find all instances
+- Proper distinction between UI elements (grey) and error states (red)
+- Consistent translation tone across 10 languages
+- Improved form validation UX with visual feedback
+
+### Testing
+- ✅ All red borders changed to grey except errors
+- ✅ Terms checkbox displays correctly
+- ✅ Validation prevents proceeding without acceptance
+- ✅ Error flash animation working (2s red border)
+- ✅ Translations display correctly in all languages
+- ✅ Cache-busting working (new versions load)
+
+### Git Commit
+**Commit:** `ae9108b` - "Update booking form with grey color scheme and mandatory terms checkbox"
+**Pushed:** ✅ origin/master
+**Stats:** 3 files changed, 137 insertions(+), 25 deletions(-)
+
+---
+
+## Session: November 1, 2025 (Evening Session 1) - Real Routes & UX Improvements
 
 **Duration:** ~2 hours
 **Status:** ✅ Complete

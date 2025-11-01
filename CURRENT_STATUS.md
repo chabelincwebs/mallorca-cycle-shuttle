@@ -1,8 +1,8 @@
 # 🔄 CURRENT PROJECT STATUS
 
-**Last Updated:** 2025-11-01 21:15 CET
+**Last Updated:** 2025-11-01 22:30 CET
 **Current Phase:** Scheduled Shuttle Booking System - PRODUCTION READY ✅
-**Status:** 🎉 Real routes added, UX improved, pricing finalized!
+**Status:** 🎉 Grey color scheme & mandatory terms checkbox complete!
 
 ---
 
@@ -325,7 +325,7 @@ npx tsx scripts/create-service.ts
 - Tested multi-language UI
 - Validated responsive design
 
-### Session 5 (2025-11-01 Evening) - TODAY!
+### Session 5 (2025-11-01 Evening Session 1)
 **🎉 PRODUCTION READY: Real Routes, Smart Filtering, UX Improvements!**
 
 **Real Business Data:**
@@ -358,6 +358,37 @@ npx tsx scripts/create-service.ts
 - 7 files changed, 754 insertions, 71 deletions
 
 **Status:** System production-ready with real business data!
+
+### Session 6 (2025-11-01 Evening Session 2) - TODAY!
+**🎨 UI/UX Polish: Grey Color Scheme & Mandatory Terms**
+
+**Color Scheme Overhaul:**
+- Changed all UI element colors from red to grey tones
+- Active step indicators: red → grey (#333)
+- Input/select focus borders: #f10000 → #666
+- Button backgrounds: red → grey (#555, hover #444)
+- Service card selected states: red → grey (#666, #f8f8f8 background)
+- Ticket option hover/selected: red → grey (#999, #666)
+- Red color RESERVED for error states only
+
+**Mandatory Terms Checkbox:**
+- Added required checkbox to Step 2 (Passenger Details)
+- Text: "Arrive at least 5 min early, we have bikes to pack! I understand latecomers get left behind, no refunds."
+- Client-side validation prevents proceeding without acceptance
+- Visual error feedback with red border flash (2s)
+- Translations added for all 10 languages (EN, DE, ES, FR, CA, IT, NL, DA, NB, SV)
+
+**Cache-Busting Updates:**
+- booking-form.css: v9 → v11
+- scheduled-booking-form.js: v7 → v8
+- _index.md updated with new versions
+
+**Git:**
+- Commit: ae9108b - "Update booking form with grey color scheme and mandatory terms checkbox"
+- 3 files changed, 137 insertions, 25 deletions
+- Pushed to origin/master
+
+**Status:** Professional UI with clear visual hierarchy, red = errors only!
 
 ---
 
