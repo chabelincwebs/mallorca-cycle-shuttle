@@ -1146,6 +1146,15 @@
         // Wait for services to load
         await new Promise(resolve => setTimeout(resolve, 500));
 
+        // Scroll to the services list section
+        const servicesList = document.getElementById('services-list');
+        if (servicesList) {
+          servicesList.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        // Wait for scroll to complete
+        await new Promise(resolve => setTimeout(resolve, 300));
+
         // Auto-select this service if visible
         const serviceButton = document.querySelector(`[data-service-id="${serviceId}"]`);
         if (serviceButton) {
