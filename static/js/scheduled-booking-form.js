@@ -89,6 +89,21 @@
       paymentFailed: 'Payment failed. Please try again.',
       bookingFailed: 'Booking failed. Please try again or contact us.',
       loadingError: 'Failed to load data. Please try again.',
+
+      // Terms
+      termsText: 'Arrive at least 5 min early, we have bikes to pack! I understand latecomers get left behind, no refunds.',
+      termsRequired: 'You must agree to the terms before continuing',
+      seatsEqualBikes: 'Each seat purchased includes luxury travel for your bicycle!',
+      inclIVA: 'Incl. IVA',
+      subtotal: 'Subtotal',
+
+      // Service Browser
+      browseServicesTitle: 'Browse Available Shuttles',
+      browseServicesDesc: 'View all scheduled bike shuttle services by month. Click "Book" to reserve your seat!',
+      noServicesThisMonth: 'No services scheduled for this month yet.',
+      bookThisService: 'Book This Service',
+      departure: 'Departure',
+      route: 'Route',
     },
 
     de: {
@@ -147,6 +162,19 @@
       paymentFailed: 'Zahlung fehlgeschlagen. Bitte versuchen Sie es erneut.',
       bookingFailed: 'Buchung fehlgeschlagen. Bitte versuchen Sie es erneut oder kontaktieren Sie uns.',
       loadingError: 'Daten konnten nicht geladen werden. Bitte versuchen Sie es erneut.',
+      termsText: 'Mindestens 5 Minuten früher kommen, wir müssen Fahrräder einpacken! Ich verstehe, dass Zuspätkommer zurückbleiben, keine Rückerstattungen.',
+      termsRequired: 'Sie müssen den Bedingungen zustimmen, um fortzufahren',
+      seatsEqualBikes: 'Jeder Sitzplatz beinhaltet luxuriösen Transport für Ihr Fahrrad!',
+      inclIVA: 'Inkl. MwSt',
+      subtotal: 'Zwischensumme',
+
+      // Service Browser
+      browseServicesTitle: 'Verfügbare Shuttles Durchsuchen',
+      browseServicesDesc: 'Zeigen Sie alle geplanten Fahrrad-Shuttle-Services nach Monat an. Klicken Sie auf "Buchen", um Ihren Platz zu reservieren!',
+      noServicesThisMonth: 'Für diesen Monat sind noch keine Services geplant.',
+      bookThisService: 'Diesen Service buchen',
+      departure: 'Abfahrt',
+      route: 'Route',
     },
 
     es: {
@@ -205,6 +233,19 @@
       paymentFailed: 'Pago fallido. Por favor intente de nuevo.',
       bookingFailed: 'Reserva fallida. Por favor intente de nuevo o contáctenos.',
       loadingError: 'Error al cargar datos. Por favor intente de nuevo.',
+      termsText: '¡Llega al menos 5 minutos antes, tenemos bicicletas que empacar! Entiendo que los que llegan tarde se quedan atrás, sin reembolsos.',
+      termsRequired: 'Debe aceptar los términos para continuar',
+      seatsEqualBikes: '¡Cada asiento incluye viaje de lujo para su bicicleta!',
+      inclIVA: 'IVA incluido',
+      subtotal: 'Subtotal',
+
+      // Service Browser
+      browseServicesTitle: 'Explorar Lanzaderas Disponibles',
+      browseServicesDesc: 'Ver todos los servicios de lanzadera de bicicletas programados por mes. ¡Haz clic en "Reservar" para reservar tu asiento!',
+      noServicesThisMonth: 'No hay servicios programados para este mes todavía.',
+      bookThisService: 'Reservar este servicio',
+      departure: 'Salida',
+      route: 'Ruta',
     },
 
     fr: {
@@ -263,6 +304,19 @@
       paymentFailed: 'Paiement échoué. Veuillez réessayer.',
       bookingFailed: 'Réservation échouée. Veuillez réessayer ou nous contacter.',
       loadingError: 'Échec du chargement des données. Veuillez réessayer.',
+      termsText: 'Arrivez au moins 5 minutes à l\'avance, nous avons des vélos à emballer! Je comprends que les retardataires seront laissés pour compte, sans remboursement.',
+      termsRequired: 'Vous devez accepter les conditions pour continuer',
+      seatsEqualBikes: 'Chaque place comprend un voyage de luxe pour votre vélo!',
+      inclIVA: 'TVA incluse',
+      subtotal: 'Sous-total',
+
+      // Service Browser
+      browseServicesTitle: 'Parcourir les Navettes Disponibles',
+      browseServicesDesc: 'Voir tous les services de navette vélo programmés par mois. Cliquez sur "Réserver" pour réserver votre place!',
+      noServicesThisMonth: 'Aucun service prévu pour ce mois pour le moment.',
+      bookThisService: 'Réserver ce service',
+      departure: 'Départ',
+      route: 'Itinéraire',
     },
 
     ca: {
@@ -321,6 +375,19 @@
       paymentFailed: 'Pagament fallit. Si us plau torneu-ho a provar.',
       bookingFailed: 'Reserva fallida. Si us plau torneu-ho a provar o contacteu-nos.',
       loadingError: 'Error en carregar dades. Si us plau torneu-ho a provar.',
+      termsText: 'Arribeu almenys 5 minuts abans, tenim bicicletes per embalar! Entenc que els que arriben tard es queden enrere, sense reemborsaments.',
+      termsRequired: 'Heu d\'acceptar les condicions per continuar',
+      seatsEqualBikes: 'Cada seient inclou viatge de luxe per a la vostra bicicleta!',
+      inclIVA: 'IVA inclòs',
+      subtotal: 'Subtotal',
+
+      // Service Browser
+      browseServicesTitle: 'Explorar Llançadores Disponibles',
+      browseServicesDesc: 'Veure tots els serveis de llançadora de bicicletes programats per mes. Feu clic a "Reserva" per reservar el vostre seient!',
+      noServicesThisMonth: 'Encara no hi ha serveis programats per aquest mes.',
+      bookThisService: 'Reserva aquest servei',
+      departure: 'Sortida',
+      route: 'Ruta',
     },
 
     it: {
@@ -381,6 +448,19 @@
       loadingError: 'Caricamento dati fallito. Per favore riprova.',
     },
 
+      termsText: 'Arriva almeno 5 minuti prima, abbiamo biciclette da imballare! Capisco che i ritardatari vengono lasciati indietro, nessun rimborso.',
+      termsRequired: 'Devi accettare i termini per continuare',
+      seatsEqualBikes: 'Ogni posto include viaggio di lusso per la tua bicicletta!',
+      inclIVA: 'IVA inclusa',
+      subtotal: 'Subtotale',
+
+      // Service Browser
+      browseServicesTitle: 'Sfoglia le Navette Disponibili',
+      browseServicesDesc: 'Visualizza tutti i servizi navetta bici programmati per mese. Fai clic su "Prenota" per riservare il tuo posto!',
+      noServicesThisMonth: 'Nessun servizio programmato per questo mese.',
+      bookThisService: 'Prenota questo servizio',
+      departure: 'Partenza',
+      route: 'Percorso',
     nl: {
       step1: 'Service Selecteren',
       step2: 'Passagiersgegevens',
@@ -439,6 +519,19 @@
       loadingError: 'Laden van gegevens mislukt. Probeer het opnieuw.',
     },
 
+      termsText: 'Kom minstens 5 minuten vroeg, we hebben fietsen in te pakken! Ik begrijp dat te laat komers achterblijven, geen terugbetaling.',
+      termsRequired: 'U moet akkoord gaan met de voorwaarden om door te gaan',
+      seatsEqualBikes: 'Elke zitplaats omvat luxe reis voor uw fiets!',
+      inclIVA: 'BTW inbegrepen',
+      subtotal: 'Subtotaal',
+
+      // Service Browser
+      browseServicesTitle: 'Bekijk Beschikbare Shuttles',
+      browseServicesDesc: 'Bekijk alle geplande fietsshuttlediensten per maand. Klik op "Boek" om uw plaats te reserveren!',
+      noServicesThisMonth: 'Nog geen diensten gepland voor deze maand.',
+      bookThisService: 'Boek deze dienst',
+      departure: 'Vertrek',
+      route: 'Route',
     da: {
       step1: 'Vælg Service',
       step2: 'Passagerdetaljer',
@@ -502,6 +595,19 @@
       step2: 'Passasjerdetaljer',
       step3: 'Betaling',
       step4: 'Bekreftelse',
+      termsText: 'Ankom mindst 5 minutter tidligt, vi har cykler at pakke! Jeg forstår at forsinkede bliver efterladt, ingen refusion.',
+      termsRequired: 'Du skal acceptere betingelserne for at fortsætte',
+      seatsEqualBikes: 'Hvert sæde inkluderer luksusrejse for din cykel!',
+      inclIVA: 'Inkl. moms',
+      subtotal: 'Subtotal',
+
+      // Service Browser
+      browseServicesTitle: 'Gennemse Tilgængelige Shuttler',
+      browseServicesDesc: 'Vis alle planlagte cykelshuttletjenester pr. måned. Klik på "Book" for at reservere din plads!',
+      noServicesThisMonth: 'Ingen tjenester planlagt for denne måned endnu.',
+      bookThisService: 'Book denne tjeneste',
+      departure: 'Afgang',
+      route: 'Rute',
       from: 'Fra',
       to: 'Til',
       serviceDate: 'Reisedato',
@@ -565,6 +671,19 @@
       serviceDate: 'Resedatum',
       selectRoute: 'Välj rutt',
       selectDate: 'Välj datum',
+      termsText: 'Kom minst 5 minutter tidlig, vi har sykler å pakke! Jeg forstår at forsinkede blir etterlatt, ingen refusjon.',
+      termsRequired: 'Du må godta vilkårene for å fortsette',
+      seatsEqualBikes: 'Hvert sete inkluderer luksusreise for sykkelen din!',
+      inclIVA: 'Inkl. MVA',
+      subtotal: 'Delsum',
+
+      // Service Browser
+      browseServicesTitle: 'Bla Gjennom Tilgjengelige Skyttlar',
+      browseServicesDesc: 'Vis alle planlagte sykkelskytteltjenester per måned. Klikk "Book" for å reservere plassen din!',
+      noServicesThisMonth: 'Ingen tjenester planlagt for denne måneden ennå.',
+      bookThisService: 'Book denne tjenesten',
+      departure: 'Avreise',
+      route: 'Rute',
       loadingServices: 'Laddar tillgängliga tjänster...',
       noServices: 'Inga tjänster tillgängliga för denna rutt och datum',
       availableServices: 'Tillgängliga Tjänster',
@@ -628,26 +747,430 @@
   let currentStep = 1;
   let formData = {
     selectedService: null,
+      termsText: 'Kom minst 5 minuter tidigt, vi har cyklar att packa! Jag förstår att försinkade lämnas efter, inga återbetalningar.',
+      termsRequired: 'Du måste acceptera villkoren för att fortsätta',
+      seatsEqualBikes: 'Varje plats inkluderar lyxresa för din cykel!',
+      inclIVA: 'Inkl. moms',
+      subtotal: 'Delsumma',
+
+      // Service Browser
+      browseServicesTitle: 'Bläddra i Tillgängliga Skyttlar',
+      browseServicesDesc: 'Visa alla schemalagda cykelskytteltjänster per månad. Klicka på "Boka" för att reservera din plats!',
+      noServicesThisMonth: 'Inga tjänster schemalagda för denna månad än.',
+      bookThisService: 'Boka denna tjänst',
+      departure: 'Avresa',
+      route: 'Rutt',
     selectedTicketType: null,
     pickupLocationId: null,
   };
   let routes = [];
   let availableServices = [];
+  let allServices = []; // For service browser
+  let selectedBrowserMonth = null; // Currently selected month in browser
+  let selectedBrowserRoute = null; // Currently selected route in browser
   let stripe = null;
   let cardElement = null;
 
+  // Route definitions for two-level navigation
+  const ROUTE_DEFINITIONS = {
+    'PP-AX': { from: 'Port de Pollença', to: 'Port d\'Andratx', match: (s) => matchPickup(s, ['Duva', 'Cabot']) && matchDropoff(s, 'Andratx') },
+    'ALC-AX': { from: 'Alcudia', to: 'Port d\'Andratx', match: (s) => matchPickup(s, ['PortBlue', 'Playa Esperanza', 'Zafiro Tropic']) && matchDropoff(s, 'Andratx') },
+    'PP-REP': { from: 'Port de Pollença', to: 'Lluc', match: (s) => matchPickup(s, ['Duva', 'Cabot']) && matchDropoff(s, 'Lluc') },
+    'ALC-REP': { from: 'Alcudia', to: 'Lluc', match: (s) => matchPickup(s, ['PortBlue', 'Playa Esperanza', 'Zafiro Tropic']) && matchDropoff(s, 'Lluc') },
+    'PEG-PP': { from: 'Peguera', to: 'Port de Pollença', match: (s) => matchPickup(s, 'Peguera') && matchDropoff(s, 'Pollença') },
+    'SP-PP': { from: 'Santa Ponça', to: 'Port de Pollença', match: (s) => matchPickup(s, 'Santa Ponça') && matchDropoff(s, 'Pollença') },
+    'PEG-REP': { from: 'Peguera', to: 'Lluc', match: (s) => matchPickup(s, 'Peguera') && matchDropoff(s, 'Lluc') },
+    'SP-REP': { from: 'Santa Ponça', to: 'Lluc', match: (s) => matchPickup(s, 'Santa Ponça') && matchDropoff(s, 'Lluc') },
+    'PDP-PP': { from: 'Playa de Palma', to: 'Port de Pollença', match: (s) => matchPickup(s, ['Hacienda', 'Rey Don Jaime']) && matchDropoff(s, 'Pollença') },
+    'PDP-REP': { from: 'Playa de Palma', to: 'Lluc', match: (s) => matchPickup(s, ['Hacienda', 'Rey Don Jaime']) && matchDropoff(s, 'Lluc') },
+    'PM-REP': { from: 'Playa de Muro', to: 'Lluc', match: (s) => matchPickup(s, 'Fontanellas') && matchDropoff(s, 'Lluc') },
+    'PA-REP': { from: 'Port Alcudia', to: 'Lluc', match: (s) => matchPickup(s, 'Alcudia') && matchDropoff(s, 'Lluc') && !matchPickup(s, ['PortBlue', 'Playa Esperanza', 'Zafiro Tropic']) },
+    'PM-AX': { from: 'Playa de Muro', to: 'Port d\'Andratx', match: (s) => matchPickup(s, 'Fontanellas') && matchDropoff(s, 'Andratx') },
+    'PA-AX': { from: 'Port Alcudia', to: 'Port d\'Andratx', match: (s) => matchPickup(s, 'Alcudia') && matchDropoff(s, 'Andratx') && !matchPickup(s, ['PortBlue', 'Playa Esperanza', 'Zafiro Tropic']) },
+  };
+
+  // ============================================
+  // SERVICE BROWSER FUNCTIONS
+  // ============================================
+
+  /**
+   * Check if service pickup matches keyword(s)
+   */
+  function matchPickup(service, keywords) {
+    if (!service.pickupLocations || service.pickupLocations.length === 0) return false;
+    const pickupNames = service.pickupLocations.map(l => l.name).join(' ');
+    if (Array.isArray(keywords)) {
+      return keywords.some(k => pickupNames.includes(k));
+    }
+    return pickupNames.includes(keywords);
+  }
+
+  /**
+   * Check if service dropoff matches keyword
+   */
+  function matchDropoff(service, keyword) {
+    if (!service.dropoffLocation) return false;
+    return service.dropoffLocation.name.includes(keyword);
+  }
+
+  /**
+   * Get route key for a service
+   */
+  function getRouteKey(service) {
+    for (const [key, route] of Object.entries(ROUTE_DEFINITIONS)) {
+      if (route.match(service)) {
+        return key;
+      }
+    }
+    return null;
+  }
+
+  /**
+   * Switch to a different route in the browser
+   */
+  function switchBrowserRoute(routeKey) {
+    selectedBrowserRoute = routeKey;
+    renderServiceBrowser();
+  }
+
+  /**
+   * Fetch all services for the service browser (no date/to filters)
+   */
+  async function fetchAllServices() {
+    try {
+      console.log('[Browser] Fetching all services...');
+      const response = await fetch(`${CONFIG.apiBaseUrl}/scheduled-bookings/services/browse`);
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const data = await response.json();
+      allServices = data.services || [];
+      console.log(`[Browser] Fetched ${allServices.length} services`);
+
+      return allServices;
+    } catch (error) {
+      console.error('[Browser] Error fetching services:', error);
+      return [];
+    }
+  }
+
+  /**
+   * Organize services by year-month
+   * Returns: { '2026-03': [...services], '2026-04': [...services], ... }
+   */
+  function organizeServicesByMonth() {
+    const servicesByMonth = {};
+
+    allServices.forEach(service => {
+      const date = new Date(service.serviceDate);
+      const yearMonth = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
+
+      if (!servicesByMonth[yearMonth]) {
+        servicesByMonth[yearMonth] = [];
+      }
+
+      servicesByMonth[yearMonth].push(service);
+    });
+
+    // Sort services within each month by date
+    Object.keys(servicesByMonth).forEach(month => {
+      servicesByMonth[month].sort((a, b) =>
+        new Date(a.serviceDate) - new Date(b.serviceDate)
+      );
+    });
+
+    return servicesByMonth;
+  }
+
+  /**
+   * Get localized month name
+   */
+  function getMonthName(yearMonth, lang) {
+    const [year, month] = yearMonth.split('-');
+    const date = new Date(year, parseInt(month) - 1, 1);
+
+    const monthNames = {
+      en: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      de: ['Jan', 'Feb', 'Mär', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez'],
+      es: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
+      fr: ['Jan', 'Fév', 'Mar', 'Avr', 'Mai', 'Juin', 'Juil', 'Août', 'Sep', 'Oct', 'Nov', 'Déc'],
+      ca: ['Gen', 'Febr', 'Març', 'Abr', 'Maig', 'Juny', 'Jul', 'Ag', 'Set', 'Oct', 'Nov', 'Des'],
+      it: ['Gen', 'Feb', 'Mar', 'Apr', 'Mag', 'Giu', 'Lug', 'Ago', 'Set', 'Ott', 'Nov', 'Dic'],
+      nl: ['Jan', 'Feb', 'Mrt', 'Apr', 'Mei', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dec'],
+      da: ['Jan', 'Feb', 'Mar', 'Apr', 'Maj', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dec'],
+      nb: ['Jan', 'Feb', 'Mar', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Des'],
+      sv: ['Jan', 'Feb', 'Mar', 'Apr', 'Maj', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dec'],
+    };
+
+    const monthIndex = date.getMonth();
+    const monthName = (monthNames[lang] || monthNames.en)[monthIndex];
+    return `${monthName} ${year}`;
+  }
+
+  /**
+   * Get localized location name
+   */
+  function getLocalizedLocationName(location) {
+    const langMap = {
+      en: location.name,
+      de: location.nameDe || location.name,
+      es: location.nameEs || location.name,
+      fr: location.nameFr || location.name,
+      ca: location.nameCa || location.name,
+      it: location.nameIt || location.name,
+      nl: location.nameNl || location.name,
+      da: location.nameDa || location.name,
+      nb: location.nameNb || location.name,
+      sv: location.nameSv || location.name,
+    };
+    return langMap[currentLang] || location.name;
+  }
+
+  /**
+   * Render the service browser UI
+   */
+  function renderServiceBrowser() {
+    const t = TRANSLATIONS[currentLang] || TRANSLATIONS.en;
+    const servicesByMonth = organizeServicesByMonth();
+    const months = Object.keys(servicesByMonth).sort();
+
+    if (months.length === 0) {
+      return `
+        <div class="service-browser">
+          <h2>${t.browseServicesTitle}</h2>
+          <p>${t.noServicesThisMonth}</p>
+        </div>
+      `;
+    }
+
+    // Set default selected month to the first month
+    if (!selectedBrowserMonth && months.length > 0) {
+      selectedBrowserMonth = months[0];
+    }
+
+    // Build month tabs
+    const monthTabs = months.map(month => {
+      const isActive = month === selectedBrowserMonth;
+      const count = servicesByMonth[month].length;
+      return `
+        <button
+          class="month-tab ${isActive ? 'active' : ''}"
+          onclick="window.scheduledBookingForm.switchBrowserMonth('${month}')"
+        >
+          ${getMonthName(month, currentLang)}
+          <span class="month-tab-count">(${count})</span>
+        </button>
+      `;
+    }).join('');
+
+    // Get services for selected month and organize by route
+    const servicesForMonth = servicesByMonth[selectedBrowserMonth] || [];
+    const servicesByRoute = {};
+
+    servicesForMonth.forEach(service => {
+      const routeKey = getRouteKey(service);
+      if (routeKey) {
+        if (!servicesByRoute[routeKey]) {
+          servicesByRoute[routeKey] = [];
+        }
+        servicesByRoute[routeKey].push(service);
+      }
+    });
+
+    const routes = Object.keys(servicesByRoute).sort();
+
+    // Set default selected route to the first route with services
+    if (!selectedBrowserRoute && routes.length > 0) {
+      selectedBrowserRoute = routes[0];
+    }
+
+    // Reset route selection if current route has no services in this month
+    if (selectedBrowserRoute && !servicesByRoute[selectedBrowserRoute]) {
+      selectedBrowserRoute = routes[0] || null;
+    }
+
+    // Build route tabs
+    const routeTabs = routes.map(routeKey => {
+      const isActive = routeKey === selectedBrowserRoute;
+      const count = servicesByRoute[routeKey].length;
+      const route = ROUTE_DEFINITIONS[routeKey];
+      return `
+        <button
+          class="route-tab ${isActive ? 'active' : ''}"
+          onclick="window.scheduledBookingForm.switchBrowserRoute('${routeKey}')"
+        >
+          ${route.from} → ${route.to}
+          <span class="route-tab-count">(${count})</span>
+        </button>
+      `;
+    }).join('');
+
+    // Build service cards for selected month and route
+    const servicesForRoute = selectedBrowserRoute ? (servicesByRoute[selectedBrowserRoute] || []) : [];
+    const serviceCards = servicesForRoute.map(service => {
+      const serviceDate = new Date(service.serviceDate);
+      const formattedDate = serviceDate.toLocaleDateString(currentLang, {
+        weekday: 'short',
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric'
+      });
+      const serviceTime = service.departureTime.substring(11, 16);
+
+      const pickupNames = service.pickupLocations
+        .map(loc => getLocalizedLocationName(loc))
+        .join(' / ');
+      const dropoffName = getLocalizedLocationName(service.dropoffLocation);
+
+      const seatsAvailable = service.bus.capacity - service.seatsBooked;
+      const availabilityClass = seatsAvailable < 10 ? 'low-availability' : '';
+
+      return `
+        <div class="browser-service-card ${availabilityClass}">
+          <div class="service-card-date">📅 ${formattedDate}</div>
+          <div class="service-card-route">
+            <strong>${t.route}:</strong> ${pickupNames} → ${dropoffName}
+          </div>
+          <div class="service-card-details">
+            <span class="service-time">🕐 ${t.departure}: ${serviceTime}</span>
+            <span class="service-seats">💺 ${seatsAvailable} ${t.seatsAvailable}</span>
+          </div>
+          <div class="service-card-price">
+            ${t.standard}: €40.50 • ${t.flexi}: €42.50
+          </div>
+          <button
+            class="btn-book-service"
+            onclick="window.scheduledBookingForm.bookService(${service.id}, '${service.serviceDate.substring(0, 10)}')"
+          >
+            ${t.bookThisService} →
+          </button>
+        </div>
+      `;
+    }).join('');
+
+    const noRoutesMessage = routes.length === 0 ? `<p>${t.noServicesThisMonth}</p>` : '';
+    const routeTabsSection = routes.length > 0 ? `
+      <div class="route-tabs">
+        ${routeTabs}
+      </div>
+    ` : '';
+
+    return `
+      <div class="service-browser">
+        <h2>${t.browseServicesTitle}</h2>
+        <p class="browser-desc">${t.browseServicesDesc}</p>
+
+        <div class="month-tabs">
+          ${monthTabs}
+        </div>
+
+        ${routeTabsSection}
+        ${noRoutesMessage}
+
+        <div class="service-cards-container">
+          ${serviceCards}
+        </div>
+
+        <hr class="browser-divider" />
+      </div>
+    `;
+  }
+
+  /**
+   * Switch to a different month in the browser
+   */
+  async function switchBrowserMonth(yearMonth) {
+    selectedBrowserMonth = yearMonth;
+
+    // Re-render the browser section
+    const browserContainer = document.getElementById('service-browser-container');
+    if (browserContainer) {
+      browserContainer.innerHTML = renderServiceBrowser();
+    }
+  }
+
+  /**
+   * Pre-fill the booking form when user clicks "Book" on a service
+   */
+  async function bookService(serviceId, serviceDate) {
+    console.log('[Browser] Booking service:', serviceId, serviceDate);
+
+    // Find the service
+    const service = allServices.find(s => s.id === serviceId);
+    if (!service) {
+      console.error('[Browser] Service not found:', serviceId);
+      return;
+    }
+
+    // Scroll to booking form
+    const formContainer = document.getElementById('scheduled-booking-form-container');
+    if (formContainer) {
+      formContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    // Wait a moment for scroll
+    await new Promise(resolve => setTimeout(resolve, 300));
+
+    // Pre-fill the date
+    const dateInput = document.getElementById('serviceDate');
+    if (dateInput) {
+      dateInput.value = serviceDate;
+    }
+
+    // Pre-select the from/to routes
+    const fromSelect = document.getElementById('fromRoute');
+    const toSelect = document.getElementById('toRoute');
+
+    if (fromSelect && service.pickupLocations.length > 0) {
+      fromSelect.value = service.pickupLocations[0].id;
+
+      // Trigger change event to load services
+      const event = new Event('change', { bubbles: true });
+      fromSelect.dispatchEvent(event);
+
+      // Wait for services to load
+      await new Promise(resolve => setTimeout(resolve, 500));
+
+      // Set the dropoff
+      if (toSelect) {
+        toSelect.value = service.dropoffLocation.id;
+        toSelect.dispatchEvent(new Event('change', { bubbles: true }));
+
+        // Wait for services to load
+        await new Promise(resolve => setTimeout(resolve, 500));
+
+        // Auto-select this service if visible
+        const serviceButton = document.querySelector(`[data-service-id="${serviceId}"]`);
+        if (serviceButton) {
+          serviceButton.click();
+        }
+      }
+    }
+  }
+
   // Initialize
-  function init() {
+  async function init() {
     console.log('[Scheduled Booking] init() called');
     const container = document.getElementById('scheduled-booking-form-container');
     if (!container) {
       console.error('[Scheduled Booking] Container element not found!');
       return;
     }
-    console.log('[Scheduled Booking] Container found, rendering form...');
+    console.log('[Scheduled Booking] Container found, rendering...');
 
-    // Render the form
-    container.innerHTML = renderForm();
+    // Fetch all services for the browser
+    console.log('[Scheduled Booking] Fetching all services for browser...');
+    await fetchAllServices();
+
+    // Render the service browser and the form
+    container.innerHTML = `
+      <div id="service-browser-container">
+        ${renderServiceBrowser()}
+      </div>
+      ${renderForm()}
+    `;
 
     // Initialize Stripe
     console.log('[Scheduled Booking] Initializing Stripe...');
@@ -746,12 +1269,83 @@
       return langMap[currentLang] || route.name;
     };
 
-    const routeOptions = routes.map(route =>
+    // Filter pickup locations only (locationType = 'pickup' or 'both')
+    const pickupRoutes = routes.filter(r => r.locationType === 'pickup' || r.locationType === 'both');
+    const pickupOptions = pickupRoutes.map(route =>
       `<option value="${route.id}">${getLocalizedName(route)}</option>`
     ).join('');
 
-    fromSelect.innerHTML = `<option value="">${t.selectRoute}</option>${routeOptions}`;
-    toSelect.innerHTML = `<option value="">${t.selectRoute}</option>${routeOptions}`;
+    fromSelect.innerHTML = `<option value="">${t.selectRoute}</option>${pickupOptions}`;
+    toSelect.innerHTML = `<option value="">${t.selectRoute}</option>`;
+    toSelect.disabled = true;
+
+    // Add event listener to update "To" dropdown when "From" changes
+    fromSelect.addEventListener('change', updateToDropdown);
+  }
+
+  async function updateToDropdown() {
+    const fromSelect = document.getElementById('fromLocation');
+    const toSelect = document.getElementById('toLocation');
+    const fromId = fromSelect.value;
+
+    if (!fromId) {
+      toSelect.innerHTML = `<option value="">${t.selectRoute}</option>`;
+      toSelect.disabled = true;
+      document.getElementById('services-list').innerHTML = '';
+      return;
+    }
+
+    // Fetch available destinations for this pickup location
+    // Query without date to find all possible destinations
+    try {
+      const response = await fetch(
+        `${CONFIG.apiBaseUrl}/scheduled-bookings/services/available?from=${fromId}`
+      );
+
+      if (!response.ok) throw new Error('Failed to fetch destinations');
+
+      const data = await response.json();
+
+      // Extract unique destination IDs from available services
+      const destinationIds = new Set();
+      data.data.forEach(service => {
+        destinationIds.add(service.dropoffLocation.id);
+      });
+
+      // Get localized name based on current language
+      const getLocalizedName = (route) => {
+        const langMap = {
+          en: route.name,
+          de: route.nameDe || route.name,
+          es: route.nameEs || route.name,
+          fr: route.nameFr || route.name,
+          ca: route.nameCa || route.name,
+          it: route.nameIt || route.name,
+          nl: route.nameNl || route.name,
+          da: route.name,
+          nb: route.name,
+          sv: route.name,
+        };
+        return langMap[currentLang] || route.name;
+      };
+
+      // Filter routes that are valid destinations for this pickup
+      const availableDestinations = routes.filter(r =>
+        (r.locationType === 'dropoff' || r.locationType === 'both') &&
+        destinationIds.has(r.id)
+      );
+
+      const destOptions = availableDestinations.map(route =>
+        `<option value="${route.id}">${getLocalizedName(route)}</option>`
+      ).join('');
+
+      toSelect.innerHTML = `<option value="">${t.selectRoute}</option>${destOptions}`;
+      toSelect.disabled = false;
+    } catch (error) {
+      console.error('[Scheduled Booking] Error fetching destinations:', error);
+      toSelect.innerHTML = `<option value="">${t.selectRoute}</option>`;
+      toSelect.disabled = false;
+    }
   }
 
   async function loadAvailableServices() {
@@ -801,9 +1395,16 @@
   }
 
   function renderServiceCard(service) {
-    const departureTime = service.departureTime.substring(11, 16); // Extract HH:MM from ISO datetime
-    const standardPrice = service.pricing.standardPrice.toFixed(2);
-    const flexiPrice = service.pricing.flexiPrice.toFixed(2);
+    const departureTime = service.departureTime ? service.departureTime.substring(11, 16) : '00:00'; // Extract HH:MM from ISO datetime
+    const IVA_RATE = 0.10; // 10% Spanish IVA on transport
+
+    // Calculate prices including IVA
+    const standardPriceInclIVA = (service.pricing.standardPrice * (1 + IVA_RATE)).toFixed(2);
+    const flexiPriceInclIVA = (service.pricing.flexiPrice * (1 + IVA_RATE)).toFixed(2);
+
+    // Store base prices for backend
+    const standardPriceBase = service.pricing.standardPrice.toFixed(2);
+    const flexiPriceBase = service.pricing.flexiPrice.toFixed(2);
 
     return `
       <div class="service-card">
@@ -818,20 +1419,22 @@
 
         <div class="ticket-options">
           <label class="ticket-option">
-            <input type="radio" name="service-${service.id}" value="standard" 
-              onchange="window.scheduledBookingForm.selectService(${service.id}, ${service.pickupLocations[0].id}, 'standard', ${standardPrice})">
+            <input type="radio" name="service-${service.id}" value="standard"
+              onchange="window.scheduledBookingForm.selectService(${service.id}, ${service.pickupLocations[0].id}, 'standard', ${standardPriceBase})">
             <div class="ticket-info">
               <div class="ticket-type">${t.standardTicket}</div>
-              <div class="ticket-price">€${standardPrice}</div>
+              <div class="ticket-price">€${standardPriceInclIVA}</div>
+              <small class="price-incl-iva">${t.inclIVA || 'Incl. IVA'}</small>
             </div>
           </label>
 
           <label class="ticket-option">
             <input type="radio" name="service-${service.id}" value="flexi"
-              onchange="window.scheduledBookingForm.selectService(${service.id}, ${service.pickupLocations[0].id}, 'flexi', ${flexiPrice})">
+              onchange="window.scheduledBookingForm.selectService(${service.id}, ${service.pickupLocations[0].id}, 'flexi', ${flexiPriceBase})">
             <div class="ticket-info">
               <div class="ticket-type">${t.flexiTicket}</div>
-              <div class="ticket-price">€${flexiPrice}</div>
+              <div class="ticket-price">€${flexiPriceInclIVA}</div>
+              <small class="price-incl-iva">${t.inclIVA || 'Incl. IVA'}</small>
               <div class="ticket-description">${t.flexiDescription}</div>
             </div>
           </label>
@@ -907,18 +1510,13 @@
             <select id="seatsBooked" name="seatsBooked" required>
               ${Array.from({length: 10}, (_, i) => `<option value="${i + 1}">${i + 1}</option>`).join('')}
             </select>
+            <small>${t.seatsEqualBikes || 'Each seat purchased includes luxury travel for your bicycle!'}</small>
           </div>
-          <div class="form-group">
-            <label for="bikesCount">${t.numberOfBikes} *</label>
-            <select id="bikesCount" name="bikesCount" required>
-              ${Array.from({length: 11}, (_, i) => `<option value="${i}">${i}</option>`).join('')}
-            </select>
-          </div>
-        </div>
 
-        <div class="form-group">
-          <label for="customerName">${t.fullName} *</label>
-          <input type="text" id="customerName" name="customerName" required>
+          <div class="form-group">
+            <label for="customerName">${t.fullName} *</label>
+            <input type="text" id="customerName" name="customerName" required>
+          </div>
         </div>
 
         <div class="form-row">
@@ -932,20 +1530,11 @@
           </div>
         </div>
 
-        <div class="form-group">
-          <label for="customerLanguage">${t.language}</label>
-          <select id="customerLanguage" name="customerLanguage">
-            <option value="en" ${currentLang === 'en' ? 'selected' : ''}>English</option>
-            <option value="de" ${currentLang === 'de' ? 'selected' : ''}>Deutsch</option>
-            <option value="es" ${currentLang === 'es' ? 'selected' : ''}>Español</option>
-            <option value="fr" ${currentLang === 'fr' ? 'selected' : ''}>Français</option>
-            <option value="ca" ${currentLang === 'ca' ? 'selected' : ''}>Català</option>
-            <option value="it" ${currentLang === 'it' ? 'selected' : ''}>Italiano</option>
-            <option value="nl" ${currentLang === 'nl' ? 'selected' : ''}>Nederlands</option>
-            <option value="da" ${currentLang === 'da' ? 'selected' : ''}>Dansk</option>
-            <option value="nb" ${currentLang === 'nb' ? 'selected' : ''}>Norsk</option>
-            <option value="sv" ${currentLang === 'sv' ? 'selected' : ''}>Svenska</option>
-          </select>
+        <div class="terms-checkbox" id="terms-checkbox-container">
+          <label>
+            <input type="checkbox" id="terms-agreed" name="terms-agreed" required>
+            <span class="terms-text">${t.termsText || 'Arrive at least 5 min early, we have bikes to pack! I understand latecomers get left behind, no refunds.'}</span>
+          </label>
         </div>
 
         <div class="form-actions">
@@ -980,12 +1569,16 @@
             <span id="summary-seats">1</span>
           </div>
           <div class="price-row">
-            <span>${t.bikes}:</span>
-            <span id="summary-bikes">0</span>
-          </div>
-          <div class="price-row">
             <span>${t.ticketType}:</span>
             <span id="summary-ticket-type">-</span>
+          </div>
+          <div class="price-row subtotal">
+            <span>${t.subtotal || 'Subtotal'}:</span>
+            <span>€<span id="payment-subtotal">0.00</span></span>
+          </div>
+          <div class="price-row iva">
+            <span>IVA (10%):</span>
+            <span>€<span id="payment-iva">0.00</span></span>
           </div>
           <div class="price-row total">
             <span>${t.total}</span>
@@ -1099,11 +1692,15 @@
     if (!formData.selectedService) return;
 
     const seats = parseInt(document.getElementById('seatsBooked')?.value || 1);
-    const bikes = parseInt(document.getElementById('bikesCount')?.value || 0);
-    const total = formData.pricePerSeat * seats;
+    const IVA_RATE = 0.10; // 10% Spanish IVA on transport
+
+    // Calculate pricing
+    const subtotal = formData.pricePerSeat * seats;
+    const ivaAmount = subtotal * IVA_RATE;
+    const total = subtotal + ivaAmount;
 
     const service = formData.selectedService;
-    const serviceTime = service.departureTime.substring(11, 16); // Extract HH:MM from ISO datetime
+    const serviceTime = service.departureTime ? service.departureTime.substring(11, 16) : '00:00'; // Extract HH:MM from ISO datetime
     const serviceDate = new Date(service.serviceDate).toLocaleDateString(currentLang);
 
     // Get localized location names
@@ -1126,8 +1723,9 @@
     document.getElementById('summary-pickup').textContent = getLocalizedName(pickupLocation);
     document.getElementById('summary-dropoff').textContent = getLocalizedName(service.dropoffLocation);
     document.getElementById('summary-seats').textContent = seats;
-    document.getElementById('summary-bikes').textContent = bikes;
     document.getElementById('summary-ticket-type').textContent = formData.selectedTicketType === 'flexi' ? t.flexi : t.standard;
+    document.getElementById('payment-subtotal').textContent = subtotal.toFixed(2);
+    document.getElementById('payment-iva').textContent = ivaAmount.toFixed(2);
     document.getElementById('payment-total').textContent = total.toFixed(2);
   }
 
@@ -1179,12 +1777,25 @@
         return false;
       }
 
+      const termsCheckbox = document.getElementById('terms-agreed');
+      if (!termsCheckbox.checked) {
+        showError(t.termsRequired || 'You must agree to the terms before continuing');
+        const container = document.getElementById('terms-checkbox-container');
+        if (container) {
+          container.classList.add('error');
+          setTimeout(() => container.classList.remove('error'), 2000);
+        }
+        return false;
+      }
+
+      const seatsBooked = parseInt(document.getElementById('seatsBooked').value);
+
       formData.customerName = name;
       formData.customerEmail = email;
       formData.customerPhone = phone;
-      formData.customerLanguage = document.getElementById('customerLanguage').value;
-      formData.seatsBooked = parseInt(document.getElementById('seatsBooked').value);
-      formData.bikesCount = parseInt(document.getElementById('bikesCount').value);
+      formData.customerLanguage = currentLang; // Use current page language
+      formData.seatsBooked = seatsBooked;
+      formData.bikesCount = seatsBooked; // One bike per seat
     }
 
     return true;
@@ -1336,7 +1947,7 @@
 
   function showConfirmation() {
     const service = formData.selectedService;
-    const serviceTime = service.departureTime.substring(11, 16); // Extract HH:MM from ISO datetime
+    const serviceTime = service.departureTime ? service.departureTime.substring(11, 16) : '00:00'; // Extract HH:MM from ISO datetime
     const serviceDate = new Date(service.serviceDate).toLocaleDateString(currentLang);
 
     const getLocalizedName = (location) => {
@@ -1375,6 +1986,9 @@
     prevStep,
     processPayment,
     selectService,
+    switchBrowserMonth,
+    switchBrowserRoute,
+    bookService,
   };
 
   // Initialize when DOM is ready

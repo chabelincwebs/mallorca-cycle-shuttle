@@ -53,9 +53,10 @@ Use this checklist at the **END of every session** to ensure continuity.
 
 ### 3. Start Environment
 - [ ] Start PostgreSQL: `sudo service postgresql start`
-- [ ] Navigate to backend: `cd backend`
+- [ ] Navigate to backend: `cd /home/photo/mallorca-cycle-shuttle/backend`
 - [ ] Install dependencies if needed: `pnpm install`
 - [ ] Start dev server: `pnpm dev`
+- [ ] In NEW terminal - Start Hugo: `cd /home/photo/mallorca-cycle-shuttle && hugo server --bind 0.0.0.0 --baseURL http://localhost:1313`
 
 ### 4. Verify Everything Works
 - [ ] Test health endpoint: `curl http://localhost:3001/health`

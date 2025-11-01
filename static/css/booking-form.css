@@ -8,6 +8,17 @@
   overflow: hidden;
 }
 
+/* Compact layout for larger screens */
+@media (min-width: 768px) {
+  .booking-form {
+    max-width: 700px;
+  }
+
+  .booking-content {
+    padding: 1.75rem 2rem;
+  }
+}
+
 .booking-steps {
   display: flex;
   background: #f8f8f8;
@@ -24,7 +35,7 @@
 }
 
 .booking-step.active {
-  color: var(--brand, #f10000);
+  color: #333;
   font-weight: 600;
 }
 
@@ -75,14 +86,82 @@
   border-radius: 0.5rem;
   font-size: 1rem;
   font-family: inherit;
-  transition: border-color 0.2s;
+  transition: all 0.2s ease;
 }
 
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: var(--brand, #f10000);
+  border-color: #666;
+  box-shadow: 0 0 0 3px rgba(102, 102, 102, 0.1);
+}
+
+/* Modern iOS/macOS-style date picker */
+.form-group input[type="date"] {
+  position: relative;
+  padding: 0.875rem 1rem;
+  padding-right: 3rem;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #fafafa;
+  border: 1.5px solid #e5e5e5;
+  border-radius: 0.75rem;
+  color: #1d1d1f;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Modern calendar icon */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='5' width='18' height='16' rx='2.5' ry='2.5'%3E%3C/rect%3E%3Cpath d='M3 10h18'%3E%3C/path%3E%3Cpath d='M8 3v4'%3E%3C/path%3E%3Cpath d='M16 3v4'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 20px;
+}
+
+/* Hide default calendar icon */
+.form-group input[type="date"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.form-group input[type="date"]::-webkit-date-and-time-value {
+  text-align: left;
+}
+
+/* Hover state */
+.form-group input[type="date"]:hover {
+  background-color: #f5f5f5;
+  border-color: #d1d1d6;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+/* Focus state */
+.form-group input[type="date"]:focus {
+  background-color: #fff;
+  border-color: #666;
+  box-shadow: 0 0 0 4px rgba(102, 102, 102, 0.08), 0 2px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-1px);
+  outline: none;
+}
+
+/* Active/filled state */
+.form-group input[type="date"]:valid {
+  background-color: #fff;
+  font-weight: 500;
+}
+
+/* Placeholder/empty state styling */
+.form-group input[type="date"]:not(:focus):invalid {
+  color: #86868b;
 }
 
 .form-group small {
@@ -124,13 +203,13 @@
 }
 
 .btn-primary {
-  background: var(--brand, #f10000);
+  background: #555;
   color: #fff;
   flex: 1;
 }
 
 .btn-primary:hover:not(:disabled) {
-  background: #d90000;
+  background: #444;
   transform: translateY(-1px);
 }
 
@@ -163,6 +242,18 @@
   color: #666;
 }
 
+.price-row.subtotal {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #eee;
+  font-weight: 600;
+}
+
+.price-row.iva {
+  color: #666;
+  font-size: 0.95rem;
+}
+
 .price-row.total {
   margin-top: 0.75rem;
   padding-top: 0.75rem;
@@ -170,6 +261,14 @@
   font-size: 1.25rem;
   font-weight: 700;
   color: #111;
+}
+
+.price-incl-iva {
+  display: block;
+  margin-top: 0.25rem;
+  color: #666;
+  font-size: 0.75rem;
+  font-weight: 400;
 }
 
 .error-message {
@@ -211,7 +310,7 @@
 }
 
 #card-element.StripeElement--focus {
-  border-color: var(--brand, #f10000);
+  border-color: #666;
 }
 
 #card-errors {
@@ -239,7 +338,7 @@
 .booking-reference {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--brand, #f10000);
+  color: #333;
   margin: 1rem 0;
   padding: 1rem;
   background: #f8f8f8;
@@ -265,27 +364,134 @@
   color: #333;
 }
 
-/* Scheduled Booking Specific Styles */
+/* Scheduled Shuttle Booking Form - Additional Styles */
 
+/* Progress Steps */
+.progress-steps {
+  display: flex;
+  background: #f8f8f8;
+  border-bottom: 1px solid #eee;
+  padding: 1rem;
+  gap: 0.5rem;
+  overflow-x: auto;
+}
+
+.progress-step {
+  flex: 1;
+  min-width: 100px;
+  text-align: center;
+  position: relative;
+}
+
+.progress-step .step-number {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #ddd;
+  color: #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.progress-step.active .step-number {
+  background: #555;
+  color: #fff;
+}
+
+.progress-step.completed .step-number {
+  background: #060;
+  color: #fff;
+}
+
+.progress-step .step-label {
+  font-size: 0.75rem;
+  color: #999;
+}
+
+.progress-step.active .step-label {
+  color: #333;
+  font-weight: 600;
+}
+
+.progress-step.completed .step-label {
+  color: #666;
+}
+
+/* Step Content */
+.step-content {
+  padding: 2rem;
+}
+
+.step-content h2 {
+  margin: 0 0 1.5rem 0;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+/* Services Grid */
 .services-grid {
   display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1rem;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .service-card {
-  border: 2px solid #e0e0e0;
+  border: 2px solid #eee;
   border-radius: 0.6rem;
-  padding: 1.5rem;
+  padding: 1.25rem;
   transition: all 0.2s;
+  cursor: pointer;
   background: #fff;
 }
 
 .service-card:hover {
-  border-color: var(--brand, #f10000);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-color: #999;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
 }
 
+.service-card.selected {
+  border-color: #666;
+  background: #f8f8f8;
+}
+
+.service-card .service-time {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.service-card .service-route {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.75rem;
+}
+
+.service-card .service-seats {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.service-card .service-price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.service-card .btn-select-service {
+  width: 100%;
+  padding: 0.7rem;
+  font-size: 0.9rem;
+}
+
+/* Service header */
 .service-header {
   display: flex;
   justify-content: space-between;
@@ -295,51 +501,59 @@
   border-bottom: 1px solid #eee;
 }
 
-.service-time {
-  font-size: 1.1rem;
+.service-header .service-time {
+  font-size: 1rem;
   color: #333;
 }
 
-.service-seats {
-  padding: 0.5rem 0.75rem;
+.service-header .service-time strong {
+  font-weight: 600;
+}
+
+.service-header .service-seats {
+  padding: 0.4rem 0.75rem;
   background: #e8f5e9;
   color: #2e7d32;
   border-radius: 0.5rem;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 500;
 }
 
-.service-seats.low-availability {
+.service-header .service-seats.low-availability {
   background: #fff3e0;
   color: #e65100;
 }
 
-.ticket-options {
+/* Ticket options within service card */
+.service-card .ticket-options {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
 
 @media (max-width: 640px) {
-  .ticket-options {
+  .service-card .ticket-options {
     grid-template-columns: 1fr;
   }
 }
 
-.ticket-option {
+.service-card .ticket-option {
   position: relative;
   display: block;
   cursor: pointer;
+  padding: 0;
+  border: none;
+  background: transparent;
 }
 
-.ticket-option input[type="radio"] {
+.service-card .ticket-option input[type="radio"] {
   position: absolute;
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-.ticket-info {
+.service-card .ticket-info {
   padding: 1rem;
   border: 2px solid #ddd;
   border-radius: 0.5rem;
@@ -347,78 +561,356 @@
   background: #f9f9f9;
 }
 
-.ticket-option input[type="radio"]:checked + .ticket-info {
-  border-color: var(--brand, #f10000);
+.service-card .ticket-option input[type="radio"]:checked + .ticket-info {
+  border-color: #666;
   background: #fff;
-  box-shadow: 0 0 0 3px rgba(241, 0, 0, 0.1);
+  box-shadow: 0 0 0 3px rgba(102, 102, 102, 0.1);
 }
 
-.ticket-option:hover .ticket-info {
+.service-card .ticket-option:hover .ticket-info {
   border-color: #999;
 }
 
-.ticket-type {
+.service-card .ticket-type {
   font-weight: 600;
   color: #333;
   margin-bottom: 0.25rem;
+  font-size: 0.95rem;
 }
 
-.ticket-price {
-  font-size: 1.5rem;
+.service-card .ticket-price {
+  font-size: 1.4rem;
   font-weight: 700;
-  color: var(--brand, #f10000);
+  color: #333;
   margin: 0.5rem 0;
 }
 
-.ticket-description {
+.service-card .ticket-description {
   font-size: 0.85rem;
   color: #666;
   margin-top: 0.5rem;
-}
-
-.loading-message {
-  text-align: center;
-  padding: 2rem;
-  color: #666;
-  font-style: italic;
 }
 
 .no-services {
   text-align: center;
   padding: 2rem;
   color: #999;
-  background: #f8f8f8;
-  border-radius: 0.5rem;
-  margin-top: 1rem;
+  font-style: italic;
 }
 
-dl {
+/* Ticket Type Selector */
+.ticket-type-selector {
   display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 0.5rem 1rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
-.small {
+@media (max-width: 640px) {
+  .ticket-type-selector {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ticket-option {
+  border: 2px solid #ddd;
+  border-radius: 0.6rem;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: #fff;
+}
+
+.ticket-option:hover {
+  border-color: #999;
+}
+
+.ticket-option.selected {
+  border-color: #666;
+  background: #f8f8f8;
+}
+
+.ticket-option input[type="radio"] {
+  display: none;
+}
+
+.ticket-option label {
+  cursor: pointer;
+  margin: 0;
+}
+
+.ticket-option .ticket-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.ticket-option .ticket-description {
   font-size: 0.9rem;
   color: #666;
+  margin-bottom: 0.75rem;
 }
 
-.booking-confirmation p {
-  margin: 1rem 0;
+.ticket-option .ticket-price {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #333;
 }
 
-.booking-confirmation .small {
+/* Booking Summary */
+.booking-summary {
+  background: #f8f8f8;
+  padding: 1.5rem;
+  border-radius: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.summary-row:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.summary-row span:first-child {
+  color: #666;
+  font-weight: 500;
+}
+
+.summary-row span:last-child {
+  color: #333;
+  font-weight: 600;
+}
+
+/* Price Summary (scheduled specific additions) */
+.price-summary h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.price-row.price-total {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 2px solid #ddd;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #111;
+}
+
+/* Payment Section */
+.payment-section {
+  margin-top: 2rem;
+}
+
+/* Confirmation */
+.confirmation {
+  text-align: center;
+  padding: 2rem;
+}
+
+.confirmation-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+  background: #060;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.confirmation h2 {
+  color: #060;
+  margin: 0 0 1rem 0;
+}
+
+.confirmation p {
+  color: #666;
+  margin: 0.5rem 0;
+}
+
+.confirmation-details {
+  background: #f8f8f8;
+  padding: 1.5rem;
+  border-radius: 0.6rem;
+  margin: 2rem 0;
+  text-align: left;
+}
+
+.detail-row {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.detail-row:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.detail-row strong {
+  display: block;
+  color: #666;
+  margin-bottom: 0.25rem;
+  font-size: 0.9rem;
+}
+
+.detail-row span {
+  display: block;
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.detail-row .help-text {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #999;
+  font-weight: 400;
+}
+
+.change-token {
+  font-family: monospace;
+  background: #fff;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  border: 1px dashed #ddd;
+}
+
+.email-confirmation {
+  margin: 1.5rem 0;
+  font-size: 1rem;
+}
+
+.thank-you {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
   margin-top: 1.5rem;
 }
 
-/* Service Browser Styles */
+/* Form Control Enhancements */
+.form-control {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #666;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 640px) {
+  .progress-steps {
+    padding: 0.75rem 0.5rem;
+  }
+
+  .progress-step {
+    min-width: 70px;
+  }
+
+  .progress-step .step-number {
+    width: 30px;
+    height: 30px;
+    font-size: 0.9rem;
+  }
+
+  .progress-step .step-label {
+    font-size: 0.65rem;
+  }
+
+  .step-content {
+    padding: 1.5rem 1rem;
+  }
+
+  .step-content h2 {
+    font-size: 1.25rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-form {
+    margin: 1rem;
+    border-radius: 0.5rem;
+  }
+}
+
+/* Terms checkbox styling */
+.terms-checkbox {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #f8f8f8;
+  border-radius: 0.5rem;
+  border: 1px solid #ddd;
+}
+
+.terms-checkbox label {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  cursor: pointer;
+  margin: 0;
+  font-weight: 400;
+}
+
+.terms-checkbox input[type="checkbox"] {
+  margin-top: 0.25rem;
+  width: auto;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.terms-checkbox input[type="checkbox"]:focus {
+  outline: 2px solid #666;
+  outline-offset: 2px;
+}
+
+.terms-checkbox .terms-text {
+  flex: 1;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.terms-checkbox.error {
+  border-color: var(--brand, #f10000);
+  background: rgba(241, 0, 0, 0.05);
+}
+
+/* ============================================
+   SERVICE BROWSER STYLES
+   ============================================ */
 
 .service-browser {
-  margin: 2rem 0;
+  margin-bottom: 3rem;
 }
 
 .service-browser h2 {
+  font-size: 1.8rem;
   margin-bottom: 0.5rem;
+  color: #333;
 }
 
 .browser-desc {
@@ -426,50 +918,45 @@ dl {
   margin-bottom: 1.5rem;
 }
 
+/* Month tabs (first level) - Grey scheme */
 .month-tabs {
   display: flex;
   gap: 0.5rem;
   margin-bottom: 1.5rem;
   flex-wrap: wrap;
-  border-bottom: 2px solid #eee;
-  padding-bottom: 0;
 }
 
 .month-tab {
-  padding: 0.75rem 1.5rem;
-  border: none;
-  background: transparent;
-  color: #666;
-  font-size: 1rem;
-  font-weight: 500;
+  padding: 0.75rem 1.25rem;
+  background: #f8f8f8;
+  border: 2px solid #ddd;
+  border-radius: 0.5rem;
   cursor: pointer;
-  transition: all 0.2s;
-  border-bottom: 3px solid transparent;
-  margin-bottom: -2px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   font-family: inherit;
 }
 
 .month-tab:hover {
-  color: #333;
-  background: #f8f8f8;
+  background: #f0f0f0;
+  border-color: #999;
 }
 
 .month-tab.active {
-  color: var(--brand, #f10000);
-  border-bottom-color: var(--brand, #f10000);
-  font-weight: 600;
+  background: #666;
+  color: white;
+  border-color: #666;
 }
 
 .month-tab-count {
-  font-size: 0.875rem;
-  color: #999;
-  margin-left: 0.25rem;
+  font-size: 0.85rem;
+  opacity: 0.8;
 }
 
-.month-tab.active .month-tab-count {
-  color: var(--brand, #f10000);
-}
-
+/* Route tabs (second level) - Grey scheme */
 .route-tabs {
   display: flex;
   gap: 0.5rem;
@@ -499,8 +986,8 @@ dl {
 }
 
 .route-tab.active {
-  background: var(--brand, #f10000);
-  border-color: var(--brand, #f10000);
+  background: #666;
+  border-color: #666;
   color: #fff;
   font-weight: 600;
 }
@@ -514,85 +1001,103 @@ dl {
 .service-cards-container {
   display: grid;
   gap: 1rem;
-  margin-bottom: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 .browser-service-card {
-  border: 2px solid #e0e0e0;
-  border-radius: 0.6rem;
-  padding: 1.5rem;
-  transition: all 0.2s;
-  background: #fff;
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .browser-service-card:hover {
-  border-color: var(--brand, #f10000);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
 }
 
 .browser-service-card.low-availability {
-  border-color: #ff9800;
-  background: #fff8f0;
+  border-left: 4px solid #ff9800;
 }
 
 .service-card-date {
-  font-size: 1.1rem;
   font-weight: 600;
   color: #333;
   margin-bottom: 0.75rem;
+  font-size: 0.95rem;
 }
 
 .service-card-route {
-  color: #666;
+  color: #555;
   margin-bottom: 0.75rem;
   font-size: 0.95rem;
 }
 
 .service-card-details {
   display: flex;
-  gap: 1.5rem;
-  margin: 0.75rem 0;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
   font-size: 0.9rem;
   color: #666;
+  flex-wrap: wrap;
+}
+
+.service-time,
+.service-seats {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
 }
 
 .service-card-price {
-  color: #666;
-  font-size: 0.9rem;
-  margin: 0.75rem 0;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
 }
 
 .btn-book-service {
   width: 100%;
-  padding: 0.75rem;
-  background: var(--brand, #f10000);
-  color: #fff;
+  padding: 0.75rem 1.25rem;
+  background: #555;
+  color: white;
   border: none;
   border-radius: 0.5rem;
-  font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.2s;
-  margin-top: 1rem;
-  font-family: inherit;
+  transition: all 0.2s ease;
+  font-size: 0.95rem;
 }
 
 .btn-book-service:hover {
-  background: #d90000;
-  transform: translateY(-1px);
+  background: #444;
+  transform: translateX(4px);
 }
 
 .browser-divider {
+  margin: 3rem 0;
   border: none;
-  border-top: 2px solid #eee;
-  margin: 2rem 0;
+  border-top: 2px solid #e0e0e0;
 }
 
+/* Responsive adjustments */
 @media (max-width: 768px) {
+  .service-browser h2 {
+    font-size: 1.5rem;
+  }
+
   .month-tabs {
+    gap: 0.4rem;
     overflow-x: auto;
     flex-wrap: nowrap;
     -webkit-overflow-scrolling: touch;
+  }
+
+  .month-tab {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
   }
 
   .route-tabs {
@@ -601,8 +1106,11 @@ dl {
     -webkit-overflow-scrolling: touch;
   }
 
-  .service-card-details {
-    flex-direction: column;
-    gap: 0.5rem;
+  .service-cards-container {
+    grid-template-columns: 1fr;
+  }
+
+  .browser-service-card {
+    padding: 1rem;
   }
 }

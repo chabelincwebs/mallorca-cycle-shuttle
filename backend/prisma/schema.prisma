@@ -90,6 +90,7 @@ model Bus {
   licensePlate        String    @unique @map("license_plate")
   capacity            Int
   bikeCapacity        Int       @map("bike_capacity")
+  serviceType         String    @default("both") @map("service_type") // "scheduled_only" | "private_only" | "both"
   availabilityType    String    @map("availability_type") // "always" | "seasonal" | "manual"
   availabilityRules   Json?     @map("availability_rules") // {"start_date": "2025-04-01", "end_date": "2025-10-31"}
   bookingCutoffHours  Int       @default(18) @map("booking_cutoff_hours")
@@ -99,8 +100,9 @@ model Bus {
   updatedAt           DateTime  @updatedAt @map("updated_at")
 
   // Relations
-  scheduledServices ScheduledService[]
-  privateBookings   PrivateBooking[]
+  scheduledServices    ScheduledService[]
+  privateBookings      PrivateBooking[]
+  privateShuttleSlots  PrivateShuttleSlot[]
 
   @@index([active])
   @@map("buses")
@@ -146,6 +148,7 @@ model Route {
 
 model ScheduledService {
   id                  Int       @id @default(autoincrement())
+  productSku          String?   @unique @map("product_sku")
   busId               Int       @map("bus_id")
   serviceDate         DateTime  @map("service_date") @db.Date
   departureTime       DateTime  @map("departure_time") @db.Time
@@ -241,13 +244,18 @@ model ScheduledBooking {
 model PrivateBooking {
   id                       Int       @id @default(autoincrement())
   bookingReference         String    @unique @map("booking_reference")
+  slotId                   Int?      @map("slot_id") // Link to pre-created slot
   busId                    Int?      @map("bus_id")
   customerType             String    @map("customer_type") // "b2c" | "b2b"
   b2bCustomerId            Int?      @map("b2b_customer_id")
   serviceDate              DateTime  @map("service_date") @db.Date
   departureTime            DateTime  @map("departure_time") @db.Time
-  routePickupId            Int       @map("route_pickup_id")
-  routeDropoffId           Int       @map("route_dropoff_id")
+  // Free-text addresses (new workflow)
+  pickupAddress            String?   @map("pickup_address")
+  dropoffAddress           String?   @map("dropoff_address")
+  // Legacy route references (optional, for backwards compatibility)
+  routePickupId            Int?      @map("route_pickup_id")
+  routeDropoffId           Int?      @map("route_dropoff_id")
   customerName             String    @map("customer_name")
   customerEmail            String    @map("customer_email")
   customerPhone            String    @map("customer_phone")
@@ -255,13 +263,14 @@ model PrivateBooking {
   passengersCount          Int       @map("passengers_count")
   bikesCount               Int       @default(0) @map("bikes_count")
   basePrice                Decimal   @db.Decimal(10, 2) @map("base_price")
+  pricePerSeat             Decimal   @db.Decimal(10, 2) @map("price_per_seat") // New: per-seat pricing
   ivaRate                  Decimal   @db.Decimal(5, 4) @map("iva_rate")
   ivaAmount                Decimal   @db.Decimal(10, 2) @map("iva_amount")
   totalAmount              Decimal   @db.Decimal(10, 2) @map("total_amount")
   discountApplied          Decimal   @default(0) @db.Decimal(5, 2) @map("discount_applied")
   paymentMethod            String    @map("payment_method") // "stripe" | "paypal" | "credit"
   paymentId                String?   @map("payment_id")
-  paymentStatus            String    @default("completed") @map("payment_status") // "pending" | "completed" | "refunded"
+  paymentStatus            String    @default("pending") @map("payment_status") // "pending" | "completed" | "refunded"
   paidAt                   DateTime? @map("paid_at")
   status                   String    @default("pending") // "pending" | "confirmed" | "cancelled" | "completed" | "no_show"
   adminNotes               String?   @map("admin_notes")
@@ -274,17 +283,49 @@ model PrivateBooking {
   updatedAt                DateTime  @updatedAt @map("updated_at")
 
   // Relations
-  bus           Bus?         @relation(fields: [busId], references: [id])
-  b2bCustomer   B2BCustomer? @relation(fields: [b2bCustomerId], references: [id])
-  routePickup   Route        @relation("PrivatePickup", fields: [routePickupId], references: [id])
-  routeDropoff  Route        @relation("PrivateDropoff", fields: [routeDropoffId], references: [id])
-  confirmedBy   AdminUser?   @relation("PrivateBookingConfirmedBy", fields: [confirmedById], references: [id])
-  invoice       Invoice?     @relation(fields: [invoiceId], references: [id])
+  slot          PrivateShuttleSlot? @relation(fields: [slotId], references: [id])
+  bus           Bus?                @relation(fields: [busId], references: [id])
+  b2bCustomer   B2BCustomer?        @relation(fields: [b2bCustomerId], references: [id])
+  routePickup   Route?              @relation("PrivatePickup", fields: [routePickupId], references: [id])
+  routeDropoff  Route?              @relation("PrivateDropoff", fields: [routeDropoffId], references: [id])
+  confirmedBy   AdminUser?          @relation("PrivateBookingConfirmedBy", fields: [confirmedById], references: [id])
+  invoice       Invoice?            @relation(fields: [invoiceId], references: [id])
 
   @@index([bookingReference])
   @@index([serviceDate, status])
   @@index([customerEmail])
   @@map("private_bookings")
+}
+
+// ============================================================================
+// PRIVATE SHUTTLE SLOTS (Admin Pre-Created Availability)
+// ============================================================================
+
+model PrivateShuttleSlot {
+  id                Int       @id @default(autoincrement())
+  busId             Int       @map("bus_id")
+  serviceDate       DateTime  @map("service_date") @db.Date
+  departureTime     DateTime  @map("departure_time") @db.Time
+  basePrice         Decimal   @db.Decimal(10, 2) @map("base_price") // Base price (e.g., €135 inc IVA)
+  pricePerSeat      Decimal   @db.Decimal(10, 2) @map("price_per_seat") // Additional per seat (e.g., €45)
+  ivaRate           Decimal   @default(0.10) @db.Decimal(5, 4) @map("iva_rate")
+  capacity          Int       // Max passengers (from bus capacity)
+  seatsAvailable    Int       @map("seats_available") // Remaining seats for booking
+  isAvailable       Boolean   @default(true) @map("is_available") // Controls calendar visibility
+  estimatedDuration Int?      @map("estimated_duration") // In minutes (Google Maps + 30min buffer)
+  status            String    @default("active") // "active" | "booked" | "cancelled" | "completed"
+  adminNotes        String?   @map("admin_notes")
+  createdAt         DateTime  @default(now()) @map("created_at")
+  updatedAt         DateTime  @updatedAt @map("updated_at")
+
+  // Relations
+  bus      Bus                @relation(fields: [busId], references: [id])
+  bookings PrivateBooking[]
+
+  @@unique([busId, serviceDate, departureTime])
+  @@index([serviceDate, isAvailable])
+  @@index([status])
+  @@map("private_shuttle_slots")
 }
 
 // ============================================================================
