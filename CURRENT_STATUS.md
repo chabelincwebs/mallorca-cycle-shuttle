@@ -1,8 +1,8 @@
 # 🔄 CURRENT PROJECT STATUS
 
-**Last Updated:** 2025-11-01 23:15 CET
+**Last Updated:** 2025-11-02 00:00 CET
 **Current Phase:** Scheduled Shuttle Booking System - PRODUCTION READY ✅
-**Status:** 🎉 Service browser UX improvements complete!
+**Status:** 🎉 Service browser UX complete + Rescue policy integration planned!
 
 ---
 
@@ -424,19 +424,79 @@ npx tsx scripts/create-service.ts
 
 **Status:** Enhanced booking flow with improved scroll behavior and cleaner UI!
 
+### Session 8 (2025-11-02 Evening) - TODAY!
+**📋 Bicycle Rescue Policy Integration Planning**
+
+**Strategic Planning:**
+- Analyzed bicycle rescue service business model
+- Designed comprehensive integration strategy for optional add-on during booking
+- Chose Option A: Protection screen after service selection (optimal conversion)
+- Calculated 15-30% conversion potential vs <5% post-purchase
+
+**Documentation Created:**
+- Added complete implementation plan to BOOKING_SYSTEM_PROJECT_PLAN_V2.md
+- Option D: Bicycle Rescue Policy Integration (183 lines added)
+- 6 implementation phases documented:
+  - Phase 1: Database Foundation (rescue_policies, rescue_claims tables)
+  - Phase 2: Backend API (pricing, creation, combined checkout endpoints)
+  - Phase 3: Frontend Integration (addon UI component, form fields)
+  - Phase 4: Combined Checkout (single transaction, rollback handling)
+  - Phase 5: Confirmation & Emails (templates, PDF generation)
+  - Phase 6: Admin Management (policies list, claims, cancellation workflow)
+
+**Business Details:**
+- Pricing strategy: €16 (7 days) to €46 (28 days) + 10% IVA
+- Optional 5% bundle discount when purchased with shuttle
+- Key business rules documented (12h advance purchase, operating hours, claim limits)
+- Success metrics: 15-20% conversion, €25-30 AOV increase
+
+**UX Flow:**
+- Optional add-on screen between Step 1 and Step 2
+- Visual benefits card (€16 from, 30-40min response, island-wide)
+- Conditional bike details fields (type, brand, color, accommodation)
+- Combined payment summary (shuttle + rescue)
+- Single confirmation for both purchases
+
+**Technical Approach:**
+- Database transaction ensures atomicity (rollback if either fails)
+- Foreign key linking policies to bookings
+- Status tracking (PENDING, ACTIVE, EXPIRED, CANCELLED, CLAIMED)
+- Claims tracking with usage limits
+- Email notifications for both products
+
+**Git:**
+- Commit 486825c: "Add bicycle rescue policy integration plan to project documentation"
+- 183 insertions
+- Pushed to origin/master
+
+**Time Estimate:** 10-14 hours total implementation
+
+**Status:** Complete planning document ready for implementation when desired!
+
 ---
 
 ## 🎯 IMMEDIATE NEXT STEPS
 
 **To Continue Development:**
 
-1. **Add More Scheduled Services** 📍 NEXT PRIORITY
+1. **Bicycle Rescue Policy Integration** ⭐ NEW OPTION!
+   - Phase 1: Database schema (rescue_policies, rescue_claims)
+   - Phase 2: Backend API endpoints
+   - Phase 3: Frontend addon UI component
+   - Phase 4: Combined checkout
+   - Phase 5: Confirmation emails
+   - Phase 6: Admin management
+   - **Time:** 10-14 hours
+   - **Impact:** 15-20% conversion, €25-30 AOV increase
+   - **Full plan:** See BOOKING_SYSTEM_PROJECT_PLAN_V2.md Option D
+
+2. **Add More Scheduled Services** 📍 PRIORITY
    - Create services for remaining March dates
    - Add April 2026 services
    - Vary routes and times based on demand
    - Consider adding more pickup/dropoff locations
 
-2. **Email Notifications for Scheduled Bookings**
+3. **Email Notifications for Scheduled Bookings**
    - Implement booking confirmation emails
    - Add service reminder emails (24h before)
    - Create cancellation confirmation emails
