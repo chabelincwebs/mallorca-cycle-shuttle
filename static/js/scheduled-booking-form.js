@@ -830,7 +830,12 @@
    */
   function switchBrowserRoute(routeKey) {
     selectedBrowserRoute = routeKey;
-    renderServiceBrowser();
+
+    // Re-render the browser section
+    const browserContainer = document.getElementById('service-browser-container');
+    if (browserContainer) {
+      browserContainer.innerHTML = renderServiceBrowser();
+    }
   }
 
   /**
