@@ -1,21 +1,21 @@
-import twilio from 'twilio';
+import * as brevo from '@getbrevo/brevo';
 import { ScheduledBooking, PrivateBooking } from '@prisma/client';
 
-// Initialize Twilio client
-const accountSid = process.env.TWILIO_ACCOUNT_SID;
-const authToken = process.env.TWILIO_AUTH_TOKEN;
-const whatsappFrom = process.env.TWILIO_WHATSAPP_FROM || 'whatsapp:+14155238886'; // Twilio sandbox number
+// Initialize Brevo WhatsApp client
+const BREVO_API_KEY = process.env.BREVO_API_KEY || '';
+const WHATSAPP_SENDER_NUMBER = process.env.BREVO_WHATSAPP_SENDER || '';
 
-let twilioClient: twilio.Twilio | null = null;
+let whatsappClient: brevo.TransactionalWhatsAppApi | null = null;
 
-if (accountSid && authToken) {
-  twilioClient = twilio(accountSid, authToken);
+if (BREVO_API_KEY && WHATSAPP_SENDER_NUMBER) {
+  whatsappClient = new brevo.TransactionalWhatsAppApi();
+  whatsappClient.authentications.apiKey.apiKey = BREVO_API_KEY;
+  console.log('✅ Brevo WhatsApp client initialized');
 } else {
-  console.warn('⚠️  Twilio credentials not configured. WhatsApp notifications will not be sent.');
+  console.warn('⚠️  Brevo WhatsApp not configured. Set BREVO_API_KEY and BREVO_WHATSAPP_SENDER in .env');
 }
 
 // Multi-language WhatsApp message templates
-// Note: For production, these templates must be registered and approved by WhatsApp/Meta
 const messages = {
   en: {
     bookingConfirmed: (ref: string, date: string, time: string, pickup: string, passengers: number, bikes: number) =>
@@ -112,7 +112,7 @@ const messages = {
       `❌ *Réservation Annulée*\n\nRéf: ${ref}\n\n${refundInfo}\n\nSi vous avez des questions, contactez-nous.`,
 
     refundProcessed: (ref: string, amount: string) =>
-      `💰 *Remboursement Traité*\n\nRéf: ${ref}\nMontant: ${amount}\n\nVotre remboursement apparaîtra sur votre compte dans 5-10 jours ouvrables.`,
+      `💰 *Remboursement Traité*\n\nRéf: ${ref}\nMontant: ${amount}\n\nVotre remboursement apparaîtra dans votre compte dans 5-10 jours ouvrables.`,
 
     privateBookingApproved: (ref: string, date: string, time: string, from: string, to: string) =>
       `✅ *Navette Privée Confirmée!*\n\nRéf: ${ref}\nDate: ${date}\nHeure: ${time}\nDe: ${from}\nÀ: ${to}\n\nVotre navette privée a été approuvée. À bientôt!`,
@@ -132,45 +132,45 @@ const messages = {
       `💳 *Pagament Confirmat*\n\nRef: ${ref}\nImport: ${amount}\n\nEl seu pagament s'ha processat correctament.`,
 
     serviceReminder: (ref: string, date: string, time: string, pickup: string) =>
-      `⏰ *Recordatori: Servei Demà*\n\nRef: ${ref}\nData: ${date}\nHora: ${time}\nRecollida: ${pickup}\n\n📍 Si us plau arriba 10 minuts abans.\n🎫 Porta la teva referència de reserva.\n\nFins demà!`,
+      `⏰ *Recordatori: Servei Demà*\n\nRef: ${ref}\nData: ${date}\nHora: ${time}\nRecollida: ${pickup}\n\n📍 Si us plau, arribeu 10 minuts abans.\n🎫 Porteu la vostra referència de reserva.\n\nEns veiem demà!`,
 
     bookingCancelled: (ref: string, refundInfo: string) =>
-      `❌ *Reserva Cancel·lada*\n\nRef: ${ref}\n\n${refundInfo}\n\nSi tens preguntes, contacta'ns.`,
+      `❌ *Reserva Cancel·lada*\n\nRef: ${ref}\n\n${refundInfo}\n\nSi teniu preguntes, contacteu-nos.`,
 
     refundProcessed: (ref: string, amount: string) =>
-      `💰 *Reemborsament Processat*\n\nRef: ${ref}\nImport: ${amount}\n\nEl teu reemborsament apareixerà al teu compte en 5-10 dies laborables.`,
+      `💰 *Reemborsament Processat*\n\nRef: ${ref}\nImport: ${amount}\n\nEl vostre reemborsament apareixerà al vostre compte en 5-10 dies hàbils.`,
 
     privateBookingApproved: (ref: string, date: string, time: string, from: string, to: string) =>
-      `✅ *Shuttle Privat Confirmat!*\n\nRef: ${ref}\nData: ${date}\nHora: ${time}\nDes de: ${from}\nFins a: ${to}\n\nEl teu shuttle privat ha estat aprovat. Fins aviat!`,
+      `✅ *Shuttle Privat Confirmat!*\n\nRef: ${ref}\nData: ${date}\nHora: ${time}\nDes de: ${from}\nFins a: ${to}\n\nEl vostre shuttle privat ha estat aprovat! Ens veiem aviat!`,
 
     privateBookingRejected: (ref: string, reason: string) =>
-      `❌ *Sol·licitud de Shuttle Privat Rebutjada*\n\nRef: ${ref}\n\nMotiu: ${reason}\n\nS'ha processat un reemborsament complet. Contacta'ns per alternatives.`,
+      `❌ *Sol·licitud de Shuttle Privat Rebutjada*\n\nRef: ${ref}\n\nMotiu: ${reason}\n\nS'ha processat un reemborsament complet. Contacteu-nos per alternatives.`,
   },
 
   it: {
     bookingConfirmed: (ref: string, date: string, time: string, pickup: string, passengers: number, bikes: number) =>
-      `✅ *Prenotazione Confermata!*\n\nRif: ${ref}\nData: ${date}\nOra: ${time}\nPrelievo: ${pickup}\nPasseggeri: ${passengers}\nBiciclette: ${bikes}\n\nGrazie per aver scelto Mallorca Cycle Shuttle!`,
+      `✅ *Prenotazione Confermata!*\n\nRif: ${ref}\nData: ${date}\nOra: ${time}\nRitiro: ${pickup}\nPasseggeri: ${passengers}\nBiciclette: ${bikes}\n\nGrazie per aver scelto Mallorca Cycle Shuttle!`,
 
     privateBookingPending: (ref: string, date: string, from: string, to: string, passengers: number) =>
       `📝 *Richiesta Shuttle Privato Ricevuta*\n\nRif: ${ref}\nData: ${date}\nDa: ${from}\nA: ${to}\nPasseggeri: ${passengers}\n\n✨ Pagamento ricevuto! Confermeremo la disponibilità entro 24 ore.`,
 
     paymentReceived: (ref: string, amount: string) =>
-      `💳 *Pagamento Confermato*\n\nRif: ${ref}\nImporto: ${amount}\n\nIl pagamento è stato elaborato con successo.`,
+      `💳 *Pagamento Confermato*\n\nRif: ${ref}\nImporto: ${amount}\n\nIl suo pagamento è stato elaborato con successo.`,
 
     serviceReminder: (ref: string, date: string, time: string, pickup: string) =>
-      `⏰ *Promemoria: Servizio Domani*\n\nRif: ${ref}\nData: ${date}\nOra: ${time}\nPrelievo: ${pickup}\n\n📍 Si prega di arrivare 10 minuti prima.\n🎫 Porta il tuo riferimento di prenotazione.\n\nA domani!`,
+      `⏰ *Promemoria: Servizio Domani*\n\nRif: ${ref}\nData: ${date}\nOra: ${time}\nRitiro: ${pickup}\n\n📍 Si prega di arrivare 10 minuti prima.\n🎫 Portare il riferimento di prenotazione.\n\nA domani!`,
 
     bookingCancelled: (ref: string, refundInfo: string) =>
-      `❌ *Prenotazione Cancellata*\n\nRif: ${ref}\n\n${refundInfo}\n\nSe hai domande, contattaci.`,
+      `❌ *Prenotazione Cancellata*\n\nRif: ${ref}\n\n${refundInfo}\n\nPer domande, contattateci.`,
 
     refundProcessed: (ref: string, amount: string) =>
-      `💰 *Rimborso Elaborato*\n\nRif: ${ref}\nImporto: ${amount}\n\nIl rimborso apparirà sul tuo conto entro 5-10 giorni lavorativi.`,
+      `💰 *Rimborso Elaborato*\n\nRif: ${ref}\nImporto: ${amount}\n\nIl suo rimborso apparirà nel suo conto entro 5-10 giorni lavorativi.`,
 
     privateBookingApproved: (ref: string, date: string, time: string, from: string, to: string) =>
-      `✅ *Shuttle Privato Confermato!*\n\nRif: ${ref}\nData: ${date}\nOra: ${time}\nDa: ${from}\nA: ${to}\n\nIl tuo shuttle privato è stato approvato. A presto!`,
+      `✅ *Shuttle Privato Confermato!*\n\nRif: ${ref}\nData: ${date}\nOra: ${time}\nDa: ${from}\nA: ${to}\n\nIl suo shuttle privato è stato approvato! A presto!`,
 
     privateBookingRejected: (ref: string, reason: string) =>
-      `❌ *Richiesta Shuttle Privato Rifiutata*\n\nRif: ${ref}\n\nMotivo: ${reason}\n\nÈ stato elaborato un rimborso completo. Contattaci per alternative.`,
+      `❌ *Richiesta Shuttle Privato Rifiutata*\n\nRif: ${ref}\n\nMotivo: ${reason}\n\nÈ stato elaborato un rimborso completo. Contattateci per alternative.`,
   },
 
   nl: {
@@ -184,19 +184,19 @@ const messages = {
       `💳 *Betaling Bevestigd*\n\nRef: ${ref}\nBedrag: ${amount}\n\nUw betaling is succesvol verwerkt.`,
 
     serviceReminder: (ref: string, date: string, time: string, pickup: string) =>
-      `⏰ *Herinnering: Service Morgen*\n\nRef: ${ref}\nDatum: ${date}\nTijd: ${time}\nOphalen: ${pickup}\n\n📍 Kom alstublieft 10 minuten van tevoren.\n🎫 Neem uw boekingsreferentie mee.\n\nTot morgen!`,
+      `⏰ *Herinnering: Service Morgen*\n\nRef: ${ref}\nDatum: ${date}\nTijd: ${time}\nOphalen: ${pickup}\n\n📍 Kom alstublieft 10 minuten vroeger.\n🎫 Neem uw boekingsreferentie mee.\n\nTot morgen!`,
 
     bookingCancelled: (ref: string, refundInfo: string) =>
-      `❌ *Boeking Geannuleerd*\n\nRef: ${ref}\n\n${refundInfo}\n\nAls u vragen heeft, neem dan contact met ons op.`,
+      `❌ *Boeking Geannuleerd*\n\nRef: ${ref}\n\n${refundInfo}\n\nAls u vragen heeft, neem contact met ons op.`,
 
     refundProcessed: (ref: string, amount: string) =>
       `💰 *Terugbetaling Verwerkt*\n\nRef: ${ref}\nBedrag: ${amount}\n\nUw terugbetaling verschijnt binnen 5-10 werkdagen op uw rekening.`,
 
     privateBookingApproved: (ref: string, date: string, time: string, from: string, to: string) =>
-      `✅ *Privé Shuttle Bevestigd!*\n\nRef: ${ref}\nDatum: ${date}\nTijd: ${time}\nVan: ${from}\nNaar: ${to}\n\nUw privé shuttle is goedgekeurd. Tot snel!`,
+      `✅ *Privé Shuttle Bevestigd!*\n\nRef: ${ref}\nDatum: ${date}\nTijd: ${time}\nVan: ${from}\nNaar: ${to}\n\nUw privé shuttle is goedgekeurd! Tot ziens!`,
 
     privateBookingRejected: (ref: string, reason: string) =>
-      `❌ *Privé Shuttle Aanvraag Afgewezen*\n\nRef: ${ref}\n\nReden: ${reason}\n\nEen volledige terugbetaling is verwerkt. Neem contact met ons op voor alternatieven.`,
+      `❌ *Privé Shuttle Aanvraag Afgewezen*\n\nRef: ${ref}\n\nReden: ${reason}\n\nEen volledige terugbetaling is verwerkt. Neem contact op voor alternatieven.`,
   },
 
   da: {
@@ -210,19 +210,19 @@ const messages = {
       `💳 *Betaling Bekræftet*\n\nRef: ${ref}\nBeløb: ${amount}\n\nDin betaling er blevet behandlet.`,
 
     serviceReminder: (ref: string, date: string, time: string, pickup: string) =>
-      `⏰ *Påmindelse: Service I Morgen*\n\nRef: ${ref}\nDato: ${date}\nTid: ${time}\nAfhentning: ${pickup}\n\n📍 Vær venligst 10 minutter tidligt.\n🎫 Medbring din bookingreference.\n\nVi ses i morgen!`,
+      `⏰ *Påmindelse: Service I Morgen*\n\nRef: ${ref}\nDato: ${date}\nTid: ${time}\nAfhentning: ${pickup}\n\n📍 Kom venligst 10 minutter før.\n🎫 Medbring din bookningreference.\n\nVi ses i morgen!`,
 
     bookingCancelled: (ref: string, refundInfo: string) =>
       `❌ *Booking Annulleret*\n\nRef: ${ref}\n\n${refundInfo}\n\nHvis du har spørgsmål, kontakt os.`,
 
     refundProcessed: (ref: string, amount: string) =>
-      `💰 *Refusion Behandlet*\n\nRef: ${ref}\nBeløb: ${amount}\n\nDin refusion vil vises på din konto inden for 5-10 hverdage.`,
+      `💰 *Refusion Behandlet*\n\nRef: ${ref}\nBeløb: ${amount}\n\nDin refusion vil vises på din konto inden for 5-10 arbejdsdage.`,
 
     privateBookingApproved: (ref: string, date: string, time: string, from: string, to: string) =>
-      `✅ *Privat Shuttle Bekræftet!*\n\nRef: ${ref}\nDato: ${date}\nTid: ${time}\nFra: ${from}\nTil: ${to}\n\nDin private shuttle er godkendt. Vi ses snart!`,
+      `✅ *Privat Shuttle Bekræftet!*\n\nRef: ${ref}\nDato: ${date}\nTid: ${time}\nFra: ${from}\nTil: ${to}\n\nDin private shuttle er godkendt! Vi ses snart!`,
 
     privateBookingRejected: (ref: string, reason: string) =>
-      `❌ *Privat Shuttle Anmodning Afvist*\n\nRef: ${ref}\n\nÅrsag: ${reason}\n\nEn fuld refusion er blevet behandlet. Kontakt os for alternativer.`,
+      `❌ *Privat Shuttle Anmodning Afvist*\n\nRef: ${ref}\n\nÅrsag: ${reason}\n\nEn fuld refusion er behandlet. Kontakt os for alternativer.`,
   },
 
   nb: {
@@ -236,19 +236,19 @@ const messages = {
       `💳 *Betaling Bekreftet*\n\nRef: ${ref}\nBeløp: ${amount}\n\nDin betaling har blitt behandlet.`,
 
     serviceReminder: (ref: string, date: string, time: string, pickup: string) =>
-      `⏰ *Påminnelse: Service I Morgen*\n\nRef: ${ref}\nDato: ${date}\nTid: ${time}\nHenting: ${pickup}\n\n📍 Vær 10 minutter tidlig.\n🎫 Ta med bookingreferansen.\n\nVi sees i morgen!`,
+      `⏰ *Påminnelse: Service I Morgen*\n\nRef: ${ref}\nDato: ${date}\nTid: ${time}\nHenting: ${pickup}\n\n📍 Vennligst kom 10 minutter tidlig.\n🎫 Ta med bookingsreferansen.\n\nVi ses i morgen!`,
 
     bookingCancelled: (ref: string, refundInfo: string) =>
       `❌ *Booking Kansellert*\n\nRef: ${ref}\n\n${refundInfo}\n\nHvis du har spørsmål, kontakt oss.`,
 
     refundProcessed: (ref: string, amount: string) =>
-      `💰 *Refusjon Behandlet*\n\nRef: ${ref}\nBeløp: ${amount}\n\nDin refusjon vil vises på kontoen din innen 5-10 virkedager.`,
+      `💰 *Refusjon Behandlet*\n\nRef: ${ref}\nBeløp: ${amount}\n\nDin refusjon vil vises på kontoen innen 5-10 virkedager.`,
 
     privateBookingApproved: (ref: string, date: string, time: string, from: string, to: string) =>
-      `✅ *Privat Shuttle Bekreftet!*\n\nRef: ${ref}\nDato: ${date}\nTid: ${time}\nFra: ${from}\nTil: ${to}\n\nDin private shuttle er godkjent. Vi sees snart!`,
+      `✅ *Privat Shuttle Bekreftet!*\n\nRef: ${ref}\nDato: ${date}\nTid: ${time}\nFra: ${from}\nTil: ${to}\n\nDin private shuttle er godkjent! Vi ses snart!`,
 
     privateBookingRejected: (ref: string, reason: string) =>
-      `❌ *Privat Shuttle Forespørsel Avvist*\n\nRef: ${ref}\n\nÅrsak: ${reason}\n\nEn full refusjon har blitt behandlet. Kontakt oss for alternativer.`,
+      `❌ *Privat Shuttle Forespørsel Avvist*\n\nRef: ${ref}\n\nÅrsak: ${reason}\n\nFull refusjon har blitt behandlet. Kontakt oss for alternativer.`,
   },
 
   sv: {
@@ -262,238 +262,231 @@ const messages = {
       `💳 *Betalning Bekräftad*\n\nRef: ${ref}\nBelopp: ${amount}\n\nDin betalning har behandlats.`,
 
     serviceReminder: (ref: string, date: string, time: string, pickup: string) =>
-      `⏰ *Påminnelse: Service Imorgon*\n\nRef: ${ref}\nDatum: ${date}\nTid: ${time}\nUpphämtning: ${pickup}\n\n📍 Var 10 minuter tidig.\n🎫 Ta med din bokningsreferens.\n\nVi ses imorgon!`,
+      `⏰ *Påminnelse: Service Imorgon*\n\nRef: ${ref}\nDatum: ${date}\nTid: ${time}\nUpphämtning: ${pickup}\n\n📍 Kom 10 minuter i förväg.\n🎫 Ta med din bokningsreferens.\n\nVi ses imorgon!`,
 
     bookingCancelled: (ref: string, refundInfo: string) =>
-      `❌ *Bokning Avbokad*\n\nRef: ${ref}\n\n${refundInfo}\n\nOm du har frågor, kontakta oss.`,
+      `❌ *Bokning Avbruten*\n\nRef: ${ref}\n\n${refundInfo}\n\nOm du har frågor, kontakta oss.`,
 
     refundProcessed: (ref: string, amount: string) =>
       `💰 *Återbetalning Behandlad*\n\nRef: ${ref}\nBelopp: ${amount}\n\nDin återbetalning kommer att visas på ditt konto inom 5-10 arbetsdagar.`,
 
     privateBookingApproved: (ref: string, date: string, time: string, from: string, to: string) =>
-      `✅ *Privat Shuttle Bekräftad!*\n\nRef: ${ref}\nDatum: ${date}\nTid: ${time}\nFrån: ${from}\nTill: ${to}\n\nDin privata shuttle har godkänts. Vi ses snart!`,
+      `✅ *Privat Shuttle Bekräftad!*\n\nRef: ${ref}\nDatum: ${date}\nTid: ${time}\nFrån: ${from}\nTill: ${to}\n\nDin privata shuttle är godkänd! Vi ses snart!`,
 
     privateBookingRejected: (ref: string, reason: string) =>
-      `❌ *Privat Shuttle Förfrågan Avslagen*\n\nRef: ${ref}\n\nAnledning: ${reason}\n\nEn full återbetalning har behandlats. Kontakta oss för alternativ.`,
+      `❌ *Privat Shuttle Förfrågan Avvisad*\n\nRef: ${ref}\n\nAnledning: ${reason}\n\nFull återbetalning har behandlats. Kontakta oss för alternativ.`,
   },
 };
 
-// Helper function to format phone number to E.164 format (required by Twilio)
-function formatPhoneNumber(phone: string): string {
-  // Remove all non-digit characters except +
-  let cleaned = phone.replace(/[^\d+]/g, '');
+type MessageLanguage = keyof typeof messages;
 
-  // If doesn't start with +, assume it's a Spanish number (+34)
-  if (!cleaned.startsWith('+')) {
-    cleaned = '+34' + cleaned;
+/**
+ * Format phone number to E.164 format
+ */
+function formatPhoneNumber(phone: string): string {
+  // Remove all non-digit characters
+  let cleaned = phone.replace(/\D/g, '');
+
+  // If doesn't start with country code, assume Spain (+34)
+  if (!cleaned.startsWith('34') && cleaned.length < 12) {
+    cleaned = '34' + cleaned;
   }
 
-  return `whatsapp:${cleaned}`;
+  return cleaned;
 }
 
-// Generic send WhatsApp function
-async function sendWhatsApp(
-  to: string,
-  message: string
-): Promise<boolean> {
-  if (!twilioClient) {
-    console.log('📱 WhatsApp notification skipped (Twilio not configured):', message.split('\n')[0]);
+/**
+ * Send a WhatsApp message using Brevo
+ */
+async function sendWhatsApp(to: string, message: string, language: string = 'en'): Promise<boolean> {
+  if (!whatsappClient || !WHATSAPP_SENDER_NUMBER) {
+    console.log('📱 WhatsApp notification skipped (Brevo not configured):');
+    console.log(`   To: ${to}`);
+    console.log(`   Language: ${language}`);
+    console.log(`   Message: ${message.substring(0, 100)}...`);
     return false;
   }
 
   try {
     const formattedTo = formatPhoneNumber(to);
 
-    const result = await twilioClient.messages.create({
-      body: message,
-      from: whatsappFrom,
-      to: formattedTo,
-    });
+    const whatsappMessage = new brevo.SendWhatsappMessage();
+    whatsappMessage.senderNumber = WHATSAPP_SENDER_NUMBER;
+    whatsappMessage.contactNumbers = [formattedTo];
+    whatsappMessage.text = message;
 
-    console.log(`✅ WhatsApp sent to ${to}: ${result.sid}`);
+    const result = await whatsappClient.sendWhatsappMessage(whatsappMessage);
+
+    console.log(`✅ WhatsApp sent to ${formattedTo} (${language})`);
     return true;
-  } catch (error) {
-    console.error('❌ Failed to send WhatsApp:', error);
+  } catch (error: any) {
+    console.error('❌ Failed to send WhatsApp:', error.response?.body || error.message);
     return false;
   }
 }
 
-// Scheduled Booking Confirmation
+/**
+ * Send scheduled booking confirmation WhatsApp
+ */
 export async function sendScheduledBookingConfirmation(
-  booking: ScheduledBooking & {
-    scheduledService: {
-      date: Date;
-      departureTime: string;
-      route: { fromLocation: { name: string } };
-    };
-  },
-  customerPhone: string,
-  customerLanguage: string = 'en'
+  booking: any,
+  phone: string,
+  language: string = 'en'
 ): Promise<boolean> {
-  const lang = messages[customerLanguage as keyof typeof messages] || messages.en;
+  const lang = (language in messages ? language : 'en') as MessageLanguage;
+  const date = new Date(booking.service.serviceDate).toLocaleDateString(lang === 'en' ? 'en-US' : lang);
+  const time = new Date(booking.service.departureTime).toLocaleTimeString(lang === 'en' ? 'en-US' : lang, {
+    hour: '2-digit',
+    minute: '2-digit'
+  });
 
-  const message = lang.bookingConfirmed(
+  const message = messages[lang].bookingConfirmed(
     booking.bookingReference,
-    new Date(booking.scheduledService.date).toLocaleDateString(customerLanguage),
-    booking.scheduledService.departureTime,
-    booking.scheduledService.route.fromLocation.name,
+    date,
+    time,
+    booking.pickupLocation?.name || 'Unknown',
     booking.seatsBooked,
     booking.bikesCount
   );
 
-  return sendWhatsApp(customerPhone, message);
+  return sendWhatsApp(phone, message, language);
 }
 
-// Private Booking Pending Notification
+/**
+ * Send private booking pending WhatsApp
+ */
 export async function sendPrivateBookingPending(
-  booking: PrivateBooking,
-  customerPhone: string,
-  customerLanguage: string = 'en'
+  booking: any,
+  phone: string,
+  language: string = 'en'
 ): Promise<boolean> {
-  const lang = messages[customerLanguage as keyof typeof messages] || messages.en;
+  const lang = (language in messages ? language : 'en') as MessageLanguage;
+  const date = new Date(booking.serviceDate).toLocaleDateString(lang === 'en' ? 'en-US' : lang);
 
-  const message = lang.privateBookingPending(
+  const message = messages[lang].privateBookingPending(
     booking.bookingReference,
-    new Date(booking.date).toLocaleDateString(customerLanguage),
-    booking.pickupLocation,
-    booking.dropoffLocation,
+    date,
+    booking.pickupLocation || 'Unknown',
+    booking.dropoffLocation || 'Unknown',
     booking.passengers
   );
 
-  return sendWhatsApp(customerPhone, message);
+  return sendWhatsApp(phone, message, language);
 }
 
-// Payment Received Notification
+/**
+ * Send payment received WhatsApp
+ */
 export async function sendPaymentReceived(
-  bookingReference: string,
+  bookingRef: string,
   amount: number,
-  currency: string,
-  customerPhone: string,
-  customerLanguage: string = 'en'
+  phone: string,
+  language: string = 'en'
 ): Promise<boolean> {
-  const lang = messages[customerLanguage as keyof typeof messages] || messages.en;
+  const lang = (language in messages ? language : 'en') as MessageLanguage;
+  const formattedAmount = `€${amount.toFixed(2)}`;
 
-  const formattedAmount = new Intl.NumberFormat(customerLanguage, {
-    style: 'currency',
-    currency: currency,
-  }).format(amount);
+  const message = messages[lang].paymentReceived(bookingRef, formattedAmount);
 
-  const message = lang.paymentReceived(bookingReference, formattedAmount);
-
-  return sendWhatsApp(customerPhone, message);
+  return sendWhatsApp(phone, message, language);
 }
 
-// Service Reminder (24h before)
+/**
+ * Send service reminder WhatsApp (24h before service)
+ */
 export async function sendServiceReminder(
-  booking: ScheduledBooking & {
-    scheduledService: {
-      date: Date;
-      departureTime: string;
-      route: { fromLocation: { name: string } };
-    };
-  },
-  customerPhone: string,
-  customerLanguage: string = 'en'
+  booking: any,
+  phone: string,
+  language: string = 'en'
 ): Promise<boolean> {
-  const lang = messages[customerLanguage as keyof typeof messages] || messages.en;
+  const lang = (language in messages ? language : 'en') as MessageLanguage;
+  const date = new Date(booking.service.serviceDate).toLocaleDateString(lang === 'en' ? 'en-US' : lang);
+  const time = new Date(booking.service.departureTime).toLocaleTimeString(lang === 'en' ? 'en-US' : lang, {
+    hour: '2-digit',
+    minute: '2-digit'
+  });
 
-  const message = lang.serviceReminder(
+  const message = messages[lang].serviceReminder(
     booking.bookingReference,
-    new Date(booking.scheduledService.date).toLocaleDateString(customerLanguage),
-    booking.scheduledService.departureTime,
-    booking.scheduledService.route.fromLocation.name
+    date,
+    time,
+    booking.pickupLocation?.name || 'Unknown'
   );
 
-  return sendWhatsApp(customerPhone, message);
+  return sendWhatsApp(phone, message, language);
 }
 
-// Booking Cancellation Notification
+/**
+ * Send booking cancelled WhatsApp
+ */
 export async function sendBookingCancelled(
-  bookingReference: string,
-  hasRefund: boolean,
-  refundAmount: number | null,
-  currency: string,
-  customerPhone: string,
-  customerLanguage: string = 'en'
+  bookingRef: string,
+  refundInfo: string,
+  phone: string,
+  language: string = 'en'
 ): Promise<boolean> {
-  const lang = messages[customerLanguage as keyof typeof messages] || messages.en;
+  const lang = (language in messages ? language : 'en') as MessageLanguage;
 
-  let refundInfo = '';
-  if (hasRefund && refundAmount) {
-    const formattedAmount = new Intl.NumberFormat(customerLanguage, {
-      style: 'currency',
-      currency: currency,
-    }).format(refundAmount);
-    refundInfo = `Refund: ${formattedAmount} (5-10 business days)`;
-  } else {
-    refundInfo = 'No refund (non-refundable ticket)';
-  }
+  const message = messages[lang].bookingCancelled(bookingRef, refundInfo);
 
-  const message = lang.bookingCancelled(bookingReference, refundInfo);
-
-  return sendWhatsApp(customerPhone, message);
+  return sendWhatsApp(phone, message, language);
 }
 
-// Refund Processed Notification
+/**
+ * Send refund processed WhatsApp
+ */
 export async function sendRefundProcessed(
-  bookingReference: string,
-  refundAmount: number,
-  currency: string,
-  customerPhone: string,
-  customerLanguage: string = 'en'
+  bookingRef: string,
+  amount: number,
+  phone: string,
+  language: string = 'en'
 ): Promise<boolean> {
-  const lang = messages[customerLanguage as keyof typeof messages] || messages.en;
+  const lang = (language in messages ? language : 'en') as MessageLanguage;
+  const formattedAmount = `€${amount.toFixed(2)}`;
 
-  const formattedAmount = new Intl.NumberFormat(customerLanguage, {
-    style: 'currency',
-    currency: currency,
-  }).format(refundAmount);
+  const message = messages[lang].refundProcessed(bookingRef, formattedAmount);
 
-  const message = lang.refundProcessed(bookingReference, formattedAmount);
-
-  return sendWhatsApp(customerPhone, message);
+  return sendWhatsApp(phone, message, language);
 }
 
-// Private Booking Approved
+/**
+ * Send private booking approved WhatsApp
+ */
 export async function sendPrivateBookingApproved(
-  booking: PrivateBooking,
-  customerPhone: string,
-  customerLanguage: string = 'en'
+  booking: any,
+  phone: string,
+  language: string = 'en'
 ): Promise<boolean> {
-  const lang = messages[customerLanguage as keyof typeof messages] || messages.en;
+  const lang = (language in messages ? language : 'en') as MessageLanguage;
+  const date = new Date(booking.serviceDate).toLocaleDateString(lang === 'en' ? 'en-US' : lang);
+  const time = new Date(booking.serviceTime).toLocaleTimeString(lang === 'en' ? 'en-US' : lang, {
+    hour: '2-digit',
+    minute: '2-digit'
+  });
 
-  const message = lang.privateBookingApproved(
+  const message = messages[lang].privateBookingApproved(
     booking.bookingReference,
-    new Date(booking.date).toLocaleDateString(customerLanguage),
-    booking.time,
-    booking.pickupLocation,
-    booking.dropoffLocation
+    date,
+    time,
+    booking.pickupLocation || 'Unknown',
+    booking.dropoffLocation || 'Unknown'
   );
 
-  return sendWhatsApp(customerPhone, message);
+  return sendWhatsApp(phone, message, language);
 }
 
-// Private Booking Rejected
+/**
+ * Send private booking rejected WhatsApp
+ */
 export async function sendPrivateBookingRejected(
-  booking: PrivateBooking,
+  bookingRef: string,
   reason: string,
-  customerPhone: string,
-  customerLanguage: string = 'en'
+  phone: string,
+  language: string = 'en'
 ): Promise<boolean> {
-  const lang = messages[customerLanguage as keyof typeof messages] || messages.en;
+  const lang = (language in messages ? language : 'en') as MessageLanguage;
 
-  const message = lang.privateBookingRejected(booking.bookingReference, reason);
+  const message = messages[lang].privateBookingRejected(bookingRef, reason);
 
-  return sendWhatsApp(customerPhone, message);
+  return sendWhatsApp(phone, message, language);
 }
-
-export default {
-  sendScheduledBookingConfirmation,
-  sendPrivateBookingPending,
-  sendPaymentReceived,
-  sendServiceReminder,
-  sendBookingCancelled,
-  sendRefundProcessed,
-  sendPrivateBookingApproved,
-  sendPrivateBookingRejected,
-};
