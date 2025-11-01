@@ -13,36 +13,46 @@ router.get('/services/available', async (req: Request, res: Response) => {
   try {
     const { from, to, date } = req.query;
 
-    if (!from || !to || !date) {
+    if (!from) {
       return res.status(400).json({
         success: false,
-        error: 'from, to, and date parameters are required'
+        error: 'from parameter is required'
       });
     }
 
-    // Parse date string and create UTC date range for the full day
-    const targetDate = new Date(date as string);
-    const startOfDay = new Date(Date.UTC(targetDate.getUTCFullYear(), targetDate.getUTCMonth(), targetDate.getUTCDate(), 0, 0, 0, 0));
-    const endOfDay = new Date(Date.UTC(targetDate.getUTCFullYear(), targetDate.getUTCMonth(), targetDate.getUTCDate(), 23, 59, 59, 999));
+    // Build where clause - make both "to" and "date" optional
+    const whereClause: any = {
+      status: 'active',
+      OR: [
+        {
+          routePickup1Id: parseInt(from as string)
+        },
+        {
+          routePickup2Id: parseInt(from as string)
+        }
+      ]
+    };
+
+    // Only filter by date if provided
+    if (date) {
+      const targetDate = new Date(date as string);
+      const startOfDay = new Date(Date.UTC(targetDate.getUTCFullYear(), targetDate.getUTCMonth(), targetDate.getUTCDate(), 0, 0, 0, 0));
+      const endOfDay = new Date(Date.UTC(targetDate.getUTCFullYear(), targetDate.getUTCMonth(), targetDate.getUTCDate(), 23, 59, 59, 999));
+
+      whereClause.serviceDate = {
+        gte: startOfDay,
+        lte: endOfDay
+      };
+    }
+
+    // Only filter by dropoff if "to" is provided
+    if (to) {
+      whereClause.routeDropoffId = parseInt(to as string);
+    }
 
     // Find services matching the criteria
     const services = await prisma.scheduledService.findMany({
-      where: {
-        serviceDate: {
-          gte: startOfDay,
-          lte: endOfDay
-        },
-        status: 'active',
-        OR: [
-          {
-            routePickup1Id: parseInt(from as string)
-          },
-          {
-            routePickup2Id: parseInt(from as string)
-          }
-        ],
-        routeDropoffId: parseInt(to as string)
-      },
+      where: whereClause,
       include: {
         bus: true,
         routePickup1: true,
@@ -152,7 +162,8 @@ router.get('/routes', async (req: Request, res: Response) => {
         nameFr: route.nameFr,
         nameCa: route.nameCa,
         nameIt: route.nameIt,
-        nameNl: route.nameNl
+        nameNl: route.nameNl,
+        locationType: route.locationType
       }))
     });
   } catch (error) {

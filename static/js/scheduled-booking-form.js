@@ -746,12 +746,83 @@
       return langMap[currentLang] || route.name;
     };
 
-    const routeOptions = routes.map(route =>
+    // Filter pickup locations only (locationType = 'pickup' or 'both')
+    const pickupRoutes = routes.filter(r => r.locationType === 'pickup' || r.locationType === 'both');
+    const pickupOptions = pickupRoutes.map(route =>
       `<option value="${route.id}">${getLocalizedName(route)}</option>`
     ).join('');
 
-    fromSelect.innerHTML = `<option value="">${t.selectRoute}</option>${routeOptions}`;
-    toSelect.innerHTML = `<option value="">${t.selectRoute}</option>${routeOptions}`;
+    fromSelect.innerHTML = `<option value="">${t.selectRoute}</option>${pickupOptions}`;
+    toSelect.innerHTML = `<option value="">${t.selectRoute}</option>`;
+    toSelect.disabled = true;
+
+    // Add event listener to update "To" dropdown when "From" changes
+    fromSelect.addEventListener('change', updateToDropdown);
+  }
+
+  async function updateToDropdown() {
+    const fromSelect = document.getElementById('fromLocation');
+    const toSelect = document.getElementById('toLocation');
+    const fromId = fromSelect.value;
+
+    if (!fromId) {
+      toSelect.innerHTML = `<option value="">${t.selectRoute}</option>`;
+      toSelect.disabled = true;
+      document.getElementById('services-list').innerHTML = '';
+      return;
+    }
+
+    // Fetch available destinations for this pickup location
+    // Query without date to find all possible destinations
+    try {
+      const response = await fetch(
+        `${CONFIG.apiBaseUrl}/scheduled-bookings/services/available?from=${fromId}`
+      );
+
+      if (!response.ok) throw new Error('Failed to fetch destinations');
+
+      const data = await response.json();
+
+      // Extract unique destination IDs from available services
+      const destinationIds = new Set();
+      data.data.forEach(service => {
+        destinationIds.add(service.dropoffLocation.id);
+      });
+
+      // Get localized name based on current language
+      const getLocalizedName = (route) => {
+        const langMap = {
+          en: route.name,
+          de: route.nameDe || route.name,
+          es: route.nameEs || route.name,
+          fr: route.nameFr || route.name,
+          ca: route.nameCa || route.name,
+          it: route.nameIt || route.name,
+          nl: route.nameNl || route.name,
+          da: route.name,
+          nb: route.name,
+          sv: route.name,
+        };
+        return langMap[currentLang] || route.name;
+      };
+
+      // Filter routes that are valid destinations for this pickup
+      const availableDestinations = routes.filter(r =>
+        (r.locationType === 'dropoff' || r.locationType === 'both') &&
+        destinationIds.has(r.id)
+      );
+
+      const destOptions = availableDestinations.map(route =>
+        `<option value="${route.id}">${getLocalizedName(route)}</option>`
+      ).join('');
+
+      toSelect.innerHTML = `<option value="">${t.selectRoute}</option>${destOptions}`;
+      toSelect.disabled = false;
+    } catch (error) {
+      console.error('[Scheduled Booking] Error fetching destinations:', error);
+      toSelect.innerHTML = `<option value="">${t.selectRoute}</option>`;
+      toSelect.disabled = false;
+    }
   }
 
   async function loadAvailableServices() {
@@ -802,8 +873,15 @@
 
   function renderServiceCard(service) {
     const departureTime = service.departureTime.substring(11, 16); // Extract HH:MM from ISO datetime
-    const standardPrice = service.pricing.standardPrice.toFixed(2);
-    const flexiPrice = service.pricing.flexiPrice.toFixed(2);
+    const IVA_RATE = 0.10; // 10% Spanish IVA on transport
+
+    // Calculate prices including IVA
+    const standardPriceInclIVA = (service.pricing.standardPrice * (1 + IVA_RATE)).toFixed(2);
+    const flexiPriceInclIVA = (service.pricing.flexiPrice * (1 + IVA_RATE)).toFixed(2);
+
+    // Store base prices for backend
+    const standardPriceBase = service.pricing.standardPrice.toFixed(2);
+    const flexiPriceBase = service.pricing.flexiPrice.toFixed(2);
 
     return `
       <div class="service-card">
@@ -818,20 +896,22 @@
 
         <div class="ticket-options">
           <label class="ticket-option">
-            <input type="radio" name="service-${service.id}" value="standard" 
-              onchange="window.scheduledBookingForm.selectService(${service.id}, ${service.pickupLocations[0].id}, 'standard', ${standardPrice})">
+            <input type="radio" name="service-${service.id}" value="standard"
+              onchange="window.scheduledBookingForm.selectService(${service.id}, ${service.pickupLocations[0].id}, 'standard', ${standardPriceBase})">
             <div class="ticket-info">
               <div class="ticket-type">${t.standardTicket}</div>
-              <div class="ticket-price">€${standardPrice}</div>
+              <div class="ticket-price">€${standardPriceInclIVA}</div>
+              <small class="price-incl-iva">${t.inclIVA || 'Incl. IVA'}</small>
             </div>
           </label>
 
           <label class="ticket-option">
             <input type="radio" name="service-${service.id}" value="flexi"
-              onchange="window.scheduledBookingForm.selectService(${service.id}, ${service.pickupLocations[0].id}, 'flexi', ${flexiPrice})">
+              onchange="window.scheduledBookingForm.selectService(${service.id}, ${service.pickupLocations[0].id}, 'flexi', ${flexiPriceBase})">
             <div class="ticket-info">
               <div class="ticket-type">${t.flexiTicket}</div>
-              <div class="ticket-price">€${flexiPrice}</div>
+              <div class="ticket-price">€${flexiPriceInclIVA}</div>
+              <small class="price-incl-iva">${t.inclIVA || 'Incl. IVA'}</small>
               <div class="ticket-description">${t.flexiDescription}</div>
             </div>
           </label>
@@ -907,18 +987,13 @@
             <select id="seatsBooked" name="seatsBooked" required>
               ${Array.from({length: 10}, (_, i) => `<option value="${i + 1}">${i + 1}</option>`).join('')}
             </select>
+            <small>${t.seatsEqualBikes || 'Each seat purchased includes luxury travel for your bicycle!'}</small>
           </div>
-          <div class="form-group">
-            <label for="bikesCount">${t.numberOfBikes} *</label>
-            <select id="bikesCount" name="bikesCount" required>
-              ${Array.from({length: 11}, (_, i) => `<option value="${i}">${i}</option>`).join('')}
-            </select>
-          </div>
-        </div>
 
-        <div class="form-group">
-          <label for="customerName">${t.fullName} *</label>
-          <input type="text" id="customerName" name="customerName" required>
+          <div class="form-group">
+            <label for="customerName">${t.fullName} *</label>
+            <input type="text" id="customerName" name="customerName" required>
+          </div>
         </div>
 
         <div class="form-row">
@@ -930,22 +1005,6 @@
             <label for="customerPhone">${t.phone} *</label>
             <input type="tel" id="customerPhone" name="customerPhone" placeholder="+34 612 34 56 78" required>
           </div>
-        </div>
-
-        <div class="form-group">
-          <label for="customerLanguage">${t.language}</label>
-          <select id="customerLanguage" name="customerLanguage">
-            <option value="en" ${currentLang === 'en' ? 'selected' : ''}>English</option>
-            <option value="de" ${currentLang === 'de' ? 'selected' : ''}>Deutsch</option>
-            <option value="es" ${currentLang === 'es' ? 'selected' : ''}>Español</option>
-            <option value="fr" ${currentLang === 'fr' ? 'selected' : ''}>Français</option>
-            <option value="ca" ${currentLang === 'ca' ? 'selected' : ''}>Català</option>
-            <option value="it" ${currentLang === 'it' ? 'selected' : ''}>Italiano</option>
-            <option value="nl" ${currentLang === 'nl' ? 'selected' : ''}>Nederlands</option>
-            <option value="da" ${currentLang === 'da' ? 'selected' : ''}>Dansk</option>
-            <option value="nb" ${currentLang === 'nb' ? 'selected' : ''}>Norsk</option>
-            <option value="sv" ${currentLang === 'sv' ? 'selected' : ''}>Svenska</option>
-          </select>
         </div>
 
         <div class="form-actions">
@@ -980,12 +1039,16 @@
             <span id="summary-seats">1</span>
           </div>
           <div class="price-row">
-            <span>${t.bikes}:</span>
-            <span id="summary-bikes">0</span>
-          </div>
-          <div class="price-row">
             <span>${t.ticketType}:</span>
             <span id="summary-ticket-type">-</span>
+          </div>
+          <div class="price-row subtotal">
+            <span>${t.subtotal || 'Subtotal'}:</span>
+            <span>€<span id="payment-subtotal">0.00</span></span>
+          </div>
+          <div class="price-row iva">
+            <span>IVA (10%):</span>
+            <span>€<span id="payment-iva">0.00</span></span>
           </div>
           <div class="price-row total">
             <span>${t.total}</span>
@@ -1099,8 +1162,12 @@
     if (!formData.selectedService) return;
 
     const seats = parseInt(document.getElementById('seatsBooked')?.value || 1);
-    const bikes = parseInt(document.getElementById('bikesCount')?.value || 0);
-    const total = formData.pricePerSeat * seats;
+    const IVA_RATE = 0.10; // 10% Spanish IVA on transport
+
+    // Calculate pricing
+    const subtotal = formData.pricePerSeat * seats;
+    const ivaAmount = subtotal * IVA_RATE;
+    const total = subtotal + ivaAmount;
 
     const service = formData.selectedService;
     const serviceTime = service.departureTime.substring(11, 16); // Extract HH:MM from ISO datetime
@@ -1126,8 +1193,9 @@
     document.getElementById('summary-pickup').textContent = getLocalizedName(pickupLocation);
     document.getElementById('summary-dropoff').textContent = getLocalizedName(service.dropoffLocation);
     document.getElementById('summary-seats').textContent = seats;
-    document.getElementById('summary-bikes').textContent = bikes;
     document.getElementById('summary-ticket-type').textContent = formData.selectedTicketType === 'flexi' ? t.flexi : t.standard;
+    document.getElementById('payment-subtotal').textContent = subtotal.toFixed(2);
+    document.getElementById('payment-iva').textContent = ivaAmount.toFixed(2);
     document.getElementById('payment-total').textContent = total.toFixed(2);
   }
 
@@ -1179,12 +1247,14 @@
         return false;
       }
 
+      const seatsBooked = parseInt(document.getElementById('seatsBooked').value);
+
       formData.customerName = name;
       formData.customerEmail = email;
       formData.customerPhone = phone;
-      formData.customerLanguage = document.getElementById('customerLanguage').value;
-      formData.seatsBooked = parseInt(document.getElementById('seatsBooked').value);
-      formData.bikesCount = parseInt(document.getElementById('bikesCount').value);
+      formData.customerLanguage = currentLang; // Use current page language
+      formData.seatsBooked = seatsBooked;
+      formData.bikesCount = seatsBooked; // One bike per seat
     }
 
     return true;
