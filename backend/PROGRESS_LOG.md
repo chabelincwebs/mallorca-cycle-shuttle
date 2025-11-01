@@ -4,6 +4,172 @@ This log tracks all major development milestones and features added to the backe
 
 ---
 
+## Session: November 1, 2025 (Evening Session 3) - 2026 Scheduled Services Import
+
+**Duration:** ~3 hours
+**Status:** ✅ Complete
+**Lines of Code:** ~700+ lines (scripts), ~50 modified lines (API/schema/frontend)
+**Services Imported:** 174 scheduled services for 2026 season
+
+### What Was Built
+
+#### 1. Database Schema Enhancement
+- **Modified:** `backend/prisma/schema.prisma`
+  - Added `productSku String? @unique @map("product_sku")` to ScheduledService model
+  - Enables tracking of legacy SKU identifiers from WooCommerce system
+  - Unique constraint ensures no duplicate SKUs
+  - Ran migration: `npx prisma db push --accept-data-loss`
+
+**SKU Format:** `S-{FROM}-{TO}-{DDMMYY}-{HHMM}`
+- Example: `S-PA-AX-180326-0730` = Playa de Muro/Alcudia → Andratx on March 18, 2026 at 07:30
+- Route codes: PP (Port Pollença), PA (Playa de Muro), FP (Playa de Palma), SP (Santa Ponça)
+- Destination codes: REP (Repsol/Lluc), AX (Andratx), PP (Port Pollença), PC (Porto Colom)
+
+---
+
+#### 2. Public API Enhancement
+- **Modified:** `src/routes/public/scheduled-bookings.ts`
+  - Added `/services/browse` endpoint for service browser
+  - Returns `departureTime` field in API response (previously missing)
+  - Enables correct time display on frontend
+
+**Endpoint:** `GET /api/public/scheduled-bookings/services/browse`
+- Returns all active future services
+- Includes multilingual route names (10 languages)
+- Calculates booked seats from active bookings
+- Formats data for service browser UI
+
+---
+
+#### 3. Frontend Time Display Fix
+- **Modified:** `static/js/scheduled-booking-form.js`
+  - Fixed departure time extraction (was showing 00:00 for all services)
+  - Changed from `service.serviceDate.substring(11, 16)` to `service.departureTime.substring(11, 16)`
+  - Updated in 4 locations:
+    - Service browser cards (line 919)
+    - Booking form service cards (line 1287)
+    - Payment summary (line 1592)
+    - Final confirmation (line 1839)
+  - Added fallback handling: `service.departureTime ? service.departureTime.substring(11, 16) : '00:00'`
+
+---
+
+#### 4. Import Scripts Created
+
+**Script 1:** `src/scripts/import-services-2026.ts` (311 lines)
+- Initial bulk import from CSV
+- Created Porto Colom dropoff location (ID: 18)
+- Updated 7 existing services with correct SKUs
+- Assigned SKU to Mar 11 PA→AX service
+- Imported 132 services (22 failed due to bus conflicts)
+- Features:
+  - SKU parsing from CSV format
+  - Route mapping (FROM/TO codes → database IDs)
+  - Seat calculation logic (16-seat vs 55-seat buses)
+  - Price and IVA application
+
+**Script 2:** `src/scripts/check-and-create-buses.ts` (87 lines)
+- Dynamic bus creation based on needs
+- Checks existing fleet capacity
+- Calculates required additional buses
+- Created 4x 16-seat minibuses (IDs: 5, 6, 7, 8)
+- Created 3x 55-seat coaches (IDs: 9, 10, 11)
+
+**Script 3:** `src/scripts/import-remaining-services.ts` (191 lines)
+- Smart bus assignment to avoid scheduling conflicts
+- `findAvailableBus()` function checks for conflicts
+- Imported all 22 remaining services successfully
+- Ensures no double-booking of buses
+
+**Script 4:** `src/scripts/create-additional-buses.ts` (158 lines)
+- Manual bus creation script
+- Hardcoded bus specifications
+- Seasonal availability (March-June 2026)
+- Fallback for environments needing specific bus configurations
+
+---
+
+#### 5. Data Imported
+
+**New Location Created:**
+- Porto Colom dropoff location (ID: 18) - all 10 languages
+
+**Buses Created:**
+- 4x 16-seat minibuses: "Scheduled Minibus 2-5" (PMI-0002 to PMI-0005)
+- 3x 55-seat coaches: "Scheduled Coach 2-4" (PMI-5502 to PMI-5504)
+
+**Services Imported:**
+- 162 services from CSV (March-June 2026)
+- 12 weekly Wednesday PA→AX services (March 18 - June 3)
+- **Total: 174 scheduled services for 2026 season**
+
+**SKU Fix:**
+- Corrected S-PA-AX-110326 from time 0745 → 0730 to match actual departure
+
+**Route Coverage:**
+- Port Pollença/Alcudia (PP) → Andratx, Repsol, Port Pollença
+- Playa de Muro/Port Alcudia (PA) → Repsol, Andratx
+- Playa de Palma (FP) → Port Pollença, Repsol, Porto Colom
+- Santa Ponça/Peguera (SP) → Port Pollença, Repsol
+
+---
+
+### Technical Improvements
+
+**Database:**
+- Added unique productSku tracking for legacy system integration
+- Expanded fleet from 2 buses to 11 buses
+- Expanded routes from 17 to 18 locations
+
+**API:**
+- Fixed missing departureTime field in service browser response
+- Improved data structure for frontend consumption
+
+**Frontend:**
+- Resolved "00:00" time display bug
+- Added defensive programming with fallback values
+- Improved UX with correct service times
+
+**Scripts:**
+- Reusable import utilities for future seasons
+- Smart conflict detection and resolution
+- Transactional data imports with error handling
+
+---
+
+### Testing
+
+- ✅ All 174 services imported successfully
+- ✅ No SKU duplicates (unique constraint working)
+- ✅ Departure times displaying correctly (07:15, 07:30, 07:45)
+- ✅ Service browser shows all services by month
+- ✅ Bus assignments conflict-free
+- ✅ Porto Colom location created with all translations
+- ✅ Weekly Wednesday services (12 total) created correctly
+
+---
+
+### Git Commit
+
+**Commit:** `61bcaa7` - "Add 2026 scheduled services import with productSku tracking"
+**Pushed:** ✅ origin/master
+**Stats:** 9 files changed, 1396 insertions(+), 9 deletions(-)
+
+**Files Modified:**
+- `backend/prisma/schema.prisma` - Added productSku field
+- `backend/src/routes/public/scheduled-bookings.ts` - Added departureTime to response
+- `content/en/bike-shuttle/scheduled-shuttle-bookings/_index.md` - Content updates
+- `static/css/booking-form.css` - Styling updates
+- `static/js/scheduled-booking-form.js` - Time display fix
+
+**Files Created:**
+- `backend/src/scripts/import-services-2026.ts`
+- `backend/src/scripts/check-and-create-buses.ts`
+- `backend/src/scripts/import-remaining-services.ts`
+- `backend/src/scripts/create-additional-buses.ts`
+
+---
+
 ## Session: November 1, 2025 (Evening Session 2) - UI/UX Polish
 
 **Duration:** ~1 hour

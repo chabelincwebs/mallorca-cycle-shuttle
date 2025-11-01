@@ -1,7 +1,7 @@
 # Mallorca Cycle Shuttle Backend - Current Status
 
-**Last Updated:** October 31, 2025
-**Status:** Core booking system operational, payment integration complete, invoicing with VeriFactu compliance, B2B management ready
+**Last Updated:** November 1, 2025
+**Status:** Core booking system operational, payment integration complete, invoicing with VeriFactu compliance, B2B management ready, 2026 scheduled services imported
 
 ## 🎯 What's Been Built
 
@@ -36,7 +36,7 @@
 - `GET/POST /api/admin/services`
 - `GET/PUT/DELETE /api/admin/services/:id`
 
-**Sample Data:** 13 services seeded across 7 days (Sa Calobra, Coll dels Reis, Escorca)
+**Sample Data:** 174 services for 2026 season (imported from CSV with SKU tracking)
 
 **Documentation:** `SERVICES_API_SUMMARY.md`
 
@@ -236,7 +236,43 @@
 
 ---
 
-#### 9. Database Schema (Prisma)
+#### 9. 2026 Scheduled Services Import ⭐ NEW
+
+**Database Changes:**
+- Added `productSku` field to ScheduledService model for legacy SKU tracking
+- Unique constraint on product_sku for data integrity
+- Migrated schema with `npx prisma db push --accept-data-loss`
+
+**Public API Enhancements** (`src/routes/public/scheduled-bookings.ts`):
+- Added `/services/browse` endpoint for service browser
+- Returns departureTime field for correct time display
+- Fixed frontend time display issue (was showing 00:00)
+
+**Import Scripts** (`src/scripts/`):
+- `import-services-2026.ts` - Initial bulk import with route mapping
+- `check-and-create-buses.ts` - Dynamic bus creation based on needs
+- `import-remaining-services.ts` - Smart bus assignment
+- `create-additional-buses.ts` - Manual bus creation
+
+**Data Imported:**
+- Created Porto Colom dropoff location (ID: 18)
+- Imported 162 services from CSV for 2026 season
+- Created 7 additional buses (4x 16-seat minibuses, 3x 55-seat coaches)
+- Fixed SKU time mismatch for S-PA-AX-110326-0730
+- Added 12 weekly Wednesday PA→AX services (March 18 - June 3, 2026)
+- **Total: 174 scheduled services** for 2026 season
+
+**Frontend Updates:**
+- Fixed departure time display in service browser
+- Updated scheduled-booking-form.js to extract time from departureTime field
+- Added fallback handling for missing departureTime data
+
+**SKU Format:** `S-{FROM}-{TO}-{DDMMYY}-{HHMM}`
+- Example: S-PA-AX-180326-0730 = Playa de Muro/Alcudia → Andratx on March 18, 2026 at 07:30
+
+---
+
+#### 10. Database Schema (Prisma)
 
 **15 Tables Defined:**
 - `admin_users` - Admin accounts (with 2FA fields)
@@ -282,9 +318,9 @@
 - `prisma/seed-bookings.ts` - Sample bookings
 
 **Sample Data:**
-- 2 buses (Bus A: 16 seats, Bus B: 14 seats)
-- 8 routes (Port de Pollença, Pollença Town, Sa Calobra, etc.)
-- 13 scheduled services
+- 11 buses (6x 16-seat minibuses, 4x 55-seat coaches, 1x 14-seat minibus)
+- 18 routes (includes Porto Colom dropoff location)
+- 174 scheduled services for 2026 season
 - 4 bookings (8 seats booked total)
 
 ---
@@ -455,6 +491,11 @@ backend/
 │   │   ├── invoice.ts                ✅ VeriFactu invoice service
 │   │   ├── statistics.ts             ✅ Dashboard statistics
 │   │   └── bulk-booking.ts           ✅ CSV bulk booking service
+│   ├── scripts/
+│   │   ├── import-services-2026.ts   ✅ Initial 2026 services import
+│   │   ├── check-and-create-buses.ts ✅ Dynamic bus creation
+│   │   ├── import-remaining-services.ts ✅ Smart import with bus assignment
+│   │   └── create-additional-buses.ts ✅ Manual bus creation
 │   └── utils/
 │       └── booking-reference.ts      ✅ Reference generator
 ├── prisma/
@@ -619,6 +660,6 @@ pnpm dev
 
 ---
 
-**Status:** Production-ready for core booking flow with payment processing, email notifications, invoice generation (VeriFactu compliant), real-time analytics, and B2B customer management.
+**Status:** Production-ready for core booking flow with payment processing, email notifications, invoice generation (VeriFactu compliant), real-time analytics, B2B customer management, and 174 scheduled services for 2026 season.
 
-**Next session:** Customer portal or AEAT integration for fiscal compliance.
+**Next session:** Customer portal, AEAT integration for fiscal compliance, or additional 2026 service management.
