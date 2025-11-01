@@ -1,8 +1,8 @@
 # 🔄 CURRENT PROJECT STATUS
 
-**Last Updated:** 2025-11-01 13:35 CET
-**Current Phase:** Scheduled Shuttle Booking System - FULLY FUNCTIONAL ✅
-**Status:** 🎉 Complete end-to-end booking tested successfully!
+**Last Updated:** 2025-11-01 21:15 CET
+**Current Phase:** Scheduled Shuttle Booking System - PRODUCTION READY ✅
+**Status:** 🎉 Real routes added, UX improved, pricing finalized!
 
 ---
 
@@ -41,68 +41,48 @@ hugo server --bind 0.0.0.0 --baseURL http://localhost:1313
 
 ## 📍 WHERE WE ARE NOW
 
-### ✅ COMPLETED (Today - 2025-11-01 - Afternoon Session)
+### ✅ COMPLETED (Today - 2025-11-01 - Evening Session)
 
-**🎉 MAJOR MILESTONE: Scheduled Shuttle Booking System COMPLETE!**
+**🎉 MAJOR MILESTONE: Scheduled Booking System PRODUCTION READY!**
 
-**Frontend - Complete 4-Step Booking Flow:**
-- ✅ Step 1: Route & Service Selection
-  - Route dropdowns with 10-language support
-  - Date picker with minimum date validation
-  - Real-time service availability display
-  - Service cards showing departure times and seat availability
-  - Standard vs Flexi ticket selection with pricing
-- ✅ Step 2: Passenger Details
-  - Name, email, phone fields
-  - Number of seats and bikes
-  - Language preference selection
-- ✅ Step 3: Payment (Stripe Integration)
-  - Booking summary with all details
-  - Stripe Elements payment form
-  - Price breakdown display
-- ✅ Step 4: Confirmation
-  - Booking reference number
-  - Complete booking details
-  - Email confirmation notification
+**Real Business Data Added:**
+- ✅ 9 real pickup/dropoff locations with GPS coordinates
+  - 7 pickup points: Port de Pollença, Alcudia, Peguera, Santa Ponça, Playa de Muro, Port Alcudia, Playa de Palma
+  - 2 destinations: Port d'Andratx, Repsol Garage (Lluc/Sa Calobra)
+- ✅ 8 March 2026 scheduled services with real dates/times/pricing
+- ✅ Location types: pickup, dropoff, both
+- ✅ Multi-language route names (10 languages)
 
-**Backend - API Endpoints:**
-- ✅ `GET /api/public/scheduled-bookings/routes` - Get all active routes
-- ✅ `GET /api/public/scheduled-bookings/services/available` - Get available services with seat availability
-- ✅ `POST /api/public/scheduled-bookings` - Create new scheduled booking
-- ✅ `GET /api/public/scheduled-bookings/:bookingReference` - Get booking details
-- ✅ `POST /api/public/scheduled-bookings/:bookingReference/cancel` - Cancel flexi bookings
+**Pricing Finalized:**
+- ✅ Standard ticket: €40.50 incl. 10% IVA (€36.82 base)
+- ✅ Flexi ticket: €42.50 incl. 10% IVA (€38.64 base)
+- ✅ IVA display: Prominent prices incl. tax, detailed breakdown in payment summary
+- ✅ Automatic bikes = seats (removed separate bikes field)
 
-**Bug Fixes (Critical):**
-- ✅ Fixed field name mismatches (`priceStandard` vs `standardPrice`, `priceFlexi` vs `flexiPrice`)
-- ✅ Fixed date range timezone issues (UTC handling)
-- ✅ Fixed bus capacity field name (`capacity` vs `passengerCapacity`)
-- ✅ Added missing required fields for scheduled bookings:
-  - `customerType` (b2c/b2b)
-  - `pricePerSeat`
-  - `ivaRate` and `ivaAmount`
-  - `paymentMethod`
-- ✅ Fixed time display bug (extracting HH:MM from ISO datetime correctly)
+**Smart Route Filtering:**
+- ✅ "From" dropdown shows only pickup locations
+- ✅ "To" dropdown dynamically populates based on selected "From" location
+- ✅ Backend API supports optional query parameters (date, to)
+- ✅ Real-time availability checking
 
-**UI/UX Improvements:**
-- ✅ Fixed service card layout (was jumbled on large screens)
-- ✅ Added proper CSS for service headers and ticket options
-- ✅ Responsive grid layout for service cards
-- ✅ Visual feedback for selected tickets
-- ✅ Low availability indicators
+**UX Improvements:**
+- ✅ Compact passenger details layout (two-column form on larger screens)
+- ✅ Removed redundant language selector (uses page language automatically)
+- ✅ Updated bike transport text: "Each seat purchased includes luxury travel for your bicycle!"
+- ✅ Modern iOS/macOS-style date picker with smooth animations
+- ✅ Form width optimized for desktop (700px max-width)
+- ✅ Responsive design maintained on mobile
 
-**Testing:**
-- ✅ Successfully created test booking (Reference: SB-1762000519865-E2C962FD)
-- ✅ Confirmed database record creation
-- ✅ Verified all booking fields populated correctly
-- ✅ Tested 4 passengers, 4 bikes, Flexi ticket
-- ✅ Price calculation with IVA working correctly
+**Backend Scripts Created:**
+- ✅ `/backend/scripts/add-real-routes.ts` - Populate real business routes
+- ✅ `/backend/scripts/add-march-2026-services.ts` - Create scheduled services
+- ✅ `/backend/scripts/fix-route-types.ts` - Update location types
+- ✅ Proper deletion order for foreign key constraints
 
-**Files Created/Updated:**
-- ✅ `/content/en/bike-shuttle/scheduled-shuttle-bookings/_index.md` + 9 other languages
-- ✅ `/static/js/scheduled-booking-form.js` (50KB, 1,362 lines, 10 languages)
-- ✅ `/static/css/booking-form.css` (updated with scheduled booking styles)
-- ✅ `/backend/src/routes/public/scheduled-bookings.ts` (complete CRUD operations)
-- ✅ `/backend/scripts/create-service.ts` (utility for creating test services)
+**Git Commit:**
+- ✅ Commit: `61f9db1` - "Update scheduled booking form with real routes and improved UX"
+- ✅ Pushed: origin/master
+- ✅ 7 files changed, 754 insertions, 71 deletions
 
 ---
 
@@ -116,12 +96,16 @@ hugo server --bind 0.0.0.0 --baseURL http://localhost:1313
 
 **Scheduled Shuttle Bookings:**
 - ✅ 100% Complete and tested
+- ✅ Real business routes added (9 locations)
+- ✅ March 2026 services created (8 shuttles)
+- ✅ Production pricing finalized (€40.50 / €42.50 incl. IVA)
+- ✅ Smart route filtering
 - ✅ Service availability calculation working
 - ✅ Seat management working
 - ✅ Standard & Flexi tickets working
 - ✅ Change tokens generated for Flexi tickets
 - ✅ Multi-language support (10 languages)
-- ✅ Responsive design
+- ✅ Responsive design with modern UX
 - ✅ IVA (10%) calculation correct
 
 **Payment Processing:**
@@ -130,9 +114,9 @@ hugo server --bind 0.0.0.0 --baseURL http://localhost:1313
 - ⏳ Production keys needed for live deployment
 
 **Next Priority:**
-- 📍 Add actual routes to database (currently have 8 test routes)
-- 📍 Create real scheduled services
+- 📍 Add more scheduled services for March-April 2026
 - 📍 Test with production Stripe keys
+- 📍 Set up email confirmations for scheduled bookings
 - 📍 Deploy to production
 
 ---
@@ -147,9 +131,9 @@ hugo server --bind 0.0.0.0 --baseURL http://localhost:1313
 - ✅ admin_users
 - ✅ b2b_customers
 - ✅ buses (3 buses: 9-seater, 16-seater, 55-seater)
-- ✅ routes (8 routes: Port de Pollença, Alcúdia, Sa Calobra, etc.)
-- ✅ scheduled_services (2 test services for 2026-03-01)
-- ✅ **scheduled_bookings** (NEW! Working with 1 test booking)
+- ✅ routes (9 real routes: Port de Pollença, Alcudia, Peguera, Santa Ponça, etc.)
+- ✅ scheduled_services (8 March 2026 services)
+- ✅ **scheduled_bookings** (Working)
 - ✅ **private_bookings** (Working)
 - ✅ invoice_series
 - ✅ invoices
@@ -160,16 +144,26 @@ hugo server --bind 0.0.0.0 --baseURL http://localhost:1313
 - ✅ audit_log
 - ✅ system_settings
 
-**Test Services Created:**
-1. Service ID 1: Port de Pollença → Sa Calobra (08:00) - 55 seats, 3 booked
-2. Service ID 14: Port de Pollença → Sa Calobra (07:15) - 55 seats, 4 booked
+**Real Routes (9 locations):**
+1. Port de Pollença (Aparthotel Duva) - pickup/dropoff
+2. Alcudia (PortBlue Club) - pickup/dropoff
+3. Peguera (Hotel Cala Fornells) - pickup/dropoff
+4. Santa Ponça (Playa del Toro) - pickup/dropoff
+5. Playa de Muro (Js Sol de Alcudia) - pickup/dropoff
+6. Port Alcudia (Marriott Hotel) - pickup/dropoff
+7. Playa de Palma (Hostal Ventura) - pickup/dropoff
+8. Port d'Andratx - dropoff only
+9. Repsol Garage (Lluc) - dropoff only
 
-**Test Booking Created:**
-- Booking Reference: SB-1762000519865-E2C962FD
-- Service: Port de Pollença → Sa Calobra (07:15, March 1, 2026)
-- Passengers: 4, Bikes: 4
-- Ticket Type: Flexi (€27/seat + 10% IVA)
-- Total: €118.80 (€27 × 4 × 1.10)
+**March 2026 Services (8 scheduled):**
+1. Mar 3: Port de Pollença/Alcudia → Port d'Andratx (07:15)
+2. Mar 4: Alcudia/Port de Pollença → Lluc (07:45)
+3. Mar 5: Peguera/Santa Ponça → Port de Pollença (07:15)
+4. Mar 6: Playa de Palma → Port de Pollença (07:30)
+5. Mar 10: Peguera/Santa Ponça → Lluc (07:30)
+6. Mar 10: Playa de Muro/Port Alcudia → Lluc (07:45)
+7. Mar 11: Playa de Muro/Port Alcudia → Andratx (07:30)
+8. Mar 11: Playa de Palma → Lluc (07:45)
 
 ---
 
@@ -305,7 +299,7 @@ npx tsx scripts/create-service.ts
 **Infrastructure:**
 - Completed Linux migration
 
-### Session 4 (2025-11-01 Afternoon) - TODAY!
+### Session 4 (2025-11-01 Afternoon)
 **🎉 MAJOR ACHIEVEMENT: Scheduled Shuttle Booking System COMPLETE!**
 
 **Built Complete Frontend:**
@@ -324,13 +318,6 @@ npx tsx scripts/create-service.ts
 - Corrected time display extraction
 - Fixed bus capacity field references
 
-**Implemented Complete API:**
-- Routes endpoint with multi-language support
-- Services availability with seat calculation
-- Booking creation with full validation
-- Booking retrieval by reference
-- Cancellation endpoint for Flexi tickets
-
 **Testing & Validation:**
 - Successfully completed test booking
 - Verified database record creation
@@ -338,7 +325,39 @@ npx tsx scripts/create-service.ts
 - Tested multi-language UI
 - Validated responsive design
 
-**Status:** System 100% functional and ready for real routes/services!
+### Session 5 (2025-11-01 Evening) - TODAY!
+**🎉 PRODUCTION READY: Real Routes, Smart Filtering, UX Improvements!**
+
+**Real Business Data:**
+- Added 9 real pickup/dropoff locations with GPS coordinates
+- Created 8 March 2026 scheduled services
+- Set location types (pickup/dropoff/both)
+- Multi-language route names for all locations
+
+**Smart Route Filtering:**
+- Dynamic "To" dropdown based on "From" selection
+- Only show available destinations for selected pickup
+- Made API query parameters optional (date, to)
+- Added locationType to routes endpoint
+
+**Pricing & UX:**
+- Finalized pricing: Standard €40.50, Flexi €42.50 (incl. IVA)
+- Removed separate bikes field (bikes = seats automatically)
+- Removed language selector (uses page language)
+- Compact two-column layout on larger screens
+- Modern iOS/macOS-style date picker with animations
+- Updated bike transport messaging
+
+**Backend Scripts:**
+- Created add-real-routes.ts for route management
+- Created add-march-2026-services.ts for services
+- Fixed foreign key constraint handling
+
+**Git:**
+- Commit: 61f9db1 - "Update scheduled booking form with real routes and improved UX"
+- 7 files changed, 754 insertions, 71 deletions
+
+**Status:** System production-ready with real business data!
 
 ---
 
@@ -346,16 +365,17 @@ npx tsx scripts/create-service.ts
 
 **To Continue Development:**
 
-1. **Add Real Routes to Database** 📍 NEXT PRIORITY
-   - Get list of actual pickup/dropoff locations
-   - Add translations for all 10 languages
-   - Mark appropriate location types
+1. **Add More Scheduled Services** 📍 NEXT PRIORITY
+   - Create services for remaining March dates
+   - Add April 2026 services
+   - Vary routes and times based on demand
+   - Consider adding more pickup/dropoff locations
 
-2. **Create Real Scheduled Services**
-   - Add actual departure times
-   - Set real pricing (Standard & Flexi)
-   - Configure proper IVA rates
-   - Set bus assignments
+2. **Email Notifications for Scheduled Bookings**
+   - Implement booking confirmation emails
+   - Add service reminder emails (24h before)
+   - Create cancellation confirmation emails
+   - Translate templates to all 10 languages
 
 3. **Admin Dashboard for Services**
    - Create admin UI for managing services

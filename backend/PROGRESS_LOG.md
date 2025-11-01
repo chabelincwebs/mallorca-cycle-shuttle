@@ -4,6 +4,130 @@ This log tracks all major development milestones and features added to the backe
 
 ---
 
+## Session: November 1, 2025 (Evening) - Real Routes & UX Improvements
+
+**Duration:** ~2 hours
+**Status:** ✅ Complete
+**Lines of Code:** ~750+ new/modified lines
+
+### What Was Built
+
+#### 1. Real Business Routes Added
+- **Created:** `backend/scripts/add-real-routes.ts` (150+ lines)
+  - 9 real pickup/dropoff locations with GPS coordinates
+  - 7 pickup locations: Port de Pollença, Alcudia, Peguera, Santa Ponça, Playa de Muro, Port Alcudia, Playa de Palma
+  - 2 dropoff-only destinations: Port d'Andratx, Repsol Garage (Lluc)
+  - Multi-language names for all 10 supported languages
+  - Location type classification (pickup/dropoff/both)
+  - Foreign key constraint handling (proper deletion order)
+
+- **Created:** `backend/scripts/add-march-2026-services.ts` (250+ lines)
+  - 8 scheduled services for March 2026
+  - Real departure times (07:15-07:45)
+  - Production pricing: Standard €36.82, Flexi €38.64 (base prices)
+  - Dual pickup locations for most routes
+  - 55-seater bus assignment
+  - Booking cutoff times configured
+
+- **Created:** `backend/scripts/fix-route-types.ts` (60+ lines)
+  - Update utility for setting location types
+  - Set Port d'Andratx and Repsol Garage as dropoff-only
+  - Set remaining locations as both pickup/dropoff
+
+**Key Features:**
+- Real business locations with hotel/landmark names
+- GPS coordinates for mapping integration
+- 10-language support for route names
+- Location type enforcement for smart filtering
+
+---
+
+#### 2. Smart Route Filtering System
+- **Modified:** `backend/src/routes/public/scheduled-bookings.ts`
+  - Made API query parameters optional (date, to)
+  - Added locationType field to routes endpoint response
+  - Supports dynamic route filtering based on FROM selection
+  - Query services without TO filter to get all destinations
+  - Maintains backward compatibility with existing code
+
+- **Modified:** `static/js/scheduled-booking-form.js` (v7)
+  - Dynamic TO dropdown population based on FROM selection
+  - Filter FROM dropdown to show only pickup locations
+  - Disable TO dropdown until FROM is selected
+  - Extract unique destination IDs from available services
+  - Filter destinations by locationType and availability
+  - Real-time UI updates on selection changes
+
+**Key Features:**
+- Smart dropdown filtering (FROM → TO)
+- Only show available destinations for selected pickup
+- Prevent invalid route combinations
+- Improved user experience with dynamic UI
+
+---
+
+#### 3. Pricing & UX Improvements
+- **Modified:** `static/js/scheduled-booking-form.js` (v7)
+  - Finalized pricing: Standard €40.50, Flexi €42.50 (incl. 10% IVA)
+  - Updated base prices to €36.82 and €38.64
+  - Removed separate bikes count field
+  - Set bikesCount = seatsBooked automatically
+  - Removed language preference dropdown
+  - Use current page language (currentLang) automatically
+  - Two-column form layout on larger screens
+  - Updated bike transport text: "Each seat purchased includes luxury travel for your bicycle!"
+
+- **Modified:** `static/css/booking-form.css` (v9)
+  - Compact layout for screens ≥768px (max-width: 700px)
+  - Two-column grid for passenger details
+  - Modern iOS/macOS-style date picker with:
+    - Light gray background (#fafafa)
+    - Rounded corners (0.75rem)
+    - Smooth hover/focus transitions
+    - Subtle lift effect on interaction
+    - Modern calendar icon
+    - Brand-colored focus ring
+    - Font weight changes for filled state
+  - Price display improvements
+  - IVA breakdown styling
+
+- **Modified:** `content/en/bike-shuttle/scheduled-shuttle-bookings/_index.md`
+  - Updated cache-busting versions (CSS v9, JS v7)
+  - No content changes
+
+**Key Features:**
+- Production-ready pricing
+- Simplified booking form (removed redundant fields)
+- Modern Apple-style date picker
+- Compact layout for desktop users
+- Automatic language detection
+- Automatic bikes = seats calculation
+
+---
+
+### Technical Improvements
+- Fixed foreign key constraint errors in deletion scripts
+- Proper cascade deletion: bookings → services → routes
+- Optimized dropdown filtering logic
+- Improved API response structure
+- Cache-busting for static assets
+
+### Testing
+- ✅ Scripts executed successfully
+- ✅ 9 routes created in database
+- ✅ 8 March 2026 services created
+- ✅ Smart filtering working correctly
+- ✅ Pricing displayed correctly with IVA
+- ✅ Modern date picker styling verified
+- ✅ Responsive layout tested
+
+### Git Commit
+**Commit:** `61f9db1` - "Update scheduled booking form with real routes and improved UX"
+**Pushed:** ✅ origin/master
+**Stats:** 7 files changed, 754 insertions(+), 71 deletions(-)
+
+---
+
 ## Session: October 31, 2025 - Invoice Generation, Dashboard & B2B Management
 
 **Duration:** ~2 hours
@@ -349,5 +473,5 @@ This log tracks all major development milestones and features added to the backe
 
 ---
 
-**Last Updated:** October 31, 2025
-**Next Session:** Customer Portal or AEAT Integration
+**Last Updated:** November 1, 2025
+**Next Session:** Add more scheduled services or email notifications
