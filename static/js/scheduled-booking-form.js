@@ -96,6 +96,14 @@
       seatsEqualBikes: 'Each seat purchased includes luxury travel for your bicycle!',
       inclIVA: 'Incl. IVA',
       subtotal: 'Subtotal',
+
+      // Service Browser
+      browseServicesTitle: 'Browse Available Shuttles',
+      browseServicesDesc: 'View all scheduled bike shuttle services by month. Click "Book" to reserve your seat!',
+      noServicesThisMonth: 'No services scheduled for this month yet.',
+      bookThisService: 'Book This Service',
+      departure: 'Departure',
+      route: 'Route',
     },
 
     de: {
@@ -159,6 +167,14 @@
       seatsEqualBikes: 'Jeder Sitzplatz beinhaltet luxuriösen Transport für Ihr Fahrrad!',
       inclIVA: 'Inkl. MwSt',
       subtotal: 'Zwischensumme',
+
+      // Service Browser
+      browseServicesTitle: 'Verfügbare Shuttles Durchsuchen',
+      browseServicesDesc: 'Zeigen Sie alle geplanten Fahrrad-Shuttle-Services nach Monat an. Klicken Sie auf "Buchen", um Ihren Platz zu reservieren!',
+      noServicesThisMonth: 'Für diesen Monat sind noch keine Services geplant.',
+      bookThisService: 'Diesen Service buchen',
+      departure: 'Abfahrt',
+      route: 'Route',
     },
 
     es: {
@@ -222,6 +238,14 @@
       seatsEqualBikes: '¡Cada asiento incluye viaje de lujo para su bicicleta!',
       inclIVA: 'IVA incluido',
       subtotal: 'Subtotal',
+
+      // Service Browser
+      browseServicesTitle: 'Explorar Lanzaderas Disponibles',
+      browseServicesDesc: 'Ver todos los servicios de lanzadera de bicicletas programados por mes. ¡Haz clic en "Reservar" para reservar tu asiento!',
+      noServicesThisMonth: 'No hay servicios programados para este mes todavía.',
+      bookThisService: 'Reservar este servicio',
+      departure: 'Salida',
+      route: 'Ruta',
     },
 
     fr: {
@@ -285,6 +309,14 @@
       seatsEqualBikes: 'Chaque place comprend un voyage de luxe pour votre vélo!',
       inclIVA: 'TVA incluse',
       subtotal: 'Sous-total',
+
+      // Service Browser
+      browseServicesTitle: 'Parcourir les Navettes Disponibles',
+      browseServicesDesc: 'Voir tous les services de navette vélo programmés par mois. Cliquez sur "Réserver" pour réserver votre place!',
+      noServicesThisMonth: 'Aucun service prévu pour ce mois pour le moment.',
+      bookThisService: 'Réserver ce service',
+      departure: 'Départ',
+      route: 'Itinéraire',
     },
 
     ca: {
@@ -348,6 +380,14 @@
       seatsEqualBikes: 'Cada seient inclou viatge de luxe per a la vostra bicicleta!',
       inclIVA: 'IVA inclòs',
       subtotal: 'Subtotal',
+
+      // Service Browser
+      browseServicesTitle: 'Explorar Llançadores Disponibles',
+      browseServicesDesc: 'Veure tots els serveis de llançadora de bicicletes programats per mes. Feu clic a "Reserva" per reservar el vostre seient!',
+      noServicesThisMonth: 'Encara no hi ha serveis programats per aquest mes.',
+      bookThisService: 'Reserva aquest servei',
+      departure: 'Sortida',
+      route: 'Ruta',
     },
 
     it: {
@@ -413,6 +453,14 @@
       seatsEqualBikes: 'Ogni posto include viaggio di lusso per la tua bicicletta!',
       inclIVA: 'IVA inclusa',
       subtotal: 'Subtotale',
+
+      // Service Browser
+      browseServicesTitle: 'Sfoglia le Navette Disponibili',
+      browseServicesDesc: 'Visualizza tutti i servizi navetta bici programmati per mese. Fai clic su "Prenota" per riservare il tuo posto!',
+      noServicesThisMonth: 'Nessun servizio programmato per questo mese.',
+      bookThisService: 'Prenota questo servizio',
+      departure: 'Partenza',
+      route: 'Percorso',
     nl: {
       step1: 'Service Selecteren',
       step2: 'Passagiersgegevens',
@@ -476,6 +524,14 @@
       seatsEqualBikes: 'Elke zitplaats omvat luxe reis voor uw fiets!',
       inclIVA: 'BTW inbegrepen',
       subtotal: 'Subtotaal',
+
+      // Service Browser
+      browseServicesTitle: 'Bekijk Beschikbare Shuttles',
+      browseServicesDesc: 'Bekijk alle geplande fietsshuttlediensten per maand. Klik op "Boek" om uw plaats te reserveren!',
+      noServicesThisMonth: 'Nog geen diensten gepland voor deze maand.',
+      bookThisService: 'Boek deze dienst',
+      departure: 'Vertrek',
+      route: 'Route',
     da: {
       step1: 'Vælg Service',
       step2: 'Passagerdetaljer',
@@ -544,6 +600,14 @@
       seatsEqualBikes: 'Hvert sæde inkluderer luksusrejse for din cykel!',
       inclIVA: 'Inkl. moms',
       subtotal: 'Subtotal',
+
+      // Service Browser
+      browseServicesTitle: 'Gennemse Tilgængelige Shuttler',
+      browseServicesDesc: 'Vis alle planlagte cykelshuttletjenester pr. måned. Klik på "Book" for at reservere din plads!',
+      noServicesThisMonth: 'Ingen tjenester planlagt for denne måned endnu.',
+      bookThisService: 'Book denne tjeneste',
+      departure: 'Afgang',
+      route: 'Rute',
       from: 'Fra',
       to: 'Til',
       serviceDate: 'Reisedato',
@@ -612,6 +676,14 @@
       seatsEqualBikes: 'Hvert sete inkluderer luksusreise for sykkelen din!',
       inclIVA: 'Inkl. MVA',
       subtotal: 'Delsum',
+
+      // Service Browser
+      browseServicesTitle: 'Bla Gjennom Tilgjengelige Skyttlar',
+      browseServicesDesc: 'Vis alle planlagte sykkelskytteltjenester per måned. Klikk "Book" for å reservere plassen din!',
+      noServicesThisMonth: 'Ingen tjenester planlagt for denne måneden ennå.',
+      bookThisService: 'Book denne tjenesten',
+      departure: 'Avreise',
+      route: 'Rute',
       loadingServices: 'Laddar tillgängliga tjänster...',
       noServices: 'Inga tjänster tillgängliga för denna rutt och datum',
       availableServices: 'Tillgängliga Tjänster',
@@ -680,26 +752,314 @@
       seatsEqualBikes: 'Varje plats inkluderar lyxresa för din cykel!',
       inclIVA: 'Inkl. moms',
       subtotal: 'Delsumma',
+
+      // Service Browser
+      browseServicesTitle: 'Bläddra i Tillgängliga Skyttlar',
+      browseServicesDesc: 'Visa alla schemalagda cykelskytteltjänster per månad. Klicka på "Boka" för att reservera din plats!',
+      noServicesThisMonth: 'Inga tjänster schemalagda för denna månad än.',
+      bookThisService: 'Boka denna tjänst',
+      departure: 'Avresa',
+      route: 'Rutt',
     selectedTicketType: null,
     pickupLocationId: null,
   };
   let routes = [];
   let availableServices = [];
+  let allServices = []; // For service browser
+  let selectedBrowserMonth = null; // Currently selected month in browser
   let stripe = null;
   let cardElement = null;
 
+  // ============================================
+  // SERVICE BROWSER FUNCTIONS
+  // ============================================
+
+  /**
+   * Fetch all services for the service browser (no date/to filters)
+   */
+  async function fetchAllServices() {
+    try {
+      console.log('[Browser] Fetching all services...');
+      const response = await fetch(`${CONFIG.apiBaseUrl}/scheduled-bookings/services/browse`);
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const data = await response.json();
+      allServices = data.services || [];
+      console.log(`[Browser] Fetched ${allServices.length} services`);
+
+      return allServices;
+    } catch (error) {
+      console.error('[Browser] Error fetching services:', error);
+      return [];
+    }
+  }
+
+  /**
+   * Organize services by year-month
+   * Returns: { '2026-03': [...services], '2026-04': [...services], ... }
+   */
+  function organizeServicesByMonth() {
+    const servicesByMonth = {};
+
+    allServices.forEach(service => {
+      const date = new Date(service.serviceDate);
+      const yearMonth = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
+
+      if (!servicesByMonth[yearMonth]) {
+        servicesByMonth[yearMonth] = [];
+      }
+
+      servicesByMonth[yearMonth].push(service);
+    });
+
+    // Sort services within each month by date
+    Object.keys(servicesByMonth).forEach(month => {
+      servicesByMonth[month].sort((a, b) =>
+        new Date(a.serviceDate) - new Date(b.serviceDate)
+      );
+    });
+
+    return servicesByMonth;
+  }
+
+  /**
+   * Get localized month name
+   */
+  function getMonthName(yearMonth, lang) {
+    const [year, month] = yearMonth.split('-');
+    const date = new Date(year, parseInt(month) - 1, 1);
+
+    const monthNames = {
+      en: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      de: ['Jan', 'Feb', 'Mär', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez'],
+      es: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
+      fr: ['Jan', 'Fév', 'Mar', 'Avr', 'Mai', 'Juin', 'Juil', 'Août', 'Sep', 'Oct', 'Nov', 'Déc'],
+      ca: ['Gen', 'Febr', 'Març', 'Abr', 'Maig', 'Juny', 'Jul', 'Ag', 'Set', 'Oct', 'Nov', 'Des'],
+      it: ['Gen', 'Feb', 'Mar', 'Apr', 'Mag', 'Giu', 'Lug', 'Ago', 'Set', 'Ott', 'Nov', 'Dic'],
+      nl: ['Jan', 'Feb', 'Mrt', 'Apr', 'Mei', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dec'],
+      da: ['Jan', 'Feb', 'Mar', 'Apr', 'Maj', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dec'],
+      nb: ['Jan', 'Feb', 'Mar', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Des'],
+      sv: ['Jan', 'Feb', 'Mar', 'Apr', 'Maj', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dec'],
+    };
+
+    const monthIndex = date.getMonth();
+    const monthName = (monthNames[lang] || monthNames.en)[monthIndex];
+    return `${monthName} ${year}`;
+  }
+
+  /**
+   * Get localized location name
+   */
+  function getLocalizedLocationName(location) {
+    const langMap = {
+      en: location.name,
+      de: location.nameDe || location.name,
+      es: location.nameEs || location.name,
+      fr: location.nameFr || location.name,
+      ca: location.nameCa || location.name,
+      it: location.nameIt || location.name,
+      nl: location.nameNl || location.name,
+      da: location.nameDa || location.name,
+      nb: location.nameNb || location.name,
+      sv: location.nameSv || location.name,
+    };
+    return langMap[currentLang] || location.name;
+  }
+
+  /**
+   * Render the service browser UI
+   */
+  function renderServiceBrowser() {
+    const t = TRANSLATIONS[currentLang] || TRANSLATIONS.en;
+    const servicesByMonth = organizeServicesByMonth();
+    const months = Object.keys(servicesByMonth).sort();
+
+    if (months.length === 0) {
+      return `
+        <div class="service-browser">
+          <h2>${t.browseServicesTitle}</h2>
+          <p>${t.noServicesThisMonth}</p>
+        </div>
+      `;
+    }
+
+    // Set default selected month to the first month
+    if (!selectedBrowserMonth && months.length > 0) {
+      selectedBrowserMonth = months[0];
+    }
+
+    // Build month tabs
+    const monthTabs = months.map(month => {
+      const isActive = month === selectedBrowserMonth;
+      const count = servicesByMonth[month].length;
+      return `
+        <button
+          class="month-tab ${isActive ? 'active' : ''}"
+          onclick="window.scheduledBookingForm.switchBrowserMonth('${month}')"
+        >
+          ${getMonthName(month, currentLang)}
+          <span class="month-tab-count">(${count})</span>
+        </button>
+      `;
+    }).join('');
+
+    // Build service cards for selected month
+    const servicesForMonth = servicesByMonth[selectedBrowserMonth] || [];
+    const serviceCards = servicesForMonth.map(service => {
+      const serviceDate = new Date(service.serviceDate);
+      const formattedDate = serviceDate.toLocaleDateString(currentLang, {
+        weekday: 'short',
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric'
+      });
+      const serviceTime = service.departureTime.substring(11, 16);
+
+      const pickupNames = service.pickupLocations
+        .map(loc => getLocalizedLocationName(loc))
+        .join(' / ');
+      const dropoffName = getLocalizedLocationName(service.dropoffLocation);
+
+      const seatsAvailable = service.bus.capacity - service.seatsBooked;
+      const availabilityClass = seatsAvailable < 10 ? 'low-availability' : '';
+
+      return `
+        <div class="browser-service-card ${availabilityClass}">
+          <div class="service-card-date">📅 ${formattedDate}</div>
+          <div class="service-card-route">
+            <strong>${t.route}:</strong> ${pickupNames} → ${dropoffName}
+          </div>
+          <div class="service-card-details">
+            <span class="service-time">🕐 ${t.departure}: ${serviceTime}</span>
+            <span class="service-seats">💺 ${seatsAvailable} ${t.seatsAvailable}</span>
+          </div>
+          <div class="service-card-price">
+            ${t.standard}: €40.50 • ${t.flexi}: €42.50
+          </div>
+          <button
+            class="btn-book-service"
+            onclick="window.scheduledBookingForm.bookService(${service.id}, '${service.serviceDate.substring(0, 10)}')"
+          >
+            ${t.bookThisService} →
+          </button>
+        </div>
+      `;
+    }).join('');
+
+    return `
+      <div class="service-browser">
+        <h2>${t.browseServicesTitle}</h2>
+        <p class="browser-desc">${t.browseServicesDesc}</p>
+
+        <div class="month-tabs">
+          ${monthTabs}
+        </div>
+
+        <div class="service-cards-container">
+          ${serviceCards}
+        </div>
+
+        <hr class="browser-divider" />
+      </div>
+    `;
+  }
+
+  /**
+   * Switch to a different month in the browser
+   */
+  async function switchBrowserMonth(yearMonth) {
+    selectedBrowserMonth = yearMonth;
+
+    // Re-render the browser section
+    const browserContainer = document.getElementById('service-browser-container');
+    if (browserContainer) {
+      browserContainer.innerHTML = renderServiceBrowser();
+    }
+  }
+
+  /**
+   * Pre-fill the booking form when user clicks "Book" on a service
+   */
+  async function bookService(serviceId, serviceDate) {
+    console.log('[Browser] Booking service:', serviceId, serviceDate);
+
+    // Find the service
+    const service = allServices.find(s => s.id === serviceId);
+    if (!service) {
+      console.error('[Browser] Service not found:', serviceId);
+      return;
+    }
+
+    // Scroll to booking form
+    const formContainer = document.getElementById('scheduled-booking-form-container');
+    if (formContainer) {
+      formContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    // Wait a moment for scroll
+    await new Promise(resolve => setTimeout(resolve, 300));
+
+    // Pre-fill the date
+    const dateInput = document.getElementById('serviceDate');
+    if (dateInput) {
+      dateInput.value = serviceDate;
+    }
+
+    // Pre-select the from/to routes
+    const fromSelect = document.getElementById('fromRoute');
+    const toSelect = document.getElementById('toRoute');
+
+    if (fromSelect && service.pickupLocations.length > 0) {
+      fromSelect.value = service.pickupLocations[0].id;
+
+      // Trigger change event to load services
+      const event = new Event('change', { bubbles: true });
+      fromSelect.dispatchEvent(event);
+
+      // Wait for services to load
+      await new Promise(resolve => setTimeout(resolve, 500));
+
+      // Set the dropoff
+      if (toSelect) {
+        toSelect.value = service.dropoffLocation.id;
+        toSelect.dispatchEvent(new Event('change', { bubbles: true }));
+
+        // Wait for services to load
+        await new Promise(resolve => setTimeout(resolve, 500));
+
+        // Auto-select this service if visible
+        const serviceButton = document.querySelector(`[data-service-id="${serviceId}"]`);
+        if (serviceButton) {
+          serviceButton.click();
+        }
+      }
+    }
+  }
+
   // Initialize
-  function init() {
+  async function init() {
     console.log('[Scheduled Booking] init() called');
     const container = document.getElementById('scheduled-booking-form-container');
     if (!container) {
       console.error('[Scheduled Booking] Container element not found!');
       return;
     }
-    console.log('[Scheduled Booking] Container found, rendering form...');
+    console.log('[Scheduled Booking] Container found, rendering...');
 
-    // Render the form
-    container.innerHTML = renderForm();
+    // Fetch all services for the browser
+    console.log('[Scheduled Booking] Fetching all services for browser...');
+    await fetchAllServices();
+
+    // Render the service browser and the form
+    container.innerHTML = `
+      <div id="service-browser-container">
+        ${renderServiceBrowser()}
+      </div>
+      ${renderForm()}
+    `;
 
     // Initialize Stripe
     console.log('[Scheduled Booking] Initializing Stripe...');
@@ -924,7 +1284,7 @@
   }
 
   function renderServiceCard(service) {
-    const departureTime = service.departureTime.substring(11, 16); // Extract HH:MM from ISO datetime
+    const departureTime = service.departureTime ? service.departureTime.substring(11, 16) : '00:00'; // Extract HH:MM from ISO datetime
     const IVA_RATE = 0.10; // 10% Spanish IVA on transport
 
     // Calculate prices including IVA
@@ -1229,7 +1589,7 @@
     const total = subtotal + ivaAmount;
 
     const service = formData.selectedService;
-    const serviceTime = service.departureTime.substring(11, 16); // Extract HH:MM from ISO datetime
+    const serviceTime = service.departureTime ? service.departureTime.substring(11, 16) : '00:00'; // Extract HH:MM from ISO datetime
     const serviceDate = new Date(service.serviceDate).toLocaleDateString(currentLang);
 
     // Get localized location names
@@ -1476,7 +1836,7 @@
 
   function showConfirmation() {
     const service = formData.selectedService;
-    const serviceTime = service.departureTime.substring(11, 16); // Extract HH:MM from ISO datetime
+    const serviceTime = service.departureTime ? service.departureTime.substring(11, 16) : '00:00'; // Extract HH:MM from ISO datetime
     const serviceDate = new Date(service.serviceDate).toLocaleDateString(currentLang);
 
     const getLocalizedName = (location) => {
@@ -1515,6 +1875,8 @@
     prevStep,
     processPayment,
     selectService,
+    switchBrowserMonth,
+    bookService,
   };
 
   // Initialize when DOM is ready

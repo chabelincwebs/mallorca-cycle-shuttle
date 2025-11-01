@@ -138,6 +138,123 @@ router.get('/services/available', async (req: Request, res: Response) => {
 });
 
 /**
+ * Get all services for browsing (no filters required)
+ * GET /api/public/scheduled-bookings/services/browse
+ */
+router.get('/services/browse', async (req: Request, res: Response) => {
+  try {
+    // Find all active services
+    const services = await prisma.scheduledService.findMany({
+      where: {
+        status: 'active',
+        serviceDate: {
+          gte: new Date() // Only future/current services
+        }
+      },
+      include: {
+        bus: true,
+        routePickup1: true,
+        routePickup2: true,
+        routeDropoff: true,
+        bookings: {
+          where: {
+            status: {
+              in: ['pending', 'confirmed']
+            }
+          },
+          select: {
+            seatsBooked: true
+          }
+        }
+      },
+      orderBy: {
+        serviceDate: 'asc'
+      }
+    });
+
+    // Calculate available seats for each service
+    const servicesWithAvailability = services.map(service => {
+      const bookedSeats = service.bookings.reduce(
+        (sum, booking) => sum + booking.seatsBooked,
+        0
+      );
+
+      // Build pickup locations array
+      const pickupLocations = [
+        {
+          id: service.routePickup1.id,
+          name: service.routePickup1.nameEn,
+          nameEs: service.routePickup1.nameEs,
+          nameDe: service.routePickup1.nameDe,
+          nameFr: service.routePickup1.nameFr,
+          nameCa: service.routePickup1.nameCa,
+          nameIt: service.routePickup1.nameIt,
+          nameNl: service.routePickup1.nameNl,
+          nameDa: service.routePickup1.nameDa,
+          nameNb: service.routePickup1.nameNb,
+          nameSv: service.routePickup1.nameSv,
+        }
+      ];
+
+      if (service.routePickup2) {
+        pickupLocations.push({
+          id: service.routePickup2.id,
+          name: service.routePickup2.nameEn,
+          nameEs: service.routePickup2.nameEs,
+          nameDe: service.routePickup2.nameDe,
+          nameFr: service.routePickup2.nameFr,
+          nameCa: service.routePickup2.nameCa,
+          nameIt: service.routePickup2.nameIt,
+          nameNl: service.routePickup2.nameNl,
+          nameDa: service.routePickup2.nameDa,
+          nameNb: service.routePickup2.nameNb,
+          nameSv: service.routePickup2.nameSv,
+        });
+      }
+
+      return {
+        id: service.id,
+        serviceDate: service.serviceDate,
+        departureTime: service.departureTime,
+        pickupLocations,
+        dropoffLocation: {
+          id: service.routeDropoff.id,
+          name: service.routeDropoff.nameEn,
+          nameEs: service.routeDropoff.nameEs,
+          nameDe: service.routeDropoff.nameDe,
+          nameFr: service.routeDropoff.nameFr,
+          nameCa: service.routeDropoff.nameCa,
+          nameIt: service.routeDropoff.nameIt,
+          nameNl: service.routeDropoff.nameNl,
+          nameDa: service.routeDropoff.nameDa,
+          nameNb: service.routeDropoff.nameNb,
+          nameSv: service.routeDropoff.nameSv,
+        },
+        bus: {
+          capacity: service.bus.capacity,
+          name: service.bus.name
+        },
+        seatsBooked: bookedSeats,
+        priceStandard: service.priceStandard,
+        priceFlexi: service.priceFlexi,
+        ivaRate: service.ivaRate
+      };
+    });
+
+    return res.json({
+      success: true,
+      services: servicesWithAvailability
+    });
+  } catch (error: any) {
+    console.error('[Scheduled Bookings] Error fetching services for browse:', error);
+    return res.status(500).json({
+      success: false,
+      error: 'Failed to fetch services'
+    });
+  }
+});
+
+/**
  * Get all available routes
  * GET /api/public/scheduled-bookings/routes
  */

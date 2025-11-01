@@ -898,3 +898,167 @@
   border-color: var(--brand, #f10000);
   background: rgba(241, 0, 0, 0.05);
 }
+
+/* ============================================
+   SERVICE BROWSER STYLES
+   ============================================ */
+
+.service-browser {
+  margin-bottom: 3rem;
+}
+
+.service-browser h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.browser-desc {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.month-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.month-tab {
+  padding: 0.75rem 1.25rem;
+  background: #f8f8f8;
+  border: 2px solid #ddd;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.month-tab:hover {
+  background: #f0f0f0;
+  border-color: #999;
+}
+
+.month-tab.active {
+  background: #666;
+  color: white;
+  border-color: #666;
+}
+
+.month-tab-count {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.service-cards-container {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.browser-service-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.browser-service-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.browser-service-card.low-availability {
+  border-left: 4px solid #ff9800;
+}
+
+.service-card-date {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.service-card-route {
+  color: #555;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.service-card-details {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+  color: #666;
+  flex-wrap: wrap;
+}
+
+.service-time,
+.service-seats {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.service-card-price {
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.btn-book-service {
+  width: 100%;
+  padding: 0.75rem 1.25rem;
+  background: #555;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.95rem;
+}
+
+.btn-book-service:hover {
+  background: #444;
+  transform: translateX(4px);
+}
+
+.browser-divider {
+  margin: 3rem 0;
+  border: none;
+  border-top: 2px solid #e0e0e0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .service-browser h2 {
+    font-size: 1.5rem;
+  }
+  
+  .month-tabs {
+    gap: 0.4rem;
+  }
+  
+  .month-tab {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .service-cards-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .browser-service-card {
+    padding: 1rem;
+  }
+}
+

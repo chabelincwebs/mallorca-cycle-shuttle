@@ -148,6 +148,7 @@ model Route {
 
 model ScheduledService {
   id                  Int       @id @default(autoincrement())
+  productSku          String?   @unique @map("product_sku")
   busId               Int       @map("bus_id")
   serviceDate         DateTime  @map("service_date") @db.Date
   departureTime       DateTime  @map("departure_time") @db.Time
