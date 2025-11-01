@@ -1125,8 +1125,8 @@
     }
 
     // Pre-select the from/to routes
-    const fromSelect = document.getElementById('fromRoute');
-    const toSelect = document.getElementById('toRoute');
+    const fromSelect = document.getElementById('fromLocation');
+    const toSelect = document.getElementById('toLocation');
 
     if (fromSelect && service.pickupLocations.length > 0) {
       fromSelect.value = service.pickupLocations[0].id;
