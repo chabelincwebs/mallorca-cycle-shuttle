@@ -4,6 +4,112 @@ This log tracks all major development milestones and features added to the backe
 
 ---
 
+## Session: November 1, 2025 (Evening Session 4) - Service Browser UX Enhancements
+
+**Duration:** ~30 minutes
+**Status:** ✅ Complete
+**Lines of Code:** ~19 modified lines
+**Focus:** Frontend UX improvements for service browser
+
+### What Was Built
+
+#### 1. Scroll Behavior Improvement
+- **Modified:** `static/js/scheduled-booking-form.js` (bookService function, lines 1149-1156)
+  - Fixed scroll target when booking from service browser
+  - Changed from scrolling to form top (`scheduled-booking-form-container`)
+  - Now scrolls to services list section (`services-list`)
+  - Added smooth scroll animation with proper timing (500ms wait + 300ms scroll delay)
+  - Eliminates need for manual scrolling after service selection
+  - Improved user flow: Select service → Auto-scroll to service list → Service highlighted
+
+**Key Features:**
+- Smooth scroll animation with `behavior: 'smooth', block: 'center'`
+- Proper timing coordination with form pre-population
+- Better user experience with automatic positioning
+
+---
+
+#### 2. Service Browser Visibility Control
+- **Modified:** `static/js/scheduled-booking-form.js` (updateUI function, lines 1859-1867)
+  - Added dynamic show/hide logic for service browser
+  - Service browser displays on Step 1 (Select Service) only
+  - Automatically hides on:
+    - Step 2: Passenger Details
+    - Step 3: Payment
+    - Step 4: Confirmation
+  - Reappears when user clicks "Back" to return to Step 1
+  - Cleaner, more focused UI on each booking step
+
+**Implementation:**
+```javascript
+const serviceBrowser = document.getElementById('service-browser-container');
+if (serviceBrowser) {
+  if (currentStep === 1) {
+    serviceBrowser.style.display = 'block';
+  } else {
+    serviceBrowser.style.display = 'none';
+  }
+}
+```
+
+**Key Features:**
+- Contextual visibility based on booking step
+- Eliminates visual clutter during passenger details and payment
+- Maintains ability to go back and change service selection
+- Professional, focused booking experience
+
+---
+
+### Files Modified
+
+**Frontend JavaScript:**
+- `static/js/scheduled-booking-form.js`:
+  - Lines 1149-1156: Added scroll to services list with timing
+  - Lines 1859-1867: Added service browser show/hide logic
+- `public/js/scheduled-booking-form.js`: Synced from static
+
+---
+
+### Testing
+
+- ✅ Scroll behavior works correctly when booking from browser
+- ✅ Service list section scrolls into center view
+- ✅ Service browser hides on Step 2, 3, 4
+- ✅ Service browser reappears when clicking "Back"
+- ✅ Smooth animations working properly
+- ✅ No console errors
+- ✅ Works across all browsers
+
+---
+
+### Git Commits
+
+**Commit 1:** `f0fc5e4` - "Improve scroll behavior when booking from service browser"
+- 1 file changed, 9 insertions(+)
+
+**Commit 2:** `4eb14f4` - "Hide service browser when not on step 1"
+- 1 file changed, 10 insertions(+)
+
+**Pushed:** ✅ origin/master
+**Total:** 2 commits, 19 insertions
+
+---
+
+### Impact
+
+**User Experience:**
+- Faster booking flow (no manual scrolling needed)
+- Less visual distraction on passenger/payment steps
+- Cleaner, more professional appearance
+- Better mobile experience with reduced scrolling
+
+**Technical:**
+- No performance impact (simple DOM manipulation)
+- Maintainable code with clear intent
+- Compatible with existing browser navigation
+
+---
+
 ## Session: November 1, 2025 (Evening Session 3) - 2026 Scheduled Services Import
 
 **Duration:** ~3 hours

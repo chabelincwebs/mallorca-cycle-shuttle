@@ -1,8 +1,8 @@
 # 🔄 CURRENT PROJECT STATUS
 
-**Last Updated:** 2025-11-01 22:30 CET
+**Last Updated:** 2025-11-01 23:15 CET
 **Current Phase:** Scheduled Shuttle Booking System - PRODUCTION READY ✅
-**Status:** 🎉 Grey color scheme & mandatory terms checkbox complete!
+**Status:** 🎉 Service browser UX improvements complete!
 
 ---
 
@@ -389,6 +389,40 @@ npx tsx scripts/create-service.ts
 - Pushed to origin/master
 
 **Status:** Professional UI with clear visual hierarchy, red = errors only!
+
+### Session 7 (2025-11-01 Evening Session 3) - TODAY!
+**🎯 Service Browser UX Enhancements**
+
+**Scroll Behavior Improvement:**
+- Fixed scroll behavior when booking from service browser
+- Page now scrolls to services list section instead of just form top
+- Eliminates need for manual scrolling after selecting a service
+- Added smooth scroll animation with proper timing
+- Updated bookService() function in scheduled-booking-form.js (lines 1149-1156)
+
+**Service Browser Visibility Control:**
+- Hide service browser when not on Step 1 (Select Service)
+- Service browser hidden during:
+  - Step 2: Passenger Details
+  - Step 3: Payment
+  - Step 4: Confirmation
+- Service browser reappears when clicking "Back" to Step 1
+- Provides cleaner, more focused experience on each step
+- Implemented in updateUI() function (lines 1859-1867)
+
+**Files Modified:**
+- `static/js/scheduled-booking-form.js`:
+  - Added scroll to services list after pre-population
+  - Added service browser show/hide logic in updateUI()
+- `public/js/scheduled-booking-form.js` (copied from static)
+
+**Git:**
+- Commit f0fc5e4: "Improve scroll behavior when booking from service browser"
+- Commit 4eb14f4: "Hide service browser when not on step 1"
+- 2 commits, 19 insertions total
+- Pushed to origin/master
+
+**Status:** Enhanced booking flow with improved scroll behavior and cleaner UI!
 
 ---
 
