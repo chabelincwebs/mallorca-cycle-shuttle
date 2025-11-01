@@ -275,4 +275,124 @@ router.get('/slots/:id', async (req: Request, res: Response): Promise<any> => {
   }
 });
 
+/**
+ * Create an on-demand private shuttle booking (no slot required)
+ * POST /api/public/private-shuttles/request
+ */
+router.post('/request', async (req: Request, res: Response): Promise<any> => {
+  try {
+    const {
+      serviceDate,
+      departureTime,
+      pickupAddress,
+      dropoffAddress,
+      passengersCount,
+      bikesCount,
+      customerName,
+      customerEmail,
+      customerPhone,
+      customerLanguage,
+      specialRequests
+    } = req.body;
+
+    // Validation
+    if (!serviceDate || !departureTime || !pickupAddress || !dropoffAddress ||
+        !passengersCount || !customerName || !customerEmail || !customerPhone) {
+      return res.status(400).json({
+        success: false,
+        error: 'Missing required fields: serviceDate, departureTime, pickupAddress, dropoffAddress, passengersCount, customerName, customerEmail, customerPhone'
+      });
+    }
+
+    // Basic email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(customerEmail)) {
+      return res.status(400).json({
+        success: false,
+        error: 'Invalid email address'
+      });
+    }
+
+    // Validate date is in the future
+    const requestedDate = new Date(serviceDate);
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    if (requestedDate < today) {
+      return res.status(400).json({
+        success: false,
+        error: 'Service date must be in the future'
+      });
+    }
+
+    // Calculate price (€50 base + €10 per passenger + €5 per bike)
+    const BASE_PRICE = 50;
+    const PRICE_PER_SEAT = 10;
+    const PRICE_PER_BIKE = 5;
+    const IVA_RATE = 0.10; // 10% IVA for transport
+
+    const passengerCount = parseInt(passengersCount);
+    const bikeCount = bikesCount ? parseInt(bikesCount) : 0;
+
+    const subtotal = BASE_PRICE +
+      (passengerCount * PRICE_PER_SEAT) +
+      (bikeCount * PRICE_PER_BIKE);
+    const ivaAmount = subtotal * IVA_RATE;
+    const totalAmount = subtotal + ivaAmount;
+
+    // Generate unique booking reference
+    const bookingReference = `PSB-${Date.now()}-${Math.random().toString(36).substring(2, 7).toUpperCase()}`;
+
+    // Convert departureTime to DateTime (Prisma requires DateTime even for Time fields)
+    const [hours, minutes] = departureTime.split(':');
+    const departureDateTime = new Date();
+    departureDateTime.setHours(parseInt(hours), parseInt(minutes), 0, 0);
+
+    // Create booking in database
+    const booking = await prisma.privateBooking.create({
+      data: {
+        bookingReference,
+        serviceDate: new Date(serviceDate),
+        departureTime: departureDateTime,
+        pickupAddress,
+        dropoffAddress,
+        passengersCount: passengerCount,
+        bikesCount: bikeCount,
+        basePrice: BASE_PRICE,
+        pricePerSeat: PRICE_PER_SEAT,
+        totalAmount,
+        ivaAmount,
+        ivaRate: IVA_RATE,
+        customerName,
+        customerEmail,
+        customerPhone,
+        customerLanguage: customerLanguage || 'en',
+        status: 'pending_payment',
+        paymentStatus: 'pending',
+        paymentMethod: 'stripe',
+        customerType: 'b2c'
+      }
+    });
+
+    return res.status(201).json({
+      success: true,
+      message: 'Private shuttle booking request created successfully. Awaiting payment.',
+      data: {
+        bookingId: booking.id,
+        bookingReference: booking.bookingReference,
+        totalAmount: totalAmount,
+        subtotal: subtotal,
+        ivaAmount: ivaAmount,
+        paymentStatus: 'pending',
+        status: 'pending_payment'
+      }
+    });
+  } catch (error: any) {
+    console.error('Error creating on-demand private shuttle booking:', error);
+    return res.status(500).json({
+      success: false,
+      error: 'Failed to create booking request'
+    });
+  }
+});
+
 export default router;

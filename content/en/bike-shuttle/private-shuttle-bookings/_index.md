@@ -4,9 +4,11 @@ description: "Book your private bike shuttle service in Mallorca"
 translationKey: private-shuttle-bookings
 ---
 
-Book your private bike shuttle service to explore the best cycling routes in Mallorca.
+Book your private bike shuttle service to explore the best cycling routes in Mallorca. Our flexible service allows you to choose your pickup and dropoff locations, departure time, and accommodate your group size and bikes.
 
-<div id="booking-engine-container" style="min-height: 300px; padding: 40px; background-color: #f5f5f5; border: 2px dashed #ccc; border-radius: 8px; text-align: center; margin: 20px 0;">
-  <!-- Booking engine code will be inserted here -->
-  <p style="color: #666; font-size: 18px; margin: 0;">Booking system coming soon...</p>
-</div>
+<link rel="stylesheet" href="/css/booking-form.css?v=3">
+<script src="https://js.stripe.com/v3/"></script>
+
+<div id="booking-form-container"></div>
+
+<script src="/js/booking-form.js?v=3"></script>
