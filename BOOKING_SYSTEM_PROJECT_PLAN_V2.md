@@ -2003,6 +2003,189 @@ async function sendFacturae(invoice: Invoice): Promise<void> {
 - [ ] Build admin UI for managing scheduled services
 - [ ] Create seed script for initial admin user
 
+**Option D: Bicycle Rescue Policy Integration** ⭐ NEW!
+**Objective:** Integrate bicycle rescue policy sales as optional add-on during shuttle booking
+
+**📊 Business Rationale:**
+- Increase average order value (15-30% conversion typical for travel insurance add-ons)
+- Convenience - one checkout, one payment, one confirmation
+- Logical upsell moment - customers planning cycling trip
+- Cross-sell synergy - riders booking shuttles concerned about bike issues
+
+**🎨 UX Approach:**
+- Optional add-on screen after service selection (Step 1 → Step 2 transition)
+- Visual card highlighting key benefits (€16 from, 30-40min response, island-wide)
+- "Yes, protect my ride" / "No thanks" clear choice
+- If selected: collect bike details (type, brand, color) + accommodation address
+- Combined payment for shuttle + rescue policy
+- Single confirmation for both purchases
+
+**Phase 1: Database Foundation (2-3 hours)**
+- [ ] Add `rescue_policies` table to Prisma schema
+  - Policy number generation (RP-YYYYMMDD-XXX)
+  - Customer details (name, email, phone, accommodation address)
+  - Coverage dates (start date, end date, duration in days)
+  - Bike details (type, brand, model, color, serial number)
+  - Pricing (base price, IVA rate, total price)
+  - Status tracking (PENDING, ACTIVE, EXPIRED, CANCELLED, CLAIMED)
+  - Claims tracking (claimsUsed, maxClaims)
+  - Linked booking reference (optional)
+  - Invoice association
+- [ ] Add `rescue_claims` table for tracking claims
+  - Claim date, issue type, pickup location (with GPS)
+  - Dropoff location, response time
+  - Notes
+- [ ] Add `rescuePolicyId` foreign key to scheduled_bookings and private_bookings tables
+- [ ] Run Prisma migrations
+- [ ] Create seed data for policy pricing tiers
+
+**Phase 2: Backend API (2-3 hours)**
+- [ ] Create `/api/public/rescue-policies/pricing` endpoint
+  - Input: duration (7, 14, 21, 28 days), startDate
+  - Output: pricing tiers with descriptions
+  - Calculate end date based on duration
+  - Apply IVA (10%)
+- [ ] Create `/api/public/rescue-policies` POST endpoint
+  - Validate all required fields
+  - Generate unique policy number
+  - Calculate pricing
+  - Create policy record
+  - Return policy details
+- [ ] Create `/api/public/scheduled-bookings/with-rescue` combined checkout endpoint
+  - Accept both booking + rescue policy data
+  - Use database transaction to ensure atomicity
+  - Create shuttle booking
+  - Create rescue policy
+  - Link policy to booking
+  - Single Stripe payment for combined total
+  - Rollback both if either fails
+- [ ] Create `/api/public/rescue-policies/:policyNumber` GET endpoint for lookup
+- [ ] Create `/api/public/rescue-policies/:policyNumber/cancel` POST endpoint for cancellations
+
+**Phase 3: Frontend Integration (2-3 hours)**
+- [ ] Create rescue addon UI component (`renderRescueAddon()`)
+  - Visual card with benefits
+  - Checkbox to add rescue cover
+  - Duration selector dropdown (7/14/21/28 days with prices)
+  - Conditional fields (shown only when checkbox checked):
+    - Bike type (road/mtb/hybrid/e-bike)
+    - Bike brand & model
+    - Bike color (for identification)
+    - Accommodation address
+  - "Learn more" link to rescue page
+- [ ] Add rescue addon screen after Step 1 (service selection)
+  - Display after user clicks "Next" from service selection
+  - Before proceeding to passenger details
+  - Non-blocking - user can skip
+- [ ] Update Step 2 (Passenger Details) to include rescue fields if selected
+- [ ] Update payment summary to show breakdown:
+  - Shuttle service: €X
+  - Rescue cover (Y days): €Z
+  - Total (incl. IVA): €X+Z
+- [ ] Add rescue policy state management
+  - Track if rescue selected
+  - Store rescue policy data
+  - Include in form submission
+- [ ] Update form validation to include rescue policy fields when selected
+
+**Phase 4: Combined Checkout (1-2 hours)**
+- [ ] Modify booking submission to detect rescue policy selection
+- [ ] Calculate combined total (shuttle + rescue)
+- [ ] Single Stripe payment for combined amount
+- [ ] Call combined checkout endpoint (`/api/public/scheduled-bookings/with-rescue`)
+- [ ] Handle success: both booking + policy created
+- [ ] Handle failure: show specific error message
+- [ ] Rollback handling: ensure neither created if one fails
+- [ ] Update loading states and error messages
+
+**Phase 5: Confirmation & Emails (1-2 hours)**
+- [ ] Update confirmation page (Step 4) to show both:
+  - Shuttle booking confirmation
+  - Rescue policy confirmation
+- [ ] Display policy number and coverage dates
+- [ ] Create rescue policy email template
+  - Policy details
+  - Coverage information
+  - Bike details
+  - Accommodation address
+  - Contact information (WhatsApp for claims)
+  - Important reminders:
+    - Minimum 12 hours before first use
+    - Operating hours (sunrise+1h to sunset)
+    - Not a taxi service
+    - One claim per week per issue
+- [ ] Send two separate emails:
+  - Shuttle booking confirmation
+  - Rescue policy confirmation
+- [ ] Generate PDF policy document (optional enhancement)
+  - Policy number, dates, bike details
+  - Terms and conditions
+  - Contact information
+  - QR code for quick access
+
+**Phase 6: Admin Management (2-3 hours)**
+- [ ] Create admin rescue policies list view
+  - Filter by status (pending, active, expired, cancelled)
+  - Search by customer name, email, policy number
+  - Sort by purchase date, start date
+- [ ] Create admin rescue policy detail view
+  - Full policy information
+  - Linked booking (if any)
+  - Claims history
+  - Status timeline
+- [ ] Create claim registration interface
+  - Record new claim
+  - Capture claim details (issue type, locations, time)
+  - Update claimsUsed counter
+  - Add notes
+- [ ] Create cancellation/refund workflow
+  - Check if policy hasn't started
+  - Process full refund
+  - Update status to CANCELLED
+  - Record refund amount and date
+- [ ] Create statistics dashboard
+  - Active policies count
+  - Policies sold (by week/month)
+  - Conversion rate (rescue policies per shuttle booking)
+  - Revenue from rescue policies
+  - Claims statistics
+
+**Pricing Strategy:**
+```javascript
+const RESCUE_PRICING = {
+  7:  { base: 16.00, description: "1 week cover" },
+  14: { base: 28.00, description: "2 weeks cover" },
+  21: { base: 38.00, description: "3 weeks cover" },
+  28: { base: 46.00, description: "4 weeks cover" },
+};
+
+// Optional: Bundle discount (5% when purchased with shuttle)
+if (linkedToBooking) {
+  discount = basePrice * 0.05;
+  totalPrice = (basePrice - discount) * 1.10; // with 10% IVA
+}
+```
+
+**Key Business Rules:**
+- One policy = one person + one specified bike
+- Must purchase at least 12 hours before needed
+- Coverage starts on specified start date
+- One claim per policy per week per issue (14-day = 2 claims max for same issue)
+- Different issues not capped but abuse may result in cancellation
+- Full refund if cancelled before coverage starts
+- Minimum 1km from accommodation or bike shop
+- Operating hours: sunrise+1h to sunset
+- Bikes must fit in standard vehicles (no tandems, recumbents currently)
+- E-bikes covered for mechanical issues only (not flat batteries)
+
+**Total Estimated Time: 10-14 hours**
+
+**Success Metrics:**
+- Conversion rate target: 15-20% of shuttle bookings add rescue policy
+- Average order value increase: €25-30
+- Customer satisfaction: reduced roadside stress
+- Operational efficiency: integrated system vs manual policy sales
+
 **Instructions for Future Sessions:**
 - Update this log at the start and end of each session
 - Mark completed items with ✅
