@@ -1856,6 +1856,16 @@
       }
     });
 
+    // Hide service browser when not on step 1
+    const serviceBrowser = document.getElementById('service-browser-container');
+    if (serviceBrowser) {
+      if (currentStep === 1) {
+        serviceBrowser.style.display = 'block';
+      } else {
+        serviceBrowser.style.display = 'none';
+      }
+    }
+
     // Mount card element if moving to payment step
     if (currentStep === 3 && cardElement) {
       setTimeout(() => {
