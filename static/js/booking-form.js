@@ -922,17 +922,17 @@
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          serviceDate: formData.date,
-          departureTime: formData.time,
+          serviceDate: formData.serviceDate,
+          departureTime: formData.serviceTime,
           pickupAddress: formData.pickupLocation,
           dropoffAddress: formData.dropoffLocation,
           passengersCount: formData.passengers,
-          bikesCount: formData.bikes,
-          customerName: formData.name,
-          customerEmail: formData.email,
-          customerPhone: formData.phone,
-          customerLanguage: formData.language,
-          specialRequests: formData.notes || '',
+          bikesCount: formData.bikesCount,
+          customerName: formData.customerName,
+          customerEmail: formData.customerEmail,
+          customerPhone: formData.customerPhone,
+          customerLanguage: formData.customerLanguage,
+          specialRequests: formData.specialRequests || '',
         }),
       });
 
@@ -969,7 +969,7 @@
           card: cardElement,
           billing_details: {
             name: cardholderName,
-            email: formData.email,
+            email: formData.customerEmail,
           },
         },
       });
