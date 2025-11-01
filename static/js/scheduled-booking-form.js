@@ -89,6 +89,13 @@
       paymentFailed: 'Payment failed. Please try again.',
       bookingFailed: 'Booking failed. Please try again or contact us.',
       loadingError: 'Failed to load data. Please try again.',
+
+      // Terms
+      termsText: 'Arrive at least 5 min early, we have bikes to pack! I understand latecomers get left behind, no refunds.',
+      termsRequired: 'You must agree to the terms before continuing',
+      seatsEqualBikes: 'Each seat purchased includes luxury travel for your bicycle!',
+      inclIVA: 'Incl. IVA',
+      subtotal: 'Subtotal',
     },
 
     de: {
@@ -147,6 +154,11 @@
       paymentFailed: 'Zahlung fehlgeschlagen. Bitte versuchen Sie es erneut.',
       bookingFailed: 'Buchung fehlgeschlagen. Bitte versuchen Sie es erneut oder kontaktieren Sie uns.',
       loadingError: 'Daten konnten nicht geladen werden. Bitte versuchen Sie es erneut.',
+      termsText: 'Mindestens 5 Minuten früher kommen, wir müssen Fahrräder einpacken! Ich verstehe, dass Zuspätkommer zurückbleiben, keine Rückerstattungen.',
+      termsRequired: 'Sie müssen den Bedingungen zustimmen, um fortzufahren',
+      seatsEqualBikes: 'Jeder Sitzplatz beinhaltet luxuriösen Transport für Ihr Fahrrad!',
+      inclIVA: 'Inkl. MwSt',
+      subtotal: 'Zwischensumme',
     },
 
     es: {
@@ -205,6 +217,11 @@
       paymentFailed: 'Pago fallido. Por favor intente de nuevo.',
       bookingFailed: 'Reserva fallida. Por favor intente de nuevo o contáctenos.',
       loadingError: 'Error al cargar datos. Por favor intente de nuevo.',
+      termsText: '¡Llega al menos 5 minutos antes, tenemos bicicletas que empacar! Entiendo que los que llegan tarde se quedan atrás, sin reembolsos.',
+      termsRequired: 'Debe aceptar los términos para continuar',
+      seatsEqualBikes: '¡Cada asiento incluye viaje de lujo para su bicicleta!',
+      inclIVA: 'IVA incluido',
+      subtotal: 'Subtotal',
     },
 
     fr: {
@@ -263,6 +280,11 @@
       paymentFailed: 'Paiement échoué. Veuillez réessayer.',
       bookingFailed: 'Réservation échouée. Veuillez réessayer ou nous contacter.',
       loadingError: 'Échec du chargement des données. Veuillez réessayer.',
+      termsText: 'Arrivez au moins 5 minutes à l\'avance, nous avons des vélos à emballer! Je comprends que les retardataires seront laissés pour compte, sans remboursement.',
+      termsRequired: 'Vous devez accepter les conditions pour continuer',
+      seatsEqualBikes: 'Chaque place comprend un voyage de luxe pour votre vélo!',
+      inclIVA: 'TVA incluse',
+      subtotal: 'Sous-total',
     },
 
     ca: {
@@ -321,6 +343,11 @@
       paymentFailed: 'Pagament fallit. Si us plau torneu-ho a provar.',
       bookingFailed: 'Reserva fallida. Si us plau torneu-ho a provar o contacteu-nos.',
       loadingError: 'Error en carregar dades. Si us plau torneu-ho a provar.',
+      termsText: 'Arribeu almenys 5 minuts abans, tenim bicicletes per embalar! Entenc que els que arriben tard es queden enrere, sense reemborsaments.',
+      termsRequired: 'Heu d\'acceptar les condicions per continuar',
+      seatsEqualBikes: 'Cada seient inclou viatge de luxe per a la vostra bicicleta!',
+      inclIVA: 'IVA inclòs',
+      subtotal: 'Subtotal',
     },
 
     it: {
@@ -381,6 +408,11 @@
       loadingError: 'Caricamento dati fallito. Per favore riprova.',
     },
 
+      termsText: 'Arriva almeno 5 minuti prima, abbiamo biciclette da imballare! Capisco che i ritardatari vengono lasciati indietro, nessun rimborso.',
+      termsRequired: 'Devi accettare i termini per continuare',
+      seatsEqualBikes: 'Ogni posto include viaggio di lusso per la tua bicicletta!',
+      inclIVA: 'IVA inclusa',
+      subtotal: 'Subtotale',
     nl: {
       step1: 'Service Selecteren',
       step2: 'Passagiersgegevens',
@@ -439,6 +471,11 @@
       loadingError: 'Laden van gegevens mislukt. Probeer het opnieuw.',
     },
 
+      termsText: 'Kom minstens 5 minuten vroeg, we hebben fietsen in te pakken! Ik begrijp dat te laat komers achterblijven, geen terugbetaling.',
+      termsRequired: 'U moet akkoord gaan met de voorwaarden om door te gaan',
+      seatsEqualBikes: 'Elke zitplaats omvat luxe reis voor uw fiets!',
+      inclIVA: 'BTW inbegrepen',
+      subtotal: 'Subtotaal',
     da: {
       step1: 'Vælg Service',
       step2: 'Passagerdetaljer',
@@ -502,6 +539,11 @@
       step2: 'Passasjerdetaljer',
       step3: 'Betaling',
       step4: 'Bekreftelse',
+      termsText: 'Ankom mindst 5 minutter tidligt, vi har cykler at pakke! Jeg forstår at forsinkede bliver efterladt, ingen refusion.',
+      termsRequired: 'Du skal acceptere betingelserne for at fortsætte',
+      seatsEqualBikes: 'Hvert sæde inkluderer luksusrejse for din cykel!',
+      inclIVA: 'Inkl. moms',
+      subtotal: 'Subtotal',
       from: 'Fra',
       to: 'Til',
       serviceDate: 'Reisedato',
@@ -565,6 +607,11 @@
       serviceDate: 'Resedatum',
       selectRoute: 'Välj rutt',
       selectDate: 'Välj datum',
+      termsText: 'Kom minst 5 minutter tidlig, vi har sykler å pakke! Jeg forstår at forsinkede blir etterlatt, ingen refusjon.',
+      termsRequired: 'Du må godta vilkårene for å fortsette',
+      seatsEqualBikes: 'Hvert sete inkluderer luksusreise for sykkelen din!',
+      inclIVA: 'Inkl. MVA',
+      subtotal: 'Delsum',
       loadingServices: 'Laddar tillgängliga tjänster...',
       noServices: 'Inga tjänster tillgängliga för denna rutt och datum',
       availableServices: 'Tillgängliga Tjänster',
@@ -628,6 +675,11 @@
   let currentStep = 1;
   let formData = {
     selectedService: null,
+      termsText: 'Kom minst 5 minuter tidigt, vi har cyklar att packa! Jag förstår att försinkade lämnas efter, inga återbetalningar.',
+      termsRequired: 'Du måste acceptera villkoren för att fortsätta',
+      seatsEqualBikes: 'Varje plats inkluderar lyxresa för din cykel!',
+      inclIVA: 'Inkl. moms',
+      subtotal: 'Delsumma',
     selectedTicketType: null,
     pickupLocationId: null,
   };
@@ -1007,6 +1059,13 @@
           </div>
         </div>
 
+        <div class="terms-checkbox" id="terms-checkbox-container">
+          <label>
+            <input type="checkbox" id="terms-agreed" name="terms-agreed" required>
+            <span class="terms-text">${t.termsText || 'Arrive at least 5 min early, we have bikes to pack! I understand latecomers get left behind, no refunds.'}</span>
+          </label>
+        </div>
+
         <div class="form-actions">
           <button type="button" class="btn btn-secondary" onclick="window.scheduledBookingForm.prevStep()">${t.back}</button>
           <button type="button" class="btn btn-primary" onclick="window.scheduledBookingForm.nextStep()">${t.next}</button>
@@ -1244,6 +1303,17 @@
 
       if (!/\S+@\S+\.\S+/.test(email)) {
         showError(t.invalidEmail);
+        return false;
+      }
+
+      const termsCheckbox = document.getElementById('terms-agreed');
+      if (!termsCheckbox.checked) {
+        showError(t.termsRequired || 'You must agree to the terms before continuing');
+        const container = document.getElementById('terms-checkbox-container');
+        if (container) {
+          container.classList.add('error');
+          setTimeout(() => container.classList.remove('error'), 2000);
+        }
         return false;
       }
 
