@@ -264,3 +264,496 @@
   margin: 0 0 1rem 0;
   color: #333;
 }
+
+/* Scheduled Shuttle Booking Form - Additional Styles */
+
+/* Progress Steps */
+.progress-steps {
+  display: flex;
+  background: #f8f8f8;
+  border-bottom: 1px solid #eee;
+  padding: 1rem;
+  gap: 0.5rem;
+  overflow-x: auto;
+}
+
+.progress-step {
+  flex: 1;
+  min-width: 100px;
+  text-align: center;
+  position: relative;
+}
+
+.progress-step .step-number {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #ddd;
+  color: #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.progress-step.active .step-number {
+  background: var(--brand, #f10000);
+  color: #fff;
+}
+
+.progress-step.completed .step-number {
+  background: #060;
+  color: #fff;
+}
+
+.progress-step .step-label {
+  font-size: 0.75rem;
+  color: #999;
+}
+
+.progress-step.active .step-label {
+  color: var(--brand, #f10000);
+  font-weight: 600;
+}
+
+.progress-step.completed .step-label {
+  color: #666;
+}
+
+/* Step Content */
+.step-content {
+  padding: 2rem;
+}
+
+.step-content h2 {
+  margin: 0 0 1.5rem 0;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+/* Services Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.service-card {
+  border: 2px solid #eee;
+  border-radius: 0.6rem;
+  padding: 1.25rem;
+  transition: all 0.2s;
+  cursor: pointer;
+  background: #fff;
+}
+
+.service-card:hover {
+  border-color: var(--brand, #f10000);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+
+.service-card.selected {
+  border-color: var(--brand, #f10000);
+  background: #fff8f8;
+}
+
+.service-card .service-time {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.service-card .service-route {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.75rem;
+}
+
+.service-card .service-seats {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.service-card .service-price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--brand, #f10000);
+  margin-bottom: 1rem;
+}
+
+.service-card .btn-select-service {
+  width: 100%;
+  padding: 0.7rem;
+  font-size: 0.9rem;
+}
+
+/* Service header */
+.service-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.service-header .service-time {
+  font-size: 1rem;
+  color: #333;
+}
+
+.service-header .service-time strong {
+  font-weight: 600;
+}
+
+.service-header .service-seats {
+  padding: 0.4rem 0.75rem;
+  background: #e8f5e9;
+  color: #2e7d32;
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.service-header .service-seats.low-availability {
+  background: #fff3e0;
+  color: #e65100;
+}
+
+/* Ticket options within service card */
+.service-card .ticket-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 640px) {
+  .service-card .ticket-options {
+    grid-template-columns: 1fr;
+  }
+}
+
+.service-card .ticket-option {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+.service-card .ticket-option input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.service-card .ticket-info {
+  padding: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+  background: #f9f9f9;
+}
+
+.service-card .ticket-option input[type="radio"]:checked + .ticket-info {
+  border-color: var(--brand, #f10000);
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(241, 0, 0, 0.1);
+}
+
+.service-card .ticket-option:hover .ticket-info {
+  border-color: #999;
+}
+
+.service-card .ticket-type {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.25rem;
+  font-size: 0.95rem;
+}
+
+.service-card .ticket-price {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--brand, #f10000);
+  margin: 0.5rem 0;
+}
+
+.service-card .ticket-description {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+.no-services {
+  text-align: center;
+  padding: 2rem;
+  color: #999;
+  font-style: italic;
+}
+
+/* Ticket Type Selector */
+.ticket-type-selector {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 640px) {
+  .ticket-type-selector {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ticket-option {
+  border: 2px solid #ddd;
+  border-radius: 0.6rem;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: #fff;
+}
+
+.ticket-option:hover {
+  border-color: var(--brand, #f10000);
+}
+
+.ticket-option.selected {
+  border-color: var(--brand, #f10000);
+  background: #fff8f8;
+}
+
+.ticket-option input[type="radio"] {
+  display: none;
+}
+
+.ticket-option label {
+  cursor: pointer;
+  margin: 0;
+}
+
+.ticket-option .ticket-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.ticket-option .ticket-description {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.75rem;
+}
+
+.ticket-option .ticket-price {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--brand, #f10000);
+}
+
+/* Booking Summary */
+.booking-summary {
+  background: #f8f8f8;
+  padding: 1.5rem;
+  border-radius: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.summary-row:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.summary-row span:first-child {
+  color: #666;
+  font-weight: 500;
+}
+
+.summary-row span:last-child {
+  color: #333;
+  font-weight: 600;
+}
+
+/* Price Summary (scheduled specific additions) */
+.price-summary h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.price-row.price-total {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 2px solid #ddd;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #111;
+}
+
+/* Payment Section */
+.payment-section {
+  margin-top: 2rem;
+}
+
+/* Confirmation */
+.confirmation {
+  text-align: center;
+  padding: 2rem;
+}
+
+.confirmation-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+  background: #060;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.confirmation h2 {
+  color: #060;
+  margin: 0 0 1rem 0;
+}
+
+.confirmation p {
+  color: #666;
+  margin: 0.5rem 0;
+}
+
+.confirmation-details {
+  background: #f8f8f8;
+  padding: 1.5rem;
+  border-radius: 0.6rem;
+  margin: 2rem 0;
+  text-align: left;
+}
+
+.detail-row {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.detail-row:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.detail-row strong {
+  display: block;
+  color: #666;
+  margin-bottom: 0.25rem;
+  font-size: 0.9rem;
+}
+
+.detail-row span {
+  display: block;
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.detail-row .help-text {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #999;
+  font-weight: 400;
+}
+
+.change-token {
+  font-family: monospace;
+  background: #fff;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  border: 1px dashed #ddd;
+}
+
+.email-confirmation {
+  margin: 1.5rem 0;
+  font-size: 1rem;
+}
+
+.thank-you {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--brand, #f10000);
+  margin-top: 1.5rem;
+}
+
+/* Form Control Enhancements */
+.form-control {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--brand, #f10000);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 640px) {
+  .progress-steps {
+    padding: 0.75rem 0.5rem;
+  }
+
+  .progress-step {
+    min-width: 70px;
+  }
+
+  .progress-step .step-number {
+    width: 30px;
+    height: 30px;
+    font-size: 0.9rem;
+  }
+
+  .progress-step .step-label {
+    font-size: 0.65rem;
+  }
+
+  .step-content {
+    padding: 1.5rem 1rem;
+  }
+
+  .step-content h2 {
+    font-size: 1.25rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-form {
+    margin: 1rem;
+    border-radius: 0.5rem;
+  }
+}

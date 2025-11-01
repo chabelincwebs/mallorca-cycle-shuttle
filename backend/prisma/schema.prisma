@@ -90,6 +90,7 @@ model Bus {
   licensePlate        String    @unique @map("license_plate")
   capacity            Int
   bikeCapacity        Int       @map("bike_capacity")
+  serviceType         String    @default("both") @map("service_type") // "scheduled_only" | "private_only" | "both"
   availabilityType    String    @map("availability_type") // "always" | "seasonal" | "manual"
   availabilityRules   Json?     @map("availability_rules") // {"start_date": "2025-04-01", "end_date": "2025-10-31"}
   bookingCutoffHours  Int       @default(18) @map("booking_cutoff_hours")

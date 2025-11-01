@@ -20,11 +20,16 @@ export async function createPrivateShuttleSlot(data: {
   // Get bus capacity
   const bus = await prisma.bus.findUnique({
     where: { id: data.busId },
-    select: { capacity: true, name: true }
+    select: { capacity: true, name: true, serviceType: true }
   });
 
   if (!bus) {
     throw new Error('Bus not found');
+  }
+
+  // Validate bus service type
+  if (bus.serviceType === 'scheduled_only') {
+    throw new Error('This bus is designated for scheduled services only and cannot be used for private shuttles');
   }
 
   // Create the slot

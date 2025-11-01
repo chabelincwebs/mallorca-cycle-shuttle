@@ -245,6 +245,14 @@ router.post('/', async (req: Request, res: Response) => {
       });
     }
 
+    // Validate bus service type
+    if (bus.serviceType === 'private_only') {
+      return res.status(400).json({
+        success: false,
+        error: 'This bus is designated for private shuttles only and cannot be used for scheduled services'
+      });
+    }
+
     // Verify routes exist and are active
     const [pickup1, pickup2, dropoff] = await Promise.all([
       prisma.route.findUnique({ where: { id: routePickup1Id } }),

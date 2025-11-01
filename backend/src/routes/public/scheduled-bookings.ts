@@ -20,31 +20,28 @@ router.get('/services/available', async (req: Request, res: Response) => {
       });
     }
 
+    // Parse date string and create UTC date range for the full day
     const targetDate = new Date(date as string);
+    const startOfDay = new Date(Date.UTC(targetDate.getUTCFullYear(), targetDate.getUTCMonth(), targetDate.getUTCDate(), 0, 0, 0, 0));
+    const endOfDay = new Date(Date.UTC(targetDate.getUTCFullYear(), targetDate.getUTCMonth(), targetDate.getUTCDate(), 23, 59, 59, 999));
 
     // Find services matching the criteria
     const services = await prisma.scheduledService.findMany({
       where: {
         serviceDate: {
-          gte: new Date(targetDate.setHours(0, 0, 0, 0)),
-          lt: new Date(targetDate.setHours(23, 59, 59, 999))
+          gte: startOfDay,
+          lte: endOfDay
         },
         status: 'active',
         OR: [
           {
-            routePickup1: {
-              id: parseInt(from as string)
-            }
+            routePickup1Id: parseInt(from as string)
           },
           {
-            routePickup2: {
-              id: parseInt(from as string)
-            }
+            routePickup2Id: parseInt(from as string)
           }
         ],
-        routeDropoff: {
-          id: parseInt(to as string)
-        }
+        routeDropoffId: parseInt(to as string)
       },
       include: {
         bus: true,
@@ -73,7 +70,7 @@ router.get('/services/available', async (req: Request, res: Response) => {
         (sum, booking) => sum + booking.seatsBooked,
         0
       );
-      const availableSeats = service.bus.passengerCapacity - bookedSeats;
+      const availableSeats = service.bus.capacity - bookedSeats;
 
       return {
         id: service.id,
@@ -101,15 +98,15 @@ router.get('/services/available', async (req: Request, res: Response) => {
         },
         bus: {
           name: service.bus.name,
-          passengerCapacity: service.bus.passengerCapacity,
+          passengerCapacity: service.bus.capacity,
           bikeCapacity: service.bus.bikeCapacity
         },
         pricing: {
-          standardPrice: parseFloat(service.standardPrice.toString()),
-          flexiPrice: parseFloat(service.flexiPrice.toString())
+          standardPrice: parseFloat(service.priceStandard.toString()),
+          flexiPrice: parseFloat(service.priceFlexi.toString())
         },
         availability: {
-          totalSeats: service.bus.passengerCapacity,
+          totalSeats: service.bus.capacity,
           bookedSeats,
           availableSeats,
           isAvailable: availableSeats > 0
@@ -138,7 +135,7 @@ router.get('/routes', async (req: Request, res: Response) => {
   try {
     const routes = await prisma.route.findMany({
       where: {
-        isActive: true
+        active: true
       },
       orderBy: {
         nameEn: 'asc'
@@ -238,7 +235,7 @@ router.post('/', async (req: Request, res: Response) => {
       (sum, booking) => sum + booking.seatsBooked,
       0
     );
-    const availableSeats = service.bus.passengerCapacity - bookedSeats;
+    const availableSeats = service.bus.capacity - bookedSeats;
 
     if (seatsBooked > availableSeats) {
       return res.status(400).json({
@@ -249,9 +246,14 @@ router.post('/', async (req: Request, res: Response) => {
 
     // Calculate total amount
     const pricePerSeat = ticketType === 'flexi'
-      ? parseFloat(service.flexiPrice.toString())
-      : parseFloat(service.standardPrice.toString());
-    const totalAmount = pricePerSeat * seatsBooked;
+      ? parseFloat(service.priceFlexi.toString())
+      : parseFloat(service.priceStandard.toString());
+
+    // Calculate IVA (VAT) amount
+    const ivaRate = parseFloat(service.ivaRate.toString());
+    const subtotal = pricePerSeat * seatsBooked;
+    const ivaAmount = subtotal * ivaRate;
+    const totalAmount = subtotal + ivaAmount;
 
     // Generate booking reference
     const bookingReference = `SB-${Date.now()}-${crypto.randomBytes(4).toString('hex').toUpperCase()}`;
@@ -267,19 +269,23 @@ router.post('/', async (req: Request, res: Response) => {
         data: {
           bookingReference,
           serviceId,
+          customerType: 'b2c',
           pickupLocationId,
           seatsBooked,
           bikesCount: bikesCount || 0,
           ticketType,
+          pricePerSeat,
+          ivaRate,
+          ivaAmount,
           totalAmount,
+          paymentMethod: 'stripe',
           customerName,
           customerEmail,
           customerPhone,
           customerLanguage: customerLanguage || 'en',
           status: 'pending',
           paymentStatus: 'pending',
-          changeToken,
-          notes: null
+          changeToken
         },
         include: {
           service: {

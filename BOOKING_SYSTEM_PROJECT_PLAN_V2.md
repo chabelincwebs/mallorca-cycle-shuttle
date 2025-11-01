@@ -1861,7 +1861,7 @@ async function sendFacturae(invoice: Invoice): Promise<void> {
 
 ## Progress Log
 
-**Last Updated:** 2025-10-31
+**Last Updated:** 2025-11-01
 
 ### 2025-10-30 (Session 1 - Part 1: Planning)
 - ✅ Analyzed Spanish fiscal compliance requirements (VeriFactu 2026)
@@ -1923,8 +1923,69 @@ async function sendFacturae(invoice: Invoice): Promise<void> {
 - ✅ Updated Progress Log
 - 🔄 **Status:** Local development environment fully operational
 
-### [Next Session - VPS Setup or Continue Local Development]
-**Option A: VPS Setup (when ready)**
+### 2025-11-01 AM (Session 3: Private Shuttle Booking System + Email Migration)
+- ✅ Migrated from SendGrid to Brevo for unified communications
+- ✅ Migrated from Twilio to Brevo for WhatsApp notifications
+- ✅ Simplified to single Brevo platform (email + WhatsApp + SMS)
+- ✅ Created complete private shuttle booking system
+  - ✅ 4-step booking wizard (Details → Review → Payment → Confirmation)
+  - ✅ Stripe Elements payment integration
+  - ✅ 10-language support (EN, DE, ES, FR, CA, IT, NL, SV, NB, DA)
+  - ✅ Responsive mobile-first design
+  - ✅ 50KB JavaScript booking form (booking-form.js)
+- ✅ Created backend API endpoints for private bookings
+  - ✅ POST /api/public/private-bookings - Create booking
+  - ✅ GET /api/public/private-bookings/:ref - Get booking details
+  - ✅ POST /api/public/private-bookings/:ref/cancel - Cancel booking
+- ✅ Completed Linux migration of entire project
+- ✅ Fixed multiple bugs in booking flow
+- 🔄 **Status:** Private shuttle booking system fully functional
+
+### 2025-11-01 PM (Session 4: Scheduled Shuttle Booking System - COMPLETE!)
+- ✅ **MAJOR MILESTONE: Scheduled Shuttle Booking System 100% Complete!**
+- ✅ Created complete frontend (scheduled-booking-form.js - 50KB, 1,362 lines)
+  - ✅ 4-step booking wizard
+  - ✅ Route & date selection with real-time availability
+  - ✅ Service card display with departure times
+  - ✅ Standard vs Flexi ticket selection
+  - ✅ Stripe payment integration
+  - ✅ 10-language support
+  - ✅ Responsive design
+- ✅ Created backend API endpoints
+  - ✅ GET /api/public/scheduled-bookings/routes - Get all routes
+  - ✅ GET /api/public/scheduled-bookings/services/available - Check availability
+  - ✅ POST /api/public/scheduled-bookings - Create booking
+  - ✅ GET /api/public/scheduled-bookings/:ref - Get booking details
+  - ✅ POST /api/public/scheduled-bookings/:ref/cancel - Cancel Flexi bookings
+- ✅ Fixed critical bugs
+  - ✅ Field name mismatches (priceStandard vs standardPrice, etc.)
+  - ✅ Timezone handling in date queries (UTC)
+  - ✅ Missing required database fields (customerType, pricePerSeat, ivaRate, etc.)
+  - ✅ Time display bug (extracting HH:MM from ISO datetime)
+  - ✅ Service card CSS layout issues
+- ✅ Created content pages (10 languages)
+  - ✅ /en/bike-shuttle/scheduled-shuttle-bookings/
+  - ✅ + 9 other language versions
+- ✅ Created test scheduled services
+  - ✅ Service ID 1: Port de Pollença → Sa Calobra (08:00, March 1, 2026)
+  - ✅ Service ID 14: Port de Pollença → Sa Calobra (07:15, March 1, 2026)
+- ✅ Successfully tested complete booking flow
+  - ✅ Booking Reference: SB-1762000519865-E2C962FD
+  - ✅ 4 passengers, 4 bikes, Flexi ticket
+  - ✅ Total: €118.80 (€27 × 4 × 1.10 IVA)
+- ✅ Created utility script: backend/scripts/create-service.ts
+- 🔄 **Status:** Both booking systems (Private + Scheduled) fully functional!
+- 📍 **Next Priority:** Add real routes to database for production readiness
+
+### [Next Session - Continue Development]
+**Option A: Add Real Routes & Services**
+- [ ] Get list of actual pickup/dropoff locations from user
+- [ ] Add real route translations (10 languages)
+- [ ] Create actual scheduled services with real pricing
+- [ ] Test booking flow with production-like data
+- [ ] Configure real Stripe production keys
+
+**Option B: VPS Setup (when ready)**
 - [ ] Connect to VPS via SSH and verify access
 - [ ] Update system packages (apt update && apt upgrade)
 - [ ] Install Node.js 20 LTS, PostgreSQL 16, Nginx
@@ -1934,12 +1995,12 @@ async function sendFacturae(invoice: Invoice): Promise<void> {
 - [ ] Run database migrations on VPS
 - [ ] Deploy and test server on VPS
 
-**Option B: Continue Local Development**
+**Option C: Admin Dashboard**
 - [ ] Implement JWT authentication middleware
 - [ ] Implement TOTP 2FA setup
 - [ ] Create admin authentication routes (login, logout, 2FA)
-- [ ] Create first admin endpoints (fleet management)
-- [ ] Test authentication flow locally
+- [ ] Create admin endpoints (fleet management, services, bookings)
+- [ ] Build admin UI for managing scheduled services
 - [ ] Create seed script for initial admin user
 
 **Instructions for Future Sessions:**
