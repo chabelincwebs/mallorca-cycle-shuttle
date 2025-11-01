@@ -1,15 +1,21 @@
-import sgMail from '@sendgrid/mail';
+import * as brevo from '@getbrevo/brevo';
 import { PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();
 
-// Initialize SendGrid
-const SENDGRID_API_KEY = process.env.SENDGRID_API_KEY || '';
-const FROM_EMAIL = process.env.SENDGRID_FROM_EMAIL || 'bookings@mallorcacycleshuttle.com';
-const FROM_NAME = process.env.SENDGRID_FROM_NAME || 'Autocares Devesa';
+// Initialize Brevo
+const BREVO_API_KEY = process.env.BREVO_API_KEY || '';
+const FROM_EMAIL = process.env.BREVO_FROM_EMAIL || 'info@mallorcacycleshuttle.com';
+const FROM_NAME = process.env.BREVO_FROM_NAME || 'Mallorca Cycle Shuttle';
 
-if (SENDGRID_API_KEY) {
-  sgMail.setApiKey(SENDGRID_API_KEY);
+let brevoClient: brevo.TransactionalEmailsApi | null = null;
+
+if (BREVO_API_KEY) {
+  brevoClient = new brevo.TransactionalEmailsApi();
+  brevoClient.authentications.apiKey.apiKey = BREVO_API_KEY;
+  console.log('✅ Brevo email client initialized');
+} else {
+  console.warn('⚠️  Brevo API key not configured. Emails will not be sent.');
 }
 
 export interface EmailParams {
@@ -37,35 +43,44 @@ export interface BookingEmailData {
 }
 
 /**
- * Send an email using SendGrid
+ * Send an email using Brevo
  */
 export async function sendEmail(params: EmailParams): Promise<boolean> {
   const { to, subject, html, text } = params;
 
-  // If SendGrid not configured, log and skip
-  if (!SENDGRID_API_KEY) {
-    console.log('[Email] SendGrid not configured - would send:');
+  // If Brevo not configured, log and skip
+  if (!brevoClient) {
+    console.log('[Email] Brevo not configured - would send:');
     console.log(`  To: ${to}`);
     console.log(`  Subject: ${subject}`);
     return false;
   }
 
   try {
-    await sgMail.send({
-      to,
-      from: {
-        email: FROM_EMAIL,
-        name: FROM_NAME
-      },
-      subject,
-      html,
-      text: text || html.replace(/<[^>]*>/g, '') // Strip HTML for text version
-    });
+    const sendSmtpEmail = new brevo.SendSmtpEmail();
 
-    console.log(`[Email] Sent to ${to}: ${subject}`);
+    sendSmtpEmail.sender = {
+      name: FROM_NAME,
+      email: FROM_EMAIL,
+    };
+
+    sendSmtpEmail.to = [{
+      email: to,
+    }];
+
+    sendSmtpEmail.subject = subject;
+    sendSmtpEmail.htmlContent = html;
+
+    if (text) {
+      sendSmtpEmail.textContent = text;
+    }
+
+    const result = await brevoClient.sendTransacEmail(sendSmtpEmail);
+
+    console.log(`✅ [Brevo] Email sent to ${to}: ${subject}`);
     return true;
   } catch (error) {
-    console.error('[Email] Failed to send:', error);
+    console.error('❌ [Brevo] Failed to send email:', error);
     return false;
   }
 }
